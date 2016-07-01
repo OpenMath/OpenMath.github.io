@@ -1,0 +1,43 @@
+<div class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}/">
+            <img src="/public/logo.png" alt="{{ site.title }}" width="100%">
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+      <p class="site-url lead"><a href="{{ site.url }}/">{{ site.url }}</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      {% include sidebar-nav-item.html url="/"            title="Home" %}<br/>
+      {% include sidebar-nav-item.html url="/about/"      title="About" %}<br/>
+      {% include sidebar-nav-item.html url="/news/"       title="News" %},
+      {% include sidebar-nav-item.html url="/follow/"     title="Follow & Contact us" %}&nbsp;&nbsp;
+      <span class="sidebar-nav-item">
+        <a href="{{ site.baseurl }}/atom.xml"><img class="icon" src="{{ site.baseurl }}/public/feed_w.png" alt="atom feed"></a>
+        <a href="https://twitter.com/{{ site.author.twitter }}"><img class="icon" src="{{ site.baseurl }}/public/twitter_w.png" alt="twitter"></a>
+        <a href="https://github.com/{{ site.github.owner_name }}"><img class="icon" src="{{ site.baseurl }}/public/github_w.png" alt="github"></a>
+      </span><br/>
+
+      <a class="sidebar-nav-item" href="{{ site.github.zip_url | replace: 'zipball', 'edit' }}/{% if page.source %}{{ page.source }}{% else %}{{ page.path }}{% endif %}">Edit this page</a><br/>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+
+        We don't use it for this web page to better customize the layout.
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% endcomment %}
+  </nav>
+  </div>
+</div>

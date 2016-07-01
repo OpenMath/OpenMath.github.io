@@ -1,0 +1,34 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:               OpenMath
+tagline:             'OpenMath is an extensible standard for representing the semantics of mathematical objects.'
+description:         'OpenMath is an extensible standard for representing the semantics of mathematical objects.'
+url:                 http://openmath.org
+baseurl:             ''
+paginate:            5
+paginate_path:       "/news/page:num/"
+future:              True
+gems:
+  - jemoji
+  - jekyll-paginate
+  - jekyll-github-metadata
+
+exclude: ['_activities/README.md', '*.synctex.gz', '*.aux', '*.nav', '*.out', '*.snm', '*.tex', '*.log', '*.toc']
+
+# About/contact
+author:
+  name:              'The OpenMath Society'
+  url:                   http://openmath.org
+  email:               om-sc@openmath.org 
+  twitter:             openmath
+
+repository:          OpenMath/OpenMath.github.io
+
+collections:
+  activities:
+    output: true
+
+# Custom vars
+version:             0.2.0
