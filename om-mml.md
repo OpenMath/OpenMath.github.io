@@ -3,8 +3,6 @@ layout: default
 title: OpenMath and MathML
 ---
 
-# OpenMath and MathML
-
 It might appear strange that two different encodings of Mathematics for the web are emerging. However OpenMath and MathML are not in competition. Indeed, here is a large overlap between the people responsible for the two standards.
 
 OpenMath is aimed at encoding the semantics of mathematics and, via its extensible Content Dictionary mechanism, may be applied to arbitrary areas of mathematics without the need for any central agreement to change the language. MathML on the other hand has no mechanism for describing the semantics of mathematical objects, although it can attach a pointer to a symbol indicating where its semantics are defined, for example in an OpenMath Content Dictionary. It also includes a small, fixed set of symbols whose semantics are defined informally in the MathML Recommendation. The rationale for inclusion in this set was that the symbol represented a concept taught to US high-school students.
@@ -15,27 +13,30 @@ If a user is satisfied with US school-level mathematics then they can use either
 
 For example, the simple object _sin(x)_ is represented in in OpenMath as:
 
-<pre><OMOBJ>
+```XML
+<OMOBJ>
   <OMA>
     <OMS name="sin" cd="transc1"/>
     <OMV name="x"/>
   </OMA>
 </OMOBJ>
-</pre>
+```
 
 and in Content MathML as:
 
-<pre><math>
+```XML
+<math>
   <apply>
     <sin/>
     <ci>x</ci>
   </apply>
 </math>
-</pre>
+```
 
 or equivalently, using the OpenMath semantics, as:
 
-<pre><math>
+```XML
+<math>
   <apply>
     <csymbol definitionURL="http://www.openmath.org/cd/transc1.ocd" encoding="OpenMath">
       sin
@@ -43,7 +44,7 @@ or equivalently, using the OpenMath semantics, as:
     <ci>x</ci>
   </apply>
 </math>
-</pre>
+```
 
 In practice of course this form is most useful for symbols which _do not_ have an existing equivalent in Content MathML.
 

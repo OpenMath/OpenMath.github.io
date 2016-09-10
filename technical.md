@@ -1,10 +1,7 @@
 ---
-layout: default
 title: OpenMath: A Technical Overview
+layout: default
 ---
-
-# OpenMath: A Technical Overview
-
 ## Introduction
 
 OpenMath is a standard for representing mathematical data in as unambiguous a way as possible. It can be used to exchange mathematical objects between software packages or via email, or as a persistent data format in a database. It is tightly focussed on representing semantic information and is not intended to be used directly for presentation, although tools exist to facilitate this.
@@ -23,59 +20,64 @@ The OpenMath representation of a mathematical structure is referred to as an _Op
 
 Formally, an OpenMath object is a labelled tree whose leaves are the _basic_ OpenMath objects integers, IEEE double precision floats, unicode strings, byte arrays, variables or symbols. Of these, symbols are the most interesting since they consist of a name and a reference to a definition in an external document called a _content dictionary_ (or CD). Using XML notation where the element name <tt>OMS</tt> indicates an OpenMath symbol, the following: `<OMS name="sin" cd="transc1"/>` represents the usual sine function, as defined in the CD "transc1". A basic OpenMath object is an OpenMath object, although its XML representation will be:
 
-<pre>  <OMOBJ>
-    <OMS name="sin" cd="transc1"/>
-  </OMOBJ>
-</pre>
+```XML
+<OMOBJ>
+   <OMS name="sin" cd="transc1"/>
+</OMOBJ>
+```
 
 OpenMath objects can be built up recursively in a number of ways. The simplest is function application, for example the expression _sin_(_x_) can be represented by the XML:
 
-<pre>  <OMOBJ>
-    <OMA>
-      <OMS name="sin" cd="transc1"/>
-      <OMV name="x"/>
-    </OMA>
-  </OMOBJ>
-</pre>
+```XML
+<OMOBJ>
+  <OMA>
+    <OMS name="sin" cd="transc1"/>
+    <OMV name="x"/>
+  </OMA>
+</OMOBJ>
+```
 
 where <tt>OMV</tt> introduces a variable and <tt>OMA</tt> is the application element. Another straightforward method is _attribution_ which as the name suggests can be used to add additional information (for example "the AXIOM command which generated me was ...") to an object without altering its fundamental meaning. More interesting are _binding_ objects which are used to represent an expression containing bound variables, for example:
 
-<pre>  <OMOBJ>
-    <OMA>
-      <OMS cd="calculus1" name="int"/>
-      <OMS cd="transc1" name="sin"/>
-    </OMA>
-  </OMOBJ>
-</pre>
+```XML
+<OMOBJ>
+  <OMA>
+    <OMS cd="calculus1" name="int"/>
+    <OMS cd="transc1" name="sin"/>
+  </OMA>
+</OMOBJ>
+```
 
 represents the integral of the _sin_ function, but the encoding:
 
-<pre>  <OMOBJ>
-    <OMA>
-      <OMS cd="calculus1" name="int"/>
-      <OMBIND>
-        <OMS cd="fns1" name="lambda"/>
-        <OMBVAR> <OMV name="x"/> </OMBVAR>
-        <OMA>
-          <OMS name="sin" cd="transc1"/>
-          <OMV name="x"/>
-        </OMA>
-      </OMBIND>
-    </OMA>
-  </OMOBJ>
-</pre>
+```XML
+<OMOBJ>
+  <OMA>
+    <OMS cd="calculus1" name="int"/>
+    <OMBIND>
+      <OMS cd="fns1" name="lambda"/>
+      <OMBVAR> <OMV name="x"/> </OMBVAR>
+      <OMA>
+        <OMS name="sin" cd="transc1"/>
+        <OMV name="x"/>
+      </OMA>
+    </OMBIND>
+  </OMA>
+</OMOBJ>
+```
 
 represents ∫sin(_x_)dx. This may appear overly complicated but it is useful, for example when searching in a database for expressions which match ∫sin(_y_)dy . The definition of a symbol in the CD specifies whether or not it may be used to bind variables, which is why <tt><OMS cd="calculus1" name="int"/></tt> cannot be used as a binding symbol.
 
 The final kind of OpenMath object is an _error_ which is built up from a symbol describing the error and a sequence of OpenMath objects. For example:
 
-<pre>  <OMOBJ>
-    <OME>
-      <OMS name="unexpected_symbol" cd="error1">
-      <OMS name="sine" cd="transc1">
-    </OME>
-  </OMOBJ>
-</pre>
+```XML
+<OMOBJ>
+  <OME>
+    <OMS name="unexpected_symbol" cd="error1">
+    <OMS name="sine" cd="transc1">
+  </OME>
+</OMOBJ>
+```
 
 represents the error which might be generated when an application sees a symbol it doesn't recognise from a CD it thought it knew about.
 
@@ -101,7 +103,8 @@ In practice the CMPs and FMPs can come as pairs, and often serve in the place of
 
 A very simple instance of a CD definition is:
 
-<pre><CDDefinition>
+```XML
+<CDDefinition>
 <Name> log </Name>
 
 <Description> 
@@ -139,7 +142,6 @@ Functions, section 4.1
       </OMA>
     </OMA>
   </OMOBJ>
-
 </FMP>
 
 <Example>
@@ -154,7 +156,7 @@ log 100 to base 10 (which is 2).
 </Example>
 
 </CDDefinition>
-</pre>
+```
 
 This provides a symbol to represent the _log_ function by giving a pointer to a standard reference book. It provides the property that:
 

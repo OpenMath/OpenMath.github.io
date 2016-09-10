@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Home
+layout: page
+title: OpenMath Home
 ---
-
-# OpenMath
 
 {% include intro.md %}
 
