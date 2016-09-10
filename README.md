@@ -11,7 +11,7 @@ In short, is built statically from Markdown source files using
 corresponding source and push. This can be done online by clicking on
 "Edit this page" in the side bar. See the above links for details.
 
-- _config.html: main configuration page
+- _config.yml: main configuration page
 - _post/*.md: sources of the news and blog posts
 - _data/*.yml: YAML database from which certain pages are automatically generated
 - _layouts/*: local style files
