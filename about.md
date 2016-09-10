@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About
 ---
 
@@ -20,5 +20,5 @@ The worldwide OpenMath activities are coordinated within the OpenMath Society, b
 
 ## Further Information
 
-* [A More Technical Overview](technical.html)
-* [A Comparison of OpenMath and MathML](om-mml.html)
+* [A More Technical Overview](../technical)
+* [A Comparison of OpenMath and MathML](../om-mml)

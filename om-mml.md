@@ -1,3 +1,8 @@
+---
+layout: default
+title: OpenMath and MathML
+---
+
 # OpenMath and MathML
 
 It might appear strange that two different encodings of Mathematics for the web are emerging. However OpenMath and MathML are not in competition. Indeed, here is a large overlap between the people responsible for the two standards.

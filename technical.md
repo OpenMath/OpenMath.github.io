@@ -1,3 +1,8 @@
+---
+layout: default
+title: OpenMath: A Technical Overview
+---
+
 # OpenMath: A Technical Overview
 
 ## Introduction
