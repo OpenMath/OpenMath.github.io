@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: The OpenMath Society Executive
 ---
 The Executive Committe conducts the socity business between the business meetings of the

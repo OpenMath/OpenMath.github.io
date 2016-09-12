@@ -5,7 +5,7 @@ title: OpenMath Home
 
 {% include intro.md %}
 
-[Read more...](about)
+Read more ... about [OpenMath](about) and the [OpenMath Society](omsoc)
 
 ## News
 
@@ -15,11 +15,6 @@ title: OpenMath Home
 {% endfor %}
 
 ## older news
-* [29th OpenMath Workshop](http://www.cicm-conference.org/2016/cicm.php?event=openmath) July 25/29 2016 aside of [CICM 2016](http://www.cicm-conference.org/2016) in Bialystok, PL
-* [28th OpenMath Workshop](http://www.cicm-conference.org/2014/cicm.php?event=openmath) July 7th 2014 aside of [CICM 2014](http://www.cicm-conference.org/2014) in Coimbra, PT
-*   April 19th 2013: Announcing the [OpenMath Workshop 2013](http://www.cicm-conference.org/2013/cicm.php?event=openmath) (to happen July 10th 2013 aside of [CICM 2013](http://www.cicm-conference.org/2013/cicm.php?event=openmath) in Bath, UK):
-    [Submission deadline](http://www.cicm-conference.org/2013/cicm.php?event=openmath&menu=dates): June 7th.
-    [Submission formats](http://www.cicm-conference.org/2013/cicm.php?event=openmath&menu=submission): full paper, short paper, content dictionary, standard enhancement proposal.
 *   October 17th 2012: [Proceedings of the OpenMath Workshop 2012](http://ceur-ws.org/Vol-921/) published (jointly with the MathUI workshop and CICM Work in Progress papers)
 *   April 3rd 2012: Announcing the [OpenMath Workshop 2012](http://www.cicm-conference.org/2012/cicm.php?event=openmath) (to happen July 11th 2012 aside of [CICM 2012](http://www.cicm-conference.org/2012/cicm.php?event=openmath) in Bremen, Germany):
     [Submission deadline](http://www.cicm-conference.org/2012/cicm.php?event=openmath&menu=dates): May 25th.
