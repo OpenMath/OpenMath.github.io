@@ -1,7 +1,8 @@
 ---
-title: OpenMath: A Technical Overview
-layout: default
+layout: default 
+title: OpenMath, A Technical Overview
 ---
+
 ## Introduction
 
 OpenMath is a standard for representing mathematical data in as unambiguous a way as possible. It can be used to exchange mathematical objects between software packages or via email, or as a persistent data format in a database. It is tightly focussed on representing semantic information and is not intended to be used directly for presentation, although tools exist to facilitate this.
