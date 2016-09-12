@@ -1,4 +1,4 @@
-# The Sources of  OpenMath.org website
+# The Sources of the OpenMath.org website
 
 This is patterned after the [OpenDreamKit site](http://opendreamkit.org), also see the
 readme there. 
