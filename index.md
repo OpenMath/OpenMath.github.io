@@ -28,11 +28,11 @@ Read more ... about [OpenMath](about) and the [OpenMath Society](omsoc)
 *   June 19th 2007: The programme [8th OpenMath Workshop](./meetings/linz2007/), June 25-26, Linz, Austria is public
 *   July 09 2006: The OpenMath web-site is now hosted by [DFKI GmbH](http://www.dfki.de/). The site is now built using a script, please send comments and requests to [Paul Libbrecht](/cdn-cgi/l/email-protection#4434253128042527302d32212925302c6a2b3623) since potentially many old URLs are not honoured anymore.
 *   August 16 2005: [LeActiveMath Release 3](http://www.activemath.org) is now available. ActiveMath is a web-based intelligent learning environment for mathematics.
-*   July 28 2004: Slides available from [10 years of OpenMath](meetings/helsinki2004/index.html) workshop, Helsinki May 21-22.
+*   July 28 2004: Slides available from [10 years of OpenMath](meetings/helsinki2004/) workshop, Helsinki May 21-22.
 *   July 27 2004: Update to [OpenMath - Guidelines for Tool Developers](projects/thematic/tools-3.pdf).
 *   July 16 2004 [OpenMath 2](standard/om20/) published.
 *   July 16 2004 [OpenMath 2 CD Collection](cd/) published.
-*   May 11 2004: Sixth draft of [OpenMath 2](standard/om20-2004-05-11/) published.
+*   May 11 2004: Sixth draft of OpenMath 2 published.
 *   May 11 2004: Programme announced for [10 years of OpenMath](http://mark.math.helsinki.fi/OM/index.htm) workshop in Helsinki from May 21-22.
 *   April 27 2004: [Test release of OM2 CDs](standard/cd/) published.
 *   April 27 2004: [Test release of OM to presentation MathML stylesheets](standard/omxsl/) published.
@@ -41,11 +41,11 @@ Read more ... about [OpenMath](about) and the [OpenMath Society](omsoc)
 *   February 10 2004: Preliminary announcement of [10 years of OpenMath](meetings/helsinki/) workshop in Helsinki from May 21-22.
 *   February 6 2004: [Online OpenMath Validation page](software/validate.html) installed
 *   December 1 2003: Proceedings of [Bremen OpenMath Workshop](/meetings/bremen2003) published.
-*   November 24 2003: Fourth draft of [OpenMath 2](standard/om20-2003-11-24/) published.
-*   November 05 2003: Third draft of [OpenMath 2](standard/om20-2003-11-05/) published.
-*   October 31 2003: Second draft of [OpenMath 2](standard/om20-2003-10-31/) published.
+*   November 24 2003: Fourth draft of OpenMath 2 published.
+*   November 05 2003: Third draft of OpenMath 2 published.
+*   October 31 2003: Second draft of OpenMath 2 published.
 *   October 13 2003: OpenMath Thematic Network workshop in [Bremen, November 7-8](http://www-2.cs.cmu.edu/~kohlhase/event/om03/).
-*   October 13 2003: First public draft of [OpenMath 2](standard/om20-2003-10-31/) published.
+*   October 13 2003: First public draft of OpenMath 2 published.
 *   September 26 2003: [Experimental release of RELAX NG schema for OpenMath](standard/relaxng).
 *   September 25 2003: Update to [OpenMath - Guidelines for Tool Developers](projects/thematic/tools-2.pdf).
 *   September 10 2003: The electronic proceedings of the [Mathematics on the Semantic Web](http://www.openmath.org/meetings/eindhoven2003/) workshop are available.

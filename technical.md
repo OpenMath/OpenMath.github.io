@@ -11,7 +11,7 @@ The original motivation for OpenMath came from the Computer Algebra community. C
 
 In 1998, the [Worldwide Web Consortium (W3C)](http://www.w3.org) produced its first recommendation for the [Extensible Markup Language (XML)](http://www.w3.org/xml), intended to be a universal format for representing structured information on the worldwide web. It was swiftly followed by the first [MathML](http://www.w3.org/math) recommendation which is an XML application oriented mainly towards the presentation (i.e. the rendering) of mathematical expressions.
 
-The formal definition of OpenMath is contained within [_The OpenMath Standard_](../standard/index.html) and its accompanying documents, and the reader is referred there for more details.
+The formal definition of OpenMath is contained within [_The OpenMath Standard_](../standard/) and its accompanying documents, and the reader is referred there for more details.
 
 ## The OpenMath Architecture
 
@@ -84,9 +84,9 @@ represents the error which might be generated when an application sees a symbol 
 
 ### OpenMath Encodings
 
-We have already seen some examples of the XML encoding, but it is by no means the only encoding. In the past there was a functional encoding (which looked like Lisp) and an SGML encoding which evolved into the current XML. Both of these are now obsolete, but there is still a binary encoding described in the [standard](../standard/index.html) , which is much more compact than the XML one.
+We have already seen some examples of the XML encoding, but it is by no means the only encoding. In the past there was a functional encoding (which looked like Lisp) and an SGML encoding which evolved into the current XML. Both of these are now obsolete, but there is still a binary encoding described in the [standard](../standard/) , which is much more compact than the XML one.
 
-In fact the XML encoding is not 100% XML. When XML was in its infancy the developers of OpenMath realised that it might become significant and decided to add some XML-like features to the SGML encoding so that an an OpenMath object could be encoded as valid XML. Thus it is currently the case that any well-formed OpenMath object encoded using the XML encoding as described in the [standard](../standard/index.html) is a valid XML document. However, if one uses standard XML tools to generate an OpenMath object in the XML encoding from the DTD given in chapter 4 of the [standard](../standard/index.html), it is possible that the result will not be valid OpenMath, although in practice this is highly unlikely. To cover all the possibilities allowed by XML would make it much more complicated to write an application to read any OpenMath object from scratch. Whether to adopt XML completely remains a hot topic of debate within the OpenMath community!
+In fact the XML encoding is not 100% XML. When XML was in its infancy the developers of OpenMath realised that it might become significant and decided to add some XML-like features to the SGML encoding so that an an OpenMath object could be encoded as valid XML. Thus it is currently the case that any well-formed OpenMath object encoded using the XML encoding as described in the [standard](../standard/) is a valid XML document. However, if one uses standard XML tools to generate an OpenMath object in the XML encoding from the DTD given in chapter 4 of the [standard](../standard/), it is possible that the result will not be valid OpenMath, although in practice this is highly unlikely. To cover all the possibilities allowed by XML would make it much more complicated to write an application to read any OpenMath object from scratch. Whether to adopt XML completely remains a hot topic of debate within the OpenMath community!
 
 Generally speaking, it is not intended that the existing encodings should be readable by a human user or writable by hand. It is desirable that they be compact and it is also desirable that they be linear, but neither of these is a requirement. It is a property of encodings that it is possible to convert between them with no loss of information.
 
@@ -165,7 +165,7 @@ This provides a symbol to represent the _log_ function by giving a pointer to a 
 
 both as plain text and as OpenMath, and also gives an example of how the symbol is used.
 
-CDs usually consist of related symbols and collections of related CDs can be grouped together, for convenience, as _CD Groups_. One very important CD Group is that corresponding to the content part of MathML. The set of CDs produced by the OpenMath Society can be browsed [here](../cd/index.html).
+CDs usually consist of related symbols and collections of related CDs can be grouped together, for convenience, as _CD Groups_. One very important CD Group is that corresponding to the content part of MathML. The set of CDs produced by the OpenMath Society can be browsed [here](../cd/).
 
 It is possible to associate extra information with CDs, in particular type information. Since there are many type systems available, each of which has its own strengths and advocates, the OpenMath community does not mandate any single system. Simple signatures can be encoded using the [Simple Type System](../standard/sts.pdf), while more formal definitions are possible using the [Extended Calculus of Constructorss](../standard/ecc.pdf). Other associated information can include style sheets for rendering OpenMath symbols in MathML, and mathematical definitions to be used by formal logic systems.
 
@@ -183,4 +183,4 @@ Writing a phrase-book may be non-trivial, and requires an understanding of the s
 
 The OpenMath standard includes a section on compliance, which describes the behaviour of an OpenMath application when certain errors occur. It also insists that all compliant software has the capability to use the XML encoding, to guarantee a degree of interoperability. This is an area where the standard is expected to evolve as more OpenMath applications become available.
 
-A list of applications of OpenMath can be found in the [software & tools](../software/index.html) section of this website.
+A list of applications of OpenMath can be found in the [software & tools](../software/) section of this website.
