@@ -14,9 +14,8 @@ on Saturday &amp; Sunday September 28/29, 2002.
 
 The [minutes of the meeting are available as PDF](Pisa2002.pdf).
 
-###Agenda
 
-####Saturday
+##Saturday
 
 
 * 10.30 Arrive
@@ -30,36 +29,26 @@ The [minutes of the meeting are available as PDF](Pisa2002.pdf).
 * 16.30 Stephane Lavirotte: Openmath/MathML/SVG [PDF](slides/lavirotte.pdf)</li>
 * 17.30 Close
 
-####Sunday
+##Sunday
 
 
 * 09.30 Proposed changes to OM standard session
-
-         David Carlisle: Binding [XML](../../standard/om11/omstd11.xml)
-
-         David Carlisle: Namespaces and Schema
-
-         Michael Kolhase: Structure Sharing [PDF](slides/kohlhase.pdf)
-         James Davenport: FMP/Definitions
-
-         Mike Dewar: XML encoding of OpenMath annotations [HTML](slides/XMLinOMATTR.htm)
+  * David Carlisle: Binding [XML](../../standard/om11/omstd11.xml)
+  * David Carlisle: Namespaces and Schema
+  * Michael Kolhase: Structure Sharing [PDF](slides/kohlhase.pdf)
+  * James Davenport: FMP/Definitions
+  * Mike Dewar: XML encoding of OpenMath annotations [HTML](slides/XMLinOMATTR.htm)
 
 * 11.30 Other projects session
-
-         Arjeh Cohen MOWGLI
-
-         James Davenport:  MKM
-
-         Winfried Neun: OpenMath in the Math-Net project. [HTML](slides/neun.htm)
-
-         Mika Seppala:   6th Framework proposal</li>
+  * Arjeh Cohen MOWGLI
+  * James Davenport:  MKM
+  * Winfried Neun: OpenMath in the Math-Net project. [HTML](slides/neun.htm)
+  * Mika Seppala:   6th Framework proposal</li>
 * 12.30 Lunch
 
 * 14.00 New CDs session
-
-         Arjeh Cohen: New CDs planar geometry CDs, poly CDs,group CDs.
-
-         James Davenport: New CDs: transc2/3; logic3;  special functions
+  * Arjeh Cohen: New CDs planar geometry CDs, poly CDs,group CDs.
+  *  James Davenport: New CDs: transc2/3; logic3;  special functions
 
 * 15.30 OpenMath TN business meeting
 
