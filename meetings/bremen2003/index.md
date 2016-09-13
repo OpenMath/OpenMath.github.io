@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OpenMath Thematic Network Meeting: Bremen 2003
+title: OpenMath Thematic Network Meeting, Bremen 2003
 ---
 International University of Bremen
 
@@ -23,7 +23,7 @@ The [minutes of the meeting are available as plain text](bremen-minutes.txt).
 * [Michael Kohlhase: A proposal from Reinaldo Barr: getting rid of the OMOBJ](no_omobj.pdf)
 * [Mike Dewar for James DavenPort: A proposal for DefMPs](DefMPs.pdf).  There is an [accompanying paper](DefMPPaper.pdf).
 * [Andreas Strotmann: Further proposals for OM2.](OMWS-Bremen-Strotmann.pdf)
-* [Mika Sepälä: WebALT - Web Advanced Learning Technologies](ALT.pd).
+* [Mika Sepala: WebALT - Web Advanced Learning Technologies](ALT.pd).
 * [Sabina Jeschke: Next generation in e-learning technology: Concepts and visions for Math and Science.](jeschke.pdf)
 * [Paul Libbrecht: Copy and Paste in ActiveMath](CopyAndPasteActiveMath_PL/index.htm) (HTML).
 * [David Carlisle for James DavenPort: Units and Dimensions in OpenMath](units.pdf).  There is an [accompanying paper](UnitsPaper.pdf).
