@@ -1,12 +1,15 @@
-<page>
+---
+layout: page
+title: 10 Years of OpenMath
+---
 
-<page-title>10 Years of OpenMath</page-title>
-
-<center><big><b>University of Helsinki</b></big></center>
-<center><big><b>May 21-22, 2004</b></big></center>
+University of Helsinki
+May 21-22, 2004
 
 
-<br/><br/>
+
+
+
 
 <table border="3mm" cellspacing="10" cellpadding="10" rules="all" frame="box"
        width="100%" summary="Presentations in PDF or HTML">
@@ -21,7 +24,7 @@
 <a href= "Seppala/slides.pdf">History of OpenMath</a>
 </td>
 <td>
-<a href="http://www.math.fsu.edu/~seppala/">Mika Sepp&#228;l&#228;</a>
+[Mika Sepp&#228;l&#228;](http://www.math.fsu.edu/~seppala/)
 </td>
 <td> <a href=
 "http://www.math.helsinki.fi/">University of Helsinki</a> and
@@ -31,17 +34,17 @@ University</a>
 </tr>
 
 <tr>
-<td><a href="Miner/index.htm">Trends in MathML Usage</a></td>
+<td>[Trends in MathML Usage](Miner/index.htm)</td>
 <td> <a href="http://www.geomtech.com/company/press.html">Robert
 Miner</a>
 </td>
-<td><a href="http://www.dessci.com/en/">Design Science</a></td>
+<td>[Design Science](http://www.dessci.com/en/)</td>
 </tr>
 
 <tr>
-<td><a href="Ion/Ptalk.pdf">Markup of and for Mathematics: Ten years of trials</a> </td>
+<td>[Markup of and for Mathematics: Ten years of trials](Ion/Ptalk.pdf) </td>
 <td>
-<a href="http://www.xml.com/pub/au/64">Patrick Ion</a>
+[Patrick Ion](http://www.xml.com/pub/au/64)
 </td>
 <td><a href=
 "http://www.ams.org/">Mathematical Reviews</a>
@@ -54,8 +57,8 @@ Miner</a>
 Objectives Accomplished</a>
 </td>
 <td>
-<a href="http://www.uni-koeln.de/~a0047/">Andreas Strotmann</a></td>
-<td><a href="http://www.uni-koeln.de/">University of Cologne</a></td>
+[Andreas Strotmann](http://www.uni-koeln.de/~a0047/)</td>
+<td>[University of Cologne](http://www.uni-koeln.de/)</td>
 </tr>
 
 <tr>
@@ -66,22 +69,22 @@ Objectives Accomplished</a>
 <a href=
 "http://www.openmath.org/cocoon/openmath/index.html">Mike
 Dewar</a></td>
-<td><a href="http://www.nag.co.uk/">NAG Ltd.</a></td>
+<td>[NAG Ltd.](http://www.nag.co.uk/)</td>
 </tr>
 
 <tr>
-<td><a href="Kohlhase/binaryOM2.pdf">OM2 binary encoding</a> </td>
+<td>[OM2 binary encoding](Kohlhase/binaryOM2.pdf) </td>
 <td> <a href="http://www.faculty.iu-bremen.de/mkohlhase/">Michael
 Kohlhase</a></td>
-<td><a href="http://www.iu-bremen.de/">IU Bremen</a></td>
+<td>[IU Bremen](http://www.iu-bremen.de/)</td>
 </tr>
 
 <tr>
-<td>Discussion (<a href="finaledit.pdf">Summary</a>)
+<td>Discussion ([Summary](finaledit.pdf))
 <td>
 <a href=
 "http://www.dcarlisle.demon.co.uk/david/">David Carlisle</a></td>
-<td><a href="http://www.nag.co.uk/">NAG Ltd.</a></td>
+<td>[NAG Ltd.](http://www.nag.co.uk/)</td>
 </td>
 </tr>
 
@@ -90,8 +93,8 @@ Kohlhase</a></td>
 Library of Mathematical Functions: LaTeX, MathML and ... OpenMath?</a>
 </td>
 <td>
-<a href="http://math.nist.gov/~BMiller/">Bruce Miller</a></td>
-<td><a href="http://www.nist.gov/">NIST</a></td>
+[Bruce Miller](http://math.nist.gov/~BMiller/)</td>
+<td>[NIST](http://www.nist.gov/)</td>
 </tr>
 
 <tr>
@@ -99,7 +102,7 @@ Library of Mathematical Functions: LaTeX, MathML and ... OpenMath?</a>
 issues arising from `Algebra Interactive'</a>
 </td>
 <td>
-<a href="http://www.win.tue.nl/~amc/">Arjeh Cohen</a></td>
+[Arjeh Cohen](http://www.win.tue.nl/~amc/)</td>
 <td><a href= "http://www.tue.nl/">TU/e</a></td>
 </tr>
 
@@ -108,8 +111,8 @@ issues arising from `Algebra Interactive'</a>
 OpenMath in High-Level Semantic Correspondences for Mathematics</a>
 </td>
 <td>
-<a href="http://www.csd.uwo.ca/~watt/">Stephen Watt</a></td>
-<td> <a href="http://www.uwo.ca/">University of Western Ontario</a></td>
+[Stephen Watt](http://www.csd.uwo.ca/~watt/)</td>
+<td> [University of Western Ontario](http://www.uwo.ca/)</td>
 </tr>
 
 <tr>
@@ -118,14 +121,17 @@ OpenMath in High-Level Semantic Correspondences for Mathematics</a>
 Project: Pedagogy, Mathematics, Web!</a>
 </td>
 <td>
-<a href="http://www.activemath.org/~paul/">Paul Libbrecht</a></td>
-<td><a href="http://www.dfki.de/">DFKI Saarbrucken</a></td>
+[Paul Libbrecht](http://www.activemath.org/~paul/)</td>
+<td>[DFKI Saarbrucken](http://www.dfki.de/)</td>
 </tr>
 </table>
 
-<br/>
-<p>This meeting was organised and supported by the OpenMath Thematic Network
-and by the Department of Mathematics and Statistics, University of
-Helsinki.</p>
 
-</page>
+
+
+This meeting was organised and supported by the OpenMath Thematic Network
+and by the Department of Mathematics and Statistics, University of
+Helsinki.
+
+
+

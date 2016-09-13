@@ -26,13 +26,17 @@ meetings.
 * Matematiikka tietoverkoissa: A workshop held in Helsinki on 26 November
 1998.
 * The [ESPRIT Project](../projects/esprit/final/) held its first [OpenMath for Industry](standrews98/) meeting at the University of St. Andrews, September 15 1998
-* Workshop 11, Tallahassee Florida, November 14-14 1998 </li>
-* Workshop 10, Berlin, January 10-11 1998 </li>
-* Workshop 9, Yorktown Heights, October 1-2 1997 </li>
-* Workshop 8, Nice, May 23-24 1997 </li>
+* Workshop 11, Tallahassee Florida, November 14-14 1998 
+
+* Workshop 10, Berlin, January 10-11 1998 
+
+* Workshop 9, Yorktown Heights, October 1-2 1997 
+
+* Workshop 8, Nice, May 23-24 1997 
+
 * The seventh OpenMath workshop was held in Dublin on 7-8th December 1996.
 [copies of some of
-the slides](oldws/proceedings-7.html) [list of participants](oldws/participants-7.html)</A>.
+the slides](oldws/proceedings-7.html) [list of participants](oldws/participants-7.html).
 * The sixth OpenMath workshop was held immediately after the ISSAC conference
 in Zurich on Saturday 27th and Sunday 28th July 1996.
 [HTML or (gzipped) PostScript](oldws/proceedings-6.html) 
