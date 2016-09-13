@@ -56,5 +56,5 @@ The final membership of the Consortium was:
 * [Research Institute for Symbolic Computation](http://www.risc.uni-linz.ac.at) (Austria)
 * [German Research Centre for Artificial Intelligence](http://www.dfki.de) (Germany )
 * [University of Helsinki](http://www.helsinki.fi) (Finland)
-* [International University of Bremen](http://www.iu-bremen.de) (Germany)
+* [International University of Bremen](http://www.jacobs-university.de) (Germany)
 * [University of Koeln](http://www.uni-koeln.de) (Germany)

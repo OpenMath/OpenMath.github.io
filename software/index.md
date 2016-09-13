@@ -34,15 +34,11 @@ If you have developed any OpenMath software that should be listed here, please s
 ## OpenMath Stylesheets
 
     <!-- BROKEN on 2010-10-19
-*  Stylesheet for <link
-uri="http://www.orcca.on.ca/~clare/om_cmml/src/omtocmml.xsl">OpenMath to
-Content MathML</link> Conversion.</li>
+*  Stylesheet for [OpenMath toContent MathML](http://www.orcca.on.ca/~clare/om_cmml/src/omtocmml.xsl) Conversion.</li>
 -->
 
 <!-- BROKEN on 2010-10-19
-*  Stylesheet for <link
-uri="http://www.orcca.on.ca/~clare/om_cmml/src/cmmltoom.xsl">
-Content MathML to OpenMath</link> Conversion.</li>
+*  Stylesheet for [Content MathML to OpenMath](http://www.orcca.on.ca/~clare/om_cmml/src/cmmltoom.xsl) Conversion.</li>
 -->
 
 <!-- BROKEN on 2010-10-19
@@ -61,7 +57,7 @@ for converting Content MathML to OpenMath.
  with news and documentation in [blog](http://dpcarlisle.blogspot.de/).
 
 
-*  <link uri="http://www.mathweb.org/omdoc/xsl.html">The OMDoc collection of XSLT stylesheets</link> for converting between OpenMath and OMDoc, OMDoc and MathML
+*  [The OMDoc collection of XSLT stylesheets](http://www.mathweb.org/omdoc/xsl.html) for converting between OpenMath and OMDoc, OMDoc and MathML
   etc.
 
 *  [DSSSL stylesheet for MathML](mml-files/index.html) Render MathML to TeX or RTF (For
@@ -70,15 +66,14 @@ for converting Content MathML to OpenMath.
 ## OpenMath Development Tools
 
     <!-- BROKEN on 2010-10-19
-* <link uri="http://www.riaca.win.tue.nl/products/openmath/lib/">The RIACA
-OpenMath library</link>, a Java library for creating and using OpenMath
+* [The RIACA OpenMath library](http://www.riaca.win.tue.nl/products/openmath/lib/), a Java library for creating and using OpenMath
 objects.
 -->
 * [INRIA C Library](OMCv1.4a.tgz), an API for reading, writing and creating OpenMath objects. 
 * [INRIA C++ Library](OMCPPv1.0a.tgz), an API for reading, writing and creating OpenMath
-  objects (requires <link uri="OMCv1.4a.tgz">INRIA C Library</link>). 
+  objects (requires [INRIA C Library](OMCv1.4a.tgz)). 
 * [INRIA Java Library](OMJv1.4.tgz), an API for reading, writing and creating OpenMath objects.
-*  An <link uri="http://www.cs.bath.ac.uk/~wn/AldorXML/index.html">OpenMath Library and XML parser</link> in the
+*  An [OpenMath Library and XML parser](http://www.cs.bath.ac.uk/~wn/AldorXML/index.html) in the
   [Aldor](http://www.aldor.org) language are available from the University of Bath (formerly from Victoria University of Wellington).
 
 ## OpenMath Editors
@@ -90,8 +85,8 @@ objects.
 * [SWiM](http://kwarc.info/projects/swim/), a Semantic Wiki for Mathematics, supports editing OpenMath CDs.  Available for self-installation, but also running at [wiki.openmath.org](http://wiki.openmath.org)
 -->
 * [Sentido](http://www.matracas.org/sentido/) is a visual and linear formula editor for OpenMath objects.  It is not currently available for standalone download, but integrated into the SWiM wiki (see above).
-* <link uri="http://www.riaca.win.tue.nl/download/om/cd/editor/">RIACA CD Editor</link>.
-* <link uri="http://www.activemath.org/projects/Jome/">The JOME OpenMath Editor</link> for creating and manipulating OpenMath objects.
+* [RIACA CD Editor](http://www.riaca.win.tue.nl/download/om/cd/editor/).
+* [The JOME OpenMath Editor](http://www.activemath.org/projects/Jome/) for creating and manipulating OpenMath objects.
   The source code is available from [sourceforge](http://sourceforge.net/projects/jome/).
 * STARS/MathWriter: A Java component which takes a simple linear input and generates
   OpenMath or MathML.  For details contact [Stilo Technology](mailto:sb@stilo.com).
