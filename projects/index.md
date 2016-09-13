@@ -1,6 +1,7 @@
 ---
 layout: page
 title: OpenMath Projects
+---
 
 These pages host information about past and present OpenMath activities.
 

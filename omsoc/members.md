@@ -70,7 +70,7 @@ The current members of the society are listed below.
 * [Christine Müller](http://kwarc.info/cmueller)
 * [Normen Müller](http://kwarc.info/nmueller)
 * [Florian Rabe](http://kwarc.info/frabe)
-* [Christoph Lange](http://kwarc.info/clange)
+* Christoph Lange
 * Patrick Ion
 * Sam Dooley
 * Margret Hitchcliffe

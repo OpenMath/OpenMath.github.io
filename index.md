@@ -23,7 +23,6 @@ Read more ... about [OpenMath](about) and the [OpenMath Society](omsoc)
 *   May 21th 2009: Announcing the [OpenMath Workshop 2010](http://cicm2010.cnam.fr/om/) (to happen July 8th 2010 aside of [CICM 2010](http://cicm2010.cnam.fr)).
 *   July 8th 2009: [OpenMath Workshop 2009](http://staff.bath.ac.uk/masjhd/OM2009.html) and [Business Meeting of the OpenMath Society](http://www.openmath.org/meetings/22/OMBusiness.pdf)
 *   February 26th 2009: Announcing the [OpenMath Workshop 2009](http://staff.bath.ac.uk/masjhd/OM2009.html) (to happen July 10th 2009 aside of [CICM 2009](http://www.orcca.on.ca/conferences/cicm09/cicm09/)).
-*   March 12th 2009: The [subversion server](http://svn.openmath.org/) was down for a few weeks and is now back (see [svn log feed](http://www.openmath.org/svnrss/openmath-svnlog.rss)).
 *   June 25th 2007: The [Business meeting of the OpenMath Society](meetings/linz2007/minutes.pdf) starts the discussion process for a new version of the OpenMath standard with the goal of aligning with the content fragment of the new MathML3 standard under development by the [Math Working Group at W3C](http://www.w3.org/Math/). Discussions will be public on the [OM3 Mailing list]( http://openmath.org/mailman/listinfo/om3).
 *   June 25th 2007: The [Business meeting of the OpenMath Society](meetings/linz2007/minutes.pdf) elects a new President ([Michael Kohlhase](http://kwarc.info/kohlhase/)), Secretary ([Olga Caprotti](http://webalt.math.helsinki.fi/content/about/people/caprotti)), CD Editor ([James Davenport](http://people.bath.ac.uk/masjhd/)), and Web Officer ([Paul Libbrecht](http://www.activemath.org/~paul/)).
 *   June 19th 2007: The programme [8th OpenMath Workshop](./meetings/linz2007/), June 25-26, Linz, Austria is public
@@ -51,11 +50,7 @@ Read more ... about [OpenMath](about) and the [OpenMath Society](omsoc)
 *   September 26 2003: [Experimental release of RELAX NG schema for OpenMath](standard/relaxng).
 *   September 25 2003: Update to [OpenMath - Guidelines for Tool Developers](projects/thematic/tools-2.pdf).
 *   September 10 2003: The electronic proceedings of the [Mathematics on the Semantic Web](http://www.openmath.org/meetings/eindhoven2003/index.html) workshop are available.
-*   September 2003: The first release of the [Foc](http://www-spi.lip6.fr/foc/index.html) library for certified computer algebra uses OpenMath as an export format.
-
-
-<p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-
+*   September 2003: The first release of the Foc library for certified computer algebra uses OpenMath as an export format.
 
 
 
