@@ -3,10 +3,9 @@ layout: page
 title: OpenMath Thematic Network
 ---
 
-The OpenMath Thematic Network, which ran from July 2001 until June 2004,
-was a European Union sponsored project (number IST-2000-29719) which was a
-follow on
-from the earlier <link url="../esprit/index.html">ESPRIT Project</link>.  
+The OpenMath Thematic Network, which ran from July 2001 until June 2004, was a European
+Union sponsored project (number IST-2000-29719) which was a follow on from the earlier
+[ESPRIT Project](../esprit/index.html).
 
 The project's main activities were:
 1. to organise workshops bringing together people working on OpenMath from around the world;
@@ -56,5 +55,5 @@ The final membership of the Consortium was:
 * [Research Institute for Symbolic Computation](http://www.risc.uni-linz.ac.at) (Austria)
 * [German Research Centre for Artificial Intelligence](http://www.dfki.de) (Germany )
 * [University of Helsinki](http://www.helsinki.fi) (Finland)
-* [International University of Bremen](http://www.jacobs-university.de) (Germany)
+* [International University of Bremen](http://www.jacobs-university.de.de) (Germany)
 * [University of Koeln](http://www.uni-koeln.de) (Germany)
