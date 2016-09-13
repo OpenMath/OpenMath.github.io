@@ -60,7 +60,7 @@ for converting Content MathML to OpenMath.
 *  [The OMDoc collection of XSLT stylesheets](http://www.mathweb.org/omdoc/xsl.html) for converting between OpenMath and OMDoc, OMDoc and MathML
   etc.
 
-*  [DSSSL stylesheet for MathML](mml-files/index.html) Render MathML to TeX or RTF (For
+*  [DSSSL stylesheet for MathML](mml-files/) Render MathML to TeX or RTF (For
    Microsoft Word)  
 
 ## OpenMath Development Tools
@@ -73,7 +73,7 @@ objects.
 * [INRIA C++ Library](OMCPPv1.0a.tgz), an API for reading, writing and creating OpenMath
   objects (requires [INRIA C Library](OMCv1.4a.tgz)). 
 * [INRIA Java Library](OMJv1.4.tgz), an API for reading, writing and creating OpenMath objects.
-*  An [OpenMath Library and XML parser](http://www.cs.bath.ac.uk/~wn/AldorXML/index.html) in the
+*  An [OpenMath Library and XML parser](http://www.cs.bath.ac.uk/~wn/AldorXML/) in the
   [Aldor](http://www.aldor.org) language are available from the University of Bath (formerly from Victoria University of Wellington).
 
 ## OpenMath Editors

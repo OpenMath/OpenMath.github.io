@@ -5,7 +5,7 @@ title: OpenMath Documentation
 
 ##The OpenMath Standard
 
-The * [OpenMath Standard](../standard/index.html) describes the
+The * [OpenMath Standard](../standard/) describes the
 structure of OpenMath objects, encodings and content dictionaries.  There are
 also a number of associated documents describing different kinds of type
 systems which can be used to augment the information in content dictionaries.
