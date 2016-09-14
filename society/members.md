@@ -3,7 +3,7 @@ layout: page
 title: OpenMath Society Members
 ---
 
-The [OpenMath Society](../../omsoc) welcomes the involvement of anybody interested in furthering
+The [OpenMath Society](../../society) welcomes the involvement of anybody interested in furthering
 its goals.  Anybody may subscribe to its
 [mailing lists](../lists) or attend its [workshops](../../meetings).
 

@@ -280,7 +280,7 @@ We are calling for contributed talks on these topics.
     [olga.caprotti@helsinki.fi](mailto:olga.caprotti@helsinki.fi).
              
 * Michael Kohlhase, Jacobs University Bremen:
-    [m.kohlhase@iu-bremen.de](,mailto:m.kohlhase@iu-bremen.de)
+    [kohlhase@kwarc.info](,mailto:kohlhase@kwarc.info)
 
 * [Paul Libbrecht, DFKI](http://www.activemath.org/~paul/):
     [paul@activemath.org](paul@activemath.org).

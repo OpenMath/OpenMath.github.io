@@ -74,9 +74,9 @@ Dewar</a></td>
 
 <tr>
 <td>[OM2 binary encoding](Kohlhase/binaryOM2.pdf) </td>
-<td> <a href="http://www.faculty.iu-bremen.de/mkohlhase/">Michael
+<td> <a href="http://kwarc.info/kohlhase">Michael
 Kohlhase</a></td>
-<td>[IU Bremen](http://www.iu-bremen.de/)</td>
+<td>[IU Bremen](http://www.jacobs-university.de/)</td>
 </tr>
 
 <tr>
