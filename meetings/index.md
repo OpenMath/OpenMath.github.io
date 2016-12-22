@@ -6,6 +6,9 @@ title: OpenMath Workshops
 From time to time various meetings are organised by the [OpenMath Society](../society) and by the various associated [OpenMath Projects](../projects).  This page collects slides and notes from those
 meetings.
 
+
+* The 27th OpenMath workshop: [Bialystok, 2016](http://www.cicm-conference.org/2016/cicm.php?event=openmath&amp;menu=general).
+* The 26th OpenMath workshop: [Coimbra, 2014](http://www.cicm-conference.org/2014/cicm.php?event=openmath&amp;menu=general).
 * The 25th OpenMath workshop: [Bath, 2013](http://www.cicm-conference.org/2013/cicm.php?event=openmath&amp;menu=general).
 * The 24th OpenMath workshop: [Bremen, 2012](http://www.cicm-conference.org/2012/cicm.php?event=openmath&amp;menu=general) ([Proceedings](http://ceur-ws.org/Vol-921/)).
 * The 23rd OpenMath workshop: [Paris 2010](http://cicm2010.cnam.fr/om/).
