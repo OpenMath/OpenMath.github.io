@@ -19,7 +19,7 @@ If you have developed any OpenMath software that should be listed here, please s
 
 * Various phrasebooks for GAP, Magma and Mathematica are available from [RIACA](http://www.riaca.win.tue.nl/products/).
 
-##OpenMath Demos and Applications
+## OpenMath Demos and Applications
 
 * [Activemath](http://www.activemath.org) A learning environment for mathematics.
 * [Algebra Interactive](http://www.win.tue.nl/~ida) An interactive algebra course.
@@ -33,19 +33,6 @@ If you have developed any OpenMath software that should be listed here, please s
 
 ## OpenMath Stylesheets
 
-    <!-- BROKEN on 2010-10-19
-*  Stylesheet for [OpenMath toContent MathML](http://www.orcca.on.ca/~clare/om_cmml/src/omtocmml.xsl) Conversion.</li>
--->
-
-<!-- BROKEN on 2010-10-19
-*  Stylesheet for [Content MathML to OpenMath](http://www.orcca.on.ca/~clare/om_cmml/src/cmmltoom.xsl) Conversion.</li>
--->
-
-<!-- BROKEN on 2010-10-19
-*  [XSLT stylesheet](http://www.cs.nmsu.edu/~bpalmer/cmml2om/)
-for converting Content MathML to OpenMath.  
--->
-
 * The current build system of the OpenMath Website is [described in a how-to](http://www.openmath.org/infrastructure/website-build.html).
   It processes normal pages with [om-page.xsl](http://svn.openmath.org/www/stylesheets/html/om-page.xsl)
   and CD pages with [cd.xsl](http://svn.openmath.org/www/cdfiles2/xsl/cd.xsl)
@@ -57,18 +44,11 @@ for converting Content MathML to OpenMath.
  with news and documentation in [blog](http://dpcarlisle.blogspot.de/).
 
 
-*  [The OMDoc collection of XSLT stylesheets](http://www.mathweb.org/omdoc/xsl.html) for converting between OpenMath and OMDoc, OMDoc and MathML
-  etc.
-
 *  [DSSSL stylesheet for MathML](mml-files/) Render MathML to TeX or RTF (For
    Microsoft Word)  
 
 ## OpenMath Development Tools
 
-    <!-- BROKEN on 2010-10-19
-* [The RIACA OpenMath library](http://www.riaca.win.tue.nl/products/openmath/lib/), a Java library for creating and using OpenMath
-objects.
--->
 * [INRIA C Library](OMCv1.4a.tgz), an API for reading, writing and creating OpenMath objects. 
 * [INRIA C++ Library](OMCPPv1.0a.tgz), an API for reading, writing and creating OpenMath
   objects (requires [INRIA C Library](OMCv1.4a.tgz)). 
@@ -78,12 +58,7 @@ objects.
 
 ## OpenMath Editors
 
-
 * [CDEditor](http://www.unirioja.es/cu/joheras/openmath-editor.html), an OpenMath Content Dictionary editor. Available for [Linux](https://esus.unirioja.es/psycotrip/archivos_documentos/linux-dist.rar) and [Windows](https://esus.unirioja.es/psycotrip/archivos_documentos/windows-dist.rar)
-<!-- Wiki no longer works, don't have resources to maintain this obsolete software.  –Christoph Lange, 2013-02-21 -->
-<!--
-* [SWiM](http://kwarc.info/projects/swim/), a Semantic Wiki for Mathematics, supports editing OpenMath CDs.  Available for self-installation, but also running at [wiki.openmath.org](http://wiki.openmath.org)
--->
 * [Sentido](http://www.matracas.org/sentido/) is a visual and linear formula editor for OpenMath objects.  It is not currently available for standalone download, but integrated into the SWiM wiki (see above).
 * [RIACA CD Editor](http://www.riaca.win.tue.nl/download/om/cd/editor/).
 * [The JOME OpenMath Editor](http://www.activemath.org/projects/Jome/) for creating and manipulating OpenMath objects.
@@ -98,7 +73,4 @@ objects.
 * [JavaMath](http://javamath.sourceforge.net/) is a free API for 
   linking computational engines (in particular Maple and GAP) into Java programs using OpenMath as the data format
 * [Krextor](http://kwarc.info/projects/krextor/) translates OpenMath CDs to RDF for use by Semantic Web applications and services
-* [MathWeb](http://www.mathweb.org/) is a system for connecting mathematical software
-  systems which speak OMDoc via a common software bus.
-
 * [OpenXM](http://www.math.sci.kobe-u.ac.jp/OpenXM/) is an infrastructure for mathematical communication which will support OpenMath.

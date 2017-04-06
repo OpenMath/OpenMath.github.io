@@ -1,17 +1,16 @@
 ---
 layout: page
 title: OpenMath Documentation
+---
 
-
-##The OpenMath Standard
+## The OpenMath Standard
 
 The * [OpenMath Standard](../standard/) describes the
 structure of OpenMath objects, encodings and content dictionaries.  There are
 also a number of associated documents describing different kinds of type
 systems which can be used to augment the information in content dictionaries.
 
-##Useful Documents
-
+## Useful Documents
 
 * [On Writing OpenMath Content Dictionaries](writingCDs.pdf)
 (PDF) A set of guidelines for prospective CD authors.
