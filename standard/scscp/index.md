@@ -25,11 +25,11 @@ following computer algebra systems:
 
 - GAP: via GAP packages:
   - OpenMath
-    Website: https://gap-packages.github.io/openmath/
-    GitHub: https://github.com/gap-packages/openmath
+    Website: [https://gap-packages.github.io/openmath/](https://gap-packages.github.io/openmath/)
+    GitHub: [https://github.com/gap-packages/openmath](https://github.com/gap-packages/openmath)
   - SCSCP
-    Website: https://gap-packages.github.io/scscp/
-    GitHub: https://github.com/gap-packages/scscp 
+    Website: [https://gap-packages.github.io/scscp/](https://gap-packages.github.io/scscp/)
+    GitHub: [https://github.com/gap-packages/scscp](https://github.com/gap-packages/scscp)
 
 - KANT - with [KANT 4 SCSCP Package](http://page.math.tu-berlin.de/~kant/kantscscp.html)
 
@@ -53,11 +53,11 @@ To facilitate SCSCP implementations, the following API and middleware is availab
 
 - Python (both versions 2 and 3): via pure pip-installable packages 
   - openmath 
-    - PyPI: https://pypi.python.org/pypi/openmath
-    - GitHub: https://github.com/OpenMath/py-openmath
+    - PyPI: [https://pypi.python.org/pypi/openmath](https://pypi.python.org/pypi/openmath)
+    - GitHub: [https://github.com/OpenMath/py-openmath](https://github.com/OpenMath/py-openmath)
   - scscp
-    - PyPI: https://pypi.python.org/pypi/scscp
-    - GitHub: https://github.com/OpenMath/py-scscp
+    - PyPI: [https://pypi.python.org/pypi/scscp](https://pypi.python.org/pypi/scscp)
+    - GitHub: [https://github.com/OpenMath/py-scscp](https://github.com/OpenMath/py-scscp)
     
 - [C/C++ SCSCP library](http://www.imcce.fr/fr/presentation/equipes/ASD/trip/trip.html)
   providing a C/C++ API to develop client and server SCSCP-compliant applications
