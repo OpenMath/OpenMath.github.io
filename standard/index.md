@@ -2,9 +2,22 @@
 layout: page
 title: The OpenMath Standards
 ---
+
+## OpenMath Standard
+
 The current edition of the OpenMath Standard is [OpenMath Version 2.0](om20-2004-06-30).
 
 [OpenMath Version 1.0](om10) and [OpenMath Version 1.1](om11)  are also available.
+
+## Symbolic Computation Software Composability Protocol (SCSCP)
+
+The current edition of the Symbolic Computation Software Composability Protocol
+is [SCSCP Version 1.3](https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf).
+
+[SCSCP Version 1.1](https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_1.pdf)
+and [SCSCP Version 1.2](https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_2.pdf) are also available.
+
+For further information, see the SCSCP page [here](scscp).
 
 ## Associated Documents
 
