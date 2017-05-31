@@ -13,22 +13,23 @@ Twitter](https://twitter.com/{{ site.author.twitter }}).
 * Follow our development on [![](../public/github.png){:.icon} GitHub](https://github.com/{{ site.github.owner_name }}).
 
 
-## Follow us with our two open mailing lists
+## Follow OpenMath with our two open mailing lists
 
 * [om@openmath.org](mailto:om@openmath.org) is a general public discussion list for any aspects of OpenMath. ([subscriptions](http://openmath.org/mailman/listinfo/om), [archives](http://openmath.org/pipermail/om/))
 
 * [om-announce@openmath.org](mailto:om-announce@openmath.org)
     is a low-volume list for general announcements related to OpenMath. ([subscriptions](http://openmath.org/mailman/listinfo/om-announce), [archives](http://openmath.org/pipermail/om-announce/))
  
-
-## Get in Touch
-
+## Get in Touch with the OpenMath Society
 
 * [om-members@openmath.org](mailto:om-members@openmath.org)
     is the private list of the society members.
 
 * [om-sc@openmath.org](mailto:om-sc@openmath.org)
     is the private list of the society steering committee.
+
+* [infrastructure@openmath.org](mailto:infrastructure@openmath.org)
+    is the list of the infrastructure group
 
 
 
