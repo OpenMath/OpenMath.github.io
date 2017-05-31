@@ -9,9 +9,9 @@ society
 * Professor [James Davenport](http://www.bath.ac.uk/~masjhd/), Vice-President
 * Dr. [Florian Rabe](http://kwarc.info/frabe) Secretary & Treasurer
 * Dr. [Patrick Ion](http://www-personal.umich.edu/~pion/) MathML Liaison
-* [Alexander Konovalov](http://blogs.cs.st-andrews.ac.uk/alexk/), Member at Large
+* Dr. [Alexander Konovalov](http://blogs.cs.st-andrews.ac.uk/alexk/), Member at Large
 * [Jan Willem Knopper](https://www.tue.nl/universiteit/faculteiten/wiskunde-informatica/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/19950962/), Member at large
-* [Tom Wiesing, Member at large](https://kwarc.info/people/twiesing)
+* [Tom Wiesing](https://kwarc.info/people/twiesing), Member at Large
 
 The committee can be contacted by [email](mailto:om-sc@openmath.org).
 
