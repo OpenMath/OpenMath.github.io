@@ -9,7 +9,10 @@ These pages host information about past and present OpenMath activities.
 
 * [The OpenDreamKit Project](http://opendreamkit.org),
 an activity funded by the European Union which started in 2015.
-
+* The [UniFormal](https://uniformal.github.io) and
+  [OMDoc (OpenMathematical Documents)](http://omdoc.org) projects use OpenMath internally
+  for representing mathematical objects and the XML encoding for communication and
+  long-term storage. 
 
 ## Previous Projects
 * [The WebAlt Project](http://webalt.math.helsinki.fi), an EU Project 2004-2007.
