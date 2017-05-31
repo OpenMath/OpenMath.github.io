@@ -20,7 +20,7 @@ Twitter](https://twitter.com/{{ site.author.twitter }}).
 * [om-announce@openmath.org](mailto:om-announce@openmath.org)
     is a low-volume list for general announcements related to OpenMath. ([subscriptions](http://openmath.org/mailman/listinfo/om-announce), [archives](http://openmath.org/pipermail/om-announce/))
  
-## Get in Touch with the OpenMath Society
+## Get in Touch with (parts of) the OpenMath Society
 
 * [om-members@openmath.org](mailto:om-members@openmath.org)
     is the private list of the society members.
