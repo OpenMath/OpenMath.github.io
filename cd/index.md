@@ -22,10 +22,6 @@ A list of all Content Dictionary Groups available on this server.
 ### [All CDs by Name](../cdnames.html)
 A list of all Content Dictionaries (including contributed Dictionaries).
 
-### [CD Contributions](../contributed.html)
-Content Dictionaries submitted by the public applying
-the [contribution workflow](../cd-contribution-form.html).
-
 ### [Index of all Symbols](../cdindex.html)
 A list of all symbols defined in any Content Dictionary (including contributed Dictionaries).
 
