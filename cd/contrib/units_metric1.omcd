@@ -1,0 +1,326 @@
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
+  <OMA>
+    <OMS cd="meta" name="CD"/>
+    <OMA>
+      <OMS cd="meta" name="CDComment"/>
+      <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDName"/>
+      <OMSTR>units_metric1</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDURL"/>
+      <OMSTR>http://www.openmath.org/cd/units_metric1.ocd</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDReviewDate"/>
+      <OMSTR>2004-04-01</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDStatus"/>
+      <OMSTR>experimental</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDate"/>
+      <OMSTR>2003-08-20</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDVersion"/>
+      <OMSTR>3</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDRevision"/>
+      <OMSTR>0</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDUses"/>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>relations1</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>arith1</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>relation1</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>units_time1</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="Description"/>
+      <OMSTR>This CD defines symbols to represent the basic physical units in the SI (syst\'eme international) system of units. It should probably be renamed units_si.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>metre</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one metre. This is the standard SI unit measure for physical distance.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>This is a base unit for the SI system</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>metre_sqrd</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one metre squared. This is the standard SI measure for physical area.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS name="eq" cd="relations1"/>
+          <OMS name="metre_sqrd" cd="units_metric1"/>
+          <OMA>
+            <OMS name="times" cd="arith1"/>
+            <OMS name="metre" cd="units_metric1"/>
+            <OMS name="metre" cd="units_metric1"/>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>litre</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one litre. This is a standard metric measure for physical volume.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>A litre is, since 1964, a cubic decimetre, or a thousandth of a cubic metre, as the FMP below states.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS name="eq" cd="relations1"/>
+          <OMA>
+            <OMS name="times" cd="arith1"/>
+            <OMI> 1000 </OMI>
+            <OMS name="litre" cd="units_metric1"/>
+          </OMA>
+          <OMA>
+            <OMS name="times" cd="arith1"/>
+            <OMI> 1 </OMI>
+            <OMA>
+              <OMS name="power" cd="arith1"/>
+              <OMS name="metre" cd="units_metric1"/>
+              <OMI> 3 </OMI>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>litre_pre1964</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the previous (1901-1964) measure of one litre. This used to be a standard metric measure for physical volume.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>A lire is, since 1901 and until 1964, the volume occupied by a kilogramme of water at maximum density and standard pressure. The difference is about 0.0028%.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>metres_per_second</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one metre per second. This is the standard SI measure for speed.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>metres_per_second_sqrd</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one metre per second squared. This is the standard SI measure for acceleration.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>second</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one second. This is the standard SI measure for time.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>The Si unit is the same as the UTC unit, to which we refer</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS name="eq" cd="relations1"/>
+          <OMS name="second" cd="units_metric1"/>
+          <OMS name="second" cd="units_time1"/>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>gramme</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one gramme. This is not quite the standard SI measure for mass, which is the kilogramme, but OpenMath chooses to regard the gramme as standard, otherwise one would have to call it the milli-kilogramme.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>This is a basic unit of the SI system</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>Newton</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one Newton. This is the standard SI measure for force.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>Joule</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one Joule. This is the standard SI measure for energy.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>Watt</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one Watt. This is the standard SI measure for power.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>degree_Kelvin</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one degree Kelvin. This is a standard SI measure for temperature relative to absolute zero.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>degree_Celsius</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one degree Celsius. This is a standard metric measure for temperature.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>Pascal</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one Newton per square metre. This is the standard SI measure for pressure.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>Newton_per_sqr_metre</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one Newton per square metre. This is another (deprecated in OpenMath) name for the standard SI measure for pressure, the Pascal.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS name="eq" cd="relation1"/>
+          <OMS name="Newton_per_sqr_metre" cd="units_metric1"/>
+          <OMS name="Pascal" cd="units_metric1"/>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>Coulomb</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one Coulomb. This is the standard SI measure for charge.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>amp</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one amp. This is the standard SI measure for current.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>volt</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the measure of one volt. This is the standard SI measure for voltage.</OMSTR>
+      </OMA>
+    </OMA>
+  </OMA>
+</OMOBJ>

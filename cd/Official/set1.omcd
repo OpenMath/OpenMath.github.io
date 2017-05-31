@@ -1,0 +1,762 @@
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
+  <OMA>
+    <OMS cd="meta" name="CD"/>
+    <OMA>
+      <OMS cd="meta" name="CDComment"/>
+      <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDName"/>
+      <OMSTR>set1</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDBase"/>
+      <OMSTR>http://www.openmath.org/cd</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDURL"/>
+      <OMSTR>http://www.openmath.org/cd/set1.ocd</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDReviewDate"/>
+      <OMSTR>2006-03-30</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDate"/>
+      <OMSTR>2004-03-30</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDVersion"/>
+      <OMSTR>3</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDRevision"/>
+      <OMSTR>0</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDStatus"/>
+      <OMSTR>official</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="Description"/>
+      <OMSTR>This CD defines the set functions and constructors for basic set theory. It is intended to be `compatible' with the corresponding elements in MathML.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>cartesian_product</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents an n-ary construction function for constructing the Cartesian product of sets. It takes n set arguments in order to construct their Cartesian product.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>An example to show the representation of the Cartesian product of sets: AxBxC.</OMSTR>
+        <OMA>
+          <OMS cd="set1" name="cartesian_product"/>
+          <OMV name="A"/>
+          <OMV name="B"/>
+          <OMV name="C"/>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>emptyset</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol is used to represent the empty set, that is the set which contains no members. It takes no parameters.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>The intersection of A with the emptyset is the emptyset</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="set1" name="intersect"/>
+            <OMV name="A"/>
+            <OMS cd="set1" name="emptyset"/>
+          </OMA>
+          <OMS cd="set1" name="emptyset"/>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>The union of A with the emptyset is A</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="set1" name="union"/>
+            <OMV name="A"/>
+            <OMS cd="set1" name="emptyset"/>
+          </OMA>
+          <OMV name="A"/>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>the size of the empty set is zero</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="set1" name="size"/>
+            <OMS cd="set1" name="emptyset"/>
+          </OMA>
+          <OMS cd="alg1" name="zero"/>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>map</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents a mapping function which may be used to construct sets, it takes as arguments a function from X to Y and a set over X in that order. The value that is returned is a set of values in Y. The argument list may be a set or an integer_interval.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The set of even values between 0 and 20, that is the values 2x, where x ranges over the integral interval [0,10].</OMSTR>
+        <OMA>
+          <OMS cd="set1" name="map"/>
+          <OMBIND>
+            <OMS cd="fns1" name="lambda"/>
+            <OMBVAR>
+              <OMV name="x"/>
+            </OMBVAR>
+            <OMA>
+              <OMS cd="arith1" name="times"/>
+              <OMI> 2 </OMI>
+              <OMV name="x"/>
+            </OMA>
+          </OMBIND>
+          <OMA>
+            <OMS cd="interval1" name="integer_interval"/>
+            <OMI> 0 </OMI>
+            <OMI> 10 </OMI>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>size</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol is used to denote the number of elements in a set. It is either a non-negative integer, or an infinite cardinal number. The symbol infinity may be used for an unspecified infinite cardinal.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The size of the set{3,6,9} = 3</OMSTR>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="set1" name="size"/>
+            <OMA>
+              <OMS cd="set1" name="set"/>
+              <OMI> 3 </OMI>
+              <OMI> 6 </OMI>
+              <OMI> 9 </OMI>
+            </OMA>
+          </OMA>
+          <OMI> 3 </OMI>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The size of the set of integers is infinite</OMSTR>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="set1" name="size"/>
+            <OMS cd="setname1" name="Z"/>
+          </OMA>
+          <OMS cd="nums1" name="infinity"/>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>suchthat</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the suchthat function which may be used to construct sets, it takes two arguments. The first argument should be the set which contains the elements of the set we wish to represent, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the set returned.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>This example shows how to construct the set of even integers, using the suchthat constructor.</OMSTR>
+        <OMA>
+          <OMS cd="set1" name="suchthat"/>
+          <OMS cd="setname1" name="Z"/>
+          <OMBIND>
+            <OMS cd="fns1" name="lambda"/>
+            <OMBVAR>
+              <OMV name="x"/>
+            </OMBVAR>
+            <OMA>
+              <OMS cd="set1" name="in"/>
+              <OMA>
+                <OMS cd="arith1" name="divide"/>
+                <OMV name="x"/>
+                <OMI> 2 </OMI>
+              </OMA>
+              <OMS cd="setname1" name="Z"/>
+            </OMA>
+          </OMBIND>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>set</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the set construct. It is an n-ary function. The set entries are given explicitly. There is no implied ordering to the elements of a set.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The set {3, 6, 9}</OMSTR>
+        <OMA>
+          <OMS cd="set1" name="set"/>
+          <OMI> 3 </OMI>
+          <OMI> 6 </OMI>
+          <OMI> 9 </OMI>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>intersect</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol is used to denote the n-ary intersection of sets. It takes sets as arguments, and denotes the set that contains all the elements that occur in all of them.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>(A intersect B) is a subset of A and (A intersect B) is a subset of B</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="and"/>
+          <OMA>
+            <OMS cd="set1" name="subset"/>
+            <OMA>
+              <OMS cd="set1" name="intersect"/>
+              <OMV name="A"/>
+              <OMV name="B"/>
+            </OMA>
+            <OMV name="A"/>
+          </OMA>
+          <OMA>
+            <OMS cd="set1" name="subset"/>
+            <OMA>
+              <OMS cd="set1" name="intersect"/>
+              <OMV name="A"/>
+              <OMV name="B"/>
+            </OMA>
+            <OMV name="B"/>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>union</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol is used to denote the n-ary union of sets. It takes sets as arguments, and denotes the set that contains all the elements that occur in any of them.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>A is a subset of (A union B) and B is a subset of (A union B)</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="and"/>
+          <OMA>
+            <OMS cd="set1" name="subset"/>
+            <OMV name="A"/>
+            <OMA>
+              <OMS cd="set1" name="union"/>
+              <OMV name="A"/>
+              <OMV name="B"/>
+            </OMA>
+          </OMA>
+          <OMA>
+            <OMS cd="set1" name="subset"/>
+            <OMV name="B"/>
+            <OMA>
+              <OMS cd="set1" name="union"/>
+              <OMV name="A"/>
+              <OMV name="B"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>for all sets A,B and C union(A,intersect(B,C)) = intersect(union(A,B),union(A,C))</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="A"/>
+            <OMV name="B"/>
+            <OMV name="C"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="relation1" name="eq"/>
+            <OMA>
+              <OMS cd="set1" name="union"/>
+              <OMV name="A"/>
+              <OMA>
+                <OMS cd="set1" name="intersect"/>
+                <OMV name="B"/>
+                <OMV name="C"/>
+              </OMA>
+            </OMA>
+            <OMA>
+              <OMS cd="set1" name="intersect"/>
+              <OMA>
+                <OMS cd="set1" name="union"/>
+                <OMV name="A"/>
+                <OMV name="B"/>
+              </OMA>
+              <OMA>
+                <OMS cd="set1" name="union"/>
+                <OMV name="A"/>
+                <OMV name="C"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>setdiff</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol is used to denote the set difference of two sets. It takes two sets as arguments, and denotes the set that contains all the elements that occur in the first set, but not in the second.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>the difference of A and B is a subset of A</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="set1" name="subset"/>
+          <OMA>
+            <OMS cd="set1" name="setdiff"/>
+            <OMV name="A"/>
+            <OMV name="B"/>
+          </OMA>
+          <OMV name="A"/>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>subset</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol has two (set) arguments. It is used to denote that the first set is a subset of the second.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>if B is a subset of A and C is a subset of B then C is a subset of A</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="implies"/>
+          <OMA>
+            <OMS cd="logic1" name="and"/>
+            <OMA>
+              <OMS cd="set1" name="subset"/>
+              <OMV name="B"/>
+              <OMV name="A"/>
+            </OMA>
+            <OMA>
+              <OMS cd="set1" name="subset"/>
+              <OMV name="C"/>
+              <OMV name="B"/>
+            </OMA>
+          </OMA>
+          <OMA>
+            <OMS cd="set1" name="subset"/>
+            <OMV name="C"/>
+            <OMV name="A"/>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>in</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol has two arguments, an element and a set. It is used to denote that the element is in the given set.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>if a is in A and a is in B then a is in A intersect B</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="implies"/>
+          <OMA>
+            <OMS cd="logic1" name="and"/>
+            <OMA>
+              <OMS cd="set1" name="in"/>
+              <OMV name="a"/>
+              <OMV name="A"/>
+            </OMA>
+            <OMA>
+              <OMS cd="set1" name="in"/>
+              <OMV name="a"/>
+              <OMV name="B"/>
+            </OMA>
+          </OMA>
+          <OMA>
+            <OMS cd="set1" name="in"/>
+            <OMV name="a"/>
+            <OMA>
+              <OMS cd="set1" name="intersect"/>
+              <OMV name="A"/>
+              <OMV name="B"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>notin</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol has two arguments, an element and a set. It is used to denote that the element is not in the given set.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>if a is a member of a then it is not true that a is not a member of A</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="implies"/>
+          <OMA>
+            <OMS cd="set1" name="in"/>
+            <OMV name="a"/>
+            <OMV name="A"/>
+          </OMA>
+          <OMA>
+            <OMS cd="logic1" name="not"/>
+            <OMA>
+              <OMS cd="set1" name="notin"/>
+              <OMV name="a"/>
+              <OMV name="A"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>4 is not in {1,2,3}</OMSTR>
+        <OMA>
+          <OMS cd="set1" name="notin"/>
+          <OMI> 4 </OMI>
+          <OMA>
+            <OMS cd="set1" name="set"/>
+            <OMI> 1 </OMI>
+            <OMI> 2 </OMI>
+            <OMI> 3 </OMI>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>prsubset</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol has two (set) arguments. It is used to denote that the first set is a proper subset of the second, that is a subset of the second set but not actually equal to it.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>A is a proper subset of B implies that A is a subset of B and A not= B</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="implies"/>
+          <OMA>
+            <OMS cd="set1" name="prsubset"/>
+            <OMV name="A"/>
+            <OMV name="B"/>
+          </OMA>
+          <OMA>
+            <OMS cd="logic1" name="and"/>
+            <OMA>
+              <OMS cd="set1" name="subset"/>
+              <OMV name="A"/>
+              <OMV name="B"/>
+            </OMA>
+            <OMA>
+              <OMS cd="relation1" name="neq"/>
+              <OMV name="A"/>
+              <OMV name="B"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>{2,3} is a proper subset of {1,2,3}</OMSTR>
+        <OMA>
+          <OMS cd="set1" name="prsubset"/>
+          <OMA>
+            <OMS cd="set1" name="set"/>
+            <OMI> 2 </OMI>
+            <OMI> 3 </OMI>
+          </OMA>
+          <OMA>
+            <OMS cd="set1" name="set"/>
+            <OMI> 1 </OMI>
+            <OMI> 2 </OMI>
+            <OMI> 3 </OMI>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>notsubset</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol has two (set) arguments. It is used to denote that the first set is not a subset of the second.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>if A is not a subset of B then there exists an x in B s.t. x is not a member of B</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="implies"/>
+          <OMA>
+            <OMS cd="set1" name="notsubset"/>
+            <OMV name="A"/>
+            <OMV name="B"/>
+          </OMA>
+          <OMBIND>
+            <OMS cd="quant1" name="exists"/>
+            <OMBVAR>
+              <OMV name="x"/>
+            </OMBVAR>
+            <OMA>
+              <OMS cd="logic1" name="and"/>
+              <OMA>
+                <OMS cd="set1" name="in"/>
+                <OMV name="x"/>
+                <OMV name="B"/>
+              </OMA>
+              <OMA>
+                <OMS cd="set1" name="notin"/>
+                <OMV name="x"/>
+                <OMV name="A"/>
+              </OMA>
+            </OMA>
+          </OMBIND>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>{2,3,4} is not a subset of {1,2,3}</OMSTR>
+        <OMA>
+          <OMS cd="set1" name="notsubset"/>
+          <OMA>
+            <OMS cd="set1" name="set"/>
+            <OMI> 2 </OMI>
+            <OMI> 3 </OMI>
+            <OMI> 4 </OMI>
+          </OMA>
+          <OMA>
+            <OMS cd="set1" name="set"/>
+            <OMI> 1 </OMI>
+            <OMI> 2 </OMI>
+            <OMI> 3 </OMI>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>notprsubset</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>application</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol has two (set) arguments. It is used to denote that the first set is not a proper subset of the second. A proper subset of a set is a subset of the set but not actually equal to it.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>A is not a proper subset of B implies that it is not true that A is a proper subset of B</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="implies"/>
+          <OMA>
+            <OMS cd="set1" name="notprsubset"/>
+            <OMV name="A"/>
+            <OMV name="B"/>
+          </OMA>
+          <OMA>
+            <OMS cd="logic1" name="not"/>
+            <OMA>
+              <OMS cd="set1" name="prsubset"/>
+              <OMV name="A"/>
+              <OMV name="B"/>
+            </OMA>
+          </OMA>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>{1,2,3} is not a proper subset of {1,2,3}</OMSTR>
+        <OMA>
+          <OMS cd="set1" name="notprsubset"/>
+          <OMA>
+            <OMS cd="set1" name="set"/>
+            <OMI> 1 </OMI>
+            <OMI> 2 </OMI>
+            <OMI> 3 </OMI>
+          </OMA>
+          <OMA>
+            <OMS cd="set1" name="set"/>
+            <OMI> 1 </OMI>
+            <OMI> 2 </OMI>
+            <OMI> 3 </OMI>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+  </OMA>
+</OMOBJ>

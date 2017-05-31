@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>ecc</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: ecc</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://http://www.openmath.org/cd/ecc.ocd">http://http://www.openmath.org/cd/ecc.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="ecc.ocd">ecc.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="ecc.omcd">ecc.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#Pair">Pair</a>, <a href="#PairProj1">PairProj1</a>, <a href="#PairProj2">PairProj2</a>, <a href="#SigmaType">SigmaType</a>, <a href="#Tuple">Tuple</a>, <a href="#type">type</a>, <a href="#typecoerce">typecoerce</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd>2004-03-30</dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd>2</dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd>2006-03-30</dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+      </dl>
+      <hr/>
+
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+    
+
+    
+    
+    
+    
+    
+    
+      <p>
+    Extended Calculus of Constructions Primitives
+    Initial version: O. Caprotti (July 1, 1999)
+    Revised: O. Caprotti (September 8, 1999)
+   </p>
+    
+  
+      <hr/>
+        <h2>
+         <a name="type"> type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>semantic-attribution</dd>
+      </dl>
+        <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> Attribution tag to denote type-judgement
+        </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/ecc.xhtml#type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#typecoerce">typecoerce</a>]
+	  
+	    [Last: <a href="#Tuple">Tuple</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+        <h2>
+         <a name="typecoerce"> typecoerce </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>semantic-attribution</dd>
+      </dl>
+        <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> Attribution tag to denote type-judgement with coercion
+        </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/ecc.xhtml#typecoerce">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#SigmaType">SigmaType</a>]
+	  
+	    [Previous: <a href="#type">type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+ 
+
+      <hr/>
+        <h2>
+         <a name="SigmaType"> SigmaType </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>binder</dd>
+      </dl>
+        <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> The binder symbol used to construct the
+  	type of Cartesian products.  The (either plain or attributed)
+  	variables might occur in the body \OM\ object.
+         </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/ecc.xhtml#SigmaType">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#Pair">Pair</a>]
+	  
+	    [Previous: <a href="#typecoerce">typecoerce</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+ 
+      <hr/>
+        <h2>
+         <a name="Pair"> Pair </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+        <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> The pairing constructor. It takes two 
+               OpenMath objects as first element and second 
+               element of the pair, and a third optional 
+               OpenMath object that represents the type of 
+               the pair.  
+        </p>
+         </dd>
+      </dl>    
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e84xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e84xml')">OpenMath XML (source)</button>
+               <pre id="d40e84xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+    &lt;OMA&gt;
+    &lt;OMS cd="ecc" name="Pair"/&gt;
+    &lt;OMI&gt;0&lt;/OMI&gt;
+    &lt;OMI&gt;1&lt;/OMI&gt;
+    &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e84cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e84cmml')">Strict Content MathML</button>
+               <pre id="d40e84cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e84prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e84pref')">Prefix</button>
+            <div id="d40e84pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/ecc.xhtml#Pair">Pair</a>
+  (0, 1)
+
+    </div>
+            <div>
+               <button id="d40e84popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e84pop')">Popcorn</button>
+               <div id="d40e84pop" style="display:none; margin-top: 0.5em">
+    ecc.Pair(0, 1)
+    </div>
+            </div>
+            <div>
+               <button id="d40e84mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e84mml')">Rendered Presentation MathML</button>
+               <div id="d40e84mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>Pair</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mn>0</mn>
+                           <mo>,</mo>
+                           <mn>1</mn>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/ecc.xhtml#Pair">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#PairProj1">PairProj1</a>]
+	  
+	    [Previous: <a href="#SigmaType">SigmaType</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+        <h2>
+         <a name="PairProj1"> PairProj1 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+        <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> The first projection function that extracts the first
+	component of a Pair. It satisfies the sigma-reduction rule.
+        </p>
+         </dd>
+      </dl>
+        <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+	           <div>
+               <button id="d40e113xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e113xml')">OpenMath XML (source)</button>
+               <pre id="d40e113xml" style="display:none">
+	&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+	&lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+	&lt;OMA&gt;&lt;OMS cd="ecc" name="PairProj1"/&gt;
+	&lt;OMA&gt;&lt;OMS cd="ecc" name="Pair"/&gt;
+	     &lt;OMI&gt;0&lt;/OMI&gt;
+             &lt;OMI&gt;1&lt;/OMI&gt;
+	&lt;/OMA&gt;
+	&lt;/OMA&gt;
+	&lt;OMI&gt;0&lt;/OMI&gt;
+	&lt;/OMA&gt;
+	&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e113cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e113cmml')">Strict Content MathML</button>
+               <pre id="d40e113cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ecc"&gt;PairProj1&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;cn&gt;0&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e113prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e113pref')">Prefix</button>
+            <div id="d40e113pref" style="display:none; margin-top: 0.5em">
+	              <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/ecc.xhtml#PairProj1">PairProj1</a>
+  (<a href="../../../cd/ecc.xhtml#Pair">Pair</a>
+  (0, 1)
+)
+, 0)
+
+	</div>
+            <div>
+               <button id="d40e113popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e113pop')">Popcorn</button>
+               <div id="d40e113pop" style="display:none; margin-top: 0.5em">
+	ecc.PairProj1(ecc.Pair(0, 1)) = 0
+	</div>
+            </div>
+            <div>
+               <button id="d40e113mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e113mml')">Rendered Presentation MathML</button>
+               <div id="d40e113mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+	                    <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>PairProj1</mi>
+                           <mo>⁡</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>Pair</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>0</mn>
+                                    <mo>,</mo>
+                                    <mn>1</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                     </mrow>
+	                 </math>
+               </div>
+            </div>	
+	        </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/ecc.xhtml#PairProj1">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#PairProj2">PairProj2</a>]
+	  
+	    [Previous: <a href="#Pair">Pair</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+        <h2>
+         <a name="PairProj2"> PairProj2 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+        <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> The second projection function that extracts the second
+	component of a Pair. It satisfies sigma-reduction rule.
+        </p>
+         </dd>
+      </dl>
+        <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+	           <div>
+               <button id="d40e152xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e152xml')">OpenMath XML (source)</button>
+               <pre id="d40e152xml" style="display:none">
+	&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+	&lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+	&lt;OMA&gt;&lt;OMS cd="ecc" name="PairProj2"/&gt;
+	&lt;OMA&gt;&lt;OMS cd="ecc" name="Pair"/&gt;
+	     &lt;OMI&gt;0&lt;/OMI&gt;
+             &lt;OMI&gt;1&lt;/OMI&gt;
+	&lt;/OMA&gt;
+	&lt;/OMA&gt;
+	&lt;OMI&gt;1&lt;/OMI&gt;
+	&lt;/OMA&gt;
+	&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e152cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e152cmml')">Strict Content MathML</button>
+               <pre id="d40e152cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ecc"&gt;PairProj2&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;cn&gt;1&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e152prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e152pref')">Prefix</button>
+            <div id="d40e152pref" style="display:none; margin-top: 0.5em">
+	              <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/ecc.xhtml#PairProj2">PairProj2</a>
+  (<a href="../../../cd/ecc.xhtml#Pair">Pair</a>
+  (0, 1)
+)
+, 1)
+
+	</div>
+            <div>
+               <button id="d40e152popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e152pop')">Popcorn</button>
+               <div id="d40e152pop" style="display:none; margin-top: 0.5em">
+	ecc.PairProj2(ecc.Pair(0, 1)) = 1
+	</div>
+            </div>
+            <div>
+               <button id="d40e152mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e152mml')">Rendered Presentation MathML</button>
+               <div id="d40e152mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+	                    <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>PairProj2</mi>
+                           <mo>⁡</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>Pair</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>0</mn>
+                                    <mo>,</mo>
+                                    <mn>1</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                     </mrow>
+	                 </math>
+               </div>
+            </div>	
+	        </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/ecc.xhtml#PairProj2">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#Tuple">Tuple</a>]
+	  
+	    [Previous: <a href="#PairProj1">PairProj1</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+
+      <hr/>
+        <h2>
+         <a name="Tuple"> Tuple </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl> 
+	     <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> The n-ary tupling constructor when n&gt;2.  The
+        arguments are the element of the tuple. Tuple objects can also
+        be constructed by successive nesting of Pair.
+        </p>
+         </dd>
+      </dl>	
+	     <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+	           <div>
+               <button id="d40e191xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e191xml')">OpenMath XML (source)</button>
+               <pre id="d40e191xml" style="display:none">
+	&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+	&lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+	     &lt;OMA&gt;&lt;OMS cd="ecc" name="Pair"/&gt;
+	          &lt;OMI&gt;0&lt;/OMI&gt;
+	          &lt;OMA&gt;&lt;OMS cd="ecc" name="Pair"/&gt;
+                  &lt;OMI&gt;1&lt;/OMI&gt;
+	          &lt;OMI&gt;2&lt;/OMI&gt;
+	          &lt;/OMA&gt;
+	     &lt;/OMA&gt;
+       	     &lt;OMA&gt;&lt;OMS cd="ecc" name="Tuple"/&gt;
+	          &lt;OMI&gt;0&lt;/OMI&gt;	
+		  &lt;OMI&gt;1&lt;/OMI&gt;	
+		  &lt;OMI&gt;2&lt;/OMI&gt;
+             &lt;/OMA&gt;
+	&lt;/OMA&gt;
+	&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e191cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e191cmml')">Strict Content MathML</button>
+               <pre id="d40e191cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;
+   &lt;cn&gt;0&lt;/cn&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Tuple&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e191prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e191pref')">Prefix</button>
+            <div id="d40e191pref" style="display:none; margin-top: 0.5em">
+	              <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/ecc.xhtml#Pair">Pair</a>
+  (0, <a href="../../../cd/ecc.xhtml#Pair">Pair</a>
+  (1, 2)
+)
+, <a href="../../../cd/ecc.xhtml#Tuple">Tuple</a>
+  (0, 1, 2)
+)
+
+	</div>
+            <div>
+               <button id="d40e191popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e191pop')">Popcorn</button>
+               <div id="d40e191pop" style="display:none; margin-top: 0.5em">
+	ecc.Pair(0, ecc.Pair(1, 2)) = ecc.Tuple(0, 1, 2)
+	</div>
+            </div>
+            <div>
+               <button id="d40e191mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e191mml')">Rendered Presentation MathML</button>
+               <div id="d40e191mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+	                    <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>Pair</mi>
+                           <mo>⁡</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mn>0</mn>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mi>Pair</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>1</mn>
+                                    <mo>,</mo>
+                                    <mn>2</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mi>Tuple</mi>
+                           <mo>⁡</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mn>0</mn>
+                              <mo>,</mo>
+                              <mn>1</mn>
+                              <mo>,</mo>
+                              <mn>2</mn>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+	                 </math>
+               </div>
+            </div>		
+	        </dd>
+      </dl>	
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/ecc.xhtml#Tuple">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#type">type</a>]
+	  
+	    [Previous: <a href="#PairProj2">PairProj2</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

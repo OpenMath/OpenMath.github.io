@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>hypergeon1</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: hypergeon1</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.math.kobe-u.ac.jp/OCD/hypergeon1.tfb">http://www.math.kobe-u.ac.jp/OCD/hypergeon1.tfb</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="hypergeon1.ocd">hypergeon1.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="hypergeon1.omcd">hypergeon1.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#a_hypergeomeric">a_hypergeomeric</a>, <a href="#falling_factorial">falling_factorial</a>, <a href="#falling_multi_factorial">falling_multi_factorial</a>, <a href="#raising_multi_factorial">raising_multi_factorial</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2002-07-30, 2003-11-30 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 1 
+    (Revision 1)
+  </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd> 2003-07-30 </dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+         <dt>
+            <span class="dt">Uses CD:</span>
+         </dt>
+         <dd>
+            <a href="../../../cd/hypergeon0.xhtml">hypergeon0</a>, <a href="../../../cd/arith1.xhtml">arith1</a>, <a href="../../../cd/fns1.xhtml">fns1</a>, <a href="../../../cd/interval1.xhtml">interval1</a>, <a href="../../../cd/linalg1.xhtml">linalg1</a>, <a href="../../../cd/linalg4.xhtml">linalg4</a>, <a href="../../../cd/relation1.xhtml">relation1</a>, <a href="../../../cd/set1.xhtml">set1</a>
+         </dd>
+      </dl>
+      <hr/>
+
+
+
+
+
+
+
+
+
+      <p> 
+This CD defines symbols for A-hypergeometric series
+</p>
+
+      <hr/>
+      <h2>
+         <a name="falling_factorial"> falling_factorial </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  falling_factorial(n,i) is equal to n*(n-1)* ... *(n-i+1).
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/hypergeon1.xhtml#falling_factorial">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#raising_multi_factorial">raising_multi_factorial</a>]
+	  
+	    [Last: <a href="#a_hypergeomeric">a_hypergeomeric</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="raising_multi_factorial"> raising_multi_factorial </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  raising_multi_factorial is a product of pochhammer symbols.
+  2-ary function.
+  reference:  
+    authors: "Saito, Sturmfels,  Takayama"
+    title: "Grobner Deformations of Hypergeometric
+            Differential Equations"
+    pages: 127
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+  $ [v]_{u_+} = \prod_{i \in \Z\cap[0,n] :\ u_i &gt; 0} (v_i+1)_{u_i} $
+</dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e83xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e83xml')">OpenMath XML (source)</button>
+               <pre id="d40e83xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeon1" name="raising_multi_factorial"/&gt;
+      &lt;OMV name="v"/&gt;
+      &lt;OMV name="u"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="product"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="set1" name="intersect"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+          &lt;OMI&gt; 1 &lt;/OMI&gt;
+          &lt;OMV name="n"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="set1" name="suchthat"/&gt;
+          &lt;OMS cd="setname1" name="Z"/&gt;
+          &lt;OMBIND&gt;
+            &lt;OMS cd="fns1" name="lambda"/&gt;
+            &lt;OMBVAR&gt;
+              &lt;OMV name="i"/&gt;
+            &lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="gt"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+                &lt;OMV name="i"/&gt;
+                &lt;OMV name="u"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMI&gt; 0 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+          &lt;/OMBIND&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="i"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+              &lt;OMV name="i"/&gt;
+              &lt;OMV name="v"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMI&gt; 1 &lt;/OMI&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+            &lt;OMV name="i"/&gt;
+            &lt;OMV name="u"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e83cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e83cmml')">Strict Content MathML</button>
+               <pre id="d40e83cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeon1"&gt;raising_multi_factorial&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;product&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;intersect&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;suchthat&lt;/csymbol&gt;
+     &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+     &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;gt&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+       &lt;cn&gt;0&lt;/cn&gt;
+      &lt;/apply&gt;
+     &lt;/bind&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;/apply&gt;
+      &lt;cn&gt;1&lt;/cn&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e83prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e83pref')">Prefix</button>
+            <div id="d40e83pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/hypergeon1.xhtml#raising_multi_factorial">raising_multi_factorial</a>
+  ( <i>v</i>,  <i>u</i>)
+, <a href="../../../cd/arith1.xhtml#product">product</a>
+  (<a href="../../../cd/set1.xhtml#intersect">intersect</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 1 ,  <i>n</i>)
+, <a href="../../../cd/set1.xhtml#suchthat">suchthat</a>
+  (<a href="../../../cd/setname1.xhtml#Z">Z</a>, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+               <i>i</i>
+            ] .
+  (<a href="../../../cd/arith1.xhtml#gt">gt</a>
+  (<a href="../../../cd/linalg1.xhtml#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>u</i>)
+,  0 )
+)
+)
+)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+           <i>i</i>
+        ] .
+  (<a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/linalg1.xhtml#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>v</i>)
+,  1 )
+, <a href="../../../cd/linalg1.xhtml#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>u</i>)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e83popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e83pop')">Popcorn</button>
+               <div id="d40e83pop" style="display:none; margin-top: 0.5em">
+  hypergeon1.raising_multi_factorial($v, $u) = arith1.product(set1.intersect(interval1.integer_interval(1, $n), set1.suchthat(setname1.Z, fns1.lambda[$i -&gt; arith1.gt(linalg1.vector_selector($i, $u), 0)])), fns1.lambda[$i -&gt; hypergeo0.pochhammer(linalg1.vector_selector($i, $v) + 1, linalg1.vector_selector($i, $u))])
+</div>
+            </div>
+            <div>
+               <button id="d40e83mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e83mml')">Rendered Presentation MathML</button>
+               <div id="d40e83mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>raising_multi_factorial</mi>
+                           <mo>⁡</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>v</mi>
+                              <mo>,</mo>
+                              <mi>u</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <munder>
+                           <mo>∏</mo>
+                           <mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                              <mo>in</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo>[</mo>
+                                    <mn> 1 </mn>
+                                    <mo separator="true">,</mo>
+                                    <mi>n</mi>
+                                    <mo>]</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mi>i</mi>
+                                       <mo>∈</mo>
+                                       <mi mathvariant="double-struck">Z</mi>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mrow>
+                                       <mi>gt</mi>
+                                       <mo>⁡</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>u</mi>
+                                             <mi>i</mi>
+                                          </msub>
+                                          <mo>,</mo>
+                                          <mn> 0 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </munder>
+                        <mrow>
+                           <mi>pochhammer</mi>
+                           <mo>⁡</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <msub>
+                                    <mi>v</mi>
+                                    <mi>i</mi>
+                                 </msub>
+                                 <mo>+</mo>
+                                 <mn> 1 </mn>
+                              </mrow>
+                              <mo>,</mo>
+                              <msub>
+                                 <mi>u</mi>
+                                 <mi>i</mi>
+                              </msub>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/hypergeon1.xhtml#raising_multi_factorial">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#falling_multi_factorial">falling_multi_factorial</a>]
+	  
+	    [Previous: <a href="#falling_factorial">falling_factorial</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="falling_multi_factorial"> falling_multi_factorial </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  falling_multi_factorial is a product of falling pochhammer symbols.
+  2-ary function.
+ reference:
+    authors: "Saito, Sturmfels,  Takayama"
+    title: "Grobner Deformations of Hypergeometric
+            Differential Equations"
+    pages: 127 
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+  $ [v]_{u_-} = \prod_{i \in \Z\cap[0,n] :\ u_i &lt; 0} v_i (v_i-1) \cdots (v_i + u_i-1) $
+</dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e199xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e199xml')">OpenMath XML (source)</button>
+               <pre id="d40e199xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeon1" name="falling_multi_factorial"/&gt;
+      &lt;OMV name="v"/&gt;
+      &lt;OMV name="u"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="product"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="set1" name="intersect"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+          &lt;OMI&gt; 1 &lt;/OMI&gt;
+          &lt;OMV name="n"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="set1" name="suchthat"/&gt;
+          &lt;OMS cd="setname1" name="Z"/&gt;
+          &lt;OMBIND&gt;
+            &lt;OMS cd="fns1" name="lambda"/&gt;
+            &lt;OMBVAR&gt;
+              &lt;OMV name="i"/&gt;
+            &lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="lt"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+                &lt;OMV name="i"/&gt;
+                &lt;OMV name="u"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMI&gt; 0 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+          &lt;/OMBIND&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="i"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeon1" name="falling_factorial"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+            &lt;OMV name="i"/&gt;
+            &lt;OMV name="v"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="unary_minus"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+              &lt;OMV name="i"/&gt;
+              &lt;OMV name="u"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e199cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e199cmml')">Strict Content MathML</button>
+               <pre id="d40e199cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeon1"&gt;falling_multi_factorial&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;product&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;intersect&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;suchthat&lt;/csymbol&gt;
+     &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+     &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;lt&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+       &lt;cn&gt;0&lt;/cn&gt;
+      &lt;/apply&gt;
+     &lt;/bind&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeon1"&gt;falling_factorial&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e199prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e199pref')">Prefix</button>
+            <div id="d40e199pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/hypergeon1.xhtml#falling_multi_factorial">falling_multi_factorial</a>
+  ( <i>v</i>,  <i>u</i>)
+, <a href="../../../cd/arith1.xhtml#product">product</a>
+  (<a href="../../../cd/set1.xhtml#intersect">intersect</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 1 ,  <i>n</i>)
+, <a href="../../../cd/set1.xhtml#suchthat">suchthat</a>
+  (<a href="../../../cd/setname1.xhtml#Z">Z</a>, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+               <i>i</i>
+            ] .
+  (<a href="../../../cd/arith1.xhtml#lt">lt</a>
+  (<a href="../../../cd/linalg1.xhtml#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>u</i>)
+,  0 )
+)
+)
+)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+           <i>i</i>
+        ] .
+  (<a href="../../../cd/hypergeon1.xhtml#falling_factorial">falling_factorial</a>
+  (<a href="../../../cd/linalg1.xhtml#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>v</i>)
+, <a href="../../../cd/arith1.xhtml#unary_minus">unary_minus</a>
+  (<a href="../../../cd/linalg1.xhtml#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>u</i>)
+)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e199popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e199pop')">Popcorn</button>
+               <div id="d40e199pop" style="display:none; margin-top: 0.5em">
+  hypergeon1.falling_multi_factorial($v, $u) = arith1.product(set1.intersect(interval1.integer_interval(1, $n), set1.suchthat(setname1.Z, fns1.lambda[$i -&gt; arith1.lt(linalg1.vector_selector($i, $u), 0)])), fns1.lambda[$i -&gt; hypergeon1.falling_factorial(linalg1.vector_selector($i, $v),  -(linalg1.vector_selector($i, $u)))])
+</div>
+            </div>
+            <div>
+               <button id="d40e199mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e199mml')">Rendered Presentation MathML</button>
+               <div id="d40e199mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>falling_multi_factorial</mi>
+                           <mo>⁡</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>v</mi>
+                              <mo>,</mo>
+                              <mi>u</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <munder>
+                           <mo>∏</mo>
+                           <mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                              <mo>in</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo>[</mo>
+                                    <mn> 1 </mn>
+                                    <mo separator="true">,</mo>
+                                    <mi>n</mi>
+                                    <mo>]</mo>
+                                 </mrow>
+                                 <mo>∩</mo>
+                                 <mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mi>i</mi>
+                                       <mo>∈</mo>
+                                       <mi mathvariant="double-struck">Z</mi>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mrow>
+                                       <mi>lt</mi>
+                                       <mo>⁡</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>u</mi>
+                                             <mi>i</mi>
+                                          </msub>
+                                          <mo>,</mo>
+                                          <mn> 0 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </munder>
+                        <mrow>
+                           <mi>falling_factorial</mi>
+                           <mo>⁡</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <msub>
+                                 <mi>v</mi>
+                                 <mi>i</mi>
+                              </msub>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>-</mo>
+                                 <msub>
+                                    <mi>u</mi>
+                                    <mi>i</mi>
+                                 </msub>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/hypergeon1.xhtml#falling_multi_factorial">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#a_hypergeomeric">a_hypergeomeric</a>]
+	  
+	    [Previous: <a href="#raising_multi_factorial">raising_multi_factorial</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="a_hypergeomeric"> a_hypergeomeric </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  A-hypergeometric series
+ reference:
+    authors: "Saito, Sturmfels,  Takayama"
+    title: "Grobner Deformations of Hypergeometric
+            Differential Equations"
+    pages: 127
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+  $ \phi(A,v,x) = \sum_{u \in \kernel{\Z^n \stackrel \Z^d}}
+           \frac{[v]_{u_-}}{[v+u]_{u_+}} x^{v+u} $
+</dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e311xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e311xml')">OpenMath XML (source)</button>
+               <pre id="d40e311xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="hypergeon0" name="where"/&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS cd="fns1" name="lambda"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="n"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;&lt;OMS name="a_hypergeometric"/&gt;
+          &lt;OMV name="a"/&gt;
+          &lt;OMV name="v"/&gt;
+          &lt;OMV name="x"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="sum"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="hypergeon0" name="kernel"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="hypergeon0" name="cartesian_product_n"/&gt;
+              &lt;OMS cd="setname1" name="Z"/&gt;
+              &lt;OMV name="n"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMV name="a"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMBIND&gt;
+            &lt;OMS cd="fns1" name="lambda"/&gt;
+            &lt;OMBVAR&gt;
+              &lt;OMV name="u"/&gt;
+            &lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+                &lt;OMA&gt;&lt;OMS cd="hypergeon1" name="falling_multi_factorial"/&gt;
+                  &lt;OMV name="v"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="hyergeon0" name="minus_part"/&gt;
+                    &lt;OMV name="u"/&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;&lt;OMS cd="hypergeon1" name="raising_multi_factorial"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                    &lt;OMV name="v"/&gt;
+                    &lt;OMV name="u"/&gt;
+                  &lt;/OMA&gt;
+                  &lt;OMA&gt;&lt;OMS cd="hypergeon0" name="plus_part"/&gt;
+                    &lt;OMV name="u"/&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMA&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon0" name="multi_power"/&gt;
+                &lt;OMV name="x"/&gt;
+                &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                  &lt;OMV name="v"/&gt;
+                  &lt;OMV name="u"/&gt;
+                &lt;/OMA&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+          &lt;/OMBIND&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMV name="n"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="linalg4" name="columncount"/&gt;
+        &lt;OMV name="a"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e311cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e311cmml')">Strict Content MathML</button>
+               <pre id="d40e311cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="hypergeon0"&gt;where&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd=""&gt;a_hypergeometric&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="hypergeon0"&gt;kernel&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="hypergeon0"&gt;cartesian_product_n&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+     &lt;/apply&gt;
+     &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;csymbol cd="hypergeon1"&gt;falling_multi_factorial&lt;/csymbol&gt;
+         &lt;ci&gt;v&lt;/ci&gt;
+         &lt;apply&gt;&lt;csymbol cd="hyergeon0"&gt;minus_part&lt;/csymbol&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+        &lt;/apply&gt;
+        &lt;apply&gt;&lt;csymbol cd="hypergeon1"&gt;raising_multi_factorial&lt;/csymbol&gt;
+         &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+         &lt;apply&gt;&lt;csymbol cd="hypergeon0"&gt;plus_part&lt;/csymbol&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+        &lt;/apply&gt;
+       &lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon0"&gt;multi_power&lt;/csymbol&gt;
+        &lt;ci&gt;x&lt;/ci&gt;
+        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+       &lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/bind&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;ci&gt;n&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;columncount&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e311prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e311pref')">Prefix</button>
+            <div id="d40e311pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/hypergeon0.xhtml#where">where</a>
+  (<a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+         <i>n</i>
+      ] .
+  (<a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/.xhtml#a_hypergeometric">a_hypergeometric</a>
+  ( <i>a</i>,  <i>v</i>,  <i>x</i>)
+, <a href="../../../cd/arith1.xhtml#sum">sum</a>
+  (<a href="../../../cd/hypergeon0.xhtml#kernel">kernel</a>
+  (<a href="../../../cd/hypergeon0.xhtml#cartesian_product_n">cartesian_product_n</a>
+  (<a href="../../../cd/setname1.xhtml#Z">Z</a>,  <i>n</i>)
+,  <i>a</i>)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+               <i>u</i>
+            ] .
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/hypergeon1.xhtml#falling_multi_factorial">falling_multi_factorial</a>
+  ( <i>v</i>, <a href="../../../cd/hyergeon0.xhtml#minus_part">minus_part</a>
+  ( <i>u</i>)
+)
+, <a href="../../../cd/hypergeon1.xhtml#raising_multi_factorial">raising_multi_factorial</a>
+  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+  ( <i>v</i>,  <i>u</i>)
+, <a href="../../../cd/hypergeon0.xhtml#plus_part">plus_part</a>
+  ( <i>u</i>)
+)
+)
+, <a href="../../../cd/hypergeon0.xhtml#multi_power">multi_power</a>
+  ( <i>x</i>, <a href="../../../cd/arith1.xhtml#plus">plus</a>
+  ( <i>v</i>,  <i>u</i>)
+)
+)
+)
+)
+)
+)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  ( <i>n</i>, <a href="../../../cd/linalg4.xhtml#columncount">columncount</a>
+  ( <i>a</i>)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e311popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e311pop')">Popcorn</button>
+               <div id="d40e311pop" style="display:none; margin-top: 0.5em">
+  hypergeon0.where(fns1.lambda[$n -&gt; .a_hypergeometric($a, $v, $x) = arith1.sum(hypergeon0.kernel(hypergeon0.cartesian_product_n(setname1.Z, $n), $a), fns1.lambda[$u -&gt; hypergeon1.falling_multi_factorial($v, hyergeon0.minus_part($u)) / hypergeon1.raising_multi_factorial($v + $u, hypergeon0.plus_part($u)) * hypergeon0.multi_power($x, $v + $u)])], $n = linalg4.columncount($a))
+</div>
+            </div>
+            <div>
+               <button id="d40e311mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e311mml')">Rendered Presentation MathML</button>
+               <div id="d40e311mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>where</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mo>λ</mo>
+                              <mo> </mo>
+                              <mrow>
+                                 <mi>n</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>a_hypergeometric</mi>
+                                    <mo>⁡</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>v</mi>
+                                       <mo>,</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <munder>
+                                    <mo>∑</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>u</mi>
+                                       </mrow>
+                                       <mo>in</mo>
+                                       <mrow>
+                                          <mi>kernel</mi>
+                                          <mo>⁡</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cartesian_product_n</mi>
+                                                <mo>⁡</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi mathvariant="double-struck">Z</mi>
+                                                   <mo>,</mo>
+                                                   <mi>n</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mi>a</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </munder>
+                                 <mrow>
+                                    <mfrac>
+                                       <mrow>
+                                          <mi>falling_multi_factorial</mi>
+                                          <mo>⁡</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>v</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>minus_part</mi>
+                                                <mo>⁡</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>u</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mrow>
+                                          <mi>raising_multi_factorial</mi>
+                                          <mo>⁡</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>v</mi>
+                                                <mo>+</mo>
+                                                <mi>u</mi>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>plus_part</mi>
+                                                <mo>⁡</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>u</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mfrac>
+                                    <mo>⁢</mo>
+                                    <mrow>
+                                       <mi>multi_power</mi>
+                                       <mo>⁡</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>x</mi>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>v</mi>
+                                             <mo>+</mo>
+                                             <mi>u</mi>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>n</mi>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>columncount</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+
+
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/hypergeon1.xhtml#a_hypergeomeric">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#falling_factorial">falling_factorial</a>]
+	  
+	    [Previous: <a href="#falling_multi_factorial">falling_multi_factorial</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

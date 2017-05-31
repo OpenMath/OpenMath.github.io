@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>polyr</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: polyr</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/polyd.ocd">http://www.openmath.org/cd/polyd.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="polyr.ocd">polyr.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="polyr.omcd">polyr.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#poly_r_rep">poly_r_rep</a>, <a href="#polynomial_r">polynomial_r</a>, <a href="#polynomial_ring_r">polynomial_ring_r</a>, <a href="#term">term</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd>2004-03-30</dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd>3</dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd>2006-03-30</dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+      </dl>
+      <hr/>
+
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+   
+ 
+   
+    
+    
+   
+   
+   
+      <p>
+     This CD contains operators to deal with polynomials and more precisely 
+     Recursive Polynomials.
+     Note that polynomials are regarded as univariates in their most
+     significant variable (as defined by the order in PolynomialRingR:
+     the first variable to appear is the most significant),
+     with monomials in decreasing order of exponent, and coefficients
+     being polynomials in the rest of the variables. This means that 
+     polynomials have a unique representation, except for the fact that
+     yz \in Z[x,y,z] could also be represented as x^0yz. This latter is
+     discouraged, but currently not expressly forbidden.
+   </p>
+
+      <pre>
+Original OpenMath v1.1 Poly 1997
+Update to Current Format 1999-07-07 DPC
+Move the names of rings to setname1.ocd 1999-11-09 JHD
+Delete those items moved to the new poly.ocd 1999-11-14 JHD
+Convert to recursive polynomials 1999-11-20 JHD
+</pre>
+
+      <pre>
+     Definition of data-structure constructors
+</pre>
+
+      <pre>
+     The polynomial x^2*y^6 + 3*y^5 can be conceptually encoded as
+     poly_r_rep(x,
+           term(2,poly_r_rep(y,
+                            term(6,1))),
+           term(0,poly_r_rep(y,
+                            term(5,3))))
+     It lies in polynomial_ring_r(Z,x,y) (and other rings, of course)
+
+     The polynomial 2*y^3*z^5 + x + 1 can be conceptually encoded as
+     poly_r_rep(x,
+           term(1,1),
+           term(0,poly_r_rep(y,
+                            term(3,poly_r_rep(z,
+                                             term(5,2))),
+                            term(0,1))))
+</pre>
+
+      <hr/>
+       <h2>
+         <a name="term"> term </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+       <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+          A constructor for monomials, that is products of powers and
+          elements of the base ring.
+          First argument is from N (the exponent of the variable
+          implied by an outer poly_r_rep)
+          second argument is a coefficient (from the ground field, or a
+          polynomial in lesser variables).
+       </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/polyr.xhtml#term">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#poly_r_rep">poly_r_rep</a>]
+	  
+	    [Last: <a href="#polynomial_ring_r">polynomial_ring_r</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+       <h2>
+         <a name="poly_r_rep"> poly_r_rep </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+       <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+         A constructor for the representation of polynomials.
+         The first argument is the polynomial variable, the rest are
+         monomials (in decreasing order of exponent). 
+       </p>
+         </dd>
+      </dl>
+       <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+
+         The polynomial x^2*y^6 + 3*x^0*y^5 = x^2*y^6 + 3*y^5 may be 
+         encoded as:
+
+         <div>
+               <button id="d40e69xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e69xml')">OpenMath XML (source)</button>
+               <pre id="d40e69xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+           &lt;OMA&gt;
+             &lt;OMS name="poly_r_rep" cd="polyr"/&gt;
+             &lt;OMV name="x"/&gt;
+             &lt;OMA&gt;
+               &lt;OMS name="term" cd="polyr"/&gt;
+               &lt;OMI&gt; 2 &lt;/OMI&gt;
+               &lt;OMA&gt;
+                 &lt;OMS name="poly_r_rep" cd="polyr"/&gt;
+                 &lt;OMV name="y"/&gt;
+                 &lt;OMA&gt;
+                   &lt;OMS name="term" cd="polyr"/&gt;
+                   &lt;OMI&gt; 6 &lt;/OMI&gt;
+                   &lt;OMI&gt; 1 &lt;/OMI&gt;
+                 &lt;/OMA&gt;
+               &lt;/OMA&gt;
+             &lt;/OMA&gt;
+             &lt;OMA&gt;
+               &lt;OMS name="term" cd="polyr"/&gt;
+               &lt;OMI&gt; 0 &lt;/OMI&gt;
+               &lt;OMA&gt;
+                 &lt;OMS name="poly_r_rep" cd="polyr"/&gt;
+                 &lt;OMV name="y"/&gt;
+                 &lt;OMA&gt;
+                   &lt;OMS name="term" cd="polyr"/&gt;
+                   &lt;OMI&gt; 5 &lt;/OMI&gt;
+                   &lt;OMI&gt; 3 &lt;/OMI&gt;
+                 &lt;/OMA&gt;
+               &lt;/OMA&gt;
+             &lt;/OMA&gt;
+           &lt;/OMA&gt;
+         &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e69cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e69cmml')">Strict Content MathML</button>
+               <pre id="d40e69cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="polyr"&gt;poly_r_rep&lt;/csymbol&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyr"&gt;term&lt;/csymbol&gt;
+   &lt;cn&gt;2&lt;/cn&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyr"&gt;poly_r_rep&lt;/csymbol&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyr"&gt;term&lt;/csymbol&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyr"&gt;term&lt;/csymbol&gt;
+   &lt;cn&gt;0&lt;/cn&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyr"&gt;poly_r_rep&lt;/csymbol&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyr"&gt;term&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e69prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e69pref')">Prefix</button>
+            <div id="d40e69pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/polyr.xhtml#poly_r_rep">poly_r_rep</a>
+  ( <i>x</i>, <a href="../../../cd/polyr.xhtml#term">term</a>
+  ( 2 , <a href="../../../cd/polyr.xhtml#poly_r_rep">poly_r_rep</a>
+  ( <i>y</i>, <a href="../../../cd/polyr.xhtml#term">term</a>
+  ( 6 ,  1 )
+)
+)
+, <a href="../../../cd/polyr.xhtml#term">term</a>
+  ( 0 , <a href="../../../cd/polyr.xhtml#poly_r_rep">poly_r_rep</a>
+  ( <i>y</i>, <a href="../../../cd/polyr.xhtml#term">term</a>
+  ( 5 ,  3 )
+)
+)
+)
+
+         </div>
+            <div>
+               <button id="d40e69popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e69pop')">Popcorn</button>
+               <div id="d40e69pop" style="display:none; margin-top: 0.5em">
+           polyr.poly_r_rep($x, polyr.term(2, polyr.poly_r_rep($y, polyr.term(6, 1))), polyr.term(0, polyr.poly_r_rep($y, polyr.term(5, 3))))
+         </div>
+            </div>
+            <div>
+               <button id="d40e69mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e69mml')">Rendered Presentation MathML</button>
+               <div id="d40e69mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>poly_r_rep</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi>x</mi>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>term</mi>
+                              <mo>⁡</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn> 2 </mn>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>poly_r_rep</mi>
+                                    <mo>⁡</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>y</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>term</mi>
+                                          <mo>⁡</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mn> 6 </mn>
+                                             <mo>,</mo>
+                                             <mn> 1 </mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>term</mi>
+                              <mo>⁡</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn> 0 </mn>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>poly_r_rep</mi>
+                                    <mo>⁡</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>y</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>term</mi>
+                                          <mo>⁡</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mn> 5 </mn>
+                                             <mo>,</mo>
+                                             <mn> 3 </mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/polyr.xhtml#poly_r_rep">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#polynomial_r">polynomial_r</a>]
+	  
+	    [Previous: <a href="#term">term</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+       <h2>
+         <a name="polynomial_r"> polynomial_r </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+       <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+         The constructor of Recursive Polynomials. The first argument
+         is the polynomial ring containing the polynomial and the second
+         is a "poly_r_rep". 
+       </p>
+         </dd>
+      </dl>
+
+       <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+         The polynomial x^2*y^6 + 3*x^0*y^5 = x^2*y^6 + 3*y^5 in the 
+         polynomial ring with the integers as the coefficient ring and 
+         variables x,y in that order may be encoded as:
+
+         <div>
+               <button id="d40e146xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e146xml')">OpenMath XML (source)</button>
+               <pre id="d40e146xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+           &lt;OMA&gt;
+             &lt;OMS name="polynomial_r" cd="polyr"/&gt;
+             &lt;OMA&gt;
+               &lt;OMS name="polynomial_ring_r" cd="polyr"/&gt;
+               &lt;OMS name="Z" cd="setname1"/&gt;
+               &lt;OMV name="x"/&gt;
+               &lt;OMV name="y"/&gt;
+             &lt;/OMA&gt;
+             &lt;OMA&gt;
+               &lt;OMS name="poly_r_rep" cd="polyr"/&gt;
+               &lt;OMV name="x"/&gt;
+               &lt;OMA&gt;
+                 &lt;OMS name="term" cd="polyr"/&gt;
+                 &lt;OMI&gt; 2 &lt;/OMI&gt;
+                 &lt;OMA&gt;
+                   &lt;OMS name="poly_r_rep" cd="polyr"/&gt;
+                   &lt;OMV name="y"/&gt;
+                   &lt;OMA&gt;
+                     &lt;OMS name="term" cd="polyr"/&gt;
+                     &lt;OMI&gt; 6 &lt;/OMI&gt;
+                     &lt;OMI&gt; 1 &lt;/OMI&gt;
+                   &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;
+                 &lt;OMS name="term" cd="polyr"/&gt;
+                 &lt;OMI&gt; 0 &lt;/OMI&gt;
+                 &lt;OMA&gt;
+                   &lt;OMS name="poly_r_rep" cd="polyr"/&gt;
+                   &lt;OMV name="y"/&gt;
+                   &lt;OMA&gt;
+                     &lt;OMS name="term" cd="polyr"/&gt;
+                     &lt;OMI&gt; 5 &lt;/OMI&gt;
+                     &lt;OMI&gt; 3 &lt;/OMI&gt;
+                   &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+               &lt;/OMA&gt;
+             &lt;/OMA&gt;
+           &lt;/OMA&gt;
+         &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e146cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e146cmml')">Strict Content MathML</button>
+               <pre id="d40e146cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="polyr"&gt;polynomial_r&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyr"&gt;polynomial_ring_r&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+   &lt;ci&gt;y&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyr"&gt;poly_r_rep&lt;/csymbol&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyr"&gt;term&lt;/csymbol&gt;
+    &lt;cn&gt;2&lt;/cn&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyr"&gt;poly_r_rep&lt;/csymbol&gt;
+     &lt;ci&gt;y&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyr"&gt;term&lt;/csymbol&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyr"&gt;term&lt;/csymbol&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyr"&gt;poly_r_rep&lt;/csymbol&gt;
+     &lt;ci&gt;y&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyr"&gt;term&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e146prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e146pref')">Prefix</button>
+            <div id="d40e146pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/polyr.xhtml#polynomial_r">polynomial_r</a>
+  (<a href="../../../cd/polyr.xhtml#polynomial_ring_r">polynomial_ring_r</a>
+  (<a href="../../../cd/setname1.xhtml#Z">Z</a>,  <i>x</i>,  <i>y</i>)
+, <a href="../../../cd/polyr.xhtml#poly_r_rep">poly_r_rep</a>
+  ( <i>x</i>, <a href="../../../cd/polyr.xhtml#term">term</a>
+  ( 2 , <a href="../../../cd/polyr.xhtml#poly_r_rep">poly_r_rep</a>
+  ( <i>y</i>, <a href="../../../cd/polyr.xhtml#term">term</a>
+  ( 6 ,  1 )
+)
+)
+, <a href="../../../cd/polyr.xhtml#term">term</a>
+  ( 0 , <a href="../../../cd/polyr.xhtml#poly_r_rep">poly_r_rep</a>
+  ( <i>y</i>, <a href="../../../cd/polyr.xhtml#term">term</a>
+  ( 5 ,  3 )
+)
+)
+)
+)
+
+         </div>
+            <div>
+               <button id="d40e146popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e146pop')">Popcorn</button>
+               <div id="d40e146pop" style="display:none; margin-top: 0.5em">
+           polyr.polynomial_r(polyr.polynomial_ring_r(setname1.Z, $x, $y), polyr.poly_r_rep($x, polyr.term(2, polyr.poly_r_rep($y, polyr.term(6, 1))), polyr.term(0, polyr.poly_r_rep($y, polyr.term(5, 3)))))
+         </div>
+            </div>
+            <div>
+               <button id="d40e146mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e146mml')">Rendered Presentation MathML</button>
+               <div id="d40e146mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>polynomial_r</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>polynomial_ring_r</mi>
+                              <mo>⁡</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi mathvariant="double-struck">Z</mi>
+                                 <mo>,</mo>
+                                 <mi>x</mi>
+                                 <mo>,</mo>
+                                 <mi>y</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>poly_r_rep</mi>
+                              <mo>⁡</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>x</mi>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>term</mi>
+                                    <mo>⁡</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 2 </mn>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>poly_r_rep</mi>
+                                          <mo>⁡</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>y</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>⁡</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn> 6 </mn>
+                                                   <mo>,</mo>
+                                                   <mn> 1 </mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>term</mi>
+                                    <mo>⁡</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 0 </mn>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>poly_r_rep</mi>
+                                          <mo>⁡</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>y</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>⁡</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn> 5 </mn>
+                                                   <mo>,</mo>
+                                                   <mn> 3 </mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/polyr.xhtml#polynomial_r">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#polynomial_ring_r">polynomial_ring_r</a>]
+	  
+	    [Previous: <a href="#poly_r_rep">poly_r_rep</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <pre>
+    Polynomial ring constructor
+</pre>
+
+
+      <hr/>
+       <h2>
+         <a name="polynomial_ring_r"> polynomial_ring_r </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+       <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+         The constructor of a recursive polynomial ring. The first argument
+         is a ring (the ring of the coefficients), the rest are the 
+         variables (in order).
+       </p>
+         </dd>
+      </dl>
+       <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e243xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e243xml')">OpenMath XML (source)</button>
+               <pre id="d40e243xml" style="display:none">
+         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+           &lt;OMA&gt;
+             &lt;OMS name="polynomial_ring_r" cd="polyr"/&gt;
+             &lt;OMS name="Z" cd="setname1"/&gt;
+             &lt;OMV name="x"/&gt;
+             &lt;OMV name="y"/&gt;
+           &lt;/OMA&gt;
+         &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e243cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e243cmml')">Strict Content MathML</button>
+               <pre id="d40e243cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="polyr"&gt;polynomial_ring_r&lt;/csymbol&gt;
+  &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+  &lt;ci&gt;y&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e243prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e243pref')">Prefix</button>
+            <div id="d40e243pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/polyr.xhtml#polynomial_ring_r">polynomial_ring_r</a>
+  (<a href="../../../cd/setname1.xhtml#Z">Z</a>,  <i>x</i>,  <i>y</i>)
+
+         </div>
+            <div>
+               <button id="d40e243popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e243pop')">Popcorn</button>
+               <div id="d40e243pop" style="display:none; margin-top: 0.5em">
+           polyr.polynomial_ring_r(setname1.Z, $x, $y)
+         </div>
+            </div>
+            <div>
+               <button id="d40e243mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e243mml')">Rendered Presentation MathML</button>
+               <div id="d40e243mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>polynomial_ring_r</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi mathvariant="double-struck">Z</mi>
+                           <mo>,</mo>
+                           <mi>x</mi>
+                           <mo>,</mo>
+                           <mi>y</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/polyr.xhtml#polynomial_ring_r">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#term">term</a>]
+	  
+	    [Previous: <a href="#polynomial_r">polynomial_r</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

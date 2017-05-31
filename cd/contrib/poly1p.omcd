@@ -1,0 +1,281 @@
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
+  <OMA>
+    <OMS cd="meta" name="CD"/>
+    <OMA>
+      <OMS cd="meta" name="CDName"/>
+      <OMSTR>poly1p</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDURL"/>
+      <OMSTR>http://www.math.kobe-u.ac.jp/OCD/poly1p.tfb</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDReviewDate"/>
+      <OMSTR>2003-08-08</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDStatus"/>
+      <OMSTR>experimental</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDate"/>
+      <OMSTR>2002-08-08</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDVersion"/>
+      <OMSTR>1</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDRevision"/>
+      <OMSTR>0</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDUses"/>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>linalg1p</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>poly1p</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>set1p</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>logic1p</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>arith1</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>fns1</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>interval1</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>linalg1</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>linalg4</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>relation1</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CDName"/>
+        <OMSTR>set1</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="Description"/>
+      <OMSTR>This CD defines symbols for concerning multi-index and indexed variables.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>multi_power</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>multi_power is for using the multi-index notation.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMA>
+          <OMS cd="meta" name="tex"/>
+          <OMSTR>$\prod_{i=1}^n x_i ^ {e_i}$</OMSTR>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="poly1p" name="multi_power"/>
+            <OMV name="x"/>
+            <OMV name="e"/>
+          </OMA>
+          <OMA>
+            <OMS cd="arith1" name="product"/>
+            <OMA>
+              <OMS cd="interval1" name="integer_interval"/>
+              <OMI> 1 </OMI>
+              <OMA>
+                <OMS cd="linalg4" name="size"/>
+                <OMV name="x"/>
+              </OMA>
+            </OMA>
+            <OMBIND>
+              <OMS cd="fns1" name="lambda"/>
+              <OMBVAR>
+                <OMV name="i"/>
+              </OMBVAR>
+              <OMA>
+                <OMS cd="arith1" name="power"/>
+                <OMA>
+                  <OMS cd="linalg1" name="vector_selector"/>
+                  <OMV name="i"/>
+                  <OMV name="x"/>
+                </OMA>
+                <OMA>
+                  <OMS cd="linalg1" name="vector_selector"/>
+                  <OMV name="i"/>
+                  <OMV name="e"/>
+                </OMA>
+              </OMA>
+            </OMBIND>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>index</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>index returns the index of a given indexed variable.</OMSTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>indexed_variable</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>indexed_variable(x,i) returns the variable x_i</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>index(indexed_variable(x,i)) = i</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS name="index"/>
+            <OMA>
+              <OMS name="indexed_variable"/>
+              <OMV name="x"/>
+              <OMV name="i"/>
+            </OMA>
+          </OMA>
+          <OMV name="i"/>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>index(indexed_variable(x,[1,2])) = [1,2]</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS name="index"/>
+            <OMA>
+              <OMS name="indexed_variable"/>
+              <OMV name="x"/>
+              <OMA>
+                <OMS cd="linalg2" name="vector"/>
+                <OMI> 1 </OMI>
+                <OMI> 2 </OMI>
+              </OMA>
+            </OMA>
+          </OMA>
+          <OMA>
+            <OMS cd="linalg2" name="vector"/>
+            <OMI> 1 </OMI>
+            <OMI> 2 </OMI>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>vector_of_indexed_variables</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>vector_of_indexed_variables(x,n) returns the vector of variables (x_1, ..., x_n). vector_of_indexed_variables(x,[m,n]) returns the vector of variables (x_{1,1}, ..., x_{m,n}). Any vector of numbers can be given as an argument.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>i-th element of vector_of_indexed_variable(x,n) is indexed_variable(x,i)</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="linalg1" name="vector_selector"/>
+            <OMV name="i"/>
+            <OMA>
+              <OMS name="vector_of_indexed_variables"/>
+              <OMV name="x"/>
+              <OMV name="n"/>
+            </OMA>
+          </OMA>
+          <OMA>
+            <OMS name="indexed_variable"/>
+            <OMV name="x"/>
+            <OMV name="i"/>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>sorted_set_of_indexed_variables</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>sorted_set_of_indexed_variables(x,s) returns the vector of variables indexed by the sorted set s.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>m-element of sorted_set_of_indexed_variables(x,s) is indexed_variable(x,m)</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="relation1" name="eq"/>
+          <OMA>
+            <OMS cd="set1p" name="index_set_selector"/>
+            <OMV name="m"/>
+            <OMA>
+              <OMS name="sorted_set_of_indexed_variables"/>
+              <OMV name="x"/>
+              <OMV name="s"/>
+            </OMA>
+          </OMA>
+          <OMA>
+            <OMS name="indexed_variable"/>
+            <OMV name="x"/>
+            <OMV name="m"/>
+          </OMA>
+        </OMA>
+      </OMA>
+    </OMA>
+  </OMA>
+</OMOBJ>

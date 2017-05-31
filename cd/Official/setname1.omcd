@@ -1,0 +1,581 @@
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
+  <OMA>
+    <OMS cd="meta" name="CD"/>
+    <OMA>
+      <OMS cd="meta" name="CDComment"/>
+      <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDName"/>
+      <OMSTR>setname1</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDBase"/>
+      <OMSTR>http://www.openmath.org/cd</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDURL"/>
+      <OMSTR>http://www.openmath.org/cd/setname1.ocd</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDReviewDate"/>
+      <OMSTR>2006-03-30</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDate"/>
+      <OMSTR>2004-03-30</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDVersion"/>
+      <OMSTR>3</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDRevision"/>
+      <OMSTR>0</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDStatus"/>
+      <OMSTR>official</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="Description"/>
+      <OMSTR>This CD defines common sets of mathematics</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDComment"/>
+      <OMSTR>Written by J.H. Davenport on 1999-04-18. Revised to add Zm, GFp, GFpn on 1999-11-09. Revised to add QuotientField and A on 1999-11-19.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>P</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the set of positive prime numbers.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>for all n | n is a positive prime number is equivalent to: n is a natural number and n &gt; 1 and ((n=a*b and a and b are natural numbers) implies ((a=1 and b=n) or (b=1 and a=n)))</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMBIND>
+          <OMS name="forall" cd="quant1"/>
+          <OMBVAR>
+            <OMV name="n"/>
+          </OMBVAR>
+          <OMA>
+            <OMS name="equivalent" cd="logic1"/>
+            <OMA>
+              <OMS name="in" cd="set1"/>
+              <OMV name="n"/>
+              <OMS name="P" cd="setname1"/>
+            </OMA>
+            <OMA>
+              <OMS name="and" cd="logic1"/>
+              <OMA>
+                <OMS name="in" cd="set1"/>
+                <OMV name="n"/>
+                <OMS name="N" cd="setname1"/>
+              </OMA>
+              <OMA>
+                <OMS name="gt" cd="relation1"/>
+                <OMV name="n"/>
+                <OMS name="one" cd="alg1"/>
+              </OMA>
+              <OMA>
+                <OMS name="implies" cd="logic1"/>
+                <OMA>
+                  <OMS name="and" cd="logic1"/>
+                  <OMA>
+                    <OMS name="eq" cd="relation1"/>
+                    <OMV name="n"/>
+                    <OMA>
+                      <OMS name="times" cd="arith1"/>
+                      <OMV name="a"/>
+                      <OMV name="b"/>
+                    </OMA>
+                  </OMA>
+                  <OMA>
+                    <OMS name="in" cd="set1"/>
+                    <OMV name="a"/>
+                    <OMS name="N" cd="setname1"/>
+                  </OMA>
+                  <OMA>
+                    <OMS name="in" cd="set1"/>
+                    <OMV name="b"/>
+                    <OMS name="N" cd="setname1"/>
+                  </OMA>
+                </OMA>
+                <OMA>
+                  <OMS name="or" cd="logic1"/>
+                  <OMA>
+                    <OMS name="and" cd="logic1"/>
+                    <OMA>
+                      <OMS name="eq" cd="relation1"/>
+                      <OMV name="a"/>
+                      <OMS name="one" cd="alg1"/>
+                    </OMA>
+                    <OMA>
+                      <OMS name="eq" cd="relation1"/>
+                      <OMV name="b"/>
+                      <OMV name="n"/>
+                    </OMA>
+                  </OMA>
+                  <OMA>
+                    <OMS name="and" cd="logic1"/>
+                    <OMA>
+                      <OMS name="eq" cd="relation1"/>
+                      <OMV name="b"/>
+                      <OMS name="one" cd="alg1"/>
+                    </OMA>
+                    <OMA>
+                      <OMS name="eq" cd="relation1"/>
+                      <OMV name="a"/>
+                      <OMV name="n"/>
+                    </OMA>
+                  </OMA>
+                </OMA>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>N</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the set of natural numbers (including zero).</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>for all n | n in the natural numbers is equivalent to saying n=0 or n-1 is a natural number</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMBIND>
+          <OMS name="forall" cd="quant1"/>
+          <OMBVAR>
+            <OMV name="n"/>
+          </OMBVAR>
+          <OMA>
+            <OMS name="implies" cd="logic1"/>
+            <OMA>
+              <OMS name="in" cd="set1"/>
+              <OMV name="n"/>
+              <OMS name="N" cd="setname1"/>
+            </OMA>
+            <OMA>
+              <OMS name="or" cd="logic1"/>
+              <OMA>
+                <OMS name="eq" cd="relation1"/>
+                <OMV name="n"/>
+                <OMS name="zero" cd="alg1"/>
+              </OMA>
+              <OMA>
+                <OMS name="in" cd="set1"/>
+                <OMA>
+                  <OMS name="minus" cd="arith1"/>
+                  <OMV name="n"/>
+                  <OMS name="one" cd="alg1"/>
+                </OMA>
+                <OMS name="N" cd="setname1"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>Z</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the set of integers, positive, negative and zero.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>for all z | the statements z is an integer and z is a natural number or -z is a natural number are equivalent</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMBIND>
+          <OMS name="forall" cd="quant1"/>
+          <OMBVAR>
+            <OMV name="z"/>
+          </OMBVAR>
+          <OMA>
+            <OMS name="implies" cd="logic1"/>
+            <OMA>
+              <OMS name="in" cd="set1"/>
+              <OMV name="z"/>
+              <OMS name="Z" cd="setname1"/>
+            </OMA>
+            <OMA>
+              <OMS name="or" cd="logic1"/>
+              <OMA>
+                <OMS name="in" cd="set1"/>
+                <OMV name="z"/>
+                <OMS name="N" cd="setname1"/>
+              </OMA>
+              <OMA>
+                <OMS name="in" cd="set1"/>
+                <OMA>
+                  <OMS name="unary_minus" cd="arith1"/>
+                  <OMV name="z"/>
+                </OMA>
+                <OMS name="N" cd="setname1"/>
+              </OMA>
+            </OMA>
+          </OMA>
+        </OMBIND>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>Q</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the set of rational numbers.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>for all z where z is a rational, there exists integers p and q with q &gt; 1 and p/q = z</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMBIND>
+          <OMS name="forall" cd="quant1"/>
+          <OMBVAR>
+            <OMV name="z"/>
+          </OMBVAR>
+          <OMA>
+            <OMS name="implies" cd="logic1"/>
+            <OMA>
+              <OMS name="in" cd="set1"/>
+              <OMV name="z"/>
+              <OMS name="Q" cd="setname1"/>
+            </OMA>
+            <OMBIND>
+              <OMS name="exists" cd="quant1"/>
+              <OMBVAR>
+                <OMV name="p"/>
+                <OMV name="q"/>
+              </OMBVAR>
+              <OMA>
+                <OMS name="and" cd="logic1"/>
+                <OMA>
+                  <OMS name="in" cd="set1"/>
+                  <OMV name="p"/>
+                  <OMS name="Z" cd="setname1"/>
+                </OMA>
+                <OMA>
+                  <OMS name="in" cd="set1"/>
+                  <OMV name="q"/>
+                  <OMS name="Z" cd="setname1"/>
+                </OMA>
+                <OMA>
+                  <OMS name="geq" cd="relation1"/>
+                  <OMV name="q"/>
+                  <OMS name="one" cd="alg1"/>
+                </OMA>
+                <OMA>
+                  <OMS name="eq" cd="relation1"/>
+                  <OMV name="z"/>
+                  <OMA>
+                    <OMS name="divide" cd="arith1"/>
+                    <OMV name="p"/>
+                    <OMV name="q"/>
+                  </OMA>
+                </OMA>
+              </OMA>
+            </OMBIND>
+          </OMA>
+        </OMBIND>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>for all a,b | a,b rational with a&lt;b implies there exists rational a,c s.t. a&lt;c and c&lt;b</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="a"/>
+            <OMV name="b"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="logic1" name="implies"/>
+            <OMA>
+              <OMS cd="logic1" name="and"/>
+              <OMA>
+                <OMS cd="set1" name="in"/>
+                <OMV name="a"/>
+                <OMS cd="setname1" name="Q"/>
+              </OMA>
+              <OMA>
+                <OMS cd="set1" name="in"/>
+                <OMV name="b"/>
+                <OMS cd="setname1" name="Q"/>
+              </OMA>
+              <OMA>
+                <OMS cd="relation1" name="lt"/>
+                <OMV name="a"/>
+                <OMV name="b"/>
+              </OMA>
+            </OMA>
+            <OMBIND>
+              <OMS cd="quant1" name="exists"/>
+              <OMBVAR>
+                <OMV name="c"/>
+              </OMBVAR>
+              <OMA>
+                <OMS cd="logic1" name="and"/>
+                <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="c"/>
+                  <OMS cd="setname1" name="Q"/>
+                </OMA>
+                <OMA>
+                  <OMS cd="relation1" name="lt"/>
+                  <OMV name="a"/>
+                  <OMV name="c"/>
+                </OMA>
+                <OMA>
+                  <OMS cd="relation1" name="lt"/>
+                  <OMV name="c"/>
+                  <OMV name="b"/>
+                </OMA>
+              </OMA>
+            </OMBIND>
+          </OMA>
+        </OMBIND>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>R</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the set of real numbers.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>S \subset R and exists y in R : forall x in S x &lt;= y) implies exists z in R such that (( forall x in S x &lt;= z) and ((forall x in S x &lt;= w) implies z &lt;= w)</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMA>
+          <OMS cd="logic1" name="implies"/>
+          <OMA>
+            <OMS cd="logic1" name="and"/>
+            <OMA>
+              <OMS cd="set1" name="subset"/>
+              <OMV name="S"/>
+              <OMS cd="setname1" name="R"/>
+            </OMA>
+            <OMBIND>
+              <OMS cd="quant1" name="exists"/>
+              <OMBVAR>
+                <OMV name="y"/>
+              </OMBVAR>
+              <OMA>
+                <OMS cd="logic1" name="and"/>
+                <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="y"/>
+                  <OMS cd="setname1" name="R"/>
+                </OMA>
+                <OMBIND>
+                  <OMS cd="quant1" name="forall"/>
+                  <OMBVAR>
+                    <OMV name="x"/>
+                  </OMBVAR>
+                  <OMA>
+                    <OMS cd="logic1" name="and"/>
+                    <OMA>
+                      <OMS cd="set1" name="in"/>
+                      <OMV name="x"/>
+                      <OMV name="S"/>
+                    </OMA>
+                    <OMA>
+                      <OMS cd="relation1" name="leq"/>
+                      <OMV name="x"/>
+                      <OMV name="y"/>
+                    </OMA>
+                  </OMA>
+                </OMBIND>
+              </OMA>
+            </OMBIND>
+          </OMA>
+          <OMBIND>
+            <OMS cd="quant1" name="exists"/>
+            <OMBVAR>
+              <OMV name="z"/>
+            </OMBVAR>
+            <OMA>
+              <OMS cd="logic1" name="and"/>
+              <OMA>
+                <OMS cd="set1" name="in"/>
+                <OMV name="z"/>
+                <OMS cd="setname1" name="R"/>
+              </OMA>
+              <OMBIND>
+                <OMS cd="quant1" name="forall"/>
+                <OMBVAR>
+                  <OMV name="x"/>
+                </OMBVAR>
+                <OMA>
+                  <OMS cd="logic1" name="implies"/>
+                  <OMA>
+                    <OMS cd="set1" name="in"/>
+                    <OMV name="x"/>
+                    <OMV name="S"/>
+                  </OMA>
+                  <OMA>
+                    <OMS cd="relation1" name="leq"/>
+                    <OMV name="x"/>
+                    <OMV name="z"/>
+                  </OMA>
+                </OMA>
+              </OMBIND>
+              <OMA>
+                <OMS cd="logic1" name="implies"/>
+                <OMBIND>
+                  <OMS cd="quant1" name="forall"/>
+                  <OMBVAR>
+                    <OMV name="x"/>
+                  </OMBVAR>
+                  <OMA>
+                    <OMS cd="logic1" name="implies"/>
+                    <OMA>
+                      <OMS cd="set1" name="in"/>
+                      <OMV name="x"/>
+                      <OMV name="S"/>
+                    </OMA>
+                    <OMA>
+                      <OMS cd="relation1" name="leq"/>
+                      <OMV name="x"/>
+                      <OMV name="w"/>
+                    </OMA>
+                  </OMA>
+                </OMBIND>
+                <OMA>
+                  <OMS cd="relation1" name="leq"/>
+                  <OMV name="z"/>
+                  <OMV name="w"/>
+                </OMA>
+              </OMA>
+            </OMA>
+          </OMBIND>
+        </OMA>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>C</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>This symbol represents the set of complex numbers.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="CMP"/>
+        <OMSTR>for all z | if z is complex then there exist reals x,y s.t. z = x + i * y</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="FMP"/>
+        <OMBIND>
+          <OMS cd="quant1" name="forall"/>
+          <OMBVAR>
+            <OMV name="z"/>
+          </OMBVAR>
+          <OMA>
+            <OMS cd="logic1" name="implies"/>
+            <OMA>
+              <OMS cd="set1" name="in"/>
+              <OMV name="z"/>
+              <OMS cd="setname1" name="C"/>
+            </OMA>
+            <OMBIND>
+              <OMS cd="quant1" name="exists"/>
+              <OMBVAR>
+                <OMV name="x"/>
+                <OMV name="y"/>
+              </OMBVAR>
+              <OMA>
+                <OMS cd="logic1" name="and"/>
+                <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="x"/>
+                  <OMS cd="setname1" name="R"/>
+                </OMA>
+                <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="y"/>
+                  <OMS cd="setname1" name="R"/>
+                </OMA>
+                <OMA>
+                  <OMS cd="relation1" name="eq"/>
+                  <OMV name="z"/>
+                  <OMA>
+                    <OMS cd="arith1" name="plus"/>
+                    <OMV name="x"/>
+                    <OMA>
+                      <OMS cd="arith1" name="times"/>
+                      <OMS cd="nums1" name="i"/>
+                      <OMV name="y"/>
+                    </OMA>
+                  </OMA>
+                </OMA>
+              </OMA>
+            </OMBIND>
+          </OMA>
+        </OMBIND>
+      </OMA>
+    </OMA>
+  </OMA>
+</OMOBJ>

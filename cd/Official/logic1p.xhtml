@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  where 
+
+  The word "where" is often used in mathematical expressions
+  to set variables or to say side conditions.
+  CDname logic1.implies can be used for these purposes, but 
+  "where" will be more intuitive and more friendly expression
+  for formula book writers.
+
+
+  $ x^n  \mbox{where} n=10  
+
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <button id="d40e18xmla" style="width:20em; background-color:#CCCCCC"
+           onclick="divfold('d40e18xml')">OpenMath XML (source)</button>
+   <pre id="d40e18xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="logic1p" name="where"/&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS cd="fns1" name="lambda"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="n"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMV name="n"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMV name="n"/&gt;
+      &lt;OMI&gt; 10 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <button id="d40e18cmmla" style="width:20em; background-color:#CCCCCC"
+           onclick="divfold('d40e18cmml')">Strict Content MathML</button>
+   <pre id="d40e18cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1p"&gt;where&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn&gt;10&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+</div>
+<button xmlns="http://www.w3.org/1999/xhtml" id="d40e18prefa"
+        style="width:20em; background-color:#CCCCCC"
+        onclick="divfold('d40e18pref')">Prefix</button>
+<div xmlns="http://www.w3.org/1999/xhtml" id="d40e18pref"
+     style="display:none; margin-top: 0.5em">
+  <a href="../../../cd/logic1p.xhtml#where">where</a>
+  (<a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+         <i>n</i>
+      ] .
+  (<a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>x</i>,  <i>n</i>)
+)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  ( <i>n</i>,  10 )
+)
+
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <button id="d40e18popa" style="width:20em; background-color:#CCCCCC"
+           onclick="divfold('d40e18pop')">Popcorn</button>
+   <div id="d40e18pop" style="display:none; margin-top: 0.5em">
+  logic1p.where(fns1.lambda[$n -&gt; $x ^ $n], $n = 10)
+</div>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <button id="d40e18mmla" style="width:20em; background-color:#AAFFAA"
+           onclick="divfold('d40e18mml')">Rendered Presentation MathML</button>
+   <div id="d40e18mml" style="display:block; margin-top: 0.5em">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+         <mrow xmlns:om="http://www.openmath.org/OpenMath">
+            <mi>where</mi>
+            <mo>⁡</mo>
+            <mrow>
+               <mo>(</mo>
+               <mrow>
+                  <mo>λ</mo>
+                  <mo> </mo>
+                  <mrow>
+                     <mi>n</mi>
+                  </mrow>
+                  <mo>.</mo>
+                  <msup>
+                     <mi>x</mi>
+                     <mi>n</mi>
+                  </msup>
+               </mrow>
+               <mo>,</mo>
+               <mrow>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn> 10 </mn>
+               </mrow>
+               <mo>)</mo>
+            </mrow>
+         </mrow>
+      </math>
+   </div>
+</div>
+
+

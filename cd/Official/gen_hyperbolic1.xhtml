@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>gen_hyperbolic1</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: gen_hyperbolic1</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/gen_hyperbolic1.ocd">http://www.openmath.org/cd/gen_hyperbolic1.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="gen_hyperbolic1.ocd">gen_hyperbolic1.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="gen_hyperbolic1.omcd">gen_hyperbolic1.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#generalised_hyperbolic">generalised_hyperbolic</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2002-11-11 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 0 </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd> 2005-01-01 </dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+         <dt>
+            <span class="dt">Uses CD:</span>
+         </dt>
+         <dd>
+            <a href="../../../cd/alg1.xhtml">alg1</a>, <a href="../../../cd/arith1.xhtml">arith1</a>, <a href="../../../cd/fns1.xhtml">fns1</a>, <a href="../../../cd/integer1.xhtml">integer1</a>, <a href="../../../cd/interval1.xhtml">interval1</a>, <a href="../../../cd/logic1.xhtml">logic1</a>, <a href="../../../cd/nums1.xhtml">nums1</a>, <a href="../../../cd/quant1.xhtml">quant1</a>, <a href="../../../cd/relation1.xhtml">relation1</a>, <a href="../../../cd/set1.xhtml">set1</a>, <a href="../../../cd/setname1.xhtml">setname1</a>, <a href="../../../cd/transc1.xhtml">transc1</a>
+         </dd>
+      </dl>
+      <hr/>
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+
+      <p>
+This CD contains a symbol to represent the generalised hyperbolic
+function, and facts relating it to other functions.
+</p>
+
+      <hr/>
+      <h2>
+         <a name="generalised_hyperbolic"> generalised_hyperbolic </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the generalised hyperbolic function as recorded
+by Riccati. It is intended to be applied in the curried form, that is,
+the symbol should be applied to three arguments in order to return a
+function which should be applied to one argument. The generalised
+hyperbolic function may be defined as an infinite sum as in the
+first CMP/FMP .
+  </p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+for complex \alpha, integral n and r an integer between 0 and r (inclusive)
+(F^\alpha_{n,r})(x) = \Sigma^\infty_{k=0}{\frac{\alpha^k}{(nk+r)!}x^{nk+r}}
+  </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e85xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e85xml')">OpenMath XML (source)</button>
+               <pre id="d40e85xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="implies"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="and"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="alpha"/&gt;
+            &lt;OMS cd="setname1" name="C"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="n"/&gt;
+            &lt;OMS cd="setname1" name="Z"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="r"/&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="interval1" name="integer_interval"/&gt;
+              &lt;OMI&gt; 0 &lt;/OMI&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="arith1" name="minus"/&gt;
+                &lt;OMV name="n"/&gt;&lt;OMI&gt; 1 &lt;/OMI&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="relation1" name="eq"/&gt;
+          &lt;OMA&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="gen_hyperbolic1" name="generalised_hyperbolic"/&gt;
+              &lt;OMV name="alpha"/&gt;
+              &lt;OMV name="n"/&gt;
+              &lt;OMV name="r"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMV name="x"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="arith1" name="sum"/&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="interval1" name="integer_interval"/&gt;
+              &lt;OMS cd="alg1" name="zero"/&gt;
+              &lt;OMS cd="nums1" name="infinity"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMBIND&gt;
+              &lt;OMS cd="fns1" name="lambda"/&gt;
+              &lt;OMBVAR&gt;
+                &lt;OMV name="k"/&gt;
+              &lt;/OMBVAR&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="arith1" name="times"/&gt;
+                &lt;OMA&gt;
+                  &lt;OMS cd="arith1" name="divide"/&gt;
+                  &lt;OMA&gt;
+                    &lt;OMS cd="arith1" name="power"/&gt;
+                    &lt;OMV name="alpha"/&gt;
+                    &lt;OMV name="k"/&gt;
+                  &lt;/OMA&gt;
+                  &lt;OMA&gt;
+                    &lt;OMS cd="integer1" name="factorial"/&gt;
+                    &lt;OMA&gt;
+                      &lt;OMS cd="arith1" name="plus"/&gt;
+                      &lt;OMA&gt;
+                        &lt;OMS cd="arith1" name="times"/&gt;
+                        &lt;OMV name="n"/&gt;
+                        &lt;OMV name="k"/&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMV name="r"/&gt;
+                    &lt;/OMA&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;
+                  &lt;OMS cd="arith1" name="power"/&gt;
+                  &lt;OMV name="x"/&gt;
+                  &lt;OMA&gt;
+                    &lt;OMS cd="arith1" name="plus"/&gt;
+                    &lt;OMA&gt;
+                      &lt;OMS cd="arith1" name="times"/&gt;
+                      &lt;OMV name="n"/&gt;
+                      &lt;OMV name="k"/&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMV name="r"/&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMA&gt;
+              &lt;/OMA&gt;
+            &lt;/OMBIND&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e85cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e85cmml')">Strict Content MathML</button>
+               <pre id="d40e85cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;alpha&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;C&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+    &lt;ci&gt;r&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+     &lt;cn&gt;0&lt;/cn&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="gen_hyperbolic1"&gt;generalised_hyperbolic&lt;/csymbol&gt;&lt;ci&gt;alpha&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;ci&gt;r&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+     &lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;
+     &lt;csymbol cd="nums1"&gt;infinity&lt;/csymbol&gt;
+    &lt;/apply&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;alpha&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="integer1"&gt;factorial&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+         &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+         &lt;ci&gt;r&lt;/ci&gt;
+        &lt;/apply&gt;
+       &lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+       &lt;ci&gt;x&lt;/ci&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+        &lt;ci&gt;r&lt;/ci&gt;
+       &lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/bind&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e85prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e85pref')">Prefix</button>
+            <div id="d40e85pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/logic1.xhtml#implies">implies</a>
+  (<a href="../../../cd/logic1.xhtml#and">and</a>
+  (<a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>alpha</i>, <a href="../../../cd/setname1.xhtml#C">C</a>)
+, <a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>n</i>, <a href="../../../cd/setname1.xhtml#Z">Z</a>)
+, <a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>r</i>, <a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 0 , <a href="../../../cd/arith1.xhtml#minus">minus</a>
+  ( <i>n</i>,  1 )
+)
+)
+)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/gen_hyperbolic1.xhtml#generalised_hyperbolic">generalised_hyperbolic</a>
+  ( <i>alpha</i>,  <i>n</i>,  <i>r</i>)
+
+  ( <i>x</i>)
+, <a href="../../../cd/arith1.xhtml#sum">sum</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  (<a href="../../../cd/alg1.xhtml#zero">zero</a>, <a href="../../../cd/nums1.xhtml#infinity">infinity</a>)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+                 <i>k</i>
+              ] .
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>alpha</i>,  <i>k</i>)
+, <a href="../../../cd/integer1.xhtml#factorial">factorial</a>
+  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>n</i>,  <i>k</i>)
+,  <i>r</i>)
+)
+)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>x</i>, <a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>n</i>,  <i>k</i>)
+,  <i>r</i>)
+)
+)
+)
+)
+)
+)
+
+    </div>
+            <div>
+               <button id="d40e85popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e85pop')">Popcorn</button>
+               <div id="d40e85pop" style="display:none; margin-top: 0.5em">
+      set1.in($alpha, setname1.C) and set1.in($n, setname1.Z) and set1.in($r, interval1.integer_interval(0, $n - 1)) ==&gt; gen_hyperbolic1.generalised_hyperbolic($alpha, $n, $r)($x) = arith1.sum(interval1.integer_interval(alg1.zero, nums1.infinity), fns1.lambda[$k -&gt; $alpha ^ $k / integer1.factorial($n * $k + $r) * $x ^ ($n * $k + $r)])
+    </div>
+            </div>
+            <div>
+               <button id="d40e85mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e85mml')">Rendered Presentation MathML</button>
+               <div id="d40e85mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mrow>
+                              <mi>alpha</mi>
+                              <mo>∈</mo>
+                              <mi mathvariant="double-struck">C</mi>
+                           </mrow>
+                           <mo>∧</mo>
+                           <mrow>
+                              <mi>n</mi>
+                              <mo>∈</mo>
+                              <mi mathvariant="double-struck">Z</mi>
+                           </mrow>
+                           <mo>∧</mo>
+                           <mrow>
+                              <mi>r</mi>
+                              <mo>∈</mo>
+                              <mrow>
+                                 <mo>[</mo>
+                                 <mn> 0 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mrow>
+                                    <mi>n</mi>
+                                    <mo>-</mo>
+                                    <mn> 1 </mn>
+                                 </mrow>
+                                 <mo>]</mo>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                        <mo>⇒</mo>
+                        <mrow>
+                           <mrow>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>generalised_hyperbolic</mi>
+                                    <mo>⁡</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>alpha</mi>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>,</mo>
+                                       <mi>r</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>⁡</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>x</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>=</mo>
+                           <munderover>
+                              <mo>∑</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>k</mi>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mn>0</mn>
+                              </mrow>
+                              <mi>∞</mi>
+                           </munderover>
+                           <mrow>
+                              <mfrac>
+                                 <msup>
+                                    <mi>alpha</mi>
+                                    <mi>k</mi>
+                                 </msup>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>n</mi>
+                                          <mo>⁢</mo>
+                                          <mi>k</mi>
+                                       </mrow>
+                                       <mo>+</mo>
+                                       <mi>r</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>!</mo>
+                                 </mrow>
+                              </mfrac>
+                              <mo>⁢</mo>
+                              <msup>
+                                 <mi>x</mi>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>n</mi>
+                                       <mo>⁢</mo>
+                                       <mi>k</mi>
+                                    </mrow>
+                                    <mo>+</mo>
+                                    <mi>r</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> for all z \in C F^1_{1,0} (z) = e^z </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e255xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e255xml')">OpenMath XML (source)</button>
+               <pre id="d40e255xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="quant1" name="forall"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="z"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="implies"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMS cd="setname1" name="C"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="gen_hyperbolic1" name="generalised_hyperbolic"/&gt;
+                &lt;OMI&gt; 1 &lt;/OMI&gt;&lt;OMI&gt; 1 &lt;/OMI&gt;&lt;OMI&gt; 0 &lt;/OMI&gt;
+              &lt;/OMA&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="transc1" name="exp"/&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e255cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e255cmml')">Strict Content MathML</button>
+               <pre id="d40e255cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;C&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="gen_hyperbolic1"&gt;generalised_hyperbolic&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;z&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="transc1"&gt;exp&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e255prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e255pref')">Prefix</button>
+            <div id="d40e255pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/quant1.xhtml#forall">forall</a>
+  [
+           <i>z</i>
+        ] .
+  (<a href="../../../cd/logic1.xhtml#implies">implies</a>
+  (<a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>z</i>, <a href="../../../cd/setname1.xhtml#C">C</a>)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/gen_hyperbolic1.xhtml#generalised_hyperbolic">generalised_hyperbolic</a>
+  ( 1 ,  1 ,  0 )
+
+  ( <i>z</i>)
+, <a href="../../../cd/transc1.xhtml#exp">exp</a>
+  ( <i>z</i>)
+)
+)
+)
+
+    </div>
+            <div>
+               <button id="d40e255popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e255pop')">Popcorn</button>
+               <div id="d40e255pop" style="display:none; margin-top: 0.5em">
+      quant1.forall[$z -&gt; set1.in($z, setname1.C) ==&gt; gen_hyperbolic1.generalised_hyperbolic(1, 1, 0)($z) = exp($z)]
+    </div>
+            </div>
+            <div>
+               <button id="d40e255mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e255mml')">Rendered Presentation MathML</button>
+               <div id="d40e255mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mo>∀</mo>
+                        <mo> </mo>
+                        <mrow>
+                           <mi>z</mi>
+                        </mrow>
+                        <mo>.</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>z</mi>
+                              <mo>∈</mo>
+                              <mi mathvariant="double-struck">C</mi>
+                           </mrow>
+                           <mo>⇒</mo>
+                           <mrow>
+                              <mrow>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>generalised_hyperbolic</mi>
+                                       <mo>⁡</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 1 </mn>
+                                          <mo>,</mo>
+                                          <mn> 1 </mn>
+                                          <mo>,</mo>
+                                          <mn> 0 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>exp</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> for all z \in C F^{-1}_{2,-1} (z) = sin(z) </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e317xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e317xml')">OpenMath XML (source)</button>
+               <pre id="d40e317xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="quant1" name="forall"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="z"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="implies"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMS cd="setname1" name="C"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="gen_hyperbolic1" name="generalised_hyperbolic"/&gt;
+                &lt;OMI&gt; -1 &lt;/OMI&gt;&lt;OMI&gt; 2 &lt;/OMI&gt;&lt;OMI&gt; -1 &lt;/OMI&gt;
+              &lt;/OMA&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="transc1" name="sin"/&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e317cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e317cmml')">Strict Content MathML</button>
+               <pre id="d40e317cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;C&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="gen_hyperbolic1"&gt;generalised_hyperbolic&lt;/csymbol&gt;&lt;cn&gt;-1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;-1&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;z&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e317prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e317pref')">Prefix</button>
+            <div id="d40e317pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/quant1.xhtml#forall">forall</a>
+  [
+           <i>z</i>
+        ] .
+  (<a href="../../../cd/logic1.xhtml#implies">implies</a>
+  (<a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>z</i>, <a href="../../../cd/setname1.xhtml#C">C</a>)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/gen_hyperbolic1.xhtml#generalised_hyperbolic">generalised_hyperbolic</a>
+  ( -1 ,  2 ,  -1 )
+
+  ( <i>z</i>)
+, <a href="../../../cd/transc1.xhtml#sin">sin</a>
+  ( <i>z</i>)
+)
+)
+)
+
+    </div>
+            <div>
+               <button id="d40e317popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e317pop')">Popcorn</button>
+               <div id="d40e317pop" style="display:none; margin-top: 0.5em">
+      quant1.forall[$z -&gt; set1.in($z, setname1.C) ==&gt; gen_hyperbolic1.generalised_hyperbolic(-1, 2, -1)($z) = sin($z)]
+    </div>
+            </div>
+            <div>
+               <button id="d40e317mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e317mml')">Rendered Presentation MathML</button>
+               <div id="d40e317mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mo>∀</mo>
+                        <mo> </mo>
+                        <mrow>
+                           <mi>z</mi>
+                        </mrow>
+                        <mo>.</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>z</mi>
+                              <mo>∈</mo>
+                              <mi mathvariant="double-struck">C</mi>
+                           </mrow>
+                           <mo>⇒</mo>
+                           <mrow>
+                              <mrow>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>generalised_hyperbolic</mi>
+                                       <mo>⁡</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> -1 </mn>
+                                          <mo>,</mo>
+                                          <mn> 2 </mn>
+                                          <mo>,</mo>
+                                          <mn> -1 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>sin</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> for all z \in C F^{-1}_{2,0} (z) = cos(z) </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e379xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e379xml')">OpenMath XML (source)</button>
+               <pre id="d40e379xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="quant1" name="forall"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="z"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="implies"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMS cd="setname1" name="C"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="gen_hyperbolic1" name="generalised_hyperbolic"/&gt;
+                &lt;OMI&gt; -1 &lt;/OMI&gt;&lt;OMI&gt; 2 &lt;/OMI&gt;&lt;OMI&gt; 0 &lt;/OMI&gt;
+              &lt;/OMA&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="transc1" name="cos"/&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e379cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e379cmml')">Strict Content MathML</button>
+               <pre id="d40e379cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;C&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="gen_hyperbolic1"&gt;generalised_hyperbolic&lt;/csymbol&gt;&lt;cn&gt;-1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;z&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="transc1"&gt;cos&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e379prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e379pref')">Prefix</button>
+            <div id="d40e379pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/quant1.xhtml#forall">forall</a>
+  [
+           <i>z</i>
+        ] .
+  (<a href="../../../cd/logic1.xhtml#implies">implies</a>
+  (<a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>z</i>, <a href="../../../cd/setname1.xhtml#C">C</a>)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/gen_hyperbolic1.xhtml#generalised_hyperbolic">generalised_hyperbolic</a>
+  ( -1 ,  2 ,  0 )
+
+  ( <i>z</i>)
+, <a href="../../../cd/transc1.xhtml#cos">cos</a>
+  ( <i>z</i>)
+)
+)
+)
+
+    </div>
+            <div>
+               <button id="d40e379popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e379pop')">Popcorn</button>
+               <div id="d40e379pop" style="display:none; margin-top: 0.5em">
+      quant1.forall[$z -&gt; set1.in($z, setname1.C) ==&gt; gen_hyperbolic1.generalised_hyperbolic(-1, 2, 0)($z) = cos($z)]
+    </div>
+            </div>
+            <div>
+               <button id="d40e379mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e379mml')">Rendered Presentation MathML</button>
+               <div id="d40e379mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mo>∀</mo>
+                        <mo> </mo>
+                        <mrow>
+                           <mi>z</mi>
+                        </mrow>
+                        <mo>.</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>z</mi>
+                              <mo>∈</mo>
+                              <mi mathvariant="double-struck">C</mi>
+                           </mrow>
+                           <mo>⇒</mo>
+                           <mrow>
+                              <mrow>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>generalised_hyperbolic</mi>
+                                       <mo>⁡</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> -1 </mn>
+                                          <mo>,</mo>
+                                          <mn> 2 </mn>
+                                          <mo>,</mo>
+                                          <mn> 0 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>cos</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> for all z \in C F^{1}_{2,1} (z) = sinh(z) </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e442xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e442xml')">OpenMath XML (source)</button>
+               <pre id="d40e442xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="quant1" name="forall"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="z"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="implies"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMS cd="setname1" name="C"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="gen_hyperbolic1" name="generalised_hyperbolic"/&gt;
+                &lt;OMI&gt; 1 &lt;/OMI&gt;&lt;OMI&gt; 2 &lt;/OMI&gt;&lt;OMI&gt; 1 &lt;/OMI&gt;
+              &lt;/OMA&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="transc1" name="sinh"/&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e442cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e442cmml')">Strict Content MathML</button>
+               <pre id="d40e442cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;C&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="gen_hyperbolic1"&gt;generalised_hyperbolic&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;z&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sinh&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e442prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e442pref')">Prefix</button>
+            <div id="d40e442pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/quant1.xhtml#forall">forall</a>
+  [
+           <i>z</i>
+        ] .
+  (<a href="../../../cd/logic1.xhtml#implies">implies</a>
+  (<a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>z</i>, <a href="../../../cd/setname1.xhtml#C">C</a>)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/gen_hyperbolic1.xhtml#generalised_hyperbolic">generalised_hyperbolic</a>
+  ( 1 ,  2 ,  1 )
+
+  ( <i>z</i>)
+, <a href="../../../cd/transc1.xhtml#sinh">sinh</a>
+  ( <i>z</i>)
+)
+)
+)
+
+    </div>
+            <div>
+               <button id="d40e442popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e442pop')">Popcorn</button>
+               <div id="d40e442pop" style="display:none; margin-top: 0.5em">
+      quant1.forall[$z -&gt; set1.in($z, setname1.C) ==&gt; gen_hyperbolic1.generalised_hyperbolic(1, 2, 1)($z) = sinh($z)]
+    </div>
+            </div>
+            <div>
+               <button id="d40e442mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e442mml')">Rendered Presentation MathML</button>
+               <div id="d40e442mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mo>∀</mo>
+                        <mo> </mo>
+                        <mrow>
+                           <mi>z</mi>
+                        </mrow>
+                        <mo>.</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>z</mi>
+                              <mo>∈</mo>
+                              <mi mathvariant="double-struck">C</mi>
+                           </mrow>
+                           <mo>⇒</mo>
+                           <mrow>
+                              <mrow>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>generalised_hyperbolic</mi>
+                                       <mo>⁡</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 1 </mn>
+                                          <mo>,</mo>
+                                          <mn> 2 </mn>
+                                          <mo>,</mo>
+                                          <mn> 1 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>sinh</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> for all z \in C F^{1}_{2,0} (z) = cosh(z) </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e504xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e504xml')">OpenMath XML (source)</button>
+               <pre id="d40e504xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="quant1" name="forall"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="z"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="implies"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMS cd="setname1" name="C"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="gen_hyperbolic1" name="generalised_hyperbolic"/&gt;
+                &lt;OMI&gt; 1 &lt;/OMI&gt;&lt;OMI&gt; 2 &lt;/OMI&gt;&lt;OMI&gt; 0 &lt;/OMI&gt;
+              &lt;/OMA&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="transc1" name="cosh"/&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e504cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e504cmml')">Strict Content MathML</button>
+               <pre id="d40e504cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;C&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="gen_hyperbolic1"&gt;generalised_hyperbolic&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;z&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="transc1"&gt;cosh&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e504prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e504pref')">Prefix</button>
+            <div id="d40e504pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/quant1.xhtml#forall">forall</a>
+  [
+           <i>z</i>
+        ] .
+  (<a href="../../../cd/logic1.xhtml#implies">implies</a>
+  (<a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>z</i>, <a href="../../../cd/setname1.xhtml#C">C</a>)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/gen_hyperbolic1.xhtml#generalised_hyperbolic">generalised_hyperbolic</a>
+  ( 1 ,  2 ,  0 )
+
+  ( <i>z</i>)
+, <a href="../../../cd/transc1.xhtml#cosh">cosh</a>
+  ( <i>z</i>)
+)
+)
+)
+
+    </div>
+            <div>
+               <button id="d40e504popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e504pop')">Popcorn</button>
+               <div id="d40e504pop" style="display:none; margin-top: 0.5em">
+      quant1.forall[$z -&gt; set1.in($z, setname1.C) ==&gt; gen_hyperbolic1.generalised_hyperbolic(1, 2, 0)($z) = cosh($z)]
+    </div>
+            </div>
+            <div>
+               <button id="d40e504mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e504mml')">Rendered Presentation MathML</button>
+               <div id="d40e504mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mo>∀</mo>
+                        <mo> </mo>
+                        <mrow>
+                           <mi>z</mi>
+                        </mrow>
+                        <mo>.</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>z</mi>
+                              <mo>∈</mo>
+                              <mi mathvariant="double-struck">C</mi>
+                           </mrow>
+                           <mo>⇒</mo>
+                           <mrow>
+                              <mrow>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>generalised_hyperbolic</mi>
+                                       <mo>⁡</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 1 </mn>
+                                          <mo>,</mo>
+                                          <mn> 2 </mn>
+                                          <mo>,</mo>
+                                          <mn> 0 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>cosh</mi>
+                                 <mo>⁡</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/gen_hyperbolic1.xhtml#generalised_hyperbolic">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#generalised_hyperbolic">generalised_hyperbolic</a>]
+	  
+	    [Last: <a href="#generalised_hyperbolic">generalised_hyperbolic</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

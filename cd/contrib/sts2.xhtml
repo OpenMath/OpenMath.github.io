@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>sts2</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: sts2</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href=""/>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="sts2.ocd">sts2.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="sts2.omcd">sts2.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#interval">interval</a>, <a href="#list">list</a>, <a href="#matrix">matrix</a>, <a href="#square_matrix">square_matrix</a>, <a href="#vector">vector</a>, <a href="#vector_n">vector_n</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2004-02-02 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 1 </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd/>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+      </dl>
+      <hr/>
+
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+      <p> 
+Symbols for constructing compound (parameterised) types in the OpenMath
+small type system.
+</p>
+
+
+      <hr/>
+      <h2>
+         <a name="list"> list  </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A constructor for the type of a homogeneous list 
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+A list of integers
+<div>
+               <button id="d40e38xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e38xml')">OpenMath XML (source)</button>
+               <pre id="d40e38xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="list" cd="sts2"/&gt;
+    &lt;OMS name="Z" cd="setname1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e38cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e38cmml')">Strict Content MathML</button>
+               <pre id="d40e38cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="sts2"&gt;list&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e38prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e38pref')">Prefix</button>
+            <div id="d40e38pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/sts2.xhtml#list">list</a>
+  (<a href="../../../cd/setname1.xhtml#Z">Z</a>)
+
+</div>
+            <div>
+               <button id="d40e38popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e38pop')">Popcorn</button>
+               <div id="d40e38pop" style="display:none; margin-top: 0.5em">
+  sts2.list(setname1.Z)
+</div>
+            </div>
+            <div>
+               <button id="d40e38mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e38mml')">Rendered Presentation MathML</button>
+               <div id="d40e38mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>list</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi mathvariant="double-struck">Z</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/sts2.xhtml#list">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#interval">interval</a>]
+	  
+	    [Last: <a href="#square_matrix">square_matrix</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="interval"> interval </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A constructor for an interval over a set.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+A real interval
+<div>
+               <button id="d40e60xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e60xml')">OpenMath XML (source)</button>
+               <pre id="d40e60xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="interval" cd="sts2"/&gt;
+    &lt;OMS name="R" cd="setname1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e60cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e60cmml')">Strict Content MathML</button>
+               <pre id="d40e60cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="sts2"&gt;interval&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e60prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e60pref')">Prefix</button>
+            <div id="d40e60pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/sts2.xhtml#interval">interval</a>
+  (<a href="../../../cd/setname1.xhtml#R">R</a>)
+
+</div>
+            <div>
+               <button id="d40e60popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e60pop')">Popcorn</button>
+               <div id="d40e60pop" style="display:none; margin-top: 0.5em">
+  sts2.interval(setname1.R)
+</div>
+            </div>
+            <div>
+               <button id="d40e60mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e60mml')">Rendered Presentation MathML</button>
+               <div id="d40e60mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>interval</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi mathvariant="double-struck">R</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/sts2.xhtml#interval">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#matrix">matrix</a>]
+	  
+	    [Previous: <a href="#list">list</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="matrix"> matrix </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A constructor for the type of a matrix
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+A matrix of integers
+<div>
+               <button id="d40e82xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e82xml')">OpenMath XML (source)</button>
+               <pre id="d40e82xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="matrix" cd="sts2"/&gt;
+    &lt;OMS name="Z" cd="setname1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e82cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e82cmml')">Strict Content MathML</button>
+               <pre id="d40e82cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="sts2"&gt;matrix&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e82prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e82pref')">Prefix</button>
+            <div id="d40e82pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/sts2.xhtml#matrix">matrix</a>
+  (<a href="../../../cd/setname1.xhtml#Z">Z</a>)
+
+</div>
+            <div>
+               <button id="d40e82popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e82pop')">Popcorn</button>
+               <div id="d40e82pop" style="display:none; margin-top: 0.5em">
+  sts2.matrix(setname1.Z)
+</div>
+            </div>
+            <div>
+               <button id="d40e82mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e82mml')">Rendered Presentation MathML</button>
+               <div id="d40e82mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>matrix</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi mathvariant="double-struck">Z</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/sts2.xhtml#matrix">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#vector">vector</a>]
+	  
+	    [Previous: <a href="#interval">interval</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="vector"> vector </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A constructor for the type of a vector
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+A vector of integers
+<div>
+               <button id="d40e105xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e105xml')">OpenMath XML (source)</button>
+               <pre id="d40e105xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="vector" cd="sts2"/&gt;
+    &lt;OMS name="Z" cd="setname1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e105cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e105cmml')">Strict Content MathML</button>
+               <pre id="d40e105cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="sts2"&gt;vector&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e105prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e105pref')">Prefix</button>
+            <div id="d40e105pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/sts2.xhtml#vector">vector</a>
+  (<a href="../../../cd/setname1.xhtml#Z">Z</a>)
+
+</div>
+            <div>
+               <button id="d40e105popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e105pop')">Popcorn</button>
+               <div id="d40e105pop" style="display:none; margin-top: 0.5em">
+  sts2.vector(setname1.Z)
+</div>
+            </div>
+            <div>
+               <button id="d40e105mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e105mml')">Rendered Presentation MathML</button>
+               <div id="d40e105mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>vector</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi mathvariant="double-struck">Z</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/sts2.xhtml#vector">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#vector_n">vector_n</a>]
+	  
+	    [Previous: <a href="#matrix">matrix</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="vector_n"> vector_n </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A constructor for the type of a vector of size n
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+A 3-vector of integers
+<div>
+               <button id="d40e127xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e127xml')">OpenMath XML (source)</button>
+               <pre id="d40e127xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="vector" cd="sts2"/&gt;
+    &lt;OMI&gt;3&lt;/OMI&gt;
+    &lt;OMS name="Z" cd="setname1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e127cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e127cmml')">Strict Content MathML</button>
+               <pre id="d40e127cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="sts2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e127prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e127pref')">Prefix</button>
+            <div id="d40e127pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/sts2.xhtml#vector">vector</a>
+  (3, <a href="../../../cd/setname1.xhtml#Z">Z</a>)
+
+</div>
+            <div>
+               <button id="d40e127popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e127pop')">Popcorn</button>
+               <div id="d40e127pop" style="display:none; margin-top: 0.5em">
+  sts2.vector(3, setname1.Z)
+</div>
+            </div>
+            <div>
+               <button id="d40e127mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e127mml')">Rendered Presentation MathML</button>
+               <div id="d40e127mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>vector</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mn>3</mn>
+                           <mo>,</mo>
+                           <mi mathvariant="double-struck">Z</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/sts2.xhtml#vector_n">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#square_matrix">square_matrix</a>]
+	  
+	    [Previous: <a href="#vector">vector</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="square_matrix"> square_matrix</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A constructor for the type of a square matrix
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+A 2x2 square matrix of integers
+<div>
+               <button id="d40e152xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e152xml')">OpenMath XML (source)</button>
+               <pre id="d40e152xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="square_matrix" cd="sts2"/&gt;
+    &lt;OMI&gt;2&lt;/OMI&gt;
+    &lt;OMS name="Z" cd="setname1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e152cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e152cmml')">Strict Content MathML</button>
+               <pre id="d40e152cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="sts2"&gt;square_matrix&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e152prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e152pref')">Prefix</button>
+            <div id="d40e152pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/sts2.xhtml#square_matrix">square_matrix</a>
+  (2, <a href="../../../cd/setname1.xhtml#Z">Z</a>)
+
+</div>
+            <div>
+               <button id="d40e152popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e152pop')">Popcorn</button>
+               <div id="d40e152pop" style="display:none; margin-top: 0.5em">
+  sts2.square_matrix(2, setname1.Z)
+</div>
+            </div>
+            <div>
+               <button id="d40e152mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e152mml')">Rendered Presentation MathML</button>
+               <div id="d40e152mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>square_matrix</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mn>2</mn>
+                           <mo>,</mo>
+                           <mi mathvariant="double-struck">Z</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/sts2.xhtml#square_matrix">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#list">list</a>]
+	  
+	    [Previous: <a href="#vector_n">vector_n</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

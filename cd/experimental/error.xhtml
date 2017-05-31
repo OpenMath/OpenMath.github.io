@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>error</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: error</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/error.ocd">http://www.openmath.org/cd/error.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="error.ocd">error.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="error.omcd">error.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#unexpected_symbol">unexpected_symbol</a>, <a href="#unhandled_symbol">unhandled_symbol</a>, <a href="#unsupported_CD">unsupported_CD</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd>2004-03-30</dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd>3</dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd>2006-03-30</dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> official </dd>
+      </dl>
+      <hr/>
+
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+
+      <hr/>
+      <h2>
+         <a name="unhandled_symbol"> unhandled_symbol </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>error</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the error which is raised when an application
+reads a symbol which is present in the mentioned content
+dictionary, but which it has not implemented.</p>
+            <p>When receiving such a symbol, the application should act as if it had
+received the OpenMath error object constructed from unhandled_symbol
+and the unhandled symbol as in the example below.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The application does not implement the Complex numbers:
+<div>
+               <button id="d40e44xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e44xml')">OpenMath XML (source)</button>
+               <pre id="d40e44xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OME&gt;
+    &lt;OMS cd="error" name="unhandled_symbol"/&gt;
+    &lt;OMS cd="setname1" name="C"/&gt;
+  &lt;/OME&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e44cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e44cmml')">Strict Content MathML</button>
+               <pre id="d40e44cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;cerror&gt;&lt;csymbol cd="error"&gt;unhandled_symbol&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;C&lt;/csymbol&gt;&lt;/cerror&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e44prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e44pref')">Prefix</button>
+            <div id="d40e44pref" style="display:none; margin-top: 0.5em">
+               <b>Error</b>(<a href="../../../cd/error.xhtml#unhandled_symbol">unhandled_symbol</a>,
+  <a href="../../../cd/setname1.xhtml#C">C</a>)
+
+</div>
+            <div>
+               <button id="d40e44popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e44pop')">Popcorn</button>
+               <div id="d40e44pop" style="display:none; margin-top: 0.5em">
+  error.unhandled_symbol!(setname1.C)
+</div>
+            </div>
+            <div>
+               <button id="d40e44mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e44mml')">Rendered Presentation MathML</button>
+               <div id="d40e44mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <merror xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>unhandled_symbol</mi>
+                        <mi mathvariant="double-struck">C</mi>
+                     </merror>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/error.xhtml#unhandled_symbol">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#unexpected_symbol">unexpected_symbol</a>]
+	  
+	    [Last: <a href="#unsupported_CD">unsupported_CD</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="unexpected_symbol"> unexpected_symbol </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>error</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the error which is raised when an application
+reads a symbol which is not present in the mentioned content dictionary.</p>
+            <p>When receiving such a symbol, the application should act as if it had
+received the OpenMath error object constructed from unexpected_symbol
+and the unexpected symbol as in the example below.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The application received a mistyped symbol
+<div>
+               <button id="d40e69xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e69xml')">OpenMath XML (source)</button>
+               <pre id="d40e69xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OME&gt;
+    &lt;OMS cd="error" name="unexpected_symbol"/&gt;
+    &lt;OMS cd="arith1" name="plurse"/&gt;
+  &lt;/OME&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e69cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e69cmml')">Strict Content MathML</button>
+               <pre id="d40e69cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;cerror&gt;&lt;csymbol cd="error"&gt;unexpected_symbol&lt;/csymbol&gt;&lt;csymbol cd="arith1"&gt;plurse&lt;/csymbol&gt;&lt;/cerror&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e69prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e69pref')">Prefix</button>
+            <div id="d40e69pref" style="display:none; margin-top: 0.5em">
+               <b>Error</b>(<a href="../../../cd/error.xhtml#unexpected_symbol">unexpected_symbol</a>,
+  <a href="../../../cd/arith1.xhtml#plurse">plurse</a>)
+
+</div>
+            <div>
+               <button id="d40e69popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e69pop')">Popcorn</button>
+               <div id="d40e69pop" style="display:none; margin-top: 0.5em">
+  error.unexpected_symbol!(arith1.plurse)
+</div>
+            </div>
+            <div>
+               <button id="d40e69mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e69mml')">Rendered Presentation MathML</button>
+               <div id="d40e69mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <merror xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>unexpected_symbol</mi>
+                        <mi>plurse</mi>
+                     </merror>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/error.xhtml#unexpected_symbol">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#unsupported_CD">unsupported_CD</a>]
+	  
+	    [Previous: <a href="#unhandled_symbol">unhandled_symbol</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="unsupported_CD"> unsupported_CD </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>error</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the error which is raised when an application
+reads a symbol where the mentioned content dictionary is not
+present.</p>
+            <p>When receiving such a symbol, the application should act as if it had
+received the OpenMath error object constructed from unsupported_CD and
+the symbol from the unsupported Content Dictionary as in the example
+below.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The application does not know about the CD specfun1
+<div>
+               <button id="d40e95xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e95xml')">OpenMath XML (source)</button>
+               <pre id="d40e95xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OME&gt;
+    &lt;OMS cd="error" name="unsupported_CD"/&gt;
+    &lt;OMS cd="specfun1" name="BesselJ"/&gt;
+  &lt;/OME&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e95cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e95cmml')">Strict Content MathML</button>
+               <pre id="d40e95cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;cerror&gt;&lt;csymbol cd="error"&gt;unsupported_CD&lt;/csymbol&gt;&lt;csymbol cd="specfun1"&gt;BesselJ&lt;/csymbol&gt;&lt;/cerror&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e95prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e95pref')">Prefix</button>
+            <div id="d40e95pref" style="display:none; margin-top: 0.5em">
+               <b>Error</b>(<a href="../../../cd/error.xhtml#unsupported_CD">unsupported_CD</a>,
+  <a href="../../../cd/specfun1.xhtml#BesselJ">BesselJ</a>)
+
+</div>
+            <div>
+               <button id="d40e95popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e95pop')">Popcorn</button>
+               <div id="d40e95pop" style="display:none; margin-top: 0.5em">
+  error.unsupported_CD!(specfun1.BesselJ)
+</div>
+            </div>
+            <div>
+               <button id="d40e95mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e95mml')">Rendered Presentation MathML</button>
+               <div id="d40e95mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <merror xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>unsupported_CD</mi>
+                        <mi>BesselJ</mi>
+                     </merror>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/error.xhtml#unsupported_CD">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#unhandled_symbol">unhandled_symbol</a>]
+	  
+	    [Previous: <a href="#unexpected_symbol">unexpected_symbol</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

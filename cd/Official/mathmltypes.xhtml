@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>mathmltypes</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: mathmltypes</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/mathmltypes.ocd">http://www.openmath.org/cd/mathmltypes.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="mathmltypes.ocd">mathmltypes.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="mathmltypes.omcd">mathmltypes.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#complex_cartesian_type">complex_cartesian_type</a>, <a href="#complex_polar_type">complex_polar_type</a>, <a href="#constant_type">constant_type</a>, <a href="#fn_type">fn_type</a>, <a href="#integer_type">integer_type</a>, <a href="#list_type">list_type</a>, <a href="#matrix_type">matrix_type</a>, <a href="#rational_type">rational_type</a>, <a href="#real_type">real_type</a>, <a href="#set_type">set_type</a>, <a href="#type">type</a>, <a href="#vector_type">vector_type</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd>2004-03-30</dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd>3</dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd>2006-03-30</dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> official </dd>
+      </dl>
+      <hr/>
+
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+      <p>
+    This CD holds symbols denoting various types of numbers, vectors
+    and similar constructs. Principally these are required for
+    compatibility with MathML.
+</p>
+
+      <hr/>
+      <h2>
+         <a name="type"> type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>semantic-attribution</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used within an OpenMath attribute to specify the type of
+the object.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for complex numbers, to be
+represented in polar notation.
+<div>
+               <button id="d40e47xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e47xml')">OpenMath XML (source)</button>
+               <pre id="d40e47xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="complex_polar_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e47cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e47cmml')">Strict Content MathML</button>
+               <pre id="d40e47cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;complex_polar_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e47prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e47pref')">Prefix</button>
+            <div id="d40e47pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#complex_polar_type">complex_polar_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e47popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e47pop')">Popcorn</button>
+               <div id="d40e47pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.complex_polar_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e47mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e47mml')">Rendered Presentation MathML</button>
+               <div id="d40e47mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#integer_type">integer_type</a>]
+	  
+	    [Last: <a href="#fn_type">fn_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="integer_type"> integer_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type of an integer.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for integers.
+<div>
+               <button id="d40e78xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e78xml')">OpenMath XML (source)</button>
+               <pre id="d40e78xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="integer_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e78cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e78cmml')">Strict Content MathML</button>
+               <pre id="d40e78cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;integer_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e78prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e78pref')">Prefix</button>
+            <div id="d40e78pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#integer_type">integer_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e78popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e78pop')">Popcorn</button>
+               <div id="d40e78pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.integer_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e78mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e78mml')">Rendered Presentation MathML</button>
+               <div id="d40e78mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#integer_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#real_type">real_type</a>]
+	  
+	    [Previous: <a href="#type">type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="real_type"> real_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type of a real number.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for real numbers.
+<div>
+               <button id="d40e108xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e108xml')">OpenMath XML (source)</button>
+               <pre id="d40e108xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="real_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e108cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e108cmml')">Strict Content MathML</button>
+               <pre id="d40e108cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;real_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e108prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e108pref')">Prefix</button>
+            <div id="d40e108pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#real_type">real_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e108popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e108pop')">Popcorn</button>
+               <div id="d40e108pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.real_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e108mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e108mml')">Rendered Presentation MathML</button>
+               <div id="d40e108mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#real_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#rational_type">rational_type</a>]
+	  
+	    [Previous: <a href="#integer_type">integer_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="rational_type"> rational_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type of a rational number.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for rational numbers.
+<div>
+               <button id="d40e138xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e138xml')">OpenMath XML (source)</button>
+               <pre id="d40e138xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="rational_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e138cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e138cmml')">Strict Content MathML</button>
+               <pre id="d40e138cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;rational_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e138prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e138pref')">Prefix</button>
+            <div id="d40e138pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#rational_type">rational_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e138popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e138pop')">Popcorn</button>
+               <div id="d40e138pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.rational_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e138mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e138mml')">Rendered Presentation MathML</button>
+               <div id="d40e138mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#rational_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#complex_cartesian_type">complex_cartesian_type</a>]
+	  
+	    [Previous: <a href="#real_type">real_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="complex_cartesian_type"> complex_cartesian_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type of a complex number specified in terms of its real and imaginary
+parts.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for complex numbers represented in 
+their Cartesian form.
+<div>
+               <button id="d40e168xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e168xml')">OpenMath XML (source)</button>
+               <pre id="d40e168xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="complex_cartesian_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e168cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e168cmml')">Strict Content MathML</button>
+               <pre id="d40e168cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;complex_cartesian_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e168prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e168pref')">Prefix</button>
+            <div id="d40e168pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#complex_cartesian_type">complex_cartesian_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e168popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e168pop')">Popcorn</button>
+               <div id="d40e168pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.complex_cartesian_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e168mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e168mml')">Rendered Presentation MathML</button>
+               <div id="d40e168mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#complex_cartesian_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#complex_polar_type">complex_polar_type</a>]
+	  
+	    [Previous: <a href="#rational_type">rational_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="complex_polar_type"> complex_polar_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type of a complex number specified in terms of its modulus and argument.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for complex numbers represented in 
+their polar form.
+<div>
+               <button id="d40e198xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e198xml')">OpenMath XML (source)</button>
+               <pre id="d40e198xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="complex_polar_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e198cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e198cmml')">Strict Content MathML</button>
+               <pre id="d40e198cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;complex_polar_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e198prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e198pref')">Prefix</button>
+            <div id="d40e198pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#complex_polar_type">complex_polar_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e198popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e198pop')">Popcorn</button>
+               <div id="d40e198pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.complex_polar_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e198mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e198mml')">Rendered Presentation MathML</button>
+               <div id="d40e198mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#complex_polar_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#constant_type">constant_type</a>]
+	  
+	    [Previous: <a href="#complex_cartesian_type">complex_cartesian_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="constant_type"> constant_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey a
+type for the common constants, pi ~= 3.1415, e ~= 2.718, i = square
+root of -1, gamma ~= .5772, NaN, infinity (all in the nums cd), true
+and false (in the logic cd). Also for MathML variables declared to
+have type constant, as in &lt;ci type="constant"&gt;x&lt;/ci&gt;.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for constants.
+<div>
+               <button id="d40e228xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e228xml')">OpenMath XML (source)</button>
+               <pre id="d40e228xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="constant_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e228cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e228cmml')">Strict Content MathML</button>
+               <pre id="d40e228cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;constant_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e228prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e228pref')">Prefix</button>
+            <div id="d40e228pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#constant_type">constant_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e228popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e228pop')">Popcorn</button>
+               <div id="d40e228pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.constant_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e228mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e228mml')">Rendered Presentation MathML</button>
+               <div id="d40e228mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#constant_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#vector_type">vector_type</a>]
+	  
+	    [Previous: <a href="#complex_polar_type">complex_polar_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="vector_type"> vector_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type of a (column) vector, an n-tuple of entries.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for vectors.
+<div>
+               <button id="d40e259xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e259xml')">OpenMath XML (source)</button>
+               <pre id="d40e259xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="vector_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e259cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e259cmml')">Strict Content MathML</button>
+               <pre id="d40e259cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;vector_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e259prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e259pref')">Prefix</button>
+            <div id="d40e259pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#vector_type">vector_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e259popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e259pop')">Popcorn</button>
+               <div id="d40e259pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.vector_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e259mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e259mml')">Rendered Presentation MathML</button>
+               <div id="d40e259mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#vector_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#list_type">list_type</a>]
+	  
+	    [Previous: <a href="#constant_type">constant_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="list_type"> list_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type for a list.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for lists.
+<div>
+               <button id="d40e289xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e289xml')">OpenMath XML (source)</button>
+               <pre id="d40e289xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="list_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e289cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e289cmml')">Strict Content MathML</button>
+               <pre id="d40e289cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;list_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e289prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e289pref')">Prefix</button>
+            <div id="d40e289pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#list_type">list_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e289popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e289pop')">Popcorn</button>
+               <div id="d40e289pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.list_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e289mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e289mml')">Rendered Presentation MathML</button>
+               <div id="d40e289mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#list_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#set_type">set_type</a>]
+	  
+	    [Previous: <a href="#vector_type">vector_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="set_type"> set_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type for a set.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for sets.
+<div>
+               <button id="d40e319xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e319xml')">OpenMath XML (source)</button>
+               <pre id="d40e319xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="set_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e319cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e319cmml')">Strict Content MathML</button>
+               <pre id="d40e319cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;set_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e319prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e319pref')">Prefix</button>
+            <div id="d40e319pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#set_type">set_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e319popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e319pop')">Popcorn</button>
+               <div id="d40e319pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.set_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e319mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e319mml')">Rendered Presentation MathML</button>
+               <div id="d40e319mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#set_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#matrix_type">matrix_type</a>]
+	  
+	    [Previous: <a href="#list_type">list_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="matrix_type"> matrix_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+A symbol to be used as the argument of the type symbol to convey the
+type for a matrix (n tuple of rows, where each row is an m tuple for
+some m, it should be noted that each row must be the same length).
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable z is attributed with a type for matrices.
+<div>
+               <button id="d40e349xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e349xml')">OpenMath XML (source)</button>
+               <pre id="d40e349xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="matrix_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e349cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e349cmml')">Strict Content MathML</button>
+               <pre id="d40e349cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;matrix_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e349prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e349pref')">Prefix</button>
+            <div id="d40e349pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#matrix_type">matrix_type</a>
+    ],
+   <i>z</i>)
+
+</div>
+            <div>
+               <button id="d40e349popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e349pop')">Popcorn</button>
+               <div id="d40e349pop" style="display:none; margin-top: 0.5em">
+  $z{mathmltypes.type -&gt; mathmltypes.matrix_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e349mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e349mml')">Rendered Presentation MathML</button>
+               <div id="d40e349mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">z</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#matrix_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#fn_type">fn_type</a>]
+	  
+	    [Previous: <a href="#set_type">set_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="fn_type"> fn_type </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>constant</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the argument of the type symbol to convey the
+type for a function name.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The variable f is attributed to say it represents a function.
+<div>
+               <button id="d40e379xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e379xml')">OpenMath XML (source)</button>
+               <pre id="d40e379xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+       &lt;OMS cd="mathmltypes" name="type"/&gt;
+       &lt;OMS cd="mathmltypes" name="fn_type"/&gt;
+    &lt;/OMATP&gt;
+    &lt;OMV name="f"/&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e379cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e379cmml')">Strict Content MathML</button>
+               <pre id="d40e379cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;f&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;fn_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e379prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e379pref')">Prefix</button>
+            <div id="d40e379pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+       <a href="../../../cd/mathmltypes.xhtml#type">type</a>
+               <a href="../../../cd/mathmltypes.xhtml#fn_type">fn_type</a>
+    ],
+   <i>f</i>)
+
+</div>
+            <div>
+               <button id="d40e379popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e379pop')">Popcorn</button>
+               <div id="d40e379pop" style="display:none; margin-top: 0.5em">
+  $f{mathmltypes.type -&gt; mathmltypes.fn_type}
+</div>
+            </div>
+            <div>
+               <button id="d40e379mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e379mml')">Rendered Presentation MathML</button>
+               <div id="d40e379mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mi xmlns:om="http://www.openmath.org/OpenMath">f</mi>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/mathmltypes.xhtml#fn_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#type">type</a>]
+	  
+	    [Previous: <a href="#matrix_type">matrix_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

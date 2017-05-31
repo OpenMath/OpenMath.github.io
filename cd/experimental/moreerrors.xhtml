@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>moreerrors</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: moreerrors</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/moreerrors.ocd">http://www.openmath.org/cd/moreerrors.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="moreerrors.ocd">moreerrors.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="moreerrors.omcd">moreerrors.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#algorithm">algorithm</a>, <a href="#asynchronousError">asynchronousError</a>, <a href="#encodingError">encodingError</a>, <a href="#limitation">limitation</a>, <a href="#unexpected">unexpected</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd>2004-03-30</dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd>2</dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd>2006-03-30</dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+      </dl>
+      <hr/>
+
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+
+      <hr/>
+      <h2>
+         <a name="encodingError"> encodingError </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>error</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the error which is returned when an application
+detects a lexical or syntactic error. It should have one argument
+which is a string, which should explain the error that occurred.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An application returns an 'encoding error'
+  <div>
+               <button id="d40e44xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e44xml')">OpenMath XML (source)</button>
+               <pre id="d40e44xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OME&gt;
+    &lt;OMS cd="moreerrors" name="encodingError"/&gt;
+    &lt;OMSTR&gt;
+      The symbol &amp;lt;OMS cd='arith1' name='plus'/&amp;gt; may not take a String
+as first argument
+    &lt;/OMSTR&gt;
+  &lt;/OME&gt;
+  &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e44cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e44cmml')">Strict Content MathML</button>
+               <pre id="d40e44cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;cerror&gt;&lt;csymbol cd="moreerrors"&gt;encodingError&lt;/csymbol&gt;&lt;cs&gt;
+      The symbol &amp;lt;OMS cd='arith1' name='plus'/&amp;gt; may not take a String
+as first argument
+    &lt;/cs&gt;&lt;/cerror&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e44prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e44pref')">Prefix</button>
+            <div id="d40e44pref" style="display:none; margin-top: 0.5em">
+               <b>Error</b>(<a href="../../../cd/moreerrors.xhtml#encodingError">encodingError</a>,
+  <tt> "
+      The symbol &lt;OMS cd='arith1' name='plus'/&gt; may not take a String
+as first argument
+    " </tt>)
+
+  </div>
+            <div>
+               <button id="d40e44popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e44pop')">Popcorn</button>
+               <div id="d40e44pop" style="display:none; margin-top: 0.5em">
+  moreerrors.encodingError!("
+      The symbol &lt;OMS cd='arith1' name='plus'/&gt; may not take a String
+as first argument
+    ")
+  </div>
+            </div>
+            <div>
+               <button id="d40e44mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e44mml')">Rendered Presentation MathML</button>
+               <div id="d40e44mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <merror xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>encodingError</mi>
+                        <mtext>
+      The symbol &lt;OMS cd='arith1' name='plus'/&gt; may not take a String
+as first argument
+    </mtext>
+                     </merror>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/moreerrors.xhtml#encodingError">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#algorithm">algorithm</a>]
+	  
+	    [Last: <a href="#asynchronousError">asynchronousError</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="algorithm"> algorithm </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>error</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the error which is returned when an application
+raises an error due to algorithmic restrictions of the
+implementations. This includes operations not implemented or partially
+implemented, divisions by zero and other domain errors. It will have
+at least one argument, which is a string describing the problem. It
+may have a second argument which is relevant to the error.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An application returns an 'algorithm' error
+  <div>
+               <button id="d40e70xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e70xml')">OpenMath XML (source)</button>
+               <pre id="d40e70xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OME&gt;
+    &lt;OMS cd="moreerrors" name="algorithm"/&gt;
+    &lt;OMSTR&gt;
+multiplication by $\sqrt{-1}$ has not been implemented
+    &lt;/OMSTR&gt;
+  &lt;/OME&gt;
+  &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e70cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e70cmml')">Strict Content MathML</button>
+               <pre id="d40e70cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;cerror&gt;&lt;csymbol cd="moreerrors"&gt;algorithm&lt;/csymbol&gt;&lt;cs&gt;
+multiplication by $\sqrt{-1}$ has not been implemented
+    &lt;/cs&gt;&lt;/cerror&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e70prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e70pref')">Prefix</button>
+            <div id="d40e70pref" style="display:none; margin-top: 0.5em">
+               <b>Error</b>(<a href="../../../cd/moreerrors.xhtml#algorithm">algorithm</a>,
+  <tt> "
+multiplication by $\sqrt{-1}$ has not been implemented
+    " </tt>)
+
+  </div>
+            <div>
+               <button id="d40e70popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e70pop')">Popcorn</button>
+               <div id="d40e70pop" style="display:none; margin-top: 0.5em">
+  moreerrors.algorithm!("
+multiplication by $\sqrt{-1}$ has not been implemented
+    ")
+  </div>
+            </div>
+            <div>
+               <button id="d40e70mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e70mml')">Rendered Presentation MathML</button>
+               <div id="d40e70mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <merror xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>algorithm</mi>
+                        <mtext>
+multiplication by $\sqrt{-1}$ has not been implemented
+    </mtext>
+                     </merror>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/moreerrors.xhtml#algorithm">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#limitation">limitation</a>]
+	  
+	    [Previous: <a href="#encodingError">encodingError</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="limitation"> limitation </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>error</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the error which is returned when an application
+reads an error caused by the limitations of an implementation when
+dealing with OpenMath objects such as limits on the size of objects or
+on the kind of objects manipulated. This can include limits on the
+size of a bytearray or integer, a limit on the number of arguments of
+an application or the inability to deal with Unicode characters
+outside ISO latin 1. It will have at least one argument, which is a
+string describing the problem. It may have a second argument which is
+relevant to the error.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An application returns a 'limitation' error
+  <div>
+               <button id="d40e97xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e97xml')">OpenMath XML (source)</button>
+               <pre id="d40e97xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OME&gt;
+    &lt;OMS cd="moreerrors" name="limitation"/&gt;
+    &lt;OMSTR&gt;
+Integers $&amp;gt; 2^{32}-1$ are meaningless to this application
+    &lt;/OMSTR&gt;
+  &lt;/OME&gt;
+  &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e97cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e97cmml')">Strict Content MathML</button>
+               <pre id="d40e97cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;cerror&gt;&lt;csymbol cd="moreerrors"&gt;limitation&lt;/csymbol&gt;&lt;cs&gt;
+Integers $&amp;gt; 2^{32}-1$ are meaningless to this application
+    &lt;/cs&gt;&lt;/cerror&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e97prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e97pref')">Prefix</button>
+            <div id="d40e97pref" style="display:none; margin-top: 0.5em">
+               <b>Error</b>(<a href="../../../cd/moreerrors.xhtml#limitation">limitation</a>,
+  <tt> "
+Integers $&gt; 2^{32}-1$ are meaningless to this application
+    " </tt>)
+
+  </div>
+            <div>
+               <button id="d40e97popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e97pop')">Popcorn</button>
+               <div id="d40e97pop" style="display:none; margin-top: 0.5em">
+  moreerrors.limitation!("
+Integers $&gt; 2^{32}-1$ are meaningless to this application
+    ")
+  </div>
+            </div>
+            <div>
+               <button id="d40e97mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e97mml')">Rendered Presentation MathML</button>
+               <div id="d40e97mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <merror xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>limitation</mi>
+                        <mtext>
+Integers $&gt; 2^{32}-1$ are meaningless to this application
+    </mtext>
+                     </merror>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/moreerrors.xhtml#limitation">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#unexpected">unexpected</a>]
+	  
+	    [Previous: <a href="#algorithm">algorithm</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="unexpected"> unexpected </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>error</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the error which is returned when an application
+reads an error caused by an unexpected problem. It will have
+at least one argument, which is a string describing the problem. It
+may have a second argument which is relevant to the error.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An application returns an 'unexpected' error
+  <div>
+               <button id="d40e123xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e123xml')">OpenMath XML (source)</button>
+               <pre id="d40e123xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OME&gt;
+    &lt;OMS cd="moreerrors" name="unexpected"/&gt;
+    &lt;OMSTR&gt;
+A kill was executed on the process whilst it was evaluating the expression
+    &lt;/OMSTR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="arith1" name="plus"/&gt;
+      &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OME&gt;
+  &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e123cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e123cmml')">Strict Content MathML</button>
+               <pre id="d40e123cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;cerror&gt;
+  &lt;csymbol cd="moreerrors"&gt;unexpected&lt;/csymbol&gt;
+  &lt;cs&gt;
+A kill was executed on the process whilst it was evaluating the expression
+    &lt;/cs&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/cerror&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e123prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e123pref')">Prefix</button>
+            <div id="d40e123pref" style="display:none; margin-top: 0.5em">
+               <b>Error</b>(<a href="../../../cd/moreerrors.xhtml#unexpected">unexpected</a>,
+  <tt> "
+A kill was executed on the process whilst it was evaluating the expression
+    " </tt>
+               <a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (1, 1)
+)
+
+  </div>
+            <div>
+               <button id="d40e123popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e123pop')">Popcorn</button>
+               <div id="d40e123pop" style="display:none; margin-top: 0.5em">
+  moreerrors.unexpected!("
+A kill was executed on the process whilst it was evaluating the expression
+    ", 1 + 1)
+  </div>
+            </div>
+            <div>
+               <button id="d40e123mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e123mml')">Rendered Presentation MathML</button>
+               <div id="d40e123mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <merror xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>unexpected</mi>
+                        <mtext>
+A kill was executed on the process whilst it was evaluating the expression
+    </mtext>
+                        <mrow>
+                           <mn>1</mn>
+                           <mo>+</mo>
+                           <mn>1</mn>
+                        </mrow>
+                     </merror>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/moreerrors.xhtml#unexpected">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#asynchronousError">asynchronousError</a>]
+	  
+	    [Previous: <a href="#limitation">limitation</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="asynchronousError"> asynchronousError </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>error</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the error which is returned when an application
+encounters some asynchronous error, for example if a limit in memory
+has been reached, or an error has occurred in some system call (I/O
+error, disk full, machine down). It should have one argument, which is
+a string describing the problem.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An application returns an 'asynchronousError' error
+  <div>
+               <button id="d40e159xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e159xml')">OpenMath XML (source)</button>
+               <pre id="d40e159xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OME&gt;
+    &lt;OMS cd="moreerrors" name="asynchronousError"/&gt;
+    &lt;OMSTR&gt;
+A 'disk-full' error occured 
+    &lt;/OMSTR&gt;
+  &lt;/OME&gt;
+  &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e159cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e159cmml')">Strict Content MathML</button>
+               <pre id="d40e159cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;cerror&gt;&lt;csymbol cd="moreerrors"&gt;asynchronousError&lt;/csymbol&gt;&lt;cs&gt;
+A 'disk-full' error occured 
+    &lt;/cs&gt;&lt;/cerror&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e159prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e159pref')">Prefix</button>
+            <div id="d40e159pref" style="display:none; margin-top: 0.5em">
+               <b>Error</b>(<a href="../../../cd/moreerrors.xhtml#asynchronousError">asynchronousError</a>,
+  <tt> "
+A 'disk-full' error occured 
+    " </tt>)
+
+  </div>
+            <div>
+               <button id="d40e159popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e159pop')">Popcorn</button>
+               <div id="d40e159pop" style="display:none; margin-top: 0.5em">
+  moreerrors.asynchronousError!("
+A 'disk-full' error occured 
+    ")
+  </div>
+            </div>
+            <div>
+               <button id="d40e159mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e159mml')">Rendered Presentation MathML</button>
+               <div id="d40e159mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <merror xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>asynchronousError</mi>
+                        <mtext>
+A 'disk-full' error occured 
+    </mtext>
+                     </merror>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/moreerrors.xhtml#asynchronousError">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#encodingError">encodingError</a>]
+	  
+	    [Previous: <a href="#unexpected">unexpected</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="../xsl/pmathml.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>equations1</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: equations1</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href=""/>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="equations1.ocd">equations1.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="equations1.omcd">equations1.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#dense">dense</a>, <a href="#linear">linear</a>, <a href="#non_linear">non_linear</a>, <a href="#sparse">sparse</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2004-02-04 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 1 </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd/>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+      </dl>
+      <hr/>
+
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+      <p> 
+Symbols to provide a vocabulary for talking about properties of (systems of)
+equations.
+</p>
+
+
+      <hr/>
+      <h2>
+         <a name="linear"> linear </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A predicate to indicate that an equation or system of equations is linear,
+i.e. is expressed in terms of constants and first order terms.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e38xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e38xml')">OpenMath XML (source)</button>
+               <pre id="d40e38xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="linear" cd="eqn1"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="plus" cd="arith1"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMI&gt;1&lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e38cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e38cmml')">Strict Content MathML</button>
+               <pre id="d40e38cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="eqn1"&gt;linear&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e38prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e38pref')">Prefix</button>
+            <div id="d40e38pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/eqn1.xhtml#linear">linear</a>
+  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+  ( <i>x</i>, 1)
+)
+
+</div>
+            <div>
+               <button id="d40e38popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e38pop')">Popcorn</button>
+               <div id="d40e38pop" style="display:none; margin-top: 0.5em">
+  eqn1.linear($x + 1)
+</div>
+            </div>
+            <div>
+               <button id="d40e38mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e38mml')">Rendered Presentation MathML</button>
+               <div id="d40e38mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>linear</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mrow>
+                              <mi>x</mi>
+                              <mo>+</mo>
+                              <mn>1</mn>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/equations1.xhtml#linear">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#non_linear">non_linear</a>]
+	  
+	    [Last: <a href="#dense">dense</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="non_linear"> non_linear </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A predicate to indicate that an equation or system of equations is non-linear,
+i.e. contains terms of order greater than 1.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e68xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e68xml')">OpenMath XML (source)</button>
+               <pre id="d40e68xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="non_linear" cd="eqn1"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="power" cd="arith1"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMI&gt;2&lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e68cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e68cmml')">Strict Content MathML</button>
+               <pre id="d40e68cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="eqn1"&gt;non_linear&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e68prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e68pref')">Prefix</button>
+            <div id="d40e68pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/eqn1.xhtml#non_linear">non_linear</a>
+  (<a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>x</i>, 2)
+)
+
+</div>
+            <div>
+               <button id="d40e68popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e68pop')">Popcorn</button>
+               <div id="d40e68pop" style="display:none; margin-top: 0.5em">
+  eqn1.non_linear($x ^ 2)
+</div>
+            </div>
+            <div>
+               <button id="d40e68mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e68mml')">Rendered Presentation MathML</button>
+               <div id="d40e68mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>non_linear</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <msup>
+                              <mi>x</mi>
+                              <mn>2</mn>
+                           </msup>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/equations1.xhtml#non_linear">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#sparse">sparse</a>]
+	  
+	    [Previous: <a href="#linear">linear</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+
+      <hr/>
+      <h2>
+         <a name="sparse"> sparse </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A predicate to indicate that an equation or system of equations is sparse.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e98xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e98xml')">OpenMath XML (source)</button>
+               <pre id="d40e98xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="sparse" cd="eqn1"/&gt;
+    &lt;OMV name="eqns"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e98cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e98cmml')">Strict Content MathML</button>
+               <pre id="d40e98cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="eqn1"&gt;sparse&lt;/csymbol&gt;&lt;ci&gt;eqns&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e98prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e98pref')">Prefix</button>
+            <div id="d40e98pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/eqn1.xhtml#sparse">sparse</a>
+  ( <i>eqns</i>)
+
+</div>
+            <div>
+               <button id="d40e98popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e98pop')">Popcorn</button>
+               <div id="d40e98pop" style="display:none; margin-top: 0.5em">
+  eqn1.sparse($eqns)
+</div>
+            </div>
+            <div>
+               <button id="d40e98mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e98mml')">Rendered Presentation MathML</button>
+               <div id="d40e98mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>sparse</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi>eqns</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/equations1.xhtml#sparse">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#dense">dense</a>]
+	  
+	    [Previous: <a href="#non_linear">non_linear</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+
+      <hr/>
+      <h2>
+         <a name="dense"> dense </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A predicate to indicate that an equation or system of equations is dense.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e121xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e121xml')">OpenMath XML (source)</button>
+               <pre id="d40e121xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="dense" cd="eqn1"/&gt;
+    &lt;OMV name="eqns"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e121cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e121cmml')">Strict Content MathML</button>
+               <pre id="d40e121cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="eqn1"&gt;dense&lt;/csymbol&gt;&lt;ci&gt;eqns&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e121prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e121pref')">Prefix</button>
+            <div id="d40e121pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/eqn1.xhtml#dense">dense</a>
+  ( <i>eqns</i>)
+
+</div>
+            <div>
+               <button id="d40e121popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e121pop')">Popcorn</button>
+               <div id="d40e121pop" style="display:none; margin-top: 0.5em">
+  eqn1.dense($eqns)
+</div>
+            </div>
+            <div>
+               <button id="d40e121mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e121mml')">Rendered Presentation MathML</button>
+               <div id="d40e121mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>dense</mi>
+                        <mo>⁡</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mi>eqns</mi>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../sts/equations1.xhtml#dense">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#linear">linear</a>]
+	  
+	    [Previous: <a href="#sparse">sparse</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+
+      <hr/>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5"
+             title="Site Navigation Links"
+             summary="Site Navigation Links">
+         <tr bgcolor="#FFCC33">
+            <b>
+               <td align="center">
+                  <a href="/index.html">Home</a>
+               </td>
+               <td align="center">
+                  <a href="/overview/index.html">Overview</a>
+               </td>
+               <td align="center">
+                  <a href="/documents/index.html">Documents</a>
+               </td>
+               <td align="center">
+                  <a href="/cd/index.html">Content Dictionaries</a>
+               </td>
+               <td align="center">
+                  <a href="/software/index.html">Software &amp; Tools</a>
+               </td>
+               <td align="center">
+                  <a href="/society/index.html">The OpenMath Society</a>
+               </td>
+               <td align="center">
+                  <a href="/projects/index.html">OpenMath Projects</a>
+               </td>
+               <td align="center">
+                  <a href="/lists/index.html">OpenMath Discussion Lists</a>
+               </td>
+               <td align="center">
+                  <a href="/meetings/index.html">OpenMath Meetings</a>
+               </td>
+               <td align="center">
+                  <a href="/links.html">Links</a>
+               </td>
+            </b>
+         </tr>
+      </table>
+      <hr/>
+   </body>
+</html>

@@ -1,0 +1,357 @@
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
+  <OMA>
+    <OMS cd="meta" name="CD"/>
+    <OMA>
+      <OMS cd="meta" name="CDComment"/>
+      <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDName"/>
+      <OMSTR>mathmltypes</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDBase"/>
+      <OMSTR>http://www.openmath.org/cd</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDURL"/>
+      <OMSTR>http://www.openmath.org/cd/mathmltypes.ocd</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDReviewDate"/>
+      <OMSTR>2006-03-30</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDate"/>
+      <OMSTR>2004-03-30</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDVersion"/>
+      <OMSTR>3</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDRevision"/>
+      <OMSTR>0</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDStatus"/>
+      <OMSTR>official</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="Description"/>
+      <OMSTR>This CD holds symbols denoting various types of numbers, vectors and similar constructs. Principally these are required for compatibility with MathML.</OMSTR>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>semantic-attribution</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used within an OpenMath attribute to specify the type of the object.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for complex numbers, to be represented in polar notation.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="complex_polar_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>integer_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type of an integer.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for integers.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="integer_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>real_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type of a real number.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for real numbers.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="real_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>rational_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type of a rational number.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for rational numbers.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="rational_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>complex_cartesian_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type of a complex number specified in terms of its real and imaginary parts.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for complex numbers represented in their Cartesian form.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="complex_cartesian_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>complex_polar_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type of a complex number specified in terms of its modulus and argument.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for complex numbers represented in their polar form.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="complex_polar_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>constant_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey a type for the common constants, pi ~= 3.1415, e ~= 2.718, i = square root of -1, gamma ~= .5772, NaN, infinity (all in the nums cd), true and false (in the logic cd). Also for MathML variables declared to have type constant, as in &lt;ci type="constant"&gt;x&lt;/ci&gt;.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for constants.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="constant_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>vector_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type of a (column) vector, an n-tuple of entries.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for vectors.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="vector_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>list_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type for a list.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for lists.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="list_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>set_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type for a set.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for sets.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="set_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>matrix_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type for a matrix (n tuple of rows, where each row is an m tuple for some m, it should be noted that each row must be the same length).</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable z is attributed with a type for matrices.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="matrix_type"/>
+          </OMATP>
+          <OMV name="z"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+    <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
+      <OMA>
+        <OMS cd="meta" name="Name"/>
+        <OMSTR>fn_type</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Role"/>
+        <OMSTR>constant</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Description"/>
+        <OMSTR>A symbol to be used as the argument of the type symbol to convey the type for a function name.</OMSTR>
+      </OMA>
+      <OMA>
+        <OMS cd="meta" name="Example"/>
+        <OMSTR>The variable f is attributed to say it represents a function.</OMSTR>
+        <OMATTR>
+          <OMATP>
+            <OMS cd="mathmltypes" name="type"/>
+            <OMS cd="mathmltypes" name="fn_type"/>
+          </OMATP>
+          <OMV name="f"/>
+        </OMATTR>
+      </OMA>
+    </OMA>
+  </OMA>
+</OMOBJ>
