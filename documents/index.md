@@ -3,12 +3,16 @@ layout: page
 title: OpenMath Documentation
 ---
 
-## The OpenMath Standard
+## The OpenMath Standards
 
-The * [OpenMath Standard](../standard/) describes the
-structure of OpenMath objects, encodings and content dictionaries.  There are
-also a number of associated documents describing different kinds of type
-systems which can be used to augment the information in content dictionaries.
+* The [OpenMath Standard](../standard/index.html#openmath-standard) describes the
+structure of OpenMath objects, encodings and content dictionaries.
+* The
+  [Symbolic Computation Software Composability Protocol (SCSCP)](../standard/index.html#symbolic-computation-software-composability-protocol-scscp)
+  specifies how OpenMath-encoded objects can be communicated between software systems for
+  remote procedure calls. 
+* There are also a number of associated documents describing different kinds of type systems
+which can be used to augment the information in content dictionaries.
 
 ## Useful Documents
 
