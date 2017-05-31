@@ -16,7 +16,7 @@ deemed compatible with the [MathML3 Recommendation](http://www.w3.org/TR/MathML3
   
 ## CD indexes
   
-*  [CD Groups](../cdgroups/): A list of all Content Dictionary Groups available on this server.
+* [CD Groups](../cdgroups/): A list of all Content Dictionary Groups available on this server.
 * [All CDs by Name](../cdnames/): A list of all Content Dictionaries (including contributed Dictionaries).
 * [Index of all Symbols](../symbols/): A list of all symbols defined in any Content Dictionary (including contributed Dictionaries).
 * [Archive of All CDs](../cds.tar.gz): A gzipped compressed tarball of all content-dictionaries.
