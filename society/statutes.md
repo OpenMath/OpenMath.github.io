@@ -32,9 +32,9 @@ from its members and may receive donations and legacies as well as
 grants from both public and private sources.  The Society may own
 real estate and movable property.
 
-##Membership
-###ARTICLE 3
-</H2>
+## Membership
+### ARTICLE 3
+
 The Society may accept, as an ordinary member, any person who
 supports the Society's purpose, as described in Article&#160;2 above.
 
@@ -56,7 +56,7 @@ Meeting of the Society has to agree to such an invitation.
 The number of non-Finnish members may exceed one third of the
 total.
 
-###ARTICLE 4
+### ARTICLE 4
 
 Members may terminate their membership by giving
 notice in writing to the Executive Committee or to the President,
@@ -68,14 +68,14 @@ if the member has not paid the membership fees or
 has otherwise neglected the duties of a member of the Society or
 has damaged the reputation of the Society in some way.
 
-###ARTICLE 5
+### ARTICLE 5
 
 Members and supporting members pay registration and membership
 dues as determined by the General meeting.  The Honorary President and
 Honorary Members do not pay membership fees.
 
 ## Organs of the Society
-###ARTICLE 6
+### ARTICLE 6
 
 The body of the Society with decision-making powers is the
 General Meeting of the Society. The executive body is the
@@ -103,12 +103,12 @@ Decisions will be determined by a simple majority of votes
 cast, with the President having a casting vote in the event of a tie
 except in the case of an election, which will be decided by lot.
 
-###ARTICLE 7
+### ARTICLE 7
 
 Two of the following officers together may sign on behalf of the
 Society: President, Vice-President, Secretary and Treasurer.
 
-###ARTICLE 8
+### ARTICLE 8
 
 The fiscal year shall be the calendar year. The accounts together
 with the necessary accompanying documents including the Executive
@@ -118,7 +118,7 @@ The auditors' report shall be submitted to the Executive
 Committee at least two weeks before the Annual General Meeting.
 
 ## The General Meeting
-###ARTICLE 9
+### ARTICLE 9
 
 The Annual General meetings of the Society will be convened by
 the Executive Committee and the meetings take place
@@ -141,7 +141,7 @@ votes cast.  In the case of equal votes the President of the Meeting
 will have the casting vote, except in elections which will be
 decided by lot.
 
-###ARTICLE 10
+### ARTICLE 10
 
 To convene the Society's General Meeting, the Executive Committee must give
 all members at least seven days notice either by writing to them
@@ -149,11 +149,11 @@ individually or by placing an announcement in a newspaper appearing in
 the town where the Society is based.
 
 ## Duties of the Annual General meeting
-###ARTICLE 11
+### ARTICLE 11
 
 The agenda of an Annual General Meeting will include the following items.
 
-1. The opening of the meeting.</li>
+1. The opening of the meeting.
 2. The election of the President of the Meeting, a Secretary, two persons to check the
 minutes, and two persons to count the votes if necessary.
 3. A motion that the Meeting has been properly convened and has the authority to make decisions.
@@ -170,7 +170,7 @@ the agenda of a General Meeting, they must inform the
 Executive Committee in good time prior to the meeting.
 
 ##  Amendments
-###ARTICLE 12
+### ARTICLE 12
 
 Any proposal to amend the statutes or to dissolve or merge the
 Society must be passed by three-quarters (3/4) of the votes cast in
