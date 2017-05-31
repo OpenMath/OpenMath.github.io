@@ -7,6 +7,7 @@ From time to time various meetings are organised by the [OpenMath Society](../so
 meetings.
 
 
+* The 28th OpenMath workshop: [Edinburgh, 2017](http://www.cicm-conference.org/2017/cicm.php?event=openmath&amp;menu=general).
 * The 27th OpenMath workshop: [Bialystok, 2016](http://www.cicm-conference.org/2016/cicm.php?event=openmath&amp;menu=general).
 * The 26th OpenMath workshop: [Coimbra, 2014](http://www.cicm-conference.org/2014/cicm.php?event=openmath&amp;menu=general).
 * The 25th OpenMath workshop: [Bath, 2013](http://www.cicm-conference.org/2013/cicm.php?event=openmath&amp;menu=general).
@@ -30,13 +31,9 @@ meetings.
 1998.
 * The [ESPRIT Project](../projects/esprit/final/) held its first [OpenMath for Industry](standrews98/) meeting at the University of St. Andrews, September 15 1998
 * Workshop 11, Tallahassee Florida, November 14-14 1998 
-
 * Workshop 10, Berlin, January 10-11 1998 
-
 * Workshop 9, Yorktown Heights, October 1-2 1997 
-
 * Workshop 8, Nice, May 23-24 1997 
-
 * The seventh OpenMath workshop was held in Dublin on 7-8th December 1996.
 [copies of some of
 the slides](oldws/proceedings-7.html) [list of participants](oldws/participants-7.html).
