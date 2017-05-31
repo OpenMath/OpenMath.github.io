@@ -38,11 +38,9 @@ real estate and movable property.
 The Society may accept, as an ordinary member, any person who
 supports the Society's purpose, as described in Article&#160;2 above.
 
-
 The Society may accept, as a supporting member, any person or
 legal entity that wishes to support the Society's aims or
 activities.
-
 
 Applications to become ordinary members and supporting members will be
 considered by the Executive Committee of the Society.

@@ -18,7 +18,7 @@ The committee can be contacted by [email](mailto:om-sc@openmath.org).
 The OpenMath Society is supported by the following (non-executive) officers
 * Paul Libbrecht, Web Officer
 
-## Former Executive Members
+## Former Members 
 
 * Dr. Mike Dewar, Vice-President
 * Dr. Olga Caprotti, Secretary
