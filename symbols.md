@@ -2,7 +2,9 @@
 layout: page
 title: OpenMath Content Dictionaries by name
 ---
-|Symbol|CD|Description||	Semigroup |[semigroup](../cd/experimental/semigroup.xhtml)|The contructor for the type of semigroups as a Setoid with a binary operation.|
+<!-- WARNING: This page is automatically generated, do not edit! WARNING-->
+|Symbol|CD|Description|
+|	Semigroup |[semigroup](../cd/experimental/semigroup.xhtml)|The contructor for the type of semigroups as a Setoid with a binary operation.|
 |	Setoid |[setoid](../cd/experimental/setoid.xhtml)|The contructor for the type of set with an equivalence relation on it.|
 |	associative |[semigroup](../cd/experimental/semigroup.xhtml)|The type of associative binary operation.|
 |	make_Semigroup |[semigroup](../cd/experimental/semigroup.xhtml)|The contructor for the tuples consisting of a setoid, and an associative binary operation.|

@@ -3,6 +3,7 @@
 layout: page
 title: OpenMath Content Dictionaries by name
 ---
+&lt;!-- WARNING: This page is automatically generated, do not edit! WARNING--&gt;
 <table xmlns:cdg="http://www.openmath.org/OpenMathCDG" xmlns:cd="http://www.openmath.org/OpenMathCD" xmlns:x="http://xml.apache.org/xalan" xmlns:xx="http://icl.com/saxon" xmlns:exslt="http://exslt.org/common" border="1">
 <tr>
 <th><a href="cdnames.html">Content Dictionary</a></th>
