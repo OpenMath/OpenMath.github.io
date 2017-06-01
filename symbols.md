@@ -2,9 +2,7 @@
 layout: page
 title: OpenMath Content Dictionaries by name
 ---
-
-<!-- WARNING: This page is automatically generated, do not edit! WARNING -->
-
+<!-- WARNING: This page is automatically generated, do not edit! WARNING-->
 |Symbol|CD|Description|
 |	Semigroup |[semigroup](../cd/experimental/semigroup.xhtml)|The contructor for the type of semigroups as a Setoid with a binary operation.|
 |	Setoid |[setoid](../cd/experimental/setoid.xhtml)|The contructor for the type of set with an equivalence relation on it.|
