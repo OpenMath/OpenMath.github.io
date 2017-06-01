@@ -11,8 +11,8 @@ Read more ... about [OpenMath](about) and the [OpenMath Society](society)
 
 {% for post in site.posts %}
     {% if forloop.index < 5 %}
-	   {{ post.date | date_to_string }}
-       : [{{ post.title }}]({{ site.baseurl}}{{ post.url }})
+    {{ post.date | date_to_string }}
+    : [{{ post.title }}]({{ site.baseurl}}{{ post.url }})
     {% endif %}
 {% endfor %}
 
