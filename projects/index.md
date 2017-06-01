@@ -15,9 +15,8 @@ an activity funded by the European Union which started in 2015.
   long-term storage. 
 
 ## Previous Projects
-* [The WebAlt Project](http://webalt.math.helsinki.fi), an EU Project 2004-2007.
-* [The JEM Thematic Network](http://webalt.mobi/jem/),
-an activity funded by the European Union 2006 - 2009.
+* The WebAlt Project, an EU Project 2004-2007.
+* The JEM Thematic Network, an activity funded by the European Union 2006 - 2009.
 * [The OpenMath Thematic Network](thematic/),
 an activity funded by the European Union 2001-2004.
 * [The OpenMath Esprit Project](esprit/final/),
