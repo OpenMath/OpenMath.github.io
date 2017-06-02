@@ -8,3 +8,4 @@ title: OpenMath Small Type Signatures
 OpenMath does not mandate a type system. This directory contains type signautres for some
 OpenMath content dictionaries. 
   
+## Index
