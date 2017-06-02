@@ -6,10 +6,7 @@ title: OpenMath Software And Tools
 A document giving guidelines for OpenMath tool developers is
 available [from the OpenMath thematic network.](../projects/thematic/tools-3.pdf).
 
-If you have developed any OpenMath software that should be listed here, please send the link and a short description to [om@openmath.org](../lists/).
-
-## OpenMath Validation
-[An XSLT stylesheet for validating OpenMath Fragments contained within XML documents](validate.html)
+If you have developed any OpenMath software that should be listed here, please send the link and a short description to [om@openmath.org](../follow/).
 
 ## OpenMath Phrasebooks
 
