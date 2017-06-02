@@ -22,5 +22,5 @@ which can be used to augment the information in content dictionaries.
 A detailed description of the correspondance between symbols in content MathML
 and the MathML Cd Group.
 * [A discussion document on Units in OpenMath. (PDF)](Units.pdf) 
-* [OpenMath Society Royalty-Free (RF) Licensing Requirements](openmath-ipr.html)
+* [OpenMath Society Royalty-Free (RF) Licensing Requirements](openmath-ipr)
 
