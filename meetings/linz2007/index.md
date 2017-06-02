@@ -7,10 +7,6 @@ RISC, Schloss Hagenberg, University of Linz
 June 25-26th, 2007
 
 
-
-
-
-
 The 8th OpenMath Workshop is a meeting place for developers and
     users of the OpenMath standard. The recent developments and
     applications of OpenMath are presented at this yearly event.
@@ -24,13 +20,13 @@ The 8th OpenMath Workshop is a meeting place for developers and
 
 
 
-##Programme
+## Programme
 
-####Monday June 25th
+#### Monday June 25th
 
 This day has been [recorded](#broadcast).
 
-#####MathML session (Chair: Patrick Ion)
+##### MathML session (Chair: Patrick Ion)
 
 * Robert Miner: MathML3 Roadmap
   ([recording](movies/day-1.html#Robert))
@@ -51,7 +47,7 @@ This day has been [recorded](#broadcast).
 
 
 
-#####OpenMath Session: Contributed talks
+##### OpenMath Session: Contributed talks
 
 * Christoph Lange, OM Presentation with Flexible Elisions 
     ([abstract and slides](http://jem-thematic.net/en/node/164/))
@@ -72,7 +68,7 @@ This day has been [recorded](#broadcast).
 
 
 
-#####OpenMath Session: Contributed talks (Chair: Stephen Watt)
+##### OpenMath Session: Contributed talks (Chair: Stephen Watt)
 
 * Paul Libbrecht, Bernhard Grün, Markus Thiele, and Cathrin Weiss: Visual validation of MathML-rendering
        ([abstract and slides](http://jem-thematic.net/en/node/328/), 
@@ -101,9 +97,9 @@ This day has been [recorded](#broadcast).
 
 
 
-####Tuesday June 26th
+#### Tuesday June 26th
 
-#####Authoring Maths: Position talks (Chair: Paul Libbrecht)
+##### Authoring Maths: Position talks (Chair: Paul Libbrecht)
 
 * Mika Seppälä: Why PowerPoint?
        ([abstract and slides](http://jem-thematic.net/en/node/192/))
@@ -121,7 +117,7 @@ This day has been [recorded](#broadcast).
 
 
 
-#####XML for Maths	Tutorial presentations (Chair: Stephen Watt)
+##### XML for Maths	Tutorial presentations (Chair: Stephen Watt)
 
 * Patrick Ion: Markup for Mathematics
        ([abstract and slides](http://jem-thematic.net/en/node/179/), 
@@ -140,7 +136,7 @@ This day has been [recorded](#broadcast).
 
 
 
-#####JEM Session	Contributed talks (Robert Miner)
+##### JEM Session	Contributed talks (Robert Miner)
 
 * Temur Kutsia: The SCIEnce project: symbolic computation for Europe
 
@@ -162,7 +158,7 @@ This day has been [recorded](#broadcast).
 
 
 <a name="broadcast"/>
-##Remotely Watching the Workshop
+## Remotely Watching the Workshop
 
 
 Recordings of the Workshop are being processed and have a quite variable
@@ -210,7 +206,7 @@ may help. If you can play the test stream at
 
 
 
-##Scope
+## Scope
 
 
 The main themes of this year's meeting will be the Alignment with     
@@ -245,7 +241,7 @@ The JEM, Joining Educational Mathematics, thematic network is promoting
   OMDoc, MathQTI, PhysML,  are also welcome.
 
 
-##Related Events
+## Related Events
 
 
 The workshop takes place as part of the 
@@ -267,14 +263,14 @@ On June 25. 2007 the annual general meeting of the
 
 
 
-##Call for contributions    
+## Call for contributions    
 
 We are calling for contributed talks on these topics.
    Contributed Talks should be submitted by e-mail to the Organizers     
     along with one-page html-formatted abstract until June 1st 2007.
 
 
-##Organizers
+## Organizers
 
 * Olga Caprotti, Helsinki University: 
     [olga.caprotti@helsinki.fi](mailto:olga.caprotti@helsinki.fi).
