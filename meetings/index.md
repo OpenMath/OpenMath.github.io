@@ -25,7 +25,7 @@ project requirements.
 * The 2nd [Thematic Network](../projects/thematic/) workshop, [Linz, September 2001](linz2001/).
 * The [Thematic Network](../projects/thematic/) kick-off meeting, [Berlin, August 2001](berlin2001/).
 * The [ESPRIT Project](../projects/esprit/final/) held an [Information Day](heidelberg2000/) in Heidelberg on October 6th 2000.
-* [13th OpenMath workshop](standrews2000.html), August 10 2000, University of St Andrews.
+* [13th OpenMath workshop](standrews2000/), August 10 2000, University of St Andrews.
 * [12th OpenMath workshop](oldws/riaca1999/), June 14-15 1999, Technical University of Eindhoven.
 * The [ESPRIT Project](../projects/esprit/final/) held a Seminar on OpenMath for Industry on June 11
 1999 in Amsterdam.

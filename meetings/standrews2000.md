@@ -1,10 +1,11 @@
-<page>
-<page-title>13th OpenMath Meeting, 10th August 2000</page-title>
+---
+layout: page
+title: 13th OpenMath Meeting, 10th August 2000
+---
 
-<p align="center">Notes by <strong><a href="mailto:jhd@maths.bath.ac.uk">James Davenport</a></strong></p>
+## Notes by <strong><a href="mailto:jhd@maths.bath.ac.uk">James Davenport</a></strong></p>
 
-<h1><a id="SECTION00010000000000000000"
-name="SECTION00010000000000000000">1. Introduction</a></h1>
+### 1. Introduction
 
 AMC opened the meeting. He reminded the meeting that, for the last
 three years there had been a funded ESPRIT project on OpenMath.
@@ -13,23 +14,22 @@ were on the verge of ``breaking out'' and being useful to many. He
 apologised for any short-comings on the part of the organisers
 (himself and OC) and thanked MK for his help. 
 
-<p>The core of OpenMath is the standard and its CDs. He felt that
+The core of OpenMath is the standard and its CDs. He felt that
 the standard was largely stable and should be formally accepted by
 the OpenMath Society meeting. The `core' CDs were being reviewed by
 Stan Devitt and AS. They had been delayed due to the
 perpetually-imminent arrival of MathML2. SMW would speak to this
 later. there were also various other CDs awaiting the acceptance of
-the `core' CDs.</p>
+the `core' CDs.
 
-<p>Phrasebooks were the tools and concrete implementations of CDs.
+Phrasebooks were the tools and concrete implementations of CDs.
 MR would speak to these later. It was important that these exist,
 to make the task of software developers easier. There are three
 supporting families of libraries, by MR in Java, by Stephen Braham
 (which had fallen somewhat behind the standard), also in Java, and
-from Nice (C and Java).</p>
+from Nice (C and Java).
 
-<h1><a id="SECTION00020000000000000000"
-name="SECTION00020000000000000000">2. CDs</a></h1>
+### 2. CDs
 
 JHD spoke to the issue of Content Dictionaries. There were several
 points raised for discussion. JHD in particular asked about
@@ -49,91 +49,82 @@ had not registered to do so, and for those who were eligible to
 join the OpenMath Society and wished to do so to indicate this to
 him.</p>
 
-<h1><a id="SECTION00030000000000000000"
-name="SECTION00030000000000000000">3. OpenMath Society
-Meeting</a></h1>
+### 3. OpenMath Society Meeting
 
-<b>Present:</b> Bernardin (LB), Caprotti (OC), Chicha (YC), Cohen
+*Present*: Bernardin (LB), Caprotti (OC), Chicha (YC), Cohen
 (AMC), Dalmas (SD), Davenport (JHD), Dewar (MCD), Dirat (LD),
 Dup&#233;e (BJD), Ga&#235;tano (MG), Hur (NH), Jebelean (TJ),
 Kohlhase (MK), Linton (SAL), Miller (BM), Mossakowski (TM), Naylor
 (WAN), Riem (MR), Strotmann (AS), Timoney (RMT), Traverso (CT),
 Watt (SMW). 
 
-<ol>
-<li>AMC opened the meeting. He reminded the meeting that there had
+1. AMC opened the meeting. He reminded the meeting that there had
 been, as required by the Statutes<a id="tex2html1" name="tex2html1"
 href="#foot12"><sup>1</sup></a>, an Annual Meeting in Tallahassee,
 attended by MS and AS. That meeting had adjourned all its
 substantive business to this meeting. The auditors had reported to
 that meeting, and the officers were continued until this meeting,
-save that AS was now an Auditor, and TH a Deputy Auditor.</li>
+save that AS was now an Auditor, and TH a Deputy Auditor.
 
-<li>The meeting elected JHD as its Secretary. CT and BM were
+1. The meeting elected JHD as its Secretary. CT and BM were
 elected to check the minutes. AMC was elected as president of the
-Meeting.</li>
+Meeting.
 
-<li>The Meeting confirmed that it was a duly constituted meeting,
-authorised to conduct the remaining business of the AGM.</li>
+1. The Meeting confirmed that it was a duly constituted meeting,
+authorised to conduct the remaining business of the AGM.
 
-<li>The substantive agenda was approved.</li>
+1. The substantive agenda was approved.
 
-<li>MS had pointed out by e-mail that the statutory number of
+1. MS had pointed out by e-mail that the statutory number of
 Members-at-Large of the Executive Committee was one more than had
 been previously thought. MCD nominated, and SMW seconded, AMC for
 President. This was approved unanimously, as was the re-election of
 all existing Committee members (nominated by RMT and seconded by
 JHD). SMW said that, in view of the work done at INRIA, he
-nominated MG for the vacancy. This was approved unanimously.</li>
+nominated MG for the vacancy. This was approved unanimously.
 
-<li>OpenMath standard. This had been approved previously, subject
+1. OpenMath standard. This had been approved previously, subject
 to a question (BM) about the containers for floating-point numbers.
-This had now been resolved by the <code>bigfloat1</code> CD.</li>
+This had now been resolved by the <code>bigfloat1</code> CD.
 
-<li>CD acceptance. MCD explained the procedure, and said that the
+1. CD acceptance. MCD explained the procedure, and said that the
 Committee had nominated AS and Stan Devitt to review the first
 batch. These people would also, drawing on their experience,
 suggest improvements to the process. AMC asked how long this review
 process would take. AS said that there were some fundamental
 questions. 
 
-<ul>
-<li>What level of generality was aimed for.</li>
-
-<li>What level of compatibility with MathML was being aimed
-for.</li>
-
-<li>The <code>meta</code> group needs reworking to match the
-changes to the standard.</li>
-</ul>
+  * What level of generality was aimed for.
+  * What level of compatibility with MathML was being aimed for.
+  * The <code>meta</code> group needs reworking to match the changes to the standard.
 
 JHD felt that, if these issues could be resolved at this meeting,
 it was a matter of weeks. AS felt that this was achievable. 
 
-<p>It was pointed out that there was no procedure for CD amendment.
+It was pointed out that there was no procedure for CD amendment.
 MCD thought that minor changes (as defined in the standard, and
 involving a change of minor version number) were the purview of the
 Executive, and major ones (adding symbols) should go through the
 review process. SMW pointed out that the URL did not identify the
 CD uniquely. He volunteered to draft the necessary amendment to the
-standard.</p>
+standard.
 
-<p>AMC pointed out the necessity to publish CDs, and that we had
+AMC pointed out the necessity to publish CDs, and that we had
 been waiting for months for MathML version 2. RMT asked how often
 ``bugs'' were found in CDs. MCD said that AS's fresh pair of eyes
 had pointed out several incompatibilities, not least with the
-CD-writing document by JHD.</p>
+CD-writing document by JHD.
 
-<p>RMT pointed out that this document should say how difficult it
+RMT pointed out that this document should say how difficult it
 is to write a CD. AS agreed and said that ``Abramowitz and Stegun''
 paper showed how difficult it was. AMC urged that there should be a
 special functions CD, since there was work going on in several
 places. JHD said that he had spoken to both Nice and UWO on this,
 but it was waiting for the core CDs. SMW suggested that Patrick Ion
 (Mathematical Reviews) would, at least, make an excellent reviewer,
-for technical as well as political reasons.</p>
+for technical as well as political reasons.
 
-<p>MK asked about the procedure for externally-written CDs. He said
+MK asked about the procedure for externally-written CDs. He said
 that there were potentially thousands of theorem-proving and logic
 CDs. JHD noted that there were several CD groups he had waiting in
 the wings, e.g. polynomial CDs. SMW asked that contact should also
@@ -141,51 +132,47 @@ be made with Cathode -- AMC volunteered to do this. AMC asked for
 volunteers to review the polynomial CDs: it was suggested that
 these be found in the Macaulay and Singular groups. It was agreed
 that the Executive Committee should nominate a ``CD
-Editor''.<b>EC</b><br />
-</p>
+Editor''.
 
-<p>AS reported that MS had been to an ACM-meeting on ``Mathematics
+AS reported that MS had been to an ACM-meeting on ``Mathematics
 on the Web''. He therefore suggested a CD for ``Mathematical
-Classifications''.</p>
-</li>
+Classifications''.
 
-<li>AMC raised the question of the Web Site. The substantive site
+
+1. AMC raised the question of the Web Site. The substantive site
 is currently maintained at NAG, though <tt>openmath.org</tt> is
 actually in Florida. There had been problems with the mirroring,
 but a work-around had been found. There is a ``What's new'' page,
 which can be registered with a Netminder. 
 
-<p>MK said that people contributing a CD would probably want write
+MK said that people contributing a CD would probably want write
 access to it. He favoured a CVS server for OpenMath, which was the
 tool in use by, for example, Mozilla. SAL added that GAP used CVS
 universally. MCD noted that CVS could only be used for development
--- official CDs should be archived outside CVS.</p>
+-- official CDs should be archived outside CVS.
 
-<p>There was a problem with consistency between the NAG site and
+There was a problem with consistency between the NAG site and
 the Tallahassee site, in particular URL's were not consistent. The
 NAG site should only use relative path names. MCD and BM would
-investigate.</p>
-</li>
+investigate.
 
-<li>The meeting elected Michael Kohlhase as a new member. AMC
+1. The meeting elected Michael Kohlhase as a new member. AMC
 reported that the society now had a bank account in London
 (Ontario). Gonnet was willing to contribute to the finances. AMC
 reported that the Executive felt that CD production was the
 priority, and that they wished to reward the production of good CDs
-via a small prize. The Executive would be drafting rules.</li>
+via a small prize. The Executive would be drafting rules.
 
-<li>Date of Next Meeting. This would be on the Saturday before
-ISSAC 2001, in July in London Ontario.</li>
+1. Date of Next Meeting. This would be on the Saturday before
+ISSAC 2001, in July in London Ontario.
 
-<li>MK asked about formal standardisation. MCD reported that W3C
+1. MK asked about formal standardisation. MCD reported that W3C
 would be the obvious route, but MathML was essentially occupying
 this territory. The Esprit project had investigated STEPS, but this
 seemed quite heavy. He asked for suggestions, especially from
-BM.</li>
-</ol>
+BM.
 
-<h1><a id="SECTION00040000000000000000"
-name="SECTION00040000000000000000">4. OpenMath and MathML</a></h1>
+### 4. OpenMath and MathML
 
 SMW spoke to this issue. While we had been discussing content
 earlier, this was in fact a small part of MathML. In particular he
@@ -193,7 +180,7 @@ spoke about the distinction between `content' and `presentation' in
 MathML. He worried that the MathML ``out there'' would only be
 presentation unless content was made easier. 
 
-<p>He recapitulated the early history of OpenMath, starting with
+He recapitulated the early history of OpenMath, starting with
 experience of interfacing Maple and other software and 1992. In
 1994, Dave Raggert proposed the <code>&lt;math&gt;</code> tag for
 HTML 3.0, but this was not accepted. The <i>HTML Math</i> group was
@@ -212,10 +199,10 @@ question of handling flowing equations from right to left in
 ``arabic'' mode, and similar non-mathematical issues. Several
 browsers, natively or via applets and plugins, support at least
 presentation MathML. MathML 2 has some internal changes, but also
-changes to support XML changes, XSL etc.</p>
+changes to support XML changes, XSL etc.
 
-<p>There are two mechanisms in MathML 2 to extend MathML by
-external references.</p>
+There are two mechanisms in MathML 2 to extend MathML by
+external references.
 
 <dl>
 <dt><strong><tt>csymbol</tt></strong></dt>
@@ -598,6 +585,3 @@ href="standrews2000.html#tex2html6"><sup>6</sup></a></dt>
 
 <dd>Modulo predicate logic and Zermelo-Frankel.</dd>
 </dl>
-
-</page>
-
