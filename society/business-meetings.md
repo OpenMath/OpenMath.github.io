@@ -12,7 +12,7 @@ organizes a pro-forma meeting, that does not make any decisions during that time
 we have a "working meeting" at the [OpenMath Workshop](../meetings). Find the minutes of
 the recent meetings below. 
 
-* 2016 (coming up)
+* [2016](../public/minutes/OM2016.pdf)
 * no working meeting in 2015 (no OM Workshop)
 * [2014](../public/minutes/OM2014.pdf)
 * [2013](../public/minutes/OM2013.pdf)
