@@ -13,4 +13,4 @@ generated from the source repository https://github.com/OpenMath/OMSTD
 
 [Editors' Draft](omstd20.html)
 
-[Editors' Draft width diff markings from om20-2004-06-30](omstd20-diff.html)
+[Editors' Draft with diff markings from om20-2004-06-30](omstd20-diff.html)
