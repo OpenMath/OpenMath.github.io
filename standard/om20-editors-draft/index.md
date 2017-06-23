@@ -9,7 +9,7 @@ The current edition of the OpenMath Standard is [OpenMath Version 2.0](../om20-2
 
 ## Editors' Draft
 
-generated from the source repository https://github.com/OpenMath/OMSTD
+generated from the source repository [OMSTD](https://github.com/OpenMath/OMSTD)
 
 [Editors' Draft](omstd20.html) ([pdf](omstd20.pdf))
 
