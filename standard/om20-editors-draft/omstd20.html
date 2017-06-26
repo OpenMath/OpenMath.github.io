@@ -147,8 +147,8 @@ list-style-type: lower-roman;
          
          
          <div class="mdata"><span class="mdatahead">Editors</span><br />
-            S. Buswell, O. Caprotti, D. P. Carlisle, M. C. Dewar, M. Gaëtano, M. Kohlhase, J. H. Davenport (revision 1) and P. D.F. Ion
-            (revision 1)
+            S. Buswell, O. Caprotti, D. P. Carlisle, M. C. Dewar, M. Gaëtano, M. Kohlhase, J. H. Davenport
+            (revision 1) and P. D.F. Ion (revision 1)
             
          </div>
          
@@ -161,7 +161,7 @@ list-style-type: lower-roman;
          
          
          <div class="mdata" style="font-size:110%;background-color:#EEE;padding:.5em;">
-            <b>Editors' Draft:</b> Built 2017-06-25<br />
+            <b>Editors' Draft:</b> Built 2017-06-26<br />
             Source Repository: <a href="https://github.com/OpenMath/OMSTD/">https://github.com/OpenMath/OMSTD</a><br />
             This Version: <a href="https://openmath.github.io/standard/om20-editors-draft/">https://openmath.github.io/standard/om20-editors-draft</a><br />
             Normative version: <a href="https://openmath.github.io/standard/om20-2004-06-30/">https://openmath.github.io/standard/om20-2004-06-30</a>
@@ -5956,7 +5956,8 @@ list-style-type: lower-roman;
                               <mn>31</mn>
                            </msup>
                         </math>. In the
-                        case of token identifiers 2, 34, 66, 130, 162, and 194 the integer is assembled by 
+                        case of token identifiers 2, 34, 66, 130, 162, and 194 the integer is assembled by
+                        
                         concatenating the string of decimal digits in the packets in sequence order
                         (which corresponds to most significant first).  Note that in all cases only
                         the sequence-initial packet may contain a signed
@@ -6518,7 +6519,8 @@ list-style-type: lower-roman;
                   
                   <dd>
                      
-                     <p>are encoded using the internal reference tags [30] and [30+128] (the sharing flag cannot
+                     <p>are encoded using the internal reference tags [30] and [30+128] (the sharing flag
+                        cannot
                         be set on this tag, since chains of references are not allowed in the <i>OpenMath</i>
                         binary encoding) with long flag set if the number of <i>OpenMath</i> sub-objects in the
                         encoded <i>OpenMath</i> is
@@ -6536,7 +6538,8 @@ list-style-type: lower-roman;
                   
                   <dd>
                      
-                     <p>are encoded using the external reference tags [31] and [31+128] (the sharing flag cannot
+                     <p>are encoded using the external reference tags [31] and [31+128] (the sharing flag
+                        cannot
                         be set on this tag, since chains of references are not allowed in the <i>OpenMath</i>
                         binary encoding) with the
                         long flag set if the number of bytes in the reference URI is
@@ -7060,7 +7063,8 @@ list-style-type: lower-roman;
                   
                   
                   <p>The main difference is the interpretation of the sharing flag (bit 7),
-                     which can be set on all objects that allow it. Instead of encoding a reference to a
+                     which can be set on all objects that allow it. Instead of encoding a reference to
+                     a
                      previous occurrence of an object of the same type, it indicates
                      whether an object will be referenced later in the encoding. This
                      corresponds to the information, whether an <small><code>id</code></small>
@@ -7342,7 +7346,8 @@ list-style-type: lower-roman;
                         </msup>
                         <mo>-</mo>
                         <mn>8</mn>
-                     </math>       bytes (sharing variables saves up to 256 bytes for trees up to depth 8 and wastes space
+                     </math>       bytes (sharing variables saves up to 256 bytes for trees up to depth 8 and
+                     wastes space
                      for greater depths). The shared <abbr>XML</abbr> encoding only uses
                      
                      <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -11515,7 +11520,8 @@ The application does not know about the CD specfun1
 
 &lt;!-- Elements which can appear inside an OpenMath object --&gt;
 
-&lt;!ENTITY % omel "OMS|OMV|OMI|OMB|OMSTR|OMF|OMA|OMBIND|OME|OMATTR|OMR"&gt;
+&lt;!ENTITY % omel "OMS|OMV|OMI|OMB|OMSTR|OMF
+                 |OMA|OMBIND|OME|OMATTR|OMR"&gt;
 
 &lt;!-- OpenMath object constructor --&gt;
 
@@ -11895,23 +11901,25 @@ Any elements not in the om namespace
                
                <li>
                   <p>
-                     	  The phrase "in little endian format" was unhelpfully included in the description of the binary integer encoding, which
-                     contradicted the later "network byte order". Now removed.
+                     	  The phrase "in little endian format" was unhelpfully included in the description
+                     of the binary integer encoding, which contradicted the later "network byte order".
+                     Now removed.
                      
                   </p>
                </li>
                
                <li>
                   <p>
-                     		Section 3.1.2 described the OpenMath XML value of <small><code>hex</code></small> as "from lowest to highest bits using a  least significant byte ordering". This wording was copied from section 4.2.1.2 of
-                     <a href="#MathML_2014">[18]</a>, but is close to meaningless.  Replaced by the current "in network byte order".
+                     		Section 3.1.2 described the OpenMath XML value of <small><code>hex</code></small> as "from lowest to highest bits using a  least significant byte ordering". This wording
+                     was copied from section 4.2.1.2 of <a href="#MathML_2014">[18]</a>, but is close to meaningless.  Replaced by the current "in network byte order".
                      
                   </p>
                </li>
                
                <li>
                   <p>
-                     		The example of binary encoding of floats in 3.2.2 "For example, 0.1 is encoded as <small><code>0x03 0x000000000000f03f</code></small>" was wrong, and has been replaced by the same example as the XML encoding.
+                     		The example of binary encoding of floats in 3.2.2 "For example, 0.1 is encoded as
+                     <small><code>0x03 0x000000000000f03f</code></small>" was wrong, and has been replaced by the same example as the XML encoding.
                      
                   </p>
                </li>
@@ -11923,8 +11931,8 @@ Any elements not in the om namespace
                </li>
                
                <li>
-                  <p>The "Note on names", which used to refer to Unicode 2.0, has been upgraded to allow for XML 1.0 5th edition and more specifically
-                     erratum NE17 in <a href="#erratum_NE17">[15]</a>, so that the current version of Unicode is incorporated.
+                  <p>The "Note on names", which used to refer to Unicode 2.0, has been upgraded to allow
+                     for XML 1.0 5th edition and more specifically erratum NE17 in <a href="#erratum_NE17">[15]</a>, so that the current version of Unicode is incorporated.
                      
                   </p>
                </li>
@@ -11943,7 +11951,8 @@ Any elements not in the om namespace
          <h2 id="bibliography">
             Appendix G<br />Bibliography
          </h2>
-         <p id="rfc2045"><b>[1]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message Bodies</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</a></p>
+         <p id="rfc2045"><b>[1]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message
+               Bodies</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</a></p>
          <p id="rfc2046"><b>[2]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part Two: Media
                Types</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2046.txt">http://www.ietf.org/rfc/rfc2046.txt</a></p>
          <p id="OMD132b"><b>[3]</b>  Olga Caprotti and Arjeh M. Cohen <i>A Type System for <i>OpenMath</i></i> 1.3.2b <i>OpenMath</i> Esprit Consortium, February 1999.<br /><a href="http://www.openmath.org/standard/ecc.pdf">http://www.openmath.org/standard/ecc.pdf</a></p>
@@ -11953,7 +11962,8 @@ Any elements not in the om namespace
          <p id="RELAX"><b>[7]</b>  OASIS Committee Specification <i>RELAX NG Specification</i>, December 2001.<br /><a href="http://www.oasis-open.org/committees/relax-ng/spec-20011203.html">http://www.oasis-open.org/committees/relax-ng/spec-20011203.html</a></p>
          <p id="OM_2.0r0"><b>[8]</b>  OpenMath Consortium <i><i>OpenMath</i> Version 2.0</i>, June 2004.<br /><a href="http://www.openmath.org/standard/om20-2004-06-30/">http://www.openmath.org/standard/om20-2004-06-30/</a></p>
          <p id="OM_primer"><b>[9]</b>  OpenMath Consortium <i><i>OpenMath</i> Primer</i>, June 2004.<br /><a href="http://www.openmath.org/standard/primer/">http://www.openmath.org/standard/primer/</a></p>
-         <p id="iso9660"><b>[10]</b>  Technical committee / subcommittee: JTC 1 <i>ISO 9660:1988 Information processing – Volume and File Structure of CDROM for Information Interchange</i>, 1988.<br /><a href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505">http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505</a></p>
+         <p id="iso9660"><b>[10]</b>  Technical committee / subcommittee: JTC 1 <i>ISO 9660:1988 Information processing – Volume and File Structure of CDROM for Information
+               Interchange</i>, 1988.<br /><a href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505">http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505</a></p>
          <p id="UNICODE"><b>[11]</b>  Unicode Consortium <i>The Unicode Standard: Version <span>4.0.0</span></i> Addison-Wesley, 2003.<br /><a href="http://www.unicode.org/versions/Unicode4.0.0">Online edition available from http://www.unicode.org/versions/Unicode4.0.0</a></p>
          <p id="XSD"><b>[12]</b>  World Wide Web Consortium <i>XML Schema Part 1: Structures &amp; Part 2: Datatypes</i>, May 2001.<br /><a href="http://www.w3.org/TR/xmlschema-1/">http://www.w3.org/TR/xmlschema-1/</a><br /><a href="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</a></p>
          <p id="xmlns"><b>[13]</b>  World Wide Web Consortium <i>Namespaces in XML</i>, January 1999.<br /><a href="http://www.w3.org/TR/REC-xml-names/">http://www.w3.org/TR/REC-xml-names/</a></p>
