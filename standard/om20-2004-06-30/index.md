@@ -10,15 +10,15 @@ A ZIP archive of the files in this distribution including the DocBook sources an
 
 ## OpenMath 2.0  Standard Document
 
-| XHTML (normative version) | [omstd20html-0.xml](omstd20html-0.xml) | (not recommended with current browswers)|
 | HTML (single file) | [omstd20.html](omstd20.html) | |
-| XHTML (single file) | [omstd20html.xml](omstd20html.xml) | (not recommended with current browswers)|
+| XHTML (normative version) | [omstd20html-0.xml](omstd20html-0.xml) | (not recommended with current browsers)|
+| XHTML (single file) | [omstd20html.xml](omstd20html.xml) | (not recommended with current browsers)|
 | PDF | [omstd20.pdf](omstd20.pdf) | |
 
 ## OpenMath 2.0 Standard Document, with diff-marking showing changes from OpenMath Version 1.1
 
 | HTML (single file) | [omstd20-diff.html](omstd20-diff.xml) | | 
-| XHTML (single file) | [omstd20html-diff.xml](omstd20html-diff.xml) | (not recommended with current browswers)|
+| XHTML (single file) | [omstd20html-diff.xml](omstd20html-diff.xml) | (not recommended with current browsers)|
 | PDF | [omstd20-diff.pdf](omstd20-diff.pdf) | |
 
 ## Schema
