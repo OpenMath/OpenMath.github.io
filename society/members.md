@@ -93,6 +93,7 @@ The current members of the society are listed below.
 * [Tom Wiesing](https://kwarc.info/people/twiesing)
 * [Dennis Müller](https://kwarc.info/people/dmueller)
 * Wolfram Sperber
+* Howard Cohl
 
 ## Alumni
 * Robert Miner
