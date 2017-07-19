@@ -66,7 +66,7 @@ The current members of the society are listed below.
 * [Stephen Watt](http://www.csd.uwo.ca/faculty/watt)
 * [Renaud Rioboo](mailto:Renaud.Rioboo@lip6.fr)
 * Sebastian Xambo
-* [Hans Cuipers](http://www.win.tue.nl/~hansc)
+* [Hans Cuypers](http://www.win.tue.nl/~hansc)
 * [Christine Müller](http://kwarc.info/cmueller)
 * [Normen Müller](http://kwarc.info/nmueller)
 * [Florian Rabe](http://kwarc.info/frabe)
@@ -93,6 +93,7 @@ The current members of the society are listed below.
 * [Tom Wiesing](https://kwarc.info/people/twiesing)
 * [Dennis Müller](https://kwarc.info/people/dmueller)
 * Wolfram Sperber
+* Howard Cohl
 
 ## Alumni
 * Robert Miner
