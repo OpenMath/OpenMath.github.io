@@ -5,7 +5,7 @@ title: OpenMath Home
 
 {% include intro.md %}
 
-Read more ... about [OpenMath](about) and the [OpenMath Society](society)
+Read more ... about [OpenMath](about/) and the [OpenMath Society](society/)
 
 ## News ([older news](news/); [really old news](oldnews/))
 
