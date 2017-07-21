@@ -11,7 +11,7 @@ If you have developed any OpenMath software that should be listed here, please s
 ## OpenMath Phrasebooks
 
 * A phrasebook for [AXIOM 2.3](http://www.nag.co.uk) was shipped with the system.
-* A phrasebook for GAP 4 is available from the [GAP 4 website](http://www-history.mcs.st-and.ac.uk/~gap/).
+* A phrasebook for GAP 4 is available from the [GAP 4 website](http://www.gap-system.org/).
 * A phrasebook for Mathematica has been developed by [INRIA](mailto:stephane.dalmas@sophia.inria.fr).
 
 * Various phrasebooks for GAP, Magma and Mathematica are available from [RIACA](http://www.riaca.win.tue.nl/products/).
@@ -24,7 +24,7 @@ If you have developed any OpenMath software that should be listed here, please s
 * [An OpenMath Shell](http://www.riaca.win.tue.nl/products/) for sending OpenMath to a computational engine. 
 * [A computation service using GAP](http://www.riaca.win.tue.nl/products/)
 * [A computation service using Mathematica](http://www.riaca.win.tue.nl/products/)
-* [LaTeX to OpenMath translator demo ](http://www.maths.tcd.ie/~richardt/openmath) 
+* [LaTeX to OpenMath translator demo ](http://www.maths.tcd.ie/~richardt/openmath/) 
 * [OpenMath to LaTeX translator demo ](http://www.maths.tcd.ie/~dwmalone/om2la.html) 
 * [QMath](http://www.matracas.org/qmath/), a tool to produce OpenMath and OMDoc with a text-based input syntax 
 
@@ -59,7 +59,7 @@ If you have developed any OpenMath software that should be listed here, please s
 * [Sentido](http://www.matracas.org/sentido/) is a visual and linear formula editor for OpenMath objects.  It is not currently available for standalone download, but integrated into the SWiM wiki (see above).
 * [RIACA CD Editor](http://www.riaca.win.tue.nl/download/om/cd/editor/).
 * [The JOME OpenMath Editor](http://www.activemath.org/projects/Jome/) for creating and manipulating OpenMath objects.
-  The source code is available from [sourceforge](http://sourceforge.net/projects/jome/).
+  The source code is available from [sourceforge](https://sourceforge.net/projects/jome/).
 * STARS/MathWriter: A Java component which takes a simple linear input and generates
   OpenMath or MathML.  For details contact [Stilo Technology](mailto:sb@stilo.com).
 
