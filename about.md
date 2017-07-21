@@ -19,5 +19,5 @@ The worldwide OpenMath activities are coordinated within the OpenMath Society, b
 
 ## Further Information
 
-* [A More Technical Overview](../technical)
-* [A Comparison of OpenMath and MathML](../om-mml)
+* [A More Technical Overview](../technical/)
+* [A Comparison of OpenMath and MathML](../om-mml/)
