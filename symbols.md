@@ -2,8 +2,9 @@
 layout: page
 title: OpenMath Content Dictionaries by name
 ---
-<!-- WARNING: This page is automatically generated, do not edit! WARNING-->
+|------|--|-----------|
 |Symbol|CD|Description|
+|------|--|-----------|
 |	Semigroup |[semigroup](../cd/experimental/semigroup.xhtml)|The contructor for the type of semigroups as a Setoid with a binary operation.|
 |	Setoid |[setoid](../cd/experimental/setoid.xhtml)|The contructor for the type of set with an equivalence relation on it.|
 |	associative |[semigroup](../cd/experimental/semigroup.xhtml)|The type of associative binary operation.|
@@ -553,3 +554,4 @@ title: OpenMath Content Dictionaries by name
 |structure|[sts](../cd/experimental/sts.xhtml)|The structure element is used to represent a structure of a particular (algebraic) type.|
 |suchthat|[ list1 ](../cd/Official/list1.xhtml)|This symbol represents the suchthat function which may be used to construct lists, it takes two arguments. The first argument should be the set which contains the elements of the list, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the list returned.|
 |suchthat|[ set1 ](../cd/Official/set1.xhtml)|This symbol represents the suchthat function which may be used to construct sets, it takes two arguments. The first argument should be the set which contains the elements of the set we wish to represent, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the set returned.|
+|------|--|-----------|
