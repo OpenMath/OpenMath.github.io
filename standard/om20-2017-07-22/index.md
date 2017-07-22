@@ -1,16 +1,13 @@
 ---
 layout: page
-title: The OpenMath Standard <br>Editors' Draft
+title: The OpenMath Standard <br>Version 2.0 Revision 1
 ---
 
-## OpenMath Standard
 
-The current edition of the OpenMath Standard is [OpenMath Version 2.0](../om20-2004-06-30).
+[HTML](omstd20.html) ([PDF](omstd20.pdf))
 
-## Editors' Draft
+[HTML with diff markings from om20-2004-06-30](omstd20-diff.html)
+([PDF ](omstd20-diff.pdf))
 
-Generated from the source repository [OMSTD](https://github.com/OpenMath/OMSTD)
 
-[Editors' Draft](omstd20.html) ([pdf](omstd20.pdf))
-
-[Editors' Draft with diff markings from om20-2004-06-30](omstd20-diff.html) ([pdf](omstd20-diff.pdf))
+Source repository: [OMSTD](https://github.com/OpenMath/OMSTD)
