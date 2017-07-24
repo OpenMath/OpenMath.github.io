@@ -1,0 +1,1060 @@
+<script xmlns="http://www.w3.org/1999/xhtml"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>units_imperial1</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: units_imperial1</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/units_imperial1.ocd">http://www.openmath.org/cd/units_imperial1.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="units_imperial1.ocd">units_imperial1.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="units_imperial1.omcd">units_imperial1.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#acre">acre</a>, <a href="#bar">bar</a>, <a href="#degree_Fahrenheit">degree_Fahrenheit</a>, <a href="#foot">foot</a>, <a href="#mile">mile</a>, <a href="#miles_per_hr">miles_per_hr</a>, <a href="#miles_per_hr_sqrd">miles_per_hr_sqrd</a>, <a href="#pint">pint</a>, <a href="#pound_force">pound_force</a>, <a href="#pound_mass">pound_mass</a>, <a href="#yard">yard</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2003-08-21 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 3 </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd> 2004-04-01 </dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+         <dt>
+            <span class="dt">Uses CD:</span>
+         </dt>
+         <dd>
+            <a href="../../../cd/arith1.xhtml">arith1</a>, <a href="../../../cd/relation1.xhtml">relation1</a>, <a href="units_metric1.xhtml">units_metric1</a>, <a href="units_time1.xhtml">units_time1</a>, <a href="../../../cd/.xhtml"/>
+         </dd>
+      </dl>
+      <hr/>
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+
+      <p> 
+This CD defines symbols to represent imperial standard measures.
+</p>
+
+      <hr/>
+      <h2>
+         <a name="foot"> foot </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one foot. This is the standard
+imperial measure for distance.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> 1 foot = 0.3048 metres </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e60xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e60xml')">OpenMath XML (source)</button>
+               <pre id="d40e60xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="eq" cd="relation1"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="times" cd="arith1"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMS name="foot" cd="units_imperial1"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="times" cd="arith1"/&gt;
+      &lt;OMF&gt; 0.3048 &lt;/OMF&gt;
+      &lt;OMS name="metre" cd="units_metric1"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e60cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e60cmml')">Strict Content MathML</button>
+               <pre id="d40e60cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;csymbol cd="units_imperial1"&gt;foot&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;csymbol cd="units_metric1"&gt;metre&lt;/csymbol&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e60prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e60pref')">Prefix</button>
+            <div id="d40e60pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 1 , <a href="../../../cd/units_imperial1.xhtml#foot">foot</a>)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (  , <a href="../../../cd/units_metric1.xhtml#metre">metre</a>)
+)
+
+</div>
+            <div>
+               <button id="d40e60popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e60pop')">Popcorn</button>
+               <div id="d40e60pop" style="display:none; margin-top: 0.5em">
+  1 * units_imperial1.foot =  * units_metric1.metre
+</div>
+            </div>
+            <div>
+               <button id="d40e60mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e60mml')">Rendered Presentation MathML</button>
+               <div id="d40e60mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mn> 1 </mn>
+                           <mo>&#8290;</mo>
+                           <mi>foot</mi>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow> 0.3048 <mo>&#8290;</mo>
+                           <mi>metre</mi>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#foot">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#yard">yard</a>]
+	  
+	    [Last: <a href="#bar">bar</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="yard"> yard </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one yard. This is a
+standard imperial measure for distance, defined in terms of the foot.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> 1 yard = 3 feet </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e102xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e102xml')">OpenMath XML (source)</button>
+               <pre id="d40e102xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="eq" cd="relation1"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="times" cd="arith1"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMS name="yard" cd="units_imperial1"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="times" cd="arith1"/&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+      &lt;OMS name="foot" cd="units_imperial1"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e102cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e102cmml')">Strict Content MathML</button>
+               <pre id="d40e102cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;csymbol cd="units_imperial1"&gt;yard&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;csymbol cd="units_imperial1"&gt;foot&lt;/csymbol&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e102prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e102pref')">Prefix</button>
+            <div id="d40e102pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 1 , <a href="../../../cd/units_imperial1.xhtml#yard">yard</a>)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 3 , <a href="../../../cd/units_imperial1.xhtml#foot">foot</a>)
+)
+
+</div>
+            <div>
+               <button id="d40e102popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e102pop')">Popcorn</button>
+               <div id="d40e102pop" style="display:none; margin-top: 0.5em">
+  1 * units_imperial1.yard = 3 * units_imperial1.foot
+</div>
+            </div>
+            <div>
+               <button id="d40e102mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e102mml')">Rendered Presentation MathML</button>
+               <div id="d40e102mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mn> 1 </mn>
+                           <mo>&#8290;</mo>
+                           <mi>yard</mi>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mn> 3 </mn>
+                           <mo>&#8290;</mo>
+                           <mi>foot</mi>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#yard">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#mile">mile</a>]
+	  
+	    [Previous: <a href="#foot">foot</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="mile"> mile </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one (land, or statute) mile. This is a
+standard imperial measure for distance, defined in terms of the foot.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> 1 mile = 5280 feet </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e143xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e143xml')">OpenMath XML (source)</button>
+               <pre id="d40e143xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="eq" cd="relation1"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="times" cd="arith1"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMS name="mile" cd="units_imperial1"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="times" cd="arith1"/&gt;
+      &lt;OMI&gt; 5280 &lt;/OMI&gt;
+      &lt;OMS name="foot" cd="units_imperial1"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e143cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e143cmml')">Strict Content MathML</button>
+               <pre id="d40e143cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;csymbol cd="units_imperial1"&gt;mile&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;5280&lt;/cn&gt;&lt;csymbol cd="units_imperial1"&gt;foot&lt;/csymbol&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e143prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e143pref')">Prefix</button>
+            <div id="d40e143pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 1 , <a href="../../../cd/units_imperial1.xhtml#mile">mile</a>)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 5280 , <a href="../../../cd/units_imperial1.xhtml#foot">foot</a>)
+)
+
+</div>
+            <div>
+               <button id="d40e143popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e143pop')">Popcorn</button>
+               <div id="d40e143pop" style="display:none; margin-top: 0.5em">
+  1 * units_imperial1.mile = 5280 * units_imperial1.foot
+</div>
+            </div>
+            <div>
+               <button id="d40e143mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e143mml')">Rendered Presentation MathML</button>
+               <div id="d40e143mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mn> 1 </mn>
+                           <mo>&#8290;</mo>
+                           <mi>mile</mi>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mn> 5280 </mn>
+                           <mo>&#8290;</mo>
+                           <mi>foot</mi>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#mile">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#acre">acre</a>]
+	  
+	    [Previous: <a href="#yard">yard</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="acre"> acre </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one acre. This is a standard
+imperial measure for area.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> 1 acre = 4840 square yards </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e184xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e184xml')">OpenMath XML (source)</button>
+               <pre id="d40e184xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="eq" cd="relation1"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="times" cd="arith1"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMS name="acre" cd="units_imperial1"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS name="times" cd="arith1"/&gt;
+      &lt;OMI&gt; 4840 &lt;/OMI&gt;
+      &lt;OMA&gt;
+        &lt;OMS name="times" cd="arith1"/&gt;
+        &lt;OMS name="yard" cd="units_imperial1"/&gt;
+        &lt;OMS name="yard" cd="units_imperial1"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e184cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e184cmml')">Strict Content MathML</button>
+               <pre id="d40e184cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;csymbol cd="units_imperial1"&gt;acre&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;cn&gt;4840&lt;/cn&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;csymbol cd="units_imperial1"&gt;yard&lt;/csymbol&gt;
+    &lt;csymbol cd="units_imperial1"&gt;yard&lt;/csymbol&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e184prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e184pref')">Prefix</button>
+            <div id="d40e184pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 1 , <a href="../../../cd/units_imperial1.xhtml#acre">acre</a>)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 4840 , <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/units_imperial1.xhtml#yard">yard</a>, <a href="../../../cd/units_imperial1.xhtml#yard">yard</a>)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e184popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e184pop')">Popcorn</button>
+               <div id="d40e184pop" style="display:none; margin-top: 0.5em">
+  1 * units_imperial1.acre = 4840 * units_imperial1.yard * units_imperial1.yard
+</div>
+            </div>
+            <div>
+               <button id="d40e184mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e184mml')">Rendered Presentation MathML</button>
+               <div id="d40e184mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mn> 1 </mn>
+                           <mo>&#8290;</mo>
+                           <mi>acre</mi>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mn> 4840 </mn>
+                           <mo>&#8290;</mo>
+                           <mrow>
+                              <mi>yard</mi>
+                              <mo>&#215;</mo>
+                              <mi>yard</mi>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#acre">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#pint">pint</a>]
+	  
+	    [Previous: <a href="#mile">mile</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="pint"> pint </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one (imperial) pint. This is the standard
+imperial measure for volume. See units_us1 for the U.S. pint.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#pint">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#miles_per_hr">miles_per_hr</a>]
+	  
+	    [Previous: <a href="#acre">acre</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="miles_per_hr"> miles_per_hr </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one mile per hour. This is a standard
+imperial measure for speed.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> 1 miles_per_hr = 1 mile in 1 hour </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e241xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e241xml')">OpenMath XML (source)</button>
+               <pre id="d40e241xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMA&gt;
+  &lt;OMS name="eq" cd="relation1"/&gt;
+  &lt;OMS name="miles_per_h" cd="units_imperial1"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="divide" cd="arith1"/&gt; 
+    &lt;OMS name="mile" cd="units_imperial1"/&gt; 
+    &lt;OMS name="hour" cd="units_time1"/&gt; 
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e241cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e241cmml')">Strict Content MathML</button>
+               <pre id="d40e241cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;csymbol cd="units_imperial1"&gt;miles_per_h&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+   &lt;csymbol cd="units_imperial1"&gt;mile&lt;/csymbol&gt;
+   &lt;csymbol cd="units_time1"&gt;hour&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e241prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e241pref')">Prefix</button>
+            <div id="d40e241pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/units_imperial1.xhtml#miles_per_h">miles_per_h</a>, <a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/units_imperial1.xhtml#mile">mile</a>, <a href="../../../cd/units_time1.xhtml#hour">hour</a>)
+)
+
+</div>
+            <div>
+               <button id="d40e241popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e241pop')">Popcorn</button>
+               <div id="d40e241pop" style="display:none; margin-top: 0.5em">
+units_imperial1.miles_per_h = units_imperial1.mile / units_time1.hour
+</div>
+            </div>
+            <div>
+               <button id="d40e241mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e241mml')">Rendered Presentation MathML</button>
+               <div id="d40e241mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>miles_per_h</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                           <mi>mile</mi>
+                           <mi>hour</mi>
+                        </mfrac>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#miles_per_hr">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#miles_per_hr_sqrd">miles_per_hr_sqrd</a>]
+	  
+	    [Previous: <a href="#pint">pint</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="miles_per_hr_sqrd"> miles_per_hr_sqrd </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one mile per hour
+squared. This is a standard imperial measure for acceleration.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> 1 miles_per_hr_sqrd = 1 mile_per_hr (change) in 1 hour </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e273xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e273xml')">OpenMath XML (source)</button>
+               <pre id="d40e273xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMA&gt;
+  &lt;OMS name="eq" cd="relation1"/&gt;
+  &lt;OMS name="miles_per_h" cd="units_imperial1"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="divide" cd="arith1"/&gt; 
+    &lt;OMS name="mile_per_hr" cd="units_imperial1"/&gt; 
+    &lt;OMS name="hour" cd="units_time1"/&gt; 
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e273cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e273cmml')">Strict Content MathML</button>
+               <pre id="d40e273cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;csymbol cd="units_imperial1"&gt;miles_per_h&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+   &lt;csymbol cd="units_imperial1"&gt;mile_per_hr&lt;/csymbol&gt;
+   &lt;csymbol cd="units_time1"&gt;hour&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e273prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e273pref')">Prefix</button>
+            <div id="d40e273pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/units_imperial1.xhtml#miles_per_h">miles_per_h</a>, <a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/units_imperial1.xhtml#mile_per_hr">mile_per_hr</a>, <a href="../../../cd/units_time1.xhtml#hour">hour</a>)
+)
+
+</div>
+            <div>
+               <button id="d40e273popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e273pop')">Popcorn</button>
+               <div id="d40e273pop" style="display:none; margin-top: 0.5em">
+units_imperial1.miles_per_h = units_imperial1.mile_per_hr / units_time1.hour
+</div>
+            </div>
+            <div>
+               <button id="d40e273mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e273mml')">Rendered Presentation MathML</button>
+               <div id="d40e273mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>miles_per_h</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                           <mi>mile_per_hr</mi>
+                           <mi>hour</mi>
+                        </mfrac>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#miles_per_hr_sqrd">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#pound_mass">pound_mass</a>]
+	  
+	    [Previous: <a href="#miles_per_hr">miles_per_hr</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="pound_mass"> pound_mass </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of the mass which weighs one pound
+under the influence of standard gravity.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#pound_mass">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#pound_force">pound_force</a>]
+	  
+	    [Previous: <a href="#miles_per_hr_sqrd">miles_per_hr_sqrd</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="pound_force"> pound_force </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of force of one pound.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#pound_force">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#degree_Fahrenheit">degree_Fahrenheit</a>]
+	  
+	    [Previous: <a href="#pound_mass">pound_mass</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="degree_Fahrenheit"> degree_Fahrenheit </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one degree Fahrenheit. This is
+the standard imperial measure for temperature.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#degree_Fahrenheit">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#bar">bar</a>]
+	  
+	    [Previous: <a href="#pound_force">pound_force</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="bar"> bar </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the measure of one bar. This is the standard
+imperial measure for pressure.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/units_imperial1.xhtml#bar">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#foot">foot</a>]
+	  
+	    [Previous: <a href="#degree_Fahrenheit">degree_Fahrenheit</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+   </body>
+</html>

@@ -1,0 +1,1627 @@
+<script xmlns="http://www.w3.org/1999/xhtml"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>hypergeo1</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: hypergeo1</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.math.kobe-u.ac.jp/OCD/">http://www.math.kobe-u.ac.jp/OCD/</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="hypergeo1.ocd">hypergeo1.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="hypergeo1.omcd">hypergeo1.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#hypergeometric0F1">hypergeometric0F1</a>, <a href="#hypergeometric1F1">hypergeometric1F1</a>, <a href="#hypergeometric2F1">hypergeometric2F1</a>, <a href="#hypergeometric_pFq">hypergeometric_pFq</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2002-11-29 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 0 </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd> 2003-07-26 </dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+         <dt>
+            <span class="dt">Uses CD:</span>
+         </dt>
+         <dd>
+            <a href="../../../cd/alg1.xhtml">alg1</a>, <a href="../../../cd/arith1.xhtml">arith1</a>, <a href="../../../cd/calculus1.xhtml">calculus1</a>, <a href="../../../cd/fns1.xhtml">fns1</a>, <a href="hypergeo0.xhtml">hypergeo0</a>, <a href="../../../cd/interval1.xhtml">interval1</a>, <a href="../../../cd/linalg1.xhtml">linalg1</a>, <a href="../../../cd/linalg4.xhtml">linalg4</a>, <a href="../../../cd/nums1.xhtml">nums1</a>, <a href="../../../cd/relation1.xhtml">relation1</a>
+         </dd>
+      </dl>
+      <hr/>
+
+
+
+
+
+
+
+
+
+
+      <p>
+	This CD defines the Gauss hypergeometric function, confluent
+    hypergeometric functions, and generalized hypergeometric functions
+    in one variable.
+	These functions are described in the following books.
+	(1) Handbook of Mathematical Functions, Abramowitz, Stegun
+	(2) Higher transcendental functions. Vol. III. Krieger Publishing Co., Inc., Melbourne, Fla., 1981, Erdlyi, Arthur; Magnus, Wilhelm; Oberhettinger, Fritz; Tricomi, Francesco G. 
+	(3) From Gauss to Painleve, Vieweg, Katsunori Iwasaki, Hironobu Kimura, Shun Shimomura, Masaaki Yoshida. </p>
+      <p/>
+
+      <hr/>
+      <h2>
+         <a name="hypergeometric0F1"> hypergeometric0F1 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+	Hypergeometric function {}_0 F_1.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+	hypergeometric0F1(;a;z)
+	=\sum_{n=0}^{+\infty}
+	\frac{1}{pochhammer(a,n)pochhammer(1,n)} z^n
+</dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e81xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e81xml')">OpenMath XML (source)</button>
+               <pre id="d40e81xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeo1" name="hypergeometric0F1"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMV name="z"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="sum"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+        &lt;OMI&gt; 0 &lt;/OMI&gt;
+        &lt;OMS cd="nums1" name="infinity"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="n"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+              &lt;OMI&gt; 1 &lt;/OMI&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                &lt;OMV name="a"/&gt;
+                &lt;OMV name="n"/&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+              &lt;OMI&gt; 1 &lt;/OMI&gt;
+              &lt;OMV name="n"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e81cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e81cmml')">Strict Content MathML</button>
+               <pre id="d40e81cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeo1"&gt;hypergeometric0F1&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;csymbol cd="nums1"&gt;infinity&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+       &lt;cn&gt;1&lt;/cn&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e81prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e81pref')">Prefix</button>
+            <div id="d40e81pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/hypergeo1.xhtml#hypergeometric0F1">hypergeometric0F1</a>
+  ( <i>a</i>,  <i>z</i>)
+, <a href="../../../cd/arith1.xhtml#sum">sum</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 0 , <a href="../../../cd/nums1.xhtml#infinity">infinity</a>)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+           <i>n</i>
+        ] .
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/arith1.xhtml#divide">divide</a>
+  ( 1 , <a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( <i>a</i>,  <i>n</i>)
+)
+, <a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( 1 ,  <i>n</i>)
+)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>z</i>,  <i>n</i>)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e81popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e81pop')">Popcorn</button>
+               <div id="d40e81pop" style="display:none; margin-top: 0.5em">
+  hypergeo1.hypergeometric0F1($a, $z) = arith1.sum(interval1.integer_interval(0, nums1.infinity), fns1.lambda[$n -&gt; 1 / hypergeo0.pochhammer($a, $n) / hypergeo0.pochhammer(1, $n) * $z ^ $n])
+</div>
+            </div>
+            <div>
+               <button id="d40e81mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e81mml')">Rendered Presentation MathML</button>
+               <div id="d40e81mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>hypergeometric0F1</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>z</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <munderover>
+                           <mo>&#8721;</mo>
+                           <mrow>
+                              <mrow>
+                                 <mi>n</mi>
+                              </mrow>
+                              <mo>=</mo>
+                              <mn> 0 </mn>
+                           </mrow>
+                           <mi>&#8734;</mi>
+                        </munderover>
+                        <mrow>
+                           <mfrac>
+                              <mfrac>
+                                 <mn> 1 </mn>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mfrac>
+                              <mrow>
+                                 <mi>pochhammer</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn> 1 </mn>
+                                    <mo>,</mo>
+                                    <mi>n</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mfrac>
+                           <mo>&#8290;</mo>
+                           <msup>
+                              <mi>z</mi>
+                              <mi>n</mi>
+                           </msup>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/hypergeo1.xhtml#hypergeometric0F1">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#hypergeometric1F1">hypergeometric1F1</a>]
+	  
+	    [Last: <a href="#hypergeometric_pFq">hypergeometric_pFq</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="hypergeometric1F1"> hypergeometric1F1 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+	Kummer's confluent hypergeometric function.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+	hypergeometric1F1(a,b;z)
+	=\sum_{n=0}^{+\infty}
+	\frac{pochhammer(a,n)}{pochhammer(1,n)pochhammer(b,n)} z^n
+</dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e174xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e174xml')">OpenMath XML (source)</button>
+               <pre id="d40e174xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeo1" name="hypergeometric1F1"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMV name="b"/&gt;
+      &lt;OMV name="z"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="sum"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+        &lt;OMI&gt; 0 &lt;/OMI&gt;
+        &lt;OMS cd="nums1" name="infinity"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="n"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+              &lt;OMV name="a"/&gt;
+              &lt;OMV name="n"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                &lt;OMV name="b"/&gt;
+                &lt;OMV name="n"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                &lt;OMI&gt; 1 &lt;/OMI&gt;
+                &lt;OMV name="n"/&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e174cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e174cmml')">Strict Content MathML</button>
+               <pre id="d40e174cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeo1"&gt;hypergeometric1F1&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;csymbol cd="nums1"&gt;infinity&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e174prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e174pref')">Prefix</button>
+            <div id="d40e174pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/hypergeo1.xhtml#hypergeometric1F1">hypergeometric1F1</a>
+  ( <i>a</i>,  <i>b</i>,  <i>z</i>)
+, <a href="../../../cd/arith1.xhtml#sum">sum</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 0 , <a href="../../../cd/nums1.xhtml#infinity">infinity</a>)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+           <i>n</i>
+        ] .
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( <i>a</i>,  <i>n</i>)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( <i>b</i>,  <i>n</i>)
+, <a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( 1 ,  <i>n</i>)
+)
+)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>z</i>,  <i>n</i>)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e174popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e174pop')">Popcorn</button>
+               <div id="d40e174pop" style="display:none; margin-top: 0.5em">
+  hypergeo1.hypergeometric1F1($a, $b, $z) = arith1.sum(interval1.integer_interval(0, nums1.infinity), fns1.lambda[$n -&gt; hypergeo0.pochhammer($a, $n) / (hypergeo0.pochhammer($b, $n) * hypergeo0.pochhammer(1, $n)) * $z ^ $n])
+</div>
+            </div>
+            <div>
+               <button id="d40e174mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e174mml')">Rendered Presentation MathML</button>
+               <div id="d40e174mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>hypergeometric1F1</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                              <mo>,</mo>
+                              <mi>z</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <munderover>
+                           <mo>&#8721;</mo>
+                           <mrow>
+                              <mrow>
+                                 <mi>n</mi>
+                              </mrow>
+                              <mo>=</mo>
+                              <mn> 0 </mn>
+                           </mrow>
+                           <mi>&#8734;</mi>
+                        </munderover>
+                        <mrow>
+                           <mfrac>
+                              <mrow>
+                                 <mi>pochhammer</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>n</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mrow>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>b</mi>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8290;</mo>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 1 </mn>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mfrac>
+                           <mo>&#8290;</mo>
+                           <msup>
+                              <mi>z</mi>
+                              <mi>n</mi>
+                           </msup>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/hypergeo1.xhtml#hypergeometric1F1">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#hypergeometric2F1">hypergeometric2F1</a>]
+	  
+	    [Previous: <a href="#hypergeometric0F1">hypergeometric0F1</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="hypergeometric2F1"> hypergeometric2F1 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+	The Gauss hypergeometric function.
+	This function has a branch cut on [1,+infinity).
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+	hypergeometric2F1(a,b,c;z)
+	=\sum_{n=0}^{+\infty}
+	\frac{pochhammer(a,n)pochhammer(b,n)}{pochhammer(c,n)pochhammer(1,n)} z^n
+</dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e274xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e274xml')">OpenMath XML (source)</button>
+               <pre id="d40e274xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeo1" name="hypergeometric2F1"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMV name="b"/&gt;
+      &lt;OMV name="c"/&gt;
+      &lt;OMV name="z"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="sum"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+        &lt;OMI&gt; 0 &lt;/OMI&gt;
+        &lt;OMS cd="nums1" name="infinity"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="n"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                &lt;OMV name="a"/&gt;
+                &lt;OMV name="n"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                &lt;OMV name="b"/&gt;
+                &lt;OMV name="n"/&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                &lt;OMV name="c"/&gt;
+                &lt;OMV name="n"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                &lt;OMI&gt; 1 &lt;/OMI&gt;
+                &lt;OMV name="n"/&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e274cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e274cmml')">Strict Content MathML</button>
+               <pre id="d40e274cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeo1"&gt;hypergeometric2F1&lt;/csymbol&gt;
+   &lt;ci&gt;a&lt;/ci&gt;
+   &lt;ci&gt;b&lt;/ci&gt;
+   &lt;ci&gt;c&lt;/ci&gt;
+   &lt;ci&gt;z&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;csymbol cd="nums1"&gt;infinity&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e274prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e274pref')">Prefix</button>
+            <div id="d40e274pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/hypergeo1.xhtml#hypergeometric2F1">hypergeometric2F1</a>
+  ( <i>a</i>,  <i>b</i>,  <i>c</i>,  <i>z</i>)
+, <a href="../../../cd/arith1.xhtml#sum">sum</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 0 , <a href="../../../cd/nums1.xhtml#infinity">infinity</a>)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+           <i>n</i>
+        ] .
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( <i>a</i>,  <i>n</i>)
+, <a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( <i>b</i>,  <i>n</i>)
+)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( <i>c</i>,  <i>n</i>)
+, <a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( 1 ,  <i>n</i>)
+)
+)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>z</i>,  <i>n</i>)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e274popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e274pop')">Popcorn</button>
+               <div id="d40e274pop" style="display:none; margin-top: 0.5em">
+  hypergeo1.hypergeometric2F1($a, $b, $c, $z) = arith1.sum(interval1.integer_interval(0, nums1.infinity), fns1.lambda[$n -&gt; (hypergeo0.pochhammer($a, $n) * hypergeo0.pochhammer($b, $n)) / (hypergeo0.pochhammer($c, $n) * hypergeo0.pochhammer(1, $n)) * $z ^ $n])
+</div>
+            </div>
+            <div>
+               <button id="d40e274mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e274mml')">Rendered Presentation MathML</button>
+               <div id="d40e274mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>hypergeometric2F1</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                              <mo>,</mo>
+                              <mi>c</mi>
+                              <mo>,</mo>
+                              <mi>z</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <munderover>
+                           <mo>&#8721;</mo>
+                           <mrow>
+                              <mrow>
+                                 <mi>n</mi>
+                              </mrow>
+                              <mo>=</mo>
+                              <mn> 0 </mn>
+                           </mrow>
+                           <mi>&#8734;</mi>
+                        </munderover>
+                        <mrow>
+                           <mfrac>
+                              <mrow>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8290;</mo>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>b</mi>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                              <mrow>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>c</mi>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8290;</mo>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 1 </mn>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mfrac>
+                           <mo>&#8290;</mo>
+                           <msup>
+                              <mi>z</mi>
+                              <mi>n</mi>
+                           </msup>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+ z (1-z) d^2 F/dz^2 + (c - (a+b+1) z) d F/dz - a b F = 0 
+<div>
+               <button id="d40e376xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e376xml')">OpenMath XML (source)</button>
+               <pre id="d40e376xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+              &lt;OMI&gt; 1 &lt;/OMI&gt;
+              &lt;OMV name="z"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="calculus1" name="diff"/&gt;
+            &lt;OMBIND&gt;
+              &lt;OMS cd="fns1" name="lambda"/&gt;
+              &lt;OMBVAR&gt;
+                &lt;OMV name="z"/&gt;
+              &lt;/OMBVAR&gt;
+              &lt;OMA&gt;&lt;OMS cd="calculus1" name="diff"/&gt;
+                &lt;OMBIND&gt;
+                  &lt;OMS cd="fns1" name="lambda"/&gt;
+                  &lt;OMBVAR&gt;
+                    &lt;OMV name="z"/&gt;
+                  &lt;/OMBVAR&gt;
+                  &lt;OMA&gt;&lt;OMS cd="hypergeo1" name="hypergeometric2F1"/&gt;
+                    &lt;OMV name="a"/&gt;
+                    &lt;OMV name="b"/&gt;
+                    &lt;OMV name="c"/&gt;
+                    &lt;OMV name="z"/&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMBIND&gt;
+              &lt;/OMA&gt;
+            &lt;/OMBIND&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+              &lt;OMV name="c"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                  &lt;OMV name="a"/&gt;
+                  &lt;OMV name="b"/&gt;
+                &lt;/OMA&gt;
+                &lt;OMI&gt; 1 &lt;/OMI&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+            &lt;OMV name="z"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="calculus1" name="diff"/&gt;
+            &lt;OMBIND&gt;
+              &lt;OMS cd="fns1" name="lambda"/&gt;
+              &lt;OMBVAR&gt;
+                &lt;OMV name="z"/&gt;
+              &lt;/OMBVAR&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeo1" name="hypergeometric2F1"/&gt;
+                &lt;OMV name="a"/&gt;
+                &lt;OMV name="b"/&gt;
+                &lt;OMV name="c"/&gt;
+                &lt;OMV name="z"/&gt;
+              &lt;/OMA&gt;
+            &lt;/OMBIND&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMV name="a"/&gt;
+          &lt;OMV name="b"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeo1" name="hypergeometric2F1"/&gt;
+          &lt;OMV name="a"/&gt;
+          &lt;OMV name="b"/&gt;
+          &lt;OMV name="c"/&gt;
+          &lt;OMV name="z"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMI&gt; 0 &lt;/OMI&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e376cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e376cmml')">Strict Content MathML</button>
+               <pre id="d40e376cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+      &lt;ci&gt;z&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;diff&lt;/csymbol&gt;
+      &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+       &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+       &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;diff&lt;/csymbol&gt;
+        &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+         &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+         &lt;apply&gt;&lt;csymbol cd="hypergeo1"&gt;hypergeometric2F1&lt;/csymbol&gt;
+          &lt;ci&gt;a&lt;/ci&gt;
+          &lt;ci&gt;b&lt;/ci&gt;
+          &lt;ci&gt;c&lt;/ci&gt;
+          &lt;ci&gt;z&lt;/ci&gt;
+         &lt;/apply&gt;
+        &lt;/bind&gt;
+       &lt;/apply&gt;
+      &lt;/bind&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+       &lt;ci&gt;c&lt;/ci&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+        &lt;cn&gt;1&lt;/cn&gt;
+       &lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;ci&gt;z&lt;/ci&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;diff&lt;/csymbol&gt;
+      &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+       &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeo1"&gt;hypergeometric2F1&lt;/csymbol&gt;
+        &lt;ci&gt;a&lt;/ci&gt;
+        &lt;ci&gt;b&lt;/ci&gt;
+        &lt;ci&gt;c&lt;/ci&gt;
+        &lt;ci&gt;z&lt;/ci&gt;
+       &lt;/apply&gt;
+      &lt;/bind&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeo1"&gt;hypergeometric2F1&lt;/csymbol&gt;
+     &lt;ci&gt;a&lt;/ci&gt;
+     &lt;ci&gt;b&lt;/ci&gt;
+     &lt;ci&gt;c&lt;/ci&gt;
+     &lt;ci&gt;z&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;cn&gt;0&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e376prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e376pref')">Prefix</button>
+            <div id="d40e376pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
+  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>z</i>, <a href="../../../cd/arith1.xhtml#minus">minus</a>
+  ( 1 ,  <i>z</i>)
+)
+, <a href="../../../cd/calculus1.xhtml#diff">diff</a>
+  (<a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+                 <i>z</i>
+              ] .
+  (<a href="../../../cd/calculus1.xhtml#diff">diff</a>
+  (<a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+                     <i>z</i>
+                  ] .
+  (<a href="../../../cd/hypergeo1.xhtml#hypergeometric2F1">hypergeometric2F1</a>
+  ( <i>a</i>,  <i>b</i>,  <i>c</i>,  <i>z</i>)
+)
+)
+)
+)
+)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
+  ( <i>c</i>, <a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+  ( <i>a</i>,  <i>b</i>)
+,  1 )
+)
+,  <i>z</i>)
+, <a href="../../../cd/calculus1.xhtml#diff">diff</a>
+  (<a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+                 <i>z</i>
+              ] .
+  (<a href="../../../cd/hypergeo1.xhtml#hypergeometric2F1">hypergeometric2F1</a>
+  ( <i>a</i>,  <i>b</i>,  <i>c</i>,  <i>z</i>)
+)
+)
+)
+)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/hypergeo1.xhtml#hypergeometric2F1">hypergeometric2F1</a>
+  ( <i>a</i>,  <i>b</i>,  <i>c</i>,  <i>z</i>)
+)
+)
+,  0 )
+
+</div>
+            <div>
+               <button id="d40e376popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e376pop')">Popcorn</button>
+               <div id="d40e376pop" style="display:none; margin-top: 0.5em">
+  ($z * (1 - $z) * calculus1.diff(fns1.lambda[$z -&gt; calculus1.diff(fns1.lambda[$z -&gt; hypergeo1.hypergeometric2F1($a, $b, $c, $z)])]) + ($c - ($a + $b + 1)) * $z * calculus1.diff(fns1.lambda[$z -&gt; hypergeo1.hypergeometric2F1($a, $b, $c, $z)])) - $a * $b * hypergeo1.hypergeometric2F1($a, $b, $c, $z) = 0
+</div>
+            </div>
+            <div>
+               <button id="d40e376mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e376mml')">Rendered Presentation MathML</button>
+               <div id="d40e376mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mrow>
+                              <mrow>
+                                 <mrow>
+                                    <mi>z</mi>
+                                    <mo>&#8290;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 1 </mn>
+                                       <mo>-</mo>
+                                       <mi>z</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8290;</mo>
+                                 <mfrac>
+                                    <mi>d</mi>
+                                    <mrow>
+                                       <mi>d</mi>
+                                       <mrow>
+                                          <mi>z</mi>
+                                       </mrow>
+                                    </mrow>
+                                 </mfrac>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mfrac>
+                                       <mi>d</mi>
+                                       <mrow>
+                                          <mi>d</mi>
+                                          <mrow>
+                                             <mi>z</mi>
+                                          </mrow>
+                                       </mrow>
+                                    </mfrac>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>hypergeometric2F1</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>a</mi>
+                                             <mo>,</mo>
+                                             <mi>b</mi>
+                                             <mo>,</mo>
+                                             <mi>c</mi>
+                                             <mo>,</mo>
+                                             <mi>z</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>+</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>c</mi>
+                                       <mo>-</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>a</mi>
+                                             <mo>+</mo>
+                                             <mi>b</mi>
+                                          </mrow>
+                                          <mo>+</mo>
+                                          <mn> 1 </mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>&#8290;</mo>
+                                    <mi>z</mi>
+                                 </mrow>
+                                 <mo>&#8290;</mo>
+                                 <mfrac>
+                                    <mi>d</mi>
+                                    <mrow>
+                                       <mi>d</mi>
+                                       <mrow>
+                                          <mi>z</mi>
+                                       </mrow>
+                                    </mrow>
+                                 </mfrac>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>hypergeometric2F1</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>b</mi>
+                                          <mo>,</mo>
+                                          <mi>c</mi>
+                                          <mo>,</mo>
+                                          <mi>z</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                           <mo>-</mo>
+                           <mrow>
+                              <mrow>
+                                 <mi>a</mi>
+                                 <mo>&#8290;</mo>
+                                 <mi>b</mi>
+                              </mrow>
+                              <mo>&#8290;</mo>
+                              <mrow>
+                                 <mi>hypergeometric2F1</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>b</mi>
+                                    <mo>,</mo>
+                                    <mi>c</mi>
+                                    <mo>,</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mn> 0 </mn>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/hypergeo1.xhtml#hypergeometric2F1">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#hypergeometric_pFq">hypergeometric_pFq</a>]
+	  
+	    [Previous: <a href="#hypergeometric1F1">hypergeometric1F1</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="hypergeometric_pFq"> hypergeometric_pFq </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+	Generalized hypergeometric function.
+	This function has a branch cut on [1,+infinity).
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+	hypergeometric_pFq(a,b;z)
+	=\sum_{n=0}^{+\infty}
+	\frac{\Pi_i pochhammer(a_i,n)}{\Pi_i pochhammer(b_i,n)pochhammer(1,n)} z^n
+</dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e549xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e549xml')">OpenMath XML (source)</button>
+               <pre id="d40e549xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeo1" name="hypergeometric_pFq"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMV name="b"/&gt;
+      &lt;OMV name="z"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="sum"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+        &lt;OMI&gt; 0 &lt;/OMI&gt;
+        &lt;OMS cd="nums1" name="infinity"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="n"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="arith1" name="product"/&gt;
+                &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+                  &lt;OMI&gt; 1 &lt;/OMI&gt;
+                  &lt;OMA&gt;&lt;OMS cd="linalg4" name="size"/&gt;
+                    &lt;OMV name="a"/&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMA&gt;
+                &lt;OMBIND&gt;
+                  &lt;OMS cd="fns1" name="lambda"/&gt;
+                  &lt;OMBVAR&gt;
+                    &lt;OMV name="i"/&gt;
+                  &lt;/OMBVAR&gt;
+                  &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="lialg1" name="vector_selector"/&gt;
+                      &lt;OMV name="i"/&gt;
+                      &lt;OMV name="a"/&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMV name="n"/&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMBIND&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="arith1" name="product"/&gt;
+                &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+                  &lt;OMI&gt; 1 &lt;/OMI&gt;
+                  &lt;OMA&gt;&lt;OMS cd="linalg4" name="size"/&gt;
+                    &lt;OMV name="b"/&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMA&gt;
+                &lt;OMBIND&gt;
+                  &lt;OMS cd="fns1" name="lambda"/&gt;
+                  &lt;OMBVAR&gt;
+                    &lt;OMV name="i"/&gt;
+                  &lt;/OMBVAR&gt;
+                  &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+                      &lt;OMV name="i"/&gt;
+                      &lt;OMV name="b"/&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMV name="n"/&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMBIND&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
+              &lt;OMI&gt; 1 &lt;/OMI&gt;
+              &lt;OMV name="n"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+            &lt;OMV name="z"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e549cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e549cmml')">Strict Content MathML</button>
+               <pre id="d40e549cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeo1"&gt;hypergeometric_pFq&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;csymbol cd="nums1"&gt;infinity&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;product&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+         &lt;cn&gt;1&lt;/cn&gt;
+         &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+        &lt;/apply&gt;
+        &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+         &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+         &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
+          &lt;apply&gt;&lt;csymbol cd="lialg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+          &lt;ci&gt;n&lt;/ci&gt;
+         &lt;/apply&gt;
+        &lt;/bind&gt;
+       &lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;product&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+         &lt;cn&gt;1&lt;/cn&gt;
+         &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+        &lt;/apply&gt;
+        &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+         &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+         &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
+          &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+          &lt;ci&gt;n&lt;/ci&gt;
+         &lt;/apply&gt;
+        &lt;/bind&gt;
+       &lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e549prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e549pref')">Prefix</button>
+            <div id="d40e549pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/hypergeo1.xhtml#hypergeometric_pFq">hypergeometric_pFq</a>
+  ( <i>a</i>,  <i>b</i>,  <i>z</i>)
+, <a href="../../../cd/arith1.xhtml#sum">sum</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 0 , <a href="../../../cd/nums1.xhtml#infinity">infinity</a>)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+           <i>n</i>
+        ] .
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/arith1.xhtml#divide">divide</a>
+  (<a href="../../../cd/arith1.xhtml#product">product</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 1 , <a href="../../../cd/linalg4.xhtml#size">size</a>
+  ( <i>a</i>)
+)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+                     <i>i</i>
+                  ] .
+  (<a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  (<a href="../../../cd/lialg1.xhtml#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>a</i>)
+,  <i>n</i>)
+)
+)
+, <a href="../../../cd/arith1.xhtml#product">product</a>
+  (<a href="../../../cd/interval1.xhtml#integer_interval">integer_interval</a>
+  ( 1 , <a href="../../../cd/linalg4.xhtml#size">size</a>
+  ( <i>b</i>)
+)
+, <a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+  [
+                     <i>i</i>
+                  ] .
+  (<a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  (<a href="../../../cd/linalg1.xhtml#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>b</i>)
+,  <i>n</i>)
+)
+)
+)
+, <a href="../../../cd/hypergeo0.xhtml#pochhammer">pochhammer</a>
+  ( 1 ,  <i>n</i>)
+)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>z</i>,  <i>n</i>)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e549popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e549pop')">Popcorn</button>
+               <div id="d40e549pop" style="display:none; margin-top: 0.5em">
+  hypergeo1.hypergeometric_pFq($a, $b, $z) = arith1.sum(interval1.integer_interval(0, nums1.infinity), fns1.lambda[$n -&gt; arith1.product(interval1.integer_interval(1, linalg4.size($a)), fns1.lambda[$i -&gt; hypergeo0.pochhammer(lialg1.vector_selector($i, $a), $n)]) / arith1.product(interval1.integer_interval(1, linalg4.size($b)), fns1.lambda[$i -&gt; hypergeo0.pochhammer(linalg1.vector_selector($i, $b), $n)]) / hypergeo0.pochhammer(1, $n) * $z ^ $n])
+</div>
+            </div>
+            <div>
+               <button id="d40e549mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e549mml')">Rendered Presentation MathML</button>
+               <div id="d40e549mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>hypergeometric_pFq</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>a</mi>
+                              <mo>,</mo>
+                              <mi>b</mi>
+                              <mo>,</mo>
+                              <mi>z</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <munderover>
+                           <mo>&#8721;</mo>
+                           <mrow>
+                              <mrow>
+                                 <mi>n</mi>
+                              </mrow>
+                              <mo>=</mo>
+                              <mn> 0 </mn>
+                           </mrow>
+                           <mi>&#8734;</mi>
+                        </munderover>
+                        <mrow>
+                           <mfrac>
+                              <mfrac>
+                                 <munderover>
+                                    <mo>&#8719;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>i</mi>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mn> 1 </mn>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>size</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>a</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </munderover>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>vector_selector</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>i</mi>
+                                             <mo>,</mo>
+                                             <mi>a</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <munderover>
+                                    <mo>&#8719;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>i</mi>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mn> 1 </mn>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>size</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>b</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </munderover>
+                                 <mrow>
+                                    <mi>pochhammer</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <msub>
+                                          <mi>b</mi>
+                                          <mi>i</mi>
+                                       </msub>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mfrac>
+                              <mrow>
+                                 <mi>pochhammer</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn> 1 </mn>
+                                    <mo>,</mo>
+                                    <mi>n</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mfrac>
+                           <mo>&#8290;</mo>
+                           <msup>
+                              <mi>z</mi>
+                              <mi>n</mi>
+                           </msup>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/hypergeo1.xhtml#hypergeometric_pFq">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#hypergeometric0F1">hypergeometric0F1</a>]
+	  
+	    [Previous: <a href="#hypergeometric2F1">hypergeometric2F1</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

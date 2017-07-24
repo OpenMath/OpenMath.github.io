@@ -1,0 +1,1170 @@
+<script xmlns="http://www.w3.org/1999/xhtml"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>rdf</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: rdf</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/rdf.ocd">http://www.openmath.org/cd/rdf.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="rdf.ocd">rdf.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="rdf.omcd">rdf.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#literal_lang">literal_lang</a>, <a href="#literal_type">literal_type</a>, <a href="#prefix">prefix</a>, <a href="#prefixes">prefixes</a>, <a href="#resource">resource</a>, <a href="#resourceset">resourceset</a>, <a href="#value">value</a>, <a href="#valueset">valueset</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd>2012-02-29</dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd>1</dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd/>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd>experimental</dd>
+      </dl>
+      <hr/>
+
+      <pre>
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+      <p>
+    This CD defines symbols for basic integration of RDF data into OpenMath.
+    It should serve as a starting point for future integration scenarios of
+    Linked Data and mathematics.
+    Author: Ken Wenzel, Fraunhofer IWU
+</p>
+
+      <hr/>
+      <h2>
+         <a name="resourceset">resourceset</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents an unary construction function for constructing
+a set of RDF resources. It takes one string argument representing a 
+Manchester Syntax description as described by
+<a href="http://www.w3.org/TR/owl2-manchester-syntax/">http://www.w3.org/TR/owl2-manchester-syntax/</a>#Descriptions
+in order to construct a set of RDF resources.</p>
+            <p>Please note that it may also be possible to represent the class description
+by using OpenMath set operations:
+rdf.resourceset(
+  set1.intersect(
+    rdf.resourceset("foaf:Person"), 
+    set1.suchthat(rdf.resourceset("rdfs:Resource"), fns1.lambda[$r -&gt; set1.size(rdf.valueset("foaf:age", $r) &gt; 0)])
+  )
+)
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An example to show the representation of the class of FOAF persons with a known age.
+<div>
+               <button id="d40e46xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e46xml')">OpenMath XML (source)</button>
+               <pre id="d40e46xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="rdf" name="resourceset"/&gt;
+    &lt;OMSTR&gt;foaf:Person and foaf:age some rdfs:Literal&lt;/OMSTR&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e46cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e46cmml')">Strict Content MathML</button>
+               <pre id="d40e46cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="rdf"&gt;resourceset&lt;/csymbol&gt;&lt;cs&gt;foaf:Person and foaf:age some rdfs:Literal&lt;/cs&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e46prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e46pref')">Prefix</button>
+            <div id="d40e46pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/rdf.xhtml#resourceset">resourceset</a>
+  (<tt> "foaf:Person and foaf:age some rdfs:Literal" </tt>)
+
+</div>
+            <div>
+               <button id="d40e46popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e46pop')">Popcorn</button>
+               <div id="d40e46pop" style="display:none; margin-top: 0.5em">
+  rdf.resourceset("foaf:Person and foaf:age some rdfs:Literal")
+</div>
+            </div>
+            <div>
+               <button id="d40e46mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e46mml')">Rendered Presentation MathML</button>
+               <div id="d40e46mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>resourceset</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mtext>foaf:Person and foaf:age some rdfs:Literal</mtext>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/rdf.xhtml#resourceset">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#prefixes">prefixes</a>]
+	  
+	    [Last: <a href="#literal_lang">literal_lang</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="prefixes">prefixes</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>semantic-attribution</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used within an OpenMath attribute to specify one or more RDF namespace prefixes.
+The annotation value should be a set1.set of pairs of strings (prefix name, namespace URI) constructed
+with the prefix symbol.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/rdf.xhtml#prefixes">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#prefix">prefix</a>]
+	  
+	    [Previous: <a href="#resourceset">resourceset</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="prefix">prefix</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used as the head of the OpenMath application
+to construct a prefix mapping that can be used as a value of the prefixes attribution.
+The two arguments of this function should be OpenMath strings representing
+in order, the prefix and the corresponding namespace URI.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The prefix mappings rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt; and foaf:&lt;http://xmlns.com/foaf/0.1/&gt; 
+for a rdf.resourceset may be represented by:
+<div>
+               <button id="d40e85xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e85xml')">OpenMath XML (source)</button>
+               <pre id="d40e85xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+      &lt;OMS cd="rdf" name="prefixes"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="set"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="rdf" name="prefix"/&gt;
+          &lt;OMSTR&gt;rdfs&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;http://www.w3.org/2000/01/rdf-schema#&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="rdf" name="prefix"/&gt;
+          &lt;OMSTR&gt;foaf&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;http://xmlns.com/foaf/0.1/&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMATP&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="rdf" name="resourceset"/&gt;
+      &lt;OMSTR&gt;foaf:Person and foaf:age some rdfs:Literal&lt;/OMSTR&gt;
+    &lt;/OMA&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e85cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e85cmml')">Strict Content MathML</button>
+               <pre id="d40e85cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="rdf"&gt;resourceset&lt;/csymbol&gt;&lt;cs&gt;foaf:Person and foaf:age some rdfs:Literal&lt;/cs&gt;&lt;/apply&gt;
+  &lt;annotation-xml cd="rdf" encoding="prefixes"&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;rdfs&lt;/cs&gt;&lt;cs&gt;http://www.w3.org/2000/01/rdf-schema#&lt;/cs&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;foaf&lt;/cs&gt;&lt;cs&gt;http://xmlns.com/foaf/0.1/&lt;/cs&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e85prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e85pref')">Prefix</button>
+            <div id="d40e85pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+      <a href="../../../cd/rdf.xhtml#prefixes">prefixes</a>
+               <a href="../../../cd/set1.xhtml#set">set</a>
+  (<a href="../../../cd/rdf.xhtml#prefix">prefix</a>
+  (<tt> "rdfs" </tt>, <tt> "http://www.w3.org/2000/01/rdf-schema#" </tt>)
+, <a href="../../../cd/rdf.xhtml#prefix">prefix</a>
+  (<tt> "foaf" </tt>, <tt> "http://xmlns.com/foaf/0.1/" </tt>)
+)
+
+    ],
+  <a href="../../../cd/rdf.xhtml#resourceset">resourceset</a>
+  (<tt> "foaf:Person and foaf:age some rdfs:Literal" </tt>)
+)
+
+</div>
+            <div>
+               <button id="d40e85popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e85pop')">Popcorn</button>
+               <div id="d40e85pop" style="display:none; margin-top: 0.5em">
+  rdf.resourceset("foaf:Person and foaf:age some rdfs:Literal"){rdf.prefixes -&gt; {rdf.prefix("rdfs", "http://www.w3.org/2000/01/rdf-schema#") , rdf.prefix("foaf", "http://xmlns.com/foaf/0.1/")}}
+</div>
+            </div>
+            <div>
+               <button id="d40e85mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e85mml')">Rendered Presentation MathML</button>
+               <div id="d40e85mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>resourceset</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mtext>foaf:Person and foaf:age some rdfs:Literal</mtext>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/rdf.xhtml#prefix">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#resource">resource</a>]
+	  
+	    [Previous: <a href="#prefixes">prefixes</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="resource">resource</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents an unary construction function for representing
+a specific RDF resource. It takes one string argument denoting an IRI reference
+as prefixed name in the form "prefix:resourceName" 
+or as a full IRI in the form "&gt;IRI&lt;".
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An example to show the representation of the resource http://example.org/persons#Alice
+using a full IRI reference.
+<div>
+               <button id="d40e146xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e146xml')">OpenMath XML (source)</button>
+               <pre id="d40e146xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="rdf" name="resource"/&gt;
+    &lt;OMSTR&gt;&amp;lt;http://example.org/persons#Alice&amp;gt;&lt;/OMSTR&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e146cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e146cmml')">Strict Content MathML</button>
+               <pre id="d40e146cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;&amp;lt;http://example.org/persons#Alice&amp;gt;&lt;/cs&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e146prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e146pref')">Prefix</button>
+            <div id="d40e146pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/rdf.xhtml#resource">resource</a>
+  (<tt> "&lt;http://example.org/persons#Alice&gt;" </tt>)
+
+</div>
+            <div>
+               <button id="d40e146popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e146pop')">Popcorn</button>
+               <div id="d40e146pop" style="display:none; margin-top: 0.5em">
+  rdf.resource("&lt;http://example.org/persons#Alice&gt;")
+</div>
+            </div>
+            <div>
+               <button id="d40e146mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e146mml')">Rendered Presentation MathML</button>
+               <div id="d40e146mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>resource</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mtext>&lt;http://example.org/persons#Alice&gt;</mtext>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An example to show the representation of the resource http://example.org/persons#Alice
+using the prefixed name example:Alice.
+<div>
+               <button id="d40e160xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e160xml')">OpenMath XML (source)</button>
+               <pre id="d40e160xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+      &lt;OMS cd="rdf" name="prefixes"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="set"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="rdf" name="prefix"/&gt;
+          &lt;OMSTR&gt;example&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;http://example.org/persons#&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMATP&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="rdf" name="resource"/&gt;
+      &lt;OMSTR&gt;example:Alice&lt;/OMSTR&gt;
+    &lt;/OMA&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e160cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e160cmml')">Strict Content MathML</button>
+               <pre id="d40e160cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;example:Alice&lt;/cs&gt;&lt;/apply&gt;
+  &lt;annotation-xml cd="rdf" encoding="prefixes"&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;example&lt;/cs&gt;&lt;cs&gt;http://example.org/persons#&lt;/cs&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e160prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e160pref')">Prefix</button>
+            <div id="d40e160pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+      <a href="../../../cd/rdf.xhtml#prefixes">prefixes</a>
+               <a href="../../../cd/set1.xhtml#set">set</a>
+  (<a href="../../../cd/rdf.xhtml#prefix">prefix</a>
+  (<tt> "example" </tt>, <tt> "http://example.org/persons#" </tt>)
+)
+
+    ],
+  <a href="../../../cd/rdf.xhtml#resource">resource</a>
+  (<tt> "example:Alice" </tt>)
+)
+
+</div>
+            <div>
+               <button id="d40e160popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e160pop')">Popcorn</button>
+               <div id="d40e160pop" style="display:none; margin-top: 0.5em">
+  rdf.resource("example:Alice"){rdf.prefixes -&gt; {rdf.prefix("example", "http://example.org/persons#")}}
+</div>
+            </div>
+            <div>
+               <button id="d40e160mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e160mml')">Rendered Presentation MathML</button>
+               <div id="d40e160mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>resource</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mtext>example:Alice</mtext>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/rdf.xhtml#resource">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#value">value</a>]
+	  
+	    [Previous: <a href="#prefix">prefix</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="value">value</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents a function for accessing
+the value of an RDF property. It takes two arguments, a string
+denoting the property and an object denoting the RDF resource
+whose property value should be retrieved.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An example that retrieves the property value for http://xmlns.com/foaf/0.1/age of 
+the resource http://example.org/persons#Alice.
+<div>
+               <button id="d40e210xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e210xml')">OpenMath XML (source)</button>
+               <pre id="d40e210xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+      &lt;OMS cd="rdf" name="prefixes"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="set"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="rdf" name="prefix"/&gt;
+          &lt;OMSTR&gt;example&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;http://example.org/persons#&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="rdf" name="prefix"/&gt;
+          &lt;OMSTR&gt;foaf&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;http://xmlns.com/foaf/0.1/&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMATP&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="rdf" name="value"/&gt;
+      &lt;OMSTR&gt;foaf:age&lt;/OMSTR&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="rdf" name="resource"/&gt;
+        &lt;OMSTR&gt;example:Alice&lt;/OMSTR&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e210cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e210cmml')">Strict Content MathML</button>
+               <pre id="d40e210cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="rdf"&gt;value&lt;/csymbol&gt;
+   &lt;cs&gt;foaf:age&lt;/cs&gt;
+   &lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;example:Alice&lt;/cs&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;annotation-xml cd="rdf" encoding="prefixes"&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;example&lt;/cs&gt;&lt;cs&gt;http://example.org/persons#&lt;/cs&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;foaf&lt;/cs&gt;&lt;cs&gt;http://xmlns.com/foaf/0.1/&lt;/cs&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e210prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e210pref')">Prefix</button>
+            <div id="d40e210pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+      <a href="../../../cd/rdf.xhtml#prefixes">prefixes</a>
+               <a href="../../../cd/set1.xhtml#set">set</a>
+  (<a href="../../../cd/rdf.xhtml#prefix">prefix</a>
+  (<tt> "example" </tt>, <tt> "http://example.org/persons#" </tt>)
+, <a href="../../../cd/rdf.xhtml#prefix">prefix</a>
+  (<tt> "foaf" </tt>, <tt> "http://xmlns.com/foaf/0.1/" </tt>)
+)
+
+    ],
+  <a href="../../../cd/rdf.xhtml#value">value</a>
+  (<tt> "foaf:age" </tt>, <a href="../../../cd/rdf.xhtml#resource">resource</a>
+  (<tt> "example:Alice" </tt>)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e210popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e210pop')">Popcorn</button>
+               <div id="d40e210pop" style="display:none; margin-top: 0.5em">
+  rdf.value("foaf:age", rdf.resource("example:Alice")){rdf.prefixes -&gt; {rdf.prefix("example", "http://example.org/persons#") , rdf.prefix("foaf", "http://xmlns.com/foaf/0.1/")}}
+</div>
+            </div>
+            <div>
+               <button id="d40e210mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e210mml')">Rendered Presentation MathML</button>
+               <div id="d40e210mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>value</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mtext>foaf:age</mtext>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>resource</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mtext>example:Alice</mtext>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/rdf.xhtml#value">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#valueset">valueset</a>]
+	  
+	    [Previous: <a href="#resource">resource</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="valueset">valueset</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents a function for accessing
+all values of multivalued RDF property. It takes two arguments, a string
+denoting the property and an object denoting the RDF resource
+whose property values should be retrieved.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An example that retrieves the property values for http://xmlns.com/foaf/0.1/knows of 
+the resource http://example.org/persons#Alice and hence all persons known by Alice. 
+<div>
+               <button id="d40e279xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e279xml')">OpenMath XML (source)</button>
+               <pre id="d40e279xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+      &lt;OMS cd="rdf" name="prefixes"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="set"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="rdf" name="prefix"/&gt;
+          &lt;OMSTR&gt;example&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;http://example.org/persons#&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="rdf" name="prefix"/&gt;
+          &lt;OMSTR&gt;foaf&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;http://xmlns.com/foaf/0.1/&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMATP&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="in"/&gt;
+      &lt;OMV name="p"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="rdf" name="valueset"/&gt;
+        &lt;OMSTR&gt;foaf:knows&lt;/OMSTR&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="rdf" name="resource"/&gt;
+          &lt;OMSTR&gt;example:Alice&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e279cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e279cmml')">Strict Content MathML</button>
+               <pre id="d40e279cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+   &lt;ci&gt;p&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="rdf"&gt;valueset&lt;/csymbol&gt;
+    &lt;cs&gt;foaf:knows&lt;/cs&gt;
+    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;example:Alice&lt;/cs&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;annotation-xml cd="rdf" encoding="prefixes"&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;example&lt;/cs&gt;&lt;cs&gt;http://example.org/persons#&lt;/cs&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;foaf&lt;/cs&gt;&lt;cs&gt;http://xmlns.com/foaf/0.1/&lt;/cs&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e279prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e279pref')">Prefix</button>
+            <div id="d40e279pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+      <a href="../../../cd/rdf.xhtml#prefixes">prefixes</a>
+               <a href="../../../cd/set1.xhtml#set">set</a>
+  (<a href="../../../cd/rdf.xhtml#prefix">prefix</a>
+  (<tt> "example" </tt>, <tt> "http://example.org/persons#" </tt>)
+, <a href="../../../cd/rdf.xhtml#prefix">prefix</a>
+  (<tt> "foaf" </tt>, <tt> "http://xmlns.com/foaf/0.1/" </tt>)
+)
+
+    ],
+  <a href="../../../cd/set1.xhtml#in">in</a>
+  ( <i>p</i>, <a href="../../../cd/rdf.xhtml#valueset">valueset</a>
+  (<tt> "foaf:knows" </tt>, <a href="../../../cd/rdf.xhtml#resource">resource</a>
+  (<tt> "example:Alice" </tt>)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e279popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e279pop')">Popcorn</button>
+               <div id="d40e279pop" style="display:none; margin-top: 0.5em">
+  set1.in($p, rdf.valueset("foaf:knows", rdf.resource("example:Alice"))){rdf.prefixes -&gt; {rdf.prefix("example", "http://example.org/persons#") , rdf.prefix("foaf", "http://xmlns.com/foaf/0.1/")}}
+</div>
+            </div>
+            <div>
+               <button id="d40e279mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e279mml')">Rendered Presentation MathML</button>
+               <div id="d40e279mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>p</mi>
+                        <mo>&#8712;</mo>
+                        <mrow>
+                           <mi>valueset</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mtext>foaf:knows</mtext>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mi>resource</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mtext>example:Alice</mtext>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/rdf.xhtml#valueset">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#literal_type">literal_type</a>]
+	  
+	    [Previous: <a href="#value">value</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="literal_type">literal_type</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>semantic-attribution</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used within an OpenMath attribute to specify the type of an RDF literal which
+is represented as an OpenMath object. The annotation value should be an rdf.resource.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An example to show the representation of the typed RDF literal "This is a string."^^&lt;http://www.w3.org/2001/XMLSchema#string&gt;
+using a full IRI reference.
+<div>
+               <button id="d40e355xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e355xml')">OpenMath XML (source)</button>
+               <pre id="d40e355xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+      &lt;OMS cd="rdf" name="literal_type"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="rdf" name="resource"/&gt;
+        &lt;OMSTR&gt;&amp;lt;http://www.w3.org/2001/XMLSchema#string&amp;gt;&lt;/OMSTR&gt;
+      &lt;/OMA&gt;
+    &lt;/OMATP&gt;
+    &lt;OMSTR&gt;This is a string.&lt;/OMSTR&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e355cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e355cmml')">Strict Content MathML</button>
+               <pre id="d40e355cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;cs&gt;This is a string.&lt;/cs&gt;
+  &lt;annotation-xml cd="rdf" encoding="literal_type"&gt;&lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;&amp;lt;http://www.w3.org/2001/XMLSchema#string&amp;gt;&lt;/cs&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e355prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e355pref')">Prefix</button>
+            <div id="d40e355pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+      <a href="../../../cd/rdf.xhtml#literal_type">literal_type</a>
+               <a href="../../../cd/rdf.xhtml#resource">resource</a>
+  (<tt> "&lt;http://www.w3.org/2001/XMLSchema#string&gt;" </tt>)
+
+    ],
+  <tt> "This is a string." </tt>)
+
+</div>
+            <div>
+               <button id="d40e355popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e355pop')">Popcorn</button>
+               <div id="d40e355pop" style="display:none; margin-top: 0.5em">
+  "This is a string."{rdf.literal_type -&gt; rdf.resource("&lt;http://www.w3.org/2001/XMLSchema#string&gt;")}
+</div>
+            </div>
+            <div>
+               <button id="d40e355mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e355mml')">Rendered Presentation MathML</button>
+               <div id="d40e355mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mtext xmlns:om="http://www.openmath.org/OpenMath">This is a string.</mtext>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/rdf.xhtml#literal_type">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#literal_lang">literal_lang</a>]
+	  
+	    [Previous: <a href="#valueset">valueset</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="literal_lang">literal_lang</a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>semantic-attribution</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p> 
+A symbol to be used within an OpenMath attribute to specify the language of an RDF literal. 
+The annotation value should be an OpenMath string.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+An example to show the representation of the RDF literal "This is an English text."@en.
+<div>
+               <button id="d40e393xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e393xml')">OpenMath XML (source)</button>
+               <pre id="d40e393xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMATTR&gt;
+    &lt;OMATP&gt;
+      &lt;OMS cd="rdf" name="literal_lang"/&gt;
+      &lt;OMSTR&gt;en&lt;/OMSTR&gt;
+    &lt;/OMATP&gt;
+    &lt;OMSTR&gt;This is an English text.&lt;/OMSTR&gt;
+  &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e393cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e393cmml')">Strict Content MathML</button>
+               <pre id="d40e393cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;&lt;cs&gt;This is an English text.&lt;/cs&gt;&lt;annotation-xml cd="rdf" encoding="literal_lang"&gt;&lt;cs&gt;en&lt;/cs&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e393prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e393pref')">Prefix</button>
+            <div id="d40e393pref" style="display:none; margin-top: 0.5em">
+               <b>Attrib</b>([
+      <a href="../../../cd/rdf.xhtml#literal_lang">literal_lang</a>
+               <tt> "en" </tt>
+    ],
+  <tt> "This is an English text." </tt>)
+
+</div>
+            <div>
+               <button id="d40e393popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e393pop')">Popcorn</button>
+               <div id="d40e393pop" style="display:none; margin-top: 0.5em">
+  "This is an English text."{rdf.literal_lang -&gt; "en"}
+</div>
+            </div>
+            <div>
+               <button id="d40e393mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e393mml')">Rendered Presentation MathML</button>
+               <div id="d40e393mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mtext xmlns:om="http://www.openmath.org/OpenMath">This is an English text.</mtext>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/rdf.xhtml#literal_lang">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#resourceset">resourceset</a>]
+	  
+	    [Previous: <a href="#literal_type">literal_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+   </body>
+</html>

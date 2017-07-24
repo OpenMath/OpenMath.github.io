@@ -1,0 +1,1199 @@
+<script xmlns="http://www.w3.org/1999/xhtml"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>linalg6</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: linalg6</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/linalg6.ocd">http://www.openmath.org/cd/linalg6.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="linalg6.ocd">linalg6.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="linalg6.omcd">linalg6.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#nonZeroRowSparseMatrix">nonZeroRowSparseMatrix</a>, <a href="#nonZeroRowSparseMatrix01">nonZeroRowSparseMatrix01</a>, <a href="#sparseMatrix">sparseMatrix</a>, <a href="#sparseMatrix01">sparseMatrix01</a>, <a href="#sparseMatrixElement1">sparseMatrixElement1</a>, <a href="#sparseMatrixElement2">sparseMatrixElement2</a>, <a href="#sparseMatrixElement3">sparseMatrixElement3</a>, <a href="#sparseMatrixElement4">sparseMatrixElement4</a>, <a href="#sparseMatrixRow">sparseMatrixRow</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2002-11-15 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 0 </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd> 2005-01-01 </dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+      </dl>
+      <hr/>
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+      <p>
+Symbols for describing sparse matrices
+</p>
+
+      <hr/>
+      <h2>
+         <a name="sparseMatrixElement1"> sparseMatrixElement1 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used to represent a non-zero element of a sparse
+matrix in the following way. It takes three arguments, the first of
+which represents the column index, the second of which represents the
+row index and the third represents the value. The indexing is one
+based; that is an element in the top left position of the matrix will
+have first and second indices of 1,1 respectively. Applications of this
+symbol will be expected as arguments of the symbol sparseMatrix in
+this content dictionary.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#sparseMatrixElement1">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#sparseMatrixElement2">sparseMatrixElement2</a>]
+	  
+	    [Last: <a href="#nonZeroRowSparseMatrix01">nonZeroRowSparseMatrix01</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="sparseMatrixElement2"> sparseMatrixElement2 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used to represent a non-zero element of a sparse
+matrix in the following way. It takes two arguments, the first of
+which represents the column index, the second of which represents the
+value of the element. The row index is deduced from the index of the
+sparseMatrixRow symbols of which applications of this symbol are
+arguments. Applications of this symbol occur as arguments of arguments
+of the symbol nonZeroRowSparseMatrix only.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#sparseMatrixElement2">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#sparseMatrixElement3">sparseMatrixElement3</a>]
+	  
+	    [Previous: <a href="#sparseMatrixElement1">sparseMatrixElement1</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="sparseMatrixElement3"> sparseMatrixElement3 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used to represent a non-zero element of a sparse
+matrix over Z_2 in the following way. The first and second arguments
+are the column and row indices of the non-zero elements respectively
+i.e. elements with value 1. Applications of this symbol occur as
+arguments of arguments of the symbol sparseMatrix01 only.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#sparseMatrixElement3">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#sparseMatrixElement4">sparseMatrixElement4</a>]
+	  
+	    [Previous: <a href="#sparseMatrixElement2">sparseMatrixElement2</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="sparseMatrixElement4"> sparseMatrixElement4 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used to represent a non-zero element of a sparse
+matrix over Z_2 in the following way. The single argument is the
+column index of non-zero elements of the matrix, i.e. elements with
+value 1. Applications of this symbol occur as arguments of arguments
+of the symbol nonZeroRowSparseMatrix01 only.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#sparseMatrixElement4">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#sparseMatrixRow">sparseMatrixRow</a>]
+	  
+	    [Previous: <a href="#sparseMatrixElement3">sparseMatrixElement3</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="sparseMatrixRow"> sparseMatrixRow </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used to represent rows of sparse matrices, it is a
+fairly general symbol in that it may be used to represent rows of any
+type of sparse matrix from this CD. However the particular type of
+sparse matrix must have as elements symbols of the corresponding type,
+as described in that symbols description.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#sparseMatrixRow">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#sparseMatrix">sparseMatrix</a>]
+	  
+	    [Previous: <a href="#sparseMatrixElement4">sparseMatrixElement4</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="sparseMatrix"> sparseMatrix </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used for representing matrices, it is designed for
+efficiently representing sparse matrices. The symbol is n+2 ary, where
+the first argument is the number of rows in the matrix, the second
+argument is the number of columns in the matrix and n is the
+number of non-zero entries. The following arguments must be
+applications of the symbol sparseMatrixElement1.</p>
+            <p>Any non-specified entry is implicitly zero.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The matrix
+$$
+\left ( \begin{array}{ccccc}
+5&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;6&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0&amp;1
+\end{array}\right )
+$$
+may be represented as:
+  <div>
+               <button id="d40e87xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e87xml')">OpenMath XML (source)</button>
+               <pre id="d40e87xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg6" name="sparseMatrix"/&gt;
+      &lt;OMI&gt;4&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg6" name="sparseMatrixElement1"/&gt;
+        &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+        &lt;OMI&gt;5&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg6" name="sparseMatrixElement1"/&gt;
+        &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+        &lt;OMI&gt;6&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg6" name="sparseMatrixElement1"/&gt;
+        &lt;OMI&gt;4&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;
+        &lt;OMI&gt;1&lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e87cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e87cmml')">Strict Content MathML</button>
+               <pre id="d40e87cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrix&lt;/csymbol&gt;
+  &lt;cn&gt;4&lt;/cn&gt;
+  &lt;cn&gt;5&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement1&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement1&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement1&lt;/csymbol&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e87prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e87pref')">Prefix</button>
+            <div id="d40e87pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/linalg6.xhtml#sparseMatrix">sparseMatrix</a>
+  (4, 5, <a href="../../../cd/linalg6.xhtml#sparseMatrixElement1">sparseMatrixElement1</a>
+  (1, 1, 5)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixElement1">sparseMatrixElement1</a>
+  (2, 3, 6)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixElement1">sparseMatrixElement1</a>
+  (4, 5, 1)
+)
+
+  </div>
+            <div>
+               <button id="d40e87popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e87pop')">Popcorn</button>
+               <div id="d40e87pop" style="display:none; margin-top: 0.5em">
+    linalg6.sparseMatrix(4, 5, linalg6.sparseMatrixElement1(1, 1, 5), linalg6.sparseMatrixElement1(2, 3, 6), linalg6.sparseMatrixElement1(4, 5, 1))
+  </div>
+            </div>
+            <div>
+               <button id="d40e87mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e87mml')">Rendered Presentation MathML</button>
+               <div id="d40e87mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>sparseMatrix</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mn>4</mn>
+                           <mo>,</mo>
+                           <mn>5</mn>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixElement1</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn>1</mn>
+                                 <mo>,</mo>
+                                 <mn>1</mn>
+                                 <mo>,</mo>
+                                 <mn>5</mn>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixElement1</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn>2</mn>
+                                 <mo>,</mo>
+                                 <mn>3</mn>
+                                 <mo>,</mo>
+                                 <mn>6</mn>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixElement1</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn>4</mn>
+                                 <mo>,</mo>
+                                 <mn>5</mn>
+                                 <mo>,</mo>
+                                 <mn>1</mn>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#sparseMatrix">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#nonZeroRowSparseMatrix">nonZeroRowSparseMatrix</a>]
+	  
+	    [Previous: <a href="#sparseMatrixRow">sparseMatrixRow</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="nonZeroRowSparseMatrix"> nonZeroRowSparseMatrix </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used for representing matrices, it is designed for
+efficiently representing sparse matrices where every row has at least
+one non-zero entry. This is an n+1 ary symbol, where n is the number of
+rows in the matrix. The first argument must be the number of columns
+in the matrix, every following argument of the symbol must be an
+application of a sparseMatrixRow symbol which has arguments which are
+sparseMatrixElement2, one sparseMatrixElement2 element for each row in
+the matrix, in the order in which they occur in the matrix.</p>
+            <p>Any non-specified entry is implicitly zero.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The matrix
+$$
+\left ( \begin{array}{ccccc}
+5&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;2&amp;0&amp;0\\
+1&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0&amp;1
+\end{array}\right )
+$$
+may be represented as:
+    <div>
+               <button id="d40e151xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e151xml')">OpenMath XML (source)</button>
+               <pre id="d40e151xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg6" name="nonZeroRowSparseMatrix"/&gt;
+        &lt;OMI&gt;5&lt;/OMI&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg6" name="sparseMatrixRow"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement2"/&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg6" name="sparseMatrixRow"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement2"/&gt;
+            &lt;OMI&gt;3&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg6" name="sparseMatrixRow"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement2"/&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg6" name="sparseMatrixRow"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement2"/&gt;
+            &lt;OMI&gt;5&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e151cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e151cmml')">Strict Content MathML</button>
+               <pre id="d40e151cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;nonZeroRowSparseMatrix&lt;/csymbol&gt;
+  &lt;cn&gt;5&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixRow&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement2&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixRow&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement2&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixRow&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement2&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixRow&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement2&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e151prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e151pref')">Prefix</button>
+            <div id="d40e151pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/linalg6.xhtml#nonZeroRowSparseMatrix">nonZeroRowSparseMatrix</a>
+  (5, <a href="../../../cd/linalg6.xhtml#sparseMatrixRow">sparseMatrixRow</a>
+  (<a href="../../../cd/linalg6.xhtml#sparseMatrixElement2">sparseMatrixElement2</a>
+  (1, 5)
+)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixRow">sparseMatrixRow</a>
+  (<a href="../../../cd/linalg6.xhtml#sparseMatrixElement2">sparseMatrixElement2</a>
+  (3, 2)
+)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixRow">sparseMatrixRow</a>
+  (<a href="../../../cd/linalg6.xhtml#sparseMatrixElement2">sparseMatrixElement2</a>
+  (1, 1)
+)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixRow">sparseMatrixRow</a>
+  (<a href="../../../cd/linalg6.xhtml#sparseMatrixElement2">sparseMatrixElement2</a>
+  (5, 1)
+)
+)
+
+    </div>
+            <div>
+               <button id="d40e151popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e151pop')">Popcorn</button>
+               <div id="d40e151pop" style="display:none; margin-top: 0.5em">
+      linalg6.nonZeroRowSparseMatrix(5, linalg6.sparseMatrixRow(linalg6.sparseMatrixElement2(1, 5)), linalg6.sparseMatrixRow(linalg6.sparseMatrixElement2(3, 2)), linalg6.sparseMatrixRow(linalg6.sparseMatrixElement2(1, 1)), linalg6.sparseMatrixRow(linalg6.sparseMatrixElement2(5, 1)))
+    </div>
+            </div>
+            <div>
+               <button id="d40e151mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e151mml')">Rendered Presentation MathML</button>
+               <div id="d40e151mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>nonZeroRowSparseMatrix</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mn>5</mn>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixRow</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement2</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>1</mn>
+                                       <mo>,</mo>
+                                       <mn>5</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixRow</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement2</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>3</mn>
+                                       <mo>,</mo>
+                                       <mn>2</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixRow</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement2</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>1</mn>
+                                       <mo>,</mo>
+                                       <mn>1</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixRow</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement2</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>5</mn>
+                                       <mo>,</mo>
+                                       <mn>1</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#nonZeroRowSparseMatrix">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#sparseMatrix01">sparseMatrix01</a>]
+	  
+	    [Previous: <a href="#sparseMatrix">sparseMatrix</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="sparseMatrix01"> sparseMatrix01 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used for representing matrices which have all entries 
+in the modular field Z_2, i.e. 1 or 0. It allows efficient representation 
+of sparse matrices, more so than the 'sparseMatrix' symbol, since the 
+value of the entries with values of 1 need not be stored, only their 
+positions.</p>
+            <p>The symbol is n+2 ary, where the first argument is the number of rows in 
+the matrix, the second argument is the number of columns in the matrix. 
+The following arguments are sparseMatrixElement3 elements described in
+this content dictionary.</p>
+            <p>Any non-specified entry is implicitly zero.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The matrix
+$$
+\left ( \begin{array}{ccccc}
+1&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;0&amp;0&amp;1
+\end{array}\right )
+$$
+may be represented as:
+  <div>
+               <button id="d40e235xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e235xml')">OpenMath XML (source)</button>
+               <pre id="d40e235xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg6" name="sparseMatrix01"/&gt;
+      &lt;OMI&gt;4&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg6" name="sparseMatrixElement3"/&gt;
+        &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg6" name="sparseMatrixElement3"/&gt;
+        &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg6" name="sparseMatrixElement3"/&gt;
+        &lt;OMI&gt;4&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e235cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e235cmml')">Strict Content MathML</button>
+               <pre id="d40e235cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrix01&lt;/csymbol&gt;
+  &lt;cn&gt;4&lt;/cn&gt;
+  &lt;cn&gt;5&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement3&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement3&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement3&lt;/csymbol&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e235prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e235pref')">Prefix</button>
+            <div id="d40e235pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/linalg6.xhtml#sparseMatrix01">sparseMatrix01</a>
+  (4, 5, <a href="../../../cd/linalg6.xhtml#sparseMatrixElement3">sparseMatrixElement3</a>
+  (1, 1)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixElement3">sparseMatrixElement3</a>
+  (2, 3)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixElement3">sparseMatrixElement3</a>
+  (4, 5)
+)
+
+  </div>
+            <div>
+               <button id="d40e235popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e235pop')">Popcorn</button>
+               <div id="d40e235pop" style="display:none; margin-top: 0.5em">
+    linalg6.sparseMatrix01(4, 5, linalg6.sparseMatrixElement3(1, 1), linalg6.sparseMatrixElement3(2, 3), linalg6.sparseMatrixElement3(4, 5))
+  </div>
+            </div>
+            <div>
+               <button id="d40e235mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e235mml')">Rendered Presentation MathML</button>
+               <div id="d40e235mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>sparseMatrix01</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mn>4</mn>
+                           <mo>,</mo>
+                           <mn>5</mn>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixElement3</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn>1</mn>
+                                 <mo>,</mo>
+                                 <mn>1</mn>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixElement3</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn>2</mn>
+                                 <mo>,</mo>
+                                 <mn>3</mn>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixElement3</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn>4</mn>
+                                 <mo>,</mo>
+                                 <mn>5</mn>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#sparseMatrix01">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#nonZeroRowSparseMatrix01">nonZeroRowSparseMatrix01</a>]
+	  
+	    [Previous: <a href="#nonZeroRowSparseMatrix">nonZeroRowSparseMatrix</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="nonZeroRowSparseMatrix01"> nonZeroRowSparseMatrix01 </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol may be used to represent matrices which have no zero rows,
+and for which every row is in Z_2 efficiently. The first argument is
+the number of columns in the matrix, the following arguments are
+sparseMatrixRow elements where the arguments are sparseMatrixElement4
+elements.</p>
+            <p>Any non-specified entry is implicitly zero.
+  </p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+The matrix
+$$
+\left ( \begin{array}{ccccc}
+1&amp;0&amp;0&amp;0&amp;1\\
+0&amp;0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;0&amp;1&amp;0\\
+0&amp;0&amp;0&amp;0&amp;1
+\end{array}\right )
+$$
+may be represented as:
+    <div>
+               <button id="d40e291xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e291xml')">OpenMath XML (source)</button>
+               <pre id="d40e291xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg6" name="nonZeroRowSparseMatrix01"/&gt;
+        &lt;OMI&gt;5&lt;/OMI&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg6" name="sparseMatrixRow"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement4"/&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement4"/&gt;
+            &lt;OMI&gt;5&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg6" name="sparseMatrixRow"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement4"/&gt;
+            &lt;OMI&gt;3&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg6" name="sparseMatrixRow"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement4"/&gt;
+            &lt;OMI&gt;4&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg6" name="sparseMatrixRow"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg6" name="sparseMatrixElement4"/&gt;
+            &lt;OMI&gt;5&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e291cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e291cmml')">Strict Content MathML</button>
+               <pre id="d40e291cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;nonZeroRowSparseMatrix01&lt;/csymbol&gt;
+  &lt;cn&gt;5&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixRow&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement4&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement4&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixRow&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement4&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixRow&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement4&lt;/csymbol&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixRow&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;sparseMatrixElement4&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e291prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e291pref')">Prefix</button>
+            <div id="d40e291pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/linalg6.xhtml#nonZeroRowSparseMatrix01">nonZeroRowSparseMatrix01</a>
+  (5, <a href="../../../cd/linalg6.xhtml#sparseMatrixRow">sparseMatrixRow</a>
+  (<a href="../../../cd/linalg6.xhtml#sparseMatrixElement4">sparseMatrixElement4</a>
+  (1)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixElement4">sparseMatrixElement4</a>
+  (5)
+)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixRow">sparseMatrixRow</a>
+  (<a href="../../../cd/linalg6.xhtml#sparseMatrixElement4">sparseMatrixElement4</a>
+  (3)
+)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixRow">sparseMatrixRow</a>
+  (<a href="../../../cd/linalg6.xhtml#sparseMatrixElement4">sparseMatrixElement4</a>
+  (4)
+)
+, <a href="../../../cd/linalg6.xhtml#sparseMatrixRow">sparseMatrixRow</a>
+  (<a href="../../../cd/linalg6.xhtml#sparseMatrixElement4">sparseMatrixElement4</a>
+  (5)
+)
+)
+
+    </div>
+            <div>
+               <button id="d40e291popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e291pop')">Popcorn</button>
+               <div id="d40e291pop" style="display:none; margin-top: 0.5em">
+      linalg6.nonZeroRowSparseMatrix01(5, linalg6.sparseMatrixRow(linalg6.sparseMatrixElement4(1), linalg6.sparseMatrixElement4(5)), linalg6.sparseMatrixRow(linalg6.sparseMatrixElement4(3)), linalg6.sparseMatrixRow(linalg6.sparseMatrixElement4(4)), linalg6.sparseMatrixRow(linalg6.sparseMatrixElement4(5)))
+    </div>
+            </div>
+            <div>
+               <button id="d40e291mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e291mml')">Rendered Presentation MathML</button>
+               <div id="d40e291mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>nonZeroRowSparseMatrix01</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mn>5</mn>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixRow</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement4</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>1</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement4</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>5</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixRow</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement4</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>3</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixRow</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement4</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>4</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>,</mo>
+                           <mrow>
+                              <mi>sparseMatrixRow</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>sparseMatrixElement4</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>5</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg6.xhtml#nonZeroRowSparseMatrix01">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#sparseMatrixElement1">sparseMatrixElement1</a>]
+	  
+	    [Previous: <a href="#sparseMatrix01">sparseMatrix01</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

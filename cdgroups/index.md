@@ -1,8 +1,4 @@
----
-layout: page
-title: OpenMath Content Dictionaries - CD Groups
----
-
+---\nlayout: page\ntitle: OpenMath Content Dictionaries - CD Groups\n---\n
 * [algstr1.cdg](algstr1.cdg)
 * [arith.cdg](arith.cdg)
 * [combinat1.cdg](combinat1.cdg)

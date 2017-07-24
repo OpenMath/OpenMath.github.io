@@ -1,0 +1,1611 @@
+<script xmlns="http://www.w3.org/1999/xhtml"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>weylalgebra1</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: weylalgebra1</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.math.kobe-u.ac.jp/OCD/weylalgebra1.tfb">http://www.math.kobe-u.ac.jp/OCD/weylalgebra1.tfb</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="weylalgebra1.ocd">weylalgebra1.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="weylalgebra1.omcd">weylalgebra1.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#act">act</a>, <a href="#act_of_poly">act_of_poly</a>, <a href="#diff">diff</a>, <a href="#diffop">diffop</a>, <a href="#gr">gr</a>, <a href="#partialdiff">partialdiff</a>, <a href="#times">times</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2002-08-07, 2003-11-28 revised to 1.1 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 1 
+    (Revision 1)
+  </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd> 2003-08-07 </dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+         <dt>
+            <span class="dt">Uses CD:</span>
+         </dt>
+         <dd>
+            <a href="freealg1.xhtml">freealg1</a>, <a href="../../../cd/arith1.xhtml">arith1</a>, <a href="list1.xhtml">list1</a>, <a href="../../../cd/relation1.xhtml">relation1</a>
+         </dd>
+      </dl>
+      <hr/>
+
+
+
+
+
+
+
+
+
+      <p> 
+This CD defines elements of the ring of differential operators
+with coefficients in the polynomial ring.
+</p>
+
+
+      <hr/>
+      <h2>
+         <a name="diffop"> diffop </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  constructor of a differential operator from a polynomial or
+  from an element of the finitely generated free algebra.
+  The inverse of gr.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+  d/dq  q = q d/dq + 1
+</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e62xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e62xml')">OpenMath XML (source)</button>
+               <pre id="d40e62xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="diffop"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="freealg1" name="times"/&gt;
+        &lt;OMV name="dq"/&gt;
+        &lt;OMV name="q"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="q"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="dq"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="diffop"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMV name="q"/&gt;
+          &lt;OMV name="dq"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="q"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="dq"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e62cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e62cmml')">Strict Content MathML</button>
+               <pre id="d40e62cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;diffop&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="freealg1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;diffop&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;/apply&gt;
+    &lt;cn&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e62prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e62pref')">Prefix</button>
+            <div id="d40e62pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#diffop">diffop</a>
+  (<a href="../../../cd/freealg1.xhtml#times">times</a>
+  ( <i>dq</i>,  <i>q</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>q</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>dq</i>)
+)
+)
+, <a href="../../../cd/weylalgebra1.xhtml#diffop">diffop</a>
+  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>q</i>,  <i>dq</i>)
+,  1 )
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>q</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>dq</i>)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e62popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e62pop')">Popcorn</button>
+               <div id="d40e62pop" style="display:none; margin-top: 0.5em">
+  weylalgebra1.diffop(freealg1.times($dq, $q), [[$q] , [$dq]]) = weylalgebra1.diffop($q * $dq + 1, [[$q] , [$dq]])
+</div>
+            </div>
+            <div>
+               <button id="d40e62mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e62mml')">Rendered Presentation MathML</button>
+               <div id="d40e62mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>diffop</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>times</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>dq</mi>
+                                    <mo>,</mo>
+                                    <mi>q</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>q</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo separator="true">,</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>dq</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mi>diffop</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>q</mi>
+                                    <mo>&#8290;</mo>
+                                    <mi>dq</mi>
+                                 </mrow>
+                                 <mo>+</mo>
+                                 <mn> 1 </mn>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>q</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo separator="true">,</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>dq</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/weylalgebra1.xhtml#diffop">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#gr">gr</a>]
+	  
+	    [Last: <a href="#act_of_poly">act_of_poly</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="gr"> gr </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  the symbol polynomial of a given differential operator.
+  The inverse of diffop.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+ $\gr( q \partial_{q} + 1) = q p + 1 $
+</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e147xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e147xml')">OpenMath XML (source)</button>
+               <pre id="d40e147xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="gr"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="diffop"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+            &lt;OMV name="q"/&gt;
+            &lt;OMV name="dq"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMI&gt; 1 &lt;/OMI&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="q"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="dq"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="dq"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="p"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMV name="q"/&gt;
+        &lt;OMV name="p"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e147cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e147cmml')">Strict Content MathML</button>
+               <pre id="d40e147cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;gr&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;diffop&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;/apply&gt;
+     &lt;cn&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;/apply&gt;
+   &lt;cn&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e147prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e147pref')">Prefix</button>
+            <div id="d40e147pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#gr">gr</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#diffop">diffop</a>
+  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>q</i>,  <i>dq</i>)
+,  1 )
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>q</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>dq</i>)
+)
+)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>dq</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>p</i>)
+)
+)
+, <a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>q</i>,  <i>p</i>)
+,  1 )
+)
+
+</div>
+            <div>
+               <button id="d40e147popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e147pop')">Popcorn</button>
+               <div id="d40e147pop" style="display:none; margin-top: 0.5em">
+  weylalgebra1.gr(weylalgebra1.diffop($q * $dq + 1, [[$q] , [$dq]]), [[$dq] , [$p]]) = $q * $p + 1
+</div>
+            </div>
+            <div>
+               <button id="d40e147mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e147mml')">Rendered Presentation MathML</button>
+               <div id="d40e147mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>gr</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>diffop</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>q</mi>
+                                          <mo>&#8290;</mo>
+                                          <mi>dq</mi>
+                                       </mrow>
+                                       <mo>+</mo>
+                                       <mn> 1 </mn>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>q</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>dq</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>dq</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo separator="true">,</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>p</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>q</mi>
+                              <mo>&#8290;</mo>
+                              <mi>p</mi>
+                           </mrow>
+                           <mo>+</mo>
+                           <mn> 1 </mn>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/weylalgebra1.xhtml#gr">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#diff">diff</a>]
+	  
+	    [Previous: <a href="#diffop">diffop</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="diff"> diff </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  Differentiation of a given function in one variable.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+  $\frac{d x^2}{dx} = 2 x$
+<div>
+               <button id="d40e237xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e237xml')">OpenMath XML (source)</button>
+               <pre id="d40e237xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="diff"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="x"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMV name="x"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e237cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e237cmml')">Strict Content MathML</button>
+               <pre id="d40e237cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;diff&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e237prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e237pref')">Prefix</button>
+            <div id="d40e237pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#diff">diff</a>
+  (<a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>x</i>,  2 )
+,  <i>x</i>)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 2 ,  <i>x</i>)
+)
+
+</div>
+            <div>
+               <button id="d40e237popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e237pop')">Popcorn</button>
+               <div id="d40e237pop" style="display:none; margin-top: 0.5em">
+  weylalgebra1.diff($x ^ 2, $x) = 2 * $x
+</div>
+            </div>
+            <div>
+               <button id="d40e237mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e237mml')">Rendered Presentation MathML</button>
+               <div id="d40e237mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>diff</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <msup>
+                                 <mi>x</mi>
+                                 <mn> 2 </mn>
+                              </msup>
+                              <mo>,</mo>
+                              <mi>x</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mn> 2 </mn>
+                           <mo>&#8290;</mo>
+                           <mi>x</mi>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/weylalgebra1.xhtml#diff">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#partialdiff">partialdiff</a>]
+	  
+	    [Previous: <a href="#gr">gr</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="partialdiff"> partialdiff </a>
+      </h2>
+
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  partial differentiation of a given function.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+  $\frac{\partial^{2} x^{2} y}{\partial x^{2}} = 2 y $
+</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e285xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e285xml')">OpenMath XML (source)</button>
+               <pre id="d40e285xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="partialdiff"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMV name="x"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMV name="y"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMI&gt; 2 &lt;/OMI&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMV name="y"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e285cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e285cmml')">Strict Content MathML</button>
+               <pre id="d40e285cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;partialdiff&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e285prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e285pref')">Prefix</button>
+            <div id="d40e285pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#partialdiff">partialdiff</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>x</i>,  <i>x</i>)
+,  <i>y</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>x</i>,  2 )
+)
+)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  ( 2 ,  <i>y</i>)
+)
+
+</div>
+            <div>
+               <button id="d40e285popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e285pop')">Popcorn</button>
+               <div id="d40e285pop" style="display:none; margin-top: 0.5em">
+  weylalgebra1.partialdiff($x * $x * $y, [[$x , 2]]) = 2 * $y
+</div>
+            </div>
+            <div>
+               <button id="d40e285mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e285mml')">Rendered Presentation MathML</button>
+               <div id="d40e285mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>partialdiff</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>&#8290;</mo>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mo>&#8290;</mo>
+                                 <mi>y</mi>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo separator="true">,</mo>
+                                    <mn> 2 </mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mn> 2 </mn>
+                           <mo>&#8290;</mo>
+                           <mi>y</mi>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/weylalgebra1.xhtml#partialdiff">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#times">times</a>]
+	  
+	    [Previous: <a href="#diff">diff</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="times"> times </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  multiplication in D
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+ $\partial_{q} q = \partial{q} q + 1 $
+</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e347xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e347xml')">OpenMath XML (source)</button>
+               <pre id="d40e347xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="times"/&gt;
+      &lt;OMV name="dq"/&gt;
+      &lt;OMV name="q"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="times"/&gt;
+        &lt;OMV name="q"/&gt;
+        &lt;OMV name="dq"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e347cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e347cmml')">Strict Content MathML</button>
+               <pre id="d40e347cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;ci&gt;dq&lt;/ci&gt;&lt;/apply&gt;
+   &lt;cn&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e347prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e347pref')">Prefix</button>
+            <div id="d40e347pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#times">times</a>
+  ( <i>dq</i>,  <i>q</i>)
+, <a href="../../../cd/arith1.xhtml#plus">plus</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#times">times</a>
+  ( <i>q</i>,  <i>dq</i>)
+,  1 )
+)
+
+</div>
+            <div>
+               <button id="d40e347popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e347pop')">Popcorn</button>
+               <div id="d40e347pop" style="display:none; margin-top: 0.5em">
+  weylalgebra1.times($dq, $q) = weylalgebra1.times($q, $dq) + 1
+</div>
+            </div>
+            <div>
+               <button id="d40e347mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e347mml')">Rendered Presentation MathML</button>
+               <div id="d40e347mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>times</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>dq</mi>
+                              <mo>,</mo>
+                              <mi>q</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>times</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>q</mi>
+                                 <mo>,</mo>
+                                 <mi>dq</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>+</mo>
+                           <mn> 1 </mn>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/weylalgebra1.xhtml#times">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#act">act</a>]
+	  
+	    [Previous: <a href="#partialdiff">partialdiff</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="act"> act </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  action of a differential operator to a function.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+  $  x^{m} \partial_{x}^{n} \partial_{y}^{r} \cdot f 
+   = x^{m} \frac{partial^{n+r} f}{\partial x^{n} \partial y^{r}}
+  $
+</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e392xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e392xml')">OpenMath XML (source)</button>
+               <pre id="d40e392xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="act"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="diffop"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+              &lt;OMV name="x"/&gt;
+              &lt;OMV name="m"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+              &lt;OMV name="dx"/&gt;
+              &lt;OMV name="n"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+            &lt;OMV name="dy"/&gt;
+            &lt;OMV name="r"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="x"/&gt;
+            &lt;OMV name="y"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="dx"/&gt;
+            &lt;OMV name="dy"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="f"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMV name="m"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="weylalgebra1" name="partialdiff"/&gt;
+        &lt;OMV name="f"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="x"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="y"/&gt;
+            &lt;OMV name="r"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e392cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e392cmml')">Strict Content MathML</button>
+               <pre id="d40e392cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;act&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;diffop&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;dx&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;dy&lt;/ci&gt;&lt;ci&gt;r&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;dx&lt;/ci&gt;&lt;ci&gt;dy&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;ci&gt;f&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="weylalgebra1"&gt;partialdiff&lt;/csymbol&gt;
+    &lt;ci&gt;f&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;r&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e392prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e392pref')">Prefix</button>
+            <div id="d40e392pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#act">act</a>
+  (<a href="../../../cd/weylalgebra1.xhtml#diffop">diffop</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>x</i>,  <i>m</i>)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>dx</i>,  <i>n</i>)
+)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>dy</i>,  <i>r</i>)
+)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>x</i>,  <i>y</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>dx</i>,  <i>dy</i>)
+)
+)
+,  <i>f</i>)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>x</i>,  <i>m</i>)
+, <a href="../../../cd/weylalgebra1.xhtml#partialdiff">partialdiff</a>
+  ( <i>f</i>, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>x</i>,  <i>n</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>y</i>,  <i>r</i>)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e392popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e392pop')">Popcorn</button>
+               <div id="d40e392pop" style="display:none; margin-top: 0.5em">
+  weylalgebra1.act(weylalgebra1.diffop($x ^ $m * $dx ^ $n * $dy ^ $r, [[$x , $y] , [$dx , $dy]]), $f) = $x ^ $m * weylalgebra1.partialdiff($f, [[$x , $n] , [$y , $r]])
+</div>
+            </div>
+            <div>
+               <button id="d40e392mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e392mml')">Rendered Presentation MathML</button>
+               <div id="d40e392mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>act</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>diffop</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <msup>
+                                             <mi>x</mi>
+                                             <mi>m</mi>
+                                          </msup>
+                                          <mo>&#8290;</mo>
+                                          <msup>
+                                             <mi>dx</mi>
+                                             <mi>n</mi>
+                                          </msup>
+                                       </mrow>
+                                       <mo>&#8290;</mo>
+                                       <msup>
+                                          <mi>dy</mi>
+                                          <mi>r</mi>
+                                       </msup>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>x</mi>
+                                          <mo separator="true">,</mo>
+                                          <mi>y</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>dx</mi>
+                                          <mo separator="true">,</mo>
+                                          <mi>dy</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>,</mo>
+                              <mi>f</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <msup>
+                              <mi>x</mi>
+                              <mi>m</mi>
+                           </msup>
+                           <mo>&#8290;</mo>
+                           <mrow>
+                              <mi>partialdiff</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>f</mi>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo separator="true">,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>y</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>r</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/weylalgebra1.xhtml#act">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#act_of_poly">act_of_poly</a>]
+	  
+	    [Previous: <a href="#times">times</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="act_of_poly"> act_of_poly </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  action of a polynomial as a differential operator to a function.
+  act_of_poly is equivalent to  the composition of act and diffop.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>
+  $  x^{m} \partial_{x}^{n} \partial_{y}^{r} \cdot f 
+   = x^{m} \frac{partial^{n+r} f}{\partial x^{n} \partial y^{r}}
+  $
+</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e514xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e514xml')">OpenMath XML (source)</button>
+               <pre id="d40e514xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="weylalgebra" name="act_of_poly"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+            &lt;OMV name="x"/&gt;
+            &lt;OMV name="m"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+            &lt;OMV name="dx"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+          &lt;OMV name="dy"/&gt;
+          &lt;OMV name="r"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMV name="y"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMV name="dx"/&gt;
+          &lt;OMV name="dy"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="f"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMV name="m"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="weylalgebra" name="partialdiff"/&gt;
+        &lt;OMV name="f"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="x"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="y"/&gt;
+            &lt;OMV name="r"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e514cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e514cmml')">Strict Content MathML</button>
+               <pre id="d40e514cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="weylalgebra"&gt;act_of_poly&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;dx&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;dy&lt;/ci&gt;&lt;ci&gt;r&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;dx&lt;/ci&gt;&lt;ci&gt;dy&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;ci&gt;f&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="weylalgebra"&gt;partialdiff&lt;/csymbol&gt;
+    &lt;ci&gt;f&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;r&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e514prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e514pref')">Prefix</button>
+            <div id="d40e514pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/weylalgebra.xhtml#act_of_poly">act_of_poly</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>x</i>,  <i>m</i>)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>dx</i>,  <i>n</i>)
+)
+, <a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>dy</i>,  <i>r</i>)
+)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>x</i>,  <i>y</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>dx</i>,  <i>dy</i>)
+)
+,  <i>f</i>)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/arith1.xhtml#power">power</a>
+  ( <i>x</i>,  <i>m</i>)
+, <a href="../../../cd/weylalgebra.xhtml#partialdiff">partialdiff</a>
+  ( <i>f</i>, <a href="../../../cd/list1.xhtml#list">list</a>
+  (<a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>x</i>,  <i>n</i>)
+, <a href="../../../cd/list1.xhtml#list">list</a>
+  ( <i>y</i>,  <i>r</i>)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e514popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e514pop')">Popcorn</button>
+               <div id="d40e514pop" style="display:none; margin-top: 0.5em">
+  weylalgebra.act_of_poly($x ^ $m * $dx ^ $n * $dy ^ $r, [[$x , $y] , [$dx , $dy]], $f) = $x ^ $m * weylalgebra.partialdiff($f, [[$x , $n] , [$y , $r]])
+</div>
+            </div>
+            <div>
+               <button id="d40e514mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e514mml')">Rendered Presentation MathML</button>
+               <div id="d40e514mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>act_of_poly</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mrow>
+                                    <msup>
+                                       <mi>x</mi>
+                                       <mi>m</mi>
+                                    </msup>
+                                    <mo>&#8290;</mo>
+                                    <msup>
+                                       <mi>dx</mi>
+                                       <mi>n</mi>
+                                    </msup>
+                                 </mrow>
+                                 <mo>&#8290;</mo>
+                                 <msup>
+                                    <mi>dy</mi>
+                                    <mi>r</mi>
+                                 </msup>
+                              </mrow>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo separator="true">,</mo>
+                                    <mi>y</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo separator="true">,</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>dx</mi>
+                                    <mo separator="true">,</mo>
+                                    <mi>dy</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>,</mo>
+                              <mi>f</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <msup>
+                              <mi>x</mi>
+                              <mi>m</mi>
+                           </msup>
+                           <mo>&#8290;</mo>
+                           <mrow>
+                              <mi>partialdiff</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>f</mi>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo separator="true">,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>y</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>r</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/weylalgebra1.xhtml#act_of_poly">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#diffop">diffop</a>]
+	  
+	    [Previous: <a href="#act">act</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+
+   </body>
+</html>

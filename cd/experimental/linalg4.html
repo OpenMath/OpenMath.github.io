@@ -1,0 +1,1371 @@
+<script xmlns="http://www.w3.org/1999/xhtml"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>linalg4</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: linalg4</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd/linalg4.ocd">http://www.openmath.org/cd/linalg4.ocd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD Base:</span>
+         </dt>
+         <dd>
+            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="linalg4.ocd">linalg4.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="linalg4.omcd">linalg4.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#characteristic_eqn">characteristic_eqn</a>, <a href="#columncount">columncount</a>, <a href="#eigenvalue">eigenvalue</a>, <a href="#eigenvector">eigenvector</a>, <a href="#rank">rank</a>, <a href="#rowcount">rowcount</a>, <a href="#size">size</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd>2004-03-30</dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd>3</dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd>2006-03-30</dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+      </dl>
+      <hr/>
+
+      <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+      <p>
+    This CD defines symbols for basic linear algebra.</p>
+      <p>    Regardless of the way of forming vectors and matrices, this CD
+    deals with eigenvalues, eigenvectors and related concepts.
+</p>
+
+      <hr/>
+      <h2>
+         <a name="eigenvalue"> eigenvalue </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the eigenvalue of a matrix. It takes two
+arguments the first should be the matrix, the second should be an
+index to specify the eigenvalue. The ordering imposed on the
+eigenvalues is first on the modulus of the value, and second on the
+argument of the value. A definition of eigenvalue is
+given in Elementary Linear Algebra, Stanley I. Grossman in Definition 1 
+of chapter 6, page 533.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> A*eigenvector(A,i) = eigenvalue(A,i)*eigenvector(A,i) </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e50xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e50xml')">OpenMath XML (source)</button>
+               <pre id="d40e50xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="eigenvector"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="i"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="eigenvalue"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="i"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="eigenvector"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="i"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e50cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e50cmml')">Strict Content MathML</button>
+               <pre id="d40e50cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;ci&gt;A&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;eigenvector&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;eigenvalue&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;eigenvector&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e50prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e50pref')">Prefix</button>
+            <div id="d40e50pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>A</i>, <a href="../../../cd/linalg4.xhtml#eigenvector">eigenvector</a>
+  ( <i>A</i>,  <i>i</i>)
+)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/linalg4.xhtml#eigenvalue">eigenvalue</a>
+  ( <i>A</i>,  <i>i</i>)
+, <a href="../../../cd/linalg4.xhtml#eigenvector">eigenvector</a>
+  ( <i>A</i>,  <i>i</i>)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e50popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e50pop')">Popcorn</button>
+               <div id="d40e50pop" style="display:none; margin-top: 0.5em">
+  $A * linalg4.eigenvector($A, $i) = linalg4.eigenvalue($A, $i) * linalg4.eigenvector($A, $i)
+</div>
+            </div>
+            <div>
+               <button id="d40e50mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e50mml')">Rendered Presentation MathML</button>
+               <div id="d40e50mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>A</mi>
+                           <mo>&#8290;</mo>
+                           <mrow>
+                              <mi>eigenvector</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>i</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>eigenvalue</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>i</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>&#8290;</mo>
+                           <mrow>
+                              <mi>eigenvector</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>i</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg4.xhtml#eigenvalue">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#eigenvector">eigenvector</a>]
+	  
+	    [Last: <a href="#columncount">columncount</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="eigenvector"> eigenvector </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the eigenvector of a matrix. It takes two
+arguments the first should be the matrix, the second should be an
+index to specify which eigenvalue this eigenvector should be paired
+with. The ordering is as given in the eigenvalue symbol. A definition
+of eigenvector is given in Elementary Linear Algebra, Stanley
+I. Grossman in Definition 1 of chapter 6, page 533.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> A*eigenvector(A) = eigenvalue(A)*eigenvector(A) </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e116xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e116xml')">OpenMath XML (source)</button>
+               <pre id="d40e116xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="eigenvector"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="i"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="eigenvalue"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="i"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="eigenvector"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="i"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e116cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e116cmml')">Strict Content MathML</button>
+               <pre id="d40e116cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;ci&gt;A&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;eigenvector&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;eigenvalue&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;eigenvector&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e116prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e116pref')">Prefix</button>
+            <div id="d40e116pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/arith1.xhtml#times">times</a>
+  ( <i>A</i>, <a href="../../../cd/linalg4.xhtml#eigenvector">eigenvector</a>
+  ( <i>A</i>,  <i>i</i>)
+)
+, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/linalg4.xhtml#eigenvalue">eigenvalue</a>
+  ( <i>A</i>,  <i>i</i>)
+, <a href="../../../cd/linalg4.xhtml#eigenvector">eigenvector</a>
+  ( <i>A</i>,  <i>i</i>)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e116popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e116pop')">Popcorn</button>
+               <div id="d40e116pop" style="display:none; margin-top: 0.5em">
+  $A * linalg4.eigenvector($A, $i) = linalg4.eigenvalue($A, $i) * linalg4.eigenvector($A, $i)
+</div>
+            </div>
+            <div>
+               <button id="d40e116mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e116mml')">Rendered Presentation MathML</button>
+               <div id="d40e116mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>A</mi>
+                           <mo>&#8290;</mo>
+                           <mrow>
+                              <mi>eigenvector</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>i</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>eigenvalue</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>i</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>&#8290;</mo>
+                           <mrow>
+                              <mi>eigenvector</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>i</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg4.xhtml#eigenvector">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#characteristic_eqn">characteristic_eqn</a>]
+	  
+	    [Previous: <a href="#eigenvalue">eigenvalue</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="characteristic_eqn"> characteristic_eqn </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the polynomial which appears in the left hand
+side of the characteristic equation of a matrix. It
+takes one argument which should be the matrix. A definition of the
+characteristic equation is given in Elementary Linear Algebra, Stanley
+I. Grossman in Definition 2 of chapter 6, page 535.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> 
+p(eigenvalue(A,i)) = det(A-eigenvalue(A,i)I) = 0 
+where p is the characteristic equation of A
+</dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e181xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e181xml')">OpenMath XML (source)</button>
+               <pre id="d40e181xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="and"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMA&gt;
+	  &lt;OMS cd="linalg4" name="characteristic_eqn"/&gt;
+	  &lt;OMV name="A"/&gt;
+	&lt;/OMA&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="linalg4" name="eigenvalue"/&gt;
+	  &lt;OMV name="A"/&gt;
+	  &lt;OMV name="i"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMS cd="alg1" name="zero"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg1" name="determinant"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="arith1" name="minus"/&gt;
+	  &lt;OMV name="A"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="arith1" name="times"/&gt;
+	    &lt;OMA&gt;
+	      &lt;OMS cd="linalg4" name="eigenvalue"/&gt;
+	      &lt;OMV name="A"/&gt;
+	      &lt;OMV name="i"/&gt;
+	    &lt;/OMA&gt;
+	    &lt;OMA&gt;
+	      &lt;OMS cd="linalg5" name="identity"/&gt;
+	      &lt;OMA&gt;
+	        &lt;OMS cd="linalg4" name="rowcount"/&gt;
+		&lt;OMV name="A"/&gt;
+	      &lt;/OMA&gt;
+	    &lt;/OMA&gt;
+	  &lt;/OMA&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMS cd="alg1" name="zero"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e181cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e181cmml')">Strict Content MathML</button>
+               <pre id="d40e181cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;characteristic_eqn&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;eigenvalue&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;determinant&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+     &lt;ci&gt;A&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;eigenvalue&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;identity&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;rowcount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e181prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e181pref')">Prefix</button>
+            <div id="d40e181pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/logic1.xhtml#and">and</a>
+  (<a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/linalg4.xhtml#characteristic_eqn">characteristic_eqn</a>
+  ( <i>A</i>)
+
+  (<a href="../../../cd/linalg4.xhtml#eigenvalue">eigenvalue</a>
+  ( <i>A</i>,  <i>i</i>)
+)
+, <a href="../../../cd/alg1.xhtml#zero">zero</a>)
+, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/linalg1.xhtml#determinant">determinant</a>
+  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
+  ( <i>A</i>, <a href="../../../cd/arith1.xhtml#times">times</a>
+  (<a href="../../../cd/linalg4.xhtml#eigenvalue">eigenvalue</a>
+  ( <i>A</i>,  <i>i</i>)
+, <a href="../../../cd/linalg5.xhtml#identity">identity</a>
+  (<a href="../../../cd/linalg4.xhtml#rowcount">rowcount</a>
+  ( <i>A</i>)
+)
+)
+)
+)
+, <a href="../../../cd/alg1.xhtml#zero">zero</a>)
+)
+
+</div>
+            <div>
+               <button id="d40e181popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e181pop')">Popcorn</button>
+               <div id="d40e181pop" style="display:none; margin-top: 0.5em">
+  linalg4.characteristic_eqn($A)(linalg4.eigenvalue($A, $i)) = alg1.zero and linalg1.determinant($A - linalg4.eigenvalue($A, $i) * linalg5.identity(linalg4.rowcount($A))) = alg1.zero
+</div>
+            </div>
+            <div>
+               <button id="d40e181mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e181mml')">Rendered Presentation MathML</button>
+               <div id="d40e181mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mrow>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>characteristic_eqn</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>eigenvalue</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>,</mo>
+                                       <mi>i</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mo>=</mo>
+                           <mn>0</mn>
+                        </mrow>
+                        <mo>&#8743;</mo>
+                        <mrow>
+                           <mrow>
+                              <mi>det</mi>
+                              <mfenced>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>-</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>eigenvalue</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>,</mo>
+                                             <mi>i</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8290;</mo>
+                                       <mrow>
+                                          <mi>identity</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>rowcount</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>A</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mfenced>
+                           </mrow>
+                           <mo>=</mo>
+                           <mn>0</mn>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg4.xhtml#characteristic_eqn">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#size">size</a>]
+	  
+	    [Previous: <a href="#eigenvector">eigenvector</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="size"> size </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the function which takes one vector argument
+and returns the length of that vector.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+the length of the vector [1,2,3] = 3
+
+<div>
+               <button id="d40e275xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e275xml')">OpenMath XML (source)</button>
+               <pre id="d40e275xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg4" name="size"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="vector"/&gt;
+        &lt;OMI&gt; 1 &lt;/OMI&gt;
+        &lt;OMI&gt; 2 &lt;/OMI&gt;
+        &lt;OMI&gt; 3 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMI&gt; 3 &lt;/OMI&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e275cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e275cmml')">Strict Content MathML</button>
+               <pre id="d40e275cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;cn&gt;3&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e275prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e275pref')">Prefix</button>
+            <div id="d40e275pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/linalg4.xhtml#size">size</a>
+  (<a href="../../../cd/linalg2.xhtml#vector">vector</a>
+  ( 1 ,  2 ,  3 )
+)
+,  3 )
+
+</div>
+            <div>
+               <button id="d40e275popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e275pop')">Popcorn</button>
+               <div id="d40e275pop" style="display:none; margin-top: 0.5em">
+  linalg4.size(linalg2.vector(1, 2, 3)) = 3
+</div>
+            </div>
+            <div>
+               <button id="d40e275mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e275mml')">Rendered Presentation MathML</button>
+               <div id="d40e275mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>size</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn> 1 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 2 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 3 </mn>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mn> 3 </mn>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg4.xhtml#size">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#rank">rank</a>]
+	  
+	    [Previous: <a href="#characteristic_eqn">characteristic_eqn</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="rank"> rank </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the function which takes one matrix argument
+and returns the number of linearly independent rows (or columns) of
+that matrix.
+</p>
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> the rank of an nxn identity matrix is n  </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e323xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e323xml')">OpenMath XML (source)</button>
+               <pre id="d40e323xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg4" name="rank"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg5" name="identity"/&gt;
+	&lt;OMV name="n"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMV name="n"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e323cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e323cmml')">Strict Content MathML</button>
+               <pre id="d40e323cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;rank&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;identity&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;n&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e323prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e323pref')">Prefix</button>
+            <div id="d40e323pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.xhtml#eq">eq</a>
+  (<a href="../../../cd/linalg4.xhtml#rank">rank</a>
+  (<a href="../../../cd/linalg5.xhtml#identity">identity</a>
+  ( <i>n</i>)
+)
+,  <i>n</i>)
+
+</div>
+            <div>
+               <button id="d40e323popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e323pop')">Popcorn</button>
+               <div id="d40e323pop" style="display:none; margin-top: 0.5em">
+  linalg4.rank(linalg5.identity($n)) = $n
+</div>
+            </div>
+            <div>
+               <button id="d40e323mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e323mml')">Rendered Presentation MathML</button>
+               <div id="d40e323mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>rank</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>identity</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>n</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mi>n</mi>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg4.xhtml#rank">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#rowcount">rowcount</a>]
+	  
+	    [Previous: <a href="#size">size</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="rowcount"> rowcount </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the function which takes one matrix argument
+and returns the number of rows in that matrix.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+Specification of the number of rows in the matrix:
+[[1 2]
+ [3 4]
+ [5 6]]
+<div>
+               <button id="d40e360xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e360xml')">OpenMath XML (source)</button>
+               <pre id="d40e360xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="linalg4" name="rowcount"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg2" name="matrix"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="matrixrow"/&gt;
+	&lt;OMI&gt;1&lt;/OMI&gt; &lt;OMI&gt;2&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="matrixrow"/&gt;
+	&lt;OMI&gt;3&lt;/OMI&gt; &lt;OMI&gt;4&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="matrixrow"/&gt;
+	&lt;OMI&gt;5&lt;/OMI&gt; &lt;OMI&gt;6&lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e360cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e360cmml')">Strict Content MathML</button>
+               <pre id="d40e360cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;rowcount&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrix&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e360prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e360pref')">Prefix</button>
+            <div id="d40e360pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/linalg4.xhtml#rowcount">rowcount</a>
+  (<a href="../../../cd/linalg2.xhtml#matrix">matrix</a>
+  (<a href="../../../cd/linalg2.xhtml#matrixrow">matrixrow</a>
+  (1, 2)
+, <a href="../../../cd/linalg2.xhtml#matrixrow">matrixrow</a>
+  (3, 4)
+, <a href="../../../cd/linalg2.xhtml#matrixrow">matrixrow</a>
+  (5, 6)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e360popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e360pop')">Popcorn</button>
+               <div id="d40e360pop" style="display:none; margin-top: 0.5em">
+  linalg4.rowcount(linalg2.matrix(linalg2.matrixrow(1, 2), linalg2.matrixrow(3, 4), linalg2.matrixrow(5, 6)))
+</div>
+            </div>
+            <div>
+               <button id="d40e360mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e360mml')">Rendered Presentation MathML</button>
+               <div id="d40e360mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>rowcount</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mfenced>
+                              <mtable>
+                                 <mtr>
+                                    <mtd>
+                                       <mn>1</mn>
+                                    </mtd>
+                                    <mtd>
+                                       <mn>2</mn>
+                                    </mtd>
+                                 </mtr>
+                                 <mtr>
+                                    <mtd>
+                                       <mn>3</mn>
+                                    </mtd>
+                                    <mtd>
+                                       <mn>4</mn>
+                                    </mtd>
+                                 </mtr>
+                                 <mtr>
+                                    <mtd>
+                                       <mn>5</mn>
+                                    </mtd>
+                                    <mtd>
+                                       <mn>6</mn>
+                                    </mtd>
+                                 </mtr>
+                              </mtable>
+                           </mfenced>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg4.xhtml#rowcount">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#columncount">columncount</a>]
+	  
+	    [Previous: <a href="#rank">rank</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="columncount"> columncount </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Role:</span>
+         </dt>
+         <dd>application</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+This symbol represents the function which takes one matrix argument
+and returns the number of columns in that matrix.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Example:</span>
+         </dt>
+         <dd>
+Specification of the number of columns in the matrix:
+[[1 2]
+ [3 4]
+ [5 6]]
+<div>
+               <button id="d40e421xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e421xml')">OpenMath XML (source)</button>
+               <pre id="d40e421xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="linalg4" name="columncount"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg2" name="matrix"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="matrixrow"/&gt;
+	&lt;OMI&gt;1&lt;/OMI&gt; &lt;OMI&gt;2&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="matrixrow"/&gt;
+	&lt;OMI&gt;3&lt;/OMI&gt; &lt;OMI&gt;4&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="matrixrow"/&gt;
+	&lt;OMI&gt;5&lt;/OMI&gt; &lt;OMI&gt;6&lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e421cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e421cmml')">Strict Content MathML</button>
+               <pre id="d40e421cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;columncount&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrix&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e421prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e421pref')">Prefix</button>
+            <div id="d40e421pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/linalg4.xhtml#columncount">columncount</a>
+  (<a href="../../../cd/linalg2.xhtml#matrix">matrix</a>
+  (<a href="../../../cd/linalg2.xhtml#matrixrow">matrixrow</a>
+  (1, 2)
+, <a href="../../../cd/linalg2.xhtml#matrixrow">matrixrow</a>
+  (3, 4)
+, <a href="../../../cd/linalg2.xhtml#matrixrow">matrixrow</a>
+  (5, 6)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e421popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e421pop')">Popcorn</button>
+               <div id="d40e421pop" style="display:none; margin-top: 0.5em">
+  linalg4.columncount(linalg2.matrix(linalg2.matrixrow(1, 2), linalg2.matrixrow(3, 4), linalg2.matrixrow(5, 6)))
+</div>
+            </div>
+            <div>
+               <button id="d40e421mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e421mml')">Rendered Presentation MathML</button>
+               <div id="d40e421mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mi>columncount</mi>
+                        <mo>&#8289;</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mfenced>
+                              <mtable>
+                                 <mtr>
+                                    <mtd>
+                                       <mn>1</mn>
+                                    </mtd>
+                                    <mtd>
+                                       <mn>2</mn>
+                                    </mtd>
+                                 </mtr>
+                                 <mtr>
+                                    <mtd>
+                                       <mn>3</mn>
+                                    </mtd>
+                                    <mtd>
+                                       <mn>4</mn>
+                                    </mtd>
+                                 </mtr>
+                                 <mtr>
+                                    <mtd>
+                                       <mn>5</mn>
+                                    </mtd>
+                                    <mtd>
+                                       <mn>6</mn>
+                                    </mtd>
+                                 </mtr>
+                              </mtable>
+                           </mfenced>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/linalg4.xhtml#columncount">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#eigenvalue">eigenvalue</a>]
+	  
+	    [Previous: <a href="#rowcount">rowcount</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+   </body>
+</html>
