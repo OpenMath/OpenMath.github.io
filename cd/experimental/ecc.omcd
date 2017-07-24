@@ -1,209 +1,210 @@
-<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
-  <OMA>
-    <OMS cd="meta" name="CD"/>
-    <OMA>
-      <OMS cd="meta" name="CDComment"/>
-      <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDName"/>
-      <OMSTR>ecc</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDBase"/>
-      <OMSTR>http://www.openmath.org/cd</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDURL"/>
-      <OMSTR>http://http://www.openmath.org/cd/ecc.ocd</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDReviewDate"/>
-      <OMSTR>2006-03-30</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDStatus"/>
-      <OMSTR>experimental</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDate"/>
-      <OMSTR>2004-03-30</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDVersion"/>
-      <OMSTR>2</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDRevision"/>
-      <OMSTR>0</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="Description"/>
-      <OMSTR>Extended Calculus of Constructions Primitives Initial version: O. Caprotti (July 1, 1999) Revised: O. Caprotti (September 8, 1999)</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
       <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>type</OMSTR>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>semantic-attribution</OMSTR>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>ecc</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>Attribution tag to denote type-judgement</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>typecoerce</OMSTR>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>semantic-attribution</OMSTR>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://http://www.openmath.org/cd/ecc.ocd</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>Attribution tag to denote type-judgement with coercion</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>SigmaType</OMSTR>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-03-30</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>binder</OMSTR>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>The binder symbol used to construct the type of Cartesian products. The (either plain or attributed) variables might occur in the body \OM\ object.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>Pair</OMSTR>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-03-30</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>2</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>The pairing constructor. It takes two OpenMath objects as first element and second element of the pair, and a third optional OpenMath object that represents the type of the pair.</OMSTR>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>0</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Example"/>
-        <OMA>
-          <OMS cd="ecc" name="Pair"/>
-          <OMI>0</OMI>
-          <OMI>1</OMI>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>PairProj1</OMSTR>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>Extended Calculus of Constructions Primitives Initial version: O. Caprotti (July 1, 1999) Revised: O. Caprotti (September 8, 1999)</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>type</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>semantic-attribution</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Attribution tag to denote type-judgement</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>The first projection function that extracts the first component of a Pair. It satisfies the sigma-reduction rule.</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>typecoerce</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>semantic-attribution</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Attribution tag to denote type-judgement with coercion</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Example"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="ecc" name="PairProj1"/>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>SigmaType</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>binder</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The binder symbol used to construct the type of Cartesian products. The (either plain or attributed) variables might occur in the body \OM\ object.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>Pair</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The pairing constructor. It takes two OpenMath objects as first element and second element of the pair, and a third optional OpenMath object that represents the type of the pair.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
             <OMA>
-              <OMS cd="ecc" name="Pair"/>
-              <OMI>0</OMI>
-              <OMI>1</OMI>
+               <OMS cd="ecc" name="Pair"/>
+               <OMI>0</OMI>
+               <OMI>1</OMI>
             </OMA>
-          </OMA>
-          <OMI>0</OMI>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>PairProj2</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>The second projection function that extracts the second component of a Pair. It satisfies sigma-reduction rule.</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Example"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="ecc" name="PairProj2"/>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>PairProj1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The first projection function that extracts the first component of a Pair. It satisfies the sigma-reduction rule.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
             <OMA>
-              <OMS cd="ecc" name="Pair"/>
-              <OMI>0</OMI>
-              <OMI>1</OMI>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="ecc" name="PairProj1"/>
+                  <OMA>
+                     <OMS cd="ecc" name="Pair"/>
+                     <OMI>0</OMI>
+                     <OMI>1</OMI>
+                  </OMA>
+               </OMA>
+               <OMI>0</OMI>
             </OMA>
-          </OMA>
-          <OMI>1</OMI>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>Tuple</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>The n-ary tupling constructor when n&gt;2. The arguments are the element of the tuple. Tuple objects can also be constructed by successive nesting of Pair.</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Example"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="ecc" name="Pair"/>
-            <OMI>0</OMI>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>PairProj2</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The second projection function that extracts the second component of a Pair. It satisfies sigma-reduction rule.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
             <OMA>
-              <OMS cd="ecc" name="Pair"/>
-              <OMI>1</OMI>
-              <OMI>2</OMI>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="ecc" name="PairProj2"/>
+                  <OMA>
+                     <OMS cd="ecc" name="Pair"/>
+                     <OMI>0</OMI>
+                     <OMI>1</OMI>
+                  </OMA>
+               </OMA>
+               <OMI>1</OMI>
             </OMA>
-          </OMA>
-          <OMA>
-            <OMS cd="ecc" name="Tuple"/>
-            <OMI>0</OMI>
-            <OMI>1</OMI>
-            <OMI>2</OMI>
-          </OMA>
-        </OMA>
+         </OMA>
       </OMA>
-    </OMA>
-  </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>Tuple</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The n-ary tupling constructor when n&gt;2. The arguments are the element of the tuple. Tuple objects can also be constructed by successive nesting of Pair.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="ecc" name="Pair"/>
+                  <OMI>0</OMI>
+                  <OMA>
+                     <OMS cd="ecc" name="Pair"/>
+                     <OMI>1</OMI>
+                     <OMI>2</OMI>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="ecc" name="Tuple"/>
+                  <OMI>0</OMI>
+                  <OMI>1</OMI>
+                  <OMI>2</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
 </OMOBJ>

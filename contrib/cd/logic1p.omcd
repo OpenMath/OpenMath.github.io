@@ -1,42 +1,43 @@
-<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
-  <OMA>
-    <OMS cd="meta" name="CDDefinition"/>
-    <OMA>
-      <OMS cd="meta" name="Name"/>
-      <OMSTR>where</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="Description"/>
-      <OMSTR>The word "where" is often used in mathematical expressions to set variables or to say side conditions. CDname logic1.implies can be used for these purposes, but "where" will be more intuitive and more friendly expression for formula book writers.</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CMP"/>
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CDDefinition"/>
       <OMA>
-        <OMS cd="meta" name="tex"/>
-        <OMSTR>$ x^n \mbox{where} n=10</OMSTR>
+         <OMS cd="meta" name="Name"/>
+         <OMSTR>where</OMSTR>
       </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="FMP"/>
       <OMA>
-        <OMS cd="logic1p" name="where"/>
-        <OMBIND>
-          <OMS cd="fns1" name="lambda"/>
-          <OMBVAR>
-            <OMV name="n"/>
-          </OMBVAR>
-          <OMA>
-            <OMS cd="arith1" name="power"/>
-            <OMV name="x"/>
-            <OMV name="n"/>
-          </OMA>
-        </OMBIND>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMV name="n"/>
-          <OMI> 10 </OMI>
-        </OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>The word "where" is often used in mathematical expressions to set variables or to say side conditions. CDname logic1.implies can be used for these purposes, but "where" will be more intuitive and more friendly expression for formula book writers.</OMSTR>
       </OMA>
-    </OMA>
-  </OMA>
+      <OMA>
+         <OMS cd="meta" name="CMP"/>
+         <OMA>
+            <OMS cd="meta" name="tex"/>
+            <OMSTR>$ x^n \mbox{where} n=10</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="FMP"/>
+         <OMA>
+            <OMS cd="logic1p" name="where"/>
+            <OMBIND>
+               <OMS cd="fns1" name="lambda"/>
+               <OMBVAR>
+                  <OMV name="n"/>
+               </OMBVAR>
+               <OMA>
+                  <OMS cd="arith1" name="power"/>
+                  <OMV name="x"/>
+                  <OMV name="n"/>
+               </OMA>
+            </OMBIND>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMV name="n"/>
+               <OMI> 10 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
 </OMOBJ>

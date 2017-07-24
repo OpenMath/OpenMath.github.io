@@ -1,315 +1,316 @@
-<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
-  <OMA>
-    <OMS cd="meta" name="CD"/>
-    <OMA>
-      <OMS cd="meta" name="CDComment"/>
-      <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDName"/>
-      <OMSTR>meta</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDReviewDate"/>
-      <OMSTR>2006-03-30</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDate"/>
-      <OMSTR>2004-03-30</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDVersion"/>
-      <OMSTR>3</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDRevision"/>
-      <OMSTR>0</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDStatus"/>
-      <OMSTR>official</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDURL"/>
-      <OMSTR>http://www.openmath.org/cd/meta.ocd</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDBase"/>
-      <OMSTR>http://www.openmath.org/cd</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="Description"/>
-      <OMSTR>This is a content dictionary to represent content dictionaries, so that they may be passed between OpenMath compliant application in a similar way to mathematical objects. The information written here is taken from chapter 4 of the current draft of the "OpenMath Standard".</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
       <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CD</OMSTR>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>meta</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>The top level element for the Content Dictionary. It just acts as a container for the elements described below.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDDefinition</OMSTR>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-03-30</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-03-30</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>This symbol is used to represent the element which contains the definition of each symbol in a content dictionary. That is: it must contain a 'Name' element and a 'Description' element, and it may contain an arbitrary number of 'Example', 'FMP' or 'CMP' elements.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDName</OMSTR>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>3</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>0</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element which contains the string corresponding to the name of the CD. The string must match the syntax for CD names given in the OpenMath Standard. Here and elsewhere white space occurring at the beginning or end of the string will be ignored.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDURL</OMSTR>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>official</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/meta.ocd</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An optional element. If it is used it contains a string representing the URL where the canonical reference copy of this CD is stored.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDBase</OMSTR>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This is a content dictionary to represent content dictionaries, so that they may be passed between OpenMath compliant application in a similar way to mathematical objects. The information written here is taken from chapter 4 of the current draft of the "OpenMath Standard".</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An optional element. If it is used it contains a string representing the URI to be used as the base for generated canonical URI references for symbols in the CD.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>Example</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element which contains an arbitrary number of children, each of which is either a string or an OpenMath Object. These children give examples in natural language, or in OpenMath, of the enclosing symbol definition.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDDate</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CD</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The top level element for the Content Dictionary. It just acts as a container for the elements described below.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDDefinition</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is used to represent the element which contains the definition of each symbol in a content dictionary. That is: it must contain a 'Name' element and a 'Description' element, and it may contain an arbitrary number of 'Example', 'FMP' or 'CMP' elements.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element which contains a date as a string in the ISO-8601 YYYY-MM-DD format. This gives the date at which the Content Dictionary was last edited.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDVersion</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element which contains a version number for the CD. This should be a non negative integer. Any change to the CD that affects existing OpenMath applications that support this CD should result in an increase in the version number.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDRevision</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDName</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element which contains the string corresponding to the name of the CD. The string must match the syntax for CD names given in the OpenMath Standard. Here and elsewhere white space occurring at the beginning or end of the string will be ignored.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDURL</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An optional element. If it is used it contains a string representing the URL where the canonical reference copy of this CD is stored.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element which contains a revision number (or minor version number) This should be a non-negative integer starting from zero for each new version. Additional examples would be typical changes to a CD requiring a new revision number.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDReviewDate</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element which contains a date as a string in the ISO-8601 YYYY-MM-DD format. This gives the date at which the Content Dictionary is next scheduled for review. It should be expected to be stable until at least this date.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDStatus</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDBase</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An optional element. If it is used it contains a string representing the URI to be used as the base for generated canonical URI references for symbols in the CD.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>Example</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element which contains an arbitrary number of children, each of which is either a string or an OpenMath Object. These children give examples in natural language, or in OpenMath, of the enclosing symbol definition.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element giving information on the status of the CD. The content of the element must be one of the following strings. official (approved by the OpenMath Society), experimental (currently being tested), private (used by a private group of OpenMath users), or obsolete (an obsolete CD kept only for archival purposes).</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDComment</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>This symbol is used to represent the element of a content dictionary which explains some aspect of that content dictionary. It should have one string argument which makes that explanation.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CDUses</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDDate</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element which contains a date as a string in the ISO-8601 YYYY-MM-DD format. This gives the date at which the Content Dictionary was last edited.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDVersion</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element which contains a version number for the CD. This should be a non negative integer. Any change to the CD that affects existing OpenMath applications that support this CD should result in an increase in the version number.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element which contains zero or more CDNames which correspond to the CDs that this CD depends on, i.e. uses in examples and FMPs. If the CD is dependent on any other CDs they may be present here.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>Description</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element which contains a string corresponding to the description of either the CD or the symbol (depending on which is the enclosing element).</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>Name</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDRevision</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element which contains a revision number (or minor version number) This should be a non-negative integer starting from zero for each new version. Additional examples would be typical changes to a CD requiring a new revision number.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDReviewDate</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element which contains a date as a string in the ISO-8601 YYYY-MM-DD format. This gives the date at which the Content Dictionary is next scheduled for review. It should be expected to be stable until at least this date.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element containing the string corresponding to the name of the symbol being defined. This must match the syntax for symbol names given in the OpenMath Standard. Here and elsewhere white space occurring at the begining or end of the string will be ignored.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>Role</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An element containing the string corresponding to the role of the symbol being defined.</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>CMP</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDStatus</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element giving information on the status of the CD. The content of the element must be one of the following strings. official (approved by the OpenMath Society), experimental (currently being tested), private (used by a private group of OpenMath users), or obsolete (an obsolete CD kept only for archival purposes).</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDComment</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is used to represent the element of a content dictionary which explains some aspect of that content dictionary. It should have one string argument which makes that explanation.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An optional element (which may be repeated many times) which contains a string corresponding to a property of the symbol being defined.</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CDUses</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element which contains zero or more CDNames which correspond to the CDs that this CD depends on, i.e. uses in examples and FMPs. If the CD is dependent on any other CDs they may be present here.</OMSTR>
+         </OMA>
       </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
       <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>FMP</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>Description</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element which contains a string corresponding to the description of either the CD or the symbol (depending on which is the enclosing element).</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Role"/>
-        <OMSTR>application</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>Name</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element containing the string corresponding to the name of the symbol being defined. This must match the syntax for symbol names given in the OpenMath Standard. Here and elsewhere white space occurring at the begining or end of the string will be ignored.</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>An optional element which contains an OpenMath Object. This corresponds to a property of the symbol being defined.</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>Role</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An element containing the string corresponding to the role of the symbol being defined.</OMSTR>
+         </OMA>
       </OMA>
-    </OMA>
-  </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>CMP</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An optional element (which may be repeated many times) which contains a string corresponding to a property of the symbol being defined.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>FMP</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>An optional element which contains an OpenMath Object. This corresponds to a property of the symbol being defined.</OMSTR>
+         </OMA>
+      </OMA>
+   </OMA>
 </OMOBJ>
