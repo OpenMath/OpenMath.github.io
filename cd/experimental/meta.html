@@ -1,7 +1,9 @@
-<script xmlns="http://www.w3.org/1999/xhtml"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
       <script type="text/javascript"> function divfold(_Id){
      var thisLevel = document.getElementById(_Id);
      var thisLevela = document.getElementById(_Id.concat("a"))
@@ -14,64 +16,113 @@
        }
      </script>
       <title>meta</title>
-      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
    </head>
-   <body>
-      <a name="top"/>
-      <h1>OpenMath Content Dictionary: meta</h1>
-      <dl>
-         <dt>
-            <span class="dt">Canonical URL:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd/meta.ocd">http://www.openmath.org/cd/meta.ocd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD Base:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD File:</span>
-         </dt>
-         <dd>
-            <a href="meta.ocd">meta.ocd
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: meta</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/meta.ocd">http://www.openmath.org/cd/meta.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="meta.ocd">meta.ocd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">CD as XML Encoded OpenMath:</span>
-         </dt>
-         <dd>
-            <a href="meta.omcd">meta.omcd
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="meta.omcd">meta.omcd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">Defines:</span>
-         </dt>
-         <dd>
-            <a href="#CD">CD</a>, <a href="#CDBase">CDBase</a>, <a href="#CDComment">CDComment</a>, <a href="#CDDate">CDDate</a>, <a href="#CDDefinition">CDDefinition</a>, <a href="#CDName">CDName</a>, <a href="#CDReviewDate">CDReviewDate</a>, <a href="#CDRevision">CDRevision</a>, <a href="#CDStatus">CDStatus</a>, <a href="#CDURL">CDURL</a>, <a href="#CDUses">CDUses</a>, <a href="#CDVersion">CDVersion</a>, <a href="#CMP">CMP</a>, <a href="#Description">Description</a>, <a href="#Example">Example</a>, <a href="#FMP">FMP</a>, <a href="#Name">Name</a>, <a href="#Role">Role</a>
-         </dd>
-         <dt>
-            <span class="dt">Date:</span>
-         </dt>
-         <dd>2004-03-30</dd>
-         <dt>
-            <span class="dt">Version:</span>
-         </dt>
-         <dd>3</dd>
-         <dt>
-            <span class="dt">Review Date:</span>
-         </dt>
-         <dd>2006-03-30</dd>
-         <dt>
-            <span class="dt">Status:</span>
-         </dt>
-         <dd> official </dd>
-      </dl>
-      <hr/>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#CD">CD</a>, <a href="#CDBase">CDBase</a>, <a href="#CDComment">CDComment</a>, <a href="#CDDate">CDDate</a>, <a href="#CDDefinition">CDDefinition</a>, <a href="#CDName">CDName</a>, <a href="#CDReviewDate">CDReviewDate</a>, <a href="#CDRevision">CDRevision</a>, <a href="#CDStatus">CDStatus</a>, <a href="#CDURL">CDURL</a>, <a href="#CDUses">CDUses</a>, <a href="#CDVersion">CDVersion</a>, <a href="#CMP">CMP</a>, <a href="#Description">Description</a>, <a href="#Example">Example</a>, <a href="#FMP">FMP</a>, <a href="#Name">Name</a>, <a href="#Role">Role</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>3</dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> official </dd>
+            </dl>
+            <hr/>
 
-      <pre>
+            <pre>
 
      This document is distributed in the hope that it will be useful, 
      but WITHOUT ANY WARRANTY; without even the implied warranty of 
@@ -114,871 +165,873 @@
 
 
 
-      <p> 
+            <p> 
 This is a content dictionary to represent content dictionaries, so
 that they may be passed between OpenMath compliant application in a
 similar way to mathematical objects.</p>
-      <p>The information written here is taken from chapter 4 of the current
+            <p>The information written here is taken from chapter 4 of the current
 draft of the "OpenMath Standard".
 </p>
 
-      <hr/>
-      <h2>
-         <a name="CD"> CD </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CD"> CD </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 The top level element for the Content Dictionary. It just acts
 as a container for the elements described below.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CD">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CD">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDDefinition">CDDefinition</a>]
 	  
 	    [Last: <a href="#FMP">FMP</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
 
-      <hr/>
-      <h2>
-         <a name="CDDefinition"> CDDefinition </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDDefinition"> CDDefinition </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 This symbol is used to represent the element which contains the
 definition of each symbol in a content dictionary. That is: it must
 contain a 'Name' element and a 'Description' element, and it may contain
 an arbitrary number of 'Example', 'FMP' or 'CMP' elements. 
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDDefinition">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDDefinition">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDName">CDName</a>]
 	  
 	    [Previous: <a href="#CD">CD</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CDName"> CDName </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDName"> CDName </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element which contains the string corresponding to the name of the CD.
 The string  must match the syntax for CD names given in the OpenMath
 Standard. Here and elsewhere white space occurring at the beginning or
 end of the string will be ignored.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDName">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDName">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDURL">CDURL</a>]
 	  
 	    [Previous: <a href="#CDDefinition">CDDefinition</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CDURL"> CDURL </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDURL"> CDURL </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An optional element.
 If it is used it contains a string representing the URL where the
 canonical reference copy of this CD is stored.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDURL">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDURL">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDBase">CDBase</a>]
 	  
 	    [Previous: <a href="#CDName">CDName</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CDBase"> CDBase </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDBase"> CDBase </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An optional element.
 If it is used it contains a string representing the URI
 to be used as the base for generated canonical URI references
 for symbols in the CD.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDBase">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDBase">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Example">Example</a>]
 	  
 	    [Previous: <a href="#CDURL">CDURL</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="Example"> Example </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Example"> Example </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element which contains an arbitrary number of children,
 each of which is either a string or an OpenMath Object.</p>
-            <p>These children give examples in natural language, or in OpenMath, of the
+                  <p>These children give examples in natural language, or in OpenMath, of the
 enclosing symbol definition.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#Example">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#Example">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDDate">CDDate</a>]
 	  
 	    [Previous: <a href="#CDBase">CDBase</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CDDate"> CDDate </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDDate"> CDDate </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element which contains a date as a string in the ISO-8601
 YYYY-MM-DD format. This gives the date at which the Content Dictionary
 was last edited.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDDate">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDDate">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDVersion">CDVersion</a>]
 	  
 	    [Previous: <a href="#Example">Example</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CDVersion"> CDVersion </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDVersion"> CDVersion </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element which contains a version number for the CD.
 This should be a non negative integer. Any change to the CD
 that affects existing OpenMath applications that support this CD
 should result in an increase in the version number.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDVersion">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDVersion">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDRevision">CDRevision</a>]
 	  
 	    [Previous: <a href="#CDDate">CDDate</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CDRevision"> CDRevision </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDRevision"> CDRevision </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element which contains a revision number (or minor version number)
 This should be a non-negative integer starting from zero for each
 new version. Additional examples  would be typical changes
 to a CD requiring a new revision number.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDRevision">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDRevision">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDReviewDate">CDReviewDate</a>]
 	  
 	    [Previous: <a href="#CDVersion">CDVersion</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
 
-      <hr/>
-      <h2>
-         <a name="CDReviewDate"> CDReviewDate </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDReviewDate"> CDReviewDate </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element which contains a date as a string in the ISO-8601
 YYYY-MM-DD format. This gives the date at which the Content Dictionary
 is next scheduled for review. It should be expected to be stable
 until at least this date.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDReviewDate">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDReviewDate">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDStatus">CDStatus</a>]
 	  
 	    [Previous: <a href="#CDRevision">CDRevision</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CDStatus"> CDStatus </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDStatus"> CDStatus </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element giving information on the status of the CD.
 The content of the element must be one of the following strings.</p>
-            <p>official (approved by the OpenMath Society),</p>
-            <p>experimental (currently being tested),</p>
-            <p>private (used by a private group of OpenMath users), or</p>
-            <p>obsolete (an obsolete CD kept only for archival purposes).
+                  <p>official (approved by the OpenMath Society),</p>
+                  <p>experimental (currently being tested),</p>
+                  <p>private (used by a private group of OpenMath users), or</p>
+                  <p>obsolete (an obsolete CD kept only for archival purposes).
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDStatus">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDStatus">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDComment">CDComment</a>]
 	  
 	    [Previous: <a href="#CDReviewDate">CDReviewDate</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CDComment"> CDComment </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDComment"> CDComment </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 This symbol is used to represent the element of a content dictionary which
 explains some aspect of that content dictionary. It should have one string
 argument which makes that explanation.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDComment">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDComment">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CDUses">CDUses</a>]
 	  
 	    [Previous: <a href="#CDStatus">CDStatus</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
 
 
-      <hr/>
-      <h2>
-         <a name="CDUses"> CDUses </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CDUses"> CDUses </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element which contains zero or more CDNames which correspond
 to the CDs that this CD depends on, i.e. uses in examples and FMPs. If
 the CD is dependent on any other CDs they may be present here. 
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CDUses">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CDUses">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Description">Description</a>]
 	  
 	    [Previous: <a href="#CDComment">CDComment</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="Description"> Description </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Description"> Description </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element which contains a string corresponding to the
 description of either the CD or the symbol
 (depending on which is the enclosing element).
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#Description">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#Description">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Name">Name</a>]
 	  
 	    [Previous: <a href="#CDUses">CDUses</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="Name"> Name </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Name"> Name </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element containing the string  corresponding to the name of
 the symbol being defined. This must match the syntax for
 symbol names given in the OpenMath Standard. Here and elsewhere white
 space occurring at the begining or end of the string will be ignored.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#Name">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#Name">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Role">Role</a>]
 	  
 	    [Previous: <a href="#Description">Description</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="Role"> Role </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Role"> Role </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An element containing the string  corresponding to the role of
 the symbol being defined.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#Role">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#Role">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#CMP">CMP</a>]
 	  
 	    [Previous: <a href="#Name">Name</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="CMP"> CMP </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="CMP"> CMP </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An optional element (which may be repeated many times) which contains
 a string corresponding to a property of the symbol being
 defined.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#CMP">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#CMP">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#FMP">FMP</a>]
 	  
 	    [Previous: <a href="#Role">Role</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="FMP"> FMP </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="FMP"> FMP </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 An optional element which contains an OpenMath Object.
 This corresponds to a property of the symbol being defined.
 </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/meta.xhtml#FMP">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/meta.html#FMP">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [First: <a href="#CD">CD</a>]
 	  
 	    [Previous: <a href="#CMP">CMP</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
+         </div>
+      </div>
    </body>
 </html>

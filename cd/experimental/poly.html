@@ -1,7 +1,9 @@
-<script xmlns="http://www.w3.org/1999/xhtml"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
       <script type="text/javascript"> function divfold(_Id){
      var thisLevel = document.getElementById(_Id);
      var thisLevela = document.getElementById(_Id.concat("a"))
@@ -14,64 +16,113 @@
        }
      </script>
       <title>poly</title>
-      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
    </head>
-   <body>
-      <a name="top"/>
-      <h1>OpenMath Content Dictionary: poly</h1>
-      <dl>
-         <dt>
-            <span class="dt">Canonical URL:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd/poly.ocd">http://www.openmath.org/cd/poly.ocd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD Base:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD File:</span>
-         </dt>
-         <dd>
-            <a href="poly.ocd">poly.ocd
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: poly</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/poly.ocd">http://www.openmath.org/cd/poly.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="poly.ocd">poly.ocd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">CD as XML Encoded OpenMath:</span>
-         </dt>
-         <dd>
-            <a href="poly.omcd">poly.omcd
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="poly.omcd">poly.omcd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">Defines:</span>
-         </dt>
-         <dd>
-            <a href="#coefficient">coefficient</a>, <a href="#coefficient_ring">coefficient_ring</a>, <a href="#convert">convert</a>, <a href="#degree">degree</a>, <a href="#degree_wrt">degree_wrt</a>, <a href="#discriminant">discriminant</a>, <a href="#evaluate">evaluate</a>, <a href="#expand">expand</a>, <a href="#factor">factor</a>, <a href="#factored">factored</a>, <a href="#gcd">gcd</a>, <a href="#lcm">lcm</a>, <a href="#leading_coefficient">leading_coefficient</a>, <a href="#partially_factored">partially_factored</a>, <a href="#power">power</a>, <a href="#resultant">resultant</a>, <a href="#squarefree">squarefree</a>, <a href="#squarefreed">squarefreed</a>
-         </dd>
-         <dt>
-            <span class="dt">Date:</span>
-         </dt>
-         <dd>2004-03-30</dd>
-         <dt>
-            <span class="dt">Version:</span>
-         </dt>
-         <dd>5</dd>
-         <dt>
-            <span class="dt">Review Date:</span>
-         </dt>
-         <dd>2006-03-30</dd>
-         <dt>
-            <span class="dt">Status:</span>
-         </dt>
-         <dd> experimental </dd>
-      </dl>
-      <hr/>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#coefficient">coefficient</a>, <a href="#coefficient_ring">coefficient_ring</a>, <a href="#convert">convert</a>, <a href="#degree">degree</a>, <a href="#degree_wrt">degree_wrt</a>, <a href="#discriminant">discriminant</a>, <a href="#evaluate">evaluate</a>, <a href="#expand">expand</a>, <a href="#factor">factor</a>, <a href="#factored">factored</a>, <a href="#gcd">gcd</a>, <a href="#lcm">lcm</a>, <a href="#leading_coefficient">leading_coefficient</a>, <a href="#partially_factored">partially_factored</a>, <a href="#power">power</a>, <a href="#resultant">resultant</a>, <a href="#squarefree">squarefree</a>, <a href="#squarefreed">squarefreed</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>5</dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
 
-      <pre>
+            <pre>
 
      This document is distributed in the hope that it will be useful, 
      but WITHOUT ANY WARRANTY; without even the implied warranty of 
@@ -112,7 +163,7 @@
    
    
    
-      <p>
+            <p>
      This CD contains generic operators to deal with various forms
      of polynomials. The arithmetic operators from arith1 etc. are valid
      on these polynomials: there is also the operator "power" from this
@@ -121,7 +172,7 @@
      can be found in polyd.ocd, and for Recursive polynomials in polyr.ocd.
    </p>
 
-      <pre>
+            <pre>
 Original OpenMath v1.1 Poly 1997
 Update to Current Format 1999-07-07 DPC
 Move the names of rings to setname.ocd 1999-11-09 JHD
@@ -129,43 +180,43 @@ Split into poly{,d,r} 1999-11-14 JHD
 Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
 </pre>
 
-      <pre>
+            <pre>
      Definition of some constructors
 </pre>
 
-      <hr/>
-      <h2>
-         <a name="power"> power </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="power"> power </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
          Takes a polynomial and a (non-negative) integer and produces a
          formal power. Although OpenMath does not specify operational
          semantics, the idea here is that these powers are not
          evaluated. We note that the power from arith1 would suggest
          the expanded form.
       </p>
-         </dd>
-      </dl> 
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e54xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e54xml')">OpenMath XML (source)</button>
-               <pre id="d40e54xml" style="display:none">
+               </dd>
+            </dl> 
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e54xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54xml')">OpenMath XML (source)</button>
+                     <pre id="d40e54xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="power" cd="poly"/&gt;
@@ -173,89 +224,89 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;OMI&gt; 2 &lt;/OMI&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e54cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e54cmml')">Strict Content MathML</button>
-               <pre id="d40e54cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e54cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54cmml')">Strict Content MathML</button>
+                     <pre id="d40e54cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="poly"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
-            </div>
-            <button id="d40e54prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e54pref')">Prefix</button>
-            <div id="d40e54pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/poly.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e54prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e54pref')">Prefix</button>
+                  <div id="d40e54pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/poly.html#power">power</a>
   ( <i>x</i>,  2 )
 
         </div>
-            <div>
-               <button id="d40e54popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e54pop')">Popcorn</button>
-               <div id="d40e54pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e54popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54pop')">Popcorn</button>
+                     <div id="d40e54pop" style="display:none; margin-top: 0.5em">
           poly.power($x, 2)
         </div>
-            </div>
-            <div>
-               <button id="d40e54mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e54mml')">Rendered Presentation MathML</button>
-               <div id="d40e54mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>power</mi>
-                        <mo>&#8289;</mo>
-                        <mrow>
-                           <mo>(</mo>
-                           <mi>x</mi>
-                           <mo>,</mo>
-                           <mn> 2 </mn>
-                           <mo>)</mo>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#power">
+                  </div>
+                  <div>
+                     <button id="d40e54mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e54mml')">Rendered Presentation MathML</button>
+                     <div id="d40e54mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>power</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>x</mi>
+                                 <mo>,</mo>
+                                 <mn> 2 </mn>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#power">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#factored">factored</a>]
 	  
 	    [Last: <a href="#convert">convert</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="factored"> factored </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="factored"> factored </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The constructor for a factorization. Its arguments are formal
          powers (see previous operator), where the polynomials are supposed
          to be irreducible (except possibly for a content from the ground
@@ -263,17 +314,17 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
          Note that "factored" is not a call to factorise something, rather
          a statement that we know a factorisation.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e82xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e82xml')">OpenMath XML (source)</button>
-               <pre id="d40e82xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e82xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e82xml')">OpenMath XML (source)</button>
+                     <pre id="d40e82xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="factored" cd="poly"/&gt;
@@ -302,11 +353,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;/OMA&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e82cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e82cmml')">Strict Content MathML</button>
-               <pre id="d40e82cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e82cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e82cmml')">Strict Content MathML</button>
+                     <pre id="d40e82cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="poly"&gt;factored&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
@@ -320,133 +371,133 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e82prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e82pref')">Prefix</button>
-            <div id="d40e82pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/poly.xhtml#factored">factored</a>
-  (<a href="../../../cd/poly.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e82prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e82pref')">Prefix</button>
+                  <div id="d40e82pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/poly.html#factored">factored</a>
+  (<a href="../../../cd/poly.html#power">power</a>
   ( <i>x</i>,  2 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
   ( <i>x</i>,  2 )
 ,  1 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
   ( <i>x</i>,  2 )
 ,  1 )
 )
 
         </div>
-            <div>
-               <button id="d40e82popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e82pop')">Popcorn</button>
-               <div id="d40e82pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e82popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e82pop')">Popcorn</button>
+                     <div id="d40e82pop" style="display:none; margin-top: 0.5em">
           poly.factored(poly.power($x, 2), poly.power($x + 2, 1), poly.power($x - 2, 1))
         </div>
-            </div>
-            <div>
-               <button id="d40e82mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e82mml')">Rendered Presentation MathML</button>
-               <div id="d40e82mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>factored</mi>
-                        <mo>&#8289;</mo>
-                        <mrow>
-                           <mo>(</mo>
-                           <mrow>
-                              <mi>power</mi>
-                              <mo>&#8289;</mo>
-                              <mrow>
-                                 <mo>(</mo>
-                                 <mi>x</mi>
-                                 <mo>,</mo>
-                                 <mn> 2 </mn>
-                                 <mo>)</mo>
-                              </mrow>
-                           </mrow>
-                           <mo>,</mo>
-                           <mrow>
-                              <mi>power</mi>
+                  </div>
+                  <div>
+                     <button id="d40e82mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e82mml')">Rendered Presentation MathML</button>
+                     <div id="d40e82mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>factored</mi>
                               <mo>&#8289;</mo>
                               <mrow>
                                  <mo>(</mo>
                                  <mrow>
-                                    <mi>x</mi>
-                                    <mo>+</mo>
-                                    <mn> 2 </mn>
+                                    <mi>power</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo>,</mo>
+                                       <mn> 2 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
                                  </mrow>
                                  <mo>,</mo>
-                                 <mn> 1 </mn>
-                                 <mo>)</mo>
-                              </mrow>
-                           </mrow>
-                           <mo>,</mo>
-                           <mrow>
-                              <mi>power</mi>
-                              <mo>&#8289;</mo>
-                              <mrow>
-                                 <mo>(</mo>
                                  <mrow>
-                                    <mi>x</mi>
-                                    <mo>-</mo>
-                                    <mn> 2 </mn>
+                                    <mi>power</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>x</mi>
+                                          <mo>+</mo>
+                                          <mn> 2 </mn>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn> 1 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
                                  </mrow>
                                  <mo>,</mo>
-                                 <mn> 1 </mn>
+                                 <mrow>
+                                    <mi>power</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>x</mi>
+                                          <mo>-</mo>
+                                          <mn> 2 </mn>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn> 1 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
                                  <mo>)</mo>
                               </mrow>
                            </mrow>
-                           <mo>)</mo>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#factored">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#factored">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#squarefreed">squarefreed</a>]
 	  
 	    [Previous: <a href="#power">power</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="squarefreed"> squarefreed </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="squarefreed"> squarefreed </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The constructor for a square-free factorization. Its arguments
          should have the structure of the above "factored", where the
          polynomials should be square-free. Note that this is not necessarily
@@ -455,17 +506,17 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
          Again, this is a statement that we have a square-free factorisation,
          rather than a request to compute one.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e151xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e151xml')">OpenMath XML (source)</button>
-               <pre id="d40e151xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e151xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e151xml')">OpenMath XML (source)</button>
+                     <pre id="d40e151xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="squarefreed" cd="poly"/&gt;
@@ -489,11 +540,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;/OMA&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e151cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e151cmml')">Strict Content MathML</button>
-               <pre id="d40e151cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e151cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e151cmml')">Strict Content MathML</button>
+                     <pre id="d40e151cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="poly"&gt;squarefreed&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
@@ -506,134 +557,134 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e151prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e151pref')">Prefix</button>
-            <div id="d40e151pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/poly.xhtml#squarefreed">squarefreed</a>
-  (<a href="../../../cd/poly.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e151prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e151pref')">Prefix</button>
+                  <div id="d40e151pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/poly.html#squarefreed">squarefreed</a>
+  (<a href="../../../cd/poly.html#power">power</a>
   ( <i>x</i>,  2 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
-  (<a href="../../../cd/arith1.xhtml#power">power</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  2 )
 ,  4 )
 ,  1 )
 )
 
         </div>
-            <div>
-               <button id="d40e151popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e151pop')">Popcorn</button>
-               <div id="d40e151pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e151popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e151pop')">Popcorn</button>
+                     <div id="d40e151pop" style="display:none; margin-top: 0.5em">
           poly.squarefreed(poly.power($x, 2), poly.power($x ^ 2 - 4, 1))
         </div>
-            </div>
-            <div>
-               <button id="d40e151mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e151mml')">Rendered Presentation MathML</button>
-               <div id="d40e151mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>squarefreed</mi>
-                        <mo>&#8289;</mo>
-                        <mrow>
-                           <mo>(</mo>
-                           <mrow>
-                              <mi>power</mi>
-                              <mo>&#8289;</mo>
-                              <mrow>
-                                 <mo>(</mo>
-                                 <mi>x</mi>
-                                 <mo>,</mo>
-                                 <mn> 2 </mn>
-                                 <mo>)</mo>
-                              </mrow>
-                           </mrow>
-                           <mo>,</mo>
-                           <mrow>
-                              <mi>power</mi>
+                  </div>
+                  <div>
+                     <button id="d40e151mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e151mml')">Rendered Presentation MathML</button>
+                     <div id="d40e151mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>squarefreed</mi>
                               <mo>&#8289;</mo>
                               <mrow>
                                  <mo>(</mo>
                                  <mrow>
-                                    <msup>
+                                    <mi>power</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
                                        <mi>x</mi>
+                                       <mo>,</mo>
                                        <mn> 2 </mn>
-                                    </msup>
-                                    <mo>-</mo>
-                                    <mn> 4 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
                                  </mrow>
                                  <mo>,</mo>
-                                 <mn> 1 </mn>
+                                 <mrow>
+                                    <mi>power</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <msup>
+                                             <mi>x</mi>
+                                             <mn> 2 </mn>
+                                          </msup>
+                                          <mo>-</mo>
+                                          <mn> 4 </mn>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn> 1 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
                                  <mo>)</mo>
                               </mrow>
                            </mrow>
-                           <mo>)</mo>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#squarefreed">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#squarefreed">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#partially_factored">partially_factored</a>]
 	  
 	    [Previous: <a href="#factored">factored</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="partially_factored"> partially_factored </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="partially_factored"> partially_factored </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The constructor for a factorization. Its arguments are formal
          powers (see operator above), where nothing in particular is assumed
          about the polynomials (they may or may not be irreducible, or
          relatively prime).
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e210xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e210xml')">OpenMath XML (source)</button>
-               <pre id="d40e210xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e210xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e210xml')">OpenMath XML (source)</button>
+                     <pre id="d40e210xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="partially_factored" cd="poly"/&gt;
@@ -665,11 +716,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;/OMA&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e210cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e210cmml')">Strict Content MathML</button>
-               <pre id="d40e210cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e210cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e210cmml')">Strict Content MathML</button>
+                     <pre id="d40e210cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="poly"&gt;partially_factored&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;power&lt;/csymbol&gt;
@@ -685,148 +736,148 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e210prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e210pref')">Prefix</button>
-            <div id="d40e210pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/poly.xhtml#partially_factored">partially_factored</a>
-  (<a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
-  (<a href="../../../cd/arith1.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e210prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e210pref')">Prefix</button>
+                  <div id="d40e210pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/poly.html#partially_factored">partially_factored</a>
+  (<a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  3 )
-, <a href="../../../cd/arith1.xhtml#power">power</a>
+, <a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  2 )
 )
 ,  1 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
   ( <i>x</i>,  2 )
 ,  1 )
 )
 
         </div>
-            <div>
-               <button id="d40e210popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e210pop')">Popcorn</button>
-               <div id="d40e210pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e210popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e210pop')">Popcorn</button>
+                     <div id="d40e210pop" style="display:none; margin-top: 0.5em">
           poly.partially_factored(poly.power($x ^ 3 + $x ^ 2, 1), poly.power($x - 2, 1))
         </div>
-            </div>
-            <div>
-               <button id="d40e210mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e210mml')">Rendered Presentation MathML</button>
-               <div id="d40e210mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>partially_factored</mi>
-                        <mo>&#8289;</mo>
-                        <mrow>
-                           <mo>(</mo>
-                           <mrow>
-                              <mi>power</mi>
+                  </div>
+                  <div>
+                     <button id="d40e210mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e210mml')">Rendered Presentation MathML</button>
+                     <div id="d40e210mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>partially_factored</mi>
                               <mo>&#8289;</mo>
                               <mrow>
                                  <mo>(</mo>
                                  <mrow>
-                                    <msup>
-                                       <mi>x</mi>
-                                       <mn> 3 </mn>
-                                    </msup>
-                                    <mo>+</mo>
-                                    <msup>
-                                       <mi>x</mi>
-                                       <mn> 2 </mn>
-                                    </msup>
+                                    <mi>power</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <msup>
+                                             <mi>x</mi>
+                                             <mn> 3 </mn>
+                                          </msup>
+                                          <mo>+</mo>
+                                          <msup>
+                                             <mi>x</mi>
+                                             <mn> 2 </mn>
+                                          </msup>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn> 1 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
                                  </mrow>
                                  <mo>,</mo>
-                                 <mn> 1 </mn>
-                                 <mo>)</mo>
-                              </mrow>
-                           </mrow>
-                           <mo>,</mo>
-                           <mrow>
-                              <mi>power</mi>
-                              <mo>&#8289;</mo>
-                              <mrow>
-                                 <mo>(</mo>
                                  <mrow>
-                                    <mi>x</mi>
-                                    <mo>-</mo>
-                                    <mn> 2 </mn>
+                                    <mi>power</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>x</mi>
+                                          <mo>-</mo>
+                                          <mn> 2 </mn>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn> 1 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
                                  </mrow>
-                                 <mo>,</mo>
-                                 <mn> 1 </mn>
                                  <mo>)</mo>
                               </mrow>
                            </mrow>
-                           <mo>)</mo>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#partially_factored">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#partially_factored">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#expand">expand</a>]
 	  
 	    [Previous: <a href="#squarefreed">squarefreed</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <pre>
+            <pre>
      Definition of operations
 </pre>
 
-      <hr/>
-      <h2>
-         <a name="expand"> expand </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="expand"> expand </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
         Converts a factored or squarefreed form into the expanded
         polynomial over the same ring, so that factored(recursive)
         -&gt; recursive, etc.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e288xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e288xml')">OpenMath XML (source)</button>
-               <pre id="d40e288xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e288xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e288xml')">OpenMath XML (source)</button>
+                     <pre id="d40e288xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="eq" cd="relation1"/&gt;
@@ -878,11 +929,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;/OMA&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e288cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e288cmml')">Strict Content MathML</button>
-               <pre id="d40e288cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e288cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e288cmml')">Strict Content MathML</button>
+                     <pre id="d40e288cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;expand&lt;/csymbol&gt;
@@ -907,192 +958,192 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e288prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e288pref')">Prefix</button>
-            <div id="d40e288pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/poly.xhtml#expand">expand</a>
-  (<a href="../../../cd/poly.xhtml#factored">factored</a>
-  (<a href="../../../cd/poly.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e288prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e288pref')">Prefix</button>
+                  <div id="d40e288pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly.html#expand">expand</a>
+  (<a href="../../../cd/poly.html#factored">factored</a>
+  (<a href="../../../cd/poly.html#power">power</a>
   ( <i>x</i>,  2 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
   ( <i>x</i>,  2 )
 ,  1 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
   ( <i>x</i>,  2 )
 ,  1 )
 )
 )
-, <a href="../../../cd/arith1.xhtml#plus">plus</a>
-  (<a href="../../../cd/arith1.xhtml#power">power</a>
+, <a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  4 )
-, <a href="../../../cd/arith1.xhtml#times">times</a>
-  ( -4 , <a href="../../../cd/arith1.xhtml#power">power</a>
+, <a href="../../../cd/arith1.html#times">times</a>
+  ( -4 , <a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  2 )
 )
 )
 )
 
         </div>
-            <div>
-               <button id="d40e288popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e288pop')">Popcorn</button>
-               <div id="d40e288pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e288popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e288pop')">Popcorn</button>
+                     <div id="d40e288pop" style="display:none; margin-top: 0.5em">
           poly.expand(poly.factored(poly.power($x, 2), poly.power($x + 2, 1), poly.power($x - 2, 1))) = $x ^ 4 + -4 * $x ^ 2
         </div>
-            </div>
-            <div>
-               <button id="d40e288mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e288mml')">Rendered Presentation MathML</button>
-               <div id="d40e288mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>expand</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                  </div>
+                  <div>
+                     <button id="d40e288mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e288mml')">Rendered Presentation MathML</button>
+                     <div id="d40e288mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mi>factored</mi>
+                                 <mi>expand</mi>
                                  <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
                                     <mrow>
-                                       <mi>power</mi>
-                                       <mo>&#8289;</mo>
-                                       <mrow>
-                                          <mo>(</mo>
-                                          <mi>x</mi>
-                                          <mo>,</mo>
-                                          <mn> 2 </mn>
-                                          <mo>)</mo>
-                                       </mrow>
-                                    </mrow>
-                                    <mo>,</mo>
-                                    <mrow>
-                                       <mi>power</mi>
+                                       <mi>factored</mi>
                                        <mo>&#8289;</mo>
                                        <mrow>
                                           <mo>(</mo>
                                           <mrow>
-                                             <mi>x</mi>
-                                             <mo>+</mo>
-                                             <mn> 2 </mn>
+                                             <mi>power</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>x</mi>
+                                                <mo>,</mo>
+                                                <mn> 2 </mn>
+                                                <mo>)</mo>
+                                             </mrow>
                                           </mrow>
                                           <mo>,</mo>
-                                          <mn> 1 </mn>
-                                          <mo>)</mo>
-                                       </mrow>
-                                    </mrow>
-                                    <mo>,</mo>
-                                    <mrow>
-                                       <mi>power</mi>
-                                       <mo>&#8289;</mo>
-                                       <mrow>
-                                          <mo>(</mo>
                                           <mrow>
-                                             <mi>x</mi>
-                                             <mo>-</mo>
-                                             <mn> 2 </mn>
+                                             <mi>power</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>x</mi>
+                                                   <mo>+</mo>
+                                                   <mn> 2 </mn>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mn> 1 </mn>
+                                                <mo>)</mo>
+                                             </mrow>
                                           </mrow>
                                           <mo>,</mo>
-                                          <mn> 1 </mn>
+                                          <mrow>
+                                             <mi>power</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>x</mi>
+                                                   <mo>-</mo>
+                                                   <mn> 2 </mn>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mn> 1 </mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
                                           <mo>)</mo>
                                        </mrow>
                                     </mrow>
                                     <mo>)</mo>
                                  </mrow>
                               </mrow>
-                              <mo>)</mo>
+                              <mo>=</mo>
+                              <mrow>
+                                 <msup>
+                                    <mi>x</mi>
+                                    <mn> 4 </mn>
+                                 </msup>
+                                 <mo>-</mo>
+                                 <mrow>
+                                    <mn>4</mn>
+                                    <msup>
+                                       <mi>x</mi>
+                                       <mn> 2 </mn>
+                                    </msup>
+                                 </mrow>
+                              </mrow>
                            </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                           <msup>
-                              <mi>x</mi>
-                              <mn> 4 </mn>
-                           </msup>
-                           <mo>-</mo>
-                           <mrow>
-                              <mn>4</mn>
-                              <msup>
-                                 <mi>x</mi>
-                                 <mn> 2 </mn>
-                              </msup>
-                           </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#expand">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#expand">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#degree">degree</a>]
 	  
 	    [Previous: <a href="#partially_factored">partially_factored</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="degree"> degree </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="degree"> degree </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
         The total degree of its argument. The value returned is a
         non-negative integer. We note that the degree of 0 is undefined.
         Note that this operation takes no account of any weights that have 
         been defined: see weighted_degree in polyd.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> degree(x^n)=n </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e403xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e403xml')">OpenMath XML (source)</button>
-               <pre id="d40e403xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> degree(x^n)=n </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e403xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e403xml')">OpenMath XML (source)</button>
+                     <pre id="d40e403xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="eq" cd="relation1"/&gt;
@@ -1107,11 +1158,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;OMV name="n"/&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e403cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e403cmml')">Strict Content MathML</button>
-               <pre id="d40e403cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e403cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e403cmml')">Strict Content MathML</button>
+                     <pre id="d40e403cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;degree&lt;/csymbol&gt;
@@ -1120,112 +1171,112 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;ci&gt;n&lt;/ci&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e403prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e403pref')">Prefix</button>
-            <div id="d40e403pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/poly.xhtml#degree">degree</a>
-  (<a href="../../../cd/arith1.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e403prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e403pref')">Prefix</button>
+                  <div id="d40e403pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly.html#degree">degree</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  <i>n</i>)
 )
 ,  <i>n</i>)
 
         </div>
-            <div>
-               <button id="d40e403popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e403pop')">Popcorn</button>
-               <div id="d40e403pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e403popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e403pop')">Popcorn</button>
+                     <div id="d40e403pop" style="display:none; margin-top: 0.5em">
           poly.degree($x ^ $n) = $n
         </div>
-            </div>
-            <div>
-               <button id="d40e403mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e403mml')">Rendered Presentation MathML</button>
-               <div id="d40e403mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>degree</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <msup>
-                                 <mi>x</mi>
-                                 <mi>n</mi>
-                              </msup>
-                              <mo>)</mo>
+                  </div>
+                  <div>
+                     <button id="d40e403mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e403mml')">Rendered Presentation MathML</button>
+                     <div id="d40e403mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>degree</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <msup>
+                                       <mi>x</mi>
+                                       <mi>n</mi>
+                                    </msup>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mi>n</mi>
                            </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mi>n</mi>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#degree">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#degree">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#degree_wrt">degree_wrt</a>]
 	  
 	    [Previous: <a href="#expand">expand</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="degree_wrt"> degree_wrt </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="degree_wrt"> degree_wrt </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The degree with respect to a variable (the second
          argument). We note that the degree of 0 is undefined.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> degreeWrt(x^ny^m,x)=n </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e445xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e445xml')">OpenMath XML (source)</button>
-               <pre id="d40e445xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> degreeWrt(x^ny^m,x)=n </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e445xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e445xml')">OpenMath XML (source)</button>
+                     <pre id="d40e445xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="eq" cd="relation1"/&gt;
@@ -1249,11 +1300,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;OMV name="n"/&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e445cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e445cmml')">Strict Content MathML</button>
-               <pre id="d40e445cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e445cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e445cmml')">Strict Content MathML</button>
+                     <pre id="d40e445cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;degree_wrt&lt;/csymbol&gt;
@@ -1266,304 +1317,304 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;ci&gt;n&lt;/ci&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e445prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e445pref')">Prefix</button>
-            <div id="d40e445pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/poly.xhtml#degree_wrt">degree_wrt</a>
-  (<a href="../../../cd/arith1.xhtml#times">times</a>
-  (<a href="../../../cd/arith1.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e445prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e445pref')">Prefix</button>
+                  <div id="d40e445pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly.html#degree_wrt">degree_wrt</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  <i>n</i>)
-, <a href="../../../cd/arith1.xhtml#power">power</a>
+, <a href="../../../cd/arith1.html#power">power</a>
   ( <i>y</i>,  <i>m</i>)
 )
 ,  <i>x</i>)
 ,  <i>n</i>)
 
         </div>
-            <div>
-               <button id="d40e445popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e445pop')">Popcorn</button>
-               <div id="d40e445pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e445popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e445pop')">Popcorn</button>
+                     <div id="d40e445pop" style="display:none; margin-top: 0.5em">
           poly.degree_wrt($x ^ $n * $y ^ $m, $x) = $n
         </div>
-            </div>
-            <div>
-               <button id="d40e445mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e445mml')">Rendered Presentation MathML</button>
-               <div id="d40e445mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>degree_wrt</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                  </div>
+                  <div>
+                     <button id="d40e445mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e445mml')">Rendered Presentation MathML</button>
+                     <div id="d40e445mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <msup>
+                                 <mi>degree_wrt</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <msup>
+                                          <mi>x</mi>
+                                          <mi>n</mi>
+                                       </msup>
+                                       <mo>&#8290;</mo>
+                                       <msup>
+                                          <mi>y</mi>
+                                          <mi>m</mi>
+                                       </msup>
+                                    </mrow>
+                                    <mo>,</mo>
                                     <mi>x</mi>
-                                    <mi>n</mi>
-                                 </msup>
-                                 <mo>&#8290;</mo>
-                                 <msup>
-                                    <mi>y</mi>
-                                    <mi>m</mi>
-                                 </msup>
+                                    <mo>)</mo>
+                                 </mrow>
                               </mrow>
-                              <mo>,</mo>
-                              <mi>x</mi>
-                              <mo>)</mo>
+                              <mo>=</mo>
+                              <mi>n</mi>
                            </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mi>n</mi>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#degree_wrt">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#degree_wrt">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#leading_coefficient">leading_coefficient</a>]
 	  
 	    [Previous: <a href="#degree">degree</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="leading_coefficient"> leading_coefficient </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="leading_coefficient"> leading_coefficient </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The leading coefficient with respect to a variable (the second
          argument). We note that the leading coefficient of 0 is undefined.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#leading_coefficient">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#leading_coefficient">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#coefficient">coefficient</a>]
 	  
 	    [Previous: <a href="#degree_wrt">degree_wrt</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="coefficient"> coefficient </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="coefficient"> coefficient </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The coefficient with respect to a list of variables (the second
          argument) raised to a list of powers (the third argument). 
          Zero if no such term is present. Not all variables need be specified.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#coefficient">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#coefficient">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#coefficient_ring">coefficient_ring</a>]
 	  
 	    [Previous: <a href="#leading_coefficient">leading_coefficient</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="coefficient_ring"> coefficient_ring </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="coefficient_ring"> coefficient_ring </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The coefficient ring.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#coefficient_ring">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#coefficient_ring">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#evaluate">evaluate</a>]
 	  
 	    [Previous: <a href="#coefficient">coefficient</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="evaluate"> evaluate </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="evaluate"> evaluate </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          Evaluation of a polynomial at a value or vector of values.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#evaluate">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#evaluate">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#factor">factor</a>]
 	  
 	    [Previous: <a href="#coefficient_ring">coefficient_ring</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="factor"> factor </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="factor"> factor </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The decomposition of its argument into irreducible
          factors. A program that can compute the factorization is required
          to return a "factored" object - see above.
          It is currently an open question whether powers of 1 can be omitted.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e549xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e549xml')">OpenMath XML (source)</button>
-               <pre id="d40e549xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e549xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e549xml')">OpenMath XML (source)</button>
+                     <pre id="d40e549xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="eq" cd="relation1"/&gt; 
@@ -1615,11 +1666,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;/OMA&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e549cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e549cmml')">Strict Content MathML</button>
-               <pre id="d40e549cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e549cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e549cmml')">Strict Content MathML</button>
+                     <pre id="d40e549cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;factor&lt;/csymbol&gt;
@@ -1644,185 +1695,185 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e549prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e549pref')">Prefix</button>
-            <div id="d40e549pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/poly.xhtml#factor">factor</a>
-  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
-  (<a href="../../../cd/arith1.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e549prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e549pref')">Prefix</button>
+                  <div id="d40e549pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly.html#factor">factor</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  4 )
-, <a href="../../../cd/arith1.xhtml#times">times</a>
-  ( -4 , <a href="../../../cd/arith1.xhtml#power">power</a>
+, <a href="../../../cd/arith1.html#times">times</a>
+  ( -4 , <a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  2 )
 )
 )
 )
-, <a href="../../../cd/poly.xhtml#factored">factored</a>
-  (<a href="../../../cd/poly.xhtml#power">power</a>
+, <a href="../../../cd/poly.html#factored">factored</a>
+  (<a href="../../../cd/poly.html#power">power</a>
   ( <i>x</i>,  2 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
   ( <i>x</i>,  2 )
 ,  1 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
   ( <i>x</i>,  2 )
 ,  1 )
 )
 )
 
         </div>
-            <div>
-               <button id="d40e549popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e549pop')">Popcorn</button>
-               <div id="d40e549pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e549popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e549pop')">Popcorn</button>
+                     <div id="d40e549pop" style="display:none; margin-top: 0.5em">
           poly.factor($x ^ 4 + -4 * $x ^ 2) = poly.factored(poly.power($x, 2), poly.power($x + 2, 1), poly.power($x - 2, 1))
         </div>
-            </div>
-            <div>
-               <button id="d40e549mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e549mml')">Rendered Presentation MathML</button>
-               <div id="d40e549mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>factor</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                  </div>
+                  <div>
+                     <button id="d40e549mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e549mml')">Rendered Presentation MathML</button>
+                     <div id="d40e549mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <msup>
-                                    <mi>x</mi>
-                                    <mn> 4 </mn>
-                                 </msup>
-                                 <mo>-</mo>
-                                 <mrow>
-                                    <mn>4</mn>
-                                    <msup>
-                                       <mi>x</mi>
-                                       <mn> 2 </mn>
-                                    </msup>
-                                 </mrow>
-                              </mrow>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>factored</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mrow>
-                                 <mi>power</mi>
-                                 <mo>&#8289;</mo>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mi>x</mi>
-                                    <mo>,</mo>
-                                    <mn> 2 </mn>
-                                    <mo>)</mo>
-                                 </mrow>
-                              </mrow>
-                              <mo>,</mo>
-                              <mrow>
-                                 <mi>power</mi>
+                                 <mi>factor</mi>
                                  <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
                                     <mrow>
-                                       <mi>x</mi>
-                                       <mo>+</mo>
-                                       <mn> 2 </mn>
-                                    </mrow>
-                                    <mo>,</mo>
-                                    <mn> 1 </mn>
-                                    <mo>)</mo>
-                                 </mrow>
-                              </mrow>
-                              <mo>,</mo>
-                              <mrow>
-                                 <mi>power</mi>
-                                 <mo>&#8289;</mo>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mrow>
-                                       <mi>x</mi>
+                                       <msup>
+                                          <mi>x</mi>
+                                          <mn> 4 </mn>
+                                       </msup>
                                        <mo>-</mo>
-                                       <mn> 2 </mn>
+                                       <mrow>
+                                          <mn>4</mn>
+                                          <msup>
+                                             <mi>x</mi>
+                                             <mn> 2 </mn>
+                                          </msup>
+                                       </mrow>
                                     </mrow>
-                                    <mo>,</mo>
-                                    <mn> 1 </mn>
                                     <mo>)</mo>
                                  </mrow>
                               </mrow>
-                              <mo>)</mo>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>factored</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>power</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>x</mi>
+                                          <mo>,</mo>
+                                          <mn> 2 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>power</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>x</mi>
+                                             <mo>+</mo>
+                                             <mn> 2 </mn>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mn> 1 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>power</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>x</mi>
+                                             <mo>-</mo>
+                                             <mn> 2 </mn>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mn> 1 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#factor">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#factor">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#squarefree">squarefree</a>]
 	  
 	    [Previous: <a href="#evaluate">evaluate</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="squarefree"> squarefree </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>  
+            <hr/>
+            <h2>
+               <a name="squarefree"> squarefree </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>  
          The square-free decomposition of its argument. A program that can
          compute the factorization is required to return a "squarefreed"
          object. 
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e661xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e661xml')">OpenMath XML (source)</button>
-               <pre id="d40e661xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e661xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e661xml')">OpenMath XML (source)</button>
+                     <pre id="d40e661xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="eq" cd="relation1"/&gt; 
@@ -1869,11 +1920,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
             &lt;/OMA&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e661cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e661cmml')">Strict Content MathML</button>
-               <pre id="d40e661cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e661cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e661cmml')">Strict Content MathML</button>
+                     <pre id="d40e661cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;squarefree&lt;/csymbol&gt;
@@ -1897,27 +1948,27 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e661prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e661pref')">Prefix</button>
-            <div id="d40e661pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/poly.xhtml#squarefree">squarefree</a>
-  (<a href="../../../cd/arith1.xhtml#plus">plus</a>
-  (<a href="../../../cd/arith1.xhtml#power">power</a>
+                  </div>
+                  <button id="d40e661prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e661pref')">Prefix</button>
+                  <div id="d40e661pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly.html#squarefree">squarefree</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  4 )
-, <a href="../../../cd/arith1.xhtml#times">times</a>
-  ( -4 , <a href="../../../cd/arith1.xhtml#power">power</a>
+, <a href="../../../cd/arith1.html#times">times</a>
+  ( -4 , <a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  2 )
 )
 )
 )
-, <a href="../../../cd/poly.xhtml#squarefreed">squarefreed</a>
-  (<a href="../../../cd/poly.xhtml#power">power</a>
+, <a href="../../../cd/poly.html#squarefreed">squarefreed</a>
+  (<a href="../../../cd/poly.html#power">power</a>
   ( <i>x</i>,  2 )
-, <a href="../../../cd/poly.xhtml#power">power</a>
-  (<a href="../../../cd/arith1.xhtml#minus">minus</a>
-  (<a href="../../../cd/arith1.xhtml#power">power</a>
+, <a href="../../../cd/poly.html#power">power</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
   ( <i>x</i>,  2 )
 ,  4 )
 ,  1 )
@@ -1925,196 +1976,196 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
 )
 
         </div>
-            <div>
-               <button id="d40e661popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e661pop')">Popcorn</button>
-               <div id="d40e661pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e661popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e661pop')">Popcorn</button>
+                     <div id="d40e661pop" style="display:none; margin-top: 0.5em">
           poly.squarefree($x ^ 4 + -4 * $x ^ 2) = poly.squarefreed(poly.power($x, 2), poly.power($x ^ 2 - 4, 1))
         </div>
-            </div>
-            <div>
-               <button id="d40e661mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e661mml')">Rendered Presentation MathML</button>
-               <div id="d40e661mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>squarefree</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                  </div>
+                  <div>
+                     <button id="d40e661mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e661mml')">Rendered Presentation MathML</button>
+                     <div id="d40e661mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <msup>
-                                    <mi>x</mi>
-                                    <mn> 4 </mn>
-                                 </msup>
-                                 <mo>-</mo>
-                                 <mrow>
-                                    <mn>4</mn>
-                                    <msup>
-                                       <mi>x</mi>
-                                       <mn> 2 </mn>
-                                    </msup>
-                                 </mrow>
-                              </mrow>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>squarefreed</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mrow>
-                                 <mi>power</mi>
-                                 <mo>&#8289;</mo>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mi>x</mi>
-                                    <mo>,</mo>
-                                    <mn> 2 </mn>
-                                    <mo>)</mo>
-                                 </mrow>
-                              </mrow>
-                              <mo>,</mo>
-                              <mrow>
-                                 <mi>power</mi>
+                                 <mi>squarefree</mi>
                                  <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
                                     <mrow>
                                        <msup>
                                           <mi>x</mi>
-                                          <mn> 2 </mn>
+                                          <mn> 4 </mn>
                                        </msup>
                                        <mo>-</mo>
-                                       <mn> 4 </mn>
+                                       <mrow>
+                                          <mn>4</mn>
+                                          <msup>
+                                             <mi>x</mi>
+                                             <mn> 2 </mn>
+                                          </msup>
+                                       </mrow>
                                     </mrow>
-                                    <mo>,</mo>
-                                    <mn> 1 </mn>
                                     <mo>)</mo>
                                  </mrow>
                               </mrow>
-                              <mo>)</mo>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>squarefreed</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>power</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>x</mi>
+                                          <mo>,</mo>
+                                          <mn> 2 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>power</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <msup>
+                                                <mi>x</mi>
+                                                <mn> 2 </mn>
+                                             </msup>
+                                             <mo>-</mo>
+                                             <mn> 4 </mn>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mn> 1 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#squarefree">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#squarefree">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#gcd">gcd</a>]
 	  
 	    [Previous: <a href="#factor">factor</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="gcd"> gcd </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="gcd"> gcd </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           The n-ary greatest common divisor of its polynomial arguments.
           This is unique up to units.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#gcd">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#gcd">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#lcm">lcm</a>]
 	  
 	    [Previous: <a href="#squarefree">squarefree</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="lcm"> lcm </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="lcm"> lcm </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           The least common multiple of its polynomial arguments.
           This is unique up to units, but the choice must be compatible with
           that made for gcd: see the CMP/FMP.
        </p>
-         </dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
          for all x,y lcm(x,y) = (x*y)/gcd(x,y)
        </dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e777xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e777xml')">OpenMath XML (source)</button>
-               <pre id="d40e777xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e777xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e777xml')">OpenMath XML (source)</button>
+                     <pre id="d40e777xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
        &lt;OMBIND&gt;
          &lt;OMS cd="quant1" name="forall"/&gt;
 	 &lt;OMBVAR&gt;
@@ -2144,11 +2195,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
 	 &lt;/OMA&gt;
        &lt;/OMBIND&gt;
        &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e777cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e777cmml')">Strict Content MathML</button>
-               <pre id="d40e777cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e777cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e777cmml')">Strict Content MathML</button>
+                     <pre id="d40e777cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
@@ -2162,152 +2213,152 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/bind&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e777prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e777pref')">Prefix</button>
-            <div id="d40e777pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/quant1.xhtml#forall">forall</a>
+                  </div>
+                  <button id="d40e777prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e777pref')">Prefix</button>
+                  <div id="d40e777pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
   [
 	    <i>x</i>
-	              <i>y</i>
+	                    <i>y</i>
 	 ] .
-  (<a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/poly.xhtml#lcm">lcm</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly.html#lcm">lcm</a>
   ( <i>x</i>,  <i>y</i>)
-, <a href="../../../cd/arith1.xhtml#divide">divide</a>
-  (<a href="../../../cd/arith1.xhtml#times">times</a>
+, <a href="../../../cd/arith1.html#divide">divide</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
   ( <i>x</i>,  <i>y</i>)
-, <a href="../../../cd/poly.xhtml#gcd">gcd</a>
+, <a href="../../../cd/poly.html#gcd">gcd</a>
   ( <i>x</i>,  <i>y</i>)
 )
 )
 )
 
        </div>
-            <div>
-               <button id="d40e777popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e777pop')">Popcorn</button>
-               <div id="d40e777pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e777popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e777pop')">Popcorn</button>
+                     <div id="d40e777pop" style="display:none; margin-top: 0.5em">
        quant1.forall[$x, $y -&gt; poly.lcm($x, $y) = ($x * $y) / poly.gcd($x, $y)]
        </div>
-            </div>
-            <div>
-               <button id="d40e777mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e777mml')">Rendered Presentation MathML</button>
-               <div id="d40e777mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mo>&#8704;</mo>
-                        <mo>&#8201;</mo>
-                        <mrow>
-                           <mi>x</mi>
-                           <mo>,</mo>
-                           <mi>y</mi>
-                        </mrow>
-                        <mo>.</mo>
-                        <mrow>
-                           <mrow>
-                              <mi>lcm</mi>
-                              <mo>&#8289;</mo>
+                  </div>
+                  <div>
+                     <button id="d40e777mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e777mml')">Rendered Presentation MathML</button>
+                     <div id="d40e777mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
                               <mrow>
-                                 <mo>(</mo>
                                  <mi>x</mi>
                                  <mo>,</mo>
                                  <mi>y</mi>
-                                 <mo>)</mo>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>lcm</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo>,</mo>
+                                       <mi>y</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mfrac>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>&#8290;</mo>
+                                       <mi>y</mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>gcd</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>x</mi>
+                                          <mo>,</mo>
+                                          <mi>y</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mfrac>
                               </mrow>
                            </mrow>
-                           <mo>=</mo>
-                           <mfrac>
-                              <mrow>
-                                 <mi>x</mi>
-                                 <mo>&#8290;</mo>
-                                 <mi>y</mi>
-                              </mrow>
-                              <mrow>
-                                 <mi>gcd</mi>
-                                 <mo>&#8289;</mo>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mi>x</mi>
-                                    <mo>,</mo>
-                                    <mi>y</mi>
-                                    <mo>)</mo>
-                                 </mrow>
-                              </mrow>
-                           </mfrac>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#lcm">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#lcm">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#discriminant">discriminant</a>]
 	  
 	    [Previous: <a href="#gcd">gcd</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="discriminant"> discriminant </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="discriminant"> discriminant </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          Function taking two arguments, it represents the discriminant
          of a polynomial, which is the first argument, with
          respect to the given variable which is the second argument.
        </p>
-         </dd>
-      </dl>
+               </dd>
+            </dl>
 
-       <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
          discriminant(p,x)=resultant(p,diff(p,x),x)/leading_coefficient(p,x)
        </dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e846xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e846xml')">OpenMath XML (source)</button>
-               <pre id="d40e846xml" style="display:none">
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e846xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e846xml')">OpenMath XML (source)</button>
+                     <pre id="d40e846xml" style="display:none">
        &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
          &lt;OMA&gt;
            &lt;OMS name="eq" cd="relation1"/&gt;
@@ -2341,11 +2392,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
            &lt;/OMA&gt;
          &lt;/OMA&gt;
        &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e846cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e846cmml')">Strict Content MathML</button>
-               <pre id="d40e846cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e846cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e846cmml')">Strict Content MathML</button>
+                     <pre id="d40e846cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;discriminant&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
@@ -2361,173 +2412,173 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e846prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e846pref')">Prefix</button>
-            <div id="d40e846pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/poly.xhtml#discriminant">discriminant</a>
+                  </div>
+                  <button id="d40e846prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e846pref')">Prefix</button>
+                  <div id="d40e846pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly.html#discriminant">discriminant</a>
   ( <i>p</i>,  <i>x</i>)
-, <a href="../../../cd/arith1.xhtml#divide">divide</a>
-  (<a href="../../../cd/poly.xhtml#resultant">resultant</a>
-  ( <i>p</i>, <a href="../../../cd/calculus1.xhtml#diff">diff</a>
-  (<a href="../../../cd/fns1.xhtml#lambda">lambda</a>
+, <a href="../../../cd/arith1.html#divide">divide</a>
+  (<a href="../../../cd/poly.html#resultant">resultant</a>
+  ( <i>p</i>, <a href="../../../cd/calculus1.html#diff">diff</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
   [
                       <i>x</i>
                    ] .
   ( <i>p</i>)
 )
 ,  <i>x</i>)
-, <a href="../../../cd/poly.xhtml#leading_coefficient">leading_coefficient</a>
+, <a href="../../../cd/poly.html#leading_coefficient">leading_coefficient</a>
   ( <i>p</i>,  <i>x</i>)
 )
 )
 
        </div>
-            <div>
-               <button id="d40e846popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e846pop')">Popcorn</button>
-               <div id="d40e846pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e846popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e846pop')">Popcorn</button>
+                     <div id="d40e846pop" style="display:none; margin-top: 0.5em">
          poly.discriminant($p, $x) = poly.resultant($p, calculus1.diff(fns1.lambda[$x -&gt; $p]), $x) / poly.leading_coefficient($p, $x)
        </div>
-            </div>
-            <div>
-               <button id="d40e846mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e846mml')">Rendered Presentation MathML</button>
-               <div id="d40e846mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>discriminant</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mi>p</mi>
-                              <mo>,</mo>
-                              <mi>x</mi>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mfrac>
-                           <mrow>
-                              <mi>resultant</mi>
-                              <mo>&#8289;</mo>
+                  </div>
+                  <div>
+                     <button id="d40e846mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e846mml')">Rendered Presentation MathML</button>
+                     <div id="d40e846mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mo>(</mo>
-                                 <mi>p</mi>
-                                 <mo>,</mo>
-                                 <mfrac>
-                                    <mi>d</mi>
-                                    <mrow>
-                                       <mi>d</mi>
-                                       <mrow>
-                                          <mi>x</mi>
-                                       </mrow>
-                                    </mrow>
-                                 </mfrac>
+                                 <mi>discriminant</mi>
+                                 <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
                                     <mi>p</mi>
+                                    <mo>,</mo>
+                                    <mi>x</mi>
                                     <mo>)</mo>
                                  </mrow>
-                                 <mo>,</mo>
-                                 <mi>x</mi>
-                                 <mo>)</mo>
                               </mrow>
+                              <mo>=</mo>
+                              <mfrac>
+                                 <mrow>
+                                    <mi>resultant</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>p</mi>
+                                       <mo>,</mo>
+                                       <mfrac>
+                                          <mi>d</mi>
+                                          <mrow>
+                                             <mi>d</mi>
+                                             <mrow>
+                                                <mi>x</mi>
+                                             </mrow>
+                                          </mrow>
+                                       </mfrac>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>p</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mrow>
+                                    <mi>leading_coefficient</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>p</mi>
+                                       <mo>,</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mfrac>
                            </mrow>
-                           <mrow>
-                              <mi>leading_coefficient</mi>
-                              <mo>&#8289;</mo>
-                              <mrow>
-                                 <mo>(</mo>
-                                 <mi>p</mi>
-                                 <mo>,</mo>
-                                 <mi>x</mi>
-                                 <mo>)</mo>
-                              </mrow>
-                           </mrow>
-                        </mfrac>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
 
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#discriminant">
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#discriminant">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#resultant">resultant</a>]
 	  
 	    [Previous: <a href="#lcm">lcm</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="resultant"> resultant </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="resultant"> resultant </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          Function taking three arguments, it represents the resultant
          of two polynomials, which are the first two arguments, with
          respect to the given variable which is the third argument.
        </p>
-         </dd>
-      </dl>
+               </dd>
+            </dl>
 
-       <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
          if for all f,g in R[x] | if there exists an a in R 
          s.t. f(a) = g(a) = 0 then resultant(f,g,x) = 0
        </dd>
-      </dl>
+            </dl>
 
-     <pre>
+            <pre>
        We note that the polynomials utilised in the following FMP are
        recursive in nature, however the resultant symbol may be used
        also on dense polynomials.
      </pre>
 
-       <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e925xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e925xml')">OpenMath XML (source)</button>
-               <pre id="d40e925xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e925xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e925xml')">OpenMath XML (source)</button>
+                     <pre id="d40e925xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
            &lt;OMBIND&gt;
 	     &lt;OMS name="forall" cd="quant1"/&gt;
 	     &lt;OMBVAR&gt;
@@ -2603,11 +2654,11 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
 	     &lt;/OMA&gt;
   	   &lt;/OMBIND&gt;
        &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e925cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e925cmml')">Strict Content MathML</button>
-               <pre id="d40e925cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e925cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e925cmml')">Strict Content MathML</button>
+                     <pre id="d40e925cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
   &lt;bvar&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/bvar&gt;
@@ -2646,253 +2697,255 @@ Updated following Abbott/Strotmann/Davenport at Dagstuhl October 2001 JHD
   &lt;/apply&gt;
  &lt;/bind&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e925prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e925pref')">Prefix</button>
-            <div id="d40e925pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/quant1.xhtml#forall">forall</a>
+                  </div>
+                  <button id="d40e925prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e925pref')">Prefix</button>
+                  <div id="d40e925pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
   [
 	        <i>f</i>
-	              <i>g</i>
+	                    <i>g</i>
 	     ] .
-  (<a href="../../../cd/logic1.xhtml#implies">implies</a>
-  (<a href="../../../cd/logic1.xhtml#and">and</a>
-  (<a href="../../../cd/set1.xhtml#in">in</a>
-  ( <i>f</i>, <a href="../../../cd/polyr.xhtml#polynomial_ring_r">polynomial_ring_r</a>
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>f</i>, <a href="../../../cd/polyr.html#polynomial_ring_r">polynomial_ring_r</a>
   ( <i>R</i>,  <i>x</i>)
 )
-, <a href="../../../cd/set1.xhtml#in">in</a>
-  ( <i>g</i>, <a href="../../../cd/polyr.xhtml#polynomial_ring_r">polynomial_ring_r</a>
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>g</i>, <a href="../../../cd/polyr.html#polynomial_ring_r">polynomial_ring_r</a>
   ( <i>R</i>,  <i>x</i>)
 )
 )
-, <a href="../../../cd/logic1.xhtml#implies">implies</a>
-  (<a href="../../../cd/quant1.xhtml#exists">exists</a>
+, <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/quant1.html#exists">exists</a>
   [
 		      <i>a</i>
 		   ] .
-  (<a href="../../../cd/logic1.xhtml#and">and</a>
-  (<a href="../../../cd/set1.xhtml#in">in</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
   ( <i>a</i>,  <i>R</i>)
-, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+, <a href="../../../cd/relation1.html#eq">eq</a>
   ( <i>f</i>
   ( <i>a</i>)
-, <a href="../../../cd/alg1.xhtml#zero">zero</a>)
-, <a href="../../../cd/relation1.xhtml#eq">eq</a>
+, <a href="../../../cd/alg1.html#zero">zero</a>)
+, <a href="../../../cd/relation1.html#eq">eq</a>
   ( <i>g</i>
   ( <i>a</i>)
-, <a href="../../../cd/alg1.xhtml#zero">zero</a>)
+, <a href="../../../cd/alg1.html#zero">zero</a>)
 )
 )
-, <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/poly.xhtml#resultant">resultant</a>
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly.html#resultant">resultant</a>
   ( <i>f</i>,  <i>g</i>,  <i>x</i>)
-, <a href="../../../cd/alg1.xhtml#zero">zero</a>)
+, <a href="../../../cd/alg1.html#zero">zero</a>)
 )
 )
 )
 
        </div>
-            <div>
-               <button id="d40e925popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e925pop')">Popcorn</button>
-               <div id="d40e925pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e925popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e925pop')">Popcorn</button>
+                     <div id="d40e925pop" style="display:none; margin-top: 0.5em">
            quant1.forall[$f, $g -&gt; set1.in($f, polyr.polynomial_ring_r($R, $x)) and set1.in($g, polyr.polynomial_ring_r($R, $x)) ==&gt; quant1.exists[$a -&gt; set1.in($a, $R) and $f($a) = alg1.zero and $g($a) = alg1.zero] ==&gt; poly.resultant($f, $g, $x) = alg1.zero]
        </div>
-            </div>
-            <div>
-               <button id="d40e925mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e925mml')">Rendered Presentation MathML</button>
-               <div id="d40e925mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mo>&#8704;</mo>
-                        <mo>&#8201;</mo>
-                        <mrow>
-                           <mi>f</mi>
-                           <mo>,</mo>
-                           <mi>g</mi>
-                        </mrow>
-                        <mo>.</mo>
-                        <mrow>
-                           <mrow>
+                  </div>
+                  <div>
+                     <button id="d40e925mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e925mml')">Rendered Presentation MathML</button>
+                     <div id="d40e925mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
                               <mrow>
                                  <mi>f</mi>
-                                 <mo>&#8712;</mo>
-                                 <mrow>
-                                    <mi>polynomial_ring_r</mi>
-                                    <mo>&#8289;</mo>
-                                    <mrow>
-                                       <mo>(</mo>
-                                       <mi>R</mi>
-                                       <mo>,</mo>
-                                       <mi>x</mi>
-                                       <mo>)</mo>
-                                    </mrow>
-                                 </mrow>
-                              </mrow>
-                              <mo>&#8743;</mo>
-                              <mrow>
+                                 <mo>,</mo>
                                  <mi>g</mi>
-                                 <mo>&#8712;</mo>
-                                 <mrow>
-                                    <mi>polynomial_ring_r</mi>
-                                    <mo>&#8289;</mo>
-                                    <mrow>
-                                       <mo>(</mo>
-                                       <mi>R</mi>
-                                       <mo>,</mo>
-                                       <mi>x</mi>
-                                       <mo>)</mo>
-                                    </mrow>
-                                 </mrow>
                               </mrow>
-                           </mrow>
-                           <mo>&#8658;</mo>
-                           <mrow>
-                              <mrow>
-                                 <mo>&#8707;</mo>
-                                 <mo>&#8201;</mo>
-                                 <mrow>
-                                    <mi>a</mi>
-                                 </mrow>
-                                 <mo>.</mo>
-                                 <mrow>
-                                    <mrow>
-                                       <mi>a</mi>
-                                       <mo>&#8712;</mo>
-                                       <mi>R</mi>
-                                    </mrow>
-                                    <mo>&#8743;</mo>
-                                    <mrow>
-                                       <mrow>
-                                          <mi>f</mi>
-                                          <mo>&#8289;</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mi>a</mi>
-                                             <mo>)</mo>
-                                          </mrow>
-                                       </mrow>
-                                       <mo>=</mo>
-                                       <mn>0</mn>
-                                    </mrow>
-                                    <mo>&#8743;</mo>
-                                    <mrow>
-                                       <mrow>
-                                          <mi>g</mi>
-                                          <mo>&#8289;</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mi>a</mi>
-                                             <mo>)</mo>
-                                          </mrow>
-                                       </mrow>
-                                       <mo>=</mo>
-                                       <mn>0</mn>
-                                    </mrow>
-                                 </mrow>
-                              </mrow>
-                              <mo>&#8658;</mo>
+                              <mo>.</mo>
                               <mrow>
                                  <mrow>
-                                    <mi>resultant</mi>
-                                    <mo>&#8289;</mo>
                                     <mrow>
-                                       <mo>(</mo>
                                        <mi>f</mi>
-                                       <mo>,</mo>
+                                       <mo>&#8712;</mo>
+                                       <mrow>
+                                          <mi>polynomial_ring_r</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>,</mo>
+                                             <mi>x</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
                                        <mi>g</mi>
-                                       <mo>,</mo>
-                                       <mi>x</mi>
-                                       <mo>)</mo>
+                                       <mo>&#8712;</mo>
+                                       <mrow>
+                                          <mi>polynomial_ring_r</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>,</mo>
+                                             <mi>x</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
                                     </mrow>
                                  </mrow>
-                                 <mo>=</mo>
-                                 <mn>0</mn>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>&#8707;</mo>
+                                       <mo>&#8201;</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                       </mrow>
+                                       <mo>.</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>a</mi>
+                                             <mo>&#8712;</mo>
+                                             <mi>R</mi>
+                                          </mrow>
+                                          <mo>&#8743;</mo>
+                                          <mrow>
+                                             <mrow>
+                                                <mi>f</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>a</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>=</mo>
+                                             <mn>0</mn>
+                                          </mrow>
+                                          <mo>&#8743;</mo>
+                                          <mrow>
+                                             <mrow>
+                                                <mi>g</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>a</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>=</mo>
+                                             <mn>0</mn>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8658;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>resultant</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>f</mi>
+                                             <mo>,</mo>
+                                             <mi>g</mi>
+                                             <mo>,</mo>
+                                             <mi>x</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mn>0</mn>
+                                    </mrow>
+                                 </mrow>
                               </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
 
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#resultant">
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#resultant">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#convert">convert</a>]
 	  
 	    [Previous: <a href="#discriminant">discriminant</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="convert"> convert </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="convert"> convert </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          Conversion between polynomial rings. The first argument is a
          polynomial and the second is a polynomial ring. This represents the 
          conversion of the given polynomial as an element of the given ring.
          A program that can compute the conversion is required to return
          a polynomial in the given ring.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/poly.xhtml#convert">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/poly.html#convert">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [First: <a href="#power">power</a>]
 	  
 	    [Previous: <a href="#resultant">resultant</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
+         </div>
+      </div>
    </body>
 </html>

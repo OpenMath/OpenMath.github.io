@@ -20,3 +20,8 @@ deemed compatible with the [MathML3 Recommendation](http://www.w3.org/TR/MathML3
 * [All CDs by Name](../cdnames/): A list of all Content Dictionaries (including contributed Dictionaries).
 * [Index of all Symbols](../symbols/): A list of all symbols defined in any Content Dictionary (including contributed Dictionaries).
 * [Archive of All CDs](../cds.tar.gz): A gzipped compressed tarball of all content-dictionaries.
+
+## FAQ
+
+If you have trouble expressing yourself in terms of the existing CDs, maybe others had
+too, and you can find the answer in the [OpenMath CDs FAQ](faq/)

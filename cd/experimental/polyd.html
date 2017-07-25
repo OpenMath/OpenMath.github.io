@@ -1,7 +1,9 @@
-<script xmlns="http://www.w3.org/1999/xhtml"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
       <script type="text/javascript"> function divfold(_Id){
      var thisLevel = document.getElementById(_Id);
      var thisLevela = document.getElementById(_Id.concat("a"))
@@ -14,64 +16,113 @@
        }
      </script>
       <title>polyd</title>
-      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
    </head>
-   <body>
-      <a name="top"/>
-      <h1>OpenMath Content Dictionary: polyd</h1>
-      <dl>
-         <dt>
-            <span class="dt">Canonical URL:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd/polyd.ocd">http://www.openmath.org/cd/polyd.ocd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD Base:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD File:</span>
-         </dt>
-         <dd>
-            <a href="polyd.ocd">polyd.ocd
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: polyd</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/polyd.ocd">http://www.openmath.org/cd/polyd.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="polyd.ocd">polyd.ocd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">CD as XML Encoded OpenMath:</span>
-         </dt>
-         <dd>
-            <a href="polyd.omcd">polyd.omcd
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="polyd.omcd">polyd.omcd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">Defines:</span>
-         </dt>
-         <dd>
-            <a href="#DMP">DMP</a>, <a href="#DMPL">DMPL</a>, <a href="#SDMP">SDMP</a>, <a href="#anonymous">anonymous</a>, <a href="#completely_reduced">completely_reduced</a>, <a href="#elimination">elimination</a>, <a href="#graded_lexicographic">graded_lexicographic</a>, <a href="#graded_reverse_lexicographic">graded_reverse_lexicographic</a>, <a href="#groebner">groebner</a>, <a href="#groebnered">groebnered</a>, <a href="#lexicographic">lexicographic</a>, <a href="#matrix_ordering">matrix_ordering</a>, <a href="#ordering">ordering</a>, <a href="#plus">plus</a>, <a href="#poly_ring_d">poly_ring_d</a>, <a href="#poly_ring_d_named">poly_ring_d_named</a>, <a href="#power">power</a>, <a href="#reduce">reduce</a>, <a href="#reverse_lexicographic">reverse_lexicographic</a>, <a href="#term">term</a>, <a href="#times">times</a>, <a href="#weighted">weighted</a>, <a href="#weighted_degree">weighted_degree</a>
-         </dd>
-         <dt>
-            <span class="dt">Date:</span>
-         </dt>
-         <dd>2004-03-30</dd>
-         <dt>
-            <span class="dt">Version:</span>
-         </dt>
-         <dd>4</dd>
-         <dt>
-            <span class="dt">Review Date:</span>
-         </dt>
-         <dd>2006-03-30</dd>
-         <dt>
-            <span class="dt">Status:</span>
-         </dt>
-         <dd> experimental </dd>
-      </dl>
-      <hr/>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#DMP">DMP</a>, <a href="#DMPL">DMPL</a>, <a href="#SDMP">SDMP</a>, <a href="#anonymous">anonymous</a>, <a href="#completely_reduced">completely_reduced</a>, <a href="#elimination">elimination</a>, <a href="#graded_lexicographic">graded_lexicographic</a>, <a href="#graded_reverse_lexicographic">graded_reverse_lexicographic</a>, <a href="#groebner">groebner</a>, <a href="#groebnered">groebnered</a>, <a href="#lexicographic">lexicographic</a>, <a href="#matrix_ordering">matrix_ordering</a>, <a href="#ordering">ordering</a>, <a href="#plus">plus</a>, <a href="#poly_ring_d">poly_ring_d</a>, <a href="#poly_ring_d_named">poly_ring_d_named</a>, <a href="#power">power</a>, <a href="#reduce">reduce</a>, <a href="#reverse_lexicographic">reverse_lexicographic</a>, <a href="#term">term</a>, <a href="#times">times</a>, <a href="#weighted">weighted</a>, <a href="#weighted_degree">weighted_degree</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>4</dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
 
-      <pre>
+            <pre>
 
      This document is distributed in the hope that it will be useful, 
      but WITHOUT ANY WARRANTY; without even the implied warranty of 
@@ -112,12 +163,12 @@
    
    
    
-      <p>
+            <p>
      This CD contains operators to deal with polynomials and more precisely 
      Distributed Multivariate Polynomials.
    </p>
 
-      <pre>
+            <pre>
 Original OpenMath v1.1 Poly 1997
 Update to Current Format 1999-07-07 DPC
 Move the names of rings to setname.ocd 1999-11-09 JHD
@@ -126,7 +177,7 @@ Update following Abbott/Davenport/Strotmann at Dagstuhl 2001-10-12 JHD
 Added example to weighted_degree 2002-09-17 JHD
 </pre>
 
-      <pre>
+            <pre>
 
  This is our attempt at defining a first Content Dictionary to deal with
  polynomials. There are many possible choices for a polynomial CD, and
@@ -216,11 +267,11 @@ Added example to weighted_degree 2002-09-17 JHD
 </pre>
 
 
-      <pre>
+            <pre>
      Definition of data-structure constructors
 </pre>
 
-      <pre>
+            <pre>
      The polynomial x^2*y^6 + 3*y^5 can be encoded as
      DMP(poly_ring_d(Z, 2), SDMP(term(1, 2, 6), term(3, 0, 5)))
      if the variables are anonymous, or if they are named, as
@@ -235,69 +286,69 @@ Added example to weighted_degree 2002-09-17 JHD
      dictionary. Of course, actual encodings can be more compact...
 </pre>
 
-      <hr/>
-       <h2>
-         <a name="DMP"> DMP </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="DMP"> DMP </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
          The constructor of DMPs. The first argument is the polynomial
          ring containing the polynomial and the second is a "SDMP". 
          Should be of the form DMP(PolyRingD(...), SDMP(...))
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#DMP">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#DMP">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#DMPL">DMPL</a>]
 	  
 	    [Last: <a href="#reduce">reduce</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="DMPL"> DMPL </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="DMPL"> DMPL </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
          The constructor for lists of multivariate polynomial members of the 
          same polynomial ring. The first argument is a polynomial ring
          and the rest are "SDMP"s. DMPL can be attributed with the "ordering" 
@@ -305,50 +356,50 @@ Added example to weighted_degree 2002-09-17 JHD
          polynomials. 
          Should be of the form DMPL(PolyRingD(...), SDMP(...)+)
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#DMPL">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#DMPL">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#SDMP">SDMP</a>]
 	  
 	    [Previous: <a href="#DMP">DMP</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
 
-      <hr/>
-       <h2>
-         <a name="SDMP"> SDMP </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="SDMP"> SDMP </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
          The constructor for multivariate polynomials without
          any indication of variables or domain for the coefficients.
 	 Its arguments are just "term"s. No terms should differ only by
@@ -361,49 +412,49 @@ Added example to weighted_degree 2002-09-17 JHD
          order with respect to this order. The zero polynomial is represented
          by an SDMP with no terms.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#SDMP">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#SDMP">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#term">term</a>]
 	  
 	    [Previous: <a href="#DMPL">DMPL</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="term"> term </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="term"> term </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
          The constructor of terms. Valid applications are of the form
          Term(coeff, exp1, exp2, ... expn)
 	 which represents the term 
@@ -411,462 +462,462 @@ Added example to weighted_degree 2002-09-17 JHD
          where n is the number of variables, expi are non-negative integers.
          coeff should be non-zero.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#term">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#term">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#poly_ring_d">poly_ring_d</a>]
 	  
 	    [Previous: <a href="#SDMP">SDMP</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <pre>
+            <pre>
     Polynomial rings constructors
 </pre>
 
 
-      <hr/>
-       <h2>
-         <a name="poly_ring_d"> poly_ring_d </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="poly_ring_d"> poly_ring_d </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The constructor of polynomial ring. The first argument is a ring
          (the ring of the coefficients), the second is the number 
          of variables as an integer.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#poly_ring_d">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#poly_ring_d">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#poly_ring_d_named">poly_ring_d_named</a>]
 	  
 	    [Previous: <a href="#term">term</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="poly_ring_d_named"> poly_ring_d_named </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="poly_ring_d_named"> poly_ring_d_named </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The constructor of polynomial ring. The first argument is a ring
          (the ring of the coefficients), the remaining arguments are the 
          names of the variables. The first variable given is the most
          important from the point of view of lexicographic ordering, then
          the second, and so on.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#poly_ring_d_named">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#poly_ring_d_named">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#anonymous">anonymous</a>]
 	  
 	    [Previous: <a href="#poly_ring_d">poly_ring_d</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="anonymous"> anonymous </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="anonymous"> anonymous </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          Indicates a variable that we do not want to name
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#anonymous">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#anonymous">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#ordering">ordering</a>]
 	  
 	    [Previous: <a href="#poly_ring_d_named">poly_ring_d_named</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <pre>
+            <pre>
      Definitions related to orderings
 </pre>
 
 
-      <hr/>
-       <h2>
-         <a name="ordering"> ordering </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>semantic-attribution</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="ordering"> ordering </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>semantic-attribution</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           Used as an attribute to indicate an ordering of the terms in a
           polynomial or list of polynomials. The value of this attribute
           should be one of the constructors specifying ordering. 
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#ordering">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#ordering">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#lexicographic">lexicographic</a>]
 	  
 	    [Previous: <a href="#anonymous">anonymous</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <pre>
+            <pre>
           The following orders on terms have their standards definitions, 
          see, for example, "Ideals, Varieties and Algorithms", D. Cox, 
          J.B. Little and D. O'Shea, Springer Verlag.
 </pre>
 
-      <hr/>
-       <h2>
-         <a name="lexicographic"> lexicographic </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="lexicographic"> lexicographic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           The lexicographic ordering of terms.
           Note that, if a poly_ring_d_named is used, lexigographic refers
           to the order of the variables in the poly_ring_d_named, not to 
           their order as strings.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#lexicographic">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#lexicographic">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#reverse_lexicographic">reverse_lexicographic</a>]
 	  
 	    [Previous: <a href="#ordering">ordering</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="reverse_lexicographic"> reverse_lexicographic </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="reverse_lexicographic"> reverse_lexicographic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           The reverse lexicographic ordering of terms.
           Note that, if a poly_ring_d_named is used, lexigographic refers
           to the order of the variables in the poly_ring_d_named, not to 
           their order as strings.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#reverse_lexicographic">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#reverse_lexicographic">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#graded_lexicographic">graded_lexicographic</a>]
 	  
 	    [Previous: <a href="#lexicographic">lexicographic</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="graded_lexicographic"> graded_lexicographic </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="graded_lexicographic"> graded_lexicographic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           Total degree order, graded with the lexicographic ordering.
           Note that, if a poly_ring_d_named is used, lexigographic refers
           to the order of the variables in the poly_ring_d_named, not to 
           their order as strings.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#graded_lexicographic">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#graded_lexicographic">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#graded_reverse_lexicographic">graded_reverse_lexicographic</a>]
 	  
 	    [Previous: <a href="#reverse_lexicographic">reverse_lexicographic</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="graded_reverse_lexicographic"> graded_reverse_lexicographic </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="graded_reverse_lexicographic"> graded_reverse_lexicographic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           Total degree order, graded with the reverse lexicographic ordering.
           Note that, if a poly_ring_d_named is used, lexigographic refers
           to the order of the variables in the poly_ring_d_named, not to 
           their order as strings.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#graded_reverse_lexicographic">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#graded_reverse_lexicographic">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#elimination">elimination</a>]
 	  
 	    [Previous: <a href="#graded_lexicographic">graded_lexicographic</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="elimination"> elimination </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="elimination"> elimination </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           This is an ordering, which is partially in terms of one
           ordering, and partially in terms of another.
           First argument is a number of variables.
           Second is ordering to apply on the first so many variables.
           Third is an ordering on the rest, to be used to break ties.
        </p>
-         </dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e216xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e216xml')">OpenMath XML (source)</button>
-               <pre id="d40e216xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e216xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e216xml')">OpenMath XML (source)</button>
+                     <pre id="d40e216xml" style="display:none">
          &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
            &lt;OMA&gt;
              &lt;OMS name="elimination" cd="polyd"/&gt;
@@ -875,11 +926,11 @@ Added example to weighted_degree 2002-09-17 JHD
              &lt;OMS name="graded_reverse_lexicographic" cd="polyd"/&gt;
            &lt;/OMA&gt;
          &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e216cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e216cmml')">Strict Content MathML</button>
-               <pre id="d40e216cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e216cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e216cmml')">Strict Content MathML</button>
+                     <pre id="d40e216cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="polyd"&gt;elimination&lt;/csymbol&gt;
   &lt;cn&gt;1&lt;/cn&gt;
@@ -887,201 +938,201 @@ Added example to weighted_degree 2002-09-17 JHD
   &lt;csymbol cd="polyd"&gt;graded_reverse_lexicographic&lt;/csymbol&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e216prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e216pref')">Prefix</button>
-            <div id="d40e216pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/polyd.xhtml#elimination">elimination</a>
-  ( 1 , <a href="../../../cd/polyd.xhtml#lexicographic">lexicographic</a>, <a href="../../../cd/polyd.xhtml#graded_reverse_lexicographic">graded_reverse_lexicographic</a>)
+                  </div>
+                  <button id="d40e216prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e216pref')">Prefix</button>
+                  <div id="d40e216pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/polyd.html#elimination">elimination</a>
+  ( 1 , <a href="../../../cd/polyd.html#lexicographic">lexicographic</a>, <a href="../../../cd/polyd.html#graded_reverse_lexicographic">graded_reverse_lexicographic</a>)
 
          </div>
-            <div>
-               <button id="d40e216popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e216pop')">Popcorn</button>
-               <div id="d40e216pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e216popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e216pop')">Popcorn</button>
+                     <div id="d40e216pop" style="display:none; margin-top: 0.5em">
            polyd.elimination(1, polyd.lexicographic, polyd.graded_reverse_lexicographic)
          </div>
-            </div>
-            <div>
-               <button id="d40e216mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e216mml')">Rendered Presentation MathML</button>
-               <div id="d40e216mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>elimination</mi>
-                        <mo>&#8289;</mo>
-                        <mrow>
-                           <mo>(</mo>
-                           <mn> 1 </mn>
-                           <mo>,</mo>
-                           <mi>lexicographic</mi>
-                           <mo>,</mo>
-                           <mi>graded_reverse_lexicographic</mi>
-                           <mo>)</mo>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#elimination">
+                  </div>
+                  <div>
+                     <button id="d40e216mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e216mml')">Rendered Presentation MathML</button>
+                     <div id="d40e216mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>elimination</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mn> 1 </mn>
+                                 <mo>,</mo>
+                                 <mi>lexicographic</mi>
+                                 <mo>,</mo>
+                                 <mi>graded_reverse_lexicographic</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#elimination">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#matrix_ordering">matrix_ordering</a>]
 	  
 	    [Previous: <a href="#graded_reverse_lexicographic">graded_reverse_lexicographic</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="matrix_ordering"> matrix_ordering </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="matrix_ordering"> matrix_ordering </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           The argument is a matrix with as many columns as indeterminates
           (= rank). Each row in turm is multiplied by the column vector of
           exponents to produce a weighting for comparison purposes.
        </p>
-         </dd>
-      </dl> 
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#matrix_ordering">
+               </dd>
+            </dl> 
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#matrix_ordering">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#weighted">weighted</a>]
 	  
 	    [Previous: <a href="#elimination">elimination</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="weighted"> weighted </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="weighted"> weighted </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           The first argument is a list of integers to act as variable weights,
           and the second is an ordering. The result is an ordering.
        </p>
-         </dd>
-      </dl> 
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#weighted">
+               </dd>
+            </dl> 
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#weighted">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#weighted_degree">weighted_degree</a>]
 	  
 	    [Previous: <a href="#matrix_ordering">matrix_ordering</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <pre>
+            <pre>
   We need a few more orderings... 
 </pre>
 
-      <pre>
+            <pre>
      Definition of some other constructors
 </pre>
 
-      <hr/>
-      <h2>
-         <a name="weighted_degree"> weighted_degree </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="weighted_degree"> weighted_degree </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
         The total degree of its argument, taking into account any weights 
         declared. The value returned is an integer: non-negative if the 
         weights are. We note that the degree of 0 is undefined.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e276xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e276xml')">OpenMath XML (source)</button>
-               <pre id="d40e276xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e276xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e276xml')">OpenMath XML (source)</button>
+                     <pre id="d40e276xml" style="display:none">
         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
           &lt;OMA&gt;
             &lt;OMS name="eq" cd="relation1"/&gt;
@@ -1145,11 +1196,11 @@ Added example to weighted_degree 2002-09-17 JHD
             &lt;OMI&gt; 3 &lt;/OMI&gt;
           &lt;/OMA&gt;
         &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e276cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e276cmml')">Strict Content MathML</button>
-               <pre id="d40e276cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e276cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e276cmml')">Strict Content MathML</button>
+                     <pre id="d40e276cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="polyd"&gt;weighted_degree&lt;/csymbol&gt;
@@ -1194,31 +1245,31 @@ Added example to weighted_degree 2002-09-17 JHD
   &lt;cn&gt;3&lt;/cn&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e276prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e276pref')">Prefix</button>
-            <div id="d40e276pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/polyd.xhtml#weighted_degree">weighted_degree</a>
-  (<a href="../../../cd/polyd.xhtml#DMP">DMP</a>
-  (<a href="../../../cd/polyd.xhtml#poly_ring_d">poly_ring_d</a>
-  (<a href="../../../cd/setname1.xhtml#Q">Q</a>,  3 )
+                  </div>
+                  <button id="d40e276prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e276pref')">Prefix</button>
+                  <div id="d40e276pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/polyd.html#weighted_degree">weighted_degree</a>
+  (<a href="../../../cd/polyd.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname1.html#Q">Q</a>,  3 )
 , <b>Attrib</b>([
-                    <a href="../../../cd/polyd.xhtml#ordering">ordering</a>
-                    <a href="../../../cd/polyd.xhtml#weighted">weighted</a>
-  (<a href="../../../cd/list1.xhtml#list">list</a>
+                    <a href="../../../cd/polyd.html#ordering">ordering</a>
+                    <a href="../../../cd/polyd.html#weighted">weighted</a>
+  (<a href="../../../cd/list1.html#list">list</a>
   ( 1 ,  2 ,  3 )
-, <a href="../../../cd/polyd.xhtml#graded_lexicographic">graded_lexicographic</a>)
+, <a href="../../../cd/polyd.html#graded_lexicographic">graded_lexicographic</a>)
 
                   ],
-  <a href="../../../cd/polyd.xhtml#SDMP">SDMP</a>
-  (<a href="../../../cd/polyd.xhtml#term">term</a>
+  <a href="../../../cd/polyd.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd.html#term">term</a>
   ( 1 ,  0 ,  0 ,  1 )
-, <a href="../../../cd/polyd.xhtml#term">term</a>
+, <a href="../../../cd/polyd.html#term">term</a>
   ( 2 ,  2 ,  0 ,  0 )
-, <a href="../../../cd/polyd.xhtml#term">term</a>
+, <a href="../../../cd/polyd.html#term">term</a>
   ( 3 ,  0 ,  1 ,  0 )
-, <a href="../../../cd/polyd.xhtml#term">term</a>
+, <a href="../../../cd/polyd.html#term">term</a>
   ( 4 ,  1 ,  0 ,  0 )
 )
 )
@@ -1227,106 +1278,109 @@ Added example to weighted_degree 2002-09-17 JHD
 ,  3 )
 
         </div>
-            <div>
-               <button id="d40e276popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e276pop')">Popcorn</button>
-               <div id="d40e276pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e276popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e276pop')">Popcorn</button>
+                     <div id="d40e276pop" style="display:none; margin-top: 0.5em">
           polyd.weighted_degree(polyd.DMP(polyd.poly_ring_d(setname1.Q, 3), polyd.SDMP(polyd.term(1, 0, 0, 1), polyd.term(2, 2, 0, 0), polyd.term(3, 0, 1, 0), polyd.term(4, 1, 0, 0)){polyd.ordering -&gt; polyd.weighted([1 , 2 , 3], polyd.graded_lexicographic)})) = 3
         </div>
-            </div>
-            <div>
-               <button id="d40e276mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e276mml')">Rendered Presentation MathML</button>
-               <div id="d40e276mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>weighted_degree</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                  </div>
+                  <div>
+                     <button id="d40e276mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e276mml')">Rendered Presentation MathML</button>
+                     <div id="d40e276mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mi>DMP</mi>
+                                 <mi>weighted_degree</mi>
                                  <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
                                     <mrow>
-                                       <mi>poly_ring_d</mi>
-                                       <mo>&#8289;</mo>
-                                       <mrow>
-                                          <mo>(</mo>
-                                          <mi mathvariant="double-struck">Q</mi>
-                                          <mo>,</mo>
-                                          <mn> 3 </mn>
-                                          <mo>)</mo>
-                                       </mrow>
-                                    </mrow>
-                                    <mo>,</mo>
-                                    <mrow>
-                                       <mi>SDMP</mi>
+                                       <mi>DMP</mi>
                                        <mo>&#8289;</mo>
                                        <mrow>
                                           <mo>(</mo>
                                           <mrow>
-                                             <mi>term</mi>
+                                             <mi>poly_ring_d</mi>
                                              <mo>&#8289;</mo>
                                              <mrow>
                                                 <mo>(</mo>
-                                                <mn> 1 </mn>
+                                                <mi mathvariant="double-struck">Q</mi>
                                                 <mo>,</mo>
-                                                <mn> 0 </mn>
-                                                <mo>,</mo>
-                                                <mn> 0 </mn>
-                                                <mo>,</mo>
-                                                <mn> 1 </mn>
-                                                <mo>)</mo>
-                                             </mrow>
-                                          </mrow>
-                                          <mo>,</mo>
-                                          <mrow>
-                                             <mi>term</mi>
-                                             <mo>&#8289;</mo>
-                                             <mrow>
-                                                <mo>(</mo>
-                                                <mn> 2 </mn>
-                                                <mo>,</mo>
-                                                <mn> 2 </mn>
-                                                <mo>,</mo>
-                                                <mn> 0 </mn>
-                                                <mo>,</mo>
-                                                <mn> 0 </mn>
-                                                <mo>)</mo>
-                                             </mrow>
-                                          </mrow>
-                                          <mo>,</mo>
-                                          <mrow>
-                                             <mi>term</mi>
-                                             <mo>&#8289;</mo>
-                                             <mrow>
-                                                <mo>(</mo>
                                                 <mn> 3 </mn>
-                                                <mo>,</mo>
-                                                <mn> 0 </mn>
-                                                <mo>,</mo>
-                                                <mn> 1 </mn>
-                                                <mo>,</mo>
-                                                <mn> 0 </mn>
                                                 <mo>)</mo>
                                              </mrow>
                                           </mrow>
                                           <mo>,</mo>
                                           <mrow>
-                                             <mi>term</mi>
+                                             <mi>SDMP</mi>
                                              <mo>&#8289;</mo>
                                              <mrow>
                                                 <mo>(</mo>
-                                                <mn> 4 </mn>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn> 1 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 0 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 0 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 1 </mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
                                                 <mo>,</mo>
-                                                <mn> 1 </mn>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn> 2 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 2 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 0 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 0 </mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
                                                 <mo>,</mo>
-                                                <mn> 0 </mn>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn> 3 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 0 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 1 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 0 </mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
                                                 <mo>,</mo>
-                                                <mn> 0 </mn>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn> 4 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 1 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 0 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 0 </mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
                                                 <mo>)</mo>
                                              </mrow>
                                           </mrow>
@@ -1336,381 +1390,380 @@ Added example to weighted_degree 2002-09-17 JHD
                                     <mo>)</mo>
                                  </mrow>
                               </mrow>
-                              <mo>)</mo>
+                              <mo>=</mo>
+                              <mn> 3 </mn>
                            </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mn> 3 </mn>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#weighted_degree">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#weighted_degree">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#groebnered">groebnered</a>]
 	  
 	    [Previous: <a href="#weighted">weighted</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="groebnered"> groebnered </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="groebnered"> groebnered </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           The constructor for a Groebner basis (reduced, minimal). The first
           argument is an ordering, the second is the Groebner Basis itself
           (with respect to the ordering) that should be represented as a DMPL.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#groebnered">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#groebnered">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#completely_reduced">completely_reduced</a>]
 	  
 	    [Previous: <a href="#weighted_degree">weighted_degree</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="completely_reduced"> completely_reduced </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>semantic-attribution</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="completely_reduced"> completely_reduced </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>semantic-attribution</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
           This attribute, attached to a groebnered object, says 'true' if
           the base is fully reduced, i.e. no monomial is divisible by the
           leading monomial of any other polynomial.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#completely_reduced">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#completely_reduced">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#plus">plus</a>]
 	  
 	    [Previous: <a href="#groebnered">groebnered</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <pre>
+            <pre>
      Definition of operations
 </pre>
 
 
-      <hr/>
-       <h2>
-         <a name="plus"> plus </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="plus"> plus </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
          The sum. The argument is a DMPL. The sum lies within the same
          "PolyRingD" i.e. a program implementing this operation
          should return a DMP with the same "poly_ring_d" 
          (or "poly_ring_d_named").
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#plus">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#plus">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#times">times</a>]
 	  
 	    [Previous: <a href="#completely_reduced">completely_reduced</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="times"> times </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="times"> times </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
          The product. The argument is a DMPL. The product lies within the same
          "PolyRingD" i.e. a program implementing this operation
          should return a DMP with the same "poly_ring_d"
          (or "poly_ring_d_named").
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#times">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#times">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#power">power</a>]
 	  
 	    [Previous: <a href="#plus">plus</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="power"> power </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> The power. First argument is a DMP, second
+            <hr/>
+            <h2>
+               <a name="power"> power </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> The power. First argument is a DMP, second
           argument is the integer power. The power lies within the same
           "PolyRingD"  i.e. a program implementing this operation 
           should return a DMP with the same "poly_ring_d"
           (or "poly_ring_d_named").
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#power">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#power">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#groebner">groebner</a>]
 	  
 	    [Previous: <a href="#times">times</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="groebner"> groebner </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p> 
+            <hr/>
+            <h2>
+               <a name="groebner"> groebner </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
          The groebner basis (lt-reduced, minimal) of a set of polynomials, 
          with respect to a given ordering. First argument is an ordering, the
          second is a list of polynomials. A program that can compute
          the basis is required to return a "groebnered" object.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#groebner">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#groebner">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#reduce">reduce</a>]
 	  
 	    [Previous: <a href="#power">power</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-       <h2>
-         <a name="reduce"> reduce </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="reduce"> reduce </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
          The reduction of a polynomial with respect to a Groebner basis. 
          First argument is a DMP, the second argument is a "groebnered" 
          object.
          i.e. a program implementing this operation should return a DMP which
          represents the polynomial reduced with respect to the Groebner basis.
        </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyd.xhtml#reduce">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd.html#reduce">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [First: <a href="#DMP">DMP</a>]
 	  
 	    [Previous: <a href="#groebner">groebner</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
+         </div>
+      </div>
    </body>
 </html>

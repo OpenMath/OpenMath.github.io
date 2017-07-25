@@ -1,7 +1,9 @@
-<script xmlns="http://www.w3.org/1999/xhtml"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
       <script type="text/javascript"> function divfold(_Id){
      var thisLevel = document.getElementById(_Id);
      var thisLevela = document.getElementById(_Id.concat("a"))
@@ -14,66 +16,115 @@
        }
      </script>
       <title>polyslp</title>
-      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
    </head>
-   <body>
-      <a name="top"/>
-      <h1>OpenMath Content Dictionary: polyslp</h1>
-      <dl>
-         <dt>
-            <span class="dt">Canonical URL:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd/polyslp.ocd">http://www.openmath.org/cd/polyslp.ocd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD Base:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD File:</span>
-         </dt>
-         <dd>
-            <a href="polyslp.ocd">polyslp.ocd
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: polyslp</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/polyslp.ocd">http://www.openmath.org/cd/polyslp.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="polyslp.ocd">polyslp.ocd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">CD as XML Encoded OpenMath:</span>
-         </dt>
-         <dd>
-            <a href="polyslp.omcd">polyslp.omcd
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="polyslp.omcd">polyslp.omcd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">Defines:</span>
-         </dt>
-         <dd>
-            <a href="#const_node">const_node</a>, <a href="#depth">depth</a>, <a href="#inp_node">inp_node</a>, <a href="#left_ref">left_ref</a>, <a href="#length">length</a>, <a href="#monte_carlo_eq">monte_carlo_eq</a>, <a href="#node_selector">node_selector</a>, <a href="#op_node">op_node</a>, <a href="#poly_ring_SLP">poly_ring_SLP</a>, <a href="#polynomial_SLP">polynomial_SLP</a>, <a href="#prog_body">prog_body</a>, <a href="#quotient">quotient</a>, <a href="#return_node">return_node</a>, <a href="#right_ref">right_ref</a>, <a href="#slp_degree">slp_degree</a>
-         </dd>
-         <dt>
-            <span class="dt">Date:</span>
-         </dt>
-         <dd>2004-03-30</dd>
-         <dt>
-            <span class="dt">Version:</span>
-         </dt>
-         <dd>3
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#const_node">const_node</a>, <a href="#depth">depth</a>, <a href="#inp_node">inp_node</a>, <a href="#left_ref">left_ref</a>, <a href="#length">length</a>, <a href="#monte_carlo_eq">monte_carlo_eq</a>, <a href="#node_selector">node_selector</a>, <a href="#op_node">op_node</a>, <a href="#poly_ring_SLP">poly_ring_SLP</a>, <a href="#polynomial_SLP">polynomial_SLP</a>, <a href="#prog_body">prog_body</a>, <a href="#quotient">quotient</a>, <a href="#return_node">return_node</a>, <a href="#right_ref">right_ref</a>, <a href="#slp_degree">slp_degree</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>3
     (Revision 1)
   </dd>
-         <dt>
-            <span class="dt">Review Date:</span>
-         </dt>
-         <dd>2006-03-30</dd>
-         <dt>
-            <span class="dt">Status:</span>
-         </dt>
-         <dd> experimental </dd>
-      </dl>
-      <hr/>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
 
-      <pre>
+            <pre>
 
      This document is distributed in the hope that it will be useful, 
      but WITHOUT ANY WARRANTY; without even the implied warranty of 
@@ -115,44 +166,44 @@
   
  
 
-      <p>
+            <p>
     This CD contains operators to deal with polynomials and more precisely 
     polynomials held in Straight Line Program representation.
   </p>
 
-      <pre>
+            <pre>
     Definition of data-structure constructors
   </pre>
 
-      <hr/>
-     <h2>
-         <a name="polynomial_SLP"> polynomial_SLP </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-     <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="polynomial_SLP"> polynomial_SLP </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
        The constructor of Polynomials built with Straight Line Program
        representation. 
        The first argument is the polynomial ring containing the polynomial 
        built with poly_ring_SLP,
        The second argument is the program body built with prog_body. 
      </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
     The polynomial x^2 + y^2,
     which may be represented as the Straight Line Program :
 
@@ -166,9 +217,9 @@
 
 
   <div>
-               <button id="d40e51xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e51xml')">OpenMath XML (source)</button>
-               <pre id="d40e51xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+                     <button id="d40e51xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e51xml')">OpenMath XML (source)</button>
+                     <pre id="d40e51xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
     &lt;OMA&gt;
       &lt;OMS cd="polyslp" name="polynomial_SLP"/&gt;
       &lt;OMA&gt;
@@ -211,11 +262,11 @@
       &lt;/OMA&gt;
     &lt;/OMA&gt;
   &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e51cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e51cmml')">Strict Content MathML</button>
-               <pre id="d40e51cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e51cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e51cmml')">Strict Content MathML</button>
+                     <pre id="d40e51cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="polyslp"&gt;polynomial_SLP&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="polyslp"&gt;poly_ring_SLP&lt;/csymbol&gt;
@@ -246,129 +297,132 @@
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e51prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e51pref')">Prefix</button>
-            <div id="d40e51pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/polyslp.xhtml#polynomial_SLP">polynomial_SLP</a>
-  (<a href="../../../cd/polyslp.xhtml#poly_ring_SLP">poly_ring_SLP</a>
-  (<a href="../../../cd/setname1.xhtml#Z">Z</a>,  <i>x</i>,  <i>y</i>)
-, <a href="../../../cd/polyslp.xhtml#prog_body">prog_body</a>
-  (<a href="../../../cd/polyslp.xhtml#inp_node">inp_node</a>
+                  </div>
+                  <button id="d40e51prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e51pref')">Prefix</button>
+                  <div id="d40e51pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/polyslp.html#polynomial_SLP">polynomial_SLP</a>
+  (<a href="../../../cd/polyslp.html#poly_ring_SLP">poly_ring_SLP</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>,  <i>x</i>,  <i>y</i>)
+, <a href="../../../cd/polyslp.html#prog_body">prog_body</a>
+  (<a href="../../../cd/polyslp.html#inp_node">inp_node</a>
   ( <i>x</i>)
-, <a href="../../../cd/polyslp.xhtml#inp_node">inp_node</a>
+, <a href="../../../cd/polyslp.html#inp_node">inp_node</a>
   ( <i>y</i>)
-, <a href="../../../cd/polyslp.xhtml#op_node">op_node</a>
-  (<a href="../../../cd/opnode.xhtml#times">times</a>,  1 ,  1 )
-, <a href="../../../cd/polyslp.xhtml#op_node">op_node</a>
-  (<a href="../../../cd/opnode.xhtml#times">times</a>,  2 ,  2 )
-, <a href="../../../cd/opnode.xhtml#return">return</a>
-  (<a href="../../../cd/polyslp.xhtml#op_node">op_node</a>
-  (<a href="../../../cd/opnode.xhtml#plus">plus</a>,  3 ,  4 )
+, <a href="../../../cd/polyslp.html#op_node">op_node</a>
+  (<a href="../../../cd/opnode.html#times">times</a>,  1 ,  1 )
+, <a href="../../../cd/polyslp.html#op_node">op_node</a>
+  (<a href="../../../cd/opnode.html#times">times</a>,  2 ,  2 )
+, <a href="../../../cd/opnode.html#return">return</a>
+  (<a href="../../../cd/polyslp.html#op_node">op_node</a>
+  (<a href="../../../cd/opnode.html#plus">plus</a>,  3 ,  4 )
 )
 )
 )
 
   </div>
-            <div>
-               <button id="d40e51popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e51pop')">Popcorn</button>
-               <div id="d40e51pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e51popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e51pop')">Popcorn</button>
+                     <div id="d40e51pop" style="display:none; margin-top: 0.5em">
     polyslp.polynomial_SLP(polyslp.poly_ring_SLP(setname1.Z, $x, $y), polyslp.prog_body(polyslp.inp_node($x), polyslp.inp_node($y), polyslp.op_node(opnode.times, 1, 1), polyslp.op_node(opnode.times, 2, 2), opnode.return(polyslp.op_node(opnode.plus, 3, 4))))
   </div>
-            </div>
-            <div>
-               <button id="d40e51mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e51mml')">Rendered Presentation MathML</button>
-               <div id="d40e51mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>polynomial_SLP</mi>
-                        <mo>&#8289;</mo>
-                        <mrow>
-                           <mo>(</mo>
-                           <mrow>
-                              <mi>poly_ring_SLP</mi>
-                              <mo>&#8289;</mo>
-                              <mrow>
-                                 <mo>(</mo>
-                                 <mi mathvariant="double-struck">Z</mi>
-                                 <mo>,</mo>
-                                 <mi>x</mi>
-                                 <mo>,</mo>
-                                 <mi>y</mi>
-                                 <mo>)</mo>
-                              </mrow>
-                           </mrow>
-                           <mo>,</mo>
-                           <mrow>
-                              <mi>prog_body</mi>
+                  </div>
+                  <div>
+                     <button id="d40e51mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e51mml')">Rendered Presentation MathML</button>
+                     <div id="d40e51mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>polynomial_SLP</mi>
                               <mo>&#8289;</mo>
                               <mrow>
                                  <mo>(</mo>
                                  <mrow>
-                                    <mi>inp_node</mi>
+                                    <mi>poly_ring_SLP</mi>
                                     <mo>&#8289;</mo>
                                     <mrow>
                                        <mo>(</mo>
+                                       <mi mathvariant="double-struck">Z</mi>
+                                       <mo>,</mo>
                                        <mi>x</mi>
-                                       <mo>)</mo>
-                                    </mrow>
-                                 </mrow>
-                                 <mo>,</mo>
-                                 <mrow>
-                                    <mi>inp_node</mi>
-                                    <mo>&#8289;</mo>
-                                    <mrow>
-                                       <mo>(</mo>
+                                       <mo>,</mo>
                                        <mi>y</mi>
                                        <mo>)</mo>
                                     </mrow>
                                  </mrow>
                                  <mo>,</mo>
                                  <mrow>
-                                    <mi>op_node</mi>
+                                    <mi>prog_body</mi>
                                     <mo>&#8289;</mo>
                                     <mrow>
                                        <mo>(</mo>
-                                       <mi>times</mi>
+                                       <mrow>
+                                          <mi>inp_node</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>x</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
                                        <mo>,</mo>
-                                       <mn> 1 </mn>
+                                       <mrow>
+                                          <mi>inp_node</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>y</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
                                        <mo>,</mo>
-                                       <mn> 1 </mn>
-                                       <mo>)</mo>
-                                    </mrow>
-                                 </mrow>
-                                 <mo>,</mo>
-                                 <mrow>
-                                    <mi>op_node</mi>
-                                    <mo>&#8289;</mo>
-                                    <mrow>
-                                       <mo>(</mo>
-                                       <mi>times</mi>
-                                       <mo>,</mo>
-                                       <mn> 2 </mn>
-                                       <mo>,</mo>
-                                       <mn> 2 </mn>
-                                       <mo>)</mo>
-                                    </mrow>
-                                 </mrow>
-                                 <mo>,</mo>
-                                 <mrow>
-                                    <mi>return</mi>
-                                    <mo>&#8289;</mo>
-                                    <mrow>
-                                       <mo>(</mo>
                                        <mrow>
                                           <mi>op_node</mi>
                                           <mo>&#8289;</mo>
                                           <mrow>
                                              <mo>(</mo>
-                                             <mi>plus</mi>
+                                             <mi>times</mi>
                                              <mo>,</mo>
-                                             <mn> 3 </mn>
+                                             <mn> 1 </mn>
                                              <mo>,</mo>
-                                             <mn> 4 </mn>
+                                             <mn> 1 </mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>op_node</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>times</mi>
+                                             <mo>,</mo>
+                                             <mn> 2 </mn>
+                                             <mo>,</mo>
+                                             <mn> 2 </mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>return</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>op_node</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>plus</mi>
+                                                   <mo>,</mo>
+                                                   <mn> 3 </mn>
+                                                   <mo>,</mo>
+                                                   <mn> 4 </mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
                                              <mo>)</mo>
                                           </mrow>
                                        </mrow>
@@ -378,365 +432,362 @@
                                  <mo>)</mo>
                               </mrow>
                            </mrow>
-                           <mo>)</mo>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#polynomial_SLP">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#polynomial_SLP">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#prog_body">prog_body</a>]
 	  
 	    [Last: <a href="#poly_ring_SLP">poly_ring_SLP</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="prog_body"> prog_body </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="prog_body"> prog_body </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       The constructor of the body of the straight line program
       the arguments represent straight line instructions, as constructed by the
       following three constructors, op_node, inp_node and const_node, possibly
       wrapped in the return symbol (from the opnode CD). The order
       is taken to be the order in which they appear.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#prog_body">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#prog_body">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#op_node">op_node</a>]
 	  
 	    [Previous: <a href="#polynomial_SLP">polynomial_SLP</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="op_node"> op_node </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="op_node"> op_node </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       This constructor takes three arguments.
       The first argument is a symbol from opnode, meant to specify
       whether the node is a plus, minus times or divide node, 
       the second and third arguments are integers, which are the numbers
       of the lines which are the arguments of the operation
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#op_node">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#op_node">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#inp_node">inp_node</a>]
 	  
 	    [Previous: <a href="#prog_body">prog_body</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="inp_node"> inp_node </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="inp_node"> inp_node </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       This constructor takes one argument, which is a variable. The return
        value is intended to represent an input node.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#inp_node">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#inp_node">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#const_node">const_node</a>]
 	  
 	    [Previous: <a href="#op_node">op_node</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="const_node"> const_node </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="const_node"> const_node </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       This constructor takes one argument, which is a value from the 
       coefficient ring. It is intended to represent a constant node.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#const_node">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#const_node">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#length">length</a>]
 	  
 	    [Previous: <a href="#inp_node">inp_node</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <pre>
+            <pre>
     Definition of some functions which are specific to slps
   </pre>
 
-      <hr/>
-      <h2>
-         <a name="length"> length </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="length"> length </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       A unary function taking an slp as argument and returning the
       length of this slp.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#length">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#length">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#depth">depth</a>]
 	  
 	    [Previous: <a href="#const_node">const_node</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="depth"> depth </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="depth"> depth </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       A unary function taking an slp as argument and returning the
       greatest depth of any leaf node, that is the length of the longest 
       contiguous path to any leaf node.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#depth">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#depth">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#slp_degree">slp_degree</a>]
 	  
 	    [Previous: <a href="#length">length</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="slp_degree"> slp_degree </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="slp_degree"> slp_degree </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       A unary function taking an slp as argument and returning the
       apparent multiplicative degree of the slp, without performing
       any cancellation.
     </p>
-         </dd>
-      </dl>
+               </dd>
+            </dl>
 
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> The slp_degree of the polynomial x &gt;= degree(x) </dd>
-      </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> The slp_degree of the polynomial x &gt;= degree(x) </dd>
+            </dl>
 
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e228xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e228xml')">OpenMath XML (source)</button>
-               <pre id="d40e228xml" style="display:none">
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e228xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e228xml')">OpenMath XML (source)</button>
+                     <pre id="d40e228xml" style="display:none">
       &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
         &lt;OMA&gt;
 	  &lt;OMS cd="relation1" name="geq"/&gt;
@@ -750,78 +801,78 @@
 	  &lt;/OMA&gt;
 	&lt;/OMA&gt;
       &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e228cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e228cmml')">Strict Content MathML</button>
-               <pre id="d40e228cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e228cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e228cmml')">Strict Content MathML</button>
+                     <pre id="d40e228cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;geq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="polyslp"&gt;slp_degree&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="poly"&gt;degree&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e228prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e228pref')">Prefix</button>
-            <div id="d40e228pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#geq">geq</a>
-  (<a href="../../../cd/polyslp.xhtml#slp_degree">slp_degree</a>
+                  </div>
+                  <button id="d40e228prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e228pref')">Prefix</button>
+                  <div id="d40e228pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#geq">geq</a>
+  (<a href="../../../cd/polyslp.html#slp_degree">slp_degree</a>
   ( <i>x</i>)
-, <a href="../../../cd/poly.xhtml#degree">degree</a>
+, <a href="../../../cd/poly.html#degree">degree</a>
   ( <i>x</i>)
 )
 
       </div>
-            <div>
-               <button id="d40e228popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e228pop')">Popcorn</button>
-               <div id="d40e228pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e228popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e228pop')">Popcorn</button>
+                     <div id="d40e228pop" style="display:none; margin-top: 0.5em">
         polyslp.slp_degree($x) &gt;= poly.degree($x)
       </div>
-            </div>
-            <div>
-               <button id="d40e228mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e228mml')">Rendered Presentation MathML</button>
-               <div id="d40e228mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>slp_degree</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mi>x</mi>
-                              <mo>)</mo>
+                  </div>
+                  <div>
+                     <button id="d40e228mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e228mml')">Rendered Presentation MathML</button>
+                     <div id="d40e228mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>slp_degree</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8805;</mo>
+                              <mrow>
+                                 <mi>degree</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
                            </mrow>
-                        </mrow>
-                        <mo>&#8805;</mo>
-                        <mrow>
-                           <mi>degree</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mi>x</mi>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
 
-      <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
       slpDegree(convert(x^2)@poly_ring_SLP - convert(x^2)@poly_ring_SLP) = 2
       <div>
-               <button id="d40e254xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e254xml')">OpenMath XML (source)</button>
-               <pre id="d40e254xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+                     <button id="d40e254xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e254xml')">OpenMath XML (source)</button>
+                     <pre id="d40e254xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
       &lt;OMA&gt;
         &lt;OMS cd="relation1" name="eq"/&gt;
 	&lt;OMA&gt;
@@ -857,11 +908,11 @@
 	&lt;OMI&gt; 2 &lt;/OMI&gt;
       &lt;/OMA&gt;
       &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e254cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e254cmml')">Strict Content MathML</button>
-               <pre id="d40e254cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e254cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e254cmml')">Strict Content MathML</button>
+                     <pre id="d40e254cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="polyslp"&gt;polynomial_SLP&lt;/csymbol&gt;
@@ -885,102 +936,105 @@
   &lt;cn&gt;2&lt;/cn&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e254prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e254pref')">Prefix</button>
-            <div id="d40e254pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.xhtml#eq">eq</a>
-  (<a href="../../../cd/polyslp.xhtml#polynomial_SLP">polynomial_SLP</a>
-  (<a href="../../../cd/polyslp.xhtml#poly_ring_SLP">poly_ring_SLP</a>
-  (<a href="../../../cd/setname1.xhtml#Z">Z</a>,  <i>x</i>)
-, <a href="../../../cd/polyslp.xhtml#prog_body">prog_body</a>
-  (<a href="../../../cd/polyslp.xhtml#inp_node">inp_node</a>
+                  </div>
+                  <button id="d40e254prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e254pref')">Prefix</button>
+                  <div id="d40e254pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/polyslp.html#polynomial_SLP">polynomial_SLP</a>
+  (<a href="../../../cd/polyslp.html#poly_ring_SLP">poly_ring_SLP</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>,  <i>x</i>)
+, <a href="../../../cd/polyslp.html#prog_body">prog_body</a>
+  (<a href="../../../cd/polyslp.html#inp_node">inp_node</a>
   ( <i>x</i>)
-, <a href="../../../cd/polyslp.xhtml#op_node">op_node</a>
-  (<a href="../../../cd/opnode.xhtml#times">times</a>,  1 ,  1 )
-, <a href="../../../cd/opnode.xhtml#return">return</a>
-  (<a href="../../../cd/polyslp.xhtml#op_node">op_node</a>
-  (<a href="../../../cd/opnode.xhtml#minus">minus</a>,  2 ,  2 )
+, <a href="../../../cd/polyslp.html#op_node">op_node</a>
+  (<a href="../../../cd/opnode.html#times">times</a>,  1 ,  1 )
+, <a href="../../../cd/opnode.html#return">return</a>
+  (<a href="../../../cd/polyslp.html#op_node">op_node</a>
+  (<a href="../../../cd/opnode.html#minus">minus</a>,  2 ,  2 )
 )
 )
 )
 ,  2 )
 
       </div>
-            <div>
-               <button id="d40e254popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e254pop')">Popcorn</button>
-               <div id="d40e254pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e254popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e254pop')">Popcorn</button>
+                     <div id="d40e254pop" style="display:none; margin-top: 0.5em">
       polyslp.polynomial_SLP(polyslp.poly_ring_SLP(setname1.Z, $x), polyslp.prog_body(polyslp.inp_node($x), polyslp.op_node(opnode.times, 1, 1), opnode.return(polyslp.op_node(opnode.minus, 2, 2)))) = 2
       </div>
-            </div>
-            <div>
-               <button id="d40e254mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e254mml')">Rendered Presentation MathML</button>
-               <div id="d40e254mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>polynomial_SLP</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                  </div>
+                  <div>
+                     <button id="d40e254mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e254mml')">Rendered Presentation MathML</button>
+                     <div id="d40e254mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mi>poly_ring_SLP</mi>
-                                 <mo>&#8289;</mo>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mi mathvariant="double-struck">Z</mi>
-                                    <mo>,</mo>
-                                    <mi>x</mi>
-                                    <mo>)</mo>
-                                 </mrow>
-                              </mrow>
-                              <mo>,</mo>
-                              <mrow>
-                                 <mi>prog_body</mi>
+                                 <mi>polynomial_SLP</mi>
                                  <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
                                     <mrow>
-                                       <mi>inp_node</mi>
+                                       <mi>poly_ring_SLP</mi>
                                        <mo>&#8289;</mo>
                                        <mrow>
                                           <mo>(</mo>
+                                          <mi mathvariant="double-struck">Z</mi>
+                                          <mo>,</mo>
                                           <mi>x</mi>
                                           <mo>)</mo>
                                        </mrow>
                                     </mrow>
                                     <mo>,</mo>
                                     <mrow>
-                                       <mi>op_node</mi>
+                                       <mi>prog_body</mi>
                                        <mo>&#8289;</mo>
                                        <mrow>
                                           <mo>(</mo>
-                                          <mi>times</mi>
+                                          <mrow>
+                                             <mi>inp_node</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>x</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
                                           <mo>,</mo>
-                                          <mn> 1 </mn>
-                                          <mo>,</mo>
-                                          <mn> 1 </mn>
-                                          <mo>)</mo>
-                                       </mrow>
-                                    </mrow>
-                                    <mo>,</mo>
-                                    <mrow>
-                                       <mi>return</mi>
-                                       <mo>&#8289;</mo>
-                                       <mrow>
-                                          <mo>(</mo>
                                           <mrow>
                                              <mi>op_node</mi>
                                              <mo>&#8289;</mo>
                                              <mrow>
                                                 <mo>(</mo>
-                                                <mi>minus</mi>
+                                                <mi>times</mi>
                                                 <mo>,</mo>
-                                                <mn> 2 </mn>
+                                                <mn> 1 </mn>
                                                 <mo>,</mo>
-                                                <mn> 2 </mn>
+                                                <mn> 1 </mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>return</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>op_node</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>minus</mi>
+                                                      <mo>,</mo>
+                                                      <mn> 2 </mn>
+                                                      <mo>,</mo>
+                                                      <mn> 2 </mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
                                                 <mo>)</mo>
                                              </mrow>
                                           </mrow>
@@ -990,293 +1044,290 @@
                                     <mo>)</mo>
                                  </mrow>
                               </mrow>
-                              <mo>)</mo>
+                              <mo>=</mo>
+                              <mn> 2 </mn>
                            </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mn> 2 </mn>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#slp_degree">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#slp_degree">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#return_node">return_node</a>]
 	  
 	    [Previous: <a href="#depth">depth</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="return_node"> return_node </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="return_node"> return_node </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       Takes an slp as the argument, and
       returns the return node of the slp.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#return_node">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#return_node">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#node_selector">node_selector</a>]
 	  
 	    [Previous: <a href="#slp_degree">slp_degree</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="node_selector"> node_selector </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="node_selector"> node_selector </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       Takes an slp as the first argument, the second argument is the
       position of the required node. Returns the node of the slp at
       this position.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#node_selector">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#node_selector">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#left_ref">left_ref</a>]
 	  
 	    [Previous: <a href="#return_node">return_node</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="left_ref"> left_ref </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="left_ref"> left_ref </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       Takes as argument a node of an slp.
       Returns the value of the left hand pointer of the node.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#left_ref">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#left_ref">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#right_ref">right_ref</a>]
 	  
 	    [Previous: <a href="#node_selector">node_selector</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="right_ref"> right_ref </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="right_ref"> right_ref </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       Takes as argument a node of an slp.
       Returns the value of the right hand pointer of the node.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#right_ref">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#right_ref">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#quotient">quotient</a>]
 	  
 	    [Previous: <a href="#left_ref">left_ref</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <pre>
+            <pre>
     Definition of some functions which are very useful for slps
   </pre>
 
-      <hr/>
-      <h2>
-         <a name="quotient"> quotient </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="quotient"> quotient </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       A quotient function for polynomials represented by slps. It is a
       requirement that this is an exact division.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#quotient">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#quotient">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#monte_carlo_eq">monte_carlo_eq</a>]
 	  
 	    [Previous: <a href="#right_ref">right_ref</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="monte_carlo_eq"> monte_carlo_eq </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="monte_carlo_eq"> monte_carlo_eq </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       This is a Monte-Carlo equality test,
       it takes three arguments, the first two are slps representing
       polynomials, the third argument is the maximum probability of
@@ -1285,67 +1336,67 @@
       offer the only tractable method of solving the equality problem
       in many cases)
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#monte_carlo_eq">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#monte_carlo_eq">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#poly_ring_SLP">poly_ring_SLP</a>]
 	  
 	    [Previous: <a href="#quotient">quotient</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="poly_ring_SLP"> poly_ring_SLP </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="poly_ring_SLP"> poly_ring_SLP </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       The constructor of the polynomial ring. The first argument is a ring, 
       (the ring of the coefficients), the rest are the variables, in any order.
     </p>
-         </dd>
-      </dl>
-       <dl>
-         <dt>
-            <span class="dt">Example:</span>
-         </dt>
-         <dd>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
 
 An example to represent a polynomial ring over the integers, with the
 two variables x,y. viz. Z[x,y]
 
          <div>
-               <button id="d40e413xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e413xml')">OpenMath XML (source)</button>
-               <pre id="d40e413xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+                     <button id="d40e413xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e413xml')">OpenMath XML (source)</button>
+                     <pre id="d40e413xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
            &lt;OMA&gt;
              &lt;OMS name="poly_ring_SLP" cd="polyslp"/&gt;
              &lt;OMS name="Z" cd="setname1"/&gt;
@@ -1353,11 +1404,11 @@ two variables x,y. viz. Z[x,y]
              &lt;OMV name="y"/&gt;
            &lt;/OMA&gt;
          &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e413cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e413cmml')">Strict Content MathML</button>
-               <pre id="d40e413cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e413cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e413cmml')">Strict Content MathML</button>
+                     <pre id="d40e413cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="polyslp"&gt;poly_ring_SLP&lt;/csymbol&gt;
   &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
@@ -1365,68 +1416,70 @@ two variables x,y. viz. Z[x,y]
   &lt;ci&gt;y&lt;/ci&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e413prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e413pref')">Prefix</button>
-            <div id="d40e413pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/polyslp.xhtml#poly_ring_SLP">poly_ring_SLP</a>
-  (<a href="../../../cd/setname1.xhtml#Z">Z</a>,  <i>x</i>,  <i>y</i>)
+                  </div>
+                  <button id="d40e413prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e413pref')">Prefix</button>
+                  <div id="d40e413pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/polyslp.html#poly_ring_SLP">poly_ring_SLP</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>,  <i>x</i>,  <i>y</i>)
 
          </div>
-            <div>
-               <button id="d40e413popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e413pop')">Popcorn</button>
-               <div id="d40e413pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e413popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e413pop')">Popcorn</button>
+                     <div id="d40e413pop" style="display:none; margin-top: 0.5em">
            polyslp.poly_ring_SLP(setname1.Z, $x, $y)
          </div>
-            </div>
-            <div>
-               <button id="d40e413mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e413mml')">Rendered Presentation MathML</button>
-               <div id="d40e413mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>poly_ring_SLP</mi>
-                        <mo>&#8289;</mo>
-                        <mrow>
-                           <mo>(</mo>
-                           <mi mathvariant="double-struck">Z</mi>
-                           <mo>,</mo>
-                           <mi>x</mi>
-                           <mo>,</mo>
-                           <mi>y</mi>
-                           <mo>)</mo>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/polyslp.xhtml#poly_ring_SLP">
+                  </div>
+                  <div>
+                     <button id="d40e413mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e413mml')">Rendered Presentation MathML</button>
+                     <div id="d40e413mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>poly_ring_SLP</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi mathvariant="double-struck">Z</mi>
+                                 <mo>,</mo>
+                                 <mi>x</mi>
+                                 <mo>,</mo>
+                                 <mi>y</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyslp.html#poly_ring_SLP">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [First: <a href="#polynomial_SLP">polynomial_SLP</a>]
 	  
 	    [Previous: <a href="#monte_carlo_eq">monte_carlo_eq</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
+         </div>
+      </div>
    </body>
 </html>
