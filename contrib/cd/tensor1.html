@@ -1,7 +1,9 @@
-<script xmlns="http://www.w3.org/1999/xhtml"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
       <script type="text/javascript"> function divfold(_Id){
      var thisLevel = document.getElementById(_Id);
      var thisLevela = document.getElementById(_Id.concat("a"))
@@ -14,59 +16,108 @@
        }
      </script>
       <title>tensor1</title>
-      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
    </head>
-   <body>
-      <a name="top"/>
-      <h1>OpenMath Content Dictionary: tensor1</h1>
-      <dl>
-         <dt>
-            <span class="dt">Canonical URL:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/cd/.ocd">http://www.openmath.org/cd/.ocd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD File:</span>
-         </dt>
-         <dd>
-            <a href="tensor1.ocd">tensor1.ocd
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: tensor1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/.ocd">http://www.openmath.org/cd/.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="tensor1.ocd">tensor1.ocd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">CD as XML Encoded OpenMath:</span>
-         </dt>
-         <dd>
-            <a href="tensor1.omcd">tensor1.omcd
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="tensor1.omcd">tensor1.omcd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">Defines:</span>
-         </dt>
-         <dd>
-            <a href="#Cartesian">Cartesian</a>, <a href="#Kronecker_tensor">Kronecker_tensor</a>, <a href="#Levi-Civita">Levi-Civita</a>, <a href="#basis_selector">basis_selector</a>, <a href="#contra_index">contra_index</a>, <a href="#covar_index">covar_index</a>, <a href="#metric_tensor">metric_tensor</a>, <a href="#tensor_selector">tensor_selector</a>, <a href="#tuple">tuple</a>, <a href="#tuple_selector">tuple_selector</a>, <a href="#unit_Cartesian">unit_Cartesian</a>
-         </dd>
-         <dt>
-            <span class="dt">Date:</span>
-         </dt>
-         <dd>2010-08-25</dd>
-         <dt>
-            <span class="dt">Version:</span>
-         </dt>
-         <dd>1
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#Cartesian">Cartesian</a>, <a href="#Kronecker_tensor">Kronecker_tensor</a>, <a href="#Levi-Civita">Levi-Civita</a>, <a href="#basis_selector">basis_selector</a>, <a href="#contra_index">contra_index</a>, <a href="#covar_index">covar_index</a>, <a href="#metric_tensor">metric_tensor</a>, <a href="#tensor_selector">tensor_selector</a>, <a href="#tuple">tuple</a>, <a href="#tuple_selector">tuple_selector</a>, <a href="#unit_Cartesian">unit_Cartesian</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2010-08-25</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>1
     (Revision 1)
   </dd>
-         <dt>
-            <span class="dt">Review Date:</span>
-         </dt>
-         <dd>2011-03-01</dd>
-         <dt>
-            <span class="dt">Status:</span>
-         </dt>
-         <dd> experimental </dd>
-      </dl>
-      <hr/>
-      <pre>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2011-03-01</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+            <pre>
     This document is distributed in the hope that it will be useful, 
     but WITHOUT ANY WARRANTY; without even the implied warranty of 
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -111,372 +162,372 @@
   
   
   
-      <p> 
+            <p> 
     This CD defines content markup symbols which may be used to represent
     tensor formulae,particularly with index notation.
   </p>
   
-      <hr/>
-      <h2>
-         <a name="tuple">tuple</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="tuple">tuple</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       This symbol is an n-ary symbol, returning an n-tuple of the arguments.
       The number of arguments, n, is a non-negative integer. 
       The elements of the n-tuple are ordered as the arguments are ordered.
       Elements of a tuple may have the same type and value as each other, or not.
       An n-tuple, unlike a list, is generally not mutable.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> (X, Y, Z) = tuple(X, Y, Z) </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#tuple">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> (X, Y, Z) = tuple(X, Y, Z) </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#tuple">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#tuple_selector">tuple_selector</a>]
 	  
 	    [Last: <a href="#Levi-Civita">Levi-Civita</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
   
-      <hr/>
-      <h2>
-         <a name="tuple_selector">tuple_selector</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="tuple_selector">tuple_selector</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       This symbol takes 2 arguments, a tuple and a natural number index, and returns the
       tuple component indicated by the index value.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd>tuple_selector(tuple(A, B), 1) = A</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#tuple_selector">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>tuple_selector(tuple(A, B), 1) = A</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#tuple_selector">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Cartesian">Cartesian</a>]
 	  
 	    [Previous: <a href="#tuple">tuple</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="Cartesian">Cartesian</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Cartesian">Cartesian</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 	This symbol takes one argument, a natural number, and returns the Cartesian
 	coordinate, of a right handed Cartesian coordinate frame, corresponding to the
 	value of the argument. These coordinates are commonly named X, Y, and Z in three
 	dimensions, though X, Y, and Z are non-exclusively used for this and other
 	purposes.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> tuple(X, Y, Z) = tuple(Cartesian(1), Cartesian(2), Cartesian(3)) </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> partialdiff(Cartesian(i), Cartesian(j)) = Kronecker_tensor(i,j) </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#Cartesian">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> tuple(X, Y, Z) = tuple(Cartesian(1), Cartesian(2), Cartesian(3)) </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> partialdiff(Cartesian(i), Cartesian(j)) = Kronecker_tensor(i,j) </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#Cartesian">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#unit_Cartesian">unit_Cartesian</a>]
 	  
 	    [Previous: <a href="#tuple_selector">tuple_selector</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="unit_Cartesian">unit_Cartesian</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="unit_Cartesian">unit_Cartesian</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 	This symbol takes one argument, a natural number, and returns the Cartesian
 	basis element, of a right handed Cartesian coordinate frame, corresponding to
 	the value of the argument. The unit_Cartesian basis elements are each constant
 	with respect to position in the space and define an orthonormal vector space basis.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> tuple(e_x, e_y, e_z) = tuple(unit_Cartesian(1), unit_Cartesian(2), unit_Cartesian(3)) </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> scalar_product(unit_Cartesian(i), unit_Cartesian(j)) = Kronecker_tensor(i,j) </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> partial(unit_Cartesian(i), Cartesian(j)) = 0 </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#unit_Cartesian">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> tuple(e_x, e_y, e_z) = tuple(unit_Cartesian(1), unit_Cartesian(2), unit_Cartesian(3)) </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> scalar_product(unit_Cartesian(i), unit_Cartesian(j)) = Kronecker_tensor(i,j) </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> partial(unit_Cartesian(i), Cartesian(j)) = 0 </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#unit_Cartesian">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#contra_index">contra_index</a>]
 	  
 	    [Previous: <a href="#Cartesian">Cartesian</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="contra_index">contra_index</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="contra_index">contra_index</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 	This symbol takes a natural number as its argument and returns a contravariant index.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#contra_index">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#contra_index">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#covar_index">covar_index</a>]
 	  
 	    [Previous: <a href="#unit_Cartesian">unit_Cartesian</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="covar_index">covar_index</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="covar_index">covar_index</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 	This symbol takes a natural number as its argument and returns a covariant index.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#covar_index">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#covar_index">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#basis_selector">basis_selector</a>]
 	  
 	    [Previous: <a href="#contra_index">contra_index</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="basis_selector">basis_selector</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="basis_selector">basis_selector</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 	This symbol takes 2 arguments, a tuple of basis elements and a covar_index
 	or a contra_index, and returns the basis element indicated by the index value.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd>unit_Cartesian(1) =
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>unit_Cartesian(1) =
       basis_selector(tuple(unit_Cartesian(1), unit_Cartesian(2), unit_Cartesian(3)), covar_index(1))</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e144xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e144xml')">OpenMath XML (source)</button>
-               <pre id="d40e144xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e144xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e144xml')">OpenMath XML (source)</button>
+                     <pre id="d40e144xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
         &lt;OMA&gt;
           &lt;OMS cd="relation1" name="eq"/&gt;
           &lt;OMA&gt; &lt;OMS cd="tensor1" name="unit_Cartesian"/&gt; &lt;OMI&gt;1&lt;/OMI&gt; &lt;/OMA&gt;
@@ -492,11 +543,11 @@
           &lt;/OMA&gt;
         &lt;/OMA&gt;
       &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e144cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e144cmml')">Strict Content MathML</button>
-               <pre id="d40e144cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e144cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e144cmml')">Strict Content MathML</button>
+                     <pre id="d40e144cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="tensor1"&gt;unit_Cartesian&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
@@ -510,11 +561,11 @@
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e144prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e144pref')">Prefix</button>
-            <div id="d40e144pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.html#eq">eq</a>
+                  </div>
+                  <button id="d40e144prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e144pref')">Prefix</button>
+                  <div id="d40e144pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/tensor1.html#unit_Cartesian">unit_Cartesian</a>
   (1)
 , <a href="../../../cd/tensor1.html#basis_selector">basis_selector</a>
@@ -532,74 +583,21 @@
 )
 
       </div>
-            <div>
-               <button id="d40e144popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e144pop')">Popcorn</button>
-               <div id="d40e144pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e144popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e144pop')">Popcorn</button>
+                     <div id="d40e144pop" style="display:none; margin-top: 0.5em">
         tensor1.unit_Cartesian(1) = tensor1.basis_selector(tensor1.tuple(tensor1.unit_Cartesian(1), tensor1.unit_Cartesian(2), tensor1.unit_Cartesian(3)), tensor1.covar_index(1))
       </div>
-            </div>
-            <div>
-               <button id="d40e144mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e144mml')">Rendered Presentation MathML</button>
-               <div id="d40e144mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>unit_Cartesian</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mn>1</mn>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>basis_selector</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                  </div>
+                  <div>
+                     <button id="d40e144mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e144mml')">Rendered Presentation MathML</button>
+                     <div id="d40e144mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mi>tuple</mi>
-                                 <mo>&#8289;</mo>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mrow>
-                                       <mi>unit_Cartesian</mi>
-                                       <mo>&#8289;</mo>
-                                       <mrow>
-                                          <mo>(</mo>
-                                          <mn>1</mn>
-                                          <mo>)</mo>
-                                       </mrow>
-                                    </mrow>
-                                    <mo>,</mo>
-                                    <mrow>
-                                       <mi>unit_Cartesian</mi>
-                                       <mo>&#8289;</mo>
-                                       <mrow>
-                                          <mo>(</mo>
-                                          <mn>2</mn>
-                                          <mo>)</mo>
-                                       </mrow>
-                                    </mrow>
-                                    <mo>,</mo>
-                                    <mrow>
-                                       <mi>unit_Cartesian</mi>
-                                       <mo>&#8289;</mo>
-                                       <mrow>
-                                          <mo>(</mo>
-                                          <mn>3</mn>
-                                          <mo>)</mo>
-                                       </mrow>
-                                    </mrow>
-                                    <mo>)</mo>
-                                 </mrow>
-                              </mrow>
-                              <mo>,</mo>
-                              <mrow>
-                                 <mi>covar_index</mi>
+                                 <mi>unit_Cartesian</mi>
                                  <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
@@ -607,126 +605,179 @@
                                     <mo>)</mo>
                                  </mrow>
                               </mrow>
-                              <mo>)</mo>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>basis_selector</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>tuple</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>unit_Cartesian</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mn>1</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>unit_Cartesian</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mn>2</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>unit_Cartesian</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mn>3</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>covar_index</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn>1</mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#basis_selector">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#basis_selector">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#tensor_selector">tensor_selector</a>]
 	  
 	    [Previous: <a href="#covar_index">covar_index</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="tensor_selector">tensor_selector</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>application</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="tensor_selector">tensor_selector</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 	This symbol takes 3 arguments: a tensor, a basis, and a tuple of contravariant
 	and/or covariant indexes. It returns the indexed tensor component in the
 	given basis.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#tensor_selector">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#tensor_selector">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Kronecker_tensor">Kronecker_tensor</a>]
 	  
 	    [Previous: <a href="#basis_selector">basis_selector</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="Kronecker_tensor">Kronecker_tensor</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Kronecker_tensor">Kronecker_tensor</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
       This symbol represents the Kronecker tensor or Kronecker delta.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd>tensor_selector(Kronecker_tensor, tuple(unit_Cartesian(1), unit_Cartesian(2), unit_Cartesian(3)), contra_index(i), covar_index(i)) = 1
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>tensor_selector(Kronecker_tensor, tuple(unit_Cartesian(1), unit_Cartesian(2), unit_Cartesian(3)), contra_index(i), covar_index(i)) = 1
       OR
       tensor_selector(Kronecker_tensor, tuple(unit_Cartesian(1), unit_Cartesian(2), unit_Cartesian(3)), contra_index(i), covar_index(j)) = 0 AND (i != j)
       </dd>
-      </dl>
+            </dl>
 
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e231xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e231xml')">OpenMath XML (source)</button>
-               <pre id="d40e231xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e231xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e231xml')">OpenMath XML (source)</button>
+                     <pre id="d40e231xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
       &lt;OMS cd="relation1" name="eq"/&gt;
       &lt;OMI&gt;1&lt;/OMI&gt;
@@ -744,11 +795,11 @@
       &lt;/OMA&gt;
       &lt;/OMA&gt;
       &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e231cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e231cmml')">Strict Content MathML</button>
-               <pre id="d40e231cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e231cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e231cmml')">Strict Content MathML</button>
+                     <pre id="d40e231cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;cn&gt;1&lt;/cn&gt;
@@ -764,11 +815,11 @@
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e231prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e231pref')">Prefix</button>
-            <div id="d40e231pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.html#eq">eq</a>
+                  </div>
+                  <button id="d40e231prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e231pref')">Prefix</button>
+                  <div id="d40e231pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
   (1, <a href="../../../cd/tensor1.html#tensor_selector">tensor_selector</a>
   (<a href="../../../cd/tensor1.html#Kronecker_tensor">Kronecker_tensor</a>, <a href="../../../cd/tensor1.html#tuple">tuple</a>
   (<a href="../../../cd/tensor1.html#unit_Cartesian">unit_Cartesian</a>
@@ -786,190 +837,190 @@
 )
 
       </div>
-            <div>
-               <button id="d40e231popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e231pop')">Popcorn</button>
-               <div id="d40e231pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e231popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e231pop')">Popcorn</button>
+                     <div id="d40e231pop" style="display:none; margin-top: 0.5em">
       1 = tensor1.tensor_selector(tensor1.Kronecker_tensor, tensor1.tuple(tensor1.unit_Cartesian(1), tensor1.unit_Cartesian(2), tensor1.unit_Cartesian(3)), tensor1.contra_index($i), tensor1.covar_index($i))
       </div>
-            </div>
-            <div>
-               <button id="d40e231mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e231mml')">Rendered Presentation MathML</button>
-               <div id="d40e231mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mn>1</mn>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>tensor_selector</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mi>Kronecker_tensor</mi>
-                              <mo>,</mo>
+                  </div>
+                  <div>
+                     <button id="d40e231mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e231mml')">Rendered Presentation MathML</button>
+                     <div id="d40e231mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mn>1</mn>
+                              <mo>=</mo>
                               <mrow>
-                                 <mi>tuple</mi>
+                                 <mi>tensor_selector</mi>
                                  <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
+                                    <mi>Kronecker_tensor</mi>
+                                    <mo>,</mo>
                                     <mrow>
-                                       <mi>unit_Cartesian</mi>
+                                       <mi>tuple</mi>
                                        <mo>&#8289;</mo>
                                        <mrow>
                                           <mo>(</mo>
-                                          <mn>1</mn>
+                                          <mrow>
+                                             <mi>unit_Cartesian</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mn>1</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>unit_Cartesian</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mn>2</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>unit_Cartesian</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mn>3</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
                                           <mo>)</mo>
                                        </mrow>
                                     </mrow>
                                     <mo>,</mo>
                                     <mrow>
-                                       <mi>unit_Cartesian</mi>
+                                       <mi>contra_index</mi>
                                        <mo>&#8289;</mo>
                                        <mrow>
                                           <mo>(</mo>
-                                          <mn>2</mn>
+                                          <mi>i</mi>
                                           <mo>)</mo>
                                        </mrow>
                                     </mrow>
                                     <mo>,</mo>
                                     <mrow>
-                                       <mi>unit_Cartesian</mi>
+                                       <mi>covar_index</mi>
                                        <mo>&#8289;</mo>
                                        <mrow>
                                           <mo>(</mo>
-                                          <mn>3</mn>
+                                          <mi>i</mi>
                                           <mo>)</mo>
                                        </mrow>
                                     </mrow>
                                     <mo>)</mo>
                                  </mrow>
                               </mrow>
-                              <mo>,</mo>
-                              <mrow>
-                                 <mi>contra_index</mi>
-                                 <mo>&#8289;</mo>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mi>i</mi>
-                                    <mo>)</mo>
-                                 </mrow>
-                              </mrow>
-                              <mo>,</mo>
-                              <mrow>
-                                 <mi>covar_index</mi>
-                                 <mo>&#8289;</mo>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mi>i</mi>
-                                    <mo>)</mo>
-                                 </mrow>
-                              </mrow>
-                              <mo>)</mo>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#Kronecker_tensor">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#Kronecker_tensor">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#metric_tensor">metric_tensor</a>]
 	  
 	    [Previous: <a href="#tensor_selector">tensor_selector</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="metric_tensor">metric_tensor</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="metric_tensor">metric_tensor</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 	This symbol represents the metric tensor, typically depicted using a lower case g.
 	The metric tensor is a nondegenerate, symmetric bilinear form. It defines the ideas of
 	leng th and angle in a metric space, the most common example being the Euclidean metric.
 	The square of a differential length, ds*ds, is given by the bilinear product of the
 	coordinate differentials, dx^i, with the metric tensor.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> ds^2 = sum_i sum_j (dx^i g_i_j dx^j) </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#metric_tensor">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> ds^2 = sum_i sum_j (dx^i g_i_j dx^j) </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#metric_tensor">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Levi-Civita">Levi-Civita</a>]
 	  
 	    [Previous: <a href="#Kronecker_tensor">Kronecker_tensor</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
     
-      <hr/>
-      <h2>
-         <a name="Levi-Civita">Levi-Civita</a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Role:</span>
-         </dt>
-         <dd>constant</dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Levi-Civita">Levi-Civita</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
 	This symbol represents the Levi-Civita alternating pseudo-tensor or permutation symbol.
 	It's definition depends on the number of dimensions, d, of the space: it has as many
 	indexes as there are dimensions in the space. It is totally antisymmetric, its value
@@ -978,37 +1029,39 @@
 	-1 for an odd permutation of unequally valued indexes, and;
 	0 whenever two indexes take the same value.
       </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Commented Mathematical property (CMP):</span>
-         </dt>
-         <dd> epsilon(i,j,k) = (i-j)(j-k)(k-i)/2, i,j,k in {1,2,3}   </dd>
-      </dl> 
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/tensor1.html#Levi-Civita">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> epsilon(i,j,k) = (i-j)(j-k)(k-i)/2, i,j,k in {1,2,3}   </dd>
+            </dl> 
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/tensor1.html#Levi-Civita">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [First: <a href="#tuple">tuple</a>]
 	  
 	    [Previous: <a href="#metric_tensor">metric_tensor</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
-  </body>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
 </html>

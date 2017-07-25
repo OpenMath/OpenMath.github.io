@@ -1,7 +1,9 @@
-<script xmlns="http://www.w3.org/1999/xhtml"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
       <script type="text/javascript"> function divfold(_Id){
      var thisLevel = document.getElementById(_Id);
      var thisLevela = document.getElementById(_Id.concat("a"))
@@ -14,63 +16,112 @@
        }
      </script>
       <title>expint</title>
-      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
    </head>
-   <body>
-      <a name="top"/>
-      <h1>OpenMath Content Dictionary: expint</h1>
-      <dl>
-         <dt>
-            <span class="dt">Canonical URL:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/CDs/expint.ocd">http://www.openmath.org/CDs/expint.ocd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD File:</span>
-         </dt>
-         <dd>
-            <a href="expint.ocd">expint.ocd
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: expint</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/CDs/expint.ocd">http://www.openmath.org/CDs/expint.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="expint.ocd">expint.ocd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">CD as XML Encoded OpenMath:</span>
-         </dt>
-         <dd>
-            <a href="expint.omcd">expint.omcd
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="expint.omcd">expint.omcd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">Defines:</span>
-         </dt>
-         <dd>
-            <a href="#E">E</a>, <a href="#Ei">Ei</a>, <a href="#li">li</a>
-         </dd>
-         <dt>
-            <span class="dt">Date:</span>
-         </dt>
-         <dd> 2002-01-17 </dd>
-         <dt>
-            <span class="dt">Version:</span>
-         </dt>
-         <dd> 1 </dd>
-         <dt>
-            <span class="dt">Review Date:</span>
-         </dt>
-         <dd> 2003-04-01 </dd>
-         <dt>
-            <span class="dt">Status:</span>
-         </dt>
-         <dd> experimental </dd>
-         <dt>
-            <span class="dt">Uses CD:</span>
-         </dt>
-         <dd>
-            <a href="../../../cd/alg1.html">alg1</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/calculus1.html">calculus1</a>, <a href="../../../cd/cauchypv.html">cauchypv</a>, <a href="../../../cd/complex1.html">complex1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/interval1.html">interval1</a>, <a href="../../../cd/logic1.html">logic1</a>, <a href="../../../cd/nums1.html">nums1</a>, <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/transc1.html">transc1</a>
-         </dd>
-      </dl>
-      <hr/>
-      <pre>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#E">E</a>, <a href="#Ei">Ei</a>, <a href="#li">li</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2002-01-17 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2003-04-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="../../../cd/alg1.html">alg1</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/calculus1.html">calculus1</a>, <a href="../../../cd/cauchypv.html">cauchypv</a>, <a href="../../../cd/complex1.html">complex1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/interval1.html">interval1</a>, <a href="../../../cd/logic1.html">logic1</a>, <a href="../../../cd/nums1.html">nums1</a>, <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/transc1.html">transc1</a>
+               </dd>
+            </dl>
+            <hr/>
+            <pre>
 
      This document is distributed in the hope that it will be useful, 
      but WITHOUT ANY WARRANTY; without even the implied warranty of 
@@ -112,39 +163,39 @@
   
   
 
-      <p>
+            <p>
     This content dictionary contains symbols to describe the Exponential
     integral and associated functions.
   </p>
 
-      <hr/>
-      <h2>
-         <a name="Ei"> Ei </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Ei"> Ei </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
   The symbol Ei defines the basic exponential integral as in Abramovitz &amp; 
   Stegun equation 5.1.2. This is a Cauchy principal value integral:</p>
-            <p>    $$Ei(x)=\int_{-\infty}^x\frac{e^t}t dt\qquad(x&gt;0)$$</p>
-            <p>  which is then extended by analytic continuation (this latter is not
+                  <p>    $$Ei(x)=\int_{-\infty}^x\frac{e^t}t dt\qquad(x&gt;0)$$</p>
+                  <p>  which is then extended by analytic continuation (this latter is not
   currently represented in the FMPs) to the complex plane slit along the 
   negative real axis
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e78xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e78xml')">OpenMath XML (source)</button>
-               <pre id="d40e78xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e78xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e78xml')">OpenMath XML (source)</button>
+                     <pre id="d40e78xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="implies" cd="logic1"/&gt;
@@ -187,11 +238,11 @@
         &lt;/OMA&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e78cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e78cmml')">Strict Content MathML</button>
-               <pre id="d40e78cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e78cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e78cmml')">Strict Content MathML</button>
+                     <pre id="d40e78cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;&lt;/apply&gt;
@@ -213,11 +264,11 @@
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e78prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e78pref')">Prefix</button>
-            <div id="d40e78pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/logic1.html#implies">implies</a>
+                  </div>
+                  <button id="d40e78prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e78pref')">Prefix</button>
+                  <div id="d40e78pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
   (<a href="../../../cd/relation1.html#gt">gt</a>
   ( <i>x</i>, <a href="../../../cd/alg1.html#zero">zero</a>)
 , <a href="../../../cd/relation1.html#eq">eq</a>
@@ -242,135 +293,135 @@
 )
 
     </div>
-            <div>
-               <button id="d40e78popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e78pop')">Popcorn</button>
-               <div id="d40e78pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e78popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e78pop')">Popcorn</button>
+                     <div id="d40e78pop" style="display:none; margin-top: 0.5em">
       $x &gt; alg1.zero ==&gt; expint.Ei($x) = cauchypv.defint(interval1.interval( -(nums1.infinity), $x), fns1.lambda[$t -&gt; exp($t) / $t])
     </div>
-            </div>
-            <div>
-               <button id="d40e78mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e78mml')">Rendered Presentation MathML</button>
-               <div id="d40e78mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>x</mi>
-                           <mo>&gt;</mo>
-                           <mn>0</mn>
-                        </mrow>
-                        <mo>&#8658;</mo>
-                        <mrow>
-                           <mrow>
-                              <mi>Ei</mi>
-                              <mo>&#8289;</mo>
+                  </div>
+                  <div>
+                     <button id="d40e78mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e78mml')">Rendered Presentation MathML</button>
+                     <div id="d40e78mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mo>(</mo>
                                  <mi>x</mi>
-                                 <mo>)</mo>
+                                 <mo>&gt;</mo>
+                                 <mn>0</mn>
                               </mrow>
-                           </mrow>
-                           <mo>=</mo>
-                           <mrow>
-                              <mi>defint</mi>
-                              <mo>&#8289;</mo>
+                              <mo>&#8658;</mo>
                               <mrow>
-                                 <mo>(</mo>
                                  <mrow>
-                                    <mo>(</mo>
+                                    <mi>Ei</mi>
+                                    <mo>&#8289;</mo>
                                     <mrow>
-                                       <mo>-</mo>
-                                       <mi>&#8734;</mi>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
                                     </mrow>
-                                    <mo separator="true">,</mo>
-                                    <mi>x</mi>
-                                    <mo>)</mo>
                                  </mrow>
-                                 <mo>,</mo>
+                                 <mo>=</mo>
                                  <mrow>
-                                    <mo>&#955;</mo>
-                                    <mo>&#8201;</mo>
+                                    <mi>defint</mi>
+                                    <mo>&#8289;</mo>
                                     <mrow>
-                                       <mi>t</mi>
-                                    </mrow>
-                                    <mo>.</mo>
-                                    <mfrac>
+                                       <mo>(</mo>
                                        <mrow>
-                                          <mi>exp</mi>
-                                          <mo>&#8289;</mo>
+                                          <mo>(</mo>
                                           <mrow>
-                                             <mo>(</mo>
-                                             <mi>t</mi>
-                                             <mo>)</mo>
+                                             <mo>-</mo>
+                                             <mi>&#8734;</mi>
                                           </mrow>
+                                          <mo separator="true">,</mo>
+                                          <mi>x</mi>
+                                          <mo>)</mo>
                                        </mrow>
-                                       <mi>t</mi>
-                                    </mfrac>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mo>&#955;</mo>
+                                          <mo>&#8201;</mo>
+                                          <mrow>
+                                             <mi>t</mi>
+                                          </mrow>
+                                          <mo>.</mo>
+                                          <mfrac>
+                                             <mrow>
+                                                <mi>exp</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>t</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mi>t</mi>
+                                          </mfrac>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
                                  </mrow>
-                                 <mo>)</mo>
                               </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/expint.html#Ei">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/expint.html#Ei">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#li">li</a>]
 	  
 	    [Last: <a href="#E">E</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="li"> li </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="li"> li </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
   The symbol li defines the basic logarithmic integral as in Abramovitz &amp; 
   Stegun equation 5.1.2. This is a Cauchy principal value integral:</p>
-            <p>    $$li(x)=\int_0^x\frac1{\ln t}t dt\qquad(x&gt;1)$$</p>
-            <p>  which is then extended by analytic continuation (this latter is not
+                  <p>    $$li(x)=\int_0^x\frac1{\ln t}t dt\qquad(x&gt;1)$$</p>
+                  <p>  which is then extended by analytic continuation (this latter is not
   currently represented in the FMPs) to the complex plane slit along the 
   negative real axis
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e163xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e163xml')">OpenMath XML (source)</button>
-               <pre id="d40e163xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e163xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e163xml')">OpenMath XML (source)</button>
+                     <pre id="d40e163xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="implies" cd="logic1"/&gt;
@@ -410,11 +461,11 @@
         &lt;/OMA&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e163cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e163cmml')">Strict Content MathML</button>
-               <pre id="d40e163cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e163cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e163cmml')">Strict Content MathML</button>
+                     <pre id="d40e163cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
@@ -433,11 +484,11 @@
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e163prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e163pref')">Prefix</button>
-            <div id="d40e163pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/logic1.html#implies">implies</a>
+                  </div>
+                  <button id="d40e163prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e163pref')">Prefix</button>
+                  <div id="d40e163pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
   (<a href="../../../cd/relation1.html#gt">gt</a>
   ( <i>x</i>, <a href="../../../cd/alg1.html#one">one</a>)
 , <a href="../../../cd/relation1.html#eq">eq</a>
@@ -460,133 +511,133 @@
 )
 
     </div>
-            <div>
-               <button id="d40e163popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e163pop')">Popcorn</button>
-               <div id="d40e163pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e163popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e163pop')">Popcorn</button>
+                     <div id="d40e163pop" style="display:none; margin-top: 0.5em">
       $x &gt; alg1.one ==&gt; expint.li($x) = cauchypv.defint(interval1.interval(nums1.zero, $x), fns1.lambda[$t -&gt; alg1.one / ln($t)])
     </div>
-            </div>
-            <div>
-               <button id="d40e163mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e163mml')">Rendered Presentation MathML</button>
-               <div id="d40e163mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>x</mi>
-                           <mo>&gt;</mo>
-                           <mn>1</mn>
-                        </mrow>
-                        <mo>&#8658;</mo>
-                        <mrow>
-                           <mrow>
-                              <mi>li</mi>
-                              <mo>&#8289;</mo>
+                  </div>
+                  <div>
+                     <button id="d40e163mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e163mml')">Rendered Presentation MathML</button>
+                     <div id="d40e163mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mo>(</mo>
                                  <mi>x</mi>
-                                 <mo>)</mo>
+                                 <mo>&gt;</mo>
+                                 <mn>1</mn>
                               </mrow>
-                           </mrow>
-                           <mo>=</mo>
-                           <mrow>
-                              <mi>defint</mi>
-                              <mo>&#8289;</mo>
+                              <mo>&#8658;</mo>
                               <mrow>
-                                 <mo>(</mo>
                                  <mrow>
-                                    <mo>(</mo>
-                                    <mi>zero</mi>
-                                    <mo separator="true">,</mo>
-                                    <mi>x</mi>
-                                    <mo>)</mo>
-                                 </mrow>
-                                 <mo>,</mo>
-                                 <mrow>
-                                    <mo>&#955;</mo>
-                                    <mo>&#8201;</mo>
+                                    <mi>li</mi>
+                                    <mo>&#8289;</mo>
                                     <mrow>
-                                       <mi>t</mi>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
                                     </mrow>
-                                    <mo>.</mo>
-                                    <mfrac>
-                                       <mn>1</mn>
-                                       <mrow>
-                                          <mi>ln</mi>
-                                          <mo>&#8289;</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mi>t</mi>
-                                             <mo>)</mo>
-                                          </mrow>
-                                       </mrow>
-                                    </mfrac>
                                  </mrow>
-                                 <mo>)</mo>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>defint</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>zero</mi>
+                                          <mo separator="true">,</mo>
+                                          <mi>x</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mo>&#955;</mo>
+                                          <mo>&#8201;</mo>
+                                          <mrow>
+                                             <mi>t</mi>
+                                          </mrow>
+                                          <mo>.</mo>
+                                          <mfrac>
+                                             <mn>1</mn>
+                                             <mrow>
+                                                <mi>ln</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>t</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mfrac>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
                               </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/expint.html#li">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/expint.html#li">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#E">E</a>]
 	  
 	    [Previous: <a href="#Ei">Ei</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="E"> E </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="E"> E </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
   The symbol E defines the generalised exponential integral as in Abramovitz
   &amp; Stegun equation 5.1.4. This is an ordinary integral:</p>
-            <p>    $$E_n(z)=\int_1^{-\infty}\frac{e^{-zt}}{t^n} dt\qquad(\Re z&gt;0)$$</p>
-            <p>  which is then extended by analytic continuation (this latter is not
+                  <p>    $$E_n(z)=\int_1^{-\infty}\frac{e^{-zt}}{t^n} dt\qquad(\Re z&gt;0)$$</p>
+                  <p>  which is then extended by analytic continuation (this latter is not
   currently represented in the FMPs) to the complex plane slit along the 
   negative real axis.
   Note that OpenMath's definition is curried, i.e. E(n) is a function.
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e242xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e242xml')">OpenMath XML (source)</button>
-               <pre id="d40e242xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e242xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e242xml')">OpenMath XML (source)</button>
+                     <pre id="d40e242xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="implies" cd="logic1"/&gt;
@@ -641,11 +692,11 @@
         &lt;/OMA&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e242cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e242cmml')">Strict Content MathML</button>
-               <pre id="d40e242cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e242cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e242cmml')">Strict Content MathML</button>
+                     <pre id="d40e242cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;
@@ -672,11 +723,11 @@
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e242prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e242pref')">Prefix</button>
-            <div id="d40e242pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/logic1.html#implies">implies</a>
+                  </div>
+                  <button id="d40e242prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e242pref')">Prefix</button>
+                  <div id="d40e242pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
   (<a href="../../../cd/relation1.html#gt">gt</a>
   (<a href="../../../cd/complex1.html#real">real</a>
   ( <i>z</i>)
@@ -707,121 +758,123 @@
 )
 
     </div>
-            <div>
-               <button id="d40e242popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e242pop')">Popcorn</button>
-               <div id="d40e242pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e242popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e242pop')">Popcorn</button>
+                     <div id="d40e242pop" style="display:none; margin-top: 0.5em">
       complex1.real($z) &gt; alg1.zero ==&gt; expint.E($n)($z) = calculus1.defint(interval1.interval(alg1.one, nums1.infinity), fns1.lambda[$t -&gt; exp(-1 * $z * $t) / $t ^ $n])
     </div>
-            </div>
-            <div>
-               <button id="d40e242mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e242mml')">Rendered Presentation MathML</button>
-               <div id="d40e242mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mrow>
-                              <mi>real</mi>
-                              <mo>&#8289;</mo>
+                  </div>
+                  <div>
+                     <button id="d40e242mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e242mml')">Rendered Presentation MathML</button>
+                     <div id="d40e242mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mo>(</mo>
-                                 <mi>z</mi>
-                                 <mo>)</mo>
-                              </mrow>
-                           </mrow>
-                           <mo>&gt;</mo>
-                           <mn>0</mn>
-                        </mrow>
-                        <mo>&#8658;</mo>
-                        <mrow>
-                           <mrow>
-                              <mrow>
-                                 <mo>(</mo>
                                  <mrow>
-                                    <mi>E</mi>
+                                    <mi>real</mi>
                                     <mo>&#8289;</mo>
                                     <mrow>
                                        <mo>(</mo>
-                                       <mi>n</mi>
+                                       <mi>z</mi>
                                        <mo>)</mo>
                                     </mrow>
                                  </mrow>
-                                 <mo>)</mo>
+                                 <mo>&gt;</mo>
+                                 <mn>0</mn>
                               </mrow>
-                              <mo>&#8289;</mo>
+                              <mo>&#8658;</mo>
                               <mrow>
-                                 <mo>(</mo>
-                                 <mi>z</mi>
-                                 <mo>)</mo>
-                              </mrow>
-                           </mrow>
-                           <mo>=</mo>
-                           <munderover>
-                              <mo>&#8747;</mo>
-                              <mn>1</mn>
-                              <mi>&#8734;</mi>
-                           </munderover>
-                           <mrow>
-                              <mfrac>
                                  <mrow>
-                                    <mi>exp</mi>
-                                    <mo>&#8289;</mo>
                                     <mrow>
                                        <mo>(</mo>
                                        <mrow>
-                                          <mn> -1 </mn>
-                                          <mo>&#8290;</mo>
-                                          <mi>z</mi>
-                                          <mo>&#8290;</mo>
-                                          <mi>t</mi>
+                                          <mi>E</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>n</mi>
+                                             <mo>)</mo>
+                                          </mrow>
                                        </mrow>
                                        <mo>)</mo>
                                     </mrow>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>z</mi>
+                                       <mo>)</mo>
+                                    </mrow>
                                  </mrow>
-                                 <msup>
-                                    <mi>t</mi>
-                                    <mi>n</mi>
-                                 </msup>
-                              </mfrac>
-                           </mrow>
-                           <mrow>
-                              <mi>d</mi>
-                              <mrow>
-                                 <mi>t</mi>
+                                 <mo>=</mo>
+                                 <munderover>
+                                    <mo>&#8747;</mo>
+                                    <mn>1</mn>
+                                    <mi>&#8734;</mi>
+                                 </munderover>
+                                 <mrow>
+                                    <mfrac>
+                                       <mrow>
+                                          <mi>exp</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mn> -1 </mn>
+                                                <mo>&#8290;</mo>
+                                                <mi>z</mi>
+                                                <mo>&#8290;</mo>
+                                                <mi>t</mi>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <msup>
+                                          <mi>t</mi>
+                                          <mi>n</mi>
+                                       </msup>
+                                    </mfrac>
+                                 </mrow>
+                                 <mrow>
+                                    <mi>d</mi>
+                                    <mrow>
+                                       <mi>t</mi>
+                                    </mrow>
+                                 </mrow>
                               </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/expint.html#E">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/expint.html#E">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [First: <a href="#Ei">Ei</a>]
 	  
 	    [Previous: <a href="#li">li</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
+         </div>
+      </div>
    </body>
 </html>

@@ -1,7 +1,9 @@
-<script xmlns="http://www.w3.org/1999/xhtml"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
       <script type="text/javascript"> function divfold(_Id){
      var thisLevel = document.getElementById(_Id);
      var thisLevela = document.getElementById(_Id.concat("a"))
@@ -14,63 +16,112 @@
        }
      </script>
       <title>airy</title>
-      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
    </head>
-   <body>
-      <a name="top"/>
-      <h1>OpenMath Content Dictionary: airy</h1>
-      <dl>
-         <dt>
-            <span class="dt">Canonical URL:</span>
-         </dt>
-         <dd>
-            <a href="http://www.openmath.org/CDs/airy.ocd">http://www.openmath.org/CDs/airy.ocd</a>
-         </dd>
-         <dt>
-            <span class="dt">CD File:</span>
-         </dt>
-         <dd>
-            <a href="airy.ocd">airy.ocd
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: airy</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/CDs/airy.ocd">http://www.openmath.org/CDs/airy.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="airy.ocd">airy.ocd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">CD as XML Encoded OpenMath:</span>
-         </dt>
-         <dd>
-            <a href="airy.omcd">airy.omcd
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="airy.omcd">airy.omcd
       </a>
-         </dd>
-         <dt>
-            <span class="dt">Defines:</span>
-         </dt>
-         <dd>
-            <a href="#Ai">Ai</a>, <a href="#Ai2">Ai2</a>, <a href="#Bi">Bi</a>, <a href="#Bi2">Bi2</a>
-         </dd>
-         <dt>
-            <span class="dt">Date:</span>
-         </dt>
-         <dd> 2002-01-19 </dd>
-         <dt>
-            <span class="dt">Version:</span>
-         </dt>
-         <dd> 1 </dd>
-         <dt>
-            <span class="dt">Review Date:</span>
-         </dt>
-         <dd> 2003-04-01 </dd>
-         <dt>
-            <span class="dt">Status:</span>
-         </dt>
-         <dd> experimental </dd>
-         <dt>
-            <span class="dt">Uses CD:</span>
-         </dt>
-         <dd>
-            <a href="../../../cd/alg1.html">alg1</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/calculus1.html">calculus1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/euler.html">euler</a>, <a href="../../../cd/list1.html">list1</a>, <a href="../../../cd/nums1.html">nums1</a>, <a href="../../../cd/odesoln1.html">odesoln1</a>, <a href="../../../cd/relation1.html">relation1</a>
-         </dd>
-      </dl>
-      <hr/>
-      <pre>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#Ai">Ai</a>, <a href="#Ai2">Ai2</a>, <a href="#Bi">Bi</a>, <a href="#Bi2">Bi2</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2002-01-19 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2003-04-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="../../../cd/alg1.html">alg1</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/calculus1.html">calculus1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/euler.html">euler</a>, <a href="../../../cd/list1.html">list1</a>, <a href="../../../cd/nums1.html">nums1</a>, <a href="../../../cd/odesoln1.html">odesoln1</a>, <a href="../../../cd/relation1.html">relation1</a>
+               </dd>
+            </dl>
+            <hr/>
+            <pre>
 
      This document is distributed in the hope that it will be useful, 
      but WITHOUT ANY WARRANTY; without even the implied warranty of 
@@ -112,46 +163,46 @@
   
   
 
-      <p>
+            <p>
     This content dictionary contains symbols to describe the Airy functions
     and associated functions.
   </p>
 
-      <hr/>
-      <h2>
-         <a name="Ai"> Ai </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Ai"> Ai </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
   The symbol Ai defines the unary Airy Ai function; as in Abramovitz &amp; 
   Stegun equation 10.4.1. This is a solution to the equation:</p>
-            <p>    $$w^{\prime\prime}-x*w=0$$</p>
-            <p>  It is linearly independent to the Airy Bi function represented by
+                  <p>    $$w^{\prime\prime}-x*w=0$$</p>
+                  <p>  It is linearly independent to the Airy Bi function represented by
   the Bi symbol in this Content Dictionary and is specifically
   given by:</p>
-            <p>    $$Ai(x)=Ai(0)~f(z)-(-Ai^\prime (0))~g(z)$$</p>
-            <p>  where:</p>
-            <p>    $$f(z)=\sum_{k=0}^\infty 3^k{\left (\frac{1}{3}\right )}_k
+                  <p>    $$Ai(x)=Ai(0)~f(z)-(-Ai^\prime (0))~g(z)$$</p>
+                  <p>  where:</p>
+                  <p>    $$f(z)=\sum_{k=0}^\infty 3^k{\left (\frac{1}{3}\right )}_k
       \frac{z^{3k}}{(3k)!}$$</p>
-            <p>  and:</p>
-            <p>    $$g(z)=\sum_{k=0}^\infty 3^k{\left (\frac{2}{3}\right )}_k
+                  <p>  and:</p>
+                  <p>    $$g(z)=\sum_{k=0}^\infty 3^k{\left (\frac{2}{3}\right )}_k
       \frac{z^{3k+1}}{(3k+1)!}$$
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e72xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e72xml')">OpenMath XML (source)</button>
-               <pre id="d40e72xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e72xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e72xml')">OpenMath XML (source)</button>
+                     <pre id="d40e72xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="eq" cd="relation1"/&gt;
@@ -258,11 +309,11 @@
         &lt;/OMBIND&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e72cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e72cmml')">Strict Content MathML</button>
-               <pre id="d40e72cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e72cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e72cmml')">Strict Content MathML</button>
+                     <pre id="d40e72cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;csymbol cd="airy"&gt;Ai&lt;/csymbol&gt;
@@ -317,15 +368,15 @@
   &lt;/bind&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e72prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e72pref')">Prefix</button>
-            <div id="d40e72pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.html#eq">eq</a>
+                  </div>
+                  <button id="d40e72prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e72pref')">Prefix</button>
+                  <div id="d40e72pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/airy.html#Ai">Ai</a>, <a href="../../../cd/odesoln1.html#ODEsolution">ODEsolution</a>
   [
              <i>w</i>
-               <i>x</i>
+                     <i>x</i>
           ] .
   (<a href="../../../cd/arith1.html#plus">plus</a>
   (<a href="../../../cd/calculus1.html#diff">diff</a>
@@ -381,116 +432,116 @@
 )
 
     </div>
-            <div>
-               <button id="d40e72popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e72pop')">Popcorn</button>
-               <div id="d40e72pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e72popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e72pop')">Popcorn</button>
+                     <div id="d40e72pop" style="display:none; margin-top: 0.5em">
       airy.Ai = odesoln1.ODEsolution[$w, $x -&gt; [3 ^ (1 / 3) / (3 * euler.Gamma(2 / 3)) = $w(alg1.zero) ,  -(3 ^ (1 / 6) * euler.Gamma(2 / 3)) / (2 * nums1.pi) = calculus1.diff($w)(alg1.zero)]]
     </div>
-            </div>
-            <div>
-               <button id="d40e72mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e72mml')">Rendered Presentation MathML</button>
-               <div id="d40e72mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>Ai</mi>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>ODEsolution</mi>
-                           <mo>&#8201;</mo>
-                           <mrow>
-                              <mi>w</mi>
-                              <mo>,</mo>
-                              <mi>x</mi>
-                           </mrow>
-                           <mo>.</mo>
-                           <mrow>
-                              <mo>D</mo>
+                  </div>
+                  <div>
+                     <button id="d40e72mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e72mml')">Rendered Presentation MathML</button>
+                     <div id="d40e72mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>Ai</mi>
+                              <mo>=</mo>
                               <mrow>
-                                 <mo>(</mo>
-                                 <mo>D</mo>
+                                 <mi>ODEsolution</mi>
+                                 <mo>&#8201;</mo>
                                  <mrow>
-                                    <mo>(</mo>
                                     <mi>w</mi>
-                                    <mo>)</mo>
+                                    <mo>,</mo>
+                                    <mi>x</mi>
                                  </mrow>
-                                 <mo>)</mo>
-                              </mrow>
-                              <mo>-</mo>
-                              <mrow>
-                                 <mi>w</mi>
-                                 <mo>&#8290;</mo>
-                                 <mi>x</mi>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mo>D</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mo>D</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>w</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>-</mo>
+                                    <mrow>
+                                       <mi>w</mi>
+                                       <mo>&#8290;</mo>
+                                       <mi>x</mi>
+                                    </mrow>
+                                 </mrow>
                               </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/airy.html#Ai">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/airy.html#Ai">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Bi">Bi</a>]
 	  
 	    [Last: <a href="#Bi2">Bi2</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="Bi"> Bi </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Bi"> Bi </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
   The symbol Bi defines the unary Airy Bi function. This is defined in 
   Abramivitz and Stegun 10.4.1 and is a solution to the equation:</p>
-            <p>    $$w^{\prime\prime}-x*w=0$$</p>
-            <p>  It is linearly independant to the Airy Ai function represented by
+                  <p>    $$w^{\prime\prime}-x*w=0$$</p>
+                  <p>  It is linearly independant to the Airy Ai function represented by
   the Ai symbol in this Content Dictionary and is specifically
   given by:</p>
-            <p>    $$Bi(x)=\sqrt{3}(Bi(0)~f(z)+(-Bi^\prime (0))~g(z))$$</p>
-            <p>  where:</p>
-            <p>    $$f(z)=\sum_{k=0}^\infty 3^k{\left (\frac{1}{3}\right )}_k
+                  <p>    $$Bi(x)=\sqrt{3}(Bi(0)~f(z)+(-Bi^\prime (0))~g(z))$$</p>
+                  <p>  where:</p>
+                  <p>    $$f(z)=\sum_{k=0}^\infty 3^k{\left (\frac{1}{3}\right )}_k
       \frac{z^{3k}}{(3k)!}$$</p>
-            <p>  and:</p>
-            <p>    $$g(z)=\sum_{k=0}^\infty 3^k{\left (\frac{2}{3}\right )}_k
+                  <p>  and:</p>
+                  <p>    $$g(z)=\sum_{k=0}^\infty 3^k{\left (\frac{2}{3}\right )}_k
       \frac{z^{3k+1}}{(3k+1)!}$$
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e280xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e280xml')">OpenMath XML (source)</button>
-               <pre id="d40e280xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e280xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e280xml')">OpenMath XML (source)</button>
+                     <pre id="d40e280xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="eq" cd="relation1"/&gt;
@@ -597,11 +648,11 @@
         &lt;/OMBIND&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e280cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e280cmml')">Strict Content MathML</button>
-               <pre id="d40e280cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e280cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e280cmml')">Strict Content MathML</button>
+                     <pre id="d40e280cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;csymbol cd="airy"&gt;Ai&lt;/csymbol&gt;
@@ -656,15 +707,15 @@
   &lt;/bind&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e280prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e280pref')">Prefix</button>
-            <div id="d40e280pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.html#eq">eq</a>
+                  </div>
+                  <button id="d40e280prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e280pref')">Prefix</button>
+                  <div id="d40e280pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/airy.html#Ai">Ai</a>, <a href="../../../cd/odesoln1.html#ODEsolution">ODEsolution</a>
   [
              <i>w</i>
-               <i>x</i>
+                     <i>x</i>
           ] .
   (<a href="../../../cd/arith1.html#plus">plus</a>
   (<a href="../../../cd/calculus1.html#diff">diff</a>
@@ -720,106 +771,106 @@
 )
 
     </div>
-            <div>
-               <button id="d40e280popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e280pop')">Popcorn</button>
-               <div id="d40e280pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e280popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e280pop')">Popcorn</button>
+                     <div id="d40e280pop" style="display:none; margin-top: 0.5em">
       airy.Ai = odesoln1.ODEsolution[$w, $x -&gt; [3 ^ (5 / 6) / (3 * euler.Gamma(2 / 3)) = $w(alg1.zero) ,  -(3 ^ (2 / 3) * euler.Gamma(2 / 3)) / (2 * nums1.pi) = calculus1.diff($w)(alg1.zero)]]
     </div>
-            </div>
-            <div>
-               <button id="d40e280mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e280mml')">Rendered Presentation MathML</button>
-               <div id="d40e280mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mi>Ai</mi>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>ODEsolution</mi>
-                           <mo>&#8201;</mo>
-                           <mrow>
-                              <mi>w</mi>
-                              <mo>,</mo>
-                              <mi>x</mi>
-                           </mrow>
-                           <mo>.</mo>
-                           <mrow>
-                              <mo>D</mo>
+                  </div>
+                  <div>
+                     <button id="d40e280mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e280mml')">Rendered Presentation MathML</button>
+                     <div id="d40e280mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>Ai</mi>
+                              <mo>=</mo>
                               <mrow>
-                                 <mo>(</mo>
-                                 <mo>D</mo>
+                                 <mi>ODEsolution</mi>
+                                 <mo>&#8201;</mo>
                                  <mrow>
-                                    <mo>(</mo>
                                     <mi>w</mi>
-                                    <mo>)</mo>
+                                    <mo>,</mo>
+                                    <mi>x</mi>
                                  </mrow>
-                                 <mo>)</mo>
-                              </mrow>
-                              <mo>-</mo>
-                              <mrow>
-                                 <mi>w</mi>
-                                 <mo>&#8290;</mo>
-                                 <mi>x</mi>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mo>D</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mo>D</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>w</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>-</mo>
+                                    <mrow>
+                                       <mi>w</mi>
+                                       <mo>&#8290;</mo>
+                                       <mi>x</mi>
+                                    </mrow>
+                                 </mrow>
                               </mrow>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/airy.html#Bi">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/airy.html#Bi">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Ai2">Ai2</a>]
 	  
 	    [Previous: <a href="#Ai">Ai</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="Ai2"> Ai2 </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Ai2"> Ai2 </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
   The symbol Ai2 takes two arguments, it represents derivatives of
   the Airy Ai function. The symbol Ai2(n,z) represents the n'th
   derivative of Ai(z).
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e487xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e487xml')">OpenMath XML (source)</button>
-               <pre id="d40e487xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e487xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e487xml')">OpenMath XML (source)</button>
+                     <pre id="d40e487xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="eq" cd="relation1"/&gt;
@@ -834,22 +885,22 @@
         &lt;/OMA&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e487cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e487cmml')">Strict Content MathML</button>
-               <pre id="d40e487cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e487cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e487cmml')">Strict Content MathML</button>
+                     <pre id="d40e487cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="airy"&gt;Ai&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="airy"&gt;Ai2&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e487prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e487pref')">Prefix</button>
-            <div id="d40e487pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.html#eq">eq</a>
+                  </div>
+                  <button id="d40e487prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e487pref')">Prefix</button>
+                  <div id="d40e487pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/airy.html#Ai">Ai</a>
   ( <i>z</i>)
 , <a href="../../../cd/airy.html#Ai2">Ai2</a>
@@ -857,55 +908,55 @@
 )
 
     </div>
-            <div>
-               <button id="d40e487popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e487pop')">Popcorn</button>
-               <div id="d40e487pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e487popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e487pop')">Popcorn</button>
+                     <div id="d40e487pop" style="display:none; margin-top: 0.5em">
       airy.Ai($z) = airy.Ai2(alg1.zero, $z)
     </div>
-            </div>
-            <div>
-               <button id="d40e487mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e487mml')">Rendered Presentation MathML</button>
-               <div id="d40e487mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>Ai</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mi>z</mi>
-                              <mo>)</mo>
+                  </div>
+                  <div>
+                     <button id="d40e487mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e487mml')">Rendered Presentation MathML</button>
+                     <div id="d40e487mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>Ai</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>Ai2</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>0</mn>
+                                    <mo>,</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
                            </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>Ai2</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mn>0</mn>
-                              <mo>,</mo>
-                              <mi>z</mi>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e514xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e514xml')">OpenMath XML (source)</button>
-               <pre id="d40e514xml" style="display:none">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e514xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e514xml')">OpenMath XML (source)</button>
+                     <pre id="d40e514xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="eq" cd="relation1"/&gt;
@@ -937,11 +988,11 @@
         &lt;/OMA&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e514cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e514cmml')">Strict Content MathML</button>
-               <pre id="d40e514cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e514cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e514cmml')">Strict Content MathML</button>
+                     <pre id="d40e514cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;
@@ -959,11 +1010,11 @@
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e514prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e514pref')">Prefix</button>
-            <div id="d40e514pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.html#eq">eq</a>
+                  </div>
+                  <button id="d40e514prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e514pref')">Prefix</button>
+                  <div id="d40e514pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/calculus1.html#diff">diff</a>
   (<a href="../../../cd/fns1.html#lambda">lambda</a>
   [
@@ -982,127 +1033,127 @@
 )
 
     </div>
-            <div>
-               <button id="d40e514popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e514pop')">Popcorn</button>
-               <div id="d40e514pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e514popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e514pop')">Popcorn</button>
+                     <div id="d40e514pop" style="display:none; margin-top: 0.5em">
       calculus1.diff(fns1.lambda[$z -&gt; airy.Ai2($n, $z)])($z) = airy.Ai2($n + alg1.one, $z)
     </div>
-            </div>
-            <div>
-               <button id="d40e514mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e514mml')">Rendered Presentation MathML</button>
-               <div id="d40e514mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mrow>
-                              <mo>(</mo>
-                              <mfrac>
-                                 <mi>d</mi>
-                                 <mrow>
-                                    <mi>d</mi>
-                                    <mrow>
-                                       <mi>z</mi>
-                                    </mrow>
-                                 </mrow>
-                              </mfrac>
+                  </div>
+                  <div>
+                     <button id="d40e514mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e514mml')">Rendered Presentation MathML</button>
+                     <div id="d40e514mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mo>(</mo>
                                  <mrow>
-                                    <mi>Ai2</mi>
-                                    <mo>&#8289;</mo>
+                                    <mo>(</mo>
+                                    <mfrac>
+                                       <mi>d</mi>
+                                       <mrow>
+                                          <mi>d</mi>
+                                          <mrow>
+                                             <mi>z</mi>
+                                          </mrow>
+                                       </mrow>
+                                    </mfrac>
                                     <mrow>
                                        <mo>(</mo>
-                                       <mi>n</mi>
-                                       <mo>,</mo>
-                                       <mi>z</mi>
+                                       <mrow>
+                                          <mi>Ai2</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>n</mi>
+                                             <mo>,</mo>
+                                             <mi>z</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
                                        <mo>)</mo>
                                     </mrow>
+                                    <mo>)</mo>
                                  </mrow>
-                                 <mo>)</mo>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
                               </mrow>
-                              <mo>)</mo>
-                           </mrow>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mi>z</mi>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>Ai2</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                              <mo>=</mo>
                               <mrow>
-                                 <mi>n</mi>
-                                 <mo>+</mo>
-                                 <mn>1</mn>
+                                 <mi>Ai2</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>n</mi>
+                                       <mo>+</mo>
+                                       <mn>1</mn>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
                               </mrow>
-                              <mo>,</mo>
-                              <mi>z</mi>
-                              <mo>)</mo>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/airy.html#Ai2">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/airy.html#Ai2">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [Next: <a href="#Bi2">Bi2</a>]
 	  
 	    [Previous: <a href="#Bi">Bi</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
-      <hr/>
-      <h2>
-         <a name="Bi2"> Bi2 </a>
-      </h2>
-      <dl>
-         <dt>
-            <span class="dt">Description:</span>
-         </dt>
-         <dd>
-            <p>
+            <hr/>
+            <h2>
+               <a name="Bi2"> Bi2 </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
   The symbol Bi2 takes two arguments, it represents derivatives of
   the Airy Bi function. The symbol Bi2(n,z) represents the n'th
   derivative of Bi(z).
     </p>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e579xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e579xml')">OpenMath XML (source)</button>
-               <pre id="d40e579xml" style="display:none">
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e579xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e579xml')">OpenMath XML (source)</button>
+                     <pre id="d40e579xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="eq" cd="relation1"/&gt;
@@ -1117,22 +1168,22 @@
         &lt;/OMA&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e579cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e579cmml')">Strict Content MathML</button>
-               <pre id="d40e579cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e579cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e579cmml')">Strict Content MathML</button>
+                     <pre id="d40e579cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="airy"&gt;Bi&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="airy"&gt;Bi2&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e579prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e579pref')">Prefix</button>
-            <div id="d40e579pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.html#eq">eq</a>
+                  </div>
+                  <button id="d40e579prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e579pref')">Prefix</button>
+                  <div id="d40e579pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/airy.html#Bi">Bi</a>
   ( <i>z</i>)
 , <a href="../../../cd/airy.html#Bi2">Bi2</a>
@@ -1140,55 +1191,55 @@
 )
 
     </div>
-            <div>
-               <button id="d40e579popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e579pop')">Popcorn</button>
-               <div id="d40e579pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e579popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e579pop')">Popcorn</button>
+                     <div id="d40e579pop" style="display:none; margin-top: 0.5em">
       airy.Bi($z) = airy.Bi2(alg1.zero, $z)
     </div>
-            </div>
-            <div>
-               <button id="d40e579mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e579mml')">Rendered Presentation MathML</button>
-               <div id="d40e579mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mi>Bi</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mi>z</mi>
-                              <mo>)</mo>
+                  </div>
+                  <div>
+                     <button id="d40e579mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e579mml')">Rendered Presentation MathML</button>
+                     <div id="d40e579mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>Bi</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>Bi2</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>0</mn>
+                                    <mo>,</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
                            </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>Bi2</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mn>0</mn>
-                              <mo>,</mo>
-                              <mi>z</mi>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Formal Mathematical property (FMP):</span>
-         </dt>
-         <dd>
-            <div>
-               <button id="d40e606xmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e606xml')">OpenMath XML (source)</button>
-               <pre id="d40e606xml" style="display:none">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e606xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e606xml')">OpenMath XML (source)</button>
+                     <pre id="d40e606xml" style="display:none">
     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
       &lt;OMA&gt;
         &lt;OMS name="eq" cd="relation1"/&gt;
@@ -1220,11 +1271,11 @@
         &lt;/OMA&gt;
       &lt;/OMA&gt;
     &lt;/OMOBJ&gt;</pre>
-            </div>
-            <div>
-               <button id="d40e606cmmla" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e606cmml')">Strict Content MathML</button>
-               <pre id="d40e606cmml" style="display:none; margin-top: 0.5em">
+                  </div>
+                  <div>
+                     <button id="d40e606cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e606cmml')">Strict Content MathML</button>
+                     <pre id="d40e606cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;
@@ -1242,11 +1293,11 @@
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
-            </div>
-            <button id="d40e606prefa" style="width:20em; background-color:#CCCCCC"
-                    onclick="divfold('d40e606pref')">Prefix</button>
-            <div id="d40e606pref" style="display:none; margin-top: 0.5em">
-               <a href="../../../cd/relation1.html#eq">eq</a>
+                  </div>
+                  <button id="d40e606prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e606pref')">Prefix</button>
+                  <div id="d40e606pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/calculus1.html#diff">diff</a>
   (<a href="../../../cd/fns1.html#lambda">lambda</a>
   [
@@ -1265,101 +1316,103 @@
 )
 
     </div>
-            <div>
-               <button id="d40e606popa" style="width:20em; background-color:#CCCCCC"
-                       onclick="divfold('d40e606pop')">Popcorn</button>
-               <div id="d40e606pop" style="display:none; margin-top: 0.5em">
+                  <div>
+                     <button id="d40e606popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e606pop')">Popcorn</button>
+                     <div id="d40e606pop" style="display:none; margin-top: 0.5em">
       calculus1.diff(fns1.lambda[$z -&gt; airy.Bi2($n, $z)])($z) = airy.Bi2($n + alg1.one, $z)
     </div>
-            </div>
-            <div>
-               <button id="d40e606mmla" style="width:20em; background-color:#AAFFAA"
-                       onclick="divfold('d40e606mml')">Rendered Presentation MathML</button>
-               <div id="d40e606mml" style="display:block; margin-top: 0.5em">
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                        <mrow>
-                           <mrow>
-                              <mo>(</mo>
-                              <mfrac>
-                                 <mi>d</mi>
-                                 <mrow>
-                                    <mi>d</mi>
-                                    <mrow>
-                                       <mi>z</mi>
-                                    </mrow>
-                                 </mrow>
-                              </mfrac>
+                  </div>
+                  <div>
+                     <button id="d40e606mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e606mml')">Rendered Presentation MathML</button>
+                     <div id="d40e606mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
                               <mrow>
-                                 <mo>(</mo>
                                  <mrow>
-                                    <mi>Bi2</mi>
-                                    <mo>&#8289;</mo>
+                                    <mo>(</mo>
+                                    <mfrac>
+                                       <mi>d</mi>
+                                       <mrow>
+                                          <mi>d</mi>
+                                          <mrow>
+                                             <mi>z</mi>
+                                          </mrow>
+                                       </mrow>
+                                    </mfrac>
                                     <mrow>
                                        <mo>(</mo>
-                                       <mi>n</mi>
-                                       <mo>,</mo>
-                                       <mi>z</mi>
+                                       <mrow>
+                                          <mi>Bi2</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>n</mi>
+                                             <mo>,</mo>
+                                             <mi>z</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
                                        <mo>)</mo>
                                     </mrow>
+                                    <mo>)</mo>
                                  </mrow>
-                                 <mo>)</mo>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
                               </mrow>
-                              <mo>)</mo>
-                           </mrow>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
-                              <mi>z</mi>
-                              <mo>)</mo>
-                           </mrow>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                           <mi>Bi2</mi>
-                           <mo>&#8289;</mo>
-                           <mrow>
-                              <mo>(</mo>
+                              <mo>=</mo>
                               <mrow>
-                                 <mi>n</mi>
-                                 <mo>+</mo>
-                                 <mn>1</mn>
+                                 <mi>Bi2</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>n</mi>
+                                       <mo>+</mo>
+                                       <mn>1</mn>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mi>z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
                               </mrow>
-                              <mo>,</mo>
-                              <mi>z</mi>
-                              <mo>)</mo>
                            </mrow>
-                        </mrow>
-                     </mrow>
-                  </math>
-               </div>
-            </div>
-         </dd>
-      </dl>
-      <dl>
-         <dt>
-            <span class="dt">Signatures:</span>
-         </dt>
-         <dd>
-            <a href="../../sts/airy.html#Bi2">
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/airy.html#Bi2">
 	sts
       </a>
-         </dd>
-      </dl>
-      <p/>
-      <hr/>
-      <table width="100%">
-         <tr>
-            <td align="right">
-               <font size="-1">
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
 	    [First: <a href="#Ai">Ai</a>]
 	  
 	    [Previous: <a href="#Ai2">Ai2</a>]
 	  
       [<a href="#top">Top</a>]</font>
-            </td>
-         </tr>
-      </table>
+                  </td>
+               </tr>
+            </table>
 
+         </div>
+      </div>
    </body>
 </html>
