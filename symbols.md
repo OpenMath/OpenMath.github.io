@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OpenMath Content Dictionaries by name
+title: OpenMath Symbols
 ---
 <table xmlns:cdg="http://www.openmath.org/OpenMathCDG"
        xmlns:cd="http://www.openmath.org/OpenMathCD"
@@ -10,20 +10,6 @@ title: OpenMath Content Dictionaries by name
       <th>Symbol</th>
       <th>CD</th>
       <th>Description</th>
-   </tr>
-   <tr>
-      <td>	Semigroup </td>
-      <td>
-         <a href="../cd/experimental/semigroup.xhtml">semigroup</a>
-      </td>
-      <td>The contructor for the type of semigroups as a Setoid with a binary operation.</td>
-   </tr>
-   <tr>
-      <td>	Setoid </td>
-      <td>
-         <a href="../cd/experimental/setoid.xhtml">setoid</a>
-      </td>
-      <td>The contructor for the type of set with an equivalence relation on it.</td>
    </tr>
    <tr>
       <td>	associative </td>
@@ -47,592 +33,25 @@ title: OpenMath Content Dictionaries by name
       <td>The contructor for the tuples consisting of a set, an equivalence relation on the set, and a proof that the relation is actually an equivalence relation.</td>
    </tr>
    <tr>
+      <td>	Semigroup </td>
+      <td>
+         <a href="../cd/experimental/semigroup.xhtml">semigroup</a>
+      </td>
+      <td>The contructor for the type of semigroups as a Setoid with a binary operation.</td>
+   </tr>
+   <tr>
+      <td>	Setoid </td>
+      <td>
+         <a href="../cd/experimental/setoid.xhtml">setoid</a>
+      </td>
+      <td>The contructor for the type of set with an equivalence relation on it.</td>
+   </tr>
+   <tr>
       <td> A </td>
       <td>
          <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
       </td>
       <td>This symbol represents the set of algebraic numbers.</td>
-   </tr>
-   <tr>
-      <td> Avogadros_constant </td>
-      <td>
-         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
-      </td>
-      <td>This symbol represents the number of atoms in 12 grammes of pure carbon(12). It is approximately 6.0221367*10^(23) +/- 3.6*10^(17).</td>
-   </tr>
-   <tr>
-      <td> Bell </td>
-      <td>
-         <a href="../cd/experimental/combinat1.xhtml"> combinat1 </a>
-      </td>
-      <td>The Bell numbers: Bell(n) is the total number of possible partitions of a set of n elements.</td>
-   </tr>
-   <tr>
-      <td> Boltzmann_constant </td>
-      <td>
-         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
-      </td>
-      <td>A constant which describes the relationship between temperature and kinetic energy for molecules in an ideal gas. It is approximately 1.380658*10^(-23) +/- 1.2*10^(-28) Joules per Kelvin.</td>
-   </tr>
-   <tr>
-      <td> Boolean </td>
-      <td>
-         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
-      </td>
-      <td>This symbol represents the set of Booleans. That is the truth values, true and false.</td>
-   </tr>
-   <tr>
-      <td> C </td>
-      <td>
-         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
-      </td>
-      <td>This symbol represents the set of complex numbers.</td>
-   </tr>
-   <tr>
-      <td> CD </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>The top level element for the Content Dictionary. It just acts as a container for the elements described below.</td>
-   </tr>
-   <tr>
-      <td> CDBase </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An optional element. If it is used it contains a string representing the URI to be used as the base for generated canonical URI references for symbols in the CD.</td>
-   </tr>
-   <tr>
-      <td> CDComment </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol is used to represent the element of a CDGroup which explains some aspect of the corresponding content dictionary. It should have one string argument which makes that explanation.</td>
-   </tr>
-   <tr>
-      <td> CDComment </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>This symbol is used to represent the element of a content dictionary which explains some aspect of that content dictionary. It should have one string argument which makes that explanation.</td>
-   </tr>
-   <tr>
-      <td> CDDate </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element which contains a date as a string in the ISO-8601 YYYY-MM-DD format. This gives the date at which the Content Dictionary was last edited.</td>
-   </tr>
-   <tr>
-      <td> CDDefinition </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>This symbol is used to represent the element which contains the definition of each symbol in a content dictionary. That is: it must contain a 'Name' element and a 'Description' element, and it may contain an arbitrary number of 'Example', 'FMP' or 'CMP' elements.</td>
-   </tr>
-   <tr>
-      <td> CDGroup </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol represents the outermost element of a CDGroup. It has an arbitrary number of arguments which may be elements of type corresponding to the other symbols defined in this file.</td>
-   </tr>
-   <tr>
-      <td> CDGroupDescription </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes the CDGroupDescription element. It has one string argument, this should be the contents of the CDGroupDescription element intended to describe the mathematical area of the CDGroup.</td>
-   </tr>
-   <tr>
-      <td> CDGroupMember </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDGroupMember element. It has one string argument, this should be the contents of the intended CDGroupMember element of the CDGroup. This should be used to identify each member of the CDGroup.</td>
-   </tr>
-   <tr>
-      <td> CDGroupName </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes the name of that CDGroup, it has one argument that should be a string corresponding to the name. The syntactical requirements are given in the OpenMath standard.</td>
-   </tr>
-   <tr>
-      <td> CDGroupURL </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes the CDGroupURL element. It has one string argument which should describe the URL for that CDGroup, not necessarily for the member Content Dictionaries, The syntactical requirements are given in the OpenMath standard.</td>
-   </tr>
-   <tr>
-      <td> CDGroupVersion </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td/>
-   </tr>
-   <tr>
-      <td> CDName </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDName element. It has one string argument, this should be the string corresponding to the name of a content dictionary which is in this CDGroup.</td>
-   </tr>
-   <tr>
-      <td> CDName </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element which contains the string corresponding to the name of the CD. The string must match the syntax for CD names given in the OpenMath Standard. Here and elsewhere white space occurring at the beginning or end of the string will be ignored.</td>
-   </tr>
-   <tr>
-      <td> CDReviewDate </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element which contains a date as a string in the ISO-8601 YYYY-MM-DD format. This gives the date at which the Content Dictionary is next scheduled for review. It should be expected to be stable until at least this date.</td>
-   </tr>
-   <tr>
-      <td> CDRevision </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element which contains a revision number (or minor version number) This should be a non-negative integer starting from zero for each new version. Additional examples would be typical changes to a CD requiring a new revision number.</td>
-   </tr>
-   <tr>
-      <td> CDSComment </td>
-      <td>
-         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
-      </td>
-      <td>This symbol is used to represent the element of a signature file which explains some aspect of that signature file. It should have one string argument which makes that explanation.</td>
-   </tr>
-   <tr>
-      <td> CDSReviewDate </td>
-      <td>
-         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
-      </td>
-      <td>This symbol is used to represent the element of a signature file which specifies the earliest possible revision date of the signature file. It should have one string argument which specifies that date. The date should be in the format YYYY-MM-DD, e.g. 2000-02-29.</td>
-   </tr>
-   <tr>
-      <td> CDSStatus </td>
-      <td>
-         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
-      </td>
-      <td>This symbol is used to represent the element of a signature file which specifies the status of that signature file. It should have one string argument, which should be one of 'official' (approved by the OpenMath Society according to the procedure outlined in the OpenMath standard), 'experimental' (currently being tested), 'private' (used by a private group of OpenMath users) or 'obsolete' (an obsolete signature file, kept only for archival purposes).</td>
-   </tr>
-   <tr>
-      <td> CDSignatures </td>
-      <td>
-         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
-      </td>
-      <td>This symbol is used to represent the outermost element of the Signature File which is characterized by two required attributes that identify the type system and the Content Dictionary whose signatures are defined. The value of the XML attribute 'type' is the name of the Content Dictionary or of the CDGroup that represents the type system. The value of the XML attribute 'cd' is the name of the Content Dictionary whose symbols are assigned signatures in this Signature File. It has an arbitrary number of arguments which may be elements of type corresponding to the other symbols defined in this file.</td>
-   </tr>
-   <tr>
-      <td> CDStatus </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element giving information on the status of the CD. The content of the element must be one of the following strings. official (approved by the OpenMath Society), experimental (currently being tested), private (used by a private group of OpenMath users), or obsolete (an obsolete CD kept only for archival purposes).</td>
-   </tr>
-   <tr>
-      <td> CDURL </td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDURL element. It has one string argument, this should be the string corresponding to the contents of the CDURL element for each Content Dictionary in the CDGroup. The element is optional, in case it is missing, the location of the CDGroup identified by the element CDGroupURL is assumed.</td>
-   </tr>
-   <tr>
-      <td> CDURL </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An optional element. If it is used it contains a string representing the URL where the canonical reference copy of this CD is stored.</td>
-   </tr>
-   <tr>
-      <td> CDUses </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element which contains zero or more CDNames which correspond to the CDs that this CD depends on, i.e. uses in examples and FMPs. If the CD is dependent on any other CDs they may be present here.</td>
-   </tr>
-   <tr>
-      <td> CDVersion</td>
-      <td>
-         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDVersion element. It has one integral argument, this should specify which version of the content dictionary is to be taken as member of the CDGroup. The element is optional. In case it is missing, the last version is the one included in the CDGroup.</td>
-   </tr>
-   <tr>
-      <td> CDVersion </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element which contains a version number for the CD. This should be a non negative integer. Any change to the CD that affects existing OpenMath applications that support this CD should result in an increase in the version number.</td>
-   </tr>
-   <tr>
-      <td> CMP </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An optional element (which may be repeated many times) which contains a string corresponding to a property of the symbol being defined.</td>
-   </tr>
-   <tr>
-      <td> Coulomb </td>
-      <td>
-         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
-      </td>
-      <td>This symbol represents the measure of one Coulomb. This is the standard SI measure for charge.</td>
-   </tr>
-   <tr>
-      <td> DMP </td>
-      <td>
-         <a href="../cd/experimental/polyd.xhtml"> polyd </a>
-      </td>
-      <td>The constructor of DMPs. The first argument is the polynomial ring containing the polynomial and the second is a "SDMP". Should be of the form DMP(PolyRingD(...), SDMP(...))</td>
-   </tr>
-   <tr>
-      <td> DMPL </td>
-      <td>
-         <a href="../cd/experimental/polyd.xhtml"> polyd </a>
-      </td>
-      <td>The constructor for lists of multivariate polynomial members of the same polynomial ring. The first argument is a polynomial ring and the rest are "SDMP"s. DMPL can be attributed with the "ordering" symbol to indicate a particular ordering for monomials of all its polynomials. Should be of the form DMPL(PolyRingD(...), SDMP(...)+)</td>
-   </tr>
-   <tr>
-      <td> Description </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element which contains a string corresponding to the description of either the CD or the symbol (depending on which is the enclosing element).</td>
-   </tr>
-   <tr>
-      <td> Example </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element which contains an arbitrary number of children, each of which is either a string or an OpenMath Object. These children give examples in natural language, or in OpenMath, of the enclosing symbol definition.</td>
-   </tr>
-   <tr>
-      <td> FMP </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An optional element which contains an OpenMath Object. This corresponds to a property of the symbol being defined.</td>
-   </tr>
-   <tr>
-      <td> Faradays_constant </td>
-      <td>
-         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
-      </td>
-      <td>This symbol represents the electric charge carried by one mole of electrons. It is approximately 96485.309 +/- 0.029 Coulombs per mole.</td>
-   </tr>
-   <tr>
-      <td> Fibonacci </td>
-      <td>
-         <a href="../cd/experimental/combinat1.xhtml"> combinat1 </a>
-      </td>
-      <td>The Fibonacci numbers, defined by the linear recurrence: Fibonacci(0) = 0, Fibonacci(1) = 1, and Fibonacci(n + 1) = Fibonacci(n) + Fibonacci(n - 1). Note that some authors define Fibonacci(0) = 1.</td>
-   </tr>
-   <tr>
-      <td> GFp </td>
-      <td>
-         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
-      </td>
-      <td>This symbol represents the finite field of integers modulo p, where p is a prime.</td>
-   </tr>
-   <tr>
-      <td> GFpn </td>
-      <td>
-         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
-      </td>
-      <td>This symbol represents the finite field with p^n elements, where p is a prime.</td>
-   </tr>
-   <tr>
-      <td> H </td>
-      <td>
-         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
-      </td>
-      <td>This symbol represents the set of quaternions.</td>
-   </tr>
-   <tr>
-      <td> Hermitian </td>
-      <td>
-         <a href="../cd/experimental/linalg5.xhtml"> linalg5 </a>
-      </td>
-      <td>This symbol represents a Hermitian matrix, it takes one argument. The argument should be a vector of vectors of values which determine the upper triangle of the matrix. The lower triangle of the matrix is specified by the following relation: M^* = transpose(M), were M^* denotes the matrix consisting of all the complex conjugates of M.</td>
-   </tr>
-   <tr>
-      <td> IndType </td>
-      <td>
-         <a href="../cd/experimental/icc.xhtml"> icc </a>
-      </td>
-      <td>Constructor for Inductive Types. Takes arguments the constructor functions for the inhabitants of the type and their signatures.</td>
-   </tr>
-   <tr>
-      <td> Joule </td>
-      <td>
-         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
-      </td>
-      <td>This symbol represents the measure of one Joule. This is the standard SI measure for energy.</td>
-   </tr>
-   <tr>
-      <td> LaTeX_encoding </td>
-      <td>
-         <a href="../cd/Official/altenc.xhtml"> altenc </a>
-      </td>
-      <td>A symbol which heads a piece of LaTeX encoding in an attribution.</td>
-   </tr>
-   <tr>
-      <td> Lambda </td>
-      <td>
-         <a href="../cd/experimental/lc.xhtml"> lc </a>
-      </td>
-      <td>The abstraction constructor. It is followed by a list of variables and an OpenMath object.</td>
-   </tr>
-   <tr>
-      <td> Laplacian </td>
-      <td>
-         <a href="../cd/Official/veccalc1.xhtml"> veccalc1 </a>
-      </td>
-      <td>This symbol is used to represent the laplacian function. It takes one argument which should be a vector of scalar valued functions, intended to represent a vector valued function and returns a vector of functions. It should satisfy the defining relation: laplacian(F) = \partial^2(F)/\partial(x_1)^2 + ... + \partial^2(F)/\partial(x_n)^2</td>
-   </tr>
-   <tr>
-      <td> Loschmidt_constant </td>
-      <td>
-         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
-      </td>
-      <td>This symbol represents the number of particles per unit volume of an ideal gas at standard temperature and pressure. It is approximately 2.686763 * 10^(25) +/- 2.3 * 10^(20) per metre cubed.</td>
-   </tr>
-   <tr>
-      <td> MathML_encoding </td>
-      <td>
-         <a href="../cd/Official/altenc.xhtml"> altenc </a>
-      </td>
-      <td>A symbol which heads a piece of MathML encoding in an attribution. The MathML encoding is an XML encoding, and the details may be found at: http://www.w3.org/Math/Overview.html</td>
-   </tr>
-   <tr>
-      <td> N </td>
-      <td>
-         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
-      </td>
-      <td>This symbol represents the set of natural numbers (including zero).</td>
-   </tr>
-   <tr>
-      <td> NaN </td>
-      <td>
-         <a href="../cd/Official/nums1.xhtml"> nums1 </a>
-      </td>
-      <td>A symbol to convey the notion of not-a-number. The result of an ill-posed floating computation. See IEEE standard for floating point representations.</td>
-   </tr>
-   <tr>
-      <td> Name </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element containing the string corresponding to the name of the symbol being defined. This must match the syntax for symbol names given in the OpenMath Standard. Here and elsewhere white space occurring at the begining or end of the string will be ignored.</td>
-   </tr>
-   <tr>
-      <td> Newton </td>
-      <td>
-         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
-      </td>
-      <td>This symbol represents the measure of one Newton. This is the standard SI measure for force.</td>
-   </tr>
-   <tr>
-      <td> Newton_per_sqr_metre </td>
-      <td>
-         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
-      </td>
-      <td>This symbol represents the measure of one Newton per square metre. This is another (deprecated in OpenMath) name for the standard SI measure for pressure, the Pascal.</td>
-   </tr>
-   <tr>
-      <td> P </td>
-      <td>
-         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
-      </td>
-      <td>This symbol represents the set of positive prime numbers.</td>
-   </tr>
-   <tr>
-      <td> Pair </td>
-      <td>
-         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
-      </td>
-      <td>The pairing constructor. It takes two OpenMath objects as first element and second element of the pair, and a third optional OpenMath object that represents the type of the pair.</td>
-   </tr>
-   <tr>
-      <td> Pair </td>
-      <td>
-         <a href="../cd/experimental/sigma.xhtml"> sigma </a>
-      </td>
-      <td>The pairing constructor. It takes two OpenMath objects as first element and second element of the pair, and a third optional OpenMath object that represents the type of this pair.</td>
-   </tr>
-   <tr>
-      <td> PairProj1 </td>
-      <td>
-         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
-      </td>
-      <td>The first projection function that extracts the first component of a Pair. It satisfies the sigma-reduction rule.</td>
-   </tr>
-   <tr>
-      <td> PairProj1 </td>
-      <td>
-         <a href="../cd/experimental/sigma.xhtml"> sigma </a>
-      </td>
-      <td>The first projection function. It satisfies sigma-reduction.</td>
-   </tr>
-   <tr>
-      <td> PairProj2 </td>
-      <td>
-         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
-      </td>
-      <td>The second projection function that extracts the second component of a Pair. It satisfies sigma-reduction rule.</td>
-   </tr>
-   <tr>
-      <td> PairProj2 </td>
-      <td>
-         <a href="../cd/experimental/sigma.xhtml"> sigma </a>
-      </td>
-      <td>The second projection function. It satisfies sigma-reduction.</td>
-   </tr>
-   <tr>
-      <td> Pascal </td>
-      <td>
-         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
-      </td>
-      <td>This symbol represents the measure of one Newton per square metre. This is the standard SI measure for pressure.</td>
-   </tr>
-   <tr>
-      <td> PiType </td>
-      <td>
-         <a href="../cd/experimental/lc.xhtml"> lc </a>
-      </td>
-      <td>The type constructor of dependant function space. It binds the (type-attributed) variables in the body, that is an OpenMath object.</td>
-   </tr>
-   <tr>
-      <td> Planck_constant </td>
-      <td>
-         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
-      </td>
-      <td>This symbol represents the fundamental constant equal to the ratio of the energy of a quantum of energy to its frequency. It is approximately equal to 6.6260755*10^(-34) +/- 4.0*10^(-40) Joule seconds.</td>
-   </tr>
-   <tr>
-      <td> Prop </td>
-      <td>
-         <a href="../cd/experimental/typesorts.xhtml"> typesorts </a>
-      </td>
-      <td>The type of propositions</td>
-   </tr>
-   <tr>
-      <td> Q </td>
-      <td>
-         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
-      </td>
-      <td>This symbol represents the set of rational numbers.</td>
-   </tr>
-   <tr>
-      <td> QuotientField </td>
-      <td>
-         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
-      </td>
-      <td>This symbol represents the quotient field of any integral domain.</td>
-   </tr>
-   <tr>
-      <td> R </td>
-      <td>
-         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
-      </td>
-      <td>This symbol represents the set of real numbers.</td>
-   </tr>
-   <tr>
-      <td> Role </td>
-      <td>
-         <a href="../cd/experimental/meta.xhtml"> meta </a>
-      </td>
-      <td>An element containing the string corresponding to the role of the symbol being defined.</td>
-   </tr>
-   <tr>
-      <td> SDMP </td>
-      <td>
-         <a href="../cd/experimental/polyd.xhtml"> polyd </a>
-      </td>
-      <td>The constructor for multivariate polynomials without any indication of variables or domain for the coefficients. Its arguments are just "term"s. No terms should differ only by the coefficient (i.e it is not permitted to have both "2*x*y" and "x*y" as terms in a SDMP). SDMP can be attributed with the "ordering" symbol to indicate a particular ordering of its terms. This attribute shall not be set if the SDMP is part of DMPL that has this attribute set. If the SDMP is ordered, explicitly or implicitly via an outer ordering, the terms must be in decreasing order with respect to this order. The zero polynomial is represented by an SDMP with no terms.</td>
-   </tr>
-   <tr>
-      <td> SigmaType </td>
-      <td>
-         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
-      </td>
-      <td>The binder symbol used to construct the type of Cartesian products. The (either plain or attributed) variables might occur in the body \OM\ object.</td>
-   </tr>
-   <tr>
-      <td> SigmaType </td>
-      <td>
-         <a href="../cd/experimental/sigma.xhtml"> sigma </a>
-      </td>
-      <td>The type constructor of cartesian products. It takes a list of type-attributed variables and an OpenMath object.</td>
-   </tr>
-   <tr>
-      <td> Signature </td>
-      <td>
-         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
-      </td>
-      <td>This symbol is used to represent the element of a signature file which specifies the signature of a symbol. It should take two string children, the first should be the symbol who's signature is being specified, the second should be an 'OMOBJ' element which specifies the signature. Additionally the second argument should specify an object which must represent a valid type in the type system identified by the XML attribute 'type' corresponding to the element which corresponds to the symbol 'CDSignatures' enclosing this symbol.</td>
-   </tr>
-   <tr>
-      <td> Stirling1 </td>
-      <td>
-         <a href="../cd/experimental/combinat1.xhtml"> combinat1 </a>
-      </td>
-      <td>The Stirling numbers of the first kind. (-1)^(n-m)*Stirling1(n,m) is the number of permutations of n symbols which have exactly m cycles. Note that there are a few slightly different definitions of these numbers.</td>
-   </tr>
-   <tr>
-      <td> Stirling2 </td>
-      <td>
-         <a href="../cd/experimental/combinat1.xhtml"> combinat1 </a>
-      </td>
-      <td>The Stirling numbers of the second kind. Stirling2(n, m) is the number of partitions of a set with n elements into m non empty subsets. Note that there are a few slightly different definitions of these numbers.</td>
-   </tr>
-   <tr>
-      <td> Tuple </td>
-      <td>
-         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
-      </td>
-      <td>The n-ary tupling constructor when n&gt;2. The arguments are the element of the tuple. Tuple objects can also be constructed by successive nesting of Pair.</td>
-   </tr>
-   <tr>
-      <td> Type </td>
-      <td>
-         <a href="../cd/experimental/typesorts.xhtml"> typesorts </a>
-      </td>
-      <td>The cumulative type of the type of sets in a hierarchy of types.</td>
-   </tr>
-   <tr>
-      <td> Type0 </td>
-      <td>
-         <a href="../cd/experimental/typesorts.xhtml"> typesorts </a>
-      </td>
-      <td>The type of sets in a hierarchy of types.</td>
-   </tr>
-   <tr>
-      <td> Watt </td>
-      <td>
-         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
-      </td>
-      <td>This symbol represents the measure of one Watt. This is the standard SI measure for power.</td>
-   </tr>
-   <tr>
-      <td> Z </td>
-      <td>
-         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
-      </td>
-      <td>This symbol represents the set of integers, positive, negative and zero.</td>
-   </tr>
-   <tr>
-      <td> Zm </td>
-      <td>
-         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
-      </td>
-      <td>This symbol represents the set of integers modulo m, where m is not necessarily a prime. It takes one argument, the integer m.</td>
    </tr>
    <tr>
       <td> above </td>
@@ -950,6 +369,13 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-18$</td>
    </tr>
    <tr>
+      <td> Avogadros_constant </td>
+      <td>
+         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
+      </td>
+      <td>This symbol represents the number of atoms in 12 grammes of pure carbon(12). It is approximately 6.0221367*10^(23) +/- 3.6*10^(17).</td>
+   </tr>
+   <tr>
       <td> banded </td>
       <td>
          <a href="../cd/experimental/linalg5.xhtml"> linalg5 </a>
@@ -969,6 +395,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/Official/nums1.xhtml"> nums1 </a>
       </td>
       <td>This symbol represents the constructor function for integers, specifying the base. It takes two arguments, the first is a positive integer to denote the base to which the number is represented, the second argument is a string which contains an optional sign and the digits of the integer, using 0-9a-z (as a consequence of this no radix greater than 35 is supported). Base 16 and base 10 are already covered in the encodings of integers.</td>
+   </tr>
+   <tr>
+      <td> Bell </td>
+      <td>
+         <a href="../cd/experimental/combinat1.xhtml"> combinat1 </a>
+      </td>
+      <td>The Bell numbers: Bell(n) is the total number of possible partitions of a set of n elements.</td>
    </tr>
    <tr>
       <td> below </td>
@@ -999,6 +432,20 @@ title: OpenMath Content Dictionaries by name
       <td>The binomial coefficients. binomial(n, m) is the number of ways of choosing m objects from a collection of n distinct objects without regard to the order.</td>
    </tr>
    <tr>
+      <td> Boltzmann_constant </td>
+      <td>
+         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
+      </td>
+      <td>A constant which describes the relationship between temperature and kinetic energy for molecules in an ideal gas. It is approximately 1.380658*10^(-23) +/- 1.2*10^(-28) Joules per Kelvin.</td>
+   </tr>
+   <tr>
+      <td> Boolean </td>
+      <td>
+         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
+      </td>
+      <td>This symbol represents the set of Booleans. That is the truth values, true and false.</td>
+   </tr>
+   <tr>
       <td> both_sides </td>
       <td>
          <a href="../cd/Official/limit1.xhtml"> limit1 </a>
@@ -1011,6 +458,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/omtypes.xhtml"> omtypes </a>
       </td>
       <td>The type of byte arrays</td>
+   </tr>
+   <tr>
+      <td> C </td>
+      <td>
+         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
+      </td>
+      <td>This symbol represents the set of complex numbers.</td>
    </tr>
    <tr>
       <td> calendar_month </td>
@@ -1039,6 +493,188 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/Official/set1.xhtml"> set1 </a>
       </td>
       <td>This symbol represents an n-ary construction function for constructing the Cartesian product of sets. It takes n set arguments in order to construct their Cartesian product.</td>
+   </tr>
+   <tr>
+      <td> CD </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>The top level element for the Content Dictionary. It just acts as a container for the elements described below.</td>
+   </tr>
+   <tr>
+      <td> CDBase </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An optional element. If it is used it contains a string representing the URI to be used as the base for generated canonical URI references for symbols in the CD.</td>
+   </tr>
+   <tr>
+      <td> CDComment </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol is used to represent the element of a CDGroup which explains some aspect of the corresponding content dictionary. It should have one string argument which makes that explanation.</td>
+   </tr>
+   <tr>
+      <td> CDComment </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>This symbol is used to represent the element of a content dictionary which explains some aspect of that content dictionary. It should have one string argument which makes that explanation.</td>
+   </tr>
+   <tr>
+      <td> CDDate </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element which contains a date as a string in the ISO-8601 YYYY-MM-DD format. This gives the date at which the Content Dictionary was last edited.</td>
+   </tr>
+   <tr>
+      <td> CDDefinition </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>This symbol is used to represent the element which contains the definition of each symbol in a content dictionary. That is: it must contain a 'Name' element and a 'Description' element, and it may contain an arbitrary number of 'Example', 'FMP' or 'CMP' elements.</td>
+   </tr>
+   <tr>
+      <td> CDGroup </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol represents the outermost element of a CDGroup. It has an arbitrary number of arguments which may be elements of type corresponding to the other symbols defined in this file.</td>
+   </tr>
+   <tr>
+      <td> CDGroupDescription </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes the CDGroupDescription element. It has one string argument, this should be the contents of the CDGroupDescription element intended to describe the mathematical area of the CDGroup.</td>
+   </tr>
+   <tr>
+      <td> CDGroupMember </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDGroupMember element. It has one string argument, this should be the contents of the intended CDGroupMember element of the CDGroup. This should be used to identify each member of the CDGroup.</td>
+   </tr>
+   <tr>
+      <td> CDGroupName </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes the name of that CDGroup, it has one argument that should be a string corresponding to the name. The syntactical requirements are given in the OpenMath standard.</td>
+   </tr>
+   <tr>
+      <td> CDGroupURL </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes the CDGroupURL element. It has one string argument which should describe the URL for that CDGroup, not necessarily for the member Content Dictionaries, The syntactical requirements are given in the OpenMath standard.</td>
+   </tr>
+   <tr>
+      <td> CDGroupVersion </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td/>
+   </tr>
+   <tr>
+      <td> CDName </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDName element. It has one string argument, this should be the string corresponding to the name of a content dictionary which is in this CDGroup.</td>
+   </tr>
+   <tr>
+      <td> CDName </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element which contains the string corresponding to the name of the CD. The string must match the syntax for CD names given in the OpenMath Standard. Here and elsewhere white space occurring at the beginning or end of the string will be ignored.</td>
+   </tr>
+   <tr>
+      <td> CDReviewDate </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element which contains a date as a string in the ISO-8601 YYYY-MM-DD format. This gives the date at which the Content Dictionary is next scheduled for review. It should be expected to be stable until at least this date.</td>
+   </tr>
+   <tr>
+      <td> CDRevision </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element which contains a revision number (or minor version number) This should be a non-negative integer starting from zero for each new version. Additional examples would be typical changes to a CD requiring a new revision number.</td>
+   </tr>
+   <tr>
+      <td> CDSComment </td>
+      <td>
+         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
+      </td>
+      <td>This symbol is used to represent the element of a signature file which explains some aspect of that signature file. It should have one string argument which makes that explanation.</td>
+   </tr>
+   <tr>
+      <td> CDSignatures </td>
+      <td>
+         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
+      </td>
+      <td>This symbol is used to represent the outermost element of the Signature File which is characterized by two required attributes that identify the type system and the Content Dictionary whose signatures are defined. The value of the XML attribute 'type' is the name of the Content Dictionary or of the CDGroup that represents the type system. The value of the XML attribute 'cd' is the name of the Content Dictionary whose symbols are assigned signatures in this Signature File. It has an arbitrary number of arguments which may be elements of type corresponding to the other symbols defined in this file.</td>
+   </tr>
+   <tr>
+      <td> CDSReviewDate </td>
+      <td>
+         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
+      </td>
+      <td>This symbol is used to represent the element of a signature file which specifies the earliest possible revision date of the signature file. It should have one string argument which specifies that date. The date should be in the format YYYY-MM-DD, e.g. 2000-02-29.</td>
+   </tr>
+   <tr>
+      <td> CDSStatus </td>
+      <td>
+         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
+      </td>
+      <td>This symbol is used to represent the element of a signature file which specifies the status of that signature file. It should have one string argument, which should be one of 'official' (approved by the OpenMath Society according to the procedure outlined in the OpenMath standard), 'experimental' (currently being tested), 'private' (used by a private group of OpenMath users) or 'obsolete' (an obsolete signature file, kept only for archival purposes).</td>
+   </tr>
+   <tr>
+      <td> CDStatus </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element giving information on the status of the CD. The content of the element must be one of the following strings. official (approved by the OpenMath Society), experimental (currently being tested), private (used by a private group of OpenMath users), or obsolete (an obsolete CD kept only for archival purposes).</td>
+   </tr>
+   <tr>
+      <td> CDURL </td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDURL element. It has one string argument, this should be the string corresponding to the contents of the CDURL element for each Content Dictionary in the CDGroup. The element is optional, in case it is missing, the location of the CDGroup identified by the element CDGroupURL is assumed.</td>
+   </tr>
+   <tr>
+      <td> CDURL </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An optional element. If it is used it contains a string representing the URL where the canonical reference copy of this CD is stored.</td>
+   </tr>
+   <tr>
+      <td> CDUses </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element which contains zero or more CDNames which correspond to the CDs that this CD depends on, i.e. uses in examples and FMPs. If the CD is dependent on any other CDs they may be present here.</td>
+   </tr>
+   <tr>
+      <td> CDVersion</td>
+      <td>
+         <a href="../cd/experimental/metagrp.xhtml"> metagrp </a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDVersion element. It has one integral argument, this should specify which version of the content dictionary is to be taken as member of the CDGroup. The element is optional. In case it is missing, the last version is the one included in the CDGroup.</td>
+   </tr>
+   <tr>
+      <td> CDVersion </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element which contains a version number for the CD. This should be a non negative integer. Any change to the CD that affects existing OpenMath applications that support this CD should result in an increase in the version number.</td>
    </tr>
    <tr>
       <td> ceiling </td>
@@ -1081,6 +717,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/dimensions1.xhtml"> dimensions1 </a>
       </td>
       <td>This symbol represents the charge physical dimension.</td>
+   </tr>
+   <tr>
+      <td> CMP </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An optional element (which may be repeated many times) which contains a string corresponding to a property of the symbol being defined.</td>
    </tr>
    <tr>
       <td> coefficient </td>
@@ -1223,6 +866,13 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the coth function as described in Abramowitz and Stegun, section 4.5. It takes one argument.</td>
    </tr>
    <tr>
+      <td> Coulomb </td>
+      <td>
+         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
+      </td>
+      <td>This symbol represents the measure of one Coulomb. This is the standard SI measure for charge.</td>
+   </tr>
+   <tr>
       <td> csc </td>
       <td>
          <a href="../cd/Official/transc1.xhtml"> transc1 </a>
@@ -1342,6 +992,13 @@ title: OpenMath Content Dictionaries by name
       <td>The unary function whose value is the subgroup of argument generated by all products of the form xyx^-1y^-1.</td>
    </tr>
    <tr>
+      <td> Description </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element which contains a string corresponding to the description of either the CD or the symbol (depending on which is the enclosing element).</td>
+   </tr>
+   <tr>
       <td> determinant </td>
       <td>
          <a href="../cd/Official/linalg1.xhtml"> linalg1 </a>
@@ -1396,6 +1053,20 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/Official/arith1.xhtml"> arith1 </a>
       </td>
       <td>This symbol represents a (binary) division function denoting the first argument right-divided by the second, i.e. divide(a,b)=a*inverse(b). It is the inverse of the multiplication function defined by the symbol times in this CD.</td>
+   </tr>
+   <tr>
+      <td> DMP </td>
+      <td>
+         <a href="../cd/experimental/polyd.xhtml"> polyd </a>
+      </td>
+      <td>The constructor of DMPs. The first argument is the polynomial ring containing the polynomial and the second is a "SDMP". Should be of the form DMP(PolyRingD(...), SDMP(...))</td>
+   </tr>
+   <tr>
+      <td> DMPL </td>
+      <td>
+         <a href="../cd/experimental/polyd.xhtml"> polyd </a>
+      </td>
+      <td>The constructor for lists of multivariate polynomial members of the same polynomial ring. The first argument is a polynomial ring and the rest are "SDMP"s. DMPL can be attributed with the "ordering" symbol to indicate a particular ordering for monomials of all its polynomials. Should be of the form DMPL(PolyRingD(...), SDMP(...)+)</td>
    </tr>
    <tr>
       <td> domain </td>
@@ -1496,6 +1167,13 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^18$</td>
    </tr>
    <tr>
+      <td> Example </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element which contains an arbitrary number of children, each of which is either a string or an OpenMath Object. These children give examples in natural language, or in OpenMath, of the enclosing symbol definition.</td>
+   </tr>
+   <tr>
       <td> exists </td>
       <td>
          <a href="../cd/Official/quant1.xhtml"> quant1 </a>
@@ -1545,11 +1223,25 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the boolean value false.</td>
    </tr>
    <tr>
+      <td> Faradays_constant </td>
+      <td>
+         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
+      </td>
+      <td>This symbol represents the electric charge carried by one mole of electrons. It is approximately 96485.309 +/- 0.029 Coulombs per mole.</td>
+   </tr>
+   <tr>
       <td> femto </td>
       <td>
          <a href="../cd/experimental/units_siprefix1.xhtml"> units_siprefix1 </a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-15$</td>
+   </tr>
+   <tr>
+      <td> Fibonacci </td>
+      <td>
+         <a href="../cd/experimental/combinat1.xhtml"> combinat1 </a>
+      </td>
+      <td>The Fibonacci numbers, defined by the linear recurrence: Fibonacci(0) = 0, Fibonacci(1) = 1, and Fibonacci(n + 1) = Fibonacci(n) + Fibonacci(n - 1). Note that some authors define Fibonacci(0) = 1.</td>
    </tr>
    <tr>
       <td> first </td>
@@ -1571,6 +1263,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/Official/rounding1.xhtml"> rounding1 </a>
       </td>
       <td>The round down (to -infinity) operation.</td>
+   </tr>
+   <tr>
+      <td> FMP </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An optional element which contains an OpenMath Object. This corresponds to a property of the symbol being defined.</td>
    </tr>
    <tr>
       <td> fn_type </td>
@@ -1643,6 +1342,20 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the binary greater than or equal to function which returns true if the first argument is greater than or equal to the second, it returns false otherwise.</td>
    </tr>
    <tr>
+      <td> GFp </td>
+      <td>
+         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
+      </td>
+      <td>This symbol represents the finite field of integers modulo p, where p is a prime.</td>
+   </tr>
+   <tr>
+      <td> GFpn </td>
+      <td>
+         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
+      </td>
+      <td>This symbol represents the finite field with p^n elements, where p is a prime.</td>
+   </tr>
+   <tr>
       <td> giga </td>
       <td>
          <a href="../cd/experimental/units_siprefix1.xhtml"> units_siprefix1 </a>
@@ -1713,11 +1426,25 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the binary greater than function which returns true if the first argument is greater than the second, it returns false otherwise.</td>
    </tr>
    <tr>
+      <td> H </td>
+      <td>
+         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
+      </td>
+      <td>This symbol represents the set of quaternions.</td>
+   </tr>
+   <tr>
       <td> hecto </td>
       <td>
          <a href="../cd/experimental/units_siprefix1.xhtml"> units_siprefix1 </a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $100$</td>
+   </tr>
+   <tr>
+      <td> Hermitian </td>
+      <td>
+         <a href="../cd/experimental/linalg5.xhtml"> linalg5 </a>
+      </td>
+      <td>This symbol represents a Hermitian matrix, it takes one argument. The argument should be a vector of vectors of values which determine the upper triangle of the matrix. The lower triangle of the matrix is specified by the following relation: M^* = transpose(M), were M^* denotes the matrix consisting of all the complex conjugates of M.</td>
    </tr>
    <tr>
       <td> hour </td>
@@ -1795,6 +1522,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/indnat.xhtml"> indnat </a>
       </td>
       <td>Attribution tag to denote the type of inductively defined natural numbers. It is also denoted as setname1:N.</td>
+   </tr>
+   <tr>
+      <td> IndType </td>
+      <td>
+         <a href="../cd/experimental/icc.xhtml"> icc </a>
+      </td>
+      <td>Constructor for Inductive Types. Takes arguments the constructor functions for the inhabitants of the type and their signatures.</td>
    </tr>
    <tr>
       <td> infinity </td>
@@ -1951,6 +1685,13 @@ title: OpenMath Content Dictionaries by name
       <td>The unary function whose value is true iff the permutation group argument acts transitively.</td>
    </tr>
    <tr>
+      <td> Joule </td>
+      <td>
+         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
+      </td>
+      <td>This symbol represents the measure of one Joule. This is the standard SI measure for energy.</td>
+   </tr>
+   <tr>
       <td> kernel </td>
       <td>
          <a href="../cd/experimental/fns2.xhtml"> fns2 </a>
@@ -1965,11 +1706,32 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $1000$</td>
    </tr>
    <tr>
+      <td> Lambda </td>
+      <td>
+         <a href="../cd/experimental/lc.xhtml"> lc </a>
+      </td>
+      <td>The abstraction constructor. It is followed by a list of variables and an OpenMath object.</td>
+   </tr>
+   <tr>
       <td> lambda </td>
       <td>
          <a href="../cd/Official/fns1.xhtml"> fns1 </a>
       </td>
       <td>This symbol is used to represent anonymous functions as lambda expansions. It is used in a binder that takes two further arguments, the first of which is a list of variables, and the second of which is an expression, and it forms the function which is the lambda extraction of the expression</td>
+   </tr>
+   <tr>
+      <td> Laplacian </td>
+      <td>
+         <a href="../cd/Official/veccalc1.xhtml"> veccalc1 </a>
+      </td>
+      <td>This symbol is used to represent the laplacian function. It takes one argument which should be a vector of scalar valued functions, intended to represent a vector valued function and returns a vector of functions. It should satisfy the defining relation: laplacian(F) = \partial^2(F)/\partial(x_1)^2 + ... + \partial^2(F)/\partial(x_n)^2</td>
+   </tr>
+   <tr>
+      <td> LaTeX_encoding </td>
+      <td>
+         <a href="../cd/Official/altenc.xhtml"> altenc </a>
+      </td>
+      <td>A symbol which heads a piece of LaTeX encoding in an attribution.</td>
    </tr>
    <tr>
       <td> lcm </td>
@@ -2133,6 +1895,13 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents a binary log function; the first argument is the base, to which the second argument is log'ed. It is defined in Abramowitz and Stegun, Handbook of Mathematical Functions, section 4.1</td>
    </tr>
    <tr>
+      <td> Loschmidt_constant </td>
+      <td>
+         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
+      </td>
+      <td>This symbol represents the number of particles per unit volume of an ideal gas at standard temperature and pressure. It is approximately 2.686763 * 10^(25) +/- 2.3 * 10^(20) per metre cubed.</td>
+   </tr>
+   <tr>
       <td> lower-Hessenberg </td>
       <td>
          <a href="../cd/experimental/linalg5.xhtml"> linalg5 </a>
@@ -2180,6 +1949,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/dimensions1.xhtml"> dimensions1 </a>
       </td>
       <td>This symbol represents the mass physical dimension.</td>
+   </tr>
+   <tr>
+      <td> MathML_encoding </td>
+      <td>
+         <a href="../cd/Official/altenc.xhtml"> altenc </a>
+      </td>
+      <td>A symbol which heads a piece of MathML encoding in an attribution. The MathML encoding is an XML encoding, and the details may be found at: http://www.w3.org/Math/Overview.html</td>
    </tr>
    <tr>
       <td> matrix </td>
@@ -2420,6 +2196,27 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the multiset construct. It is either an n-ary function, in which case the multiset entries are given explicitly, or it works on an elements construct. There is no implied ordering to the elements of a multiset.</td>
    </tr>
    <tr>
+      <td> N </td>
+      <td>
+         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
+      </td>
+      <td>This symbol represents the set of natural numbers (including zero).</td>
+   </tr>
+   <tr>
+      <td> Name </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element containing the string corresponding to the name of the symbol being defined. This must match the syntax for symbol names given in the OpenMath Standard. Here and elsewhere white space occurring at the begining or end of the string will be ignored.</td>
+   </tr>
+   <tr>
+      <td> NaN </td>
+      <td>
+         <a href="../cd/Official/nums1.xhtml"> nums1 </a>
+      </td>
+      <td>A symbol to convey the notion of not-a-number. The result of an ill-posed floating computation. See IEEE standard for floating point representations.</td>
+   </tr>
+   <tr>
       <td> nano </td>
       <td>
          <a href="../cd/experimental/units_siprefix1.xhtml"> units_siprefix1 </a>
@@ -2432,6 +2229,20 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/Official/relation1.xhtml"> relation1 </a>
       </td>
       <td>This symbol represents the binary inequality function.</td>
+   </tr>
+   <tr>
+      <td> Newton </td>
+      <td>
+         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
+      </td>
+      <td>This symbol represents the measure of one Newton. This is the standard SI measure for force.</td>
+   </tr>
+   <tr>
+      <td> Newton_per_sqr_metre </td>
+      <td>
+         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
+      </td>
+      <td>This symbol represents the measure of one Newton per square metre. This is another (deprecated in OpenMath) name for the standard SI measure for pressure, the Pascal.</td>
    </tr>
    <tr>
       <td> nil </td>
@@ -2581,6 +2392,55 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the outer product function. It takes two vector arguments and returns a matrix. It is defined as follows: if we write the {i,j}'th element of the matrix to be returned as m_{i,j}, then: m_{i,j}=a_i * b_j where a_i,b_j are the i'th and j'th elements of a, b respectively.</td>
    </tr>
    <tr>
+      <td> P </td>
+      <td>
+         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
+      </td>
+      <td>This symbol represents the set of positive prime numbers.</td>
+   </tr>
+   <tr>
+      <td> Pair </td>
+      <td>
+         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
+      </td>
+      <td>The pairing constructor. It takes two OpenMath objects as first element and second element of the pair, and a third optional OpenMath object that represents the type of the pair.</td>
+   </tr>
+   <tr>
+      <td> Pair </td>
+      <td>
+         <a href="../cd/experimental/sigma.xhtml"> sigma </a>
+      </td>
+      <td>The pairing constructor. It takes two OpenMath objects as first element and second element of the pair, and a third optional OpenMath object that represents the type of this pair.</td>
+   </tr>
+   <tr>
+      <td> PairProj1 </td>
+      <td>
+         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
+      </td>
+      <td>The first projection function that extracts the first component of a Pair. It satisfies the sigma-reduction rule.</td>
+   </tr>
+   <tr>
+      <td> PairProj1 </td>
+      <td>
+         <a href="../cd/experimental/sigma.xhtml"> sigma </a>
+      </td>
+      <td>The first projection function. It satisfies sigma-reduction.</td>
+   </tr>
+   <tr>
+      <td> PairProj2 </td>
+      <td>
+         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
+      </td>
+      <td>The second projection function that extracts the second component of a Pair. It satisfies sigma-reduction rule.</td>
+   </tr>
+   <tr>
+      <td> PairProj2 </td>
+      <td>
+         <a href="../cd/experimental/sigma.xhtml"> sigma </a>
+      </td>
+      <td>The second projection function. It satisfies sigma-reduction.</td>
+   </tr>
+   <tr>
       <td> partial_equivalence </td>
       <td>
          <a href="../cd/experimental/relation0.xhtml">       relation0    </a>
@@ -2600,6 +2460,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/poly.xhtml"> poly </a>
       </td>
       <td>The constructor for a factorization. Its arguments are formal powers (see operator above), where nothing in particular is assumed about the polynomials (they may or may not be irreducible, or relatively prime).</td>
+   </tr>
+   <tr>
+      <td> Pascal </td>
+      <td>
+         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
+      </td>
+      <td>This symbol represents the measure of one Newton per square metre. This is the standard SI measure for pressure.</td>
    </tr>
    <tr>
       <td> permutation </td>
@@ -2665,6 +2532,20 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the measure of one U.S. liquid pint.</td>
    </tr>
    <tr>
+      <td> PiType </td>
+      <td>
+         <a href="../cd/experimental/lc.xhtml"> lc </a>
+      </td>
+      <td>The type constructor of dependant function space. It binds the (type-attributed) variables in the body, that is an OpenMath object.</td>
+   </tr>
+   <tr>
+      <td> Planck_constant </td>
+      <td>
+         <a href="../cd/experimental/physical_consts1.xhtml"> physical_consts1 </a>
+      </td>
+      <td>This symbol represents the fundamental constant equal to the ratio of the energy of a quantum of energy to its frequency. It is approximately equal to 6.6260755*10^(-34) +/- 4.0*10^(-40) Joule seconds.</td>
+   </tr>
+   <tr>
       <td> plus </td>
       <td>
          <a href="../cd/experimental/indnat.xhtml"> indnat </a>
@@ -2700,13 +2581,6 @@ title: OpenMath Content Dictionaries by name
       <td>A constructor for the representation of polynomials. The first argument is the polynomial variable, the rest are monomials (in decreasing order of exponent).</td>
    </tr>
    <tr>
-      <td> poly_ring_SLP </td>
-      <td>
-         <a href="../cd/experimental/polyslp.xhtml"> polyslp </a>
-      </td>
-      <td>The constructor of the polynomial ring. The first argument is a ring, (the ring of the coefficients), the rest are the variables, in any order.</td>
-   </tr>
-   <tr>
       <td> poly_ring_d </td>
       <td>
          <a href="../cd/experimental/polyd.xhtml"> polyd </a>
@@ -2721,18 +2595,18 @@ title: OpenMath Content Dictionaries by name
       <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the remaining arguments are the names of the variables. The first variable given is the most important from the point of view of lexicographic ordering, then the second, and so on.</td>
    </tr>
    <tr>
+      <td> poly_ring_SLP </td>
+      <td>
+         <a href="../cd/experimental/polyslp.xhtml"> polyslp </a>
+      </td>
+      <td>The constructor of the polynomial ring. The first argument is a ring, (the ring of the coefficients), the rest are the variables, in any order.</td>
+   </tr>
+   <tr>
       <td> poly_u_rep </td>
       <td>
          <a href="../cd/experimental/polyu.xhtml"> polyu </a>
       </td>
       <td>A constructor for the representation of polynomials. The first argument is the polynomial variable, the rest are monomials (in decreasing order of exponent).</td>
-   </tr>
-   <tr>
-      <td> polynomial_SLP </td>
-      <td>
-         <a href="../cd/experimental/polyslp.xhtml"> polyslp </a>
-      </td>
-      <td>The constructor of Polynomials built with Straight Line Program representation. The first argument is the polynomial ring containing the polynomial built with poly_ring_SLP, The second argument is the program body built with prog_body.</td>
    </tr>
    <tr>
       <td> polynomial_r </td>
@@ -2761,6 +2635,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/polyu.xhtml"> polyu </a>
       </td>
       <td>The constructor of a univariate polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the variable.</td>
+   </tr>
+   <tr>
+      <td> polynomial_SLP </td>
+      <td>
+         <a href="../cd/experimental/polyslp.xhtml"> polyslp </a>
+      </td>
+      <td>The constructor of Polynomials built with Straight Line Program representation. The first argument is the polynomial ring containing the polynomial built with poly_ring_SLP, The second argument is the program body built with prog_body.</td>
    </tr>
    <tr>
       <td> polynomial_u </td>
@@ -2840,6 +2721,13 @@ title: OpenMath Content Dictionaries by name
       <td>The constructor of the body of the straight line program the arguments represent straight line instructions, as constructed by the following three constructors, op_node, inp_node and const_node, possibly wrapped in the return symbol (from the opnode CD). The order is taken to be the order in which they appear.</td>
    </tr>
    <tr>
+      <td> Prop </td>
+      <td>
+         <a href="../cd/experimental/typesorts.xhtml"> typesorts </a>
+      </td>
+      <td>The type of propositions</td>
+   </tr>
+   <tr>
       <td> prsubset </td>
       <td>
          <a href="../cd/Official/multiset1.xhtml"> multiset1 </a>
@@ -2852,6 +2740,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/Official/set1.xhtml"> set1 </a>
       </td>
       <td>This symbol has two (set) arguments. It is used to denote that the first set is a proper subset of the second, that is a subset of the second set but not actually equal to it.</td>
+   </tr>
+   <tr>
+      <td> Q </td>
+      <td>
+         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
+      </td>
+      <td>This symbol represents the set of rational numbers.</td>
    </tr>
    <tr>
       <td> quotient </td>
@@ -2873,6 +2768,20 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/gp1.xhtml"> gp1 </a>
       </td>
       <td>The binary function whose value is the factor group of the first argument by the second, assuming the second is normal in the first.</td>
+   </tr>
+   <tr>
+      <td> QuotientField </td>
+      <td>
+         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
+      </td>
+      <td>This symbol represents the quotient field of any integral domain.</td>
+   </tr>
+   <tr>
+      <td> R </td>
+      <td>
+         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
+      </td>
+      <td>This symbol represents the set of real numbers.</td>
    </tr>
    <tr>
       <td> range </td>
@@ -3022,6 +2931,13 @@ title: OpenMath Content Dictionaries by name
       <td>The binary function whose value is a set of representatives for the right cosets of the second argument as a subgroup of the first.</td>
    </tr>
    <tr>
+      <td> Role </td>
+      <td>
+         <a href="../cd/experimental/meta.xhtml"> meta </a>
+      </td>
+      <td>An element containing the string corresponding to the role of the symbol being defined.</td>
+   </tr>
+   <tr>
       <td> root </td>
       <td>
          <a href="../cd/Official/arith1.xhtml"> arith1 </a>
@@ -3069,6 +2985,13 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/Official/s_dist1.xhtml"> s_dist1 </a>
       </td>
       <td>This symbol represents a unary function denoting the standard deviation of a distribution. The argument is a univariate function to describe the distribution. The standard deviation of a distribution is the arithmetical mean of the squares of the deviation of the distribution from the mean.</td>
+   </tr>
+   <tr>
+      <td> SDMP </td>
+      <td>
+         <a href="../cd/experimental/polyd.xhtml"> polyd </a>
+      </td>
+      <td>The constructor for multivariate polynomials without any indication of variables or domain for the coefficients. Its arguments are just "term"s. No terms should differ only by the coefficient (i.e it is not permitted to have both "2*x*y" and "x*y" as terms in a SDMP). SDMP can be attributed with the "ordering" symbol to indicate a particular ordering of its terms. This attribute shall not be set if the SDMP is part of DMPL that has this attribute set. If the SDMP is ordered, explicitly or implicitly via an outer ordering, the terms must be in decreasing order with respect to this order. The zero polynomial is represented by an SDMP with no terms.</td>
    </tr>
    <tr>
       <td> sec </td>
@@ -3125,6 +3048,27 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/Official/set1.xhtml"> set1 </a>
       </td>
       <td>This symbol is used to denote the set difference of two sets. It takes two sets as arguments, and denotes the set that contains all the elements that occur in the first set, but not in the second.</td>
+   </tr>
+   <tr>
+      <td> SigmaType </td>
+      <td>
+         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
+      </td>
+      <td>The binder symbol used to construct the type of Cartesian products. The (either plain or attributed) variables might occur in the body \OM\ object.</td>
+   </tr>
+   <tr>
+      <td> SigmaType </td>
+      <td>
+         <a href="../cd/experimental/sigma.xhtml"> sigma </a>
+      </td>
+      <td>The type constructor of cartesian products. It takes a list of type-attributed variables and an OpenMath object.</td>
+   </tr>
+   <tr>
+      <td> Signature </td>
+      <td>
+         <a href="../cd/experimental/metasig.xhtml"> metasig </a>
+      </td>
+      <td>This symbol is used to represent the element of a signature file which specifies the signature of a symbol. It should take two string children, the first should be the symbol who's signature is being specified, the second should be an 'OMOBJ' element which specifies the signature. Additionally the second argument should specify an object which must represent a valid type in the type system identified by the XML attribute 'type' corresponding to the element which corresponds to the symbol 'CDSignatures' enclosing this symbol.</td>
    </tr>
    <tr>
       <td> sin </td>
@@ -3216,6 +3160,20 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/permgrp.xhtml"> permgrp </a>
       </td>
       <td>The first argument is a permutation group, the second is some object (point or set) upon which the first argument acts. The value is the subgroup of the first argument which stabilize the second argument.</td>
+   </tr>
+   <tr>
+      <td> Stirling1 </td>
+      <td>
+         <a href="../cd/experimental/combinat1.xhtml"> combinat1 </a>
+      </td>
+      <td>The Stirling numbers of the first kind. (-1)^(n-m)*Stirling1(n,m) is the number of permutations of n symbols which have exactly m cycles. Note that there are a few slightly different definitions of these numbers.</td>
+   </tr>
+   <tr>
+      <td> Stirling2 </td>
+      <td>
+         <a href="../cd/experimental/combinat1.xhtml"> combinat1 </a>
+      </td>
+      <td>The Stirling numbers of the second kind. Stirling2(n, m) is the number of partitions of a set with n elements into m non empty subsets. Note that there are a few slightly different definitions of these numbers.</td>
    </tr>
    <tr>
       <td> strict_order </td>
@@ -3414,6 +3372,13 @@ title: OpenMath Content Dictionaries by name
       <td>The round to zero operation.</td>
    </tr>
    <tr>
+      <td> Tuple </td>
+      <td>
+         <a href="../cd/experimental/ecc.xhtml"> ecc </a>
+      </td>
+      <td>The n-ary tupling constructor when n&gt;2. The arguments are the element of the tuple. Tuple objects can also be constructed by successive nesting of Pair.</td>
+   </tr>
+   <tr>
       <td> type </td>
       <td>
          <a href="../cd/experimental/cc.xhtml"> cc </a>
@@ -3449,11 +3414,25 @@ title: OpenMath Content Dictionaries by name
       <td>A symbol to be used within an OpenMath attribute to specify the type of the object.</td>
    </tr>
    <tr>
+      <td> Type </td>
+      <td>
+         <a href="../cd/experimental/typesorts.xhtml"> typesorts </a>
+      </td>
+      <td>The cumulative type of the type of sets in a hierarchy of types.</td>
+   </tr>
+   <tr>
       <td> type </td>
       <td>
          <a href="../cd/Official/mathmltypes.xhtml"> mathmltypes </a>
       </td>
       <td>A symbol to be used within an OpenMath attribute to specify the type of the object.</td>
+   </tr>
+   <tr>
+      <td> Type0 </td>
+      <td>
+         <a href="../cd/experimental/typesorts.xhtml"> typesorts </a>
+      </td>
+      <td>The type of sets in a hierarchy of types.</td>
    </tr>
    <tr>
       <td> typecoerce </td>
@@ -3638,6 +3617,13 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the volume physical dimension.</td>
    </tr>
    <tr>
+      <td> Watt </td>
+      <td>
+         <a href="../cd/experimental/units_metric1.xhtml"> units_metric1 </a>
+      </td>
+      <td>This symbol represents the measure of one Watt. This is the standard SI measure for power.</td>
+   </tr>
+   <tr>
       <td> week </td>
       <td>
          <a href="../cd/experimental/units_time1.xhtml"> units_time1 </a>
@@ -3694,6 +3680,13 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^24$</td>
    </tr>
    <tr>
+      <td> Z </td>
+      <td>
+         <a href="../cd/Official/setname1.xhtml"> setname1 </a>
+      </td>
+      <td>This symbol represents the set of integers, positive, negative and zero.</td>
+   </tr>
+   <tr>
       <td> zepto </td>
       <td>
          <a href="../cd/experimental/units_siprefix1.xhtml"> units_siprefix1 </a>
@@ -3743,25 +3736,11 @@ title: OpenMath Content Dictionaries by name
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^21$</td>
    </tr>
    <tr>
-      <td>NumericalValue</td>
+      <td> Zm </td>
       <td>
-         <a href="../cd/experimental/sts.xhtml">sts</a>
+         <a href="../cd/experimental/setname2.xhtml"> setname2 </a>
       </td>
-      <td>Denotes an OpenMath object that is to be thought of as something that represents a numerical value, or a numerical value.</td>
-   </tr>
-   <tr>
-      <td>Object</td>
-      <td>
-         <a href="../cd/experimental/sts.xhtml">sts</a>
-      </td>
-      <td>Denotes any OpenMath object.</td>
-   </tr>
-   <tr>
-      <td>SetNumericalValue</td>
-      <td>
-         <a href="../cd/experimental/sts.xhtml">sts</a>
-      </td>
-      <td>Denotes an OpenMath object that is to be thought of as something that represents a set of numerical values, or a set of numerical values.</td>
+      <td>This symbol represents the set of integers modulo m, where m is not necessarily a prime. It takes one argument, the integer m.</td>
    </tr>
    <tr>
       <td>attribution</td>
@@ -3832,6 +3811,27 @@ title: OpenMath Content Dictionaries by name
          <a href="../cd/experimental/sts.xhtml">sts</a>
       </td>
       <td>Constructs a child of mapsto which denotes an arbitrary number of copies of the argument of nassoc. The operator is associative on these arguments which means that repeated uses may be flattened/unflattened.</td>
+   </tr>
+   <tr>
+      <td>NumericalValue</td>
+      <td>
+         <a href="../cd/experimental/sts.xhtml">sts</a>
+      </td>
+      <td>Denotes an OpenMath object that is to be thought of as something that represents a numerical value, or a numerical value.</td>
+   </tr>
+   <tr>
+      <td>Object</td>
+      <td>
+         <a href="../cd/experimental/sts.xhtml">sts</a>
+      </td>
+      <td>Denotes any OpenMath object.</td>
+   </tr>
+   <tr>
+      <td>SetNumericalValue</td>
+      <td>
+         <a href="../cd/experimental/sts.xhtml">sts</a>
+      </td>
+      <td>Denotes an OpenMath object that is to be thought of as something that represents a set of numerical values, or a set of numerical values.</td>
    </tr>
    <tr>
       <td>structure</td>
