@@ -1,470 +1,471 @@
-<OMOBJ xmlns="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
-  <OMA>
-    <OMS cd="meta" name="CD"/>
-    <OMA>
-      <OMS cd="meta" name="CDName"/>
-      <OMSTR>weylalgebra1</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDURL"/>
-      <OMSTR>http://www.math.kobe-u.ac.jp/OCD/weylalgebra1.tfb</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDReviewDate"/>
-      <OMSTR>2003-08-07</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDStatus"/>
-      <OMSTR>experimental</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDate"/>
-      <OMSTR>2002-08-07, 2003-11-28 revised to 1.1</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDVersion"/>
-      <OMSTR>1</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDRevision"/>
-      <OMSTR>1</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDUses"/>
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
       <OMA>
-        <OMS cd="meta" name="CDName"/>
-        <OMSTR>freealg1</OMSTR>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>weylalgebra1</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="CDName"/>
-        <OMSTR>arith1</OMSTR>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.math.kobe-u.ac.jp/OCD/weylalgebra1.tfb</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="CDName"/>
-        <OMSTR>list1</OMSTR>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2003-08-07</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="CDName"/>
-        <OMSTR>relation1</OMSTR>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="Description"/>
-      <OMSTR>This CD defines elements of the ring of differential operators with coefficients in the polynomial ring.</OMSTR>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>diffop</OMSTR>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>constructor of a differential operator from a polynomial or from an element of the finitely generated free algebra. The inverse of gr.</OMSTR>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2002-08-07, 2003-11-28 revised to 1.1</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="CMP"/>
-        <OMSTR>d/dq q = q d/dq + 1</OMSTR>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>1</OMSTR>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="FMP"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="weylalgebra1" name="diffop"/>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDUses"/>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>freealg1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>arith1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>list1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>relation1</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD defines elements of the ring of differential operators with coefficients in the polynomial ring.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>diffop</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>constructor of a differential operator from a polynomial or from an element of the finitely generated free algebra. The inverse of gr.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>d/dq q = q d/dq + 1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
             <OMA>
-              <OMS cd="freealg1" name="times"/>
-              <OMV name="dq"/>
-              <OMV name="q"/>
-            </OMA>
-            <OMA>
-              <OMS cd="list1" name="list"/>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="q"/>
-              </OMA>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="dq"/>
-              </OMA>
-            </OMA>
-          </OMA>
-          <OMA>
-            <OMS cd="weylalgebra1" name="diffop"/>
-            <OMA>
-              <OMS cd="arith1" name="plus"/>
-              <OMA>
-                <OMS cd="arith1" name="times"/>
-                <OMV name="q"/>
-                <OMV name="dq"/>
-              </OMA>
-              <OMI> 1 </OMI>
-            </OMA>
-            <OMA>
-              <OMS cd="list1" name="list"/>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="q"/>
-              </OMA>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="dq"/>
-              </OMA>
-            </OMA>
-          </OMA>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>gr</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>the symbol polynomial of a given differential operator. The inverse of diffop.</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="CMP"/>
-        <OMSTR>$\gr( q \partial_{q} + 1) = q p + 1 $</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="FMP"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="weylalgebra1" name="gr"/>
-            <OMA>
-              <OMS cd="weylalgebra1" name="diffop"/>
-              <OMA>
-                <OMS cd="arith1" name="plus"/>
-                <OMA>
-                  <OMS cd="arith1" name="times"/>
-                  <OMV name="q"/>
-                  <OMV name="dq"/>
-                </OMA>
-                <OMI> 1 </OMI>
-              </OMA>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMA>
-                  <OMS cd="list1" name="list"/>
-                  <OMV name="q"/>
-                </OMA>
-                <OMA>
-                  <OMS cd="list1" name="list"/>
-                  <OMV name="dq"/>
-                </OMA>
-              </OMA>
-            </OMA>
-            <OMA>
-              <OMS cd="list1" name="list"/>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="dq"/>
-              </OMA>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="p"/>
-              </OMA>
-            </OMA>
-          </OMA>
-          <OMA>
-            <OMS cd="arith1" name="plus"/>
-            <OMA>
-              <OMS cd="arith1" name="times"/>
-              <OMV name="q"/>
-              <OMV name="p"/>
-            </OMA>
-            <OMI> 1 </OMI>
-          </OMA>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>diff</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>Differentiation of a given function in one variable.</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Example"/>
-        <OMSTR>$\frac{d x^2}{dx} = 2 x$</OMSTR>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="weylalgebra1" name="diff"/>
-            <OMA>
-              <OMS cd="arith1" name="power"/>
-              <OMV name="x"/>
-              <OMI> 2 </OMI>
-            </OMA>
-            <OMV name="x"/>
-          </OMA>
-          <OMA>
-            <OMS cd="arith1" name="times"/>
-            <OMI> 2 </OMI>
-            <OMV name="x"/>
-          </OMA>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>partialdiff</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>partial differentiation of a given function.</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="CMP"/>
-        <OMSTR>$\frac{\partial^{2} x^{2} y}{\partial x^{2}} = 2 y $</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="FMP"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="weylalgebra1" name="partialdiff"/>
-            <OMA>
-              <OMS cd="arith1" name="times"/>
-              <OMA>
-                <OMS cd="arith1" name="times"/>
-                <OMV name="x"/>
-                <OMV name="x"/>
-              </OMA>
-              <OMV name="y"/>
-            </OMA>
-            <OMA>
-              <OMS cd="list1" name="list"/>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="x"/>
-                <OMI> 2 </OMI>
-              </OMA>
-            </OMA>
-          </OMA>
-          <OMA>
-            <OMS cd="arith1" name="times"/>
-            <OMI> 2 </OMI>
-            <OMV name="y"/>
-          </OMA>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>times</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>multiplication in D</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="CMP"/>
-        <OMSTR>$\partial_{q} q = \partial{q} q + 1 $</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="FMP"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="weylalgebra1" name="times"/>
-            <OMV name="dq"/>
-            <OMV name="q"/>
-          </OMA>
-          <OMA>
-            <OMS cd="arith1" name="plus"/>
-            <OMA>
-              <OMS cd="weylalgebra1" name="times"/>
-              <OMV name="q"/>
-              <OMV name="dq"/>
-            </OMA>
-            <OMI> 1 </OMI>
-          </OMA>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>act</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>action of a differential operator to a function.</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="CMP"/>
-        <OMSTR>$ x^{m} \partial_{x}^{n} \partial_{y}^{r} \cdot f = x^{m} \frac{partial^{n+r} f}{\partial x^{n} \partial y^{r}} $</OMSTR>
-      </OMA>
-      <OMA>
-        <OMS cd="meta" name="FMP"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="weylalgebra1" name="act"/>
-            <OMA>
-              <OMS cd="weylalgebra1" name="diffop"/>
-              <OMA>
-                <OMS cd="arith1" name="times"/>
-                <OMA>
-                  <OMS cd="arith1" name="times"/>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="weylalgebra1" name="diffop"/>
                   <OMA>
-                    <OMS cd="arith1" name="power"/>
-                    <OMV name="x"/>
-                    <OMV name="m"/>
+                     <OMS cd="freealg1" name="times"/>
+                     <OMV name="dq"/>
+                     <OMV name="q"/>
                   </OMA>
                   <OMA>
-                    <OMS cd="arith1" name="power"/>
-                    <OMV name="dx"/>
-                    <OMV name="n"/>
+                     <OMS cd="list1" name="list"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="q"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="dq"/>
+                     </OMA>
                   </OMA>
-                </OMA>
-                <OMA>
-                  <OMS cd="arith1" name="power"/>
-                  <OMV name="dy"/>
-                  <OMV name="r"/>
-                </OMA>
-              </OMA>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMA>
-                  <OMS cd="list1" name="list"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="weylalgebra1" name="diffop"/>
+                  <OMA>
+                     <OMS cd="arith1" name="plus"/>
+                     <OMA>
+                        <OMS cd="arith1" name="times"/>
+                        <OMV name="q"/>
+                        <OMV name="dq"/>
+                     </OMA>
+                     <OMI> 1 </OMI>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="list1" name="list"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="q"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="dq"/>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>gr</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>the symbol polynomial of a given differential operator. The inverse of diffop.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>$\gr( q \partial_{q} + 1) = q p + 1 $</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="weylalgebra1" name="gr"/>
+                  <OMA>
+                     <OMS cd="weylalgebra1" name="diffop"/>
+                     <OMA>
+                        <OMS cd="arith1" name="plus"/>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMV name="q"/>
+                           <OMV name="dq"/>
+                        </OMA>
+                        <OMI> 1 </OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMA>
+                           <OMS cd="list1" name="list"/>
+                           <OMV name="q"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="list1" name="list"/>
+                           <OMV name="dq"/>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="list1" name="list"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="dq"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="p"/>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="plus"/>
+                  <OMA>
+                     <OMS cd="arith1" name="times"/>
+                     <OMV name="q"/>
+                     <OMV name="p"/>
+                  </OMA>
+                  <OMI> 1 </OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>diff</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Differentiation of a given function in one variable.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>$\frac{d x^2}{dx} = 2 x$</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="weylalgebra1" name="diff"/>
+                  <OMA>
+                     <OMS cd="arith1" name="power"/>
+                     <OMV name="x"/>
+                     <OMI> 2 </OMI>
+                  </OMA>
                   <OMV name="x"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMI> 2 </OMI>
+                  <OMV name="x"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>partialdiff</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>partial differentiation of a given function.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>$\frac{\partial^{2} x^{2} y}{\partial x^{2}} = 2 y $</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="weylalgebra1" name="partialdiff"/>
+                  <OMA>
+                     <OMS cd="arith1" name="times"/>
+                     <OMA>
+                        <OMS cd="arith1" name="times"/>
+                        <OMV name="x"/>
+                        <OMV name="x"/>
+                     </OMA>
+                     <OMV name="y"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="list1" name="list"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="x"/>
+                        <OMI> 2 </OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMI> 2 </OMI>
                   <OMV name="y"/>
-                </OMA>
-                <OMA>
-                  <OMS cd="list1" name="list"/>
-                  <OMV name="dx"/>
-                  <OMV name="dy"/>
-                </OMA>
-              </OMA>
+               </OMA>
             </OMA>
-            <OMV name="f"/>
-          </OMA>
-          <OMA>
-            <OMS cd="arith1" name="times"/>
-            <OMA>
-              <OMS cd="arith1" name="power"/>
-              <OMV name="x"/>
-              <OMV name="m"/>
-            </OMA>
-            <OMA>
-              <OMS cd="weylalgebra1" name="partialdiff"/>
-              <OMV name="f"/>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMA>
-                  <OMS cd="list1" name="list"/>
-                  <OMV name="x"/>
-                  <OMV name="n"/>
-                </OMA>
-                <OMA>
-                  <OMS cd="list1" name="list"/>
-                  <OMV name="y"/>
-                  <OMV name="r"/>
-                </OMA>
-              </OMA>
-            </OMA>
-          </OMA>
-        </OMA>
-      </OMA>
-    </OMA>
-    <OMA>
-      <OMS cd="meta" name="CDDefinition"/>
-      <OMA>
-        <OMS cd="meta" name="Name"/>
-        <OMSTR>act_of_poly</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="Description"/>
-        <OMSTR>action of a polynomial as a differential operator to a function. act_of_poly is equivalent to the composition of act and diffop.</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>times</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>multiplication in D</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>$\partial_{q} q = \partial{q} q + 1 $</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="weylalgebra1" name="times"/>
+                  <OMV name="dq"/>
+                  <OMV name="q"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="plus"/>
+                  <OMA>
+                     <OMS cd="weylalgebra1" name="times"/>
+                     <OMV name="q"/>
+                     <OMV name="dq"/>
+                  </OMA>
+                  <OMI> 1 </OMI>
+               </OMA>
+            </OMA>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="CMP"/>
-        <OMSTR>$ x^{m} \partial_{x}^{n} \partial_{y}^{r} \cdot f = x^{m} \frac{partial^{n+r} f}{\partial x^{n} \partial y^{r}} $</OMSTR>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>act</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>action of a differential operator to a function.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>$ x^{m} \partial_{x}^{n} \partial_{y}^{r} \cdot f = x^{m} \frac{partial^{n+r} f}{\partial x^{n} \partial y^{r}} $</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="weylalgebra1" name="act"/>
+                  <OMA>
+                     <OMS cd="weylalgebra1" name="diffop"/>
+                     <OMA>
+                        <OMS cd="arith1" name="times"/>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMA>
+                              <OMS cd="arith1" name="power"/>
+                              <OMV name="x"/>
+                              <OMV name="m"/>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="arith1" name="power"/>
+                              <OMV name="dx"/>
+                              <OMV name="n"/>
+                           </OMA>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="power"/>
+                           <OMV name="dy"/>
+                           <OMV name="r"/>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMA>
+                           <OMS cd="list1" name="list"/>
+                           <OMV name="x"/>
+                           <OMV name="y"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="list1" name="list"/>
+                           <OMV name="dx"/>
+                           <OMV name="dy"/>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+                  <OMV name="f"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMA>
+                     <OMS cd="arith1" name="power"/>
+                     <OMV name="x"/>
+                     <OMV name="m"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="weylalgebra1" name="partialdiff"/>
+                     <OMV name="f"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMA>
+                           <OMS cd="list1" name="list"/>
+                           <OMV name="x"/>
+                           <OMV name="n"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="list1" name="list"/>
+                           <OMV name="y"/>
+                           <OMV name="r"/>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
       </OMA>
       <OMA>
-        <OMS cd="meta" name="FMP"/>
-        <OMA>
-          <OMS cd="relation1" name="eq"/>
-          <OMA>
-            <OMS cd="weylalgebra" name="act_of_poly"/>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>act_of_poly</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>action of a polynomial as a differential operator to a function. act_of_poly is equivalent to the composition of act and diffop.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>$ x^{m} \partial_{x}^{n} \partial_{y}^{r} \cdot f = x^{m} \frac{partial^{n+r} f}{\partial x^{n} \partial y^{r}} $</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
             <OMA>
-              <OMS cd="arith1" name="times"/>
-              <OMA>
-                <OMS cd="arith1" name="times"/>
-                <OMA>
-                  <OMS cd="arith1" name="power"/>
-                  <OMV name="x"/>
-                  <OMV name="m"/>
-                </OMA>
-                <OMA>
-                  <OMS cd="arith1" name="power"/>
-                  <OMV name="dx"/>
-                  <OMV name="n"/>
-                </OMA>
-              </OMA>
-              <OMA>
-                <OMS cd="arith1" name="power"/>
-                <OMV name="dy"/>
-                <OMV name="r"/>
-              </OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="weylalgebra" name="act_of_poly"/>
+                  <OMA>
+                     <OMS cd="arith1" name="times"/>
+                     <OMA>
+                        <OMS cd="arith1" name="times"/>
+                        <OMA>
+                           <OMS cd="arith1" name="power"/>
+                           <OMV name="x"/>
+                           <OMV name="m"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="power"/>
+                           <OMV name="dx"/>
+                           <OMV name="n"/>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="arith1" name="power"/>
+                        <OMV name="dy"/>
+                        <OMV name="r"/>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="list1" name="list"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="x"/>
+                        <OMV name="y"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMV name="dx"/>
+                        <OMV name="dy"/>
+                     </OMA>
+                  </OMA>
+                  <OMV name="f"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMA>
+                     <OMS cd="arith1" name="power"/>
+                     <OMV name="x"/>
+                     <OMV name="m"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="weylalgebra" name="partialdiff"/>
+                     <OMV name="f"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMA>
+                           <OMS cd="list1" name="list"/>
+                           <OMV name="x"/>
+                           <OMV name="n"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="list1" name="list"/>
+                           <OMV name="y"/>
+                           <OMV name="r"/>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
             </OMA>
-            <OMA>
-              <OMS cd="list1" name="list"/>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="x"/>
-                <OMV name="y"/>
-              </OMA>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMV name="dx"/>
-                <OMV name="dy"/>
-              </OMA>
-            </OMA>
-            <OMV name="f"/>
-          </OMA>
-          <OMA>
-            <OMS cd="arith1" name="times"/>
-            <OMA>
-              <OMS cd="arith1" name="power"/>
-              <OMV name="x"/>
-              <OMV name="m"/>
-            </OMA>
-            <OMA>
-              <OMS cd="weylalgebra" name="partialdiff"/>
-              <OMV name="f"/>
-              <OMA>
-                <OMS cd="list1" name="list"/>
-                <OMA>
-                  <OMS cd="list1" name="list"/>
-                  <OMV name="x"/>
-                  <OMV name="n"/>
-                </OMA>
-                <OMA>
-                  <OMS cd="list1" name="list"/>
-                  <OMV name="y"/>
-                  <OMV name="r"/>
-                </OMA>
-              </OMA>
-            </OMA>
-          </OMA>
-        </OMA>
+         </OMA>
       </OMA>
-    </OMA>
-  </OMA>
+   </OMA>
 </OMOBJ>

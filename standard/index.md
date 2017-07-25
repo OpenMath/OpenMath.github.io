@@ -5,12 +5,17 @@ title: The OpenMath Standards
 
 ## OpenMath Standard
 
-The current edition of the OpenMath Standard is [OpenMath Version 2.0](om20-2004-06-30).
+The Normative version of the OpenMath Standard is<br/>
+[OpenMath Version 2.0 Revision 1](om20-2017-07-22).
 
-An [Editor's draft of a first revision of OpenMath 2.0](om20-editors-draft) is also available.
+An [Editor's draft of possible revisions of OpenMath 2.0](om20-editors-draft) is also available.
 
 
-Older versions: [OpenMath Version 1.0](om10) and [OpenMath Version 1.1](om11).
+### Older versions:
+[OpenMath Version 2.0](om20-2004-06-30),
+[OpenMath Version 1.1](om11),
+[OpenMath Version 1.0](om10)
+
 
 
 ## Symbolic Computation Software Composability Protocol (SCSCP)

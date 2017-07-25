@@ -1,0 +1,878 @@
+<script xmlns="http://www.w3.org/1999/xhtml"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>poly1p</title>
+      <link rel="stylesheet" href="omcd.css" type="text/css"/>
+   </head>
+   <body>
+      <a name="top"/>
+      <h1>OpenMath Content Dictionary: poly1p</h1>
+      <dl>
+         <dt>
+            <span class="dt">Canonical URL:</span>
+         </dt>
+         <dd>
+            <a href="http://www.math.kobe-u.ac.jp/OCD/poly1p.tfb">http://www.math.kobe-u.ac.jp/OCD/poly1p.tfb</a>
+         </dd>
+         <dt>
+            <span class="dt">CD File:</span>
+         </dt>
+         <dd>
+            <a href="poly1p.ocd">poly1p.ocd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">CD as XML Encoded OpenMath:</span>
+         </dt>
+         <dd>
+            <a href="poly1p.omcd">poly1p.omcd
+      </a>
+         </dd>
+         <dt>
+            <span class="dt">Defines:</span>
+         </dt>
+         <dd>
+            <a href="#index">index</a>, <a href="#indexed_variable">indexed_variable</a>, <a href="#multi_power">multi_power</a>, <a href="#sorted_set_of_indexed_variables">sorted_set_of_indexed_variables</a>, <a href="#vector_of_indexed_variables">vector_of_indexed_variables</a>
+         </dd>
+         <dt>
+            <span class="dt">Date:</span>
+         </dt>
+         <dd> 2002-08-08 </dd>
+         <dt>
+            <span class="dt">Version:</span>
+         </dt>
+         <dd> 1 </dd>
+         <dt>
+            <span class="dt">Review Date:</span>
+         </dt>
+         <dd> 2003-08-08 </dd>
+         <dt>
+            <span class="dt">Status:</span>
+         </dt>
+         <dd> experimental </dd>
+         <dt>
+            <span class="dt">Uses CD:</span>
+         </dt>
+         <dd>
+            <a href="linalg1p.html">linalg1p</a>, <a href="poly1p.html">poly1p</a>, <a href="set1p.html">set1p</a>, <a href="logic1p.html">logic1p</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/interval1.html">interval1</a>, <a href="../../../cd/linalg1.html">linalg1</a>, <a href="../../../cd/linalg4.html">linalg4</a>, <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/set1.html">set1</a>
+         </dd>
+      </dl>
+      <hr/>
+
+
+
+
+
+
+
+
+
+      <p> 
+This CD defines symbols for concerning multi-index and indexed variables.
+</p>
+
+
+      <hr/>
+      <h2>
+         <a name="multi_power"> multi_power </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  multi_power is for using the multi-index notation.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd>  $\prod_{i=1}^n x_i ^ {e_i}$  </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e87xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e87xml')">OpenMath XML (source)</button>
+               <pre id="d40e87xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="poly1p" name="multi_power"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMV name="e"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="product"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+        &lt;OMI&gt; 1 &lt;/OMI&gt;
+        &lt;OMA&gt;&lt;OMS cd="linalg4" name="size"/&gt;
+          &lt;OMV name="x"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="i"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+            &lt;OMV name="i"/&gt;
+            &lt;OMV name="x"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+            &lt;OMV name="i"/&gt;
+            &lt;OMV name="e"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e87cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e87cmml')">Strict Content MathML</button>
+               <pre id="d40e87cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="poly1p"&gt;multi_power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;e&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;product&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+    &lt;cn&gt;1&lt;/cn&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;e&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e87prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e87pref')">Prefix</button>
+            <div id="d40e87pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/poly1p.html#multi_power">multi_power</a>
+  ( <i>x</i>,  <i>e</i>)
+, <a href="../../../cd/arith1.html#product">product</a>
+  (<a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  ( 1 , <a href="../../../cd/linalg4.html#size">size</a>
+  ( <i>x</i>)
+)
+, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+           <i>i</i>
+        ] .
+  (<a href="../../../cd/arith1.html#power">power</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>x</i>)
+, <a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( <i>i</i>,  <i>e</i>)
+)
+)
+)
+)
+
+</div>
+            <div>
+               <button id="d40e87popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e87pop')">Popcorn</button>
+               <div id="d40e87pop" style="display:none; margin-top: 0.5em">
+  poly1p.multi_power($x, $e) = arith1.product(interval1.integer_interval(1, linalg4.size($x)), fns1.lambda[$i -&gt; linalg1.vector_selector($i, $x) ^ linalg1.vector_selector($i, $e)])
+</div>
+            </div>
+            <div>
+               <button id="d40e87mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e87mml')">Rendered Presentation MathML</button>
+               <div id="d40e87mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>multi_power</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>e</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <munderover>
+                           <mo>&#8719;</mo>
+                           <mrow>
+                              <mrow>
+                                 <mi>i</mi>
+                              </mrow>
+                              <mo>=</mo>
+                              <mn> 1 </mn>
+                           </mrow>
+                           <mrow>
+                              <mi>size</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>x</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </munderover>
+                        <msup>
+                           <msub>
+                              <mi>x</mi>
+                              <mi>i</mi>
+                           </msub>
+                           <msub>
+                              <mi>e</mi>
+                              <mi>i</mi>
+                           </msub>
+                        </msup>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/poly1p.html#multi_power">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#index">index</a>]
+	  
+	    [Last: <a href="#sorted_set_of_indexed_variables">sorted_set_of_indexed_variables</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="index"> index </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  index returns the index of a given indexed variable.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/poly1p.html#index">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#indexed_variable">indexed_variable</a>]
+	  
+	    [Previous: <a href="#multi_power">multi_power</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+
+      <hr/>
+      <h2>
+         <a name="indexed_variable"> indexed_variable </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  indexed_variable(x,i) returns the variable x_i
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> index(indexed_variable(x,i)) = i </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e174xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e174xml')">OpenMath XML (source)</button>
+               <pre id="d40e174xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS name="index"/&gt;
+      &lt;OMA&gt;&lt;OMS name="indexed_variable"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMV name="i"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMV name="i"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e174cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e174cmml')">Strict Content MathML</button>
+               <pre id="d40e174cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd=""&gt;index&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd=""&gt;indexed_variable&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;i&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e174prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e174pref')">Prefix</button>
+            <div id="d40e174pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/.html#index">index</a>
+  (<a href="../../../cd/.html#indexed_variable">indexed_variable</a>
+  ( <i>x</i>,  <i>i</i>)
+)
+,  <i>i</i>)
+
+</div>
+            <div>
+               <button id="d40e174popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e174pop')">Popcorn</button>
+               <div id="d40e174pop" style="display:none; margin-top: 0.5em">
+  .index(.indexed_variable($x, $i)) = $i
+</div>
+            </div>
+            <div>
+               <button id="d40e174mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e174mml')">Rendered Presentation MathML</button>
+               <div id="d40e174mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>index</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>indexed_variable</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>,</mo>
+                                    <mi>i</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mi>i</mi>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> index(indexed_variable(x,[1,2])) = [1,2] </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e202xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e202xml')">OpenMath XML (source)</button>
+               <pre id="d40e202xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS name="index"/&gt;
+      &lt;OMA&gt;&lt;OMS name="indexed_variable"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+          &lt;OMI&gt; 1 &lt;/OMI&gt;
+          &lt;OMI&gt; 2 &lt;/OMI&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e202cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e202cmml')">Strict Content MathML</button>
+               <pre id="d40e202cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd=""&gt;index&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd=""&gt;indexed_variable&lt;/csymbol&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e202prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e202pref')">Prefix</button>
+            <div id="d40e202pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/.html#index">index</a>
+  (<a href="../../../cd/.html#indexed_variable">indexed_variable</a>
+  ( <i>x</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( 1 ,  2 )
+)
+)
+, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( 1 ,  2 )
+)
+
+</div>
+            <div>
+               <button id="d40e202popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e202pop')">Popcorn</button>
+               <div id="d40e202pop" style="display:none; margin-top: 0.5em">
+  .index(.indexed_variable($x, linalg2.vector(1, 2))) = linalg2.vector(1, 2)
+</div>
+            </div>
+            <div>
+               <button id="d40e202mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e202mml')">Rendered Presentation MathML</button>
+               <div id="d40e202mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>index</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mrow>
+                                 <mi>indexed_variable</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 1 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 2 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mo>(</mo>
+                           <mn> 1 </mn>
+                           <mo separator="true">,</mo>
+                           <mn> 2 </mn>
+                           <mo>)</mo>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/poly1p.html#indexed_variable">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#vector_of_indexed_variables">vector_of_indexed_variables</a>]
+	  
+	    [Previous: <a href="#index">index</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="vector_of_indexed_variables"> vector_of_indexed_variables </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  vector_of_indexed_variables(x,n) returns the vector of variables
+  (x_1, ..., x_n).
+  vector_of_indexed_variables(x,[m,n]) returns the vector of variables
+  (x_{1,1}, ..., x_{m,n}).
+  Any vector of numbers can be given as an argument.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> i-th element of vector_of_indexed_variable(x,n)  is
+      indexed_variable(x,i)
+</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e254xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e254xml')">OpenMath XML (source)</button>
+               <pre id="d40e254xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+      &lt;OMV name="i"/&gt;
+      &lt;OMA&gt;&lt;OMS name="vector_of_indexed_variables"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMV name="n"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS name="indexed_variable"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMV name="i"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e254cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e254cmml')">Strict Content MathML</button>
+               <pre id="d40e254cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;
+   &lt;ci&gt;i&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd=""&gt;vector_of_indexed_variables&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd=""&gt;indexed_variable&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e254prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e254pref')">Prefix</button>
+            <div id="d40e254pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( <i>i</i>, <a href="../../../cd/.html#vector_of_indexed_variables">vector_of_indexed_variables</a>
+  ( <i>x</i>,  <i>n</i>)
+)
+, <a href="../../../cd/.html#indexed_variable">indexed_variable</a>
+  ( <i>x</i>,  <i>i</i>)
+)
+
+</div>
+            <div>
+               <button id="d40e254popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e254pop')">Popcorn</button>
+               <div id="d40e254pop" style="display:none; margin-top: 0.5em">
+  linalg1.vector_selector($i, .vector_of_indexed_variables($x, $n)) = .indexed_variable($x, $i)
+</div>
+            </div>
+            <div>
+               <button id="d40e254mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e254mml')">Rendered Presentation MathML</button>
+               <div id="d40e254mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <msub>
+                           <mrow>
+                              <mi>vector_of_indexed_variables</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>x</mi>
+                                 <mo>,</mo>
+                                 <mi>n</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                           <mi>i</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mrow>
+                           <mi>indexed_variable</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>i</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/poly1p.html#vector_of_indexed_variables">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [Next: <a href="#sorted_set_of_indexed_variables">sorted_set_of_indexed_variables</a>]
+	  
+	    [Previous: <a href="#indexed_variable">indexed_variable</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+      <hr/>
+      <h2>
+         <a name="sorted_set_of_indexed_variables"> sorted_set_of_indexed_variables </a>
+      </h2>
+      <dl>
+         <dt>
+            <span class="dt">Description:</span>
+         </dt>
+         <dd>
+            <p>
+  sorted_set_of_indexed_variables(x,s) returns the vector of variables
+  indexed by the sorted set s.
+</p>
+         </dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Commented Mathematical property (CMP):</span>
+         </dt>
+         <dd> m-element of sorted_set_of_indexed_variables(x,s)  is
+      indexed_variable(x,m)
+</dd>
+      </dl>
+      <dl>
+         <dt>
+            <span class="dt">Formal Mathematical property (FMP):</span>
+         </dt>
+         <dd>
+            <div>
+               <button id="d40e298xmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e298xml')">OpenMath XML (source)</button>
+               <pre id="d40e298xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="set1p" name="index_set_selector"/&gt;
+      &lt;OMV name="m"/&gt;
+      &lt;OMA&gt;&lt;OMS name="sorted_set_of_indexed_variables"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMV name="s"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS name="indexed_variable"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMV name="m"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+            </div>
+            <div>
+               <button id="d40e298cmmla" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e298cmml')">Strict Content MathML</button>
+               <pre id="d40e298cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1p"&gt;index_set_selector&lt;/csymbol&gt;
+   &lt;ci&gt;m&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd=""&gt;sorted_set_of_indexed_variables&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;s&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd=""&gt;indexed_variable&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+            </div>
+            <button id="d40e298prefa" style="width:20em; background-color:#CCCCCC"
+                    onclick="divfold('d40e298pref')">Prefix</button>
+            <div id="d40e298pref" style="display:none; margin-top: 0.5em">
+               <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/set1p.html#index_set_selector">index_set_selector</a>
+  ( <i>m</i>, <a href="../../../cd/.html#sorted_set_of_indexed_variables">sorted_set_of_indexed_variables</a>
+  ( <i>x</i>,  <i>s</i>)
+)
+, <a href="../../../cd/.html#indexed_variable">indexed_variable</a>
+  ( <i>x</i>,  <i>m</i>)
+)
+
+</div>
+            <div>
+               <button id="d40e298popa" style="width:20em; background-color:#CCCCCC"
+                       onclick="divfold('d40e298pop')">Popcorn</button>
+               <div id="d40e298pop" style="display:none; margin-top: 0.5em">
+  set1p.index_set_selector($m, .sorted_set_of_indexed_variables($x, $s)) = .indexed_variable($x, $m)
+</div>
+            </div>
+            <div>
+               <button id="d40e298mmla" style="width:20em; background-color:#AAFFAA"
+                       onclick="divfold('d40e298mml')">Rendered Presentation MathML</button>
+               <div id="d40e298mml" style="display:block; margin-top: 0.5em">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                     <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                        <mrow>
+                           <mi>index_set_selector</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>m</mi>
+                              <mo>,</mo>
+                              <mrow>
+                                 <mi>sorted_set_of_indexed_variables</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>,</mo>
+                                    <mi>s</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                        <mo>=</mo>
+                        <mrow>
+                           <mi>indexed_variable</mi>
+                           <mo>&#8289;</mo>
+                           <mrow>
+                              <mo>(</mo>
+                              <mi>x</mi>
+                              <mo>,</mo>
+                              <mi>m</mi>
+                              <mo>)</mo>
+                           </mrow>
+                        </mrow>
+                     </mrow>
+                  </math>
+               </div>
+            </div>
+
+         </dd>
+      </dl>
+
+      <dl>
+         <dt>
+            <span class="dt">Signatures:</span>
+         </dt>
+         <dd>
+            <a href="../../sts/poly1p.html#sorted_set_of_indexed_variables">
+	sts
+      </a>
+         </dd>
+      </dl>
+      <p/>
+      <hr/>
+      <table width="100%">
+         <tr>
+            <td align="right">
+               <font size="-1">
+	    [First: <a href="#multi_power">multi_power</a>]
+	  
+	    [Previous: <a href="#vector_of_indexed_variables">vector_of_indexed_variables</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+            </td>
+         </tr>
+      </table>
+
+
+   </body>
+</html>
