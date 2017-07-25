@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  FAQ: Frequently Asked Questions about OpenMath CDs
+title:  FAQ -  Frequently Asked Questions about OpenMath CDs
 ---
 Sometimes when you write an `OMOBJ` element, you come across something that you don't know how to express, even if you know the mathematics involved. One reason can of course be that we don't have symbols for that yet, but another reason can be that they're named something other than what you're looking for. This FAQ page intends to solve that.
 
