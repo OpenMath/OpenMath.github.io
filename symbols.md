@@ -5,72 +5,6 @@
    </tr>
    <tr>
       <td>
-         <a href="cd/semigroup.html#associative">semigroup/<br/>associative</a>
-      </td>
-      <td>The type of associative binary operation.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/semigroup.html#make_Semigroup">semigroup/<br/>make_Semigroup</a>
-      </td>
-      <td>The contructor for the tuples consisting of a setoid, and an associative binary operation.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/setoid.html#make_Setoid">setoid/<br/>make_Setoid</a>
-      </td>
-      <td>The contructor for the tuples consisting of a set, an equivalence relation on the set, and a proof that the relation is actually an equivalence relation.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/semigroup.html#Semigroup">semigroup/<br/>Semigroup</a>
-      </td>
-      <td>The contructor for the type of semigroups as a Setoid with a binary operation.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/setoid.html#Setoid">setoid/<br/>Setoid</a>
-      </td>
-      <td>The contructor for the type of set with an equivalence relation on it.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/hypergeon0.html#minus_part">hypergeon0/<br/>minus_part</a>
-      </td>
-      <td>The argument is a vector. It replaces positive elements in the vector to zero and negative elements to their absolute values.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/linalg1p.html#minus_part">linalg1p/<br/>minus_part</a>
-      </td>
-      <td>The argument is a vector. It replaces positive elements in the vector to zero and negative elements to their absolute values.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/hypergeon0.html#plus_part">hypergeon0/<br/>plus_part</a>
-      </td>
-      <td>The argument is a vector. It replaces negative elements in the vector to zero.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/linalg1p.html#plus_part">linalg1p/<br/>plus_part</a>
-      </td>
-      <td>The argument is a vector. It replaces negative elements in the vector to zero.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/hypergeon0.html#where">hypergeon0/<br/>where</a>
-      </td>
-      <td>The word "where" is often used in mathematical expressions to set variables or to say side conditions. CDname logic1.implies can be used for these purposes, but "where" will be more intuitive and more friendly expression for authors.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/logic1p.html#where">logic1p/<br/>where</a>
-      </td>
-      <td>The word "where" is often used in mathematical expressions to set variables or to say side conditions. CDname logic1.implies can be used for these purposes, but "where" will be more intuitive and more friendly expression for formula book writers.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="cd/setname2.html#A">setname2/<br/>A</a>
       </td>
       <td>This symbol represents the set of algebraic numbers.</td>
@@ -92,6 +26,12 @@
          <a href="cd/algebraic_cats.html#Abelian_group">algebraic_cats/<br/>Abelian_group</a>
       </td>
       <td>This symbol is the constructor for Abelian groups, that is a group such that the operation is commutative between members of the group. The Abelian_group constructor takes four arguments, the set of the Abelian group, a binary function taking two elements of the set into itself to represent the operation of the Abelian group, an element of the set to represent the identity of the Abelian group and a unary function taking the set into itself to specify inverse elements.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#Abelian_group">generic_alg_cats/<br/>Abelian_group</a>
+      </td>
+      <td>This Symbol represents the generic category of Abelian group.</td>
    </tr>
    <tr>
       <td>
@@ -125,6 +65,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/generic_alg_cats.html#Abelian_monoid">generic_alg_cats/<br/>Abelian_monoid</a>
+      </td>
+      <td>This Symbol represents the generic category of Abelian monoid.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/algebraic_cats.html#Abelian_monoid_identity">algebraic_cats/<br/>Abelian_monoid_identity</a>
       </td>
       <td>This symbol takes one argument which should be an Abelian monoid, it returns the identity of the Abelian monoid.</td>
@@ -146,6 +92,12 @@
          <a href="cd/algebraic_cats.html#Abelian_semigroup">algebraic_cats/<br/>Abelian_semigroup</a>
       </td>
       <td>This symbol is the constructor for an Abelian semigroup, that is a semigroup which has an operator which is commutative over the set of the semigroup. The Abelian semigroup constructor takes two arguments, the set of the Abelian semigroup and a binary function which represents the operation of the Abelian semigroup.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#Abelian_semigroup">generic_alg_cats/<br/>Abelian_semigroup</a>
+      </td>
+      <td>This Symbol represents the generic category of Abelian semigroup.</td>
    </tr>
    <tr>
       <td>
@@ -287,6 +239,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_BaseQuantities.html#amount-of-substance">SI_BaseQuantities/<br/>amount-of-substance</a>
+      </td>
+      <td>This symbol represents the SI base quantity of amount of substance. It has the short symbol form, "N".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#amp">units_metric1/<br/>amp</a>
       </td>
       <td>This symbol represents the measure of one amp. This is the standard SI measure for current.</td>
@@ -296,12 +254,24 @@
          <a href="cd/units_metric1.html#amp">units_metric1/<br/>amp</a>
       </td>
       <td>This symbol represents the measure of one amp. This is the standard SI measure for current.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_BaseUnits1.html#ampere">SI_BaseUnits1/<br/>ampere</a>
+      </td>
+      <td>This symbol represents the measure of one ampere, the standard SI unit of measure for quantities of electric current. It has the short symbol form, "A", in upright roman font.</td>
    </tr>
    <tr>
       <td>
          <a href="cd/logic1.html#and">logic1/<br/>and</a>
       </td>
       <td>This symbol represents the logical and function which is an n-ary function taking boolean arguments and returning a boolean value. It is true if all arguments are true or false otherwise.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_DerivedQuantities1.html#angle">SI_DerivedQuantities1/<br/>angle</a>
+      </td>
+      <td>This symbol represents the quantity of a geometric planar angle. A variable representing an arbitrary quantity of angle is commonly represented with the italic, lower case greek variable, e.g., "\theta;".</td>
    </tr>
    <tr>
       <td>
@@ -527,6 +497,24 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/permutation1.html#are_distinct">permutation1/<br/>are_distinct</a>
+      </td>
+      <td>This symbol is an n-ary boolean function. When applied to a_1, ..., a_n, it is true if and only if the arguments are mutually distinct (that is, a_i and a_j are equal only if i=j).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo2.html#are_on_line">ThreeDgeo2/<br/>are_on_line</a>
+      </td>
+      <td>The symbol is a boolean n-ary function. Its arguments should be points. When applied to a sequence of points in 3-dimensional Euclidean space, its evaluated to true if and only if there is a line on which all arguments lie.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo2.html#are_on_plane">ThreeDgeo2/<br/>are_on_plane</a>
+      </td>
+      <td>The symbol is a boolean n-ary function. Its arguments should be points. When applied to a sequence of points in 3-dimensional Euclidean space, its evaluated to true if and only if there is a plane on which all arguments lie.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/dimensions1.html#area">dimensions1/<br/>area</a>
       </td>
       <td>This symbol represents the area physical dimension.</td>
@@ -536,6 +524,12 @@
          <a href="cd/dimensions1.html#area">dimensions1/<br/>area</a>
       </td>
       <td>This symbol represents the area physical dimension.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_DerivedQuantities1.html#area">SI_DerivedQuantities1/<br/>area</a>
+      </td>
+      <td>This symbol represents the physical quantity of area.</td>
    </tr>
    <tr>
       <td>
@@ -548,6 +542,12 @@
          <a href="cd/ThreeDgeo3.html#assertion">ThreeDgeo3/<br/>assertion</a>
       </td>
       <td>The symbol is a constructor with two arguments. Its first argument is a 3-dimensional Euclidean geometry configuration, its second argument a statement about the configuration, called thesis. When applied to a configuration C and a thesis T, the OpenMath object assertion(C,T) expresses the assertion that T holds in C.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/semigroup.html#associative">semigroup/<br/>associative</a>
+      </td>
+      <td>The type of associative binary operation.</td>
    </tr>
    <tr>
       <td>
@@ -578,6 +578,12 @@
          <a href="cd/units_siprefix1.html#atto">units_siprefix1/<br/>atto</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-18$</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/sts.html#attribution">sts/<br/>attribution</a>
+      </td>
+      <td>An `attribution' object consists of pairs of keys and values. The use of the symbol `attribution' in a signature indicates that the symbol is to be used as a key.</td>
    </tr>
    <tr>
       <td>
@@ -614,6 +620,18 @@
          <a href="cd/nums1.html#based_integer">nums1/<br/>based_integer</a>
       </td>
       <td>This symbol represents the constructor function for integers, specifying the base. It takes two arguments, the first is a positive integer to denote the base to which the number is represented, the second argument is a string which contains an optional sign and the digits of the integer, using 0-9a-z (as a consequence of this no radix greater than 35 is supported). Base 16 and base 10 are already covered in the encodings of integers.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/tensor1.html#basis_selector">tensor1/<br/>basis_selector</a>
+      </td>
+      <td>This symbol takes 2 arguments, a tuple of basis elements and a covar_index or a contra_index, and returns the basis element indicated by the index value.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#becquerel">SI_NamedDerivedUnits1/<br/>becquerel</a>
+      </td>
+      <td>This symbol represents an SI unit of radio nuclide activity, or radioactivity. A becquerel of activity represents one nuclear decay event per second. It has the short symbol form, "Bq".</td>
    </tr>
    <tr>
       <td>
@@ -677,9 +695,21 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/sts.html#binder">sts/<br/>binder</a>
+      </td>
+      <td>An `OMBIND' object has three parts: a "binder" such as "lambda" or "for all", a (list of) bound variables, and an expression. The use of `binder' in a signature indicates that we are describing something which can only be used as the first child of an OMBIND construct.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/combinat1.html#binomial">combinat1/<br/>binomial</a>
       </td>
       <td>The binomial coefficients. binomial(n, m) is the number of ways of choosing m objects from a collection of n distinct objects without regard to the order.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#Boltzmann-constant">FundamentalPhysicalConstants1/<br/>Boltzmann-constant</a>
+      </td>
+      <td>The Boltzmann constant relates energy at the particle level with temperature observed at the bulk level via the ideal gas law, pV = NkT. By measurement it is found to be approximately equal to 1.3806504(24)*10^(-23) joule per kelvin. It is commonly represented with the short, italic symbol, "k".</td>
    </tr>
    <tr>
       <td>
@@ -743,9 +773,21 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_BaseUnits1.html#candela">SI_BaseUnits1/<br/>candela</a>
+      </td>
+      <td>This symbol represents the measure of one candela, the standard SI unit measure for quantities of luminous intensity. It has the short symbol form, "cd", in upright roman font.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/SI_DerivedQuantities1.html#capacitance">SI_DerivedQuantities1/<br/>capacitance</a>
       </td>
       <td>This symbol represents the physical quantity of electric capacitance. A variable representing an arbitrary quantity of capacitance is commonly represented with the italic, upper case letter, "C".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/tensor1.html#Cartesian">tensor1/<br/>Cartesian</a>
+      </td>
+      <td>This symbol takes one argument, a natural number, and returns the Cartesian coordinate, of a right handed Cartesian coordinate frame, corresponding to the value of the argument. These coordinates are commonly named X, Y, and Z in three dimensions, though X, Y, and Z are non-exclusively used for this and other purposes.</td>
    </tr>
    <tr>
       <td>
@@ -1007,6 +1049,18 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/ThreeDgeo1.html#circle">ThreeDgeo1/<br/>circle</a>
+      </td>
+      <td>The symbol is used to indicate a circle in 3-dimensional Euclidean geometry by a variable. The circle may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo2.html#circle_center">ThreeDgeo2/<br/>circle_center</a>
+      </td>
+      <td>The statement that a circle in 3-dimensional Euclidean space has a given point as center. Takes the circle as first argument and the point as second argument.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/intpath1.html#circle_with_starting_point">intpath1/<br/>circle_with_starting_point</a>
       </td>
       <td>The symbol circle_with_starting_point(c,r,z0) is the circle in the Riemann sphere of which center is c and the radius is r. The direction of the circle is the counter clockwise and the staring point is z0.</td>
@@ -1199,6 +1253,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/tensor1.html#contra_index">tensor1/<br/>contra_index</a>
+      </td>
+      <td>This symbol takes a natural number as its argument and returns a contravariant index.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/poly.html#convert">poly/<br/>convert</a>
       </td>
       <td>Conversion between polynomial rings. The first argument is a polynomial and the second is a polynomial ring. This represents the conversion of the given polynomial as an element of the given ring. A program that can compute the conversion is required to return a polynomial in the given ring.</td>
@@ -1235,9 +1295,27 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#coulomb">SI_NamedDerivedUnits1/<br/>coulomb</a>
+      </td>
+      <td>This symbol represents an SI unit of electric charge. It has the short symbol form, "C".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#Coulomb">units_metric1/<br/>Coulomb</a>
       </td>
       <td>This symbol represents the measure of one Coulomb. This is the standard SI measure for charge.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#Coulomb-constant">FundamentalPhysicalConstants1/<br/>Coulomb-constant</a>
+      </td>
+      <td>The value of the Coulomb constant is implied by international definitions of the speed of light and the vacuum permeability. By definition, its exact value is equal to (299,792,458)^2 * 10^-7 N m^2 C^-2. It is commonly represented with the short, italic symbol, "k" subscripted with the upright letter "e".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/tensor1.html#covar_index">tensor1/<br/>covar_index</a>
+      </td>
+      <td>This symbol takes a natural number as its argument and returns a covariant index.</td>
    </tr>
    <tr>
       <td>
@@ -1271,6 +1349,24 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_BaseQuantities.html#current">SI_BaseQuantities/<br/>current</a>
+      </td>
+      <td>This symbol represents the SI base quantity of electrical current. It has the short symbol form, "I".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/permutation1.html#cycle">permutation1/<br/>cycle</a>
+      </td>
+      <td>This symbol is an n-ary function, with n at least 1. It marks a relation on the set of its arguments a_1, a_2,...,a_n consisting of the pairs (a_i,a_{i+1}) for i=1,...,n-1 and the pair (a_n,a_1). The arguments a_i should all be distinct. The number n is referred to as the length of the cycle.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/permutation1.html#cycle_type">permutation1/<br/>cycle_type</a>
+      </td>
+      <td>This symbol is a function with one argument, which is a permutation. When applied to a permutation P, it represents the multiset of lengths of cycles occurring as arguments of P.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/SIUsed_OffSystemMeasuredUnits1.html#dalton">SIUsed_OffSystemMeasuredUnits1/<br/>dalton</a>
       </td>
       <td>This symbol represents the measure of one dalton of mass. It has the short symbol form, "Da". The dalton is one-twelth the mass of an atom of Carbon-12 at rest and in its ground state. Its measured value is 1 Da = 1.660538782(83) * 10^–27 kg [CODATA 2006]</td>
@@ -1280,6 +1376,12 @@
          <a href="cd/units_time1.html#day">units_time1/<br/>day</a>
       </td>
       <td>This symbol represents the measure of one day of time. The definitions below ignore the possibilities of "leap seconds".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SIUsed_OffSystemUnits1.html#day">SIUsed_OffSystemUnits1/<br/>day</a>
+      </td>
+      <td>This symbol represents the measure of one day of time. It has the short symbol form, "d".</td>
    </tr>
    <tr>
       <td>
@@ -1328,6 +1430,18 @@
          <a href="cd/poly.html#degree">poly/<br/>degree</a>
       </td>
       <td>The total degree of its argument. The value returned is a non-negative integer. We note that the degree of 0 is undefined. Note that this operation takes no account of any weights that have been defined: see weighted_degree in polyd.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#degree-Celsius">SI_NamedDerivedUnits1/<br/>degree-Celsius</a>
+      </td>
+      <td>This symbol represents an SI unit of Celsius temperature. It has the short symbol form, "ºC".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SIUsed_OffSystemUnits1.html#degree-of-arc">SIUsed_OffSystemUnits1/<br/>degree-of-arc</a>
+      </td>
+      <td>This symbol represents the angular measure of one degree of arc. It has the short symbol form of the degree symbol, a superscript circle, Unicode: U+00B0 or HTML: °.</td>
    </tr>
    <tr>
       <td>
@@ -1487,6 +1601,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/ThreeDgeo3.html#discovery">ThreeDgeo3/<br/>discovery</a>
+      </td>
+      <td>The symbol is used to describe the task of finding necessary conditions for some properties to hold in a geometric configuration in 3-dimensional Euclidean geometry. The symbol takes a configuration as the first argument and the properties for which necessary conditions are to be sought as further arguments.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/aggregate_cats.html#discreteSetType">aggregate_cats/<br/>discreteSetType</a>
       </td>
       <td>This symbol represents the type of discrete sets.</td>
@@ -1508,6 +1628,12 @@
          <a href="cd/dimensions1.html#displacement">dimensions1/<br/>displacement</a>
       </td>
       <td>This symbol represents the spatial difference between two points. The direction of the displacement is taken into account as well as the distance between the points.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo3.html#distance">ThreeDgeo3/<br/>distance</a>
+      </td>
+      <td>The distance between two affine points in 3-dimensional Euclidean space is the Euclidean distance. The distance between two geometric objects O and O' in 3-dimensional Euclidean space is the infimum of the distances between two affine points, one on O and one on O'.</td>
    </tr>
    <tr>
       <td>
@@ -1607,6 +1733,18 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/multiset1.html#emptyset">multiset1/<br/>emptyset</a>
+      </td>
+      <td>This symbol is used to represent the empty multiset, that is the multiset which contains no members. It takes no parameters.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/set1.html#emptyset">set1/<br/>emptyset</a>
+      </td>
+      <td>This symbol is used to represent the empty set, that is the set which contains no members. It takes no parameters.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/moreerrors.html#encodingError">moreerrors/<br/>encodingError</a>
       </td>
       <td>This symbol represents the error which is returned when an application detects a lexical or syntactic error. It should have one argument which is a string, which should explain the error that occurred.</td>
@@ -1667,9 +1805,21 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/sts.html#error">sts/<br/>error</a>
+      </td>
+      <td>The error symbol is the 'return type' of error symbols in the error signature file.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/algebraic_cats.html#Euclidean_domain">algebraic_cats/<br/>Euclidean_domain</a>
       </td>
       <td>This symbol is the constructor for Euclidean domains. A Euclidean domain is a ring on which there is no zero divisors together with an integer norm function. The Euclidean_domain constructor takes six arguments: The set of the Euclidean domain. A binary function into itself to represent the multiplication operation, *. A binary function into itself to represent the addition operation, +. A member of the set of the Euclidean domain to specify the additive identity, 0. A unary function taking the set of the Euclidean domain into itself to represent the additive inverses (i.e. inverses under +, or negatives). And a unary function taking elements of the set into the positive integers, to represent the integer norm function.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#Euclidean_domain">generic_alg_cats/<br/>Euclidean_domain</a>
+      </td>
+      <td>This Symbol represents the generic category of Euclidean domain.</td>
    </tr>
    <tr>
       <td>
@@ -1781,6 +1931,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/integer1.html#factorof">integer1/<br/>factorof</a>
+      </td>
+      <td>This is the binary OpenMath operator that is used to indicate the mathematical relationship a "is a factor of" b, where a is the first argument and b is the second. This relationship is true if and only if b mod a = 0.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/hypergeon1.html#falling_factorial">hypergeon1/<br/>falling_factorial</a>
       </td>
       <td>falling_factorial(n,i) is equal to n*(n-1)* ... *(n-i+1).</td>
@@ -1796,6 +1952,12 @@
          <a href="cd/logic1.html#false">logic1/<br/>false</a>
       </td>
       <td>This symbol represents the boolean value false.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#farad">SI_NamedDerivedUnits1/<br/>farad</a>
+      </td>
+      <td>This symbol represents an SI unit of electric capacitance. It has the short symbol form, "F".</td>
    </tr>
    <tr>
       <td>
@@ -1826,6 +1988,12 @@
          <a href="cd/algebraic_cats.html#field">algebraic_cats/<br/>field</a>
       </td>
       <td>This symbol is the constructor for fields. A field is an Abelian group under +, the set of the field complement {0} with * is an Abelian group, a field has a further rule which associates the two operations, that is left and right distributivity. The field constructor takes seven arguments: The set of the field. A binary function into itself to represent the multiplication operation, *. A binary function into itself to represent the addition operation, +. A member of the set of the field to specify the multiplicative identity, 1. A member of the set of the field to specify the additive identity, 0. A unary function taking the set of the field into itself to represent the multiplicative inverses (i.e. inverses under *). A unary function taking the set of the field into itself to represent the additive inverses (i.e. inverses under +, or negatives).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#field">generic_alg_cats/<br/>field</a>
+      </td>
+      <td>This Symbol represents the generic category of field.</td>
    </tr>
    <tr>
       <td>
@@ -2075,6 +2243,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#gram">SI_NamedDerivedUnits1/<br/>gram</a>
+      </td>
+      <td>This symbol represents one gram. This unit is implied by the incorporation of the prefix "kilo" in the base unit standard, kilogram. Since SI prefixes may not, by SI standard, be presented by prepending to "kilogram", the gram is introduced for the application of prefixes. By itself, gram should not appear in SI compliant presentation. It has the short symbol form, "g".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#gramme">units_metric1/<br/>gramme</a>
       </td>
       <td>This symbol represents the measure of one gramme. This is not quite the standard SI measure for mass, which is the kilogramme, but OpenMath chooses to regard the gramme as standard, otherwise one would have to call it the milli-kilogramme.</td>
@@ -2084,12 +2258,24 @@
          <a href="cd/units_metric1.html#gramme">units_metric1/<br/>gramme</a>
       </td>
       <td>This symbol represents the measure of one gramme. This is not quite the standard SI measure for mass, which is the kilogramme, but OpenMath chooses to regard the gramme as standard, otherwise one would have to call it the milli-kilogramme.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#gravitational-constant">FundamentalPhysicalConstants1/<br/>gravitational-constant</a>
+      </td>
+      <td>This symbol represents the constant of proportionality in Newton's law of universal gravitation. By measurement it is found to be approximately equal to 6.6742(10)*10^-11 newton metre^2 per kilogram^2. It is commonly represented with the short, italic symbol, "G".</td>
    </tr>
    <tr>
       <td>
          <a href="cd/physical_consts1.html#gravitational_constant">physical_consts1/<br/>gravitational_constant</a>
       </td>
       <td>This symbol represents the constant of proportionality in Newtons law of universal gravitation which states; Two bodies attract each other with equal and opposite forces; the magnitude of this force is proportional to the product of the two masses and is also proportional to the inverse square of the distance between the centers of mass of the two bodies. It is approximately equal to: 6.672*10^(-11) Newton square metres per kilogramme squared.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#gray">SI_NamedDerivedUnits1/<br/>gray</a>
+      </td>
+      <td>This symbol represents an SI unit of absorbed dose of ionizing, radiation. A gray of absorbed dose represents one joule of energy absorbed per kilogram of mass. It has the short symbol form, "Gy".</td>
    </tr>
    <tr>
       <td>
@@ -2114,6 +2300,12 @@
          <a href="cd/algebraic_cats.html#group">algebraic_cats/<br/>group</a>
       </td>
       <td>This symbol is the constructor for groups, that is a monoid for which every element is invertible. The group constructor takes four arguments, the set of the group, a binary function taking two elements of the set into itself to represent the operation of the group, an element of the set to represent the identity of the group and a unary function taking the set into itself to specify inverse elements of the group.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#group">generic_alg_cats/<br/>group</a>
+      </td>
+      <td>This Symbol represents the generic category of group.</td>
    </tr>
    <tr>
       <td>
@@ -2144,6 +2336,12 @@
          <a href="cd/algebraic_cats.html#groupoid">algebraic_cats/<br/>groupoid</a>
       </td>
       <td>This symbol is the constructor for groupoids, that is an algebraic structure on a set, with a binary operation. The operator of the groupoid must be closed over the set of the groupoid. The groupoid constructor takes two arguments, the set of the groupoid and a binary function which represents the operation of the groupoid.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#groupoid">generic_alg_cats/<br/>groupoid</a>
+      </td>
+      <td>This Symbol represents the generic category of groupoid.</td>
    </tr>
    <tr>
       <td>
@@ -2213,15 +2411,33 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#henry">SI_NamedDerivedUnits1/<br/>henry</a>
+      </td>
+      <td>This symbol represents an SI unit of electrical inductance. It has the short symbol form, "H".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/linalg5.html#Hermitian">linalg5/<br/>Hermitian</a>
       </td>
       <td>This symbol represents a Hermitian matrix, it takes one argument. The argument should be a vector of vectors of values which determine the upper triangle of the matrix. The lower triangle of the matrix is specified by the following relation: M^* = transpose(M), were M^* denotes the matrix consisting of all the complex conjugates of M.</td>
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#hertz">SI_NamedDerivedUnits1/<br/>hertz</a>
+      </td>
+      <td>This symbol represents an SI unit of frequency. It has the short symbol form, "Hz".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_time1.html#hour">units_time1/<br/>hour</a>
       </td>
       <td>This symbol represents the measure of one hour of time.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SIUsed_OffSystemUnits1.html#hour">SIUsed_OffSystemUnits1/<br/>hour</a>
+      </td>
+      <td>This symbol represents the measure of one hour of time. It has the short symbol form, "h".</td>
    </tr>
    <tr>
       <td>
@@ -2441,6 +2657,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/generic_alg_cats.html#integral_domain">generic_alg_cats/<br/>integral_domain</a>
+      </td>
+      <td>This Symbol represents the generic category of integral domain.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/algebraic_cats.html#integral_domain_negative">algebraic_cats/<br/>integral_domain_negative</a>
       </td>
       <td>This symbol takes one argument which should be an integral domain. It returns a unary function which represents the additive inverse function of the integral domain.</td>
@@ -2567,9 +2789,21 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/ThreeDgeo2.html#is_midpoint">ThreeDgeo2/<br/>is_midpoint</a>
+      </td>
+      <td>The statement that one point is the midpoint of two others.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/gp1.html#is_normal">gp1/<br/>is_normal</a>
       </td>
       <td>If G, H are the group arguments, then IsNormal(G,H) returns true precisely when G is normal in H. That is, g^-1*h*g is defined and contained in H for all h in H and g in G.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/permutation1.html#is_perm">permutation1/<br/>is_perm</a>
+      </td>
+      <td>This symbol is a boolean function with one argument. If the argument is not a set of cycles of length at least 2, the boolean value is false. Otherwise it is true if and only if the cycles are disjoint (that is, all entries of all cycles in the argument are mutually distinct.</td>
    </tr>
    <tr>
       <td>
@@ -2609,9 +2843,27 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#joule">SI_NamedDerivedUnits1/<br/>joule</a>
+      </td>
+      <td>This symbol represents an SI unit of energy. It has the short symbol form, "J".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#Joule">units_metric1/<br/>Joule</a>
       </td>
       <td>This symbol represents the measure of one Joule. This is the standard SI measure for energy.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#katal">SI_NamedDerivedUnits1/<br/>katal</a>
+      </td>
+      <td>This symbol represents an SI unit of equivalent dose of catalytic activity. A katal of catalytic activity represents the amount of catalyst to effect one mole of catalytic conversion per second. It has the short symbol form, "kat".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_BaseUnits1.html#kelvin">SI_BaseUnits1/<br/>kelvin</a>
+      </td>
+      <td>This symbol represents the measure of one kelvin, the standard SI unit of measure for quantities of thermodynamic temperature. It has the short symbol form, "K", in upright roman font.</td>
    </tr>
    <tr>
       <td>
@@ -2648,6 +2900,24 @@
          <a href="cd/units_siprefix1.html#kilo">units_siprefix1/<br/>kilo</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $1000$</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_BaseUnits1.html#kilogram">SI_BaseUnits1/<br/>kilogram</a>
+      </td>
+      <td>This symbol represents the measure of one kilogram of mass, the standard SI unit of measure for quantities of mass. It has the short symbol form, "kg", in upright roman font.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_functions1.html#kind">SI_functions1/<br/>kind</a>
+      </td>
+      <td>The symbol to represent the function to return the kind of a quantity. The value of this function is referred to, but not defined in the SI. Its value, kind(Q) for a given quantity, Q, is left to the user to assign.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/tensor1.html#Kronecker_tensor">tensor1/<br/>Kronecker_tensor</a>
+      </td>
+      <td>This symbol represents the Kronecker tensor or Kronecker delta.</td>
    </tr>
    <tr>
       <td>
@@ -2777,9 +3047,27 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/permutation1.html#length">permutation1/<br/>length</a>
+      </td>
+      <td>This symbol is a function with one argument, which must be a cycle. When applied to cycle(a_1,a_2,...,a_n), it returns the number n. This number is referred to as the length of the cycle.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_BaseQuantities.html#length">SI_BaseQuantities/<br/>length</a>
+      </td>
+      <td>This symbol represents the SI base quantity of length. It has the short symbol form, "L".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/relation1.html#leq">relation1/<br/>leq</a>
       </td>
       <td>This symbol represents the binary less than or equal to function which returns true if the first argument is less than or equal to the second, it returns false otherwise.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/tensor1.html#Levi-Civita">tensor1/<br/>Levi-Civita</a>
+      </td>
+      <td>This symbol represents the Levi-Civita alternating pseudo-tensor or permutation symbol. It's definition depends on the number of dimensions, d, of the space: it has as many indexes as there are dimensions in the space. It is totally antisymmetric, its value being: 1 for an even permutation of unequally valued indexes (e.g., (1,2,...,d)); -1 for an odd permutation of unequally valued indexes, and; 0 whenever two indexes take the same value.</td>
    </tr>
    <tr>
       <td>
@@ -2831,6 +3119,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/ThreeDgeo2.html#line_parallel">ThreeDgeo2/<br/>line_parallel</a>
+      </td>
+      <td>The symbol represents a binary boolean function with input two lines or segments. Its value is true whenever the first argument is parallel to the second.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/equations1.html#linear">equations1/<br/>linear</a>
       </td>
       <td>A predicate to indicate that an equation or system of equations is linear, i.e. is expressed in terms of constants and first order terms.</td>
@@ -2864,6 +3158,24 @@
          <a href="cd/mathmltypes.html#list_type">mathmltypes/<br/>list_type</a>
       </td>
       <td>A symbol to be used as the argument of the type symbol to convey the type for a list.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/permutation1.html#listperm">permutation1/<br/>listperm</a>
+      </td>
+      <td>This symbol is a function with one argument which is a permutation whose support consists of positive integers. When applied to such a permutation P, it represents the list of length n whose i-th entry is the image of i under P. Here n is at least the maximum of the support of P.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/rdf.html#literal_lang">rdf/<br/>literal_lang</a>
+      </td>
+      <td>A symbol to be used within an OpenMath attribute to specify the language of an RDF literal. The annotation value should be an OpenMath string.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/rdf.html#literal_type">rdf/<br/>literal_type</a>
+      </td>
+      <td>A symbol to be used within an OpenMath attribute to specify the type of an RDF literal which is represented as an OpenMath object. The annotation value should be an rdf.resource.</td>
    </tr>
    <tr>
       <td>
@@ -2909,6 +3221,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/ThreeDgeo3.html#locus">ThreeDgeo3/<br/>locus</a>
+      </td>
+      <td>The symbol is used to indicate by a variable the locus set traced by a point T in a 3-dimensional Euclidean geometry configuration C. That is, the set of all points satisfying the conditions imposed on T in the configuration C. The locus may (but need not) be defined by constraints on the point T additional to those in the configuration. The symbol takes the variable as the first argument, the tracer point T as second argument and the additional constraints as further arguments.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/transc3.html#log">transc3/<br/>log</a>
       </td>
       <td>This symbol represents a binary log function; the first argument is the base, to which the second argument is log'ed. It is defined in Abramowitz and Stegun, Handbook of Mathematical Functions, section 4.1</td>
@@ -2945,9 +3263,27 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#lumen">SI_NamedDerivedUnits1/<br/>lumen</a>
+      </td>
+      <td>This symbol represents an SI unit of luminous flux. It has the short symbol form, "lm".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/SI_DerivedQuantities1.html#luminous-flux">SI_DerivedQuantities1/<br/>luminous-flux</a>
       </td>
       <td>This symbol represents the physical quantity of luminous flux. A variable representing an arbitrary quantity of luminous flux is commonly represented with the italic, upper case letter, "Φv" (\phi; sub V).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_BaseQuantities.html#luminous-intensity">SI_BaseQuantities/<br/>luminous-intensity</a>
+      </td>
+      <td>This symbol represents the SI base quantity of luminous intensity. It has the short symbol form, "J".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#lux">SI_NamedDerivedUnits1/<br/>lux</a>
+      </td>
+      <td>This symbol represents an SI unit of illuminance. It has the short symbol form, "lx".</td>
    </tr>
    <tr>
       <td>
@@ -2969,9 +3305,27 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/semigroup.html#make_Semigroup">semigroup/<br/>make_Semigroup</a>
+      </td>
+      <td>The contructor for the tuples consisting of a setoid, and an associative binary operation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/setoid.html#make_Setoid">setoid/<br/>make_Setoid</a>
+      </td>
+      <td>The contructor for the tuples consisting of a set, an equivalence relation on the set, and a proof that the relation is actually an equivalence relation.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/list1.html#map">list1/<br/>map</a>
       </td>
       <td>This symbol represents a mapping function which may be used to construct lists, it takes as arguments a function from X to Y and a list over X in that order. The value that is returned is a list of values in Y. The argument list may be a set or an integer_interval.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/set1.html#map">set1/<br/>map</a>
+      </td>
+      <td>This symbol represents a mapping function which may be used to construct sets, it takes as arguments a function from X to Y and a set over X in that order. The value that is returned is a set of values in Y. The argument list may be a set or an integer_interval.</td>
    </tr>
    <tr>
       <td>
@@ -2987,6 +3341,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/sts.html#mapsto">sts/<br/>mapsto</a>
+      </td>
+      <td>This symbol represents the construction of a function type. The first n-1 children denote the types of the arguments, the last denotes the return type.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/dimensions1.html#mass">dimensions1/<br/>mass</a>
       </td>
       <td>This symbol represents the mass physical dimension.</td>
@@ -2996,6 +3356,12 @@
          <a href="cd/dimensions1.html#mass">dimensions1/<br/>mass</a>
       </td>
       <td>This symbol represents the mass physical dimension.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_BaseQuantities.html#mass">SI_BaseQuantities/<br/>mass</a>
+      </td>
+      <td>This symbol represents the SI base quantity of mass. It has the short symbol form, "M".</td>
    </tr>
    <tr>
       <td>
@@ -3101,6 +3467,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_BaseUnits1.html#metre">SI_BaseUnits1/<br/>metre</a>
+      </td>
+      <td>This symbol represents the measure of one metre of length, the standard SI unit of measure for quantities of length or physical distance. It has the short symbol form, "m", in upright roman font.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#metre">units_metric1/<br/>metre</a>
       </td>
       <td>This symbol represents the measure of one metre. This is the standard SI unit measure for physical distance.</td>
@@ -3143,6 +3515,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/tensor1.html#metric_tensor">tensor1/<br/>metric_tensor</a>
+      </td>
+      <td>This symbol represents the metric tensor, typically depicted using a lower case g. The metric tensor is a nondegenerate, symmetric bilinear form. It defines the ideas of leng th and angle in a metric space, the most common example being the Euclidean metric. The square of a differential length, ds*ds, is given by the bilinear product of the coordinate differentials, dx^i, with the metric tensor.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_siprefix1.html#micro">units_siprefix1/<br/>micro</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-6$</td>
@@ -3152,6 +3530,12 @@
          <a href="cd/units_siprefix1.html#micro">units_siprefix1/<br/>micro</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-6$</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo1.html#midpoint">ThreeDgeo1/<br/>midpoint</a>
+      </td>
+      <td>The symbol is used to indicate the midpoint of a segment in 3-dimensional Euclidean geometry by a variable. The symbol takes the variable as the first argument and the segment as second argument.</td>
    </tr>
    <tr>
       <td>
@@ -3227,6 +3611,18 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/hypergeon0.html#minus_part">hypergeon0/<br/>minus_part</a>
+      </td>
+      <td>The argument is a vector. It replaces positive elements in the vector to zero and negative elements to their absolute values.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/linalg1p.html#minus_part">linalg1p/<br/>minus_part</a>
+      </td>
+      <td>The argument is a vector. It replaces positive elements in the vector to zero and negative elements to their absolute values.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_time1.html#minute">units_time1/<br/>minute</a>
       </td>
       <td>This symbol represents the measure of one minute of time.</td>
@@ -3269,6 +3665,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_BaseUnits1.html#mole">SI_BaseUnits1/<br/>mole</a>
+      </td>
+      <td>This symbol represents the measure of one mole, the standard SI unit measure for quantities of amount of substance. It has the short symbol form, "mol", in upright roman font.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/s_data1.html#moment">s_data1/<br/>moment</a>
       </td>
       <td>This symbol is used to denote the i'th moment of a set of data. The first argument should be the degree of the moment (that is, for the i'th moment the first argument should be i), the second argument should be the point about which the moment is being taken and the rest of the arguments are treated as the data. For n data values x_1, x_2, ..., x_n the i'th moment about c is (1/n) ((x_1-c)^i + (x_2-c)^i + ... + (x_n-c)^i). See CRC Standard Mathematical Tables and Formulae, editor: Dan Zwillinger, CRC Press Inc., 1996, section 7.7.1.</td>
@@ -3278,6 +3680,12 @@
          <a href="cd/s_dist1.html#moment">s_dist1/<br/>moment</a>
       </td>
       <td>This symbol represents a ternary function to denote the i'th moment of a distribution. The first argument should be the degree of the moment (that is, for the i'th moment the first argument should be i), the second argument is the value about which the moment is to be taken and the third argument is a univariate function to describe the distribution. That is, if f is the function which describe the distribution. The i'th moment of f about a is the integral of (x-a)^i*f(x) with respect to x, over the interval (-infinity,infinity).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_DerivedQuantities1.html#moment-of-force">SI_DerivedQuantities1/<br/>moment-of-force</a>
+      </td>
+      <td>This symbol represents the physical quantity of force.</td>
    </tr>
    <tr>
       <td>
@@ -3302,6 +3710,12 @@
          <a href="cd/algebraic_cats.html#monoid">algebraic_cats/<br/>monoid</a>
       </td>
       <td>This is the constructor for monoids. A monoid comprises a set and an operation over elements of the set. The set must contain a unique identity element (relative to the operation). That is an element, I, such that I*a=a*I=a where a represents an arbitrary element of S and * represents the operation. The operation * must be associative over S. The monoid constructor takes three arguments, the set of the monoid, a binary function taking two elements of the set into itself to represent the operation of the monoid and an element of the set to represent the identity of the monoid.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#monoid">generic_alg_cats/<br/>monoid</a>
+      </td>
+      <td>This Symbol represents the generic category of monoid.</td>
    </tr>
    <tr>
       <td>
@@ -3395,6 +3809,18 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/sts.html#nary">sts/<br/>nary</a>
+      </td>
+      <td>Constructs a child of mapsto which denotes an arbitrary number of copies of the argument of nary.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/sts.html#nassoc">sts/<br/>nassoc</a>
+      </td>
+      <td>Constructs a child of mapsto which denotes an arbitrary number of copies of the argument of nassoc. The operator is associative on these arguments which means that repeated uses may be flattened/unflattened.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/SIUsed_OffSystemUnits1.html#neper">SIUsed_OffSystemUnits1/<br/>neper</a>
       </td>
       <td>This symbol represents the dimensionless measure of one neper, the natural unit for representing logarithms of ratios of field amplitudes, such as voltage or pressure. It has the short symbol form, "Np".</td>
@@ -3410,6 +3836,12 @@
          <a href="cd/units_metric1.html#Newton">units_metric1/<br/>Newton</a>
       </td>
       <td>This symbol represents the measure of one Newton. This is the standard SI measure for force.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#newton">SI_NamedDerivedUnits1/<br/>newton</a>
+      </td>
+      <td>This symbol represents an SI unit of force. It has the short symbol form, "N".</td>
    </tr>
    <tr>
       <td>
@@ -3446,6 +3878,12 @@
          <a href="cd/algebraic_cats.html#non_commutative_ring">algebraic_cats/<br/>non_commutative_ring</a>
       </td>
       <td>This symbol is the constructor for non commutative rings, these are rings over which the * operator is not commutative. the non_commutative_ring constructor takes five arguments: The set of the non-commutative ring. A binary function into itself to represent the multiplication operation, *. A binary function into itself to represent the addition operation, +. A member of the set of the non-commutative ring to specify the additive identity, 0. And a unary function taking the set of the non-commutative ring into itself to represent the additive inverses of the non-commutative ring (i.e. inverses under +, or negatives).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#non_commutative_ring">generic_alg_cats/<br/>non_commutative_ring</a>
+      </td>
+      <td>This Symbol represents the generic category of non-commutative ring.</td>
    </tr>
    <tr>
       <td>
@@ -3500,6 +3938,12 @@
          <a href="cd/linalg6.html#nonZeroRowSparseMatrix01">linalg6/<br/>nonZeroRowSparseMatrix01</a>
       </td>
       <td>This symbol may be used to represent matrices which have no zero rows, and for which every row is in Z_2 efficiently. The first argument is the number of columns in the matrix, the following arguments are sparseMatrixRow elements where the arguments are sparseMatrixElement4 elements. Any non-specified entry is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo2.html#normal">ThreeDgeo2/<br/>normal</a>
+      </td>
+      <td>The symbol represents a binary boolean function with a line as first argument and a plane as second argument. Its value is true whenever the first argument is normal to the second.</td>
    </tr>
    <tr>
       <td>
@@ -3575,6 +4019,18 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_functions1.html#num">SI_functions1/<br/>num</a>
+      </td>
+      <td>The symbol to represent the function to return the numerical value of a quantity in terms of a product of powers of SI base units.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/sts.html#NumericalValue">sts/<br/>NumericalValue</a>
+      </td>
+      <td>Denotes an OpenMath object that is to be thought of as something that represents a numerical value, or a numerical value.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/asymp1.html#O">asymp1/<br/>O</a>
       </td>
       <td>The O symbol represents a unary function which constructs a set of certain functions of type reals to reals. The condition f(n)=O(g(n)) is intended to express an upper bound condition on f.</td>
@@ -3584,6 +4040,18 @@
          <a href="cd/asymp1.html#o">asymp1/<br/>o</a>
       </td>
       <td>The o symbol represents a unary function which constructs a set of certain functions of type reals to positive reals. The condition f(n) = o(g(n)) is intended to express a lower bouund condition on f. Formally we say that f(n) = o(g(n)) if and only if the limit as n tends to infinity of f(n)/g(n) exists and is equal to 0.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/sts.html#Object">sts/<br/>Object</a>
+      </td>
+      <td>Denotes any OpenMath object.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#ohm">SI_NamedDerivedUnits1/<br/>ohm</a>
+      </td>
+      <td>This symbol represents an SI unit of electrical resistance. It has the short symbol form, "\Omega;".</td>
    </tr>
    <tr>
       <td>
@@ -3617,6 +4085,18 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_BaseQuantities.html#one">SI_BaseQuantities/<br/>one</a>
+      </td>
+      <td>This symbol represents the proposed SI base quantity of dimension one, or the dimensionless quantity. It has the short symbol form, "1".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_BaseUnits1.html#one">SI_BaseUnits1/<br/>one</a>
+      </td>
+      <td>This symbol represents the dimensionless unit corresponding to the dimensionless quantity dimension. It has the short symbol form, "1".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/linalg1p.html#ones">linalg1p/<br/>ones</a>
       </td>
       <td>It returns a vector of a specifed size of which elements are one. 1-ary function.</td>
@@ -3647,9 +4127,21 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/permutation1.html#order">permutation1/<br/>order</a>
+      </td>
+      <td>This symbol is a function with one argument which should be a permutation. When applied to a permutation P, it represents the least positive integer n for which composition of n copies of P represents the identity (that is, a permutation with empty support). Note: in this definition of the order, it does not matter whether left_compose or right_compose is being used.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/algebraic_cats.html#ordered_Abelian_group">algebraic_cats/<br/>ordered_Abelian_group</a>
       </td>
       <td>This symbol is the constructor for ordered Abelian groups, that is an Abelian group on which there is an ordering relation. The ordered_Abelian_group constructor takes five arguments, the set of the ordered Abelian group, a binary function taking two elements of the set into itself to represent the operation of the ordered Abelian group, an element of the set to represent the identity of the ordered Abelian group, a unary function taking the set into itself to specify inverse elements and a binary function taking two elements of the set into the booleans to specify the ordering of the ordered Abelian group.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#ordered_Abelian_group">generic_alg_cats/<br/>ordered_Abelian_group</a>
+      </td>
+      <td>This Symbol represents the generic category of ordered Abelian group.</td>
    </tr>
    <tr>
       <td>
@@ -3689,6 +4181,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/generic_alg_cats.html#ordered_Abelian_monoid">generic_alg_cats/<br/>ordered_Abelian_monoid</a>
+      </td>
+      <td>This Symbol represents the generic category of ordered Abelian monoid.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/algebraic_cats.html#ordered_Abelian_monoid_identity">algebraic_cats/<br/>ordered_Abelian_monoid_identity</a>
       </td>
       <td>This symbol takes one argument which should be an ordered Abelian monoid. It returns an element of the set of the ordered Abelian monoid, which should be the identity of the ordered Abelian monoid.</td>
@@ -3716,6 +4214,12 @@
          <a href="cd/algebraic_cats.html#ordered_group">algebraic_cats/<br/>ordered_group</a>
       </td>
       <td>This symbol is the constructor for ordered groups, that is a group on which there is an ordering relation. The ordered_group constructor takes five arguments, the set of the ordered group, a binary function taking two elements of the set into itself to represent the operation of the ordered group, an element of the set to represent the identity of the ordered group, a unary function taking the set into itself to specify inverse elements of the ordered group and a binary function taking two elements of the set into the booleans to specify the ordering of the ordered group.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#ordered_group">generic_alg_cats/<br/>ordered_group</a>
+      </td>
+      <td>This Symbol represents the generic category of ordered group.</td>
    </tr>
    <tr>
       <td>
@@ -3755,6 +4259,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/generic_alg_cats.html#ordered_monoid">generic_alg_cats/<br/>ordered_monoid</a>
+      </td>
+      <td>This Symbol represents the generic category of ordered monoid.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/algebraic_cats.html#ordered_monoid_identity">algebraic_cats/<br/>ordered_monoid_identity</a>
       </td>
       <td>This symbol takes one argument which should be an ordered monoid. It returns an element of the set of the ordered monoid, which should be the identity of the ordered monoid.</td>
@@ -3782,6 +4292,12 @@
          <a href="cd/algebraic_cats.html#ordered_ring">algebraic_cats/<br/>ordered_ring</a>
       </td>
       <td>This symbol is the constructor for ordered rings, that is a ring on which there is an ordering relation. The ordered_ring constructor takes six arguments, the set of the ordered ring, a binary function from the set into itself to represent the multiplicative operation (*), a binary function from the set into itself to represent the additive operation (+), an element of the set of the ordered ring to represent the additive identity 0, a unary function from the set into itself to represent additive inverses (i.e. inverses under +, or negatives) and a binary function from the set into the booleans to represent the ordering relation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#ordered_ring">generic_alg_cats/<br/>ordered_ring</a>
+      </td>
+      <td>This Symbol represents the generic category of ordered ring.</td>
    </tr>
    <tr>
       <td>
@@ -3917,6 +4433,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#pascal">SI_NamedDerivedUnits1/<br/>pascal</a>
+      </td>
+      <td>This symbol represents an SI unit of pressure. It has the short symbol form, "Pa".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#Pascal">units_metric1/<br/>Pascal</a>
       </td>
       <td>This symbol represents the measure of one Newton per square metre. This is the standard SI measure for pressure.</td>
@@ -3941,9 +4463,27 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/permutation1.html#perm">permutation1/<br/>perm</a>
+      </td>
+      <td>This symbol is an n-ary function. Its arguments should be positive integers. When applied to arguments a_1,...,a_n, the resulting value is the permutation mapping i to a_i.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/permut1.html#permutation">permut1/<br/>permutation</a>
       </td>
       <td>The n-ary constructor permutation. The arguments are the integers 1 .. n in some order. permutation(p1, ..., pn) is the function which takes 1 to p1, 2 to p2 and so on.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/permutation1.html#permutation">permutation1/<br/>permutation</a>
+      </td>
+      <td>This symbols is an n-ary function whose arguments are cycles of length at least 2 with the property that all entries of all cycles are mutually distinct. The permutation symbol constructs a bijective map from the set X of entries of the cycles to X. The map is defined as follows: if E occurs as an entry of a cycle, then the permutation maps E to the entry following E in the same cycle if it exists and to the first entry in the same cycle otherwise.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo2.html#perpendicular">ThreeDgeo2/<br/>perpendicular</a>
+      </td>
+      <td>The symbol represents a binary boolean function with input two lines or segments. Its value is true whenever the first argument is perpendicular to the second.</td>
    </tr>
    <tr>
       <td>
@@ -4037,6 +4577,42 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#Planck-charge">FundamentalPhysicalConstants1/<br/>Planck-charge</a>
+      </td>
+      <td>The Planck charge is defined to be sqrt(h-bar*c*4*pi*eps0). Its value derived from measurement is 1.875545870(47) * 10^−18 coulomb. It is commonly represented with the short, italic symbol, "q", subscripted with an upright capital "P".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#Planck-constant">FundamentalPhysicalConstants1/<br/>Planck-constant</a>
+      </td>
+      <td>This symbol represents the fundamental constant equal to the ratio of the energy of a photon to its frequency. By measurement it is found to be approximately equal to 6.62606896(33)*10^(-34) J s [CODATA 2006]. It is commonly represented with the short, italic symbol, "h".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#Planck-length">FundamentalPhysicalConstants1/<br/>Planck-length</a>
+      </td>
+      <td>The Planck length is defined to be sqrt(h-bar*G/(c^3)). Its value derived from measurement is 1.616252(81) * 10^−35 metre. It is commonly represented with the short, italic symbol, "l", subscripted with an upright capital "P".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#Planck-mass">FundamentalPhysicalConstants1/<br/>Planck-mass</a>
+      </td>
+      <td>The Planck mass is defined to be sqrt(h-bar*c/G). Its value derived from measurement is 2.17644(11) * 10^−8 kilogram. It is commonly represented with the short, italic symbol, "m", subscripted with an upright capital "P".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#Planck-temperature">FundamentalPhysicalConstants1/<br/>Planck-temperature</a>
+      </td>
+      <td>The Planck temperature is defined to be sqrt(h-bar*c^5/(G*k^3)). Its value derived from measurement is 1.416785(71) × 10^32 kelvin. It is commonly represented with the short, italic symbol, "T", subscripted with an upright capital "P".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#Planck-time">FundamentalPhysicalConstants1/<br/>Planck-time</a>
+      </td>
+      <td>The Planck time is defined to be sqrt(h-bar*G/(c^5)). Its value derived from measurement is 5.39124(27) * 10^−44 second. It is commonly represented with the short, italic symbol, "t", subscripted with an upright capital "P".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/physical_consts1.html#Planck_constant">physical_consts1/<br/>Planck_constant</a>
       </td>
       <td>This symbol represents the fundamental constant equal to the ratio of the energy of a quantum of energy to its frequency. It is approximately equal to 6.6260755*10^(-34) +/- 4.0*10^(-40) Joule seconds.</td>
@@ -4046,6 +4622,12 @@
          <a href="cd/ThreeDgeo1.html#plane">ThreeDgeo1/<br/>plane</a>
       </td>
       <td>The symbol is used to indicate a plane in 3-dimensional Euclidean geometry by a variable. The plane may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo2.html#plane_parallel">ThreeDgeo2/<br/>plane_parallel</a>
+      </td>
+      <td>The symbol represents a binary boolean function with input two planes. Its value is true whenever the first argument is parallel to the second.</td>
    </tr>
    <tr>
       <td>
@@ -4070,6 +4652,18 @@
          <a href="cd/arith1.html#plus">arith1/<br/>plus</a>
       </td>
       <td>The symbol representing an n-ary commutative function plus.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/hypergeon0.html#plus_part">hypergeon0/<br/>plus_part</a>
+      </td>
+      <td>The argument is a vector. It replaces negative elements in the vector to zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/linalg1p.html#plus_part">linalg1p/<br/>plus_part</a>
+      </td>
+      <td>The argument is a vector. It replaces negative elements in the vector to zero.</td>
    </tr>
    <tr>
       <td>
@@ -4253,9 +4847,21 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/rdf.html#prefix">rdf/<br/>prefix</a>
+      </td>
+      <td>A symbol to be used as the head of the OpenMath application to construct a prefix mapping that can be used as a value of the prefixes attribution. The two arguments of this function should be OpenMath strings representing in order, the prefix and the corresponding namespace URI.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_ops1.html#prefix">units_ops1/<br/>prefix</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by 1,000 ($10^{3}$)</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/rdf.html#prefixes">rdf/<br/>prefixes</a>
+      </td>
+      <td>A symbol to be used within an OpenMath attribute to specify one or more RDF namespace prefixes. The annotation value should be a set1.set of pairs of strings (prefix name, namespace URI) constructed with the prefix symbol.</td>
    </tr>
    <tr>
       <td>
@@ -4367,6 +4973,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#radian">SI_NamedDerivedUnits1/<br/>radian</a>
+      </td>
+      <td>This symbol represents one radian, the natural unit of measure for angle. It has the short symbol form, "rad".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/SI_DerivedQuantities1.html#radioactivity">SI_DerivedQuantities1/<br/>radioactivity</a>
       </td>
       <td>This symbol represents the physical quantity of radio nuclide activity, or radioactivity. A variable representing an arbitrary quantity of radioactivity is commonly represented with the italic, upper case letter, "A".</td>
@@ -4433,6 +5045,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#reduced-Planck-constant">FundamentalPhysicalConstants1/<br/>reduced-Planck-constant</a>
+      </td>
+      <td>This symbol represents the Planck constant divided by 2*pi. It is commonly represented with the short, italic symbol, h with a horizontal bar ("h-bar"), Unicode: U+210F , HTML: ℏ.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/relation0.html#reflexive">relation0/<br/>reflexive</a>
       </td>
       <td>Proposition; the type of reflexive binary relations.</td>
@@ -4478,6 +5096,18 @@
          <a href="cd/SI_DerivedQuantities1.html#resistance">SI_DerivedQuantities1/<br/>resistance</a>
       </td>
       <td>This symbol represents the physical quantity of electrical resistance, the resistance that an electrical circuit has to electrical current. A variable representing an arbitrary quantity of electrical resistance is commonly represented with the italic, upper case letter, "R".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/rdf.html#resource">rdf/<br/>resource</a>
+      </td>
+      <td>This symbol represents an unary construction function for representing a specific RDF resource. It takes one string argument denoting an IRI reference as prefixed name in the form "prefix:resourceName" or as a full IRI in the form "&gt;IRI&lt;".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/rdf.html#resourceset">rdf/<br/>resourceset</a>
+      </td>
+      <td>This symbol represents an unary construction function for constructing a set of RDF resources. It takes one string argument representing a Manchester Syntax description as described by http://www.w3.org/TR/owl2-manchester-syntax/#Descriptions in order to construct a set of RDF resources. Please note that it may also be possible to represent the class description by using OpenMath set operations: rdf.resourceset( set1.intersect( rdf.resourceset("foaf:Person"), set1.suchthat(rdf.resourceset("rdfs:Resource"), fns1.lambda[$r -&gt; set1.size(rdf.valueset("foaf:age", $r) &gt; 0)]) ) )</td>
    </tr>
    <tr>
       <td>
@@ -4544,6 +5174,12 @@
          <a href="cd/algebraic_cats.html#ring">algebraic_cats/<br/>ring</a>
       </td>
       <td>This symbol is the constructor for rings. A ring is a set together with two operations + and *. A ring is an Abelian group under + and a semigroup under *. A ring has a further rule which associates the two operation, that is left and right distributivity. The ring constructor takes five arguments, the set of the ring, a binary function from the set into itself to represent the * operation, a binary function from the set into itself to represent the + operation, an element of the set of the ring to represent the additive identity 0 and a unary function from the set into itself to represent additive inverses (i.e. inverses under +, or negatives).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#ring">generic_alg_cats/<br/>ring</a>
+      </td>
+      <td>This Symbol represents the generic category of ring.</td>
    </tr>
    <tr>
       <td>
@@ -4685,6 +5321,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_BaseUnits1.html#second">SI_BaseUnits1/<br/>second</a>
+      </td>
+      <td>This symbol represents the measure of one second of time, the standard SI unit of measure for quantities of time. It has the short symbol form, "s", in upright roman font.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#second">units_metric1/<br/>second</a>
       </td>
       <td>This symbol represents the measure of one second. This is the standard SI measure for time.</td>
@@ -4715,9 +5357,21 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/semigroup.html#Semigroup">semigroup/<br/>Semigroup</a>
+      </td>
+      <td>The contructor for the type of semigroups as a Setoid with a binary operation.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/algebraic_cats.html#semigroup">algebraic_cats/<br/>semigroup</a>
       </td>
       <td>This symbol is the constructor for semigroups, that is groupoids for which the operator of the semigroup is associative over the set of the semigroup. The semigroup constructor takes two arguments, the set of the semigroup and a binary function which represents the operation of the semigroup.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/generic_alg_cats.html#semigroup">generic_alg_cats/<br/>semigroup</a>
+      </td>
+      <td>This Symbol represents the generic category of semigroup.</td>
    </tr>
    <tr>
       <td>
@@ -4763,9 +5417,33 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/sts.html#SetNumericalValue">sts/<br/>SetNumericalValue</a>
+      </td>
+      <td>Denotes an OpenMath object that is to be thought of as something that represents a set of numerical values, or a set of numerical values.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/setoid.html#Setoid">setoid/<br/>Setoid</a>
+      </td>
+      <td>The contructor for the type of set with an equivalence relation on it.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/aggregate_cats.html#setType">aggregate_cats/<br/>setType</a>
       </td>
       <td>This symbol represents the type of sets.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#siemens">SI_NamedDerivedUnits1/<br/>siemens</a>
+      </td>
+      <td>This symbol represents an SI unit of electrical conductance. It is not plural. It has the short symbol form, "S".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#sievert">SI_NamedDerivedUnits1/<br/>sievert</a>
+      </td>
+      <td>This symbol represents an SI unit of equivalent dose of ionizing, radiation. A sievert of equivalent dose represents one joule of biologically damaging energy absorbed per kilogram of mass. It has the short symbol form, "Sv".</td>
    </tr>
    <tr>
       <td>
@@ -4778,6 +5456,12 @@
          <a href="cd/sigma.html#SigmaType">sigma/<br/>SigmaType</a>
       </td>
       <td>The type constructor of cartesian products. It takes a list of type-attributed variables and an OpenMath object.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/permutation1.html#sign">permutation1/<br/>sign</a>
+      </td>
+      <td>This symbol is a function with one argument which should be a permutation. When applied to a permutation P, it represents the sign of P, which is equal to -1 if P is an odd permutation and equal to 1 otherwise.</td>
    </tr>
    <tr>
       <td>
@@ -4832,6 +5516,12 @@
          <a href="cd/polyslp.html#slp_degree">polyslp/<br/>slp_degree</a>
       </td>
       <td>A unary function taking an slp as argument and returning the apparent multiplicative degree of the slp, without performing any cancellation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_DerivedQuantities1.html#solid-angle">SI_DerivedQuantities1/<br/>solid-angle</a>
+      </td>
+      <td>This symbol represents the quantity of a two dimensional, geometric solid angle. A variable representing an arbitrary quantity of solid angle is commonly represented with the italic, upper case greek variable, "\Omega;".</td>
    </tr>
    <tr>
       <td>
@@ -4913,9 +5603,27 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/FundamentalPhysicalConstants1.html#speed-of-light">FundamentalPhysicalConstants1/<br/>speed-of-light</a>
+      </td>
+      <td>This symbol represents the speed of light in a vacuum. Its value is implied by the definition of the metre [17th CGPM (1983)]. Consequently, the speed of light is defined to be exactly 299,792,458 metre per second (in the SI). It is commonly represented with the short, italic symbol, "c".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/physical_consts1.html#speed_of_light">physical_consts1/<br/>speed_of_light</a>
       </td>
       <td>This symbol represents the speed of light in a vacuum. It is approximately 299792458 metres per second.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo1.html#sphere">ThreeDgeo1/<br/>sphere</a>
+      </td>
+      <td>The symbol is used to indicate a sphere in 3-dimensional Euclidean geometry by a variable. The sphere may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/ThreeDgeo2.html#sphere_center">ThreeDgeo2/<br/>sphere_center</a>
+      </td>
+      <td>The statement that a sphere in 3-dimensional Euclidean space has a given point as center. Takes the sphere as first argument and the point as second argument.</td>
    </tr>
    <tr>
       <td>
@@ -4943,6 +5651,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#steradian">SI_NamedDerivedUnits1/<br/>steradian</a>
+      </td>
+      <td>This symbol represents one steradian, the natural unit of measure for solid angle. It has the short symbol form, "sr".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/combinat1.html#Stirling1">combinat1/<br/>Stirling1</a>
       </td>
       <td>The Stirling numbers of the first kind. (-1)^(n-m)*Stirling1(n,m) is the number of permutations of n symbols which have exactly m cycles. Note that there are a few slightly different definitions of these numbers.</td>
@@ -4967,6 +5681,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/sts.html#structure">sts/<br/>structure</a>
+      </td>
+      <td>The structure element is used to represent a structure of a particular (algebraic) type.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/multiset1.html#subset">multiset1/<br/>subset</a>
       </td>
       <td>This symbol has two (multiset) arguments. It is used to denote that the first set is a subset of the second, i.e. every element of the first occurs with multiplicity at least as much in the second.</td>
@@ -4985,9 +5705,33 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/list1.html#suchthat">list1/<br/>suchthat</a>
+      </td>
+      <td>This symbol represents the suchthat function which may be used to construct lists, it takes two arguments. The first argument should be the set which contains the elements of the list, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the list returned.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/set1.html#suchthat">set1/<br/>suchthat</a>
+      </td>
+      <td>This symbol represents the suchthat function which may be used to construct sets, it takes two arguments. The first argument should be the set which contains the elements of the set we wish to represent, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the set returned.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/list1.html#suchthat">list1/<br/>suchthat</a>
+      </td>
+      <td>This symbol represents the suchthat function which may be used to construct lists; it takes two arguments. The first argument should be a set X which contains the elements of the list, the second argument should be a predicate, that is a function from the set X to the booleans which describes if an element is to be in the list returned.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/arith1.html#sum">arith1/<br/>sum</a>
       </td>
       <td>An operator taking two arguments, the first being the range of summation, e.g. an integral interval, the second being the function to be summed. Note that the sum may be over an infinite interval.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/permutation1.html#support">permutation1/<br/>support</a>
+      </td>
+      <td>This symbol is a function with one argument which is a permutation. When applied to a permutation P whose arguments are the cycles A1,...,An, it represents the set A which is the union of the entries of all Ai for i=1,...,n.</td>
    </tr>
    <tr>
       <td>
@@ -5045,6 +5789,18 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_BaseQuantities.html#temperature">SI_BaseQuantities/<br/>temperature</a>
+      </td>
+      <td>This symbol represents the SI base quantity of thermodynamic temperature. It has the short symbol form, "\Theta;".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/tensor1.html#tensor_selector">tensor1/<br/>tensor_selector</a>
+      </td>
+      <td>This symbol takes 3 arguments: a tensor, a basis, and a tuple of contravariant and/or covariant indexes. It returns the indexed tensor component in the given basis.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_siprefix1.html#tera">units_siprefix1/<br/>tera</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^12$</td>
@@ -5081,6 +5837,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#tesla">SI_NamedDerivedUnits1/<br/>tesla</a>
+      </td>
+      <td>This symbol represents an SI unit of magnetic flux density. It has the short symbol form, "T".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/asymp1.html#theta">asymp1/<br/>theta</a>
       </td>
       <td>The theta symbol represents a unary function which constructs a set of certain functions of type reals to positive reals. The theta symbol represents a set of functions which all have the same 'rate of growth'. Formally we say that f(x) = theta(g(x)) if and only if there are constants c_1 not= 0 and c_2 not= 0 and x_0 such that for all x &gt; x_0 it is true that c_1*g(x) &lt; f(x) &lt; c_2*g(x).</td>
@@ -5096,6 +5858,12 @@
          <a href="cd/dimensions1.html#time">dimensions1/<br/>time</a>
       </td>
       <td>This symbol represents the time physical dimension. Note that the main units for time are defined in the units_time1 CD.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_BaseQuantities.html#time">SI_BaseQuantities/<br/>time</a>
+      </td>
+      <td>This symbol represents the SI base quantity of time. It has the short symbol form, "T".</td>
    </tr>
    <tr>
       <td>
@@ -5180,6 +5948,18 @@
          <a href="cd/ecc.html#Tuple">ecc/<br/>Tuple</a>
       </td>
       <td>The n-ary tupling constructor when n&gt;2. The arguments are the element of the tuple. Tuple objects can also be constructed by successive nesting of Pair.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/tensor1.html#tuple">tensor1/<br/>tuple</a>
+      </td>
+      <td>This symbol is an n-ary symbol, returning an n-tuple of the arguments. The number of arguments, n, is a non-negative integer. The elements of the n-tuple are ordered as the arguments are ordered. Elements of a tuple may have the same type and value as each other, or not. An n-tuple, unlike a list, is generally not mutable.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/tensor1.html#tuple_selector">tensor1/<br/>tuple_selector</a>
+      </td>
+      <td>This symbol takes 2 arguments, a tuple and a natural number index, and returns the tuple component indicated by the index value.</td>
    </tr>
    <tr>
       <td>
@@ -5309,6 +6089,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/tensor1.html#unit_Cartesian">tensor1/<br/>unit_Cartesian</a>
+      </td>
+      <td>This symbol takes one argument, a natural number, and returns the Cartesian basis element, of a right handed Cartesian coordinate frame, corresponding to the value of the argument. The unit_Cartesian basis elements are each constant with respect to position in the space and define an orthonormal vector space basis.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_sts.html#unit_prefix">units_sts/<br/>unit_prefix</a>
       </td>
       <td>The type of all unit prefixes, such as "kilo".</td>
@@ -5348,6 +6134,18 @@
          <a href="cd/linalg5.html#upper-triangular">linalg5/<br/>upper-triangular</a>
       </td>
       <td>This symbol represents an upper-triangular matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/rdf.html#value">rdf/<br/>value</a>
+      </td>
+      <td>This symbol represents a function for accessing the value of an RDF property. It takes two arguments, a string denoting the property and an object denoting the RDF resource whose property value should be retrieved.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/rdf.html#valueset">rdf/<br/>valueset</a>
+      </td>
+      <td>This symbol represents a function for accessing all values of multivalued RDF property. It takes two arguments, a string denoting the property and an object denoting the RDF resource whose property values should be retrieved.</td>
    </tr>
    <tr>
       <td>
@@ -5435,6 +6233,12 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#volt">SI_NamedDerivedUnits1/<br/>volt</a>
+      </td>
+      <td>This symbol represents an SI unit of voltage or electric tension. It has the short symbol form, "V".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#volt">units_metric1/<br/>volt</a>
       </td>
       <td>This symbol represents the measure of one volt. This is the standard SI measure for voltage.</td>
@@ -5483,9 +6287,21 @@
    </tr>
    <tr>
       <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#watt">SI_NamedDerivedUnits1/<br/>watt</a>
+      </td>
+      <td>This symbol represents an SI unit of power, a joule per second. It has the short symbol form, "W".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="cd/units_metric1.html#Watt">units_metric1/<br/>Watt</a>
       </td>
       <td>This symbol represents the measure of one Watt. This is the standard SI measure for power.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/SI_NamedDerivedUnits1.html#weber">SI_NamedDerivedUnits1/<br/>weber</a>
+      </td>
+      <td>This symbol represents an SI unit of magnetic flux. It has the short symbol form, "Wb".</td>
    </tr>
    <tr>
       <td>
@@ -5510,6 +6326,18 @@
          <a href="cd/polyd.html#weighted_degree">polyd/<br/>weighted_degree</a>
       </td>
       <td>The total degree of its argument, taking into account any weights declared. The value returned is an integer: non-negative if the weights are. We note that the degree of 0 is undefined.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/hypergeon0.html#where">hypergeon0/<br/>where</a>
+      </td>
+      <td>The word "where" is often used in mathematical expressions to set variables or to say side conditions. CDname logic1.implies can be used for these purposes, but "where" will be more intuitive and more friendly expression for authors.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="cd/logic1p.html#where">logic1p/<br/>where</a>
+      </td>
+      <td>The word "where" is often used in mathematical expressions to set variables or to say side conditions. CDname logic1.implies can be used for these purposes, but "where" will be more intuitive and more friendly expression for formula book writers.</td>
    </tr>
    <tr>
       <td>
@@ -5642,833 +6470,5 @@
          <a href="cd/setname2.html#Zm">setname2/<br/>Zm</a>
       </td>
       <td>This symbol represents the set of integers modulo m, where m is not necessarily a prime. It takes one argument, the integer m.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#Abelian_group">generic_alg_cats/<br/>Abelian_group</a>
-      </td>
-      <td>This Symbol represents the generic category of Abelian group.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#Abelian_monoid">generic_alg_cats/<br/>Abelian_monoid</a>
-      </td>
-      <td>This Symbol represents the generic category of Abelian monoid.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#Abelian_semigroup">generic_alg_cats/<br/>Abelian_semigroup</a>
-      </td>
-      <td>This Symbol represents the generic category of Abelian semigroup.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseQuantities.html#amount-of-substance">SI_BaseQuantities/<br/>amount-of-substance</a>
-      </td>
-      <td>This symbol represents the SI base quantity of amount of substance. It has the short symbol form, "N".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseUnits1.html#ampere">SI_BaseUnits1/<br/>ampere</a>
-      </td>
-      <td>This symbol represents the measure of one ampere, the standard SI unit of measure for quantities of electric current. It has the short symbol form, "A", in upright roman font.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_DerivedQuantities1.html#angle">SI_DerivedQuantities1/<br/>angle</a>
-      </td>
-      <td>This symbol represents the quantity of a geometric planar angle. A variable representing an arbitrary quantity of angle is commonly represented with the italic, lower case greek variable, e.g., "\theta;".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#are_distinct">permutation1/<br/>are_distinct</a>
-      </td>
-      <td>This symbol is an n-ary boolean function. When applied to a_1, ..., a_n, it is true if and only if the arguments are mutually distinct (that is, a_i and a_j are equal only if i=j).</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#are_on_line">ThreeDgeo2/<br/>are_on_line</a>
-      </td>
-      <td>The symbol is a boolean n-ary function. Its arguments should be points. When applied to a sequence of points in 3-dimensional Euclidean space, its evaluated to true if and only if there is a line on which all arguments lie.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#are_on_plane">ThreeDgeo2/<br/>are_on_plane</a>
-      </td>
-      <td>The symbol is a boolean n-ary function. Its arguments should be points. When applied to a sequence of points in 3-dimensional Euclidean space, its evaluated to true if and only if there is a plane on which all arguments lie.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_DerivedQuantities1.html#area">SI_DerivedQuantities1/<br/>area</a>
-      </td>
-      <td>This symbol represents the physical quantity of area.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#attribution">sts/<br/>attribution</a>
-      </td>
-      <td>An `attribution' object consists of pairs of keys and values. The use of the symbol `attribution' in a signature indicates that the symbol is to be used as a key.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#basis_selector">tensor1/<br/>basis_selector</a>
-      </td>
-      <td>This symbol takes 2 arguments, a tuple of basis elements and a covar_index or a contra_index, and returns the basis element indicated by the index value.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#becquerel">SI_NamedDerivedUnits1/<br/>becquerel</a>
-      </td>
-      <td>This symbol represents an SI unit of radio nuclide activity, or radioactivity. A becquerel of activity represents one nuclear decay event per second. It has the short symbol form, "Bq".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#binder">sts/<br/>binder</a>
-      </td>
-      <td>An `OMBIND' object has three parts: a "binder" such as "lambda" or "for all", a (list of) bound variables, and an expression. The use of `binder' in a signature indicates that we are describing something which can only be used as the first child of an OMBIND construct.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#Boltzmann-constant">FundamentalPhysicalConstants1/<br/>Boltzmann-constant</a>
-      </td>
-      <td>The Boltzmann constant relates energy at the particle level with temperature observed at the bulk level via the ideal gas law, pV = NkT. By measurement it is found to be approximately equal to 1.3806504(24)*10^(-23) joule per kelvin. It is commonly represented with the short, italic symbol, "k".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseUnits1.html#candela">SI_BaseUnits1/<br/>candela</a>
-      </td>
-      <td>This symbol represents the measure of one candela, the standard SI unit measure for quantities of luminous intensity. It has the short symbol form, "cd", in upright roman font.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#Cartesian">tensor1/<br/>Cartesian</a>
-      </td>
-      <td>This symbol takes one argument, a natural number, and returns the Cartesian coordinate, of a right handed Cartesian coordinate frame, corresponding to the value of the argument. These coordinates are commonly named X, Y, and Z in three dimensions, though X, Y, and Z are non-exclusively used for this and other purposes.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo1.html#circle">ThreeDgeo1/<br/>circle</a>
-      </td>
-      <td>The symbol is used to indicate a circle in 3-dimensional Euclidean geometry by a variable. The circle may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#circle_center">ThreeDgeo2/<br/>circle_center</a>
-      </td>
-      <td>The statement that a circle in 3-dimensional Euclidean space has a given point as center. Takes the circle as first argument and the point as second argument.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#contra_index">tensor1/<br/>contra_index</a>
-      </td>
-      <td>This symbol takes a natural number as its argument and returns a contravariant index.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#coulomb">SI_NamedDerivedUnits1/<br/>coulomb</a>
-      </td>
-      <td>This symbol represents an SI unit of electric charge. It has the short symbol form, "C".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#Coulomb-constant">FundamentalPhysicalConstants1/<br/>Coulomb-constant</a>
-      </td>
-      <td>The value of the Coulomb constant is implied by international definitions of the speed of light and the vacuum permeability. By definition, its exact value is equal to (299,792,458)^2 * 10^-7 N m^2 C^-2. It is commonly represented with the short, italic symbol, "k" subscripted with the upright letter "e".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#covar_index">tensor1/<br/>covar_index</a>
-      </td>
-      <td>This symbol takes a natural number as its argument and returns a covariant index.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseQuantities.html#current">SI_BaseQuantities/<br/>current</a>
-      </td>
-      <td>This symbol represents the SI base quantity of electrical current. It has the short symbol form, "I".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#cycle">permutation1/<br/>cycle</a>
-      </td>
-      <td>This symbol is an n-ary function, with n at least 1. It marks a relation on the set of its arguments a_1, a_2,...,a_n consisting of the pairs (a_i,a_{i+1}) for i=1,...,n-1 and the pair (a_n,a_1). The arguments a_i should all be distinct. The number n is referred to as the length of the cycle.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#cycle_type">permutation1/<br/>cycle_type</a>
-      </td>
-      <td>This symbol is a function with one argument, which is a permutation. When applied to a permutation P, it represents the multiset of lengths of cycles occurring as arguments of P.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SIUsed_OffSystemUnits1.html#day">SIUsed_OffSystemUnits1/<br/>day</a>
-      </td>
-      <td>This symbol represents the measure of one day of time. It has the short symbol form, "d".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#degree-Celsius">SI_NamedDerivedUnits1/<br/>degree-Celsius</a>
-      </td>
-      <td>This symbol represents an SI unit of Celsius temperature. It has the short symbol form, "ºC".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SIUsed_OffSystemUnits1.html#degree-of-arc">SIUsed_OffSystemUnits1/<br/>degree-of-arc</a>
-      </td>
-      <td>This symbol represents the angular measure of one degree of arc. It has the short symbol form of the degree symbol, a superscript circle, Unicode: U+00B0 or HTML: °.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo3.html#discovery">ThreeDgeo3/<br/>discovery</a>
-      </td>
-      <td>The symbol is used to describe the task of finding necessary conditions for some properties to hold in a geometric configuration in 3-dimensional Euclidean geometry. The symbol takes a configuration as the first argument and the properties for which necessary conditions are to be sought as further arguments.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo3.html#distance">ThreeDgeo3/<br/>distance</a>
-      </td>
-      <td>The distance between two affine points in 3-dimensional Euclidean space is the Euclidean distance. The distance between two geometric objects O and O' in 3-dimensional Euclidean space is the infimum of the distances between two affine points, one on O and one on O'.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/multiset1.html#emptyset">multiset1/<br/>emptyset</a>
-      </td>
-      <td>This symbol is used to represent the empty multiset, that is the multiset which contains no members. It takes no parameters.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/set1.html#emptyset">set1/<br/>emptyset</a>
-      </td>
-      <td>This symbol is used to represent the empty set, that is the set which contains no members. It takes no parameters.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#error">sts/<br/>error</a>
-      </td>
-      <td>The error symbol is the 'return type' of error symbols in the error signature file.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#Euclidean_domain">generic_alg_cats/<br/>Euclidean_domain</a>
-      </td>
-      <td>This Symbol represents the generic category of Euclidean domain.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/integer1.html#factorof">integer1/<br/>factorof</a>
-      </td>
-      <td>This is the binary OpenMath operator that is used to indicate the mathematical relationship a "is a factor of" b, where a is the first argument and b is the second. This relationship is true if and only if b mod a = 0.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#farad">SI_NamedDerivedUnits1/<br/>farad</a>
-      </td>
-      <td>This symbol represents an SI unit of electric capacitance. It has the short symbol form, "F".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#field">generic_alg_cats/<br/>field</a>
-      </td>
-      <td>This Symbol represents the generic category of field.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#gram">SI_NamedDerivedUnits1/<br/>gram</a>
-      </td>
-      <td>This symbol represents one gram. This unit is implied by the incorporation of the prefix "kilo" in the base unit standard, kilogram. Since SI prefixes may not, by SI standard, be presented by prepending to "kilogram", the gram is introduced for the application of prefixes. By itself, gram should not appear in SI compliant presentation. It has the short symbol form, "g".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#gravitational-constant">FundamentalPhysicalConstants1/<br/>gravitational-constant</a>
-      </td>
-      <td>This symbol represents the constant of proportionality in Newton's law of universal gravitation. By measurement it is found to be approximately equal to 6.6742(10)*10^-11 newton metre^2 per kilogram^2. It is commonly represented with the short, italic symbol, "G".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#gray">SI_NamedDerivedUnits1/<br/>gray</a>
-      </td>
-      <td>This symbol represents an SI unit of absorbed dose of ionizing, radiation. A gray of absorbed dose represents one joule of energy absorbed per kilogram of mass. It has the short symbol form, "Gy".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#group">generic_alg_cats/<br/>group</a>
-      </td>
-      <td>This Symbol represents the generic category of group.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#groupoid">generic_alg_cats/<br/>groupoid</a>
-      </td>
-      <td>This Symbol represents the generic category of groupoid.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#henry">SI_NamedDerivedUnits1/<br/>henry</a>
-      </td>
-      <td>This symbol represents an SI unit of electrical inductance. It has the short symbol form, "H".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#hertz">SI_NamedDerivedUnits1/<br/>hertz</a>
-      </td>
-      <td>This symbol represents an SI unit of frequency. It has the short symbol form, "Hz".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SIUsed_OffSystemUnits1.html#hour">SIUsed_OffSystemUnits1/<br/>hour</a>
-      </td>
-      <td>This symbol represents the measure of one hour of time. It has the short symbol form, "h".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#integral_domain">generic_alg_cats/<br/>integral_domain</a>
-      </td>
-      <td>This Symbol represents the generic category of integral domain.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#is_midpoint">ThreeDgeo2/<br/>is_midpoint</a>
-      </td>
-      <td>The statement that one point is the midpoint of two others.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#is_perm">permutation1/<br/>is_perm</a>
-      </td>
-      <td>This symbol is a boolean function with one argument. If the argument is not a set of cycles of length at least 2, the boolean value is false. Otherwise it is true if and only if the cycles are disjoint (that is, all entries of all cycles in the argument are mutually distinct.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#joule">SI_NamedDerivedUnits1/<br/>joule</a>
-      </td>
-      <td>This symbol represents an SI unit of energy. It has the short symbol form, "J".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#katal">SI_NamedDerivedUnits1/<br/>katal</a>
-      </td>
-      <td>This symbol represents an SI unit of equivalent dose of catalytic activity. A katal of catalytic activity represents the amount of catalyst to effect one mole of catalytic conversion per second. It has the short symbol form, "kat".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseUnits1.html#kelvin">SI_BaseUnits1/<br/>kelvin</a>
-      </td>
-      <td>This symbol represents the measure of one kelvin, the standard SI unit of measure for quantities of thermodynamic temperature. It has the short symbol form, "K", in upright roman font.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseUnits1.html#kilogram">SI_BaseUnits1/<br/>kilogram</a>
-      </td>
-      <td>This symbol represents the measure of one kilogram of mass, the standard SI unit of measure for quantities of mass. It has the short symbol form, "kg", in upright roman font.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_functions1.html#kind">SI_functions1/<br/>kind</a>
-      </td>
-      <td>The symbol to represent the function to return the kind of a quantity. The value of this function is referred to, but not defined in the SI. Its value, kind(Q) for a given quantity, Q, is left to the user to assign.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#Kronecker_tensor">tensor1/<br/>Kronecker_tensor</a>
-      </td>
-      <td>This symbol represents the Kronecker tensor or Kronecker delta.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#length">permutation1/<br/>length</a>
-      </td>
-      <td>This symbol is a function with one argument, which must be a cycle. When applied to cycle(a_1,a_2,...,a_n), it returns the number n. This number is referred to as the length of the cycle.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseQuantities.html#length">SI_BaseQuantities/<br/>length</a>
-      </td>
-      <td>This symbol represents the SI base quantity of length. It has the short symbol form, "L".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#Levi-Civita">tensor1/<br/>Levi-Civita</a>
-      </td>
-      <td>This symbol represents the Levi-Civita alternating pseudo-tensor or permutation symbol. It's definition depends on the number of dimensions, d, of the space: it has as many indexes as there are dimensions in the space. It is totally antisymmetric, its value being: 1 for an even permutation of unequally valued indexes (e.g., (1,2,...,d)); -1 for an odd permutation of unequally valued indexes, and; 0 whenever two indexes take the same value.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#line_parallel">ThreeDgeo2/<br/>line_parallel</a>
-      </td>
-      <td>The symbol represents a binary boolean function with input two lines or segments. Its value is true whenever the first argument is parallel to the second.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#listperm">permutation1/<br/>listperm</a>
-      </td>
-      <td>This symbol is a function with one argument which is a permutation whose support consists of positive integers. When applied to such a permutation P, it represents the list of length n whose i-th entry is the image of i under P. Here n is at least the maximum of the support of P.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/rdf.html#literal_lang">rdf/<br/>literal_lang</a>
-      </td>
-      <td>A symbol to be used within an OpenMath attribute to specify the language of an RDF literal. The annotation value should be an OpenMath string.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/rdf.html#literal_type">rdf/<br/>literal_type</a>
-      </td>
-      <td>A symbol to be used within an OpenMath attribute to specify the type of an RDF literal which is represented as an OpenMath object. The annotation value should be an rdf.resource.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo3.html#locus">ThreeDgeo3/<br/>locus</a>
-      </td>
-      <td>The symbol is used to indicate by a variable the locus set traced by a point T in a 3-dimensional Euclidean geometry configuration C. That is, the set of all points satisfying the conditions imposed on T in the configuration C. The locus may (but need not) be defined by constraints on the point T additional to those in the configuration. The symbol takes the variable as the first argument, the tracer point T as second argument and the additional constraints as further arguments.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#lumen">SI_NamedDerivedUnits1/<br/>lumen</a>
-      </td>
-      <td>This symbol represents an SI unit of luminous flux. It has the short symbol form, "lm".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseQuantities.html#luminous-intensity">SI_BaseQuantities/<br/>luminous-intensity</a>
-      </td>
-      <td>This symbol represents the SI base quantity of luminous intensity. It has the short symbol form, "J".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#lux">SI_NamedDerivedUnits1/<br/>lux</a>
-      </td>
-      <td>This symbol represents an SI unit of illuminance. It has the short symbol form, "lx".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/set1.html#map">set1/<br/>map</a>
-      </td>
-      <td>This symbol represents a mapping function which may be used to construct sets, it takes as arguments a function from X to Y and a set over X in that order. The value that is returned is a set of values in Y. The argument list may be a set or an integer_interval.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#mapsto">sts/<br/>mapsto</a>
-      </td>
-      <td>This symbol represents the construction of a function type. The first n-1 children denote the types of the arguments, the last denotes the return type.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseQuantities.html#mass">SI_BaseQuantities/<br/>mass</a>
-      </td>
-      <td>This symbol represents the SI base quantity of mass. It has the short symbol form, "M".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseUnits1.html#metre">SI_BaseUnits1/<br/>metre</a>
-      </td>
-      <td>This symbol represents the measure of one metre of length, the standard SI unit of measure for quantities of length or physical distance. It has the short symbol form, "m", in upright roman font.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#metric_tensor">tensor1/<br/>metric_tensor</a>
-      </td>
-      <td>This symbol represents the metric tensor, typically depicted using a lower case g. The metric tensor is a nondegenerate, symmetric bilinear form. It defines the ideas of leng th and angle in a metric space, the most common example being the Euclidean metric. The square of a differential length, ds*ds, is given by the bilinear product of the coordinate differentials, dx^i, with the metric tensor.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo1.html#midpoint">ThreeDgeo1/<br/>midpoint</a>
-      </td>
-      <td>The symbol is used to indicate the midpoint of a segment in 3-dimensional Euclidean geometry by a variable. The symbol takes the variable as the first argument and the segment as second argument.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseUnits1.html#mole">SI_BaseUnits1/<br/>mole</a>
-      </td>
-      <td>This symbol represents the measure of one mole, the standard SI unit measure for quantities of amount of substance. It has the short symbol form, "mol", in upright roman font.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_DerivedQuantities1.html#moment-of-force">SI_DerivedQuantities1/<br/>moment-of-force</a>
-      </td>
-      <td>This symbol represents the physical quantity of force.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#monoid">generic_alg_cats/<br/>monoid</a>
-      </td>
-      <td>This Symbol represents the generic category of monoid.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#nary">sts/<br/>nary</a>
-      </td>
-      <td>Constructs a child of mapsto which denotes an arbitrary number of copies of the argument of nary.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#nassoc">sts/<br/>nassoc</a>
-      </td>
-      <td>Constructs a child of mapsto which denotes an arbitrary number of copies of the argument of nassoc. The operator is associative on these arguments which means that repeated uses may be flattened/unflattened.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#newton">SI_NamedDerivedUnits1/<br/>newton</a>
-      </td>
-      <td>This symbol represents an SI unit of force. It has the short symbol form, "N".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#non_commutative_ring">generic_alg_cats/<br/>non_commutative_ring</a>
-      </td>
-      <td>This Symbol represents the generic category of non-commutative ring.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#normal">ThreeDgeo2/<br/>normal</a>
-      </td>
-      <td>The symbol represents a binary boolean function with a line as first argument and a plane as second argument. Its value is true whenever the first argument is normal to the second.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_functions1.html#num">SI_functions1/<br/>num</a>
-      </td>
-      <td>The symbol to represent the function to return the numerical value of a quantity in terms of a product of powers of SI base units.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#NumericalValue">sts/<br/>NumericalValue</a>
-      </td>
-      <td>Denotes an OpenMath object that is to be thought of as something that represents a numerical value, or a numerical value.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#Object">sts/<br/>Object</a>
-      </td>
-      <td>Denotes any OpenMath object.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#ohm">SI_NamedDerivedUnits1/<br/>ohm</a>
-      </td>
-      <td>This symbol represents an SI unit of electrical resistance. It has the short symbol form, "\Omega;".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseQuantities.html#one">SI_BaseQuantities/<br/>one</a>
-      </td>
-      <td>This symbol represents the proposed SI base quantity of dimension one, or the dimensionless quantity. It has the short symbol form, "1".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseUnits1.html#one">SI_BaseUnits1/<br/>one</a>
-      </td>
-      <td>This symbol represents the dimensionless unit corresponding to the dimensionless quantity dimension. It has the short symbol form, "1".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#order">permutation1/<br/>order</a>
-      </td>
-      <td>This symbol is a function with one argument which should be a permutation. When applied to a permutation P, it represents the least positive integer n for which composition of n copies of P represents the identity (that is, a permutation with empty support). Note: in this definition of the order, it does not matter whether left_compose or right_compose is being used.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#ordered_Abelian_group">generic_alg_cats/<br/>ordered_Abelian_group</a>
-      </td>
-      <td>This Symbol represents the generic category of ordered Abelian group.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#ordered_Abelian_monoid">generic_alg_cats/<br/>ordered_Abelian_monoid</a>
-      </td>
-      <td>This Symbol represents the generic category of ordered Abelian monoid.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#ordered_group">generic_alg_cats/<br/>ordered_group</a>
-      </td>
-      <td>This Symbol represents the generic category of ordered group.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#ordered_monoid">generic_alg_cats/<br/>ordered_monoid</a>
-      </td>
-      <td>This Symbol represents the generic category of ordered monoid.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#ordered_ring">generic_alg_cats/<br/>ordered_ring</a>
-      </td>
-      <td>This Symbol represents the generic category of ordered ring.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#pascal">SI_NamedDerivedUnits1/<br/>pascal</a>
-      </td>
-      <td>This symbol represents an SI unit of pressure. It has the short symbol form, "Pa".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#perm">permutation1/<br/>perm</a>
-      </td>
-      <td>This symbol is an n-ary function. Its arguments should be positive integers. When applied to arguments a_1,...,a_n, the resulting value is the permutation mapping i to a_i.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#permutation">permutation1/<br/>permutation</a>
-      </td>
-      <td>This symbols is an n-ary function whose arguments are cycles of length at least 2 with the property that all entries of all cycles are mutually distinct. The permutation symbol constructs a bijective map from the set X of entries of the cycles to X. The map is defined as follows: if E occurs as an entry of a cycle, then the permutation maps E to the entry following E in the same cycle if it exists and to the first entry in the same cycle otherwise.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#perpendicular">ThreeDgeo2/<br/>perpendicular</a>
-      </td>
-      <td>The symbol represents a binary boolean function with input two lines or segments. Its value is true whenever the first argument is perpendicular to the second.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#Planck-charge">FundamentalPhysicalConstants1/<br/>Planck-charge</a>
-      </td>
-      <td>The Planck charge is defined to be sqrt(h-bar*c*4*pi*eps0). Its value derived from measurement is 1.875545870(47) * 10^−18 coulomb. It is commonly represented with the short, italic symbol, "q", subscripted with an upright capital "P".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#Planck-constant">FundamentalPhysicalConstants1/<br/>Planck-constant</a>
-      </td>
-      <td>This symbol represents the fundamental constant equal to the ratio of the energy of a photon to its frequency. By measurement it is found to be approximately equal to 6.62606896(33)*10^(-34) J s [CODATA 2006]. It is commonly represented with the short, italic symbol, "h".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#Planck-length">FundamentalPhysicalConstants1/<br/>Planck-length</a>
-      </td>
-      <td>The Planck length is defined to be sqrt(h-bar*G/(c^3)). Its value derived from measurement is 1.616252(81) * 10^−35 metre. It is commonly represented with the short, italic symbol, "l", subscripted with an upright capital "P".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#Planck-mass">FundamentalPhysicalConstants1/<br/>Planck-mass</a>
-      </td>
-      <td>The Planck mass is defined to be sqrt(h-bar*c/G). Its value derived from measurement is 2.17644(11) * 10^−8 kilogram. It is commonly represented with the short, italic symbol, "m", subscripted with an upright capital "P".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#Planck-temperature">FundamentalPhysicalConstants1/<br/>Planck-temperature</a>
-      </td>
-      <td>The Planck temperature is defined to be sqrt(h-bar*c^5/(G*k^3)). Its value derived from measurement is 1.416785(71) × 10^32 kelvin. It is commonly represented with the short, italic symbol, "T", subscripted with an upright capital "P".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#Planck-time">FundamentalPhysicalConstants1/<br/>Planck-time</a>
-      </td>
-      <td>The Planck time is defined to be sqrt(h-bar*G/(c^5)). Its value derived from measurement is 5.39124(27) * 10^−44 second. It is commonly represented with the short, italic symbol, "t", subscripted with an upright capital "P".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#plane_parallel">ThreeDgeo2/<br/>plane_parallel</a>
-      </td>
-      <td>The symbol represents a binary boolean function with input two planes. Its value is true whenever the first argument is parallel to the second.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/rdf.html#prefix">rdf/<br/>prefix</a>
-      </td>
-      <td>A symbol to be used as the head of the OpenMath application to construct a prefix mapping that can be used as a value of the prefixes attribution. The two arguments of this function should be OpenMath strings representing in order, the prefix and the corresponding namespace URI.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/rdf.html#prefixes">rdf/<br/>prefixes</a>
-      </td>
-      <td>A symbol to be used within an OpenMath attribute to specify one or more RDF namespace prefixes. The annotation value should be a set1.set of pairs of strings (prefix name, namespace URI) constructed with the prefix symbol.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#radian">SI_NamedDerivedUnits1/<br/>radian</a>
-      </td>
-      <td>This symbol represents one radian, the natural unit of measure for angle. It has the short symbol form, "rad".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#reduced-Planck-constant">FundamentalPhysicalConstants1/<br/>reduced-Planck-constant</a>
-      </td>
-      <td>This symbol represents the Planck constant divided by 2*pi. It is commonly represented with the short, italic symbol, h with a horizontal bar ("h-bar"), Unicode: U+210F , HTML: ℏ.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/rdf.html#resource">rdf/<br/>resource</a>
-      </td>
-      <td>This symbol represents an unary construction function for representing a specific RDF resource. It takes one string argument denoting an IRI reference as prefixed name in the form "prefix:resourceName" or as a full IRI in the form "&gt;IRI&lt;".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/rdf.html#resourceset">rdf/<br/>resourceset</a>
-      </td>
-      <td>This symbol represents an unary construction function for constructing a set of RDF resources. It takes one string argument representing a Manchester Syntax description as described by http://www.w3.org/TR/owl2-manchester-syntax/#Descriptions in order to construct a set of RDF resources. Please note that it may also be possible to represent the class description by using OpenMath set operations: rdf.resourceset( set1.intersect( rdf.resourceset("foaf:Person"), set1.suchthat(rdf.resourceset("rdfs:Resource"), fns1.lambda[$r -&gt; set1.size(rdf.valueset("foaf:age", $r) &gt; 0)]) ) )</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#ring">generic_alg_cats/<br/>ring</a>
-      </td>
-      <td>This Symbol represents the generic category of ring.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseUnits1.html#second">SI_BaseUnits1/<br/>second</a>
-      </td>
-      <td>This symbol represents the measure of one second of time, the standard SI unit of measure for quantities of time. It has the short symbol form, "s", in upright roman font.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/generic_alg_cats.html#semigroup">generic_alg_cats/<br/>semigroup</a>
-      </td>
-      <td>This Symbol represents the generic category of semigroup.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#SetNumericalValue">sts/<br/>SetNumericalValue</a>
-      </td>
-      <td>Denotes an OpenMath object that is to be thought of as something that represents a set of numerical values, or a set of numerical values.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#siemens">SI_NamedDerivedUnits1/<br/>siemens</a>
-      </td>
-      <td>This symbol represents an SI unit of electrical conductance. It is not plural. It has the short symbol form, "S".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#sievert">SI_NamedDerivedUnits1/<br/>sievert</a>
-      </td>
-      <td>This symbol represents an SI unit of equivalent dose of ionizing, radiation. A sievert of equivalent dose represents one joule of biologically damaging energy absorbed per kilogram of mass. It has the short symbol form, "Sv".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#sign">permutation1/<br/>sign</a>
-      </td>
-      <td>This symbol is a function with one argument which should be a permutation. When applied to a permutation P, it represents the sign of P, which is equal to -1 if P is an odd permutation and equal to 1 otherwise.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_DerivedQuantities1.html#solid-angle">SI_DerivedQuantities1/<br/>solid-angle</a>
-      </td>
-      <td>This symbol represents the quantity of a two dimensional, geometric solid angle. A variable representing an arbitrary quantity of solid angle is commonly represented with the italic, upper case greek variable, "\Omega;".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/FundamentalPhysicalConstants1.html#speed-of-light">FundamentalPhysicalConstants1/<br/>speed-of-light</a>
-      </td>
-      <td>This symbol represents the speed of light in a vacuum. Its value is implied by the definition of the metre [17th CGPM (1983)]. Consequently, the speed of light is defined to be exactly 299,792,458 metre per second (in the SI). It is commonly represented with the short, italic symbol, "c".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo1.html#sphere">ThreeDgeo1/<br/>sphere</a>
-      </td>
-      <td>The symbol is used to indicate a sphere in 3-dimensional Euclidean geometry by a variable. The sphere may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/ThreeDgeo2.html#sphere_center">ThreeDgeo2/<br/>sphere_center</a>
-      </td>
-      <td>The statement that a sphere in 3-dimensional Euclidean space has a given point as center. Takes the sphere as first argument and the point as second argument.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#steradian">SI_NamedDerivedUnits1/<br/>steradian</a>
-      </td>
-      <td>This symbol represents one steradian, the natural unit of measure for solid angle. It has the short symbol form, "sr".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/sts.html#structure">sts/<br/>structure</a>
-      </td>
-      <td>The structure element is used to represent a structure of a particular (algebraic) type.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/list1.html#suchthat">list1/<br/>suchthat</a>
-      </td>
-      <td>This symbol represents the suchthat function which may be used to construct lists, it takes two arguments. The first argument should be the set which contains the elements of the list, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the list returned.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/set1.html#suchthat">set1/<br/>suchthat</a>
-      </td>
-      <td>This symbol represents the suchthat function which may be used to construct sets, it takes two arguments. The first argument should be the set which contains the elements of the set we wish to represent, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the set returned.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/list1.html#suchthat">list1/<br/>suchthat</a>
-      </td>
-      <td>This symbol represents the suchthat function which may be used to construct lists; it takes two arguments. The first argument should be a set X which contains the elements of the list, the second argument should be a predicate, that is a function from the set X to the booleans which describes if an element is to be in the list returned.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/permutation1.html#support">permutation1/<br/>support</a>
-      </td>
-      <td>This symbol is a function with one argument which is a permutation. When applied to a permutation P whose arguments are the cycles A1,...,An, it represents the set A which is the union of the entries of all Ai for i=1,...,n.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseQuantities.html#temperature">SI_BaseQuantities/<br/>temperature</a>
-      </td>
-      <td>This symbol represents the SI base quantity of thermodynamic temperature. It has the short symbol form, "\Theta;".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#tensor_selector">tensor1/<br/>tensor_selector</a>
-      </td>
-      <td>This symbol takes 3 arguments: a tensor, a basis, and a tuple of contravariant and/or covariant indexes. It returns the indexed tensor component in the given basis.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#tesla">SI_NamedDerivedUnits1/<br/>tesla</a>
-      </td>
-      <td>This symbol represents an SI unit of magnetic flux density. It has the short symbol form, "T".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_BaseQuantities.html#time">SI_BaseQuantities/<br/>time</a>
-      </td>
-      <td>This symbol represents the SI base quantity of time. It has the short symbol form, "T".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#tuple">tensor1/<br/>tuple</a>
-      </td>
-      <td>This symbol is an n-ary symbol, returning an n-tuple of the arguments. The number of arguments, n, is a non-negative integer. The elements of the n-tuple are ordered as the arguments are ordered. Elements of a tuple may have the same type and value as each other, or not. An n-tuple, unlike a list, is generally not mutable.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#tuple_selector">tensor1/<br/>tuple_selector</a>
-      </td>
-      <td>This symbol takes 2 arguments, a tuple and a natural number index, and returns the tuple component indicated by the index value.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/tensor1.html#unit_Cartesian">tensor1/<br/>unit_Cartesian</a>
-      </td>
-      <td>This symbol takes one argument, a natural number, and returns the Cartesian basis element, of a right handed Cartesian coordinate frame, corresponding to the value of the argument. The unit_Cartesian basis elements are each constant with respect to position in the space and define an orthonormal vector space basis.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/rdf.html#value">rdf/<br/>value</a>
-      </td>
-      <td>This symbol represents a function for accessing the value of an RDF property. It takes two arguments, a string denoting the property and an object denoting the RDF resource whose property value should be retrieved.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/rdf.html#valueset">rdf/<br/>valueset</a>
-      </td>
-      <td>This symbol represents a function for accessing all values of multivalued RDF property. It takes two arguments, a string denoting the property and an object denoting the RDF resource whose property values should be retrieved.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#volt">SI_NamedDerivedUnits1/<br/>volt</a>
-      </td>
-      <td>This symbol represents an SI unit of voltage or electric tension. It has the short symbol form, "V".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#watt">SI_NamedDerivedUnits1/<br/>watt</a>
-      </td>
-      <td>This symbol represents an SI unit of power, a joule per second. It has the short symbol form, "W".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="cd/SI_NamedDerivedUnits1.html#weber">SI_NamedDerivedUnits1/<br/>weber</a>
-      </td>
-      <td>This symbol represents an SI unit of magnetic flux. It has the short symbol form, "Wb".</td>
    </tr>
 </table>
