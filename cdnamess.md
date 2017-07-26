@@ -1,15 +1,10 @@
 
----
-layout: page
-title: OpenMath Content Dictionaries by status
----
-
 <!--WARNING: This page is automatically generated, do not edit! WARNING-->
 
 <table border="1">
    <tr>
-      <th><a href="../cdnames.html">Content Dictionary</a></th>
-      <th><a href="../cdnamess.html">Status</a></th>
+      <th><a href="../cdnames">Content Dictionary</a></th>
+      <th><a href="../cdnamess">Status</a></th>
    </tr>
    <tr>
       <th style="text-align:left"><a href="../cd/arith2.html">arith2</a></th>
