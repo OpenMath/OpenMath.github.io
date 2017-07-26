@@ -100,7 +100,7 @@
                <dt>
                   <span class="dt">Date:</span>
                </dt>
-               <dd> 2002-07-30, 2003-11-30 </dd>
+               <dd> 2003-11-30 </dd>
                <dt>
                   <span class="dt">Version:</span>
                </dt>
@@ -793,7 +793,7 @@ This CD defines symbols for A-hypergeometric series
         &lt;OMV name="n"/&gt;
       &lt;/OMBVAR&gt;
       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-        &lt;OMA&gt;&lt;OMS name="a_hypergeometric"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeon1" name="a_hypergeometric"/&gt;
           &lt;OMV name="a"/&gt;
           &lt;OMV name="v"/&gt;
           &lt;OMV name="x"/&gt;
@@ -859,7 +859,7 @@ This CD defines symbols for A-hypergeometric series
   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
    &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd=""&gt;a_hypergeometric&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeon1"&gt;a_hypergeometric&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
      &lt;apply&gt;&lt;csymbol cd="hypergeon0"&gt;kernel&lt;/csymbol&gt;
       &lt;apply&gt;&lt;csymbol cd="hypergeon0"&gt;cartesian_product_n&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
@@ -903,7 +903,7 @@ This CD defines symbols for A-hypergeometric series
          <i>n</i>
       ] .
   (<a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#a_hypergeometric">a_hypergeometric</a>
+  (<a href="../../../cd/hypergeon1.html#a_hypergeometric">a_hypergeometric</a>
   ( <i>a</i>,  <i>v</i>,  <i>x</i>)
 , <a href="../../../cd/arith1.html#sum">sum</a>
   (<a href="../../../cd/hypergeon0.html#kernel">kernel</a>
@@ -947,7 +947,7 @@ This CD defines symbols for A-hypergeometric series
                      <button id="d40e311popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e311pop')">Popcorn</button>
                      <div id="d40e311pop" style="display:none; margin-top: 0.5em">
-  hypergeon0.where(fns1.lambda[$n -&gt; .a_hypergeometric($a, $v, $x) = arith1.sum(hypergeon0.kernel(hypergeon0.cartesian_product_n(setname1.Z, $n), $a), fns1.lambda[$u -&gt; hypergeon1.falling_multi_factorial($v, hyergeon0.minus_part($u)) / hypergeon1.raising_multi_factorial($v + $u, hypergeon0.plus_part($u)) * hypergeon0.multi_power($x, $v + $u)])], $n = linalg4.columncount($a))
+  hypergeon0.where(fns1.lambda[$n -&gt; hypergeon1.a_hypergeometric($a, $v, $x) = arith1.sum(hypergeon0.kernel(hypergeon0.cartesian_product_n(setname1.Z, $n), $a), fns1.lambda[$u -&gt; hypergeon1.falling_multi_factorial($v, hyergeon0.minus_part($u)) / hypergeon1.raising_multi_factorial($v + $u, hypergeon0.plus_part($u)) * hypergeon0.multi_power($x, $v + $u)])], $n = linalg4.columncount($a))
 </div>
                   </div>
                   <div>

@@ -453,6 +453,7 @@ An example: the definition of the exponential integral.
               &lt;OMV name="x"/&gt;
             &lt;/OMA&gt;
             &lt;OMBIND&gt;
+	    &lt;OMV name="missing"/&gt;
               &lt;OMBVAR&gt;
                 &lt;OMV name="t"/&gt;
               &lt;/OMBVAR&gt;
@@ -485,6 +486,7 @@ An example: the definition of the exponential integral.
      &lt;ci&gt;x&lt;/ci&gt;
     &lt;/apply&gt;
     &lt;bind&gt;
+     &lt;ci&gt;missing&lt;/ci&gt;
      &lt;bvar&gt;&lt;ci&gt;t&lt;/ci&gt;&lt;/bvar&gt;
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
       &lt;apply&gt;&lt;csymbol cd="transc1"&gt;exp&lt;/csymbol&gt;&lt;ci&gt;t&lt;/ci&gt;&lt;/apply&gt;
@@ -510,15 +512,15 @@ An example: the definition of the exponential integral.
   (<a href="../../../cd/arith1.html#unary_minus">unary_minus</a>
   (<a href="../../../cd/nums1.html#infinity">infinity</a>)
 ,  <i>x</i>)
-, 
+,  <i>missing</i>
+  [
                  <i>t</i>
-              
-  [<a href="../../../cd/arith1.html#divide">divide</a>
+              ] .
+  (<a href="../../../cd/arith1.html#divide">divide</a>
   (<a href="../../../cd/transc1.html#exp">exp</a>
   ( <i>t</i>)
 ,  <i>t</i>)
-] .
-  ()
+)
 )
 )
 )
@@ -528,7 +530,7 @@ An example: the definition of the exponential integral.
                      <button id="d40e171popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e171pop')">Popcorn</button>
                      <div id="d40e171pop" style="display:none; margin-top: 0.5em">
-      $x &gt; alg1.zero ==&gt; expint.Ei($x) = cauchypv.defint(interval1.interval( -(nums1.infinity), $x), $t[$t -&gt; exp($t) / $t])
+      $x &gt; alg1.zero ==&gt; expint.Ei($x) = cauchypv.defint(interval1.interval( -(nums1.infinity), $x), $missing[$t -&gt; exp($t) / $t])
     </div>
                   </div>
                   <div>
@@ -571,11 +573,24 @@ An example: the definition of the exponential integral.
                                        </mrow>
                                        <mo>,</mo>
                                        <mrow>
+                                          <mi>missing</mi>
+                                          <mo>&#8201;</mo>
                                           <mrow>
                                              <mi>t</mi>
                                           </mrow>
-                                          <mo>&#8201;</mo>
                                           <mo>.</mo>
+                                          <mfrac>
+                                             <mrow>
+                                                <mi>exp</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>t</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mi>t</mi>
+                                          </mfrac>
                                        </mrow>
                                        <mo>)</mo>
                                     </mrow>

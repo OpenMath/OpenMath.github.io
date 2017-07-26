@@ -100,12 +100,12 @@
                <dt>
                   <span class="dt">Date:</span>
                </dt>
-               <dd> 2002-08-11, 2003-11-30 </dd>
+               <dd> 2003-11-30 </dd>
                <dt>
                   <span class="dt">Version:</span>
                </dt>
                <dd> 0 
-    (Revision 1)
+    (Revision 2)
   </dd>
                <dt>
                   <span class="dt">Review Date:</span>
@@ -645,7 +645,7 @@
             &lt;OMI&gt; 2 &lt;/OMI&gt;
           &lt;/OMA&gt;
         &lt;/OMA&gt;
-        &lt;OMA&gt;&lt;OMS name="besselJ"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeo2" name="besselJ"/&gt;
           &lt;OMV name="v"/&gt;
           &lt;OMV name="z"/&gt;
         &lt;/OMA&gt;
@@ -692,7 +692,7 @@
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
     &lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd=""&gt;besselJ&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeo2"&gt;besselJ&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
   &lt;cn&gt;0&lt;/cn&gt;
@@ -744,7 +744,7 @@
 , <a href="../../../cd/arith1.html#power">power</a>
   ( <i>v</i>,  2 )
 )
-, <a href="../../../cd/.html#besselJ">besselJ</a>
+, <a href="../../../cd/hypergeo2.html#besselJ">besselJ</a>
   ( <i>v</i>,  <i>z</i>)
 )
 )
@@ -755,7 +755,7 @@
                      <button id="d40e246popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e246pop')">Popcorn</button>
                      <div id="d40e246pop" style="display:none; margin-top: 0.5em">
-  $z ^ 2 * calculus1.diff(fns1.lambda[$z -&gt; calculus1.diff(fns1.lambda[$z -&gt; hypergeo2.besselJ($v, $z)])]) + $z * calculus1.diff(fns1.lambda[$z -&gt; bypergeo2.besselJ($v, $z)]) + ($z ^ 2 - $v ^ 2) * .besselJ($v, $z) = 0
+  $z ^ 2 * calculus1.diff(fns1.lambda[$z -&gt; calculus1.diff(fns1.lambda[$z -&gt; hypergeo2.besselJ($v, $z)])]) + $z * calculus1.diff(fns1.lambda[$z -&gt; bypergeo2.besselJ($v, $z)]) + ($z ^ 2 - $v ^ 2) * hypergeo2.besselJ($v, $z) = 0
 </div>
                   </div>
                   <div>
@@ -958,7 +958,7 @@
             &lt;OMV name="z"/&gt;
           &lt;/OMA&gt;
         &lt;/OMA&gt;
-        &lt;OMA&gt;&lt;OMS name="besselJ"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeo2" name="besselJ"/&gt;
           &lt;OMA&gt;&lt;OMS cd="arith1" name="unary_minus"/&gt;
             &lt;OMV name="v"/&gt;
           &lt;/OMA&gt;
@@ -990,7 +990,7 @@
      &lt;/apply&gt;
      &lt;apply&gt;&lt;csymbol cd="hypergeo2"&gt;besselJ&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
     &lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd=""&gt;besselJ&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeo2"&gt;besselJ&lt;/csymbol&gt;
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;/apply&gt;
      &lt;ci&gt;z&lt;/ci&gt;
     &lt;/apply&gt;
@@ -1018,7 +1018,7 @@
 , <a href="../../../cd/hypergeo2.html#besselJ">besselJ</a>
   ( <i>v</i>,  <i>z</i>)
 )
-, <a href="../../../cd/.html#besselJ">besselJ</a>
+, <a href="../../../cd/hypergeo2.html#besselJ">besselJ</a>
   (<a href="../../../cd/arith1.html#unary_minus">unary_minus</a>
   ( <i>v</i>)
 ,  <i>z</i>)
@@ -1035,7 +1035,7 @@
                      <button id="d40e390popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e390pop')">Popcorn</button>
                      <div id="d40e390pop" style="display:none; margin-top: 0.5em">
-  hypergeo2.besselY($v, $z) = (cos($v * nums1.pi) * hypergeo2.besselJ($v, $z) - .besselJ( -($v), $z)) / sin($v * nums1.pi)
+  hypergeo2.besselY($v, $z) = (cos($v * nums1.pi) * hypergeo2.besselJ($v, $z) - hypergeo2.besselJ( -($v), $z)) / sin($v * nums1.pi)
 </div>
                   </div>
                   <div>

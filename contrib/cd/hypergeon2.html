@@ -100,12 +100,12 @@
                <dt>
                   <span class="dt">Date:</span>
                </dt>
-               <dd> 2002-08-07, 2003-11-30 </dd>
+               <dd> 2003-11-30 </dd>
                <dt>
                   <span class="dt">Version:</span>
                </dt>
                <dd> 1 
-    (Revision 1)
+    (Revision 2)
   </dd>
                <dt>
                   <span class="dt">Review Date:</span>
@@ -173,7 +173,7 @@ functions.
                      <pre id="d40e77xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-    &lt;OMA&gt;&lt;OMS name="multi_pochhammer"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="multi_pochhammer"/&gt;
       &lt;OMV name="a"/&gt;
       &lt;OMV name="n"/&gt;
     &lt;/OMA&gt;
@@ -210,7 +210,7 @@ functions.
                      <pre id="d40e77cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd=""&gt;multi_pochhammer&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;multi_pochhammer&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;product&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
     &lt;cn&gt;1&lt;/cn&gt;
@@ -231,7 +231,7 @@ functions.
                           onclick="divfold('d40e77pref')">Prefix</button>
                   <div id="d40e77pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#multi_pochhammer">multi_pochhammer</a>
+  (<a href="../../../cd/hypergeon2.html#multi_pochhammer">multi_pochhammer</a>
   ( <i>a</i>,  <i>n</i>)
 , <a href="../../../cd/arith1.html#product">product</a>
   (<a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
@@ -257,7 +257,7 @@ functions.
                      <button id="d40e77popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e77pop')">Popcorn</button>
                      <div id="d40e77pop" style="display:none; margin-top: 0.5em">
-  .multi_pochhammer($a, $n) = arith1.product(interval1.integer_interval(1, linalg4.columnsize($n)), fns1.lambda[$i -&gt; hypergeo0.pochhammer(linalg1.vector_selector($i, $a), linalg1.vector_selector($i, $n))])
+  hypergeon2.multi_pochhammer($a, $n) = arith1.product(interval1.integer_interval(1, linalg4.columnsize($n)), fns1.lambda[$i -&gt; hypergeo0.pochhammer(linalg1.vector_selector($i, $a), linalg1.vector_selector($i, $n))])
 </div>
                   </div>
                   <div>
@@ -389,7 +389,7 @@ functions.
                      <pre id="d40e154xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-    &lt;OMA&gt;&lt;OMS name="apple_F1"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="apple_F1"/&gt;
       &lt;OMV name="a"/&gt;
       &lt;OMV name="b1"/&gt;
       &lt;OMV name="b2"/&gt;
@@ -475,14 +475,14 @@ functions.
           &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
             &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
               &lt;OMV name="x"/&gt;
-              &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                 &lt;OMI&gt; 1 &lt;/OMI&gt;
                 &lt;OMV name="m"/&gt;
               &lt;/OMA&gt;
             &lt;/OMA&gt;
             &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
               &lt;OMV name="y"/&gt;
-              &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                 &lt;OMI&gt; 2 &lt;/OMI&gt;
                 &lt;OMV name="m"/&gt;
               &lt;/OMA&gt;
@@ -500,7 +500,7 @@ functions.
                      <pre id="d40e154cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd=""&gt;apple_F1&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;apple_F1&lt;/csymbol&gt;
    &lt;ci&gt;a&lt;/ci&gt;
    &lt;ci&gt;b1&lt;/ci&gt;
    &lt;ci&gt;b2&lt;/ci&gt;
@@ -559,11 +559,11 @@ functions.
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
        &lt;ci&gt;x&lt;/ci&gt;
-       &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;/apply&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
        &lt;ci&gt;y&lt;/ci&gt;
-       &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;/apply&gt;
      &lt;/apply&gt;
     &lt;/apply&gt;
@@ -576,7 +576,7 @@ functions.
                           onclick="divfold('d40e154pref')">Prefix</button>
                   <div id="d40e154pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#apple_F1">apple_F1</a>
+  (<a href="../../../cd/hypergeon2.html#apple_F1">apple_F1</a>
   ( <i>a</i>,  <i>b1</i>,  <i>b2</i>,  <i>c</i>,  <i>x</i>,  <i>y</i>)
 , <a href="../../../cd/arith1.html#sum">sum</a>
   (<a href="../../../cd/set1.html#cartesian_product">cartesian_product</a>
@@ -630,11 +630,11 @@ functions.
 )
 , <a href="../../../cd/arith1.html#times">times</a>
   (<a href="../../../cd/arith1.html#power">power</a>
-  ( <i>x</i>, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( <i>x</i>, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( 1 ,  <i>m</i>)
 )
 , <a href="../../../cd/arith1.html#power">power</a>
-  ( <i>y</i>, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( <i>y</i>, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( 2 ,  <i>m</i>)
 )
 )
@@ -648,7 +648,7 @@ functions.
                      <button id="d40e154popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e154pop')">Popcorn</button>
                      <div id="d40e154pop" style="display:none; margin-top: 0.5em">
-  .apple_F1($a, $b1, $b2, $c, $x, $y) = arith1.sum(set1.cartesian_product(setname1.N, setname1.N), fns1.lambda[$m -&gt; (hypergeo0.pochhammer($a, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer($b1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($b2, linalg1.vector_selector(2, $m))) / (hypergeo0.pochhammer($c, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(2, $m))) * $x ^ .vector_selector(1, $m) * $y ^ .vector_selector(2, $m)])
+  hypergeon2.apple_F1($a, $b1, $b2, $c, $x, $y) = arith1.sum(set1.cartesian_product(setname1.N, setname1.N), fns1.lambda[$m -&gt; (hypergeo0.pochhammer($a, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer($b1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($b2, linalg1.vector_selector(2, $m))) / (hypergeo0.pochhammer($c, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(2, $m))) * $x ^ hypergeon2.vector_selector(1, $m) * $y ^ hypergeon2.vector_selector(2, $m)])
 </div>
                   </div>
                   <div>
@@ -923,7 +923,7 @@ functions.
                      <pre id="d40e392xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-    &lt;OMA&gt;&lt;OMS name="apple_F2"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="apple_F2"/&gt;
       &lt;OMV name="a"/&gt;
       &lt;OMV name="b1"/&gt;
       &lt;OMV name="b2"/&gt;
@@ -1013,14 +1013,14 @@ functions.
           &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
             &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
               &lt;OMV name="x"/&gt;
-              &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                 &lt;OMI&gt; 1 &lt;/OMI&gt;
                 &lt;OMV name="m"/&gt;
               &lt;/OMA&gt;
             &lt;/OMA&gt;
             &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
               &lt;OMV name="y"/&gt;
-              &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                 &lt;OMI&gt; 2 &lt;/OMI&gt;
                 &lt;OMV name="m"/&gt;
               &lt;/OMA&gt;
@@ -1038,7 +1038,7 @@ functions.
                      <pre id="d40e392cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd=""&gt;apple_F2&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;apple_F2&lt;/csymbol&gt;
    &lt;ci&gt;a&lt;/ci&gt;
    &lt;ci&gt;b1&lt;/ci&gt;
    &lt;ci&gt;b2&lt;/ci&gt;
@@ -1101,11 +1101,11 @@ functions.
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
        &lt;ci&gt;x&lt;/ci&gt;
-       &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;/apply&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
        &lt;ci&gt;y&lt;/ci&gt;
-       &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;/apply&gt;
      &lt;/apply&gt;
     &lt;/apply&gt;
@@ -1118,7 +1118,7 @@ functions.
                           onclick="divfold('d40e392pref')">Prefix</button>
                   <div id="d40e392pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#apple_F2">apple_F2</a>
+  (<a href="../../../cd/hypergeon2.html#apple_F2">apple_F2</a>
   ( <i>a</i>,  <i>b1</i>,  <i>b2</i>,  <i>c1</i>,  <i>c2</i>,  <i>x</i>,  <i>y</i>)
 , <a href="../../../cd/arith1.html#sum">sum</a>
   (<a href="../../../cd/set1.html#cartesian_product">cartesian_product</a>
@@ -1174,11 +1174,11 @@ functions.
 )
 , <a href="../../../cd/arith1.html#times">times</a>
   (<a href="../../../cd/arith1.html#power">power</a>
-  ( <i>x</i>, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( <i>x</i>, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( 1 ,  <i>m</i>)
 )
 , <a href="../../../cd/arith1.html#power">power</a>
-  ( <i>y</i>, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( <i>y</i>, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( 2 ,  <i>m</i>)
 )
 )
@@ -1192,7 +1192,7 @@ functions.
                      <button id="d40e392popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e392pop')">Popcorn</button>
                      <div id="d40e392pop" style="display:none; margin-top: 0.5em">
-  .apple_F2($a, $b1, $b2, $c1, $c2, $x, $y) = arith1.sum(set1.cartesian_product(setname1.N, setname1.N), fns1.lambda[$m -&gt; (hypergeo0.pochhammer($a, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer($b1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($b2, linalg1.vector_selector(2, $m))) / (hypergeo0.pochhammer($c1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($c2, linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(2, $m))) * $x ^ .vector_selector(1, $m) * $y ^ .vector_selector(2, $m)])
+  hypergeon2.apple_F2($a, $b1, $b2, $c1, $c2, $x, $y) = arith1.sum(set1.cartesian_product(setname1.N, setname1.N), fns1.lambda[$m -&gt; (hypergeo0.pochhammer($a, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer($b1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($b2, linalg1.vector_selector(2, $m))) / (hypergeo0.pochhammer($c1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($c2, linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(2, $m))) * $x ^ hypergeon2.vector_selector(1, $m) * $y ^ hypergeon2.vector_selector(2, $m)])
 </div>
                   </div>
                   <div>
@@ -1491,7 +1491,7 @@ functions.
                      <pre id="d40e637xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-    &lt;OMA&gt;&lt;OMS name="apple_F3"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="apple_F3"/&gt;
       &lt;OMV name="a1"/&gt;
       &lt;OMV name="a2"/&gt;
       &lt;OMV name="b1"/&gt;
@@ -1581,14 +1581,14 @@ functions.
           &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
             &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
               &lt;OMV name="x"/&gt;
-              &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                 &lt;OMI&gt; 1 &lt;/OMI&gt;
                 &lt;OMV name="m"/&gt;
               &lt;/OMA&gt;
             &lt;/OMA&gt;
             &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
               &lt;OMV name="y"/&gt;
-              &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                 &lt;OMI&gt; 2 &lt;/OMI&gt;
                 &lt;OMV name="m"/&gt;
               &lt;/OMA&gt;
@@ -1606,7 +1606,7 @@ functions.
                      <pre id="d40e637cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd=""&gt;apple_F3&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;apple_F3&lt;/csymbol&gt;
    &lt;ci&gt;a1&lt;/ci&gt;
    &lt;ci&gt;a2&lt;/ci&gt;
    &lt;ci&gt;b1&lt;/ci&gt;
@@ -1669,11 +1669,11 @@ functions.
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
        &lt;ci&gt;x&lt;/ci&gt;
-       &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;/apply&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
        &lt;ci&gt;y&lt;/ci&gt;
-       &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;/apply&gt;
      &lt;/apply&gt;
     &lt;/apply&gt;
@@ -1686,7 +1686,7 @@ functions.
                           onclick="divfold('d40e637pref')">Prefix</button>
                   <div id="d40e637pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#apple_F3">apple_F3</a>
+  (<a href="../../../cd/hypergeon2.html#apple_F3">apple_F3</a>
   ( <i>a1</i>,  <i>a2</i>,  <i>b1</i>,  <i>b2</i>,  <i>c</i>,  <i>x</i>,  <i>y</i>)
 , <a href="../../../cd/arith1.html#sum">sum</a>
   (<a href="../../../cd/set1.html#cartesian_product">cartesian_product</a>
@@ -1742,11 +1742,11 @@ functions.
 )
 , <a href="../../../cd/arith1.html#times">times</a>
   (<a href="../../../cd/arith1.html#power">power</a>
-  ( <i>x</i>, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( <i>x</i>, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( 1 ,  <i>m</i>)
 )
 , <a href="../../../cd/arith1.html#power">power</a>
-  ( <i>y</i>, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( <i>y</i>, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( 2 ,  <i>m</i>)
 )
 )
@@ -1760,7 +1760,7 @@ functions.
                      <button id="d40e637popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e637pop')">Popcorn</button>
                      <div id="d40e637pop" style="display:none; margin-top: 0.5em">
-  .apple_F3($a1, $a2, $b1, $b2, $c, $x, $y) = arith1.sum(set1.cartesian_product(setname1.N, setname1.N), fns1.lambda[$m -&gt; (hypergeo0.pochhammer($a1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($a2, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($b1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($b2, linalg1.vector_selector(2, $m))) / (hypergeo0.pochhammer($c, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(2, $m))) * $x ^ .vector_selector(1, $m) * $y ^ .vector_selector(2, $m)])
+  hypergeon2.apple_F3($a1, $a2, $b1, $b2, $c, $x, $y) = arith1.sum(set1.cartesian_product(setname1.N, setname1.N), fns1.lambda[$m -&gt; (hypergeo0.pochhammer($a1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($a2, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($b1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($b2, linalg1.vector_selector(2, $m))) / (hypergeo0.pochhammer($c, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(2, $m))) * $x ^ hypergeon2.vector_selector(1, $m) * $y ^ hypergeon2.vector_selector(2, $m)])
 </div>
                   </div>
                   <div>
@@ -2058,7 +2058,7 @@ functions.
                      <pre id="d40e882xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-    &lt;OMA&gt;&lt;OMS name="apple_F4"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="apple_F4"/&gt;
       &lt;OMV name="a"/&gt;
       &lt;OMV name="b"/&gt;
       &lt;OMV name="c1"/&gt;
@@ -2144,14 +2144,14 @@ functions.
           &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
             &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
               &lt;OMV name="x"/&gt;
-              &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                 &lt;OMI&gt; 1 &lt;/OMI&gt;
                 &lt;OMV name="m"/&gt;
               &lt;/OMA&gt;
             &lt;/OMA&gt;
             &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
               &lt;OMV name="y"/&gt;
-              &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                 &lt;OMI&gt; 2 &lt;/OMI&gt;
                 &lt;OMV name="m"/&gt;
               &lt;/OMA&gt;
@@ -2169,7 +2169,7 @@ functions.
                      <pre id="d40e882cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd=""&gt;apple_F4&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;apple_F4&lt;/csymbol&gt;
    &lt;ci&gt;a&lt;/ci&gt;
    &lt;ci&gt;b&lt;/ci&gt;
    &lt;ci&gt;c1&lt;/ci&gt;
@@ -2228,11 +2228,11 @@ functions.
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
        &lt;ci&gt;x&lt;/ci&gt;
-       &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;/apply&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
        &lt;ci&gt;y&lt;/ci&gt;
-       &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;/apply&gt;
      &lt;/apply&gt;
     &lt;/apply&gt;
@@ -2245,7 +2245,7 @@ functions.
                           onclick="divfold('d40e882pref')">Prefix</button>
                   <div id="d40e882pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#apple_F4">apple_F4</a>
+  (<a href="../../../cd/hypergeon2.html#apple_F4">apple_F4</a>
   ( <i>a</i>,  <i>b</i>,  <i>c1</i>,  <i>c2</i>,  <i>x</i>,  <i>y</i>)
 , <a href="../../../cd/arith1.html#sum">sum</a>
   (<a href="../../../cd/set1.html#cartesian_product">cartesian_product</a>
@@ -2299,11 +2299,11 @@ functions.
 )
 , <a href="../../../cd/arith1.html#times">times</a>
   (<a href="../../../cd/arith1.html#power">power</a>
-  ( <i>x</i>, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( <i>x</i>, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( 1 ,  <i>m</i>)
 )
 , <a href="../../../cd/arith1.html#power">power</a>
-  ( <i>y</i>, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( <i>y</i>, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( 2 ,  <i>m</i>)
 )
 )
@@ -2317,7 +2317,7 @@ functions.
                      <button id="d40e882popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e882pop')">Popcorn</button>
                      <div id="d40e882pop" style="display:none; margin-top: 0.5em">
-  .apple_F4($a, $b, $c1, $c2, $x, $y) = arith1.sum(set1.cartesian_product(setname1.N, setname1.N), fns1.lambda[$m -&gt; (hypergeo0.pochhammer($a, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer($b, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m))) / (hypergeo0.pochhammer($c1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($c2, linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(2, $m))) * $x ^ .vector_selector(1, $m) * $y ^ .vector_selector(2, $m)])
+  hypergeon2.apple_F4($a, $b, $c1, $c2, $x, $y) = arith1.sum(set1.cartesian_product(setname1.N, setname1.N), fns1.lambda[$m -&gt; (hypergeo0.pochhammer($a, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer($b, linalg1.vector_selector(1, $m) + linalg1.vector_selector(2, $m))) / (hypergeo0.pochhammer($c1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer($c2, linalg1.vector_selector(2, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(1, $m)) * hypergeo0.pochhammer(1, linalg1.vector_selector(2, $m))) * $x ^ hypergeon2.vector_selector(1, $m) * $y ^ hypergeon2.vector_selector(2, $m)])
 </div>
                   </div>
                   <div>
@@ -2600,7 +2600,7 @@ functions.
         &lt;OMV name="n"/&gt;
       &lt;/OMBVAR&gt;
       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-        &lt;OMA&gt;&lt;OMS name="lauricella_FA"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="lauricella_FA"/&gt;
           &lt;OMV name="a"/&gt;
           &lt;OMV name="b"/&gt;
           &lt;OMV name="c"/&gt;
@@ -2631,7 +2631,7 @@ functions.
                         &lt;OMBVAR&gt;
                           &lt;OMV name="i"/&gt;
                         &lt;/OMBVAR&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -2649,11 +2649,11 @@ functions.
                         &lt;OMV name="i"/&gt;
                       &lt;/OMBVAR&gt;
                       &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="b"/&gt;
                         &lt;/OMA&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -2673,11 +2673,11 @@ functions.
                         &lt;OMV name="i"/&gt;
                       &lt;/OMBVAR&gt;
                       &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="c"/&gt;
                         &lt;/OMA&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -2696,7 +2696,7 @@ functions.
                       &lt;/OMBVAR&gt;
                       &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
                         &lt;OMI&gt; 1 &lt;/OMI&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -2732,7 +2732,7 @@ functions.
   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
    &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd=""&gt;lauricella_FA&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;lauricella_FA&lt;/csymbol&gt;
      &lt;ci&gt;a&lt;/ci&gt;
      &lt;ci&gt;b&lt;/ci&gt;
      &lt;ci&gt;c&lt;/ci&gt;
@@ -2751,7 +2751,7 @@ functions.
            &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
            &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
             &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/bind&gt;
           &lt;/apply&gt;
          &lt;/apply&gt;
@@ -2760,8 +2760,8 @@ functions.
           &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
            &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
            &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/apply&gt;
           &lt;/bind&gt;
          &lt;/apply&gt;
@@ -2772,8 +2772,8 @@ functions.
           &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
            &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
            &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/apply&gt;
           &lt;/bind&gt;
          &lt;/apply&gt;
@@ -2783,7 +2783,7 @@ functions.
            &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
            &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
             &lt;cn&gt;1&lt;/cn&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/apply&gt;
           &lt;/bind&gt;
          &lt;/apply&gt;
@@ -2811,7 +2811,7 @@ functions.
          <i>n</i>
       ] .
   (<a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#lauricella_FA">lauricella_FA</a>
+  (<a href="../../../cd/hypergeon2.html#lauricella_FA">lauricella_FA</a>
   ( <i>a</i>,  <i>b</i>,  <i>c</i>,  <i>x</i>)
 , <a href="../../../cd/arith1.html#sum">sum</a>
   (<a href="../../../cd/hypergeon0.html#cartesian_product_n">cartesian_product_n</a>
@@ -2831,7 +2831,7 @@ functions.
   [
                            <i>i</i>
                         ] .
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -2844,9 +2844,9 @@ functions.
                          <i>i</i>
                       ] .
   (<a href="../../../cd/hypergeo0.html#pochhammer">pochhammer</a>
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>b</i>)
-, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -2861,9 +2861,9 @@ functions.
                          <i>i</i>
                       ] .
   (<a href="../../../cd/hypergeo0.html#pochhammer">pochhammer</a>
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>c</i>)
-, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -2876,7 +2876,7 @@ functions.
                          <i>i</i>
                       ] .
   (<a href="../../../cd/hypergeo0.html#pochhammer">pochhammer</a>
-  ( 1 , <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( 1 , <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -2901,7 +2901,7 @@ functions.
                      <button id="d40e1119popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e1119pop')">Popcorn</button>
                      <div id="d40e1119pop" style="display:none; margin-top: 0.5em">
-  hypergeon0.where(fns1.lambda[$n -&gt; .lauricella_FA($a, $b, $c, $x) = arith1.sum(hypergeon0.cartesian_product_n(setname1.N, $n), fns1.lambda[$k -&gt; (hypergeo0.pochhammer($a, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; .vector_selector($i, $k)])) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(.vector_selector($i, $b), .vector_selector($i, $k))])) / (arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(.vector_selector($i, $c), .vector_selector($i, $k))]) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(1, .vector_selector($i, $k))])) * hypergeon0.multi_power($x, $k)])], $n = linalg4.rowcount($b))
+  hypergeon0.where(fns1.lambda[$n -&gt; hypergeon2.lauricella_FA($a, $b, $c, $x) = arith1.sum(hypergeon0.cartesian_product_n(setname1.N, $n), fns1.lambda[$k -&gt; (hypergeo0.pochhammer($a, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeon2.vector_selector($i, $k)])) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(hypergeon2.vector_selector($i, $b), hypergeon2.vector_selector($i, $k))])) / (arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(hypergeon2.vector_selector($i, $c), hypergeon2.vector_selector($i, $k))]) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(1, hypergeon2.vector_selector($i, $k))])) * hypergeon0.multi_power($x, $k)])], $n = linalg4.rowcount($b))
 </div>
                   </div>
                   <div>
@@ -3266,7 +3266,7 @@ functions.
         &lt;OMV name="n"/&gt;
       &lt;/OMBVAR&gt;
       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-        &lt;OMA&gt;&lt;OMS name="lauricella_FC"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="lauricella_FC"/&gt;
           &lt;OMV name="a"/&gt;
           &lt;OMV name="b"/&gt;
           &lt;OMV name="c"/&gt;
@@ -3297,7 +3297,7 @@ functions.
                         &lt;OMBVAR&gt;
                           &lt;OMV name="i"/&gt;
                         &lt;/OMBVAR&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -3316,7 +3316,7 @@ functions.
                         &lt;OMBVAR&gt;
                           &lt;OMV name="i"/&gt;
                         &lt;/OMBVAR&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -3336,11 +3336,11 @@ functions.
                         &lt;OMV name="i"/&gt;
                       &lt;/OMBVAR&gt;
                       &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="c"/&gt;
                         &lt;/OMA&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -3359,7 +3359,7 @@ functions.
                       &lt;/OMBVAR&gt;
                       &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
                         &lt;OMI&gt; 1 &lt;/OMI&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -3395,7 +3395,7 @@ functions.
   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
    &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd=""&gt;lauricella_FC&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;lauricella_FC&lt;/csymbol&gt;
      &lt;ci&gt;a&lt;/ci&gt;
      &lt;ci&gt;b&lt;/ci&gt;
      &lt;ci&gt;c&lt;/ci&gt;
@@ -3414,7 +3414,7 @@ functions.
            &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
            &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
             &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/bind&gt;
           &lt;/apply&gt;
          &lt;/apply&gt;
@@ -3424,7 +3424,7 @@ functions.
            &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
            &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
             &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/bind&gt;
           &lt;/apply&gt;
          &lt;/apply&gt;
@@ -3435,8 +3435,8 @@ functions.
           &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
            &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
            &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/apply&gt;
           &lt;/bind&gt;
          &lt;/apply&gt;
@@ -3446,7 +3446,7 @@ functions.
            &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
            &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
             &lt;cn&gt;1&lt;/cn&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/apply&gt;
           &lt;/bind&gt;
          &lt;/apply&gt;
@@ -3474,7 +3474,7 @@ functions.
          <i>n</i>
       ] .
   (<a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#lauricella_FC">lauricella_FC</a>
+  (<a href="../../../cd/hypergeon2.html#lauricella_FC">lauricella_FC</a>
   ( <i>a</i>,  <i>b</i>,  <i>c</i>,  <i>x</i>)
 , <a href="../../../cd/arith1.html#sum">sum</a>
   (<a href="../../../cd/hypergeon0.html#cartesian_product_n">cartesian_product_n</a>
@@ -3494,7 +3494,7 @@ functions.
   [
                            <i>i</i>
                         ] .
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -3507,7 +3507,7 @@ functions.
   [
                            <i>i</i>
                         ] .
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -3522,9 +3522,9 @@ functions.
                          <i>i</i>
                       ] .
   (<a href="../../../cd/hypergeo0.html#pochhammer">pochhammer</a>
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>c</i>)
-, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -3537,7 +3537,7 @@ functions.
                          <i>i</i>
                       ] .
   (<a href="../../../cd/hypergeo0.html#pochhammer">pochhammer</a>
-  ( 1 , <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( 1 , <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -3562,7 +3562,7 @@ functions.
                      <button id="d40e1386popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e1386pop')">Popcorn</button>
                      <div id="d40e1386pop" style="display:none; margin-top: 0.5em">
-  hypergeon0.where(fns1.lambda[$n -&gt; .lauricella_FC($a, $b, $c, $x) = arith1.sum(hypergeon0.cartesian_product_n(setname1.N, $n), fns1.lambda[$k -&gt; (hypergeo0.pochhammer($a, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; .vector_selector($i, $k)])) * hypergeo0.pochhammer($b, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; .vector_selector($i, $k)]))) / (arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(.vector_selector($i, $c), .vector_selector($i, $k))]) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(1, .vector_selector($i, $k))])) * hypergeon0.multi_power($x, $k)])], $n = linalg4.rowcount($b))
+  hypergeon0.where(fns1.lambda[$n -&gt; hypergeon2.lauricella_FC($a, $b, $c, $x) = arith1.sum(hypergeon0.cartesian_product_n(setname1.N, $n), fns1.lambda[$k -&gt; (hypergeo0.pochhammer($a, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeon2.vector_selector($i, $k)])) * hypergeo0.pochhammer($b, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeon2.vector_selector($i, $k)]))) / (arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(hypergeon2.vector_selector($i, $c), hypergeon2.vector_selector($i, $k))]) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(1, hypergeon2.vector_selector($i, $k))])) * hypergeon0.multi_power($x, $k)])], $n = linalg4.rowcount($b))
 </div>
                   </div>
                   <div>
@@ -3904,7 +3904,7 @@ functions.
         &lt;OMV name="n"/&gt;
       &lt;/OMBVAR&gt;
       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-        &lt;OMA&gt;&lt;OMS name="lauricella_FD"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="lauricella_FD"/&gt;
           &lt;OMV name="a"/&gt;
           &lt;OMV name="b"/&gt;
           &lt;OMV name="c"/&gt;
@@ -3935,7 +3935,7 @@ functions.
                         &lt;OMBVAR&gt;
                           &lt;OMV name="i"/&gt;
                         &lt;/OMBVAR&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -3953,11 +3953,11 @@ functions.
                         &lt;OMV name="i"/&gt;
                       &lt;/OMBVAR&gt;
                       &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="b"/&gt;
                         &lt;/OMA&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -3978,7 +3978,7 @@ functions.
                         &lt;OMBVAR&gt;
                           &lt;OMV name="i"/&gt;
                         &lt;/OMBVAR&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -3997,7 +3997,7 @@ functions.
                       &lt;/OMBVAR&gt;
                       &lt;OMA&gt;&lt;OMS cd="hypergeo0" name="pochhammer"/&gt;
                         &lt;OMI&gt; 1 &lt;/OMI&gt;
-                        &lt;OMA&gt;&lt;OMS name="vector_selector"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="hypergeon2" name="vector_selector"/&gt;
                           &lt;OMV name="i"/&gt;
                           &lt;OMV name="k"/&gt;
                         &lt;/OMA&gt;
@@ -4033,7 +4033,7 @@ functions.
   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
    &lt;bvar&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/bvar&gt;
    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd=""&gt;lauricella_FD&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;lauricella_FD&lt;/csymbol&gt;
      &lt;ci&gt;a&lt;/ci&gt;
      &lt;ci&gt;b&lt;/ci&gt;
      &lt;ci&gt;c&lt;/ci&gt;
@@ -4052,7 +4052,7 @@ functions.
            &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
            &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
             &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/bind&gt;
           &lt;/apply&gt;
          &lt;/apply&gt;
@@ -4061,8 +4061,8 @@ functions.
           &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
            &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
            &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/apply&gt;
           &lt;/bind&gt;
          &lt;/apply&gt;
@@ -4074,7 +4074,7 @@ functions.
            &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
            &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
             &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/bind&gt;
           &lt;/apply&gt;
          &lt;/apply&gt;
@@ -4084,7 +4084,7 @@ functions.
            &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
            &lt;apply&gt;&lt;csymbol cd="hypergeo0"&gt;pochhammer&lt;/csymbol&gt;
             &lt;cn&gt;1&lt;/cn&gt;
-            &lt;apply&gt;&lt;csymbol cd=""&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
+            &lt;apply&gt;&lt;csymbol cd="hypergeon2"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/apply&gt;
            &lt;/apply&gt;
           &lt;/bind&gt;
          &lt;/apply&gt;
@@ -4112,7 +4112,7 @@ functions.
          <i>n</i>
       ] .
   (<a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/.html#lauricella_FD">lauricella_FD</a>
+  (<a href="../../../cd/hypergeon2.html#lauricella_FD">lauricella_FD</a>
   ( <i>a</i>,  <i>b</i>,  <i>c</i>,  <i>x</i>)
 , <a href="../../../cd/arith1.html#sum">sum</a>
   (<a href="../../../cd/hypergeon0.html#cartesian_product_n">cartesian_product_n</a>
@@ -4132,7 +4132,7 @@ functions.
   [
                            <i>i</i>
                         ] .
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -4145,9 +4145,9 @@ functions.
                          <i>i</i>
                       ] .
   (<a href="../../../cd/hypergeo0.html#pochhammer">pochhammer</a>
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>b</i>)
-, <a href="../../../cd/.html#vector_selector">vector_selector</a>
+, <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -4162,7 +4162,7 @@ functions.
   [
                            <i>i</i>
                         ] .
-  (<a href="../../../cd/.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -4175,7 +4175,7 @@ functions.
                          <i>i</i>
                       ] .
   (<a href="../../../cd/hypergeo0.html#pochhammer">pochhammer</a>
-  ( 1 , <a href="../../../cd/.html#vector_selector">vector_selector</a>
+  ( 1 , <a href="../../../cd/hypergeon2.html#vector_selector">vector_selector</a>
   ( <i>i</i>,  <i>k</i>)
 )
 )
@@ -4200,7 +4200,7 @@ functions.
                      <button id="d40e1647popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e1647pop')">Popcorn</button>
                      <div id="d40e1647pop" style="display:none; margin-top: 0.5em">
-  hypergeon0.where(fns1.lambda[$n -&gt; .lauricella_FD($a, $b, $c, $x) = arith1.sum(hypergeon0.cartesian_product_n(setname1.N, $n), fns1.lambda[$k -&gt; (hypergeo0.pochhammer($a, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; .vector_selector($i, $k)])) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(.vector_selector($i, $b), .vector_selector($i, $k))])) / (hypergeo0.pochhammer($c, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; .vector_selector($i, $k)])) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(1, .vector_selector($i, $k))])) * hypergeon0.multi_power($x, $k)])], $n = linalg4.rowcount($b))
+  hypergeon0.where(fns1.lambda[$n -&gt; hypergeon2.lauricella_FD($a, $b, $c, $x) = arith1.sum(hypergeon0.cartesian_product_n(setname1.N, $n), fns1.lambda[$k -&gt; (hypergeo0.pochhammer($a, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeon2.vector_selector($i, $k)])) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(hypergeon2.vector_selector($i, $b), hypergeon2.vector_selector($i, $k))])) / (hypergeo0.pochhammer($c, arith1.sum(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeon2.vector_selector($i, $k)])) * arith1.prod(interval1.integer_interval(1, $n), fns1.lambda[$i -&gt; hypergeo0.pochhammer(1, hypergeon2.vector_selector($i, $k))])) * hypergeon0.multi_power($x, $k)])], $n = linalg4.rowcount($b))
 </div>
                   </div>
                   <div>
