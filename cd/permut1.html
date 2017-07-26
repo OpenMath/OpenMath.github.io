@@ -1,0 +1,633 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>permut1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: permut1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/permut1.ocd">http://www.openmath.org/cd/permut1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="permut1.ocd">permut1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="permut1.omcd">permut1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#permutation">permutation</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>3
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2017-12-31</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+            <pre>
+  Author: OpenMath Consortium
+  SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
+            </pre>
+            <p> A CD of functions for permutations </p>
+            <pre>
+Written by A. Solomon on 1998-11-19
+Modified by David Carlisle 1999-04-28
+Renamed from comb to permut1 1999-05-19
+Modified by A. Solomon to remove ambiguity from definition 
+of Permutation as reported by JHD 2000-02-05.
+</pre>
+
+            <hr/>
+            <h2>
+               <a name="permutation"> permutation </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+The n-ary constructor permutation. The arguments are the integers 
+1 .. n in some order.  permutation(p1, ..., pn) is the function 
+which takes 1 to p1, 2 to p2 and so on.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>permutation(2,3,...,n, 1)^n = permutation()</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e57xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57xml')">OpenMath XML (source)</button>
+                     <pre id="d40e57xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="and"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="fns2" name="apply_to_list"/&gt;
+	&lt;OMS cd="permut1" name="permutation"/&gt;
+	&lt;OMV name="l"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="permut1" name="permutation"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="implies"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="in"/&gt;
+	&lt;OMV name="i"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="interval1" name="integer_interval"/&gt;
+	  &lt;OMS cd="alg1" name="one"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="arith1" name="minus"/&gt;
+	    &lt;OMV name="n"/&gt;
+	    &lt;OMS cd="alg1" name="one"/&gt;
+	  &lt;/OMA&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="linalg1" name="vector_selector"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="fns2" name="apply_to_list"/&gt;
+	    &lt;OMS cd="linalg2" name="vector"/&gt;
+	    &lt;OMV name="l"/&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMV name="i"/&gt;
+	&lt;/OMA&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="arith1" name="plus"/&gt;
+	  &lt;OMV name="i"/&gt;
+	  &lt;OMS cd="alg1" name="one"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg1" name="vector_selector"/&gt;
+	&lt;OMA&gt;
+          &lt;OMS cd="fns2" name="apply_to_list"/&gt;
+	  &lt;OMS cd="linalg2" name="vector"/&gt;
+	  &lt;OMV name="l"/&gt;
+        &lt;/OMA&gt;
+	&lt;OMV name="n"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMS cd="alg1" name="one"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMV name="n"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="size"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="fns2" name="apply_to_list"/&gt;
+	  &lt;OMS cd="linalg2" name="vector"/&gt;
+	  &lt;OMV name="l"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e57cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57cmml')">Strict Content MathML</button>
+                     <pre id="d40e57cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;&lt;csymbol cd="permut1"&gt;permutation&lt;/csymbol&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="permut1"&gt;permutation&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+    &lt;ci&gt;i&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+     &lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;i&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;n&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;ci&gt;n&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e57prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e57pref')">Prefix</button>
+                  <div id="d40e57pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/permut1.html#permutation">permutation</a>,  <i>l</i>)
+, <a href="../../../cd/permut1.html#permutation">permutation</a>
+  ()
+)
+, <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>i</i>, <a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  (<a href="../../../cd/alg1.html#one">one</a>, <a href="../../../cd/arith1.html#minus">minus</a>
+  ( <i>n</i>, <a href="../../../cd/alg1.html#one">one</a>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/linalg2.html#vector">vector</a>,  <i>l</i>)
+,  <i>i</i>)
+, <a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>i</i>, <a href="../../../cd/alg1.html#one">one</a>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  (<a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/linalg2.html#vector">vector</a>,  <i>l</i>)
+,  <i>n</i>)
+, <a href="../../../cd/alg1.html#one">one</a>)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>n</i>, <a href="../../../cd/linalg4.html#size">size</a>
+  (<a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/linalg2.html#vector">vector</a>,  <i>l</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e57popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57pop')">Popcorn</button>
+                     <div id="d40e57pop" style="display:none; margin-top: 0.5em">
+  fns2.apply_to_list(permut1.permutation, $l) = permut1.permutation() and (set1.in($i, interval1.integer_interval(alg1.one, $n - alg1.one)) ==&gt; linalg1.vector_selector(fns2.apply_to_list(linalg2.vector, $l), $i) = $i + alg1.one) and linalg1.vector_selector(fns2.apply_to_list(linalg2.vector, $l), $n) = alg1.one and $n = linalg4.size(fns2.apply_to_list(linalg2.vector, $l))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e57mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e57mml')">Rendered Presentation MathML</button>
+                     <div id="d40e57mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mrow>
+                                    <mi>apply_to_list</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>permutation</mi>
+                                       <mo>,</mo>
+                                       <mi>l</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>permutation</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8743;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>i</mi>
+                                    <mo>&#8712;</mo>
+                                    <mrow>
+                                       <mo>[</mo>
+                                       <mn>1</mn>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mi>n</mi>
+                                          <mo>-</mo>
+                                          <mn>1</mn>
+                                       </mrow>
+                                       <mo>]</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <msub>
+                                       <mi>i</mi>
+                                       <mrow>
+                                          <mi>apply_to_list</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>vector</mi>
+                                             <mo>,</mo>
+                                             <mi>l</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>i</mi>
+                                       <mo>+</mo>
+                                       <mn>1</mn>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                              <mo>&#8743;</mo>
+                              <mrow>
+                                 <msub>
+                                    <mi>n</mi>
+                                    <mrow>
+                                       <mi>apply_to_list</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>vector</mi>
+                                          <mo>,</mo>
+                                          <mi>l</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </msub>
+                                 <mo>=</mo>
+                                 <mn>1</mn>
+                              </mrow>
+                              <mo>&#8743;</mo>
+                              <mrow>
+                                 <mi>n</mi>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>size</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>apply_to_list</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>vector</mi>
+                                             <mo>,</mo>
+                                             <mi>l</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e190xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e190xml')">OpenMath XML (source)</button>
+                     <pre id="d40e190xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+        &lt;OMA&gt;
+                &lt;OMS cd="relation1" name="eq"/&gt;
+                &lt;OMA&gt;
+                        &lt;OMS cd="arith1" name="power"/&gt;
+                        &lt;OMA&gt;
+                                &lt;OMS cd="permut1" name="permutation"/&gt;
+                                &lt;OMI&gt; 2 &lt;/OMI&gt;
+                                &lt;OMI&gt; 3 &lt;/OMI&gt;
+                                &lt;OMI&gt; 1 &lt;/OMI&gt;
+                        &lt;/OMA&gt;
+                        &lt;OMI&gt; 3 &lt;/OMI&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;
+                        &lt;OMS cd="permut1" name="permutation"/&gt;
+                        
+                &lt;/OMA&gt;
+        &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e190cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e190cmml')">Strict Content MathML</button>
+                     <pre id="d40e190cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="permut1"&gt;permutation&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+   &lt;cn&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="permut1"&gt;permutation&lt;/csymbol&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e190prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e190pref')">Prefix</button>
+                  <div id="d40e190pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
+  (<a href="../../../cd/permut1.html#permutation">permutation</a>
+  ( 2 ,  3 ,  1 )
+,  3 )
+, <a href="../../../cd/permut1.html#permutation">permutation</a>
+  ()
+)
+
+</div>
+                  <div>
+                     <button id="d40e190popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e190pop')">Popcorn</button>
+                     <div id="d40e190pop" style="display:none; margin-top: 0.5em">
+        permut1.permutation(2, 3, 1) ^ 3 = permut1.permutation()
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e190mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e190mml')">Rendered Presentation MathML</button>
+                     <div id="d40e190mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <msup>
+                                 <mrow>
+                                    <mi>permutation</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 2 </mn>
+                                       <mo>,</mo>
+                                       <mn> 3 </mn>
+                                       <mo>,</mo>
+                                       <mn> 1 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mn> 3 </mn>
+                              </msup>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>permutation</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/permut1.html#permutation">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#permutation">permutation</a>]
+	  
+	    [Last: <a href="#permutation">permutation</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

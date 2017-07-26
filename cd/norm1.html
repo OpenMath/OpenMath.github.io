@@ -1,0 +1,747 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>norm1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: norm1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/norm1.ocd">http://www.openmath.org/cd/norm1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="norm1.ocd">norm1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="norm1.omcd">norm1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#Euclidean_norm">Euclidean_norm</a>, <a href="#L_infinity_norm">L_infinity_norm</a>, <a href="#L_norm">L_norm</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2003-09-16 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 
+    (Revision 2)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2017-12-31</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="../../../cd/alg1.html">alg1</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/fns2.html">fns2</a>, <a href="../../../cd/interval1.html">interval1</a>, <a href="../../../cd/linalg1.html">linalg1</a>, <a href="list1.html">list1</a>, <a href="../../../cd/minmax1.html">minmax1</a>, <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/set1.html">set1</a>
+               </dd>
+            </dl>
+            <hr/>
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre> 
+
+ 
+
+ 
+ 
+
+
+
+            <pre>
+  Author: James Davenport
+</pre>
+
+            <p>
+      This CD contains definitions of various norms.
+   </p>
+
+            <hr/>
+            <h2>
+               <a name="L_norm"> L_norm </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+       This symbol signifies the $L_p$ norm for any $p$ (the
+       case of $L_\infty$ is handled specially).
+   </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+      $L_p(v)=\left(\sum_{i=1}^{size v}|v_i|^p\right)^{1/p}$
+   </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e82xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e82xml')">OpenMath XML (source)</button>
+                     <pre id="d40e82xml" style="display:none">
+     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+       &lt;OMA&gt;
+         &lt;OMS name="eq" cd="relation1"/&gt;
+         &lt;OMA&gt;
+           &lt;OMS name="L_norm" cd="norm1"/&gt;
+	   &lt;OMV name="p"/&gt;
+	   &lt;OMV name="v"/&gt;
+         &lt;/OMA&gt;
+         &lt;OMA&gt;
+           &lt;OMS name="power" cd="arith1"/&gt;
+           &lt;OMA&gt;
+             &lt;OMS name="sum" cd="arith1"/&gt;
+             &lt;OMA&gt;
+               &lt;OMS name="integer_interval" cd="interval1"/&gt;
+	       &lt;OMS name="one" cd="alg1"/&gt;
+               &lt;OMA&gt;
+	         &lt;OMS name="size" cd="set1"/&gt;
+	         &lt;OMV name="v"/&gt;
+               &lt;/OMA&gt;
+             &lt;/OMA&gt;
+             &lt;OMBIND&gt;
+               &lt;OMS cd="fns1" name="lambda"/&gt;
+                 &lt;OMBVAR&gt;
+                   &lt;OMV name="i"/&gt;
+                 &lt;/OMBVAR&gt;
+                 &lt;OMA&gt;
+                   &lt;OMS cd="arith1" name="power"/&gt;
+                   &lt;OMA&gt;
+		     &lt;OMS name="abs" cd="arith1"/&gt;
+                     &lt;OMA&gt;
+                       &lt;OMS cd="linalg1" name="vector_selector"/&gt;
+                       &lt;OMV name="v"/&gt;
+                       &lt;OMV name="i"/&gt;
+                     &lt;/OMA&gt;
+                   &lt;/OMA&gt;
+	           &lt;OMV name="p"/&gt;
+                 &lt;/OMA&gt;
+             &lt;/OMBIND&gt;
+           &lt;/OMA&gt;
+           &lt;OMA&gt;
+             &lt;OMS name="divide" cd="arith1"/&gt;
+	     &lt;OMS name="one" cd="alg1"/&gt;
+	     &lt;OMV name="p"/&gt;
+           &lt;/OMA&gt;
+         &lt;/OMA&gt;
+       &lt;/OMA&gt;
+     &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e82cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e82cmml')">Strict Content MathML</button>
+                     <pre id="d40e82cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="norm1"&gt;L_norm&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+     &lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;size&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;abs&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;ci&gt;p&lt;/ci&gt;
+     &lt;/apply&gt;
+    &lt;/bind&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e82prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e82pref')">Prefix</button>
+                  <div id="d40e82pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/norm1.html#L_norm">L_norm</a>
+  ( <i>p</i>,  <i>v</i>)
+, <a href="../../../cd/arith1.html#power">power</a>
+  (<a href="../../../cd/arith1.html#sum">sum</a>
+  (<a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  (<a href="../../../cd/alg1.html#one">one</a>, <a href="../../../cd/set1.html#size">size</a>
+  ( <i>v</i>)
+)
+, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+                    <i>i</i>
+                 ] .
+  (<a href="../../../cd/arith1.html#power">power</a>
+  (<a href="../../../cd/arith1.html#abs">abs</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( <i>v</i>,  <i>i</i>)
+)
+,  <i>p</i>)
+)
+)
+, <a href="../../../cd/arith1.html#divide">divide</a>
+  (<a href="../../../cd/alg1.html#one">one</a>,  <i>p</i>)
+)
+)
+
+     </div>
+                  <div>
+                     <button id="d40e82popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e82pop')">Popcorn</button>
+                     <div id="d40e82pop" style="display:none; margin-top: 0.5em">
+       norm1.L_norm($p, $v) = arith1.sum(interval1.integer_interval(alg1.one, set1.size($v)), fns1.lambda[$i -&gt; arith1.abs(linalg1.vector_selector($v, $i)) ^ $p]) ^ (alg1.one / $p)
+     </div>
+                  </div>
+                  <div>
+                     <button id="d40e82mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e82mml')">Rendered Presentation MathML</button>
+                     <div id="d40e82mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>L_norm</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>p</mi>
+                                    <mo>,</mo>
+                                    <mi>v</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <msup>
+                                 <munderover>
+                                    <mo>&#8721;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>i</mi>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mn>1</mn>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>size</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>v</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </munderover>
+                                 <msup>
+                                    <mrow>
+                                       <mo>|</mo>
+                                       <msub>
+                                          <mi>i</mi>
+                                          <mi>v</mi>
+                                       </msub>
+                                       <mo>|</mo>
+                                    </mrow>
+                                    <mi>p</mi>
+                                 </msup>
+                                 <mfenced>
+                                    <mfrac>
+                                       <mn>1</mn>
+                                       <mi>p</mi>
+                                    </mfrac>
+                                 </mfenced>
+                              </msup>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/norm1.html#L_norm">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#L_infinity_norm">L_infinity_norm</a>]
+	  
+	    [Last: <a href="#Euclidean_norm">Euclidean_norm</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="L_infinity_norm"> L_infinity_norm </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+       This symbol signifies the $L_\infty$ norm.
+   </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+      $L_\infty(v)=\max_{i=1}^{size v}|v_i|$
+   </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e178xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e178xml')">OpenMath XML (source)</button>
+                     <pre id="d40e178xml" style="display:none">
+     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+       &lt;OMA&gt;
+         &lt;OMS name="eq" cd="relation1"/&gt;
+         &lt;OMA&gt;
+           &lt;OMS name="L_infinity_norm" cd="norm1"/&gt;
+	   &lt;OMV name="v"/&gt;
+         &lt;/OMA&gt;
+         &lt;OMA&gt;
+           &lt;OMS cd="fns2" name="apply_to_list"/&gt;
+           &lt;OMS cd="minmax1" name="max"/&gt;
+           &lt;OMA&gt;
+             &lt;OMS cd="list1" name="make_list"/&gt;
+             &lt;OMI&gt; 1 &lt;/OMI&gt;
+             &lt;OMA&gt;
+	       &lt;OMS name="size" cd="set1"/&gt;
+	       &lt;OMV name="v"/&gt;
+             &lt;/OMA&gt;
+             &lt;OMBIND&gt;
+               &lt;OMS cd="fns1" name="lambda"/&gt;
+               &lt;OMBVAR&gt;
+                 &lt;OMV name="i"/&gt;
+               &lt;/OMBVAR&gt;
+               &lt;OMA&gt;
+                 &lt;OMS cd="arith1" name="abs"/&gt;
+                 &lt;OMA&gt;
+                   &lt;OMS cd="linalg1" name="vector_selector"/&gt;
+                   &lt;OMV name="v"/&gt;
+                   &lt;OMV name="i"/&gt;
+                 &lt;/OMA&gt;
+               &lt;/OMA&gt;
+             &lt;/OMBIND&gt;
+           &lt;/OMA&gt;
+         &lt;/OMA&gt;
+       &lt;/OMA&gt;
+     &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e178cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e178cmml')">Strict Content MathML</button>
+                     <pre id="d40e178cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="norm1"&gt;L_infinity_norm&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
+   &lt;csymbol cd="minmax1"&gt;max&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;make_list&lt;/csymbol&gt;
+    &lt;cn&gt;1&lt;/cn&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;size&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;/apply&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;abs&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/bind&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e178prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e178pref')">Prefix</button>
+                  <div id="d40e178pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/norm1.html#L_infinity_norm">L_infinity_norm</a>
+  ( <i>v</i>)
+, <a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/minmax1.html#max">max</a>, <a href="../../../cd/list1.html#make_list">make_list</a>
+  ( 1 , <a href="../../../cd/set1.html#size">size</a>
+  ( <i>v</i>)
+, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+                  <i>i</i>
+               ] .
+  (<a href="../../../cd/arith1.html#abs">abs</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( <i>v</i>,  <i>i</i>)
+)
+)
+)
+)
+)
+
+     </div>
+                  <div>
+                     <button id="d40e178popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e178pop')">Popcorn</button>
+                     <div id="d40e178pop" style="display:none; margin-top: 0.5em">
+       norm1.L_infinity_norm($v) = fns2.apply_to_list(minmax1.max, list1.make_list(1, set1.size($v), fns1.lambda[$i -&gt; arith1.abs(linalg1.vector_selector($v, $i))]))
+     </div>
+                  </div>
+                  <div>
+                     <button id="d40e178mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e178mml')">Rendered Presentation MathML</button>
+                     <div id="d40e178mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>L_infinity_norm</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>v</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mrow>
+                                 <mi>apply_to_list</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>max</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>make_list</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 1 </mn>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>size</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>v</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mo>&#955;</mo>
+                                             <mo>&#8201;</mo>
+                                             <mrow>
+                                                <mi>i</mi>
+                                             </mrow>
+                                             <mo>.</mo>
+                                             <mrow>
+                                                <mo>|</mo>
+                                                <msub>
+                                                   <mi>i</mi>
+                                                   <mi>v</mi>
+                                                </msub>
+                                                <mo>|</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/norm1.html#L_infinity_norm">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#Euclidean_norm">Euclidean_norm</a>]
+	  
+	    [Previous: <a href="#L_norm">L_norm</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="Euclidean_norm"> Euclidean_norm </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+       This symbol signifies the Euclidean ($L_2$) norm. 
+   </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+      $L_2(v)=$ Euclidean_norm(v)
+   </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e254xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e254xml')">OpenMath XML (source)</button>
+                     <pre id="d40e254xml" style="display:none">
+     &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+       &lt;OMA&gt;
+         &lt;OMS name="eq" cd="relation1"/&gt;
+         &lt;OMA&gt;
+           &lt;OMS name="Euclidean_norm" cd="norm1"/&gt;
+	   &lt;OMV name="v"/&gt;
+         &lt;/OMA&gt;
+           &lt;OMS name="L_norm" cd="norm1"/&gt;
+	   &lt;OMI&gt; 2 &lt;/OMI&gt;
+	   &lt;OMV name="v"/&gt;
+       &lt;/OMA&gt;
+     &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e254cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e254cmml')">Strict Content MathML</button>
+                     <pre id="d40e254cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="norm1"&gt;Euclidean_norm&lt;/csymbol&gt;&lt;ci&gt;v&lt;/ci&gt;&lt;/apply&gt;
+  &lt;csymbol cd="norm1"&gt;L_norm&lt;/csymbol&gt;
+  &lt;cn&gt;2&lt;/cn&gt;
+  &lt;ci&gt;v&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e254prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e254pref')">Prefix</button>
+                  <div id="d40e254pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/norm1.html#Euclidean_norm">Euclidean_norm</a>
+  ( <i>v</i>)
+, <a href="../../../cd/norm1.html#L_norm">L_norm</a>,  2 ,  <i>v</i>)
+
+     </div>
+                  <div>
+                     <button id="d40e254popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e254pop')">Popcorn</button>
+                     <div id="d40e254pop" style="display:none; margin-top: 0.5em">
+       norm1.Euclidean_norm($v) = norm1.L_norm = 2 = $v
+     </div>
+                  </div>
+                  <div>
+                     <button id="d40e254mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e254mml')">Rendered Presentation MathML</button>
+                     <div id="d40e254mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>Euclidean_norm</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>v</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mi>L_norm</mi>
+                              <mo>=</mo>
+                              <mn> 2 </mn>
+                              <mo>=</mo>
+                              <mi>v</mi>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/norm1.html#Euclidean_norm">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#L_norm">L_norm</a>]
+	  
+	    [Previous: <a href="#L_infinity_norm">L_infinity_norm</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>

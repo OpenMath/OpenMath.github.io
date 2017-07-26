@@ -1,0 +1,547 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>SI_BaseQuantities</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: SI_BaseQuantities</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/SI_BaseQuantities.ocd">http://www.openmath.org/cd/SI_BaseQuantities.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="SI_BaseQuantities.ocd">SI_BaseQuantities.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="SI_BaseQuantities.omcd">SI_BaseQuantities.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#amount-of-substance">amount-of-substance</a>, <a href="#current">current</a>, <a href="#length">length</a>, <a href="#luminous-intensity">luminous-intensity</a>, <a href="#mass">mass</a>, <a href="#one">one</a>, <a href="#temperature">temperature</a>, <a href="#time">time</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2010-08-25</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>2
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2011-03-01</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+
+Author: Joseph B. Collins (2009), Naval Research Laboratory, Washington, DC.
+Copyright Notice:  This is a work of the U.S. Government and is not
+subject to copyright protection in the United States. Foreign copyrights
+may apply.
+
+</pre>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+            <p> 
+    This CD defines symbols which represent the seven base quantities of the SI
+    (Syst\'{e}me International) system of quantities for describing quantity
+    dimensions.
+    (DRAFT INTERNATIONAL STANDARD ISO/DIS 80000-1 - "Quantities and
+    units", 2008)
+  </p>
+
+            <hr/>
+            <h2>
+               <a name="one">one</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents the proposed SI base quantity of dimension one,
+      or the dimensionless quantity.
+      It has the short symbol form, "1".
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/SI_BaseQuantities.html#one">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#length">length</a>]
+	  
+	    [Last: <a href="#luminous-intensity">luminous-intensity</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+  
+            <hr/>
+            <h2>
+               <a name="length">length</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents the SI base quantity of length.
+      It has the short symbol form, "L".
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/SI_BaseQuantities.html#length">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#mass">mass</a>]
+	  
+	    [Previous: <a href="#one">one</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="mass">mass</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents the SI base quantity of mass.
+      It has the short symbol form, "M".
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/SI_BaseQuantities.html#mass">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#time">time</a>]
+	  
+	    [Previous: <a href="#length">length</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="time">time</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents the SI base quantity of time.
+      It has the short symbol form, "T".
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/SI_BaseQuantities.html#time">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#current">current</a>]
+	  
+	    [Previous: <a href="#mass">mass</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="current">current</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents the SI base quantity of electrical current.
+      It has the short symbol form, "I".
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/SI_BaseQuantities.html#current">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#temperature">temperature</a>]
+	  
+	    [Previous: <a href="#time">time</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="temperature">temperature</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents the SI base quantity of thermodynamic temperature.
+      It has the short symbol form, "\Theta;".
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/SI_BaseQuantities.html#temperature">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#amount-of-substance">amount-of-substance</a>]
+	  
+	    [Previous: <a href="#current">current</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="amount-of-substance">amount-of-substance</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents the SI base quantity of amount of substance.
+      It has the short symbol form, "N".
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/SI_BaseQuantities.html#amount-of-substance">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#luminous-intensity">luminous-intensity</a>]
+	  
+	    [Previous: <a href="#temperature">temperature</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="luminous-intensity">luminous-intensity</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents the SI base quantity of luminous intensity.
+      It has the short symbol form, "J".
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/SI_BaseQuantities.html#luminous-intensity">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#one">one</a>]
+	  
+	    [Previous: <a href="#amount-of-substance">amount-of-substance</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

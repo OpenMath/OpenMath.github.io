@@ -1,0 +1,3042 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>set1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: set1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/set1.ocd">http://www.openmath.org/cd/set1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="set1.ocd">set1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="set1.omcd">set1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#cartesian_product">cartesian_product</a>, <a href="#in">in</a>, <a href="#intersect">intersect</a>, <a href="#notin">notin</a>, <a href="#notprsubset">notprsubset</a>, <a href="#notsubset">notsubset</a>, <a href="#prsubset">prsubset</a>, <a href="#set">set</a>, <a href="#setdiff">setdiff</a>, <a href="#size">size</a>, <a href="#subset">subset</a>, <a href="#union">union</a>, <a href="#emptyset">emptyset</a>, <a href="#map">map</a>, <a href="#suchthat">suchthat</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>3
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> official </dd>
+            </dl>
+            <hr/>
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+            <pre>
+  Author: OpenMath Consortium
+  SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
+            </pre>
+
+            <p>
+    This CD defines the set functions and constructors for basic
+    set theory. It is intended to be `compatible' with the
+    corresponding elements in MathML.
+</p>
+
+            <hr/>
+            <h2>
+               <a name="cartesian_product"> cartesian_product </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents an n-ary construction function for constructing
+the Cartesian product of sets. It takes n set arguments in order to
+construct their Cartesian product.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+An example to show the representation of the Cartesian product of sets: AxBxC.
+<div>
+                     <button id="d40e51xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e51xml')">OpenMath XML (source)</button>
+                     <pre id="d40e51xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="cartesian_product"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMV name="B"/&gt;
+    &lt;OMV name="C"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e51cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e51cmml')">Strict Content MathML</button>
+                     <pre id="d40e51cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;cartesian_product&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e51prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e51pref')">Prefix</button>
+                  <div id="d40e51pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#cartesian_product">cartesian_product</a>
+  ( <i>A</i>,  <i>B</i>,  <i>C</i>)
+
+</div>
+                  <div>
+                     <button id="d40e51popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e51pop')">Popcorn</button>
+                     <div id="d40e51pop" style="display:none; margin-top: 0.5em">
+  set1.cartesian_product($A, $B, $C)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e51mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e51mml')">Rendered Presentation MathML</button>
+                     <div id="d40e51mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>A</mi>
+                              <mo>&#215;</mo>
+                              <mi>B</mi>
+                              <mo>&#215;</mo>
+                              <mi>C</mi>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#cartesian_product">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#emptyset">emptyset</a>]
+	  
+	    [Last: <a href="#notprsubset">notprsubset</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="emptyset">emptyset</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is used to represent the empty set, that is the set which
+contains no members. It takes no parameters.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> The intersection of A with the emptyset is the emptyset </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e83xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e83xml')">OpenMath XML (source)</button>
+                     <pre id="d40e83xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="intersect"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMS cd="set1" name="emptyset"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="set1" name="emptyset"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e83cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e83cmml')">Strict Content MathML</button>
+                     <pre id="d40e83cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;intersect&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;csymbol cd="set1"&gt;emptyset&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;csymbol cd="set1"&gt;emptyset&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e83prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e83pref')">Prefix</button>
+                  <div id="d40e83pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/set1.html#intersect">intersect</a>
+  ( <i>A</i>, <a href="../../../cd/set1.html#emptyset">emptyset</a>)
+, <a href="../../../cd/set1.html#emptyset">emptyset</a>)
+
+</div>
+                  <div>
+                     <button id="d40e83popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e83pop')">Popcorn</button>
+                     <div id="d40e83pop" style="display:none; margin-top: 0.5em">
+  set1.intersect($A, set1.emptyset) = set1.emptyset
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e83mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e83mml')">Rendered Presentation MathML</button>
+                     <div id="d40e83mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>&#8745;</mo>
+                                 <mi>&#8709;</mi>
+                              </mrow>
+                              <mo>=</mo>
+                              <mi>&#8709;</mi>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> The union of A with the emptyset is A </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e109xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e109xml')">OpenMath XML (source)</button>
+                     <pre id="d40e109xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="union"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMS cd="set1" name="emptyset"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMV name="A"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e109cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e109cmml')">Strict Content MathML</button>
+                     <pre id="d40e109cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;union&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;csymbol cd="set1"&gt;emptyset&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;ci&gt;A&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e109prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e109pref')">Prefix</button>
+                  <div id="d40e109pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/set1.html#union">union</a>
+  ( <i>A</i>, <a href="../../../cd/set1.html#emptyset">emptyset</a>)
+,  <i>A</i>)
+
+</div>
+                  <div>
+                     <button id="d40e109popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e109pop')">Popcorn</button>
+                     <div id="d40e109pop" style="display:none; margin-top: 0.5em">
+  set1.union($A, set1.emptyset) = $A
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e109mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e109mml')">Rendered Presentation MathML</button>
+                     <div id="d40e109mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>&#8746;</mo>
+                                 <mi>&#8709;</mi>
+                              </mrow>
+                              <mo>=</mo>
+                              <mi>A</mi>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> the size of the empty set is zero </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e134xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134xml')">OpenMath XML (source)</button>
+                     <pre id="d40e134xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="size"/&gt;
+      &lt;OMS cd="set1" name="emptyset"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="alg1" name="zero"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e134cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134cmml')">Strict Content MathML</button>
+                     <pre id="d40e134cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;size&lt;/csymbol&gt;&lt;csymbol cd="set1"&gt;emptyset&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e134prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e134pref')">Prefix</button>
+                  <div id="d40e134pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/set1.html#size">size</a>
+  (<a href="../../../cd/set1.html#emptyset">emptyset</a>)
+, <a href="../../../cd/alg1.html#zero">zero</a>)
+
+</div>
+                  <div>
+                     <button id="d40e134popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134pop')">Popcorn</button>
+                     <div id="d40e134pop" style="display:none; margin-top: 0.5em">
+  set1.size(set1.emptyset) = alg1.zero
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e134mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e134mml')">Rendered Presentation MathML</button>
+                     <div id="d40e134mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>size</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>&#8709;</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mn>0</mn>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#emptyset">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#map">map</a>]
+	  
+	    [Previous: <a href="#cartesian_product">cartesian_product</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="map">map</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a mapping function which may be used to
+construct sets, it takes as arguments a function from X to Y and a
+set over X in that order. The value that is returned is a set of
+values in Y. The argument list may be a set or an integer_interval.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The set of even values between 0 and 20, that is the values 2x, where
+x ranges over the integral interval [0,10]. 
+<div>
+                     <button id="d40e166xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e166xml')">OpenMath XML (source)</button>
+                     <pre id="d40e166xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="map"/&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS cd="fns1" name="lambda"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMI&gt; 2 &lt;/OMI&gt;
+	&lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="interval1" name="integer_interval"/&gt;
+      &lt;OMI&gt; 0 &lt;/OMI&gt;
+      &lt;OMI&gt; 10 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e166cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e166cmml')">Strict Content MathML</button>
+                     <pre id="d40e166cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;map&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;10&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e166prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e166pref')">Prefix</button>
+                  <div id="d40e166pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#map">map</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+         <i>x</i>
+      ] .
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( 2 ,  <i>x</i>)
+)
+, <a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  ( 0 ,  10 )
+)
+
+</div>
+                  <div>
+                     <button id="d40e166popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e166pop')">Popcorn</button>
+                     <div id="d40e166pop" style="display:none; margin-top: 0.5em">
+  set1.map(fns1.lambda[$x -&gt; 2 * $x], interval1.integer_interval(0, 10))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e166mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e166mml')">Rendered Presentation MathML</button>
+                     <div id="d40e166mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>{</mo>
+                              <mrow>
+                                 <mn> 2 </mn>
+                                 <mo>&#8290;</mo>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>|</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                                 <mo>&#8712;</mo>
+                                 <mrow>
+                                    <mo>[</mo>
+                                    <mn> 0 </mn>
+                                    <mo separator="true">,</mo>
+                                    <mn> 10 </mn>
+                                    <mo>]</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>}</mo>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#map">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#size">size</a>]
+	  
+	    [Previous: <a href="#emptyset">emptyset</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="size"> size </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is used to denote the number of elements in a set. It is
+either a non-negative integer, or an infinite cardinal number. The
+symbol infinity may be used for an unspecified infinite cardinal.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The size of the set{3,6,9} = 3
+
+<div>
+                     <button id="d40e220xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e220xml')">OpenMath XML (source)</button>
+                     <pre id="d40e220xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="size"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="set"/&gt;
+        &lt;OMI&gt; 3 &lt;/OMI&gt;
+        &lt;OMI&gt; 6 &lt;/OMI&gt;
+        &lt;OMI&gt; 9 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMI&gt; 3 &lt;/OMI&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e220cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e220cmml')">Strict Content MathML</button>
+                     <pre id="d40e220cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;size&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;cn&gt;3&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e220prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e220pref')">Prefix</button>
+                  <div id="d40e220pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/set1.html#size">size</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  ( 3 ,  6 ,  9 )
+)
+,  3 )
+
+</div>
+                  <div>
+                     <button id="d40e220popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e220pop')">Popcorn</button>
+                     <div id="d40e220pop" style="display:none; margin-top: 0.5em">
+  set1.size({3 , 6 , 9}) = 3
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e220mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e220mml')">Rendered Presentation MathML</button>
+                     <div id="d40e220mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>size</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mn> 3 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 6 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 9 </mn>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mn> 3 </mn>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The size of the set of integers is infinite
+
+<div>
+                     <button id="d40e253xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e253xml')">OpenMath XML (source)</button>
+                     <pre id="d40e253xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="size"/&gt;
+      &lt;OMS cd="setname1" name="Z"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="nums1" name="infinity"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e253cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e253cmml')">Strict Content MathML</button>
+                     <pre id="d40e253cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;size&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;csymbol cd="nums1"&gt;infinity&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e253prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e253pref')">Prefix</button>
+                  <div id="d40e253pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/set1.html#size">size</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>)
+, <a href="../../../cd/nums1.html#infinity">infinity</a>)
+
+</div>
+                  <div>
+                     <button id="d40e253popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e253pop')">Popcorn</button>
+                     <div id="d40e253pop" style="display:none; margin-top: 0.5em">
+  set1.size(setname1.Z) = nums1.infinity
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e253mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e253mml')">Rendered Presentation MathML</button>
+                     <div id="d40e253mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>size</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi mathvariant="double-struck">Z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>=</mo>
+                              <mi>&#8734;</mi>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#size">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#suchthat">suchthat</a>]
+	  
+	    [Previous: <a href="#map">map</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="suchthat">suchthat</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the suchthat function which may be used to
+construct sets, it takes two arguments. The first argument should be the
+set which contains the elements of the set we wish to represent, the
+second argument should be a predicate, that is a function from the set
+to the booleans which describes if an element is to be in the set returned.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+This example shows how to construct the set of even integers, using
+the suchthat constructor.
+<div>
+                     <button id="d40e285xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e285xml')">OpenMath XML (source)</button>
+                     <pre id="d40e285xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="suchthat"/&gt;
+    &lt;OMS cd="setname1" name="Z"/&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS cd="fns1" name="lambda"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="in"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="arith1" name="divide"/&gt;
+	  &lt;OMV name="x"/&gt;
+	  &lt;OMI&gt; 2 &lt;/OMI&gt;
+	&lt;/OMA&gt;
+	&lt;OMS cd="setname1" name="Z"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e285cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e285cmml')">Strict Content MathML</button>
+                     <pre id="d40e285cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;suchthat&lt;/csymbol&gt;
+  &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e285prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e285pref')">Prefix</button>
+                  <div id="d40e285pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#suchthat">suchthat</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+         <i>x</i>
+      ] .
+  (<a href="../../../cd/set1.html#in">in</a>
+  (<a href="../../../cd/arith1.html#divide">divide</a>
+  ( <i>x</i>,  2 )
+, <a href="../../../cd/setname1.html#Z">Z</a>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e285popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e285pop')">Popcorn</button>
+                     <div id="d40e285pop" style="display:none; margin-top: 0.5em">
+  set1.suchthat(setname1.Z, fns1.lambda[$x -&gt; set1.in($x / 2, setname1.Z)])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e285mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e285mml')">Rendered Presentation MathML</button>
+                     <div id="d40e285mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>{</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                                 <mo>&#8712;</mo>
+                                 <mi mathvariant="double-struck">Z</mi>
+                              </mrow>
+                              <mo>|</mo>
+                              <mrow>
+                                 <mfrac>
+                                    <mi>x</mi>
+                                    <mn> 2 </mn>
+                                 </mfrac>
+                                 <mo>&#8712;</mo>
+                                 <mi mathvariant="double-struck">Z</mi>
+                              </mrow>
+                              <mo>}</mo>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#suchthat">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#set">set</a>]
+	  
+	    [Previous: <a href="#size">size</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="set"> set </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the set construct. It is an n-ary function. The
+set entries are given explicitly. There is no implied ordering to the
+elements of a set. 
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The set {3, 6, 9}
+<div>
+                     <button id="d40e337xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e337xml')">OpenMath XML (source)</button>
+                     <pre id="d40e337xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="set"/&gt;
+    &lt;OMI&gt; 3 &lt;/OMI&gt;
+    &lt;OMI&gt; 6 &lt;/OMI&gt;
+    &lt;OMI&gt; 9 &lt;/OMI&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e337cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e337cmml')">Strict Content MathML</button>
+                     <pre id="d40e337cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e337prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e337pref')">Prefix</button>
+                  <div id="d40e337pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#set">set</a>
+  ( 3 ,  6 ,  9 )
+
+</div>
+                  <div>
+                     <button id="d40e337popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e337pop')">Popcorn</button>
+                     <div id="d40e337pop" style="display:none; margin-top: 0.5em">
+  {3 , 6 , 9}
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e337mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e337mml')">Rendered Presentation MathML</button>
+                     <div id="d40e337mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>{</mo>
+                              <mn> 3 </mn>
+                              <mo separator="true">,</mo>
+                              <mn> 6 </mn>
+                              <mo separator="true">,</mo>
+                              <mn> 9 </mn>
+                              <mo>}</mo>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#set">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#intersect">intersect</a>]
+	  
+	    [Previous: <a href="#suchthat">suchthat</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="intersect"> intersect </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is used to denote the n-ary intersection of sets. It takes
+sets as arguments, and denotes the set that contains all the
+elements that occur in all of them.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  (A intersect B) is a subset of A and (A intersect B) is a subset of B
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e373xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e373xml')">OpenMath XML (source)</button>
+                     <pre id="d40e373xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="and"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="subset"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="intersect"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="subset"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="intersect"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e373cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e373cmml')">Strict Content MathML</button>
+                     <pre id="d40e373cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;intersect&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;ci&gt;A&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;intersect&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;ci&gt;B&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e373prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e373pref')">Prefix</button>
+                  <div id="d40e373pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#subset">subset</a>
+  (<a href="../../../cd/set1.html#intersect">intersect</a>
+  ( <i>A</i>,  <i>B</i>)
+,  <i>A</i>)
+, <a href="../../../cd/set1.html#subset">subset</a>
+  (<a href="../../../cd/set1.html#intersect">intersect</a>
+  ( <i>A</i>,  <i>B</i>)
+,  <i>B</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e373popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e373pop')">Popcorn</button>
+                     <div id="d40e373pop" style="display:none; margin-top: 0.5em">
+  set1.subset(set1.intersect($A, $B), $A) and set1.subset(set1.intersect($A, $B), $B)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e373mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e373mml')">Rendered Presentation MathML</button>
+                     <div id="d40e373mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8745;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                                 <mo>&#8834;</mo>
+                                 <mi>A</mi>
+                              </mrow>
+                              <mo>&#8743;</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8745;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                                 <mo>&#8834;</mo>
+                                 <mi>B</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#intersect">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#union">union</a>]
+	  
+	    [Previous: <a href="#set">set</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="union"> union </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is used to denote the n-ary union of sets. It takes
+sets as arguments, and denotes the set that contains all the
+elements that occur in any of them.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> A is a subset of (A union B) and B is a subset of (A union B) </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e431xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e431xml')">OpenMath XML (source)</button>
+                     <pre id="d40e431xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="and"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="subset"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="union"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="subset"/&gt;
+      &lt;OMV name="B"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="union"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e431cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e431cmml')">Strict Content MathML</button>
+                     <pre id="d40e431cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;
+   &lt;ci&gt;A&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;union&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;
+   &lt;ci&gt;B&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;union&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e431prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e431pref')">Prefix</button>
+                  <div id="d40e431pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#subset">subset</a>
+  ( <i>A</i>, <a href="../../../cd/set1.html#union">union</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+, <a href="../../../cd/set1.html#subset">subset</a>
+  ( <i>B</i>, <a href="../../../cd/set1.html#union">union</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e431popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e431pop')">Popcorn</button>
+                     <div id="d40e431pop" style="display:none; margin-top: 0.5em">
+  set1.subset($A, set1.union($A, $B)) and set1.subset($B, set1.union($A, $B))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e431mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e431mml')">Rendered Presentation MathML</button>
+                     <div id="d40e431mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>&#8834;</mo>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8746;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8743;</mo>
+                              <mrow>
+                                 <mi>B</mi>
+                                 <mo>&#8834;</mo>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8746;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+for all sets A,B and C
+
+union(A,intersect(B,C)) = intersect(union(A,B),union(A,C))
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e478xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e478xml')">OpenMath XML (source)</button>
+                     <pre id="d40e478xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="B"/&gt;
+      &lt;OMV name="C"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="union"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="intersect"/&gt;
+          &lt;OMV name="B"/&gt;
+          &lt;OMV name="C"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="intersect"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="union"/&gt;
+          &lt;OMV name="A"/&gt;
+          &lt;OMV name="B"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="union"/&gt;
+          &lt;OMV name="A"/&gt;
+          &lt;OMV name="C"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;    
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e478cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e478cmml')">Strict Content MathML</button>
+                     <pre id="d40e478cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;union&lt;/csymbol&gt;
+    &lt;ci&gt;A&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;intersect&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;intersect&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;union&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;union&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e478prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e478pref')">Prefix</button>
+                  <div id="d40e478pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+       <i>A</i>
+                     <i>B</i>
+                     <i>C</i>
+    ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/set1.html#union">union</a>
+  ( <i>A</i>, <a href="../../../cd/set1.html#intersect">intersect</a>
+  ( <i>B</i>,  <i>C</i>)
+)
+, <a href="../../../cd/set1.html#intersect">intersect</a>
+  (<a href="../../../cd/set1.html#union">union</a>
+  ( <i>A</i>,  <i>B</i>)
+, <a href="../../../cd/set1.html#union">union</a>
+  ( <i>A</i>,  <i>C</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e478popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e478pop')">Popcorn</button>
+                     <div id="d40e478pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$A, $B, $C -&gt; set1.union($A, set1.intersect($B, $C)) = set1.intersect(set1.union($A, $B), set1.union($A, $C))]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e478mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e478mml')">Rendered Presentation MathML</button>
+                     <div id="d40e478mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>B</mi>
+                                 <mo>,</mo>
+                                 <mi>C</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8746;</mo>
+                                    <mrow>
+                                       <mi>B</mi>
+                                       <mo>&#8745;</mo>
+                                       <mi>C</mi>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>A</mi>
+                                       <mo>&#8746;</mo>
+                                       <mi>B</mi>
+                                    </mrow>
+                                    <mo>&#8745;</mo>
+                                    <mrow>
+                                       <mi>A</mi>
+                                       <mo>&#8746;</mo>
+                                       <mi>C</mi>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#union">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#setdiff">setdiff</a>]
+	  
+	    [Previous: <a href="#intersect">intersect</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="setdiff"> setdiff </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is used to denote the set difference of two sets. It takes
+two sets as arguments, and denotes the set that contains all the
+elements that occur in the first set, but not in the second.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  the difference of A and B is a subset of A
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e556xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e556xml')">OpenMath XML (source)</button>
+                     <pre id="d40e556xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="subset"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="setdiff"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMV name="A"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e556cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e556cmml')">Strict Content MathML</button>
+                     <pre id="d40e556cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;setdiff&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;ci&gt;A&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e556prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e556pref')">Prefix</button>
+                  <div id="d40e556pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#subset">subset</a>
+  (<a href="../../../cd/set1.html#setdiff">setdiff</a>
+  ( <i>A</i>,  <i>B</i>)
+,  <i>A</i>)
+
+</div>
+                  <div>
+                     <button id="d40e556popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e556pop')">Popcorn</button>
+                     <div id="d40e556pop" style="display:none; margin-top: 0.5em">
+  set1.subset(set1.setdiff($A, $B), $A)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e556mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e556mml')">Rendered Presentation MathML</button>
+                     <div id="d40e556mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>&#8726;</mo>
+                                 <mi>B</mi>
+                              </mrow>
+                              <mo>&#8834;</mo>
+                              <mi>A</mi>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#setdiff">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#subset">subset</a>]
+	  
+	    [Previous: <a href="#union">union</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="subset"> subset </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol has two (set) arguments. It is used to denote that the
+first set is a subset of the second.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  if B is a subset of A and C is a subset of B then C is a subset of A
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e591xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e591xml')">OpenMath XML (source)</button>
+                     <pre id="d40e591xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="subset"/&gt;
+        &lt;OMV name="B"/&gt;
+        &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="subset"/&gt;
+        &lt;OMV name="C"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="subset"/&gt;
+      &lt;OMV name="C"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e591cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e591cmml')">Strict Content MathML</button>
+                     <pre id="d40e591cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e591prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e591pref')">Prefix</button>
+                  <div id="d40e591pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#subset">subset</a>
+  ( <i>B</i>,  <i>A</i>)
+, <a href="../../../cd/set1.html#subset">subset</a>
+  ( <i>C</i>,  <i>B</i>)
+)
+, <a href="../../../cd/set1.html#subset">subset</a>
+  ( <i>C</i>,  <i>A</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e591popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e591pop')">Popcorn</button>
+                     <div id="d40e591pop" style="display:none; margin-top: 0.5em">
+  set1.subset($B, $A) and set1.subset($C, $B) ==&gt; set1.subset($C, $A)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e591mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e591mml')">Rendered Presentation MathML</button>
+                     <div id="d40e591mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mrow>
+                                    <mi>B</mi>
+                                    <mo>&#8834;</mo>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mo>&#8743;</mo>
+                                 <mrow>
+                                    <mi>C</mi>
+                                    <mo>&#8834;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mrow>
+                                 <mi>C</mi>
+                                 <mo>&#8834;</mo>
+                                 <mi>A</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#subset">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#in">in</a>]
+	  
+	    [Previous: <a href="#setdiff">setdiff</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="in"> in </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol has two arguments, an element and a set. It is used to
+denote that the element is in the given set.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  if a is in A and a is in B then a is in A intersect B
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e647xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e647xml')">OpenMath XML (source)</button>
+                     <pre id="d40e647xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="in"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="in"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="in"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="intersect"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e647cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e647cmml')">Strict Content MathML</button>
+                     <pre id="d40e647cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+   &lt;ci&gt;a&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;intersect&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e647prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e647pref')">Prefix</button>
+                  <div id="d40e647pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>,  <i>A</i>)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>,  <i>B</i>)
+)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>, <a href="../../../cd/set1.html#intersect">intersect</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e647popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e647pop')">Popcorn</button>
+                     <div id="d40e647pop" style="display:none; margin-top: 0.5em">
+  set1.in($a, $A) and set1.in($a, $B) ==&gt; set1.in($a, set1.intersect($A, $B))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e647mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e647mml')">Rendered Presentation MathML</button>
+                     <div id="d40e647mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mo>&#8712;</mo>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mo>&#8743;</mo>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mo>&#8712;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                                 <mo>&#8712;</mo>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8745;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#in">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#notin">notin</a>]
+	  
+	    [Previous: <a href="#subset">subset</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="notin"> notin </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol has two arguments, an element and a set. It is used to
+denote that the element is not in the given set.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+ if a is a member of a then it is not true that a is not a member of A
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e710xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e710xml')">OpenMath XML (source)</button>
+                     <pre id="d40e710xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="logic1" name="implies"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="in"/&gt;
+    &lt;OMV name="a"/&gt;
+    &lt;OMV name="A"/&gt;
+  &lt;/OMA&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="not"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="notin"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e710cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e710cmml')">Strict Content MathML</button>
+                     <pre id="d40e710cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;notin&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e710prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e710pref')">Prefix</button>
+                  <div id="d40e710pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>,  <i>A</i>)
+, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/set1.html#notin">notin</a>
+  ( <i>a</i>,  <i>A</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e710popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e710pop')">Popcorn</button>
+                     <div id="d40e710pop" style="display:none; margin-top: 0.5em">
+set1.in($a, $A) ==&gt;  not(set1.notin($a, $A))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e710mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e710mml')">Rendered Presentation MathML</button>
+                     <div id="d40e710mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>a</mi>
+                                 <mo>&#8712;</mo>
+                                 <mi>A</mi>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mo>&#172;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>a</mi>
+                                 <mo>&#8713;</mo>
+                                 <mi>A</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+  4 is not in {1,2,3}
+
+<div>
+                     <button id="d40e744xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e744xml')">OpenMath XML (source)</button>
+                     <pre id="d40e744xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="notin"/&gt;
+    &lt;OMI&gt; 4 &lt;/OMI&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="set"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e744cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e744cmml')">Strict Content MathML</button>
+                     <pre id="d40e744cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;notin&lt;/csymbol&gt;
+  &lt;cn&gt;4&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e744prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e744pref')">Prefix</button>
+                  <div id="d40e744pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#notin">notin</a>
+  ( 4 , <a href="../../../cd/set1.html#set">set</a>
+  ( 1 ,  2 ,  3 )
+)
+
+</div>
+                  <div>
+                     <button id="d40e744popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e744pop')">Popcorn</button>
+                     <div id="d40e744pop" style="display:none; margin-top: 0.5em">
+  set1.notin(4, {1 , 2 , 3})
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e744mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e744mml')">Rendered Presentation MathML</button>
+                     <div id="d40e744mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mn> 4 </mn>
+                              <mo>&#8713;</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mn> 1 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 2 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 3 </mn>
+                                 <mo>}</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#notin">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#prsubset">prsubset</a>]
+	  
+	    [Previous: <a href="#in">in</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="prsubset"> prsubset </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol has two (set) arguments. It is used to denote that the
+first set is a proper subset of the second, that is a subset of the
+second set but not actually equal to it.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+A is a proper subset of B implies that A is a subset of B and A not= B
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e787xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e787xml')">OpenMath XML (source)</button>
+                     <pre id="d40e787xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="logic1" name="implies"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="prsubset"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMV name="B"/&gt;
+  &lt;/OMA&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="and"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="subset"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="neq"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e787cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e787cmml')">Strict Content MathML</button>
+                     <pre id="d40e787cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;prsubset&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;neq&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e787prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e787pref')">Prefix</button>
+                  <div id="d40e787pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#prsubset">prsubset</a>
+  ( <i>A</i>,  <i>B</i>)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#subset">subset</a>
+  ( <i>A</i>,  <i>B</i>)
+, <a href="../../../cd/relation1.html#neq">neq</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e787popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e787pop')">Popcorn</button>
+                     <div id="d40e787pop" style="display:none; margin-top: 0.5em">
+set1.prsubset($A, $B) ==&gt; set1.subset($A, $B) and $A != $B
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e787mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e787mml')">Rendered Presentation MathML</button>
+                     <div id="d40e787mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>&#8834;</mo>
+                                 <mi>B</mi>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8834;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                                 <mo>&#8743;</mo>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8800;</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+  {2,3} is a proper subset of {1,2,3}
+
+<div>
+                     <button id="d40e830xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e830xml')">OpenMath XML (source)</button>
+                     <pre id="d40e830xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="prsubset"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="set"/&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="set"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e830cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e830cmml')">Strict Content MathML</button>
+                     <pre id="d40e830cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;prsubset&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e830prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e830pref')">Prefix</button>
+                  <div id="d40e830pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#prsubset">prsubset</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  ( 2 ,  3 )
+, <a href="../../../cd/set1.html#set">set</a>
+  ( 1 ,  2 ,  3 )
+)
+
+</div>
+                  <div>
+                     <button id="d40e830popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e830pop')">Popcorn</button>
+                     <div id="d40e830pop" style="display:none; margin-top: 0.5em">
+  set1.prsubset({2 , 3}, {1 , 2 , 3})
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e830mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e830mml')">Rendered Presentation MathML</button>
+                     <div id="d40e830mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mn> 2 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 3 </mn>
+                                 <mo>}</mo>
+                              </mrow>
+                              <mo>&#8834;</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mn> 1 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 2 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 3 </mn>
+                                 <mo>}</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#prsubset">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#notsubset">notsubset</a>]
+	  
+	    [Previous: <a href="#notin">notin</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="notsubset"> notsubset </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol has two (set) arguments. It is used to denote that the
+first set is not a subset of the second.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+if A is not a subset of B then 
+there exists an x in B s.t. x is not a member of B
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e880xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e880xml')">OpenMath XML (source)</button>
+                     <pre id="d40e880xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="logic1" name="implies"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="notsubset"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMV name="B"/&gt;
+  &lt;/OMA&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="exists"/&gt;
+    &lt;OMBVAR&gt;
+      &lt;OMV name="x"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="in"/&gt;
+	&lt;OMV name="x"/&gt;
+	&lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="set1" name="notin"/&gt;
+	&lt;OMV name="x"/&gt;
+	&lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e880cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e880cmml')">Strict Content MathML</button>
+                     <pre id="d40e880cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;notsubset&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;notin&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e880prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e880pref')">Prefix</button>
+                  <div id="d40e880pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#notsubset">notsubset</a>
+  ( <i>A</i>,  <i>B</i>)
+, <a href="../../../cd/quant1.html#exists">exists</a>
+  [
+       <i>x</i>
+    ] .
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>,  <i>B</i>)
+, <a href="../../../cd/set1.html#notin">notin</a>
+  ( <i>x</i>,  <i>A</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e880popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e880pop')">Popcorn</button>
+                     <div id="d40e880pop" style="display:none; margin-top: 0.5em">
+set1.notsubset($A, $B) ==&gt; quant1.exists[$x -&gt; set1.in($x, $B) and set1.notin($x, $A)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e880mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e880mml')">Rendered Presentation MathML</button>
+                     <div id="d40e880mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>&#8836;</mo>
+                                 <mi>B</mi>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mrow>
+                                 <mo>&#8707;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>&#8712;</mo>
+                                       <mi>B</mi>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>&#8713;</mo>
+                                       <mi>A</mi>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+  {2,3,4} is not a subset of {1,2,3}
+
+<div>
+                     <button id="d40e933xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e933xml')">OpenMath XML (source)</button>
+                     <pre id="d40e933xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="notsubset"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="set"/&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+      &lt;OMI&gt; 4 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="set"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e933cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e933cmml')">Strict Content MathML</button>
+                     <pre id="d40e933cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;notsubset&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e933prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e933pref')">Prefix</button>
+                  <div id="d40e933pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#notsubset">notsubset</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  ( 2 ,  3 ,  4 )
+, <a href="../../../cd/set1.html#set">set</a>
+  ( 1 ,  2 ,  3 )
+)
+
+</div>
+                  <div>
+                     <button id="d40e933popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e933pop')">Popcorn</button>
+                     <div id="d40e933pop" style="display:none; margin-top: 0.5em">
+  set1.notsubset({2 , 3 , 4}, {1 , 2 , 3})
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e933mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e933mml')">Rendered Presentation MathML</button>
+                     <div id="d40e933mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mn> 2 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 3 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 4 </mn>
+                                 <mo>}</mo>
+                              </mrow>
+                              <mo>&#8836;</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mn> 1 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 2 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 3 </mn>
+                                 <mo>}</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#notsubset">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#notprsubset">notprsubset</a>]
+	  
+	    [Previous: <a href="#prsubset">prsubset</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="notprsubset"> notprsubset </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol has two (set) arguments. It is used to denote that the
+first set is not a proper subset of the second. A proper subset of a
+set is a subset of the set but not actually equal to it.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+ A is not a proper subset of B implies 
+that it is not true that A is a proper subset of B
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e986xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e986xml')">OpenMath XML (source)</button>
+                     <pre id="d40e986xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="logic1" name="implies"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="notprsubset"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMV name="B"/&gt;
+  &lt;/OMA&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="not"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="prsubset"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e986cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e986cmml')">Strict Content MathML</button>
+                     <pre id="d40e986cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;notprsubset&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;prsubset&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e986prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e986pref')">Prefix</button>
+                  <div id="d40e986pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#notprsubset">notprsubset</a>
+  ( <i>A</i>,  <i>B</i>)
+, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/set1.html#prsubset">prsubset</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e986popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e986pop')">Popcorn</button>
+                     <div id="d40e986pop" style="display:none; margin-top: 0.5em">
+set1.notprsubset($A, $B) ==&gt;  not(set1.prsubset($A, $B))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e986mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e986mml')">Rendered Presentation MathML</button>
+                     <div id="d40e986mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>&#8836;</mo>
+                                 <mi>B</mi>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mo>&#172;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>&#8834;</mo>
+                                 <mi>B</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+{1,2,3} is not a proper subset of {1,2,3}
+
+<div>
+                     <button id="d40e1020xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e1020xml')">OpenMath XML (source)</button>
+                     <pre id="d40e1020xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="notprsubset"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="set"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="set"/&gt;
+      &lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;OMI&gt; 2 &lt;/OMI&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e1020cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e1020cmml')">Strict Content MathML</button>
+                     <pre id="d40e1020cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;notprsubset&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e1020prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e1020pref')">Prefix</button>
+                  <div id="d40e1020pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#notprsubset">notprsubset</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  ( 1 ,  2 ,  3 )
+, <a href="../../../cd/set1.html#set">set</a>
+  ( 1 ,  2 ,  3 )
+)
+
+</div>
+                  <div>
+                     <button id="d40e1020popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e1020pop')">Popcorn</button>
+                     <div id="d40e1020pop" style="display:none; margin-top: 0.5em">
+  set1.notprsubset({1 , 2 , 3}, {1 , 2 , 3})
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e1020mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e1020mml')">Rendered Presentation MathML</button>
+                     <div id="d40e1020mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mn> 1 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 2 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 3 </mn>
+                                 <mo>}</mo>
+                              </mrow>
+                              <mo>&#8836;</mo>
+                              <mrow>
+                                 <mo>{</mo>
+                                 <mn> 1 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 2 </mn>
+                                 <mo separator="true">,</mo>
+                                 <mn> 3 </mn>
+                                 <mo>}</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set1.html#notprsubset">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#cartesian_product">cartesian_product</a>]
+	  
+	    [Previous: <a href="#notsubset">notsubset</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

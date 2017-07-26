@@ -1,0 +1,194 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>interval1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/interval1.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-03-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-03-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>3</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>official</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD holds symbols which describe both discrete and continuous 1-dimensional intervals (with open/closed end points).</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>integer_interval</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>A symbol to denote a discrete 1 dimensional interval from the first argument to the second (inclusive), where the discretisation occurs at unit intervals. The arguments are the start and the end points of the interval in that order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The integer interval 1, 2, ..., 10.</OMSTR>
+            <OMA>
+               <OMS cd="interval1" name="integer_interval"/>
+               <OMI> 1 </OMI>
+               <OMI> 10 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>interval</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>A symbol to denote a continuous 1-dimensional interval without any information about the character of the end points (used in definite integration). The arguments are the start and the end points of the interval in that order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The interval 1.0, ..., 10.0.</OMSTR>
+            <OMA>
+               <OMS cd="interval1" name="interval"/>
+               <OMF dec="1.0"/>
+               <OMF dec="10.0"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>interval_oo</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>A symbol to denote a continuous 1-dimensional interval with both end points excluded from the interval. The arguments are the start and the end points of the interval in that order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The continuous open interval (1,10).</OMSTR>
+            <OMA>
+               <OMS cd="interval1" name="interval_oo"/>
+               <OMI> 1 </OMI>
+               <OMI> 10 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>interval_cc</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>A symbol to denote a continuous 1-dimensional interval with both end points included in the interval. The arguments are the start and the end points of the interval in that order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The continuous closed interval [1,10].</OMSTR>
+            <OMA>
+               <OMS cd="interval1" name="interval_cc"/>
+               <OMI> 1 </OMI>
+               <OMI> 10 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>interval_oc</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>A symbol to denote a continuous 1-dimensional interval with the first point excluded from the interval, but the last included. The arguments are the start and the end points of the interval in that order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The continuous interval open at the lower bound and closed at the higher bound (1,10].</OMSTR>
+            <OMA>
+               <OMS cd="interval1" name="interval_oc"/>
+               <OMI> 1 </OMI>
+               <OMI> 10 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>interval_co</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>A symbol to denote a continuous 1-dimensional interval with the first point included in the interval, but the last excluded. The arguments are the start and the end points of the interval in that order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The continuous interval closed at the lower bound and open at the higher bound [1,10).</OMSTR>
+            <OMA>
+               <OMS cd="interval1" name="interval_co"/>
+               <OMI> 1 </OMI>
+               <OMI> 10 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

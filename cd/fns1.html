@@ -1,0 +1,1895 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>fns1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: fns1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/fns1.ocd">http://www.openmath.org/cd/fns1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="fns1.ocd">fns1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="fns1.omcd">fns1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#domain">domain</a>, <a href="#domainofapplication">domainofapplication</a>, <a href="#identity">identity</a>, <a href="#image">image</a>, <a href="#inverse">inverse</a>, <a href="#lambda">lambda</a>, <a href="#left_compose">left_compose</a>, <a href="#left_inverse">left_inverse</a>, <a href="#range">range</a>, <a href="#right_inverse">right_inverse</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>3
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> official </dd>
+            </dl>
+            <hr/>
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+            <pre>
+  Author: OpenMath Consortium
+  SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
+            </pre>
+
+
+            <p>
+    This CD is intended to be `compatible' with the corresponding
+    elements in Content MathML.</p>
+            <p>    In this CD we give a set of functions concerning functions
+    themselves. Functions can be constructed from expressions via a
+    lambda expression. Also there are basic function functions like
+    compose, etc.
+</p>
+
+            <hr/>
+            <h2>
+               <a name="domainofapplication"> domainofapplication </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The domainofapplication element denotes the domain over which a given 
+function is being applied. It is intended in MathML to be a more general 
+alternative to specification of this domain using
+such quantifier elements as bvar, lowlimit or condition. 
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#domainofapplication">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#domain">domain</a>]
+	  
+	    [Last: <a href="#lambda">lambda</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="domain"> domain </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol denotes the domain of a given function, which is the set of
+values it is defined over.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+x is in the domain of f if and only if 
+there exists a y in the range of f and f(x) = y
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e66xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e66xml')">OpenMath XML (source)</button>
+                     <pre id="d40e66xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="equivalent"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="in"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="fns1" name="domain"/&gt;
+	&lt;OMV name="f"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS cd="quant1" name="exists"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="y"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="and"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="in"/&gt;
+	  &lt;OMV name="y"/&gt;
+	  &lt;OMA&gt;
+            &lt;OMS cd="fns1" name="range"/&gt;
+	    &lt;OMV name="f"/&gt;
+	  &lt;/OMA&gt;
+        &lt;/OMA&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="relation1" name="eq"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMV name="f"/&gt;
+	    &lt;OMV name="x"/&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMV name="y"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e66cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e66cmml')">Strict Content MathML</button>
+                     <pre id="d40e66cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;equivalent&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns1"&gt;domain&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+     &lt;ci&gt;y&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="fns1"&gt;range&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;y&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e66prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e66pref')">Prefix</button>
+                  <div id="d40e66pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#equivalent">equivalent</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>, <a href="../../../cd/fns1.html#domain">domain</a>
+  ( <i>f</i>)
+)
+, <a href="../../../cd/quant1.html#exists">exists</a>
+  [
+         <i>y</i>
+      ] .
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>y</i>, <a href="../../../cd/fns1.html#range">range</a>
+  ( <i>f</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>f</i>
+  ( <i>x</i>)
+,  <i>y</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e66popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e66pop')">Popcorn</button>
+                     <div id="d40e66pop" style="display:none; margin-top: 0.5em">
+  logic1.equivalent(set1.in($x, fns1.domain($f)), quant1.exists[$y -&gt; set1.in($y, fns1.range($f)) and $f($x) = $y])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e66mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e66mml')">Rendered Presentation MathML</button>
+                     <div id="d40e66mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>x</mi>
+                                 <mo>&#8712;</mo>
+                                 <mrow>
+                                    <mi>domain</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8801;</mo>
+                              <mrow>
+                                 <mo>&#8707;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>y</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>y</mi>
+                                       <mo>&#8712;</mo>
+                                       <mrow>
+                                          <mi>range</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>f</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>f</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>x</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mi>y</mi>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#domain">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#range">range</a>]
+	  
+	    [Previous: <a href="#domainofapplication">domainofapplication</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="range"> range </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol denotes the range of a function, that is a set that the
+function will map to. The single argument should be the function whos
+range is being queried. It should be noted that this is not necessarily
+equal to the image, it is merely required to contain the image.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+the range of f is a subset of the image of f
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e149xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e149xml')">OpenMath XML (source)</button>
+                     <pre id="d40e149xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="subset"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="fns1" name="range"/&gt;
+      &lt;OMV name="f"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="fns1" name="image"/&gt;
+      &lt;OMV name="f"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e149cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e149cmml')">Strict Content MathML</button>
+                     <pre id="d40e149cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="fns1"&gt;range&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="fns1"&gt;image&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e149prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e149pref')">Prefix</button>
+                  <div id="d40e149pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set1.html#subset">subset</a>
+  (<a href="../../../cd/fns1.html#range">range</a>
+  ( <i>f</i>)
+, <a href="../../../cd/fns1.html#image">image</a>
+  ( <i>f</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e149popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e149pop')">Popcorn</button>
+                     <div id="d40e149pop" style="display:none; margin-top: 0.5em">
+  set1.subset(fns1.range($f), fns1.image($f))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e149mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e149mml')">Rendered Presentation MathML</button>
+                     <div id="d40e149mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>range</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>f</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8834;</mo>
+                              <mrow>
+                                 <mi>image</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>f</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#range">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#image">image</a>]
+	  
+	    [Previous: <a href="#domain">domain</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="image"> image </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol denotes the image of a given function, which is the set of
+values the domain of the given function maps to.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> x in the domain of f implies f(x) is in the image f </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e189xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e189xml')">OpenMath XML (source)</button>
+                     <pre id="d40e189xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="in"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMA&gt;
+	&lt;OMS cd="fns1" name="domain"/&gt;
+	&lt;OMV name="f"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="set1" name="in"/&gt;
+      &lt;OMA&gt;
+        &lt;OMV name="f"/&gt;
+	&lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="fns1" name="image"/&gt;
+	&lt;OMV name="f"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e189cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e189cmml')">Strict Content MathML</button>
+                     <pre id="d40e189cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns1"&gt;domain&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns1"&gt;image&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e189prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e189pref')">Prefix</button>
+                  <div id="d40e189pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>, <a href="../../../cd/fns1.html#domain">domain</a>
+  ( <i>f</i>)
+)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>f</i>
+  ( <i>x</i>)
+, <a href="../../../cd/fns1.html#image">image</a>
+  ( <i>f</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e189popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e189pop')">Popcorn</button>
+                     <div id="d40e189pop" style="display:none; margin-top: 0.5em">
+  set1.in($x, fns1.domain($f)) ==&gt; set1.in($f($x), fns1.image($f))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e189mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e189mml')">Rendered Presentation MathML</button>
+                     <div id="d40e189mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>x</mi>
+                                 <mo>&#8712;</mo>
+                                 <mrow>
+                                    <mi>domain</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>f</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8712;</mo>
+                                 <mrow>
+                                    <mi>image</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#image">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#identity">identity</a>]
+	  
+	    [Previous: <a href="#range">range</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="identity"> identity </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The identity function, it takes one argument and returns the same value.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> for all x | identity(x)=x </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e248xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e248xml')">OpenMath XML (source)</button>
+                     <pre id="d40e248xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+      &lt;OMV name="x"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="fns1" name="identity"/&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="x"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e248cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e248cmml')">Strict Content MathML</button>
+                     <pre id="d40e248cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns1"&gt;identity&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e248prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e248pref')">Prefix</button>
+                  <div id="d40e248pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+       <i>x</i>
+    ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/fns1.html#identity">identity</a>
+  ( <i>x</i>)
+,  <i>x</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e248popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e248pop')">Popcorn</button>
+                     <div id="d40e248pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$x -&gt; fns1.identity($x) = $x]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e248mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e248mml')">Rendered Presentation MathML</button>
+                     <div id="d40e248mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>Id</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>x</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#identity">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#left_inverse">left_inverse</a>]
+	  
+	    [Previous: <a href="#image">image</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="left_inverse"> left_inverse </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is used to describe the left inverse of its argument (a
+function). This inverse may only be partially defined because the
+function may not have been surjective. If the function is not
+surjective the left inverse function is
+ill-defined without further stipulations. No other assumptions are made on
+the semantics of this left inverse.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#left_inverse">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#right_inverse">right_inverse</a>]
+	  
+	    [Previous: <a href="#identity">identity</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="right_inverse"> right_inverse </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is used to describe the right inverse of its argument (a
+function). This inverse may only be partially defined because the
+function may not have been surjective. If the function is not
+surjective the right inverse function is
+ill-defined without further stipulations. No other assumptions are made on
+the semantics of this right inverse.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#right_inverse">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#inverse">inverse</a>]
+	  
+	    [Previous: <a href="#left_inverse">left_inverse</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="inverse"> inverse </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is used to describe the inverse of its argument (a
+function). This inverse may only be partially defined because the
+function may not have been surjective. If the function is not
+surjective the inverse function is
+ill-defined without further stipulations. No assumptions are made on
+the semantics of this inverse.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> 
+(inverse(f))(f(x)) = x if f is injective,
+that is
+(for all x,y | f(x) = f(y) implies x=y) implies (inverse(f))(f(z)) = z
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e318xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e318xml')">OpenMath XML (source)</button>
+                     <pre id="d40e318xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="logic1" name="implies"/&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMV name="y"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="implies"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;
+          &lt;OMV name="f"/&gt;
+	  &lt;OMV name="x"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMV name="f"/&gt;
+          &lt;OMV name="y"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMV name="x"/&gt;
+        &lt;OMV name="y"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="fns1" name="inverse"/&gt;
+        &lt;OMV name="f"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMV name="f"/&gt;
+        &lt;OMV name="z"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMV name="z"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e318cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e318cmml')">Strict Content MathML</button>
+                     <pre id="d40e318cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="fns1"&gt;inverse&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;ci&gt;z&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e318prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e318pref')">Prefix</button>
+                  <div id="d40e318pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/quant1.html#forall">forall</a>
+  [
+       <i>x</i>
+                     <i>y</i>
+    ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>f</i>
+  ( <i>x</i>)
+,  <i>f</i>
+  ( <i>y</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>x</i>,  <i>y</i>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/fns1.html#inverse">inverse</a>
+  ( <i>f</i>)
+
+  ( <i>f</i>
+  ( <i>z</i>)
+)
+,  <i>z</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e318popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e318pop')">Popcorn</button>
+                     <div id="d40e318pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$x, $y -&gt; $f($x) = $f($y) ==&gt; $x = $y] ==&gt; fns1.inverse($f)($f($z)) = $z
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e318mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e318mml')">Rendered Presentation MathML</button>
+                     <div id="d40e318mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>,</mo>
+                                    <mi>y</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>f</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>x</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mrow>
+                                          <mi>f</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>y</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8658;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>=</mo>
+                                       <mi>y</mi>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <msup>
+                                          <mi>f</mi>
+                                          <mn>-1</mn>
+                                       </msup>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>f</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>z</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>z</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+f(inverse(f(y))=y if f is defined at inverse(f)(y)
+that is, 
+if there exists an x s.t. inverse(f)(y) = x then this implies
+f(inverse(f)(y)) = y
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e402xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e402xml')">OpenMath XML (source)</button>
+                     <pre id="d40e402xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+       &lt;OMBIND&gt;
+        &lt;OMS cd="quant1" name="exists"/&gt;
+	&lt;OMBVAR&gt;
+	  &lt;OMV name="x"/&gt;
+	&lt;/OMBVAR&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="relation1" name="eq"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMA&gt;
+	      &lt;OMS cd="fns1" name="inverse"/&gt;
+	      &lt;OMV name="f"/&gt;
+	    &lt;/OMA&gt;
+	    &lt;OMV name="y"/&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMV name="x"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMV name="f"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="fns1" name="inverse"/&gt;
+	    &lt;OMV name="f"/&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMV name="y"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="y"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e402cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e402cmml')">Strict Content MathML</button>
+                     <pre id="d40e402cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;apply&gt;&lt;csymbol cd="fns1"&gt;inverse&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;ci&gt;f&lt;/ci&gt;
+    &lt;apply&gt;&lt;apply&gt;&lt;csymbol cd="fns1"&gt;inverse&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;ci&gt;y&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e402prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e402pref')">Prefix</button>
+                  <div id="d40e402pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/quant1.html#exists">exists</a>
+  [
+	   <i>x</i>
+	] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/fns1.html#inverse">inverse</a>
+  ( <i>f</i>)
+
+  ( <i>y</i>)
+,  <i>x</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>f</i>
+  (<a href="../../../cd/fns1.html#inverse">inverse</a>
+  ( <i>f</i>)
+
+  ( <i>y</i>)
+)
+,  <i>y</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e402popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e402pop')">Popcorn</button>
+                     <div id="d40e402pop" style="display:none; margin-top: 0.5em">
+  quant1.exists[$x -&gt; fns1.inverse($f)($y) = $x] ==&gt; $f(fns1.inverse($f)($y)) = $y
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e402mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e402mml')">Rendered Presentation MathML</button>
+                     <div id="d40e402mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mo>&#8707;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msup>
+                                             <mi>f</mi>
+                                             <mn>-1</mn>
+                                          </msup>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>y</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mi>x</mi>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>f</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msup>
+                                                <mi>f</mi>
+                                                <mn>-1</mn>
+                                             </msup>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>y</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>y</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#inverse">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#left_compose">left_compose</a>]
+	  
+	    [Previous: <a href="#right_inverse">right_inverse</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="left_compose"> left_compose </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the function which forms the left-composition
+of its two (function) arguments.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> for all f,g,x | left_compose(f,g)(x) = f(g(x)) </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e481xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e481xml')">OpenMath XML (source)</button>
+                     <pre id="d40e481xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="f"/&gt;
+    &lt;OMV name="g"/&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="fns1" name="left_compose"/&gt;
+        &lt;OMV name="f"/&gt;
+        &lt;OMV name="g"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="x"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMV name="f"/&gt;
+      &lt;OMA&gt;
+        &lt;OMV name="g"/&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e481cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e481cmml')">Strict Content MathML</button>
+                     <pre id="d40e481cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;g&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="fns1"&gt;left_compose&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;g&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;apply&gt;&lt;ci&gt;g&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e481prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e481pref')">Prefix</button>
+                  <div id="d40e481pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>f</i>
+                     <i>g</i>
+                     <i>x</i>
+  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/fns1.html#left_compose">left_compose</a>
+  ( <i>f</i>,  <i>g</i>)
+
+  ( <i>x</i>)
+,  <i>f</i>
+  ( <i>g</i>
+  ( <i>x</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e481popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e481pop')">Popcorn</button>
+                     <div id="d40e481pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$f, $g, $x -&gt; fns1.left_compose($f, $g)($x) = $f($g($x))]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e481mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e481mml')">Rendered Presentation MathML</button>
+                     <div id="d40e481mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>f</mi>
+                                 <mo>,</mo>
+                                 <mi>g</mi>
+                                 <mo>,</mo>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>f</mi>
+                                          <mo>o</mo>
+                                          <mi>g</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>f</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>g</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>x</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#left_compose">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#lambda">lambda</a>]
+	  
+	    [Previous: <a href="#inverse">inverse</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="lambda"> lambda </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>binder</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is used to represent anonymous functions as lambda expansions. 
+It is used in a binder that takes two further arguments, the first of which
+is a list of variables, and the second of which is an expression, and it
+forms the function which is the lambda extraction of the expression
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+An example to show the connection between curried and uncurried
+applications of a binary function f 
+(lambda(x,y).(f))(a,b)= (lambda(x).((lambda(y).(f))(b)))(a)
+<div>
+                     <button id="d40e544xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e544xml')">OpenMath XML (source)</button>
+                     <pre id="d40e544xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="a"/&gt;
+    &lt;OMV name="b"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMV name="y"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMV name="f"/&gt;
+      &lt;/OMBIND&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMV name="b"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMBIND&gt;
+        &lt;OMS cd="fns1" name="lambda"/&gt;
+        &lt;OMBVAR&gt;
+          &lt;OMV name="x"/&gt;
+        &lt;/OMBVAR&gt;
+        &lt;OMA&gt;
+          &lt;OMBIND&gt;
+            &lt;OMS cd="fns1" name="lambda"/&gt;
+            &lt;OMBVAR&gt;
+              &lt;OMV name="y"/&gt;
+            &lt;/OMBVAR&gt;
+            &lt;OMV name="f"/&gt;
+          &lt;/OMBIND&gt;
+          &lt;OMV name="b"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMBIND&gt;
+      &lt;OMV name="a"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e544cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e544cmml')">Strict Content MathML</button>
+                     <pre id="d40e544cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;ci&gt;f&lt;/ci&gt;
+    &lt;/bind&gt;
+    &lt;ci&gt;a&lt;/ci&gt;
+    &lt;ci&gt;b&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;apply&gt;
+      &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;&lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/bind&gt;
+      &lt;ci&gt;b&lt;/ci&gt;
+     &lt;/apply&gt;
+    &lt;/bind&gt;
+    &lt;ci&gt;a&lt;/ci&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e544prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e544pref')">Prefix</button>
+                  <div id="d40e544pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>a</i>
+                     <i>b</i>
+  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+           <i>x</i>
+                     <i>y</i>
+        ] .
+  ( <i>f</i>)
+
+  ( <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+           <i>x</i>
+        ] .
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+               <i>y</i>
+            ] .
+  ( <i>f</i>)
+
+  ( <i>b</i>)
+)
+
+  ( <i>a</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e544popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e544pop')">Popcorn</button>
+                     <div id="d40e544pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$a, $b -&gt; fns1.lambda[$x, $y -&gt; $f]($a, $b) = fns1.lambda[$x -&gt; fns1.lambda[$y -&gt; $f]($b)]($a)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e544mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e544mml')">Rendered Presentation MathML</button>
+                     <div id="d40e544mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                                 <mo>,</mo>
+                                 <mi>b</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mo>&#955;</mo>
+                                    <mo>&#8201;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>,</mo>
+                                       <mi>y</mi>
+                                    </mrow>
+                                    <mo>.</mo>
+                                    <mi>f</mi>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>&#955;</mo>
+                                    <mo>&#8201;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                    </mrow>
+                                    <mo>.</mo>
+                                    <mrow>
+                                       <mo>&#955;</mo>
+                                       <mo>&#8201;</mo>
+                                       <mrow>
+                                          <mi>y</mi>
+                                       </mrow>
+                                       <mo>.</mo>
+                                       <mi>f</mi>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#lambda">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#domainofapplication">domainofapplication</a>]
+	  
+	    [Previous: <a href="#left_compose">left_compose</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

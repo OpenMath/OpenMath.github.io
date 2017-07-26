@@ -1,0 +1,1011 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>interval_types</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: interval_types</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/interval_types.ocd">http://www.openmath.org/cd/interval_types.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="interval_types.ocd">interval_types.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="interval_types.omcd">interval_types.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#algebraicIntervalType">algebraicIntervalType</a>, <a href="#integerIntervalType">integerIntervalType</a>, <a href="#intervalType">intervalType</a>, <a href="#rationalIntervalType">rationalIntervalType</a>, <a href="#realIntervalType">realIntervalType</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2002-08-25 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 0 
+    (Revision 2)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2017-12-31</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="../../../cd/aggregate_cats.html">aggregate_cats</a>, <a href="../../../cd/meta_cats.html">meta_cats</a>
+               </dd>
+            </dl>
+            <hr/>
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+            <pre>
+  Author: J B Collins
+</pre>
+            <pre>
+  Author: Bill Naylor
+</pre>
+
+            <p>
+A CD of basic interval type constructors. This CD holds
+constructors of individual instances of the different types of intervals.
+</p>
+
+            <hr/>
+            <h2>
+               <a name="intervalType"> intervalType </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the type of intervals.
+  </p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> interval type has set type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e59xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e59xml')">OpenMath XML (source)</button>
+                     <pre id="d40e59xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="intervalType"/&gt;
+      &lt;OMS cd="aggregate_cats" name="setType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e59cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e59cmml')">Strict Content MathML</button>
+                     <pre id="d40e59cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;intervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="aggregate_cats"&gt;setType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e59prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e59pref')">Prefix</button>
+                  <div id="d40e59pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#intervalType">intervalType</a>, <a href="../../../cd/aggregate_cats.html#setType">setType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e59popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e59pop')">Popcorn</button>
+                     <div id="d40e59pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.intervalType, aggregate_cats.setType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e59mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e59mml')">Rendered Presentation MathML</button>
+                     <div id="d40e59mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>intervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>setType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/interval_types.html#intervalType">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#integerIntervalType">integerIntervalType</a>]
+	  
+	    [Last: <a href="#realIntervalType">realIntervalType</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="integerIntervalType"> integerIntervalType </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the type of integer intervals.
+  </p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> integer interval type has rational interval type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e84xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e84xml')">OpenMath XML (source)</button>
+                     <pre id="d40e84xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="integerIntervalType"/&gt;
+      &lt;OMS cd="interval_types" name="rationalIntervalType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e84cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e84cmml')">Strict Content MathML</button>
+                     <pre id="d40e84cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;integerIntervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;rationalIntervalType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e84prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e84pref')">Prefix</button>
+                  <div id="d40e84pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#integerIntervalType">integerIntervalType</a>, <a href="../../../cd/interval_types.html#rationalIntervalType">rationalIntervalType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e84popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e84pop')">Popcorn</button>
+                     <div id="d40e84pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.integerIntervalType, interval_types.rationalIntervalType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e84mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e84mml')">Rendered Presentation MathML</button>
+                     <div id="d40e84mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>integerIntervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>rationalIntervalType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> integer interval type has discrete set type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e101xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e101xml')">OpenMath XML (source)</button>
+                     <pre id="d40e101xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="integerIntervalType"/&gt;
+      &lt;OMS cd="aggregate_cats" name="discreteSetType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e101cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e101cmml')">Strict Content MathML</button>
+                     <pre id="d40e101cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;integerIntervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="aggregate_cats"&gt;discreteSetType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e101prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e101pref')">Prefix</button>
+                  <div id="d40e101pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#integerIntervalType">integerIntervalType</a>, <a href="../../../cd/aggregate_cats.html#discreteSetType">discreteSetType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e101popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e101pop')">Popcorn</button>
+                     <div id="d40e101pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.integerIntervalType, aggregate_cats.discreteSetType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e101mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e101mml')">Rendered Presentation MathML</button>
+                     <div id="d40e101mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>integerIntervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>discreteSetType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/interval_types.html#integerIntervalType">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#rationalIntervalType">rationalIntervalType</a>]
+	  
+	    [Previous: <a href="#intervalType">intervalType</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="rationalIntervalType"> rationalIntervalType </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the type of rational intervals.
+  </p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> rational interval type has algebraic interval type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e126xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e126xml')">OpenMath XML (source)</button>
+                     <pre id="d40e126xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="rationalIntervalType"/&gt;
+      &lt;OMS cd="interval_types" name="algebraicIntervalType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e126cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e126cmml')">Strict Content MathML</button>
+                     <pre id="d40e126cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;rationalIntervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;algebraicIntervalType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e126prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e126pref')">Prefix</button>
+                  <div id="d40e126pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#rationalIntervalType">rationalIntervalType</a>, <a href="../../../cd/interval_types.html#algebraicIntervalType">algebraicIntervalType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e126popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e126pop')">Popcorn</button>
+                     <div id="d40e126pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.rationalIntervalType, interval_types.algebraicIntervalType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e126mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e126mml')">Rendered Presentation MathML</button>
+                     <div id="d40e126mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>rationalIntervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>algebraicIntervalType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> rational interval type has continuous set type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e143xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e143xml')">OpenMath XML (source)</button>
+                     <pre id="d40e143xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="rationalIntervalType"/&gt;
+      &lt;OMS cd="aggregate_cats" name="continuousSetType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e143cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e143cmml')">Strict Content MathML</button>
+                     <pre id="d40e143cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;rationalIntervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="aggregate_cats"&gt;continuousSetType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e143prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e143pref')">Prefix</button>
+                  <div id="d40e143pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#rationalIntervalType">rationalIntervalType</a>, <a href="../../../cd/aggregate_cats.html#continuousSetType">continuousSetType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e143popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e143pop')">Popcorn</button>
+                     <div id="d40e143pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.rationalIntervalType, aggregate_cats.continuousSetType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e143mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e143mml')">Rendered Presentation MathML</button>
+                     <div id="d40e143mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>rationalIntervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>continuousSetType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/interval_types.html#rationalIntervalType">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#algebraicIntervalType">algebraicIntervalType</a>]
+	  
+	    [Previous: <a href="#integerIntervalType">integerIntervalType</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="algebraicIntervalType"> algebraicIntervalType </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the type of algebraic intervals.
+  </p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> algebraic interval type has real interval type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e168xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e168xml')">OpenMath XML (source)</button>
+                     <pre id="d40e168xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="algebraicIntervalType"/&gt;
+      &lt;OMS cd="interval_types" name="realIntervalType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e168cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e168cmml')">Strict Content MathML</button>
+                     <pre id="d40e168cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;algebraicIntervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;realIntervalType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e168prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e168pref')">Prefix</button>
+                  <div id="d40e168pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#algebraicIntervalType">algebraicIntervalType</a>, <a href="../../../cd/interval_types.html#realIntervalType">realIntervalType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e168popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e168pop')">Popcorn</button>
+                     <div id="d40e168pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.algebraicIntervalType, interval_types.realIntervalType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e168mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e168mml')">Rendered Presentation MathML</button>
+                     <div id="d40e168mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>algebraicIntervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>realIntervalType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> algebraic interval type has continuous set type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e185xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e185xml')">OpenMath XML (source)</button>
+                     <pre id="d40e185xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="algebraicIntervalType"/&gt;
+      &lt;OMS cd="aggregate_cats" name="continuousSetType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e185cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e185cmml')">Strict Content MathML</button>
+                     <pre id="d40e185cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;algebraicIntervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="aggregate_cats"&gt;continuousSetType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e185prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e185pref')">Prefix</button>
+                  <div id="d40e185pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#algebraicIntervalType">algebraicIntervalType</a>, <a href="../../../cd/aggregate_cats.html#continuousSetType">continuousSetType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e185popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e185pop')">Popcorn</button>
+                     <div id="d40e185pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.algebraicIntervalType, aggregate_cats.continuousSetType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e185mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e185mml')">Rendered Presentation MathML</button>
+                     <div id="d40e185mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>algebraicIntervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>continuousSetType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/interval_types.html#algebraicIntervalType">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#realIntervalType">realIntervalType</a>]
+	  
+	    [Previous: <a href="#rationalIntervalType">rationalIntervalType</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="realIntervalType"> realIntervalType </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the type of real intervals.
+  </p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> real interval type has interval type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e210xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e210xml')">OpenMath XML (source)</button>
+                     <pre id="d40e210xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="realIntervalType"/&gt;
+      &lt;OMS cd="interval_types" name="intervalType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e210cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e210cmml')">Strict Content MathML</button>
+                     <pre id="d40e210cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;realIntervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;intervalType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e210prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e210pref')">Prefix</button>
+                  <div id="d40e210pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#realIntervalType">realIntervalType</a>, <a href="../../../cd/interval_types.html#intervalType">intervalType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e210popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e210pop')">Popcorn</button>
+                     <div id="d40e210pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.realIntervalType, interval_types.intervalType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e210mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e210mml')">Rendered Presentation MathML</button>
+                     <div id="d40e210mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>realIntervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>intervalType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> real interval type has continuous set type </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e227xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e227xml')">OpenMath XML (source)</button>
+                     <pre id="d40e227xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="meta_cats" name="has"/&gt;
+      &lt;OMS cd="interval_types" name="realIntervalType"/&gt;
+      &lt;OMS cd="aggregate_cats" name="continuousSetType"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e227cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e227cmml')">Strict Content MathML</button>
+                     <pre id="d40e227cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="meta_cats"&gt;has&lt;/csymbol&gt;
+  &lt;csymbol cd="interval_types"&gt;realIntervalType&lt;/csymbol&gt;
+  &lt;csymbol cd="aggregate_cats"&gt;continuousSetType&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e227prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e227pref')">Prefix</button>
+                  <div id="d40e227pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/meta_cats.html#has">has</a>
+  (<a href="../../../cd/interval_types.html#realIntervalType">realIntervalType</a>, <a href="../../../cd/aggregate_cats.html#continuousSetType">continuousSetType</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e227popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e227pop')">Popcorn</button>
+                     <div id="d40e227pop" style="display:none; margin-top: 0.5em">
+    meta_cats.has(interval_types.realIntervalType, aggregate_cats.continuousSetType)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e227mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e227mml')">Rendered Presentation MathML</button>
+                     <div id="d40e227mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>has</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>realIntervalType</mi>
+                                 <mo>,</mo>
+                                 <mi>continuousSetType</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/interval_types.html#realIntervalType">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#intervalType">intervalType</a>]
+	  
+	    [Previous: <a href="#algebraicIntervalType">algebraicIntervalType</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <pre>
+maybe we should also include some 'complex interval' symbols,
+could have cartesian varieties, i.e. 'square', as well as polar
+varieties, i.e. 'round'
+</pre>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,293 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>orthpoly</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openxm.org/...</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2017-12-31</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2003-11-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>3</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>Author: Yasushi Tamura</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDUses"/>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>arith1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>relation1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>calculus1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>alg1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>interval1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>nums1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>hypergeo0</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>hypergeo1</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD defines orthogonal polynomials which are hypergeometric polynomials. These functions are described in the following books. (1) Handbook of Mathematical Functions, Abramowitz, Stegun (2) Higher transcendental functions. Krieger Publishing Co., Inc., Melbourne, Fla., 1981, Erdlyi, Arthur; Magnus, Wilhelm; Oberhettinger, Fritz; Tricomi, Francesco G.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>legendreP</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The first Legendre function. This function is one of the two famous solutions of Legendre differential equation.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>legendreP(v;z) = hypergeo1.hypergeometric2F1(-v,v+1,1;(1-z)/2)</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="orthpoly1" name="legendreP"/>
+                  <OMV name="v"/>
+                  <OMV name="z"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="hypergeo1" name="hypergeometric2F1"/>
+                  <OMA>
+                     <OMS cd="arith1" name="unary_minus"/>
+                     <OMV name="v"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="arith1" name="plus"/>
+                     <OMV name="v"/>
+                     <OMI> 1 </OMI>
+                  </OMA>
+                  <OMI> 1 </OMI>
+                  <OMA>
+                     <OMS cd="arith1" name="divide"/>
+                     <OMA>
+                        <OMS cd="arith1" name="minus"/>
+                        <OMI> 1 </OMI>
+                        <OMV name="z"/>
+                     </OMA>
+                     <OMI> 2 </OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>legendreQ</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The second Legendre function. This function is the another one of the famous two solutions of Legendre differential equation.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>legendreQ(v;z) = \frac{\sqrt{\pi}\Gamma(v+1)}{\Gamma(v+3/2)} /(2z)^{v+1} hypergeo1.hypergeometric2F1((v+1)/2,v/2+1,v+3/2;1/z^2)</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="orthpoly1" name="legendreQ"/>
+                  <OMV name="v"/>
+                  <OMV name="z"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMA>
+                     <OMS cd="arith1" name="divide"/>
+                     <OMA>
+                        <OMS cd="arith1" name="divide"/>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMA>
+                              <OMS cd="arith1" name="root"/>
+                              <OMS cd="nums1" name="pi"/>
+                              <OMI> 2 </OMI>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="hypergeo0" name="gamma"/>
+                              <OMA>
+                                 <OMS cd="arith1" name="plus"/>
+                                 <OMV name="v"/>
+                                 <OMI> 1 </OMI>
+                              </OMA>
+                           </OMA>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="hypergeo0" name="gamma"/>
+                           <OMA>
+                              <OMS cd="arith1" name="plus"/>
+                              <OMV name="v"/>
+                              <OMA>
+                                 <OMS cd="arith1" name="divide"/>
+                                 <OMI> 3 </OMI>
+                                 <OMI> 2 </OMI>
+                              </OMA>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="arith1" name="power"/>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMI> 2 </OMI>
+                           <OMV name="z"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="plus"/>
+                           <OMV name="v"/>
+                           <OMI> 1 </OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="hypergeo1" name="hypergeometric2F1"/>
+                     <OMA>
+                        <OMS cd="arith1" name="divide"/>
+                        <OMA>
+                           <OMS cd="arith1" name="plus"/>
+                           <OMV name="v"/>
+                           <OMI> 1 </OMI>
+                        </OMA>
+                        <OMI> 2 </OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="arith1" name="plus"/>
+                        <OMA>
+                           <OMS cd="arith1" name="divide"/>
+                           <OMV name="v"/>
+                           <OMI> 2 </OMI>
+                        </OMA>
+                        <OMI> 1 </OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="arith1" name="plus"/>
+                        <OMV name="v"/>
+                        <OMA>
+                           <OMS cd="arith1" name="divide"/>
+                           <OMI> 3 </OMI>
+                           <OMI> 2 </OMI>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="arith1" name="power"/>
+                        <OMA>
+                           <OMS cd="arith1" name="divide"/>
+                           <OMI> 1 </OMI>
+                           <OMV name="z"/>
+                        </OMA>
+                        <OMI> 2 </OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>jacobiG</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The Jacobi polynomial.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>jacobiG(n,a,c;z) = hypergeometric2F1(-n,a+n,c,z) (c \not\in Z_{&lt;=0})</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="implies"/>
+               <OMA>
+                  <OMS cd="set1" name="notin"/>
+                  <OMA>
+                     <OMS cd="arith1" name="unary_minus"/>
+                     <OMV name="c"/>
+                  </OMA>
+                  <OMS cd="setname1" name="N"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="relation1" name="eq"/>
+                  <OMA>
+                     <OMS cd="orthpoly1" name="jacobiG"/>
+                     <OMV name="n"/>
+                     <OMV name="a"/>
+                     <OMV name="c"/>
+                     <OMV name="z"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="hypergeo1" name="hypergeometric2F1"/>
+                     <OMA>
+                        <OMS cd="arith1" name="unary_minus"/>
+                        <OMV name="n"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="arith1" name="plus"/>
+                        <OMV name="a"/>
+                        <OMV name="n"/>
+                     </OMA>
+                     <OMV name="c"/>
+                     <OMV name="z"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

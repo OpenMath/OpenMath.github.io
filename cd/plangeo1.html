@@ -1,0 +1,1421 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>plangeo1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: plangeo1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.win.tue.nl/~amc/oz/om/cds/plangeo1.ocd">http://www.win.tue.nl/~amc/oz/om/cds/plangeo1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="plangeo1.ocd">plangeo1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="plangeo1.omcd">plangeo1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#configuration">configuration</a>, <a href="#incident">incident</a>, <a href="#line">line</a>, <a href="#point">point</a>, <a href="#type">type</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2002-03-15 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 0 
+    (Revision 2)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2017-12-31</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="../../../cd/logic1.ocd.html">logic1.ocd</a>, <a href="../../../cd/relation1.ocd.html">relation1.ocd</a>
+               </dd>
+            </dl>
+            <hr/>
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+            <pre>
+  Author: Arjeh Cohen
+</pre>
+
+
+            <p> 
+This CD defines symbols for planar Euclidean geometry.
+</p>
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="point"> point </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol is used to indicate a point of  planar Euclidean geometry
+by a variable. The point may (but need not) be subject to constraints.
+The symbol takes the variable as the first argument and the constraints
+as further arguments.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+Given two lines  l and m,  a point  A  on l and m
+is defined by: 
+
+<div>
+                     <button id="d40e54xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54xml')">OpenMath XML (source)</button>
+                     <pre id="d40e54xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="point"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="l"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="m"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e54cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54cmml')">Strict Content MathML</button>
+                     <pre id="d40e54cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+  &lt;ci&gt;A&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e54prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e54pref')">Prefix</button>
+                  <div id="d40e54pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>m</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e54popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54pop')">Popcorn</button>
+                     <div id="d40e54pop" style="display:none; margin-top: 0.5em">
+  plangeo1.point($A, plangeo1.incident($A, $l), plangeo1.incident($A, $m))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e54mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e54mml')">Rendered Presentation MathML</button>
+                     <div id="d40e54mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>point</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>incident</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>,</mo>
+                                       <mi>l</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>incident</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>,</mo>
+                                       <mi>m</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo1.html#point">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#line">line</a>]
+	  
+	    [Last: <a href="#type">type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="line"> line  </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol is used to indicate a line of  planar Euclidean geometry
+by a variable. The line may (but need not) be subject to constraints.
+The symbol takes the variable as the first argument and the constraints
+as further arguments.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> Given points A and B, a line l through A and B
+is defined  by: 
+
+<div>
+                     <button id="d40e94xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e94xml')">OpenMath XML (source)</button>
+                     <pre id="d40e94xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="line"/&gt;
+    &lt;OMV name="l"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="l"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="B"/&gt;
+      &lt;OMV name="l"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e94cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e94cmml')">Strict Content MathML</button>
+                     <pre id="d40e94cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+  &lt;ci&gt;l&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e94prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e94pref')">Prefix</button>
+                  <div id="d40e94pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>l</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>B</i>,  <i>l</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e94popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e94pop')">Popcorn</button>
+                     <div id="d40e94pop" style="display:none; margin-top: 0.5em">
+  plangeo1.line($l, plangeo1.incident($A, $l), plangeo1.incident($B, $l))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e94mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e94mml')">Rendered Presentation MathML</button>
+                     <div id="d40e94mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>line</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>l</mi>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>incident</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>,</mo>
+                                       <mi>l</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>incident</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>B</mi>
+                                       <mo>,</mo>
+                                       <mi>l</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo1.html#line">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#incident">incident</a>]
+	  
+	    [Previous: <a href="#point">point</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="incident"> incident </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol represents the logical incidence function which is a
+binary function taking arguments representing
+geometric objects like points and lines and returning a boolean value.
+It is true if and only if the first argument is incident to the second.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+That a point A is incident to a line l 
+is given by: 
+
+
+<div>
+                     <button id="d40e134xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134xml')">OpenMath XML (source)</button>
+                     <pre id="d40e134xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="incident"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMV name="l"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e134cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134cmml')">Strict Content MathML</button>
+                     <pre id="d40e134cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e134prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e134pref')">Prefix</button>
+                  <div id="d40e134pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+
+</div>
+                  <div>
+                     <button id="d40e134popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134pop')">Popcorn</button>
+                     <div id="d40e134pop" style="display:none; margin-top: 0.5em">
+  plangeo1.incident($A, $l)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e134mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e134mml')">Rendered Presentation MathML</button>
+                     <div id="d40e134mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>incident</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>l</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo1.html#incident">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#configuration">configuration</a>]
+	  
+	    [Previous: <a href="#line">line</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="configuration"> configuration </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol represents a configuration in Euclidean 
+planar geometry consisting of a sequence of geometric objects like points,
+lines,  etc, but also of other configurations.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> The configuration of  a point A and a line l  incident to  A 
+is defined by:
+
+<div>
+                     <button id="d40e158xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e158xml')">OpenMath XML (source)</button>
+                     <pre id="d40e158xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo1" name="configuration"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="point"/&gt; 
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="line"/&gt;
+      &lt;OMV name="l"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMV name="l"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e158cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e158cmml')">Strict Content MathML</button>
+                     <pre id="d40e158cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+   &lt;ci&gt;l&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e158prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e158pref')">Prefix</button>
+                  <div id="d40e158pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>l</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e158popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e158pop')">Popcorn</button>
+                     <div id="d40e158pop" style="display:none; margin-top: 0.5em">
+plangeo1.configuration(plangeo1.point($A), plangeo1.line($l, plangeo1.incident($A, $l)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e158mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e158mml')">Rendered Presentation MathML</button>
+                     <div id="d40e158mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>configuration</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>line</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>l</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>,</mo>
+                                             <mi>l</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> The prevous configuration of a point A and a line l incident
+with A can be extended by adding a second point B incident with l:
+
+<div>
+                     <button id="d40e192xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e192xml')">OpenMath XML (source)</button>
+                     <pre id="d40e192xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo1" name="configuration"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="configuration"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="plangeo1" name="point"/&gt; 
+          &lt;OMV name="A"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="plangeo1" name="line"/&gt;
+          &lt;OMV name="l"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="plangeo1" name="incident"/&gt;
+            &lt;OMV name="A"/&gt;
+            &lt;OMV name="l"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+     &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="point"/&gt;
+        &lt;OMV name="B"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="B"/&gt;
+          &lt;OMV name="l"/&gt;
+        &lt;/OMA&gt;
+    &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e192cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e192cmml')">Strict Content MathML</button>
+                     <pre id="d40e192cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;l&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+   &lt;ci&gt;B&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e192prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e192pref')">Prefix</button>
+                  <div id="d40e192pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>l</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>B</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>B</i>,  <i>l</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e192popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e192pop')">Popcorn</button>
+                     <div id="d40e192pop" style="display:none; margin-top: 0.5em">
+plangeo1.configuration(plangeo1.configuration(plangeo1.point($A), plangeo1.line($l, plangeo1.incident($A, $l))), plangeo1.point($B, plangeo1.incident($B, $l)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e192mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e192mml')">Rendered Presentation MathML</button>
+                     <div id="d40e192mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>configuration</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>configuration</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>line</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>l</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>A</mi>
+                                                   <mo>,</mo>
+                                                   <mi>l</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>B</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>B</mi>
+                                             <mo>,</mo>
+                                             <mi>l</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+We describe a triangle on the distinct points A, B, C and lines a, b, c:
+
+<div>
+                     <button id="d40e247xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e247xml')">OpenMath XML (source)</button>
+                     <pre id="d40e247xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo1" name="configuration"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="point"/&gt;
+    &lt;OMV name="A"/&gt;
+  &lt;/OMA&gt;
+  
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="point"/&gt;
+    &lt;OMV name="B"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="not"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="line"/&gt;
+    &lt;OMV name="c"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="c"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="c"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="point"/&gt;
+    &lt;OMV name="C"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="not"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="C"/&gt;
+        &lt;OMV name="c"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="line"/&gt;
+    &lt;OMV name="a"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMV name="C"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="line"/&gt;
+    &lt;OMV name="b"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="b"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo1" name="incident"/&gt;
+      &lt;OMV name="b"/&gt;
+      &lt;OMV name="C"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e247cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e247cmml')">Strict Content MathML</button>
+                     <pre id="d40e247cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+   &lt;ci&gt;B&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+   &lt;ci&gt;c&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+   &lt;ci&gt;C&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+   &lt;ci&gt;a&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+   &lt;ci&gt;b&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e247prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e247pref')">Prefix</button>
+                  <div id="d40e247pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>B</i>, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>c</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>c</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>c</i>,  <i>B</i>)
+)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>C</i>, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>C</i>,  <i>c</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>a</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>a</i>,  <i>B</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>a</i>,  <i>C</i>)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>b</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>b</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>b</i>,  <i>C</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e247popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e247pop')">Popcorn</button>
+                     <div id="d40e247pop" style="display:none; margin-top: 0.5em">
+plangeo1.configuration(plangeo1.point($A), plangeo1.point($B,  not($A = $B)), plangeo1.line($c, plangeo1.incident($c, $A), plangeo1.incident($c, $B)), plangeo1.point($C,  not(plangeo1.incident($C, $c))), plangeo1.line($a, plangeo1.incident($a, $B), plangeo1.incident($a, $C)), plangeo1.line($b, plangeo1.incident($b, $A), plangeo1.incident($b, $C)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e247mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e247mml')">Rendered Presentation MathML</button>
+                     <div id="d40e247mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>configuration</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>B</mi>
+                                       <mo>,</mo>
+                                       <mo>&#172;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>=</mo>
+                                          <mi>B</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>line</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>c</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>c</mi>
+                                             <mo>,</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>c</mi>
+                                             <mo>,</mo>
+                                             <mi>B</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>C</mi>
+                                       <mo>,</mo>
+                                       <mo>&#172;</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>C</mi>
+                                             <mo>,</mo>
+                                             <mi>c</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>line</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>a</mi>
+                                             <mo>,</mo>
+                                             <mi>B</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>a</mi>
+                                             <mo>,</mo>
+                                             <mi>C</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>line</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>b</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>b</mi>
+                                             <mo>,</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>b</mi>
+                                             <mo>,</mo>
+                                             <mi>C</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+
+
+
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo1.html#configuration">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#type">type</a>]
+	  
+	    [Previous: <a href="#incident">incident</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="type"> type </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol represents the type of the basic geometric objects: points,
+lines, configuration.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If A and B are objects of the same type, then they are not incident. 
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e395xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e395xml')">OpenMath XML (source)</button>
+                     <pre id="d40e395xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+       &lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;
+          &lt;OMS cd="plangeo1" name="type"/&gt;
+          &lt;OMV name="A"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;
+          &lt;OMS cd="plangeo1" name="type"/&gt;
+          &lt;OMV name="B"/&gt;
+       &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="not"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e395cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e395cmml')">Strict Content MathML</button>
+                     <pre id="d40e395cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;type&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;type&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e395prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e395pref')">Prefix</button>
+                  <div id="d40e395pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/plangeo1.html#type">type</a>
+  ( <i>A</i>)
+, <a href="../../../cd/plangeo1.html#type">type</a>
+  ( <i>B</i>)
+)
+, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e395popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e395pop')">Popcorn</button>
+                     <div id="d40e395pop" style="display:none; margin-top: 0.5em">
+  plangeo1.type($A) = plangeo1.type($B) ==&gt;  not(plangeo1.incident($A, $B))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e395mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e395mml')">Rendered Presentation MathML</button>
+                     <div id="d40e395mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mrow>
+                                    <mi>type</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>type</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>B</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                              <mo>&#8658;</mo>
+                              <mo>&#172;</mo>
+                              <mrow>
+                                 <mi>incident</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>A</mi>
+                                    <mo>,</mo>
+                                    <mi>B</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo1.html#type">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#point">point</a>]
+	  
+	    [Previous: <a href="#configuration">configuration</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

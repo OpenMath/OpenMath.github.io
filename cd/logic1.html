@@ -1,0 +1,1527 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>logic1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: logic1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/logic1.ocd">http://www.openmath.org/cd/logic1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="logic1.ocd">logic1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="logic1.omcd">logic1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#and">and</a>, <a href="#equivalent">equivalent</a>, <a href="#false">false</a>, <a href="#implies">implies</a>, <a href="#not">not</a>, <a href="#or">or</a>, <a href="#true">true</a>, <a href="#xor">xor</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>3
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> official </dd>
+            </dl>
+            <hr/>
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+            <pre>
+  Author: OpenMath Consortium
+  SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
+            </pre>
+
+            <p>
+    This CD holds the basic logic functions.
+</p>
+
+            <hr/>
+            <h2>
+               <a name="equivalent"> equivalent </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is used to show that two boolean expressions are logically 
+equivalent, that is have the same boolean value for any inputs.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> The condition (A is equivalent to B) is equivalent to the
+condition that (A implies B and B implies A) </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e54xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54xml')">OpenMath XML (source)</button>
+                     <pre id="d40e54xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="equivalent"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="equivalent"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="implies"/&gt;
+	&lt;OMV name="A"/&gt;
+	&lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="implies"/&gt;
+	&lt;OMV name="B"/&gt;
+	&lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e54cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54cmml')">Strict Content MathML</button>
+                     <pre id="d40e54cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;equivalent&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;equivalent&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e54prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e54pref')">Prefix</button>
+                  <div id="d40e54pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#equivalent">equivalent</a>
+  (<a href="../../../cd/logic1.html#equivalent">equivalent</a>
+  ( <i>A</i>,  <i>B</i>)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  ( <i>A</i>,  <i>B</i>)
+, <a href="../../../cd/logic1.html#implies">implies</a>
+  ( <i>B</i>,  <i>A</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e54popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54pop')">Popcorn</button>
+                     <div id="d40e54pop" style="display:none; margin-top: 0.5em">
+  logic1.equivalent(logic1.equivalent($A, $B), ($A ==&gt; $B) and ($B ==&gt; $A))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e54mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e54mml')">Rendered Presentation MathML</button>
+                     <div id="d40e54mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mrow>
+                                 <mi>A</mi>
+                                 <mo>&#8801;</mo>
+                                 <mi>B</mi>
+                              </mrow>
+                              <mo>&#8801;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>A</mi>
+                                    <mo>&#8658;</mo>
+                                    <mi>B</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>&#8743;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>B</mi>
+                                    <mo>&#8658;</mo>
+                                    <mi>A</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/logic1.html#equivalent">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#not">not</a>]
+	  
+	    [Last: <a href="#false">false</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="not"> not </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the logical not function which takes one boolean
+argument, and returns the opposite boolean value.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> for all x | not(not(x))=x </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e112xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e112xml')">OpenMath XML (source)</button>
+                     <pre id="d40e112xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="not"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="not"/&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e112cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e112cmml')">Strict Content MathML</button>
+                     <pre id="d40e112cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e112prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e112pref')">Prefix</button>
+                  <div id="d40e112pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>x</i>
+  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/logic1.html#not">not</a>
+  ( <i>x</i>)
+)
+,  <i>x</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e112popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e112pop')">Popcorn</button>
+                     <div id="d40e112pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$x -&gt;  not( not($x)) = $x]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e112mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e112mml')">Rendered Presentation MathML</button>
+                     <div id="d40e112mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mo>&#172;</mo>
+                                 <mo>&#172;</mo>
+                                 <mi>x</mi>
+                                 <mo>=</mo>
+                                 <mi>x</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/logic1.html#not">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#and">and</a>]
+	  
+	    [Previous: <a href="#equivalent">equivalent</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="and"> and </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the logical and function which is an n-ary
+function taking boolean arguments and returning a boolean value. It
+is true if all arguments are true or false otherwise.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+for all x | x and not(x) = false
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e161xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e161xml')">OpenMath XML (source)</button>
+                     <pre id="d40e161xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="logic1" name="not"/&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="logic1" name="false"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e161cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e161cmml')">Strict Content MathML</button>
+                     <pre id="d40e161cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="logic1"&gt;false&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e161prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e161pref')">Prefix</button>
+                  <div id="d40e161pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>x</i>
+  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  ( <i>x</i>, <a href="../../../cd/logic1.html#not">not</a>
+  ( <i>x</i>)
+)
+, <a href="../../../cd/logic1.html#false">false</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e161popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e161pop')">Popcorn</button>
+                     <div id="d40e161pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$x -&gt; ($x and  not($x)) = logic1.false]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e161mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e161mml')">Rendered Presentation MathML</button>
+                     <div id="d40e161mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>&#8743;</mo>
+                                    <mo>&#172;</mo>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>F</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/logic1.html#and">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#xor">xor</a>]
+	  
+	    [Previous: <a href="#not">not</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="xor"> xor </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the logical xor function which is an n-ary
+function taking boolean arguments and returning a boolean
+value. It is true if there are an odd number of true arguments or
+false otherwise.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+for all x | x xor x = false
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e209xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209xml')">OpenMath XML (source)</button>
+                     <pre id="d40e209xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;&lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="logic1" name="xor"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMV name="x"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="logic1" name="false"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e209cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209cmml')">Strict Content MathML</button>
+                     <pre id="d40e209cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;xor&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;csymbol cd="logic1"&gt;false&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e209prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e209pref')">Prefix</button>
+                  <div id="d40e209pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>x</i>
+  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/logic1.html#xor">xor</a>
+  ( <i>x</i>,  <i>x</i>)
+, <a href="../../../cd/logic1.html#false">false</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e209popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209pop')">Popcorn</button>
+                     <div id="d40e209pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$x -&gt; logic1.xor($x, $x) = logic1.false]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e209mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e209mml')">Rendered Presentation MathML</button>
+                     <div id="d40e209mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>xor</mo>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>F</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+for all x | x xor not(x) = true
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e242xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e242xml')">OpenMath XML (source)</button>
+                     <pre id="d40e242xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;&lt;OMBIND&gt;&lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="logic1" name="xor"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="logic1" name="not"/&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="logic1" name="true"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e242cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e242cmml')">Strict Content MathML</button>
+                     <pre id="d40e242cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;xor&lt;/csymbol&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="logic1"&gt;true&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e242prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e242pref')">Prefix</button>
+                  <div id="d40e242pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>x</i>
+  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/logic1.html#xor">xor</a>
+  ( <i>x</i>, <a href="../../../cd/logic1.html#not">not</a>
+  ( <i>x</i>)
+)
+, <a href="../../../cd/logic1.html#true">true</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e242popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e242pop')">Popcorn</button>
+                     <div id="d40e242pop" style="display:none; margin-top: 0.5em">quant1.forall[$x -&gt; logic1.xor($x,  not($x)) = logic1.true]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e242mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e242mml')">Rendered Presentation MathML</button>
+                     <div id="d40e242mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>xor</mo>
+                                    <mo>&#172;</mo>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>T</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/logic1.html#xor">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#or">or</a>]
+	  
+	    [Previous: <a href="#and">and</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="or"> or </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the logical or function which is an n-ary
+function taking boolean arguments and returning a boolean value. It
+is true if any of the arguments are true or false otherwise.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+for all x | x or not(x) = true
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e289xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e289xml')">OpenMath XML (source)</button>
+                     <pre id="d40e289xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;&lt;OMBIND&gt;&lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="logic1" name="or"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="logic1" name="not"/&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="logic1" name="true"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e289cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e289cmml')">Strict Content MathML</button>
+                     <pre id="d40e289cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;or&lt;/csymbol&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="logic1"&gt;true&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e289prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e289pref')">Prefix</button>
+                  <div id="d40e289pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>x</i>
+  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/logic1.html#or">or</a>
+  ( <i>x</i>, <a href="../../../cd/logic1.html#not">not</a>
+  ( <i>x</i>)
+)
+, <a href="../../../cd/logic1.html#true">true</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e289popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e289pop')">Popcorn</button>
+                     <div id="d40e289pop" style="display:none; margin-top: 0.5em">quant1.forall[$x -&gt; ($x &gt;  not($x)) = logic1.true]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e289mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e289mml')">Rendered Presentation MathML</button>
+                     <div id="d40e289mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>&#8744;</mo>
+                                    <mo>&#172;</mo>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>T</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+for all a,b | not(a and b)= (not(a) or not(b))
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e325xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e325xml')">OpenMath XML (source)</button>
+                     <pre id="d40e325xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="a"/&gt;
+    &lt;OMV name="b"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="not"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="and"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMV name="b"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="or"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="not"/&gt;
+        &lt;OMV name="a"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="not"/&gt;
+        &lt;OMV name="b"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e325cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e325cmml')">Strict Content MathML</button>
+                     <pre id="d40e325cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;or&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e325prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e325pref')">Prefix</button>
+                  <div id="d40e325pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>a</i>
+                     <i>b</i>
+  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  ( <i>a</i>,  <i>b</i>)
+)
+, <a href="../../../cd/logic1.html#or">or</a>
+  (<a href="../../../cd/logic1.html#not">not</a>
+  ( <i>a</i>)
+, <a href="../../../cd/logic1.html#not">not</a>
+  ( <i>b</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e325popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e325pop')">Popcorn</button>
+                     <div id="d40e325pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$a, $b -&gt;  not($a and $b) = ( not($a) &gt;  not($b))]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e325mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e325mml')">Rendered Presentation MathML</button>
+                     <div id="d40e325mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                                 <mo>,</mo>
+                                 <mi>b</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mo>&#172;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#8743;</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>&#172;</mo>
+                                    <mi>a</mi>
+                                    <mo>&#8744;</mo>
+                                    <mo>&#172;</mo>
+                                    <mi>b</mi>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/logic1.html#or">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#implies">implies</a>]
+	  
+	    [Previous: <a href="#xor">xor</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="implies"> implies </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the logical implies function which takes two
+boolean expressions as arguments. It evaluates to false if the first
+argument is true and the second argument is false, otherwise it
+evaluates to true.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> for all x | false implies x </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e395xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e395xml')">OpenMath XML (source)</button>
+                     <pre id="d40e395xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMS cd="logic1" name="false"/&gt;
+    &lt;OMV name="x"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e395cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e395cmml')">Strict Content MathML</button>
+                     <pre id="d40e395cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;&lt;csymbol cd="logic1"&gt;false&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e395prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e395pref')">Prefix</button>
+                  <div id="d40e395pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+     <i>x</i>
+  ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#false">false</a>,  <i>x</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e395popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e395pop')">Popcorn</button>
+                     <div id="d40e395pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$x -&gt; logic1.false ==&gt; $x]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e395mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e395mml')">Rendered Presentation MathML</button>
+                     <div id="d40e395mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mi>F</mi>
+                                 <mo>&#8658;</mo>
+                                 <mi>x</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/logic1.html#implies">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#true">true</a>]
+	  
+	    [Previous: <a href="#or">or</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="true"> true </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the boolean value true.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> not true = false </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e435xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e435xml')">OpenMath XML (source)</button>
+                     <pre id="d40e435xml" style="display:none">
+  &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="not"/&gt;
+	&lt;OMS cd="logic1" name="true"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMS cd="logic1" name="false"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e435cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e435cmml')">Strict Content MathML</button>
+                     <pre id="d40e435cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;csymbol cd="logic1"&gt;true&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;csymbol cd="logic1"&gt;false&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e435prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e435pref')">Prefix</button>
+                  <div id="d40e435pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/logic1.html#true">true</a>)
+, <a href="../../../cd/logic1.html#false">false</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e435popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e435pop')">Popcorn</button>
+                     <div id="d40e435pop" style="display:none; margin-top: 0.5em">
+     not(logic1.true) = logic1.false
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e435mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e435mml')">Rendered Presentation MathML</button>
+                     <div id="d40e435mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#172;</mo>
+                              <mi>T</mi>
+                              <mo>=</mo>
+                              <mi>F</mi>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/logic1.html#true">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#false">false</a>]
+	  
+	    [Previous: <a href="#implies">implies</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="false"> false </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the boolean value false.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> not false = true </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e470xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e470xml')">OpenMath XML (source)</button>
+                     <pre id="d40e470xml" style="display:none">
+  &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="not"/&gt;
+	&lt;OMS cd="logic1" name="false"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMS cd="logic1" name="true"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e470cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e470cmml')">Strict Content MathML</button>
+                     <pre id="d40e470cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;csymbol cd="logic1"&gt;false&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;csymbol cd="logic1"&gt;true&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e470prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e470pref')">Prefix</button>
+                  <div id="d40e470pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/logic1.html#false">false</a>)
+, <a href="../../../cd/logic1.html#true">true</a>)
+
+  </div>
+                  <div>
+                     <button id="d40e470popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e470pop')">Popcorn</button>
+                     <div id="d40e470pop" style="display:none; margin-top: 0.5em">
+     not(logic1.false) = logic1.true
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e470mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e470mml')">Rendered Presentation MathML</button>
+                     <div id="d40e470mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#172;</mo>
+                              <mi>F</mi>
+                              <mo>=</mo>
+                              <mi>T</mi>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/logic1.html#false">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#equivalent">equivalent</a>]
+	  
+	    [Previous: <a href="#true">true</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,1494 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>ThreeDgeo3</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: ThreeDgeo3</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://nash.sip.ucm.es/LAD-3D/3DgeoCDs/ThreeDgeo3.ocd">http://nash.sip.ucm.es/LAD-3D/3DgeoCDs/ThreeDgeo3.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="ThreeDgeo3.ocd">ThreeDgeo3.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="ThreeDgeo3.omcd">ThreeDgeo3.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#assertion">assertion</a>, <a href="#configuration">configuration</a>, <a href="#set_affine_coordinates">set_affine_coordinates</a>, <a href="#discovery">discovery</a>, <a href="#distance">distance</a>, <a href="#locus">locus</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2008-01-21 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 0 
+    (Revision 3)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2017-12-31</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+            <pre>
+  Author: Jes&#250;s Escribano
+</pre>
+
+            <p> 
+This CD defines symbols for 3-dimensional Euclidean geometry
+</p> 
+
+            <hr/>
+            <h2>
+               <a name="set_affine_coordinates"> set_affine_coordinates</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Defines the affine coordinates of an a point in 3-dimensional Euclidean space. 
+Takes the point as first argument and the vector with the coordinates as second argument.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The description of the point A with affine coordinates (4.8,0.6,10.2) is given by:
+
+<div>
+                     <button id="d40e44xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e44xml')">OpenMath XML (source)</button>
+                     <pre id="d40e44xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo3" name="set_affine_coordinates"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="vector"/&gt;
+        &lt;OMF dec=" 4.8 "/&gt;
+        &lt;OMF dec=" 0.6 "/&gt;
+        &lt;OMF dec=" 10.2 "/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e44cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e44cmml')">Strict Content MathML</button>
+                     <pre id="d40e44cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;
+  &lt;ci&gt;A&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;set_affine_coordinates&lt;/csymbol&gt;
+   &lt;ci&gt;A&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="real"&gt;4.8&lt;/cn&gt;
+    &lt;cn type="real"&gt;0.6&lt;/cn&gt;
+    &lt;cn type="real"&gt;10.2&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e44prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e44pref')">Prefix</button>
+                  <div id="d40e44pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>A</i>, <a href="../../../cd/ThreeDgeo3.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>A</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  (  4.8  ,   0.6  ,   10.2  )
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e44popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e44pop')">Popcorn</button>
+                     <div id="d40e44pop" style="display:none; margin-top: 0.5em">
+  ThreeDgeo1.point($A, ThreeDgeo3.set_affine_coordinates($A, linalg2.vector(4.8, 0.6, 10.2)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e44mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e44mml')">Rendered Presentation MathML</button>
+                     <div id="d40e44mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>point</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>set_affine_coordinates</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 4.8 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 0.6 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 10.2 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div> 
+
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ThreeDgeo3.html#set_affine_coordinates">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#distance">distance</a>]
+	  
+	    [Last: <a href="#discovery">discovery</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="distance">distance</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The distance between two affine points in 3-dimensional Euclidean space is the Euclidean distance.
+The distance between two geometric objects O and O' in 3-dimensional Euclidean space is the infimum of the
+distances between two affine points, one on O and one on O'.  
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> The distance between two points A and B is given by
+
+<div>
+                     <button id="d40e85xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e85xml')">OpenMath XML (source)</button>
+                     <pre id="d40e85xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="ThreeDgeo3" name="distance"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMV name="B"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e85cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e85cmml')">Strict Content MathML</button>
+                     <pre id="d40e85cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;distance&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e85prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e85pref')">Prefix</button>
+                  <div id="d40e85pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ThreeDgeo3.html#distance">distance</a>
+  ( <i>A</i>,  <i>B</i>)
+
+</div>
+                  <div>
+                     <button id="d40e85popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e85pop')">Popcorn</button>
+                     <div id="d40e85pop" style="display:none; margin-top: 0.5em">
+  ThreeDgeo3.distance($A, $B)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e85mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e85mml')">Rendered Presentation MathML</button>
+                     <div id="d40e85mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>distance</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>A</mi>
+                                 <mo>,</mo>
+                                 <mi>B</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+ 
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ThreeDgeo3.html#distance">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#configuration">configuration</a>]
+	  
+	    [Previous: <a href="#set_affine_coordinates">set_affine_coordinates</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="configuration"> configuration </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol represents a configuration in Euclidean 3-dimensional geometry consisting of a sequence of geometric objects like points, lines,  etc, but also of other configurations.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> The configuration of a point A and a line l incident to A 
+is defined by:
+
+<div>
+                     <button id="d40e109xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e109xml')">OpenMath XML (source)</button>
+                     <pre id="d40e109xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="ThreeDgeo3" name="configuration"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo1" name="point"/&gt; 
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo1" name="line"/&gt;
+      &lt;OMV name="l"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo2" name="incident"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMV name="l"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e109cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e109cmml')">Strict Content MathML</button>
+                     <pre id="d40e109cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;configuration&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;line&lt;/csymbol&gt;
+   &lt;ci&gt;l&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo2"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e109prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e109pref')">Prefix</button>
+                  <div id="d40e109pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ThreeDgeo3.html#configuration">configuration</a>
+  (<a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/ThreeDgeo1.html#line">line</a>
+  ( <i>l</i>, <a href="../../../cd/ThreeDgeo2.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e109popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e109pop')">Popcorn</button>
+                     <div id="d40e109pop" style="display:none; margin-top: 0.5em">
+  ThreeDgeo3.configuration(ThreeDgeo1.point($A), ThreeDgeo1.line($l, ThreeDgeo2.incident($A, $l)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e109mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e109mml')">Rendered Presentation MathML</button>
+                     <div id="d40e109mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>configuration</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>line</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>l</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>,</mo>
+                                             <mi>l</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The following is the description of the configuration consisting on two different points A and B and the line l determined by them:
+
+<div>
+                     <button id="d40e143xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e143xml')">OpenMath XML (source)</button>
+                     <pre id="d40e143xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="ThreeDgeo3" name="configuration"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+      &lt;OMV name="B"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="not"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="relation1" name="eq"/&gt;
+          &lt;OMV name="A"/&gt;
+          &lt;OMV name="B"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo1" name="line"/&gt;
+      &lt;OMV name="l"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo2" name="incident"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMV name="l"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo2" name="incident"/&gt;
+        &lt;OMV name="B"/&gt;
+        &lt;OMV name="l"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e143cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e143cmml')">Strict Content MathML</button>
+                     <pre id="d40e143cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;configuration&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;
+   &lt;ci&gt;B&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;line&lt;/csymbol&gt;
+   &lt;ci&gt;l&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo2"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo2"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e143prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e143pref')">Prefix</button>
+                  <div id="d40e143pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ThreeDgeo3.html#configuration">configuration</a>
+  (<a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>B</i>, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+, <a href="../../../cd/ThreeDgeo1.html#line">line</a>
+  ( <i>l</i>, <a href="../../../cd/ThreeDgeo2.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+, <a href="../../../cd/ThreeDgeo2.html#incident">incident</a>
+  ( <i>B</i>,  <i>l</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e143popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e143pop')">Popcorn</button>
+                     <div id="d40e143pop" style="display:none; margin-top: 0.5em">
+  ThreeDgeo3.configuration(ThreeDgeo1.point($A), ThreeDgeo1.point($B,  not($A = $B)), ThreeDgeo1.line($l, ThreeDgeo2.incident($A, $l), ThreeDgeo2.incident($B, $l)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e143mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e143mml')">Rendered Presentation MathML</button>
+                     <div id="d40e143mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>configuration</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>B</mi>
+                                       <mo>,</mo>
+                                       <mo>&#172;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>=</mo>
+                                          <mi>B</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>line</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>l</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>,</mo>
+                                             <mi>l</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>incident</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>B</mi>
+                                             <mo>,</mo>
+                                             <mi>l</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ThreeDgeo3.html#configuration">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#assertion">assertion</a>]
+	  
+	    [Previous: <a href="#distance">distance</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="assertion"> assertion </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol is a constructor with two arguments.
+Its first argument is a 3-dimensional Euclidean geometry configuration, its second argument a statement about the
+configuration, called thesis.
+When applied to a configuration C and a thesis T, the OpenMath object assertion(C,T)
+expresses the assertion that T holds in C.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> The assertion that two distinct intersecting lines meet in only one point
+can be expressed as follows using the assertion symbol.
+
+<div>
+                     <button id="d40e216xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e216xml')">OpenMath XML (source)</button>
+                     <pre id="d40e216xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="ThreeDgeo3" name="assertion"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo3" name="configuration"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo1" name="point"/&gt; 
+        &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo1" name="point"/&gt; 
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo1" name="line"/&gt;
+        &lt;OMV name="l"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="ThreeDgeo2" name="incident"/&gt;
+          &lt;OMV name="A"/&gt;
+          &lt;OMV name="l"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="ThreeDgeo2" name="incident"/&gt;
+          &lt;OMV name="B"/&gt;
+          &lt;OMV name="l"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo1" name="line"/&gt;
+        &lt;OMV name="m"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="ThreeDgeo2" name="incident"/&gt;
+          &lt;OMV name="A"/&gt;
+          &lt;OMV name="m"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="ThreeDgeo2" name="incident"/&gt;
+          &lt;OMV name="B"/&gt;
+          &lt;OMV name="m"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="not"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMV name="l"/&gt;
+            &lt;OMV name="m"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e216cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e216cmml')">Strict Content MathML</button>
+                     <pre id="d40e216cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;assertion&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;configuration&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;l&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="ThreeDgeo2"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="ThreeDgeo2"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;m&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="ThreeDgeo2"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="ThreeDgeo2"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e216prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e216pref')">Prefix</button>
+                  <div id="d40e216pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ThreeDgeo3.html#assertion">assertion</a>
+  (<a href="../../../cd/ThreeDgeo3.html#configuration">configuration</a>
+  (<a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>B</i>)
+, <a href="../../../cd/ThreeDgeo1.html#line">line</a>
+  ( <i>l</i>, <a href="../../../cd/ThreeDgeo2.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+, <a href="../../../cd/ThreeDgeo2.html#incident">incident</a>
+  ( <i>B</i>,  <i>l</i>)
+)
+, <a href="../../../cd/ThreeDgeo1.html#line">line</a>
+  ( <i>m</i>, <a href="../../../cd/ThreeDgeo2.html#incident">incident</a>
+  ( <i>A</i>,  <i>m</i>)
+, <a href="../../../cd/ThreeDgeo2.html#incident">incident</a>
+  ( <i>B</i>,  <i>m</i>)
+, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>l</i>,  <i>m</i>)
+)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e216popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e216pop')">Popcorn</button>
+                     <div id="d40e216pop" style="display:none; margin-top: 0.5em">
+  ThreeDgeo3.assertion(ThreeDgeo3.configuration(ThreeDgeo1.point($A), ThreeDgeo1.point($B), ThreeDgeo1.line($l, ThreeDgeo2.incident($A, $l), ThreeDgeo2.incident($B, $l)), ThreeDgeo1.line($m, ThreeDgeo2.incident($A, $m), ThreeDgeo2.incident($B, $m),  not($l = $m))), $A = $B)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e216mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e216mml')">Rendered Presentation MathML</button>
+                     <div id="d40e216mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>assertion</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>configuration</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>B</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>line</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>l</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>A</mi>
+                                                   <mo>,</mo>
+                                                   <mi>l</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>B</mi>
+                                                   <mo>,</mo>
+                                                   <mi>l</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>line</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>m</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>A</mi>
+                                                   <mo>,</mo>
+                                                   <mi>m</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>B</mi>
+                                                   <mo>,</mo>
+                                                   <mi>m</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mo>&#172;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>l</mi>
+                                                <mo>=</mo>
+                                                <mi>m</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>=</mo>
+                                    <mi>B</mi>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ThreeDgeo3.html#assertion">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#locus">locus</a>]
+	  
+	    [Previous: <a href="#configuration">configuration</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="locus">locus</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol is used to indicate by a variable the locus set traced by a point T in a 3-dimensional Euclidean geometry configuration C. That is, the set of all points satisfying the conditions imposed on T in the configuration C. 
+The locus may (but need not) be defined by constraints on the point T additional to those in the configuration.
+The symbol takes the variable as the first argument, the tracer point T as second argument and the additional constraints as further arguments.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+The following example describes a configuration with the locus set L of all points C equidistant to two given points A and B.
+
+<div>
+                     <button id="d40e328xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e328xml')">OpenMath XML (source)</button>
+                     <pre id="d40e328xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt; 
+  &lt;OMA&gt;
+    &lt;OMS cd="ThreeDgeo3" name="configuration"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+      &lt;OMV name="B"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+      &lt;OMV name="C"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo3" name="locus"/&gt;
+      &lt;OMV name="L"/&gt;
+      &lt;OMV name="C"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="ThreeDgeo3" name="distance"/&gt;
+          &lt;OMV name="A"/&gt;
+          &lt;OMV name="C"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="ThreeDgeo3" name="distance"/&gt;
+          &lt;OMV name="B"/&gt;
+          &lt;OMV name="C"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt; 
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e328cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e328cmml')">Strict Content MathML</button>
+                     <pre id="d40e328cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;configuration&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;locus&lt;/csymbol&gt;
+   &lt;ci&gt;L&lt;/ci&gt;
+   &lt;ci&gt;C&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;distance&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;distance&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e328prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e328pref')">Prefix</button>
+                  <div id="d40e328pref" style="display:none; margin-top: 0.5em"> 
+                     <a href="../../../cd/ThreeDgeo3.html#configuration">configuration</a>
+  (<a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>B</i>)
+, <a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>C</i>)
+, <a href="../../../cd/ThreeDgeo3.html#locus">locus</a>
+  ( <i>L</i>,  <i>C</i>, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/ThreeDgeo3.html#distance">distance</a>
+  ( <i>A</i>,  <i>C</i>)
+, <a href="../../../cd/ThreeDgeo3.html#distance">distance</a>
+  ( <i>B</i>,  <i>C</i>)
+)
+)
+)
+ 
+</div>
+                  <div>
+                     <button id="d40e328popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e328pop')">Popcorn</button>
+                     <div id="d40e328pop" style="display:none; margin-top: 0.5em"> 
+  ThreeDgeo3.configuration(ThreeDgeo1.point($A), ThreeDgeo1.point($B), ThreeDgeo1.point($C), ThreeDgeo3.locus($L, $C, ThreeDgeo3.distance($A, $C) = ThreeDgeo3.distance($B, $C))) 
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e328mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e328mml')">Rendered Presentation MathML</button>
+                     <div id="d40e328mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> 
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>configuration</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>B</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>point</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>C</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mi>locus</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>L</mi>
+                                       <mo>,</mo>
+                                       <mi>C</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>distance</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>A</mi>
+                                                <mo>,</mo>
+                                                <mi>C</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mrow>
+                                             <mi>distance</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>B</mi>
+                                                <mo>,</mo>
+                                                <mi>C</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow> 
+                        </math>
+                     </div>
+                  </div> 
+
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ThreeDgeo3.html#locus">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#discovery">discovery</a>]
+	  
+	    [Previous: <a href="#assertion">assertion</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="discovery">discovery</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol is used to describe the task of finding necessary conditions for some properties to hold in a geometric configuration in 3-dimensional Euclidean geometry.
+The symbol takes a configuration as the first argument and the properties for which necessary conditions are to be sought as further arguments.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+The following example encodes the task of finding necessary conditions for a point C to be equidistant to the points A and B.
+
+<div>
+                     <button id="d40e401xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e401xml')">OpenMath XML (source)</button>
+                     <pre id="d40e401xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt; 
+  &lt;OMA&gt;
+    &lt;OMS cd="ThreeDgeo3" name="discovery"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="ThreeDgeo3" name="configuration"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+        &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo1" name="point"/&gt;
+        &lt;OMV name="C"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt; 
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo3" name="distance"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMV name="C"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="ThreeDgeo3" name="distance"/&gt;
+        &lt;OMV name="B"/&gt;
+        &lt;OMV name="C"/&gt;
+      &lt;/OMA&gt;
+   &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e401cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e401cmml')">Strict Content MathML</button>
+                     <pre id="d40e401cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;discovery&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;configuration&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;distance&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ThreeDgeo3"&gt;distance&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e401prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e401pref')">Prefix</button>
+                  <div id="d40e401pref" style="display:none; margin-top: 0.5em"> 
+                     <a href="../../../cd/ThreeDgeo3.html#discovery">discovery</a>
+  (<a href="../../../cd/ThreeDgeo3.html#configuration">configuration</a>
+  (<a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>B</i>)
+, <a href="../../../cd/ThreeDgeo1.html#point">point</a>
+  ( <i>C</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/ThreeDgeo3.html#distance">distance</a>
+  ( <i>A</i>,  <i>C</i>)
+, <a href="../../../cd/ThreeDgeo3.html#distance">distance</a>
+  ( <i>B</i>,  <i>C</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e401popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e401pop')">Popcorn</button>
+                     <div id="d40e401pop" style="display:none; margin-top: 0.5em"> 
+  ThreeDgeo3.discovery(ThreeDgeo3.configuration(ThreeDgeo1.point($A), ThreeDgeo1.point($B), ThreeDgeo1.point($C)), ThreeDgeo3.distance($A, $C) = ThreeDgeo3.distance($B, $C))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e401mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e401mml')">Rendered Presentation MathML</button>
+                     <div id="d40e401mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> 
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>discovery</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mi>configuration</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>B</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>C</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>distance</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>,</mo>
+                                          <mi>C</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>distance</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>B</mi>
+                                          <mo>,</mo>
+                                          <mi>C</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div> 
+
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ThreeDgeo3.html#discovery">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#set_affine_coordinates">set_affine_coordinates</a>]
+	  
+	    [Previous: <a href="#locus">locus</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

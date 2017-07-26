@@ -1,0 +1,269 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>ThreeDgeo2</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://nash.sip.ucm.es/LAD-3D/3DgeoCDs/ThreeDgeo2.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2017-12-31</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2008-01-21</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>3</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>Author: Jesús Escribano</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD defines symbols for 3-dimensional Euclidean geometry</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>incident</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol represents the logical incidence function which is a binary function taking arguments representing geometric objects like points and lines and returning a boolean value. It is true if and only if the first argument is incident to the second.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>That a point A is incident to a line l is given by:</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo2" name="incident"/>
+               <OMV name="A"/>
+               <OMV name="l"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_midpoint</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The statement that one point is the midpoint of two others.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that C is the midpoint of A and B.</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo2" name="is_midpoint"/>
+               <OMV name="C"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>circle_center</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The statement that a circle in 3-dimensional Euclidean space has a given point as center. Takes the circle as first argument and the point as second argument.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The circle c with center at A and passing through the point B is given by:</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo1" name="circle"/>
+               <OMV name="c"/>
+               <OMA>
+                  <OMS cd="ThreeDgeo2" name="circle_center"/>
+                  <OMV name="c"/>
+                  <OMV name="A"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="ThreeDgeo2" name="incident"/>
+                  <OMV name="B"/>
+                  <OMV name="c"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>sphere_center</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The statement that a sphere in 3-dimensional Euclidean space has a given point as center. Takes the sphere as first argument and the point as second argument.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The sphere s with center at A and passing through the point B is given by:</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo1" name="sphere"/>
+               <OMV name="s"/>
+               <OMA>
+                  <OMS cd="ThreeDgeo2" name="sphere_center"/>
+                  <OMV name="s"/>
+                  <OMV name="A"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="ThreeDgeo2" name="incident"/>
+                  <OMV name="B"/>
+                  <OMV name="s"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>perpendicular</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol represents a binary boolean function with input two lines or segments. Its value is true whenever the first argument is perpendicular to the second.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that the lines l and m are perpendicular.</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo2" name="perpendicular"/>
+               <OMV name="l"/>
+               <OMV name="m"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>line_parallel</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol represents a binary boolean function with input two lines or segments. Its value is true whenever the first argument is parallel to the second.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that the lines l and m are parallel.</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo2" name="line_parallel"/>
+               <OMV name="l"/>
+               <OMV name="m"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>plane_parallel</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol represents a binary boolean function with input two planes. Its value is true whenever the first argument is parallel to the second.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that the planes m and n are parallel.</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo2" name="plane_parallel"/>
+               <OMV name="m"/>
+               <OMV name="n"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>normal</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol represents a binary boolean function with a line as first argument and a plane as second argument. Its value is true whenever the first argument is normal to the second.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that the line l is normal to the plane p.</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo2" name="normal"/>
+               <OMV name="l"/>
+               <OMV name="p"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>are_on_line</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol is a boolean n-ary function. Its arguments should be points. When applied to a sequence of points in 3-dimensional Euclidean space, its evaluated to true if and only if there is a line on which all arguments lie.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that the points A, B, C, and D are collinear.</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo2" name="are_on_line"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+               <OMV name="C"/>
+               <OMV name="D"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>are_on_plane</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol is a boolean n-ary function. Its arguments should be points. When applied to a sequence of points in 3-dimensional Euclidean space, its evaluated to true if and only if there is a plane on which all arguments lie.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that the points A, B, C, and D are coplanar.</OMSTR>
+            <OMA>
+               <OMS cd="ThreeDgeo2" name="are_on_plane"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+               <OMV name="C"/>
+               <OMV name="D"/>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

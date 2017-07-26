@@ -1,0 +1,884 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>fns3</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: fns3</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href=""/>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="fns3.ocd">fns3.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="fns3.omcd">fns3.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#continuous">continuous</a>, <a href="#continuous_on">continuous_on</a>, <a href="#differentiable">differentiable</a>, <a href="#differentiable_on">differentiable_on</a>, <a href="#piecewise_continuous">piecewise_continuous</a>, <a href="#piecewise_continuous_on">piecewise_continuous_on</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-02-05 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2017-12-31</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+            <pre>
+  Author: Mike Dewar
+</pre>
+
+
+            <p> 
+Symbols to make statements about properties of a function
+</p>
+
+
+            <hr/>
+            <h2>
+               <a name="continuous"> continuous </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+A predicate to indicate that a function is continuous everywhere.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e44xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e44xml')">OpenMath XML (source)</button>
+                     <pre id="d40e44xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="continuous" cd="fns3"/&gt;
+    &lt;OMS name="sin" cd="transc1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e44cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e44cmml')">Strict Content MathML</button>
+                     <pre id="d40e44cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="fns3"&gt;continuous&lt;/csymbol&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e44prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e44pref')">Prefix</button>
+                  <div id="d40e44pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns3.html#continuous">continuous</a>
+  (<a href="../../../cd/transc1.html#sin">sin</a>)
+
+</div>
+                  <div>
+                     <button id="d40e44popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e44pop')">Popcorn</button>
+                     <div id="d40e44pop" style="display:none; margin-top: 0.5em">
+  fns3.continuous(sin)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e44mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e44mml')">Rendered Presentation MathML</button>
+                     <div id="d40e44mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>continuous</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>sin</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns3.html#continuous">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#piecewise_continuous">piecewise_continuous</a>]
+	  
+	    [Last: <a href="#differentiable_on">differentiable_on</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="piecewise_continuous"> piecewise_continuous </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+A predicate to indicate that a function is piecewise continuous
+everywhere, i.e. continuous at all but a finite number of points in
+its domain.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+1/x is continuous everywhere except x=0.
+<div>
+                     <button id="d40e67xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e67xml')">OpenMath XML (source)</button>
+                     <pre id="d40e67xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="piecewise_continuous" cd="fns3"/&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS name="lambda" cd="fns1"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;
+        &lt;OMS name="divide" cd="arith1"/&gt;
+        &lt;OMI&gt;1&lt;/OMI&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e67cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e67cmml')">Strict Content MathML</button>
+                     <pre id="d40e67cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="fns3"&gt;piecewise_continuous&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e67prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e67pref')">Prefix</button>
+                  <div id="d40e67pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns3.html#piecewise_continuous">piecewise_continuous</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+         <i>x</i>
+      ] .
+  (<a href="../../../cd/arith1.html#divide">divide</a>
+  (1,  <i>x</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e67popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e67pop')">Popcorn</button>
+                     <div id="d40e67pop" style="display:none; margin-top: 0.5em">
+  fns3.piecewise_continuous(fns1.lambda[$x -&gt; 1 / $x])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e67mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e67mml')">Rendered Presentation MathML</button>
+                     <div id="d40e67mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>piecewise_continuous</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>&#955;</mo>
+                                    <mo>&#8201;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                    </mrow>
+                                    <mo>.</mo>
+                                    <mfrac>
+                                       <mn>1</mn>
+                                       <mi>x</mi>
+                                    </mfrac>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns3.html#piecewise_continuous">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#differentiable">differentiable</a>]
+	  
+	    [Previous: <a href="#continuous">continuous</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="differentiable"> differentiable </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+A predicate to indicate that a function is differentiable over its
+whole domain.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e107xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e107xml')">OpenMath XML (source)</button>
+                     <pre id="d40e107xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="differentiable" cd="fns3"/&gt;
+    &lt;OMS name="sin" cd="transc1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e107cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e107cmml')">Strict Content MathML</button>
+                     <pre id="d40e107cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="fns3"&gt;differentiable&lt;/csymbol&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e107prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e107pref')">Prefix</button>
+                  <div id="d40e107pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns3.html#differentiable">differentiable</a>
+  (<a href="../../../cd/transc1.html#sin">sin</a>)
+
+</div>
+                  <div>
+                     <button id="d40e107popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e107pop')">Popcorn</button>
+                     <div id="d40e107pop" style="display:none; margin-top: 0.5em">
+  fns3.differentiable(sin)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e107mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e107mml')">Rendered Presentation MathML</button>
+                     <div id="d40e107mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>differentiable</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>sin</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns3.html#differentiable">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#continuous_on">continuous_on</a>]
+	  
+	    [Previous: <a href="#piecewise_continuous">piecewise_continuous</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="continuous_on"> continuous_on </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+A predicate to indicate that a function is continuous over a
+particular region or range.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+1/x is continuous on the real interval [1,10]
+<div>
+                     <button id="d40e129xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e129xml')">OpenMath XML (source)</button>
+                     <pre id="d40e129xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="continuous_on" cd="fns3"/&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS name="lambda" cd="fns1"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;
+        &lt;OMS name="divide" cd="arith1"/&gt;
+        &lt;OMI&gt;1&lt;/OMI&gt;
+        &lt;OMV name="x"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="interval1" name="interval"/&gt;
+      &lt;OMF dec="1.0"/&gt;
+      &lt;OMF dec="10.0"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e129cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e129cmml')">Strict Content MathML</button>
+                     <pre id="d40e129cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="fns3"&gt;continuous_on&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;interval&lt;/csymbol&gt;
+   &lt;cn type="real"&gt;1.0&lt;/cn&gt;
+   &lt;cn type="real"&gt;10.0&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e129prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e129pref')">Prefix</button>
+                  <div id="d40e129pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns3.html#continuous_on">continuous_on</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+         <i>x</i>
+      ] .
+  (<a href="../../../cd/arith1.html#divide">divide</a>
+  (1,  <i>x</i>)
+)
+, <a href="../../../cd/interval1.html#interval">interval</a>
+  ( 1.0 ,  10.0 )
+)
+
+</div>
+                  <div>
+                     <button id="d40e129popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e129pop')">Popcorn</button>
+                     <div id="d40e129pop" style="display:none; margin-top: 0.5em">
+  fns3.continuous_on(fns1.lambda[$x -&gt; 1 / $x], interval1.interval(1.0, 10.0))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e129mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e129mml')">Rendered Presentation MathML</button>
+                     <div id="d40e129mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>continuous_on</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mrow>
+                                    <mo>&#955;</mo>
+                                    <mo>&#8201;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                    </mrow>
+                                    <mo>.</mo>
+                                    <mfrac>
+                                       <mn>1</mn>
+                                       <mi>x</mi>
+                                    </mfrac>
+                                 </mrow>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>1.0</mn>
+                                    <mo separator="true">,</mo>
+                                    <mn>10.0</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns3.html#continuous_on">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#piecewise_continuous_on">piecewise_continuous_on</a>]
+	  
+	    [Previous: <a href="#differentiable">differentiable</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="piecewise_continuous_on"> piecewise_continuous_on </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+A predicate to indicate that a function is continuous
+at all but a finite number of points in a region.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+tan is piecewise continuous over the real interval [0,pi]
+<div>
+                     <button id="d40e178xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e178xml')">OpenMath XML (source)</button>
+                     <pre id="d40e178xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="piecewise_continuous_on" cd="fns3"/&gt;
+    &lt;OMS name="tan" cd="transc1"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="interval1" name="interval"/&gt;
+      &lt;OMF dec="0.0"/&gt;
+      &lt;OMS name="pi" cd="nums1"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e178cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e178cmml')">Strict Content MathML</button>
+                     <pre id="d40e178cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="fns3"&gt;piecewise_continuous_on&lt;/csymbol&gt;
+  &lt;csymbol cd="transc1"&gt;tan&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;interval&lt;/csymbol&gt;
+   &lt;cn type="real"&gt;0.0&lt;/cn&gt;
+   &lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e178prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e178pref')">Prefix</button>
+                  <div id="d40e178pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns3.html#piecewise_continuous_on">piecewise_continuous_on</a>
+  (<a href="../../../cd/transc1.html#tan">tan</a>, <a href="../../../cd/interval1.html#interval">interval</a>
+  ( 0.0 , <a href="../../../cd/nums1.html#pi">pi</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e178popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e178pop')">Popcorn</button>
+                     <div id="d40e178pop" style="display:none; margin-top: 0.5em">
+  fns3.piecewise_continuous_on(tan, interval1.interval(0.0, nums1.pi))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e178mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e178mml')">Rendered Presentation MathML</button>
+                     <div id="d40e178mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>piecewise_continuous_on</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>tan</mi>
+                                 <mo>,</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>0.0</mn>
+                                    <mo separator="true">,</mo>
+                                    <mi>&#960;</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns3.html#piecewise_continuous_on">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#differentiable_on">differentiable_on</a>]
+	  
+	    [Previous: <a href="#continuous_on">continuous_on</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="differentiable_on"> differentiable_on </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+A predicate to indicate that a function is differentiable on
+a region.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e209xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209xml')">OpenMath XML (source)</button>
+                     <pre id="d40e209xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+  &lt;OMA&gt;
+    &lt;OMS name="differentiable_on" cd="fns3"/&gt;
+    &lt;OMS name="sin" cd="transc1"/&gt;
+    &lt;OMS name="R" cd="setnames1"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e209cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209cmml')">Strict Content MathML</button>
+                     <pre id="d40e209cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="fns3"&gt;differentiable_on&lt;/csymbol&gt;
+  &lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;
+  &lt;csymbol cd="setnames1"&gt;R&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e209prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e209pref')">Prefix</button>
+                  <div id="d40e209pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns3.html#differentiable_on">differentiable_on</a>
+  (<a href="../../../cd/transc1.html#sin">sin</a>, <a href="../../../cd/setnames1.html#R">R</a>)
+
+</div>
+                  <div>
+                     <button id="d40e209popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209pop')">Popcorn</button>
+                     <div id="d40e209pop" style="display:none; margin-top: 0.5em">
+  fns3.differentiable_on(sin, setnames1.R)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e209mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e209mml')">Rendered Presentation MathML</button>
+                     <div id="d40e209mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mi>differentiable_on</mi>
+                              <mo>&#8289;</mo>
+                              <mrow>
+                                 <mo>(</mo>
+                                 <mi>sin</mi>
+                                 <mo>,</mo>
+                                 <mi>R</mi>
+                                 <mo>)</mo>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns3.html#differentiable_on">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#continuous">continuous</a>]
+	  
+	    [Previous: <a href="#piecewise_continuous_on">piecewise_continuous_on</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+         </div>
+      </div>
+   </body>
+</html>

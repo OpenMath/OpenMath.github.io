@@ -1,0 +1,919 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>alg1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io//standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io//documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io//cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: alg1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/alg1.ocd">http://www.openmath.org/cd/alg1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="alg1.ocd">alg1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="alg1.omcd">alg1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#one">one</a>, <a href="#zero">zero</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-03-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>3
+    (Revision 2)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2017-12-31</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+
+            <pre>
+  Author: David Carlisle
+</pre>
+
+            <p> 
+A CD of basic algebraic concepts</p>
+            <p>At present this CD only holds definitions of zero and one. They are
+deliberately defined here without specifying any particular structure
+(e.g. a group) to which they correspond.
+</p>
+
+
+            <hr/>
+            <h2>
+               <a name="zero"> zero </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the additive identity element.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> for all a | a + 0 = a </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e54xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54xml')">OpenMath XML (source)</button>
+                     <pre id="d40e54xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+       &lt;OMV name="a"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="arith1" name="plus"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMS cd="alg1" name="zero"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="a"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e54cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54cmml')">Strict Content MathML</button>
+                     <pre id="d40e54cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;ci&gt;a&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e54prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e54pref')">Prefix</button>
+                  <div id="d40e54pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+        <i>a</i>
+    ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>a</i>, <a href="../../../cd/alg1.html#zero">zero</a>)
+,  <i>a</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e54popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e54pop')">Popcorn</button>
+                     <div id="d40e54pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$a -&gt; $a + alg1.zero = $a]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e54mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e54mml')">Rendered Presentation MathML</button>
+                     <div id="d40e54mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mo>+</mo>
+                                    <mn>0</mn>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>a</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> for all a | 0 * a = 0 </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e90xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e90xml')">OpenMath XML (source)</button>
+                     <pre id="d40e90xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+       &lt;OMV name="a"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation10" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMS cd="alg1" name="zero"/&gt;
+        &lt;OMV name="a"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMS cd="alg1" name="zero"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e90cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e90cmml')">Strict Content MathML</button>
+                     <pre id="d40e90cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation10"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+   &lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e90prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e90pref')">Prefix</button>
+                  <div id="d40e90pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+        <i>a</i>
+    ] .
+  (<a href="../../../cd/relation10.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/alg1.html#zero">zero</a>,  <i>a</i>)
+, <a href="../../../cd/alg1.html#zero">zero</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e90popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e90pop')">Popcorn</button>
+                     <div id="d40e90pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$a -&gt; relation10.eq(alg1.zero * $a, alg1.zero)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e90mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e90mml')">Rendered Presentation MathML</button>
+                     <div id="d40e90mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mi>eq</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mn>0</mn>
+                                       <mo>&#8290;</mo>
+                                       <mi>a</mi>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mn>0</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>The zero of the integers is 0</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e125xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e125xml')">OpenMath XML (source)</button>
+                     <pre id="d40e125xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+       &lt;OMV name="x"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="implies"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="and"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="in"/&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMS cd="setname1" name="Z"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="relation1" name="eq"/&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMS cd="alg1" name="zero"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMI&gt;0&lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e125cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e125cmml')">Strict Content MathML</button>
+                     <pre id="d40e125cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e125prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e125pref')">Prefix</button>
+                  <div id="d40e125pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+        <i>x</i>
+    ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>, <a href="../../../cd/setname1.html#Z">Z</a>)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>x</i>, <a href="../../../cd/alg1.html#zero">zero</a>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>x</i>, 0)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e125popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e125pop')">Popcorn</button>
+                     <div id="d40e125pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$x -&gt; set1.in($x, setname1.Z) and $x = alg1.zero ==&gt; $x = 0]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e125mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e125mml')">Rendered Presentation MathML</button>
+                     <div id="d40e125mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>&#8712;</mo>
+                                       <mi mathvariant="double-struck">Z</mi>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>=</mo>
+                                       <mn>0</mn>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>=</mo>
+                                    <mn>0</mn>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/alg1.html#zero">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#one">one</a>]
+	  
+	    [Last: <a href="#one">one</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="one"> one </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>constant</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the multiplicative identity element.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> for all a | 1 * a = a </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e194xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e194xml')">OpenMath XML (source)</button>
+                     <pre id="d40e194xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+       &lt;OMV name="a"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMS cd="alg1" name="one"/&gt;
+        &lt;OMV name="a"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="a"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e194cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e194cmml')">Strict Content MathML</button>
+                     <pre id="d40e194cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+   &lt;ci&gt;a&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e194prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e194pref')">Prefix</button>
+                  <div id="d40e194pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+        <i>a</i>
+    ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/alg1.html#one">one</a>,  <i>a</i>)
+,  <i>a</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e194popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e194pop')">Popcorn</button>
+                     <div id="d40e194pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$a -&gt; alg1.one * $a = $a]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e194mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e194mml')">Rendered Presentation MathML</button>
+                     <div id="d40e194mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mn>1</mn>
+                                    <mo>&#8290;</mo>
+                                    <mi>a</mi>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>a</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> for all a | a * 1 = a </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e230xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e230xml')">OpenMath XML (source)</button>
+                     <pre id="d40e230xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+       &lt;OMV name="a"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMS cd="alg1" name="one"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="a"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e230cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e230cmml')">Strict Content MathML</button>
+                     <pre id="d40e230cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;ci&gt;a&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e230prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e230pref')">Prefix</button>
+                  <div id="d40e230pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+        <i>a</i>
+    ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>a</i>, <a href="../../../cd/alg1.html#one">one</a>)
+,  <i>a</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e230popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e230pop')">Popcorn</button>
+                     <div id="d40e230pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$a -&gt; $a * alg1.one = $a]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e230mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e230mml')">Rendered Presentation MathML</button>
+                     <div id="d40e230mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>a</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mi>a</mi>
+                                    <mo>&#8290;</mo>
+                                    <mn>1</mn>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>a</mi>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>The one of the integers is 1</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e265xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e265xml')">OpenMath XML (source)</button>
+                     <pre id="d40e265xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+       &lt;OMV name="x"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="implies"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="and"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="in"/&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMS cd="setname1" name="Z"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="relation1" name="eq"/&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMS cd="alg1" name="one"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMV name="x"/&gt;
+      &lt;OMI&gt;1&lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e265cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e265cmml')">Strict Content MathML</button>
+                     <pre id="d40e265cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e265prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e265pref')">Prefix</button>
+                  <div id="d40e265pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+        <i>x</i>
+    ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>, <a href="../../../cd/setname1.html#Z">Z</a>)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>x</i>, <a href="../../../cd/alg1.html#one">one</a>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>x</i>, 1)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e265popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e265pop')">Popcorn</button>
+                     <div id="d40e265pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$x -&gt; set1.in($x, setname1.Z) and $x = alg1.one ==&gt; $x = 1]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e265mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e265mml')">Rendered Presentation MathML</button>
+                     <div id="d40e265mml" style="display:block; margin-top: 0.5em">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                              <mo>&#8704;</mo>
+                              <mo>&#8201;</mo>
+                              <mrow>
+                                 <mi>x</mi>
+                              </mrow>
+                              <mo>.</mo>
+                              <mrow>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>&#8712;</mo>
+                                       <mi mathvariant="double-struck">Z</mi>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>=</mo>
+                                       <mn>1</mn>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>=</mo>
+                                    <mn>1</mn>
+                                 </mrow>
+                              </mrow>
+                           </mrow>
+                        </math>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/alg1.html#one">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#zero">zero</a>]
+	  
+	    [Previous: <a href="#zero">zero</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>
