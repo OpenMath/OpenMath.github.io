@@ -939,16 +939,16 @@ title: OpenMath Symbols
    <tr>
       <td> CDComment </td>
       <td>
-         <a href="cd/ meta .html"> meta </a>
+         <a href="cd/ metagrp .html"> metagrp </a>
       </td>
-      <td>This symbol is used to represent the element of a content dictionary which explains some aspect of that content dictionary. It should have one string argument which makes that explanation.</td>
+      <td>This symbol is used to represent the element of a CDGroup which explains some aspect of the corresponding content dictionary. It should have one string argument which makes that explanation.</td>
    </tr>
    <tr>
       <td> CDComment </td>
       <td>
-         <a href="cd/ metagrp .html"> metagrp </a>
+         <a href="cd/ meta .html"> meta </a>
       </td>
-      <td>This symbol is used to represent the element of a CDGroup which explains some aspect of the corresponding content dictionary. It should have one string argument which makes that explanation.</td>
+      <td>This symbol is used to represent the element of a content dictionary which explains some aspect of that content dictionary. It should have one string argument which makes that explanation.</td>
    </tr>
    <tr>
       <td> CDDate </td>
@@ -1009,16 +1009,16 @@ title: OpenMath Symbols
    <tr>
       <td> CDName </td>
       <td>
-         <a href="cd/ meta .html"> meta </a>
+         <a href="cd/ metagrp .html"> metagrp </a>
       </td>
-      <td>An element which contains the string corresponding to the name of the CD. The string must match the syntax for CD names given in the OpenMath Standard. Here and elsewhere white space occurring at the beginning or end of the string will be ignored.</td>
+      <td>This symbol represents the element of a CDGroup which describes each CDName element. It has one string argument, this should be the string corresponding to the name of a content dictionary which is in this CDGroup.</td>
    </tr>
    <tr>
       <td> CDName </td>
       <td>
-         <a href="cd/ metagrp .html"> metagrp </a>
+         <a href="cd/ meta .html"> meta </a>
       </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDName element. It has one string argument, this should be the string corresponding to the name of a content dictionary which is in this CDGroup.</td>
+      <td>An element which contains the string corresponding to the name of the CD. The string must match the syntax for CD names given in the OpenMath Standard. Here and elsewhere white space occurring at the beginning or end of the string will be ignored.</td>
    </tr>
    <tr>
       <td> CDReviewDate </td>
@@ -1072,16 +1072,16 @@ title: OpenMath Symbols
    <tr>
       <td> CDURL </td>
       <td>
-         <a href="cd/ meta .html"> meta </a>
+         <a href="cd/ metagrp .html"> metagrp </a>
       </td>
-      <td>An optional element. If it is used it contains a string representing the URL where the canonical reference copy of this CD is stored.</td>
+      <td>This symbol represents the element of a CDGroup which describes each CDURL element. It has one string argument, this should be the string corresponding to the contents of the CDURL element for each Content Dictionary in the CDGroup. The element is optional, in case it is missing, the location of the CDGroup identified by the element CDGroupURL is assumed.</td>
    </tr>
    <tr>
       <td> CDURL </td>
       <td>
-         <a href="cd/ metagrp .html"> metagrp </a>
+         <a href="cd/ meta .html"> meta </a>
       </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDURL element. It has one string argument, this should be the string corresponding to the contents of the CDURL element for each Content Dictionary in the CDGroup. The element is optional, in case it is missing, the location of the CDGroup identified by the element CDGroupURL is assumed.</td>
+      <td>An optional element. If it is used it contains a string representing the URL where the canonical reference copy of this CD is stored.</td>
    </tr>
    <tr>
       <td> CDUses </td>
@@ -4908,16 +4908,16 @@ title: OpenMath Symbols
    <tr>
       <td> power </td>
       <td>
-         <a href="cd/ poly .html"> poly </a>
+         <a href="cd/ polyd .html"> polyd </a>
       </td>
-      <td>Takes a polynomial and a (non-negative) integer and produces a formal power. Although OpenMath does not specify operational semantics, the idea here is that these powers are not evaluated. We note that the power from arith1 would suggest the expanded form.</td>
+      <td>The power. First argument is a DMP, second argument is the integer power. The power lies within the same "PolyRingD" i.e. a program implementing this operation should return a DMP with the same "poly_ring_d" (or "poly_ring_d_named").</td>
    </tr>
    <tr>
       <td> power </td>
       <td>
-         <a href="cd/ polyd .html"> polyd </a>
+         <a href="cd/ poly .html"> poly </a>
       </td>
-      <td>The power. First argument is a DMP, second argument is the integer power. The power lies within the same "PolyRingD" i.e. a program implementing this operation should return a DMP with the same "poly_ring_d" (or "poly_ring_d_named").</td>
+      <td>Takes a polynomial and a (non-negative) integer and produces a formal power. Although OpenMath does not specify operational semantics, the idea here is that these powers are not evaluated. We note that the power from arith1 would suggest the expanded form.</td>
    </tr>
    <tr>
       <td> power </td>
