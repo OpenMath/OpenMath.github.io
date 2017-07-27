@@ -7,10 +7,10 @@ title: OpenMath Content Dictionaries
 
 A content dictionary is the declaration of a collection of symbols, their names,
 descriptions, and rules. A published CD allows multiple parties to "speak the same
-OpenMath language".  An example of CD is [setname1](Official/setname1.xhtml) which
+OpenMath language".  An example of CD is [setname1](Official/setname1.html) which
 indicates the semantic of such symbols such as the set of natural numbers.
   
-CDs are grouped in CD-groups. For example, the [MathML CD group](../cdgroups/mathml.xhtml)
+CDs are grouped in CD-groups. For example, the [MathML CD group](../cdgroups/mathml.html)
 collects the 'core CDs', all content-dictionaries described in the OpenMath standard
 deemed compatible with the [MathML3 Recommendation](http://www.w3.org/TR/MathML3)
   
