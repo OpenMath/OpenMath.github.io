@@ -224,24 +224,26 @@ $b = list2.list_selector(2, [$a , $b , $c])
                      <button id="d40e47mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e47mml')">Rendered Presentation MathML</button>
                      <div id="d40e47mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mi>b</mi>
-                              <mo>=</mo>
-                              <msub>
-                                 <mrow>
-                                    <mo>(</mo>
-                                    <mi>a</mi>
-                                    <mo separator="true">,</mo>
-                                    <mi>b</mi>
-                                    <mo separator="true">,</mo>
-                                    <mi>c</mi>
-                                    <mo>)</mo>
-                                 </mrow>
-                                 <mn> 2 </mn>
-                              </msub>
-                           </mrow>
-                        </math>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>b</mi>
+                                 <mo>=</mo>
+                                 <msub>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>b</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>c</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mn> 2 </mn>
+                                 </msub>
+                              </mrow>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -334,39 +336,41 @@ $n &gt; 1 ==&gt; list2.list_selector($n, $l) = list2.list_selector($n - 1, list2
                      <button id="d40e79mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e79mml')">Rendered Presentation MathML</button>
                      <div id="d40e79mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mrow>
-                                 <mi>n</mi>
-                                 <mo>&gt;</mo>
-                                 <mn> 1 </mn>
-                              </mrow>
-                              <mo>&#8658;</mo>
-                              <mrow>
-                                 <msub>
-                                    <mi>l</mi>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
                                     <mi>n</mi>
-                                 </msub>
-                                 <mo>=</mo>
-                                 <msub>
-                                    <mrow>
-                                       <mi>rest</mi>
-                                       <mo>&#8289;</mo>
-                                       <mrow>
-                                          <mo>(</mo>
-                                          <mi>l</mi>
-                                          <mo>)</mo>
-                                       </mrow>
-                                    </mrow>
-                                    <mrow>
+                                    <mo>&gt;</mo>
+                                    <mn> 1 </mn>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <msub>
+                                       <mi>l</mi>
                                        <mi>n</mi>
-                                       <mo>-</mo>
-                                       <mn> 1 </mn>
-                                    </mrow>
-                                 </msub>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <msub>
+                                       <mrow>
+                                          <mi>rest</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>l</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mrow>
+                                          <mi>n</mi>
+                                          <mo>-</mo>
+                                          <mn> 1 </mn>
+                                       </mrow>
+                                    </msub>
+                                 </mrow>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -477,31 +481,33 @@ its argument, which should be a list.
                      <button id="d40e149mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e149mml')">Rendered Presentation MathML</button>
                      <div id="d40e149mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mi>a</mi>
-                              <mo>=</mo>
-                              <mrow>
-                                 <mi>first</mi>
-                                 <mo>&#8289;</mo>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>a</mi>
+                                 <mo>=</mo>
                                  <mrow>
-                                    <mo>(</mo>
+                                    <mi>first</mi>
+                                    <mo>&#8289;</mo>
                                     <mrow>
-                                       <mi>cons</mi>
-                                       <mo>&#8289;</mo>
+                                       <mo>(</mo>
                                        <mrow>
-                                          <mo>(</mo>
-                                          <mi>a</mi>
-                                          <mo>,</mo>
-                                          <mi>b</mi>
-                                          <mo>)</mo>
+                                          <mi>cons</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>a</mi>
+                                             <mo>,</mo>
+                                             <mi>b</mi>
+                                             <mo>)</mo>
+                                          </mrow>
                                        </mrow>
+                                       <mo>)</mo>
                                     </mrow>
-                                    <mo>)</mo>
                                  </mrow>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -558,25 +564,27 @@ Specification of the first element of the list [1,2,3]
                      <button id="d40e176mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e176mml')">Rendered Presentation MathML</button>
                      <div id="d40e176mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mi>first</mi>
-                              <mo>&#8289;</mo>
-                              <mrow>
-                                 <mo>(</mo>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>first</mi>
+                                 <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
-                                    <mn> 1 </mn>
-                                    <mo separator="true">,</mo>
-                                    <mn> 2 </mn>
-                                    <mo separator="true">,</mo>
-                                    <mn> 3 </mn>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 1 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 2 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 3 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
                                     <mo>)</mo>
                                  </mrow>
-                                 <mo>)</mo>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -687,31 +695,33 @@ the elements except the first of its argument, which should be a list.
                      <button id="d40e213mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e213mml')">Rendered Presentation MathML</button>
                      <div id="d40e213mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mi>b</mi>
-                              <mo>=</mo>
-                              <mrow>
-                                 <mi>rest</mi>
-                                 <mo>&#8289;</mo>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>b</mi>
+                                 <mo>=</mo>
                                  <mrow>
-                                    <mo>(</mo>
+                                    <mi>rest</mi>
+                                    <mo>&#8289;</mo>
                                     <mrow>
-                                       <mi>cons</mi>
-                                       <mo>&#8289;</mo>
+                                       <mo>(</mo>
                                        <mrow>
-                                          <mo>(</mo>
-                                          <mi>a</mi>
-                                          <mo>,</mo>
-                                          <mi>b</mi>
-                                          <mo>)</mo>
+                                          <mi>cons</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>a</mi>
+                                             <mo>,</mo>
+                                             <mi>b</mi>
+                                             <mo>)</mo>
+                                          </mrow>
                                        </mrow>
+                                       <mo>)</mo>
                                     </mrow>
-                                    <mo>)</mo>
                                  </mrow>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -769,25 +779,27 @@ Specification of the list [1,2,3], apart from the first element
                      <button id="d40e240mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e240mml')">Rendered Presentation MathML</button>
                      <div id="d40e240mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mi>rest</mi>
-                              <mo>&#8289;</mo>
-                              <mrow>
-                                 <mo>(</mo>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>rest</mi>
+                                 <mo>&#8289;</mo>
                                  <mrow>
                                     <mo>(</mo>
-                                    <mn> 1 </mn>
-                                    <mo separator="true">,</mo>
-                                    <mn> 2 </mn>
-                                    <mo separator="true">,</mo>
-                                    <mn> 3 </mn>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 1 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 2 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 3 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
                                     <mo>)</mo>
                                  </mrow>
-                                 <mo>)</mo>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -929,47 +941,49 @@ the second argument.
                      <button id="d40e280mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e280mml')">Rendered Presentation MathML</button>
                      <div id="d40e280mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mo>&#8704;</mo>
-                              <mo>&#8201;</mo>
-                              <mrow>
-                                 <mi>lst</mi>
-                              </mrow>
-                              <mo>.</mo>
-                              <mrow>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
                                  <mrow>
-                                    <mi>cons</mi>
-                                    <mo>&#8289;</mo>
-                                    <mrow>
-                                       <mo>(</mo>
-                                       <mrow>
-                                          <mi>first</mi>
-                                          <mo>&#8289;</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mi>lst</mi>
-                                             <mo>)</mo>
-                                          </mrow>
-                                       </mrow>
-                                       <mo>,</mo>
-                                       <mrow>
-                                          <mi>rest</mi>
-                                          <mo>&#8289;</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mi>lst</mi>
-                                             <mo>)</mo>
-                                          </mrow>
-                                       </mrow>
-                                       <mo>)</mo>
-                                    </mrow>
+                                    <mi>lst</mi>
                                  </mrow>
-                                 <mo>=</mo>
-                                 <mi>lst</mi>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>cons</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>first</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>lst</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>rest</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>lst</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mi>lst</mi>
+                                 </mrow>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -1163,83 +1177,85 @@ The operation of joining one list to another
                      <button id="d40e346mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e346mml')">Rendered Presentation MathML</button>
                      <div id="d40e346mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mo>&#8704;</mo>
-                              <mo>&#8201;</mo>
-                              <mrow>
-                                 <mi>a</mi>
-                                 <mo>,</mo>
-                                 <msub>
-                                    <mi>lst</mi>
-                                    <mn>1</mn>
-                                 </msub>
-                                 <mo>,</mo>
-                                 <msub>
-                                    <mi>lst</mi>
-                                    <mn>2</mn>
-                                 </msub>
-                              </mrow>
-                              <mo>.</mo>
-                              <mrow>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
                                  <mrow>
-                                    <mi>cons</mi>
-                                    <mo>&#8289;</mo>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <msub>
+                                       <mi>lst</mi>
+                                       <mn>1</mn>
+                                    </msub>
+                                    <mo>,</mo>
+                                    <msub>
+                                       <mi>lst</mi>
+                                       <mn>2</mn>
+                                    </msub>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
                                     <mrow>
-                                       <mo>(</mo>
-                                       <mi>a</mi>
-                                       <mo>,</mo>
+                                       <mi>cons</mi>
+                                       <mo>&#8289;</mo>
                                        <mrow>
-                                          <mi>append</mi>
-                                          <mo>&#8289;</mo>
+                                          <mo>(</mo>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
                                           <mrow>
-                                             <mo>(</mo>
-                                             <msub>
-                                                <mi>lst</mi>
-                                                <mn>1</mn>
-                                             </msub>
-                                             <mo>,</mo>
-                                             <msub>
-                                                <mi>lst</mi>
-                                                <mn>2</mn>
-                                             </msub>
-                                             <mo>)</mo>
+                                             <mi>append</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <msub>
+                                                   <mi>lst</mi>
+                                                   <mn>1</mn>
+                                                </msub>
+                                                <mo>,</mo>
+                                                <msub>
+                                                   <mi>lst</mi>
+                                                   <mn>2</mn>
+                                                </msub>
+                                                <mo>)</mo>
+                                             </mrow>
                                           </mrow>
+                                          <mo>)</mo>
                                        </mrow>
-                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>append</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>cons</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <msub>
+                                                   <mi>lst</mi>
+                                                   <mn>1</mn>
+                                                </msub>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <msub>
+                                             <mi>lst</mi>
+                                             <mn>2</mn>
+                                          </msub>
+                                          <mo>)</mo>
+                                       </mrow>
                                     </mrow>
                                  </mrow>
-                                 <mo>=</mo>
-                                 <mrow>
-                                    <mi>append</mi>
-                                    <mo>&#8289;</mo>
-                                    <mrow>
-                                       <mo>(</mo>
-                                       <mrow>
-                                          <mi>cons</mi>
-                                          <mo>&#8289;</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mi>a</mi>
-                                             <mo>,</mo>
-                                             <msub>
-                                                <mi>lst</mi>
-                                                <mn>1</mn>
-                                             </msub>
-                                             <mo>)</mo>
-                                          </mrow>
-                                       </mrow>
-                                       <mo>,</mo>
-                                       <msub>
-                                          <mi>lst</mi>
-                                          <mn>2</mn>
-                                       </msub>
-                                       <mo>)</mo>
-                                    </mrow>
-                                 </mrow>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -1311,31 +1327,33 @@ The operation of joining one list to another
                      <button id="d40e403mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e403mml')">Rendered Presentation MathML</button>
                      <div id="d40e403mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mo>&#8704;</mo>
-                              <mo>&#8201;</mo>
-                              <mrow>
-                                 <mi>lst</mi>
-                              </mrow>
-                              <mo>.</mo>
-                              <mrow>
-                                 <mi>lst</mi>
-                                 <mo>=</mo>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
                                  <mrow>
-                                    <mi>append</mi>
-                                    <mo>&#8289;</mo>
+                                    <mi>lst</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mi>lst</mi>
+                                    <mo>=</mo>
                                     <mrow>
-                                       <mo>(</mo>
-                                       <mi>nil</mi>
-                                       <mo>,</mo>
-                                       <mi>lst</mi>
-                                       <mo>)</mo>
+                                       <mi>append</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>nil</mi>
+                                          <mo>,</mo>
+                                          <mi>lst</mi>
+                                          <mo>)</mo>
+                                       </mrow>
                                     </mrow>
                                  </mrow>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -1437,21 +1455,23 @@ The reverse of a list
                      <button id="d40e447mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e447mml')">Rendered Presentation MathML</button>
                      <div id="d40e447mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mrow>
-                                 <mi>reverse</mi>
-                                 <mo>&#8289;</mo>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
                                  <mrow>
-                                    <mo>(</mo>
-                                    <mi>nil</mi>
-                                    <mo>)</mo>
+                                    <mi>reverse</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>nil</mi>
+                                       <mo>)</mo>
+                                    </mrow>
                                  </mrow>
+                                 <mo>=</mo>
+                                 <mi>nil</mi>
                               </mrow>
-                              <mo>=</mo>
-                              <mi>nil</mi>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -1553,69 +1573,71 @@ The reverse of a list
                      <button id="d40e467mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e467mml')">Rendered Presentation MathML</button>
                      <div id="d40e467mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mo>&#8704;</mo>
-                              <mo>&#8201;</mo>
-                              <mrow>
-                                 <mi>lst</mi>
-                                 <mo>,</mo>
-                                 <mi>a</mi>
-                              </mrow>
-                              <mo>.</mo>
-                              <mrow>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
                                  <mrow>
-                                    <mi>reverse</mi>
-                                    <mo>&#8289;</mo>
+                                    <mi>lst</mi>
+                                    <mo>,</mo>
+                                    <mi>a</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
                                     <mrow>
-                                       <mo>(</mo>
+                                       <mi>reverse</mi>
+                                       <mo>&#8289;</mo>
                                        <mrow>
-                                          <mi>cons</mi>
-                                          <mo>&#8289;</mo>
+                                          <mo>(</mo>
                                           <mrow>
-                                             <mo>(</mo>
-                                             <mi>a</mi>
-                                             <mo>,</mo>
-                                             <mi>lst</mi>
-                                             <mo>)</mo>
+                                             <mi>cons</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>lst</mi>
+                                                <mo>)</mo>
+                                             </mrow>
                                           </mrow>
+                                          <mo>)</mo>
                                        </mrow>
-                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>append</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>reverse</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>lst</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>cons</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>nil</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
                                     </mrow>
                                  </mrow>
-                                 <mo>=</mo>
-                                 <mrow>
-                                    <mi>append</mi>
-                                    <mo>&#8289;</mo>
-                                    <mrow>
-                                       <mo>(</mo>
-                                       <mrow>
-                                          <mi>reverse</mi>
-                                          <mo>&#8289;</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mi>lst</mi>
-                                             <mo>)</mo>
-                                          </mrow>
-                                       </mrow>
-                                       <mo>,</mo>
-                                       <mrow>
-                                          <mi>cons</mi>
-                                          <mo>&#8289;</mo>
-                                          <mrow>
-                                             <mo>(</mo>
-                                             <mi>a</mi>
-                                             <mo>,</mo>
-                                             <mi>nil</mi>
-                                             <mo>)</mo>
-                                          </mrow>
-                                       </mrow>
-                                       <mo>)</mo>
-                                    </mrow>
-                                 </mrow>
                               </mrow>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
@@ -1728,29 +1750,31 @@ The size of the list (3,6,9) = 3
                      <button id="d40e538mmla" style="width:20em; background-color:#AAFFAA"
                              onclick="divfold('d40e538mml')">Rendered Presentation MathML</button>
                      <div id="d40e538mml" style="display:block; margin-top: 0.5em">
-                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                           <mrow xmlns:om="http://www.openmath.org/OpenMath">
-                              <mrow>
-                                 <mi>size</mi>
-                                 <mo>&#8289;</mo>
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
                                  <mrow>
-                                    <mo>(</mo>
+                                    <mi>size</mi>
+                                    <mo>&#8289;</mo>
                                     <mrow>
                                        <mo>(</mo>
-                                       <mn> 3 </mn>
-                                       <mo separator="true">,</mo>
-                                       <mn> 6 </mn>
-                                       <mo separator="true">,</mo>
-                                       <mn> 9 </mn>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 3 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 6 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 9 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
                                        <mo>)</mo>
                                     </mrow>
-                                    <mo>)</mo>
                                  </mrow>
+                                 <mo>=</mo>
+                                 <mn> 3 </mn>
                               </mrow>
-                              <mo>=</mo>
-                              <mn> 3 </mn>
-                           </mrow>
-                        </math>
+                           </math>
+                        </div>
                      </div>
                   </div>
                </dd>
