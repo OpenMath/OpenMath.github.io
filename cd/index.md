@@ -19,7 +19,7 @@ deemed compatible with the [MathML3 Recommendation](http://www.w3.org/TR/MathML3
 * [CD Groups](../cdgroups/): A list of all Content Dictionary Groups available on this server.
 * [All CDs by Name](../cdnames/): A list of all Content Dictionaries (including contributed Dictionaries).
 * [Index of all Symbols](../symbols/): A list of all symbols defined in any Content Dictionary (including contributed Dictionaries).
-* [Git Repository](https://github.com/OpenMath/CDs): A github hosted repository, you can brows the files online,  download a zip file to your local machine, or clone the repository.
+* [Git Repository](https://github.com/OpenMath/CDs): A github hosted repository, you can browse the files online,  download a zip file to your local machine, or clone the repository.
 
 ## FAQ
 
