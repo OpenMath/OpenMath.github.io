@@ -1,12 +1,12 @@
 ---
 layout: page
-title: The OpenMath Standard 2.0
+title: The OpenMath Standard  <br> Version 2.0 (initial release)
 ---
 
 The document is available in both XHTML and PDF formats.  To view the XHTML versions you
 need a browser with reasonable CSS support and support for presentation MathML
 
-A ZIP archive of the files in this distribution including the DocBook sources and all necessary stylesheets [is also available](om20.zip).</p>
+A ZIP archive of the files in this distribution including the DocBook sources and all necessary stylesheets [is also available](om20.zip).
 
 ## OpenMath 2.0  Standard Document
 
