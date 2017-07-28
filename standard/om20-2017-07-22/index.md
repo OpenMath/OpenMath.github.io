@@ -27,30 +27,30 @@ title: The OpenMath Standard <br>Version 2.0 Revision 1
 </tr>
 <tr>
 <th> RNG (normative version) </th>
-<td> [openmath2.rng](openmath2.rng) </td>
-<td> [omcd2.rng](omcd2.rng) </td>
-<td> [omcdsig2.rng](omcdsig2.rng) </td>
-<td> [omcdgroup2.rng](omcdgroup2.rng) </td>
+<td> <a href="openmath2.rng">openmath2.rng</a> </td>
+<td> <a href="omcd2.rng">omcd2.rng</a> </td>
+<td> <a href="omcdsig2.rng">omcdsig2.rng</a> </td>
+<td> <a href="omcdgroup2.rng">omcdgroup2.rng</a> </td>
 </tr>
 <tr>
 <th> RNC (source)</th>
-<td> [openmath2.rnc](openmath2.rnc) </td>
-<td> [omcd2.rnc](omcd2.rnc) </td>
-<td> [omcdsig2.rnc](omcdsig2.rnc) </td>
-<td> [omcdgroup2.rnc](omcdgroup2.rnc) </td>
+<td> <a href="openmath2.rnc">openmath2.rnc</a> </td>
+<td> <a href="omcd2.rnc">omcd2.rnc</a> </td>
+<td> <a href="omcdsig2.rnc">omcdsig2.rnc</a> </td>
+<td> <a href="omcdgroup2.rnc">omcdgroup2.rnc</a> </td>
 </tr>
 <tr>
 <th> XSD (derived)</th>
-<td> [openmath2.xsd](openmath2.xsd) </td>
-<td> [omcd2.xsd](omcd2.xsd) </td>
-<td> [omcdsig2.xsd](omcdsig2.xsd) </td>
-<td> [omcdgroup2.xsd](omcdgroup2.xsd) </td>
+<td> <a href="openmath2.xsd">openmath2.xsd</a> </td>
+<td> <a href="omcd2.xsd">omcd2.xsd</a> </td>
+<td> <a href="omcdsig2.xsd">omcdsig2.xsd</a> </td>
+<td> <a href="omcdgroup2.xsd">omcdgroup2.xsd</a> </td>
 </tr>
 <tr>
 <th> DTD (derived)</th>
-<td> [openmath2.dtd](openmath2.dtd) </td>
-<td> [omcd2.dtd](omcd2.dtd) </td>
-<td> [omcdsig2.dtd](omcdsig2.dtd) </td>
-<td> [omcdgroup2.dtd](omcdgroup2.dtd) </td>
+<td> <a href="openmath2.dtd">openmath2.dtd</a> </td>
+<td> <a href="omcd2.dtd">omcd2.dtd</a> </td>
+<td> <a href="omcdsig2.dtd">omcdsig2.dtd</a> </td>
+<td> <a href="omcdgroup2.dtd">omcdgroup2.dtd</a> </td>
 </tr>
 </table>
