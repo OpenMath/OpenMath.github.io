@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CD check</title>
+  <meta charset="UTF-8"/>
+  <style>
+   .err {color: red}
+   .indent{margin-left:2em;}
+   .indent p {margin:0em;padding:0em;}
+  </style>
+  <script>
+
+   // file drop
+
+   function dodrop(event) {
+  var dt = event.dataTransfer;
+  var files = dt.files;
+  if(files.length == 1) {
+  var fr = new FileReader();
+fr.onload = function(e) {
+    document.getElementById("cdin").textContent=e.target.result;
+};
+fr.readAsText(files[0]);
+      } else {
+            cdout.innerHTML = "only drop one file at a time";
+      }      
+}
+
+
+// end of file drop code
+
+// namespaces
+   var cdns="http://www.openmath.org/OpenMathCD";
+   var omns="http://www.openmath.org/OpenMath";
+
+// regular expressions
+   
+   // ascii version for now
+   var omNameRE= new RegExp(/^\s*[a-zA-Z][a-zA-Z0-9.\-_]*\s*$/);
+   var omURLRE= new RegExp(/^\s*[a-z]+:\/\/[^ ]*\s*$/);
+   var omDateRE= new RegExp(/^\s*[0-9]{4}-(0[1-9]|1[12])-(0[1-9]|[12][0-9]|3[01])\s*$/);
+   
+
+// code for the check button
+function checkcd () {
+   var cdout=document.getElementById("cdout");
+   var sMyString = document.getElementById("cdin").textContent;
+var oParser = new DOMParser();
+
+var oDOM = oParser.parseFromString(sMyString, "text/xml");
+if (oDOM.getElementsByTagName("parsererror").length>0) {
+cdout.innerHTML =
+"<h3>XML Parse Error</h3>" + oDOM.getElementsByTagName("parsererror")[0].textContent;
+} else {
+cdout.innerHTML ="";
+vroot(oDOM);
+}
+}
+
+
+// functions v* validate their input and place results in the output div
+// functions vs* same but return a string
+// some of the duplication here will be removed later, gradually moving to vs versions
+
+function vroot (o) {
+var els=o.childNodes
+if(els.length==1) {
+if(els[0].namespaceURI==cdns) {
+if(els[0].localName=="CD") {
+vCD(els[0]);
+} else {
+cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be CD</p>";
+}
+} else {
+cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root namespace:<br>" + els[0].namespaceURI + "<br>!=<br>" + cdns +" </p>";
+}
+} else {
+cdout.innerHTML = cdout.innerHTML + "<p class='err'`c>multiple root elements</p>";
+}
+}
+
+
+function vCD(e) {
+cdout.innerHTML = cdout.innerHTML + "<p><b>OpenMath Content Dictionary</b></p>";
+var els=e.childNodes;
+var CDNamec=0;
+var CDURLc=0;
+var CDBasec=0;
+var CDRDatec=0;
+var CDDatec=0;
+var CDStatusc=0;
+var CDVersionc=0;
+var CDRevisionc=0;
+for(var j=0;j<els.length;j++){
+var c=els[j];
+if(c.nodeType==1) {
+switch(c.localName) {
+case "CDComment":
+vCDComment(c);
+break;
+case "Description":
+vDescription(c);
+break;
+case "CDName":
+vTextOne(c,++CDNamec,omNameRE);
+break;
+case "CDURL":
+vTextOne(c,++CDURLc,omURLRE);
+break;
+case "CDBase":
+vTextOne(c,++CDBasec,omURLRE);
+break;
+case "CDReviewDate":
+vTextOne(c,++CDRDatec,omDateRE);
+break;
+case "CDDate":
+vTextOne(c,++CDDatec,omDateRE);
+break;
+case "CDStatus":
+vTextOne(c,++CDStatusc,/^\s*(official|experimental|private|obsolete)\s*$/);
+break;
+case "CDUses":
+vCDuses(c);
+break;
+case "CDVersion":
+vTextOne(c,++CDVersionc,/^\s*[0-9]+\s*$/);
+break;
+case "CDRevision":
+vTextOne(c,++CDRevisionc,/^\s*[0-9]+\s*$/);
+break;
+case "CDDefinition":
+vCDDefinition(c);
+break;
+default:
+vErr(c);
+}
+}
+}
+}
+
+
+function vChildren(n) {
+    var c=[];
+    for(var j=0;j<n.childNodes.length; j++ ) {
+	if(n.childNodes[j].nodeType==1) {
+	    c[c.length]=n.childNodes[j];
+	}
+    }
+    return c;
+}
+
+function vErr(c) {
+vOut("(Unexpected element: " +c.localName + ")","");
+}
+
+function vsErr(c) {
+return vsOut("(Unexpected element: " +c.localName + ")","");
+}
+
+function vTextOnly(e) {
+var c=vChildren(e);
+return (c.length==0 ? "" : " (Unexpected element: " + c[0].localName + ")");
+}
+
+function vNoAttributes(e) {
+var atts =  e.attributes;
+return (atts.length==0 ? "" : " (Unexpected attribute: " + atts[0].localName + ")");
+}
+
+function vOut(err,t){
+cdout.innerHTML = cdout.innerHTML +
+"<p" + (err=="" ? "": " class='err'") +">" + t + err + "</p>";
+}
+function vsOut(err,t){
+return ("<p" + (err=="" ? "": " class='err'") +">" + t + err + "</p>");
+}
+
+function vTestRE(e,r) {
+return (e.textContent.match(r) ? "" : " (invalid text)");
+}
+
+function vCDComment (e) {
+var err="";
+err += vTextOnly(e);
+vOut(err,"<b>CDComment:</b>");
+if(err==""){
+cdout.innerHTML = cdout.innerHTML +"<pre>" +e.textContent +"</pre>";
+}
+}
+
+function vDescription (e) {
+cdout.innerHTML = cdout.innerHTML + "<p><b>Description:</b><p><div> " +e.innerHTML + "</div>";
+}
+
+function vTextOne(e,ct,re) {
+var err="";
+err += vTextOnly(e);
+err += vNoAttributes(e);
+if (ct != 1) err += "(multiple " + e.localName +")";
+err += vTestRE(e,re);
+vOut(err,"<b>" + e.localName + ":</b> " +e.textContent);
+}
+function vsTextOne(e,ct,re) {
+var err="";
+err += vTextOnly(e);
+if (ct != 1) err += "(multiple " + e.localName +")";
+err += vTestRE(e,re);
+return vsOut(err,"<b>" + e.localName + ":</b> " +e.textContent);
+}
+
+
+
+
+function vCDuses (e) {
+cdout.innerHTML = cdout.innerHTML + "<p><b>CDUses:</b></p>";
+var u= "<div class='indent'>";
+var els=vChildren(e);
+for(var j=0;j<els.length;j++){
+var c=els[j];
+if (c.localName=='CDName') {
+u+=vsTextOne(c,1,omNameRE);
+} else {
+u+=vsErr(c);
+}
+}
+u+="</div>";
+cdout.innerHTML = cdout.innerHTML + u;
+}
+
+
+function vsOMOBJ(e) {
+if (e.localName=='OMOBJ' && e.namespaceURI==omns) {
+return "OMOBJ";
+} else {
+return ("<p class='err'>Unexpected element {" + e.namespaceURI + "}" + e.localName + "</p>");
+}
+}
+
+
+
+function vExample (e) {
+var u="";
+var err="";
+err += vNoAttributes(e);
+u+=vsOut(err,"<b>Example:</b>");
+if(err==""){
+var els=e.childNodes;
+for(var j=0;j<els.length;j++){
+var c=els[j];
+if(c.nodeType==3) {
+u+=c.nodeValue;
+} else if (c.nodeType==1) {
+u+=vsOMOBJ(c);
+}
+}
+}
+cdout.innerHTML = cdout.innerHTML + u;
+}
+
+
+function vFMP (e) {
+var err="";
+var k="";
+var atts=e.attributes;
+for(var j=0;j<atts.length;j++){
+if(atts[j].localName="kind"){
+k= " (" + atts[j].value +")";
+} else {
+err += " (Unexpected attribute: " + atts[j].localName +")";
+}
+}
+vOut(err, "<b>FMP" + k +":</b>");
+if(err=="") {
+var u= "<div class='indent'>";
+var els=vChildren(e);
+if(els.length==0) {
+u+="<p class='err'>Missing element: OMOBJ</p>";
+} else if (els.length==1) {
+u+=vsOMOBJ(els[0]);
+} else {
+u+=vsErr(els[1]);
+}
+u+="</div>";
+cdout.innerHTML = cdout.innerHTML + u;
+}
+}
+
+
+function vCDDefinition (e) {
+var err="";
+err += vNoAttributes(e);
+vOut(err,"<b>CDDefinition:</b>");
+if(err==""){
+var Namec=0;
+var Rolec=0;
+var Descriptionc=0;
+var els=vChildren(e);
+for(var j=0;j<els.length;j++){
+var c=els[j];
+switch(c.localName) {
+case "Name":
+vTextOne(c,++Namec,omNameRE);
+break;
+case "Role":
+vTextOne(c,++Rolec,/^\s*(binder|attribution|semantic-attribution|error|application|constant)\s*$/);
+break;
+case "CDComment":
+vCDComment(c);
+break;
+case "Description":
+vTextOne(c,++Descriptionc,/./);
+break;
+case "Example":
+vExample(c);
+break;
+case "FMP":
+vFMP(c);
+break;
+case "CMP":
+vTextOne(c,1,/./);
+break;
+default:
+vErr(c);
+}
+}
+}
+}
+
+  </script>
+ </head>
+ <body>
+  <h1>OpenMath Content Dictionary Test Page</h1>
+  <p>Edit the CD below or drag a new CD on to the grey bar above the edit box. Use the <b>check</b> button to
+  check the CD. Currently only CD files are accepted, but OpenMath, STS and CD Group files may be added later.</p>
+  <p>Currently OpenMath Objects are not validated and just rendered as OMOBJ, the prefix form used in the main CD rendering will be used once OM validation is added.</p>
+  
+  <p><input type="button" onclick="checkcd()" value="Check"></input></p>
+  <div
+      style="width:47%;display:inline-block;border: solid thin black;
+	     padding:0.5em;
+   vertical-align:top">
+   <h2>Input</h2>
+
+   <div id="filedrop" style="background-color:#DDD; white-space: pre; margin-bottom:.5em; padding:1em;border: 1px solid black;"
+      event.stopPropagation(); event.preventDefault();"
+     ondragover="event.stopPropagation(); event.preventDefault();"
+     ondrop="event.stopPropagation(); event.preventDefault();
+     dodrop(event);">Drop a file here from finder or explorer or edit the text below.</div>
+
+
+   <div id="cdin" contenteditable=true
+    style="overflow:auto;white-space:pre;">
+&lt;CD xmlns="http://www.openmath.org/OpenMathCD">
+&lt;CDName> arith1 &lt;/CDName>
+&lt;CDName> arith11 &lt;/CDName>
+&lt;CDName> 7 + arith &lt;/CDName>
+&lt;CDDate> Jan 1, 2000 &lt;/CDDate>
+&lt;CDReviewDate> 2017-12-25&lt;/CDReviewDate>
+&lt;CDStatus a="b"> experimental&lt;/CDStatus>
+&lt;CDComment> Some &lt;b>bold text&lt;/b>&lt;/CDComment>
+&lt;CDBase>http://www.openmath.org/cd&lt;/CDBase>
+&lt;CDURL> htt p://www.openmath.org/cd/arith1.ocd &lt;/CDURL>
+&lt;CDVersion>99&lt;/CDVersion>
+&lt;CDRevision> 2b &lt;/CDRevision>
+&lt;wibble>hmm&lt;/wibble>
+&lt;CDUses>
+  &lt;CDName>set1&lt;/CDName>
+  &lt;CDName>sat1&lt;/CDName>
+  &lt;DCName>set2&lt;/DCName>
+&lt;/CDUses>
+&lt;CDDefinition>
+&lt;Name> lcm &lt;/Name>
+&lt;Role>application&lt;/Role>
+&lt;Example>text &lt;OMOBJ> &lt;OMV name="a"/>&lt;/OMOBJ> more text&lt;/Example>
+&lt;Example>text &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"> &lt;OMV name="a"/>&lt;/OMOBJ> more text&lt;/Example>
+&lt;Description> 
+The symbol to represent the n-ary function to return the least common
+multiple of its arguments.
+&lt;/Description>
+
+&lt;CMP> lcm(a,b) = a*b/gcd(a,b) &lt;/CMP>
+
+&lt;FMP>
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+  &lt;OMA>
+    &lt;OMS cd="relation1" name="eq"/>
+    &lt;OMA>
+      &lt;OMS cd="arith1" name="lcm"/>
+      &lt;OMV name="a"/>
+      &lt;OMV name="b"/>
+    &lt;/OMA>
+    &lt;OMA>
+      &lt;OMS cd="arith1" name="divide"/>
+      &lt;OMA>
+        &lt;OMS cd="arith1" name="times"/>
+	&lt;OMV name="a"/>
+	&lt;OMV name="b"/>
+      &lt;/OMA>
+      &lt;OMA>
+        &lt;OMS cd="arith1" name="gcd"/>
+        &lt;OMV name="a"/>
+        &lt;OMV name="b"/>
+      &lt;/OMA>
+    &lt;/OMA>
+  &lt;/OMA>
+&lt;/OMOBJ>
+&lt;/FMP>
+&lt;/CDDefinition>
+&lt;/CD>
+</div>
+</div>
+<div
+    style="width:47%;display:inline-block;border: solid black thin; background-color:#EEE;
+	   	     padding:0.5em;
+	   overflow:auto;vertical-align:top">
+ <h2>Output</h2>
+ <div id="cdout">
+ </div>
+</div>
+ </body>
+</html>
