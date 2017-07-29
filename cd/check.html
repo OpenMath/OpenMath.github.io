@@ -32,6 +32,7 @@ function dodrop(event) {
 // namespaces
 var cdns="http://www.openmath.org/OpenMathCD";
 var cdsns="http://www.openmath.org/OpenMathCDS";
+var cdgns="http://www.openmath.org/OpenMathCDG";
 var omns="http://www.openmath.org/OpenMath";
 
 // regular expressions
@@ -64,7 +65,7 @@ function checkcd () {
 // some of the duplication here will be removed later, gradually moving to vs versions
 
 function vroot (o) {
-    var els=o.childNodes
+    var els=vChildren(o)
     if (els.length==1) {
 	if (els[0].namespaceURI==cdns) {
 	    if (els[0].localName=="CD") {
@@ -78,12 +79,93 @@ function vroot (o) {
 	    } else {
 		cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be CDSignatures</p>";
 	    }
+	} else if (els[0].namespaceURI==cdgns) {
+	    if (els[0].localName=="CDGroup") {
+		vCDGroup(els[0]);
+	    } else {
+		cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be CDGroup</p>";
+	    }
 	} else {
 	    cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root namespace:<br>" + els[0].namespaceURI + "<br>!=<br>" + cdns +" </p>";
 	}
     } else {
 	cdout.innerHTML = cdout.innerHTML + "<p class='err'`c>multiple root elements</p>";
     }
+}
+
+function vCDGroup(e) {
+    err="";
+    u="";
+    err += vNoAttributes(e);
+    vOut(err,"<b>OpenMath Content Dictionary Group File</b>");
+    cdout.innerHTML = cdout.innerHTML + u;
+    var els=vChildren(e);
+    var CDGNamec=0;
+    var CDGURLc=0;
+    var CDGVersionc=0;
+    var CDGRevisionc=0;
+    for(var j=0;j<els.length;j++){
+	var c=els[j];
+	switch(c.localName) {
+	case "CDGroupName":
+	    vTextOne(c,++CDGNamec,omNameRE);
+	    break;
+	case "CDGroupDescription":
+	    vDescription(c);
+	    break;
+	case "CDGroupVersion":
+	    vTextOne(c,++CDGVersionc,/^\s*[0-9]+\s*$/);
+	    break;
+	case "CDGroupRevision":
+	    vTextOne(c,++CDGRevisionc,/^\s*[0-9]+\s*$/);
+	    break;
+	case "CDGroupURL":
+	    vTextOne(c,++CDGURLc,omURLRE);
+	    break;
+	case "CDComment":
+	    vCDComment(c);
+	    break;
+	case "CDSStatus":
+	    vTextOne(c,++CDSStatusc,/^\s*(official|experimental|private|obsolete)\s*$/);
+	    break;
+	case "CDGroupMember":
+	    vCDGroupMember(c);
+	    break;
+	default:
+	    vErr(c);
+	}
+    }
+}
+
+
+function vCDGroupMember (e) {
+    cdout.innerHTML = cdout.innerHTML + "<p><b>CDGroupMember:</b></p>";
+    var u= "<div class='indent'>";
+    var els=vChildren(e);
+    var j=0;
+    if (els.length>j && els[j].localName=='CDComment') {
+	u+=vsCDComment(els[j]);
+	j++;
+    }
+    if (els.length>j && els[j].localName=='CDName') {
+	u+=vsTextOne(els[j],1,omNameRE);
+	j++;
+    } else {
+	vsErr(els[j]);
+    }
+    if (els.length>j && els[j].localName=='CDVersion') {
+	u+=vsTextOne(els[j],1,/^\s*[0-9]+\s*$/);
+	j++;
+    }
+    if (els.length>j && els[j].localName=='CDURL') {
+	u+=vsTextOne(els[j],1,omURLRE);
+	j++;
+    }
+    if (els.length>j) {
+	u+=vsErr(els[j]);
+    }
+    u+="</div>";
+    cdout.innerHTML = cdout.innerHTML + u;
 }
 
 function vCDSignatures(e) {
@@ -112,12 +194,14 @@ function vCDSignatures(e) {
 	case "CDSStatus":
 	    vTextOne(c,++CDSStatusc,/^\s*(official|experimental|private|obsolete)\s*$/);
 	    break;
-	case "CDReviewDate":
+	case "CDSReviewDate":
 	    vTextOne(c,++CDSRDatec,omDateRE);
 	    break;
 	case "Signature":
 	    vSignature(c);
 	    break;
+	default:
+	    vErr(c);
 	}
     }
 }
@@ -204,8 +288,12 @@ function vTextOnly(e) {
 }
 
 function vNoAttributes(e) {
-    var atts =  e.attributes;
-    return (atts.length==0 ? "" : " (Unexpected attribute: " + atts[0].localName + ")");
+    var atts = e.attributes;
+    err="";
+    for (var j=0;j++;j<atts.length){
+	if(atts[j].localName!='xmlns') err += " (Unexpected attribute: " + atts[j].localName + ")";
+    }
+    return err;
 }
 
 function vOut(err,t){
@@ -224,9 +312,17 @@ function vCDComment (e) {
     var err="";
     err += vTextOnly(e);
     vOut(err,"<b>CDComment:</b>");
-    if(err==""){
+    if(err=="") {
 	cdout.innerHTML = cdout.innerHTML +"<pre>" +e.textContent +"</pre>";
     }
+}
+
+function vsCDComment (e) {
+    var err="";
+    err += vTextOnly(e);
+    var u = vsOut(err,"<b>CDComment:</b>");
+    if(err=="") u+= "<pre>" +e.textContent +"</pre>";
+    return u;
 }
 
 function vCDSComment (e) {
@@ -408,7 +504,7 @@ function vCDDefinition (e) {
   <h1>OpenMath Content Dictionary Test Page</h1>
     <p>Edit the CD below or drag a new CD on to the grey bar above the edit box.</p>
     <p>Use the <b>check</b> button to
-  check the CD. Currently CD and STS files are accepted, but OpenMath, and CD Group files may be added later.</p>
+check the CD. Currently CD, CDGroup and STS files are accepted, but OpenMath files may be added later.</p>
   <p>Currently OpenMath Objects are not validated and just rendered as OMOBJ, the prefix form used in the main CD rendering will be used once OM validation is added.</p>
   
   <p><input type="button" onclick="checkcd()" value="Check"></input></p>
