@@ -792,17 +792,458 @@ function vsOMR(e) {
     }
 }
 
+function sampleom() {
+document.getElementById("cdin").textContent='\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">\n\
+  <OMA>\n\
+    <OMS cd="relation1" name="="/>\n\
+    <OMA>\n\
+      <OMA>\n\
+        <OMS cd="calculus1" name="diff"/>\n\
+        <OMBIND>\n\
+          <OMS cd="fns1" name="lambda"/>\n\
+          <OMBVAR>\n\
+            <OMV name="y"/>\n\
+          </OMBVAR>\n\
+          <OMA>\n\
+            <OMS cd="arith1" name="plus"/>\n\
+            <OMA>\n\
+              <OMV name="a"/>\n\
+              <OMV name="y"/>\n\
+            </OMA>\n\
+            <OMA>\n\
+              <OMV name="b"/>\n\
+              <OMV name="y"/>\n\
+            </OMA>\n\
+          </OMA>\n\
+        </OMBIND>\n\
+      </OMA>\n\
+      <OMV name="x"/>\n\
+    </OMA>\n\
+    <OMA>\n\
+      <OMS cd="arith1" name="plus"/>\n\
+      <OMA>\n\
+        <OMA>\n\
+          <OMS cd="calculus1" name="diff"/>\n\
+          <OMBIND>\n\
+            <OMS cd="fns1" name="lambda"/>\n\
+            <OMBVAR>\n\
+              <OMV name="y"/>\n\
+            </OMBVAR>\n\
+            <OMA>\n\
+              <OMV name="a"/>\n\
+              <OMV name="y"/>\n\
+            </OMA>\n\
+          </OMBIND>\n\
+        </OMA>\n\
+        <OMV name="x"/>\n\
+      </OMA>\n\
+      <OMA>\n\
+        <OMA>\n\
+          <OMS cd="calculus1" name="diff"/>\n\
+          <OMBIND>\n\
+            <OMS cd="fns1" name="lambda"/>\n\
+            <OMBVAR>\n\
+              <OMV name="y"/>\n\
+            </OMBVAR>\n\
+            <OMA>\n\
+              <OMV name="b"/>\n\
+              <OMV name="y"/>\n\
+            </OMA>\n\
+          </OMBIND>\n\
+        </OMA>\n\
+        <OMV name="x"/>\n\
+      </OMA>\n\
+    </OMA>\n\
+  </OMA>\n\
+</OMOBJ>\n\
+';
+}
+
+function samplecdg() {
+document.getElementById("cdin").textContent='\n\
+<CDGroup  xmlns="http://www.openmath.org/OpenMathCDG">\n\
+<CDGroupName>mathml-x</CDGroupName>\n\
+<CDGroupVersion> 2 </CDGroupVersion>\n\
+<CDGroupRevision> 0 </CDGroupRevision>\n\
+<CDGroupURL>\n\
+http://www.openmath.org/cdfiles/cdgroups/mathml.ocd</CDGroupURL>\n\
+<CDGroupDescription> MathML compatibility CD Group </CDGroupDescription>\n\
+<CDComment>This is an abbreviated  MathML CD group.\n\
+</CDComment>\n\
+<CDComment>Algebra</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>alg1</CDName>\n\
+<CDURL>www.openmath.org/cd/alg1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Arithmetic</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>arith1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/arith1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Constructor for Floating Point Numbers</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>bigfloat1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/bigfloat1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Calculus</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>calculus1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/calculus1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Integer arithmetic</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>integer 1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/integer1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Intervals</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>interval1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/interval1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Linear Algebra - vector &amp; matrix constructors, those symbols which are independant of orientation, but in MathML</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>linalg1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/linalg1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Linear Algebra - vector &amp; matrix constructors, those symbols which are dependant of orientation, and in MathML</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>linalg2</CDName>\n\
+<CDURL>http://www.openmath.org/cd/linalg2.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Limits of <i>unary</i> functions</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>limit1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/limit1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>List constructors</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>mathmltypes</CDName>\n\
+<CDURL>http://www.openmath.org/cd/mathmltypes.ocd</CDURL>\n\
+</CDGroupMember>\n\
+<CDComment>Minima and maxima</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>minmax1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/minmax1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Multset-theoretic operators and constructors</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>multiset1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/multiset1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Symbols for creating numbers, including some defined constants\n\
+(which can be seen as nullary constructors)</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>nums1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/nums1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Symbols for creating piecewise definitions</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>piece1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/piece1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>The basic quantifiers forall and exists.</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>quant1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/quant1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Common arithmetic relations</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>relation1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/relation1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Number sets</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>setname1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/setname1.ocd</CDURL></CDGroupMember>\n\
+<CDComment>Rounding</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>rounding1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/rounding1.ocd</CDURL></CDGroupMember>\n\
+</CDGroup>\n\
+';
+}
+
+function samplests() {
+document.getElementById("cdin").textContent='\n\
+<CDSignatures xmlns="http://www.openmath.org/OpenMathCDS" type="sts" cd="set1">\n\
+<CDSStatus> fake </CDSStatus>\n\
+\n\
+<CDSComment>\n\
+Based on Set1 STS file\n\
+</CDSComment>\n\
+\n\
+<Signature name="cartesian product">\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+  <OMA>\n\
+    <OMS cd="sts" name="mapsto"/>\n\
+    <OMA>\n\
+      <OMS cd="sts" name="nary"/>\n\
+      <OMA>\n\
+        <OMS cd="sts" name="structure"/>\n\
+	<OMV name="Set"/>\n\
+      </OMA>\n\
+    </OMA>\n\
+    <OMA>\n\
+      <OMS cd="sts" name="structure"/>\n\
+      <OMV name="Set1"/>\n\
+    </OMA>\n\
+  </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="map">\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+  <OMS cd="sts" name="mapsto"/>\n\
+    <OMA>\n\
+      <OMS cd="sts" name="mapsto"/>\n\
+      <OMS cd="sts" name="Object"/>\n\
+      <OMS cd="sts" name="Object"/>\n\
+    </OMA>\n\
+    <OMV name="Set"/>\n\
+    <OMV name="Set"/>\n\
+ </OMA>\n\
+</OMOBJ>\n\
+<CDComment>???</CDComment>\n\
+</Signature>\n\
+\n\
+<Signature name="suchthat">\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+  <OMS cd="sts" name="mapsto"/>\n\
+    <OMA>\n\
+      <OMS name="structure" cd="sts"/>\n\
+      <OMV name="Set"/>\n\
+    </OMA>\n\
+    <OMA>\n\
+      <OMS name="mapsto" cd="sts"/>\n\
+      <OMV name="Set"/>\n\
+      <OMS name="Boolean" cd="setname2"/>\n\
+    </OMA>\n\
+    <OMA>\n\
+      <OMS name="structure" cd="sts"/>\n\
+      <OMV name="Set"/>\n\
+    </OMA>\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="emptyset" >\n\
+ <OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+   <OMV name="Set"/>\n\
+ </OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="size" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMV name="Set" />\n\
+    <OMV name="CardinalNumber" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="set" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+  <OMS name="mapsto" cd="sts" />\n\
+   <OMA>\n\
+    <OMS name="nary" cd="sts" />\n\
+     <OMS name="Object" cd="sts" />\n\
+   </OMA>\n\
+  <OMV name="Set" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="intersect" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMA>\n\
+     <OMS name="nassoc" cd="sts" />\n\
+     <OMV name="Set" />\n\
+    </OMA>\n\
+    <OMV name="Set" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="union" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMA>\n\
+     <OMS name="nassoc" cd="sts" />\n\
+     <OMV name="Set" />\n\
+    </OMA>\n\
+    <OMV name="Set" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="setdiff" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMV name="Set" />\n\
+    <OMV name="Set" />\n\
+    <OMV name="Set" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+\n\
+<Signature name="subset" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMV name="Set" />\n\
+    <OMV name="Set" />\n\
+    <OMS cd="setname2" name="Boolean" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+\n\
+<Signature name="in" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMS name="Object" cd="sts" />\n\
+    <OMV name="Set" />\n\
+    <OMS cd="setname2" name="Boolean" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="notin" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMS name="Object" cd="sts" />\n\
+    <OMV name="Set" />\n\
+    <OMS cd="setname2" name="Boolean" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+\n\
+<Signature name="prsubset" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMV name="Set" />\n\
+    <OMV name="Set" />\n\
+    <OMS cd="setname2" name="Boolean" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="notsubset" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMV name="Set" />\n\
+    <OMV name="Set" />\n\
+    <OMS cd="setname2" name="Boolean" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+<Signature name="notprsubset" >\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
+ <OMA>\n\
+   <OMS name="mapsto" cd="sts" />\n\
+    <OMV name="Set" />\n\
+    <OMV name="Set" />\n\
+    <OMS cd="setname2" name="Boolean" />\n\
+ </OMA>\n\
+</OMOBJ>\n\
+</Signature>\n\
+\n\
+</CDSignatures>\n\
+';
+}
+
+
+function samplecd() {
+document.getElementById("cdin").textContent='\n\
+<CD xmlns="http://www.openmath.org/OpenMathCD">\n\
+<CDName> arith1 </CDName>\n\
+<CDName> arith11 </CDName>\n\
+<CDName> 7 + arith </CDName>\n\
+<CDDate> Jan 1, 2000 </CDDate>\n\
+<CDReviewDate> 2017-12-25</CDReviewDate>\n\
+<CDStatus a="b"> experimental</CDStatus>\n\
+<CDComment> Some <b>bold text</b></CDComment>\n\
+<CDBase>http://www.openmath.org/cd</CDBase>\n\
+<CDURL> htt p://www.openmath.org/cd/arith1.ocd </CDURL>\n\
+<CDVersion>99</CDVersion>\n\
+<CDRevision> 2b </CDRevision>\n\
+<wibble>hmm</wibble>\n\
+<CDUses>\n\
+  <CDName>set1</CDName>\n\
+  <CDName>sat1</CDName>\n\
+  <DCName>set2</DCName>\n\
+</CDUses>\n\
+<CDDefinition>\n\
+<Name> lcm </Name>\n\
+<Role>application</Role>\n\
+<Example>text <OMOBJ> <OMV name="a"/></OMOBJ> more text</Example>\n\
+<Example>text <OMOBJ xmlns="http://www.openmath.org/OpenMath"> <OMV name="a"/></OMOBJ> more text</Example>\n\
+<Description> \n\
+The symbol to represent the n-ary function to return the least common\n\
+multiple of its arguments.\n\
+</Description>\n\
+\n\
+<CMP> lcm(a,b) = a*b/gcd(a,b) </CMP>\n\
+\n\
+<FMP>\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">\n\
+  <OMA>\n\
+    <OMS cd="relation1" name="eq"/>\n\
+    <OMA>\n\
+      <OMS cd="arith1" name="lcm"/>\n\
+      <OMV name="a"/>\n\
+      <OMV name="b"/>\n\
+    </OMA>\n\
+    <OMA>\n\
+      <OMS cd="arith1" name="divide"/>\n\
+      <OMA>\n\
+        <OMS cd="arith1" name="times"/>\n\
+	<OMV name="a"/>\n\
+	<OMV name="b"/>\n\
+      </OMA>\n\
+      <OMA>\n\
+        <OMS cd="arith1" name="gcd"/>\n\
+        <OMV name="a"/>\n\
+        <OMV name="b"/>\n\
+      </OMA>\n\
+    </OMA>\n\
+  </OMA>\n\
+</OMOBJ>\n\
+</FMP>\n\
+</CDDefinition>\n\
+</CD>\n\
+';
+}
+
 </script>
  </head>
- <body>
+    <body>
+
+
+<div>
+ <div style="width:5em;float:left;margin-right:1em;">
+    <a href="/">
+    <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+    </a>                
+    </div>
+
   <h1>OpenMath XML Syntax Test Page</h1>
     <p>Edit the CD below or drag a new CD (or other OpenMath file)
-    on to the grey bar above the edit box.</p>
-    <p>Use the <b>check</b> button to
-check the CD. Currently OpenMath, CD, CDGroup and STS files are accepted.</p>
+on to the grey bar above the edit box.</p>
+    <p>Other (invalid) examples may be inserted using the buttons below.</p>
+   
+    <p>
+  <input type="button" onclick="samplecd()" value="sample CD"></input>
+  <input type="button" onclick="samplecdg()" value="sample CDG"></input>
+  <input type="button" onclick="sampleom()" value="sample OM"></input>
+  <input type="button" onclick="samplests()" value="sample STS"></input>
+    </p>
 
-  
-  <p><input type="button" onclick="checkcd()" value="Check"></input></p>
+    <p>Use the <b>check</b> button to check the XML.</p>
+    <p>OpenMath, CD, CDGroup and STS files are accepted.</p>
+
+   <p><input style="font-size:110%; padding:.5em;" type="button" onclick="checkcd()" value="Check"></input></p>
   <div
       style="width:47%;display:inline-block;border: solid thin black;
 	     padding:0.5em;
@@ -818,63 +1259,6 @@ check the CD. Currently OpenMath, CD, CDGroup and STS files are accepted.</p>
 
    <div id="cdin" contenteditable=true
     style="overflow:auto;white-space:pre;">
-&lt;CD xmlns="http://www.openmath.org/OpenMathCD">
-&lt;CDName> arith1 &lt;/CDName>
-&lt;CDName> arith11 &lt;/CDName>
-&lt;CDName> 7 + arith &lt;/CDName>
-&lt;CDDate> Jan 1, 2000 &lt;/CDDate>
-&lt;CDReviewDate> 2017-12-25&lt;/CDReviewDate>
-&lt;CDStatus a="b"> experimental&lt;/CDStatus>
-&lt;CDComment> Some &lt;b>bold text&lt;/b>&lt;/CDComment>
-&lt;CDBase>http://www.openmath.org/cd&lt;/CDBase>
-&lt;CDURL> htt p://www.openmath.org/cd/arith1.ocd &lt;/CDURL>
-&lt;CDVersion>99&lt;/CDVersion>
-&lt;CDRevision> 2b &lt;/CDRevision>
-&lt;wibble>hmm&lt;/wibble>
-&lt;CDUses>
-  &lt;CDName>set1&lt;/CDName>
-  &lt;CDName>sat1&lt;/CDName>
-  &lt;DCName>set2&lt;/DCName>
-&lt;/CDUses>
-&lt;CDDefinition>
-&lt;Name> lcm &lt;/Name>
-&lt;Role>application&lt;/Role>
-&lt;Example>text &lt;OMOBJ> &lt;OMV name="a"/>&lt;/OMOBJ> more text&lt;/Example>
-&lt;Example>text &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"> &lt;OMV name="a"/>&lt;/OMOBJ> more text&lt;/Example>
-&lt;Description> 
-The symbol to represent the n-ary function to return the least common
-multiple of its arguments.
-&lt;/Description>
-
-&lt;CMP> lcm(a,b) = a*b/gcd(a,b) &lt;/CMP>
-
-&lt;FMP>
-&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
-  &lt;OMA>
-    &lt;OMS cd="relation1" name="eq"/>
-    &lt;OMA>
-      &lt;OMS cd="arith1" name="lcm"/>
-      &lt;OMV name="a"/>
-      &lt;OMV name="b"/>
-    &lt;/OMA>
-    &lt;OMA>
-      &lt;OMS cd="arith1" name="divide"/>
-      &lt;OMA>
-        &lt;OMS cd="arith1" name="times"/>
-	&lt;OMV name="a"/>
-	&lt;OMV name="b"/>
-      &lt;/OMA>
-      &lt;OMA>
-        &lt;OMS cd="arith1" name="gcd"/>
-        &lt;OMV name="a"/>
-        &lt;OMV name="b"/>
-      &lt;/OMA>
-    &lt;/OMA>
-  &lt;/OMA>
-&lt;/OMOBJ>
-&lt;/FMP>
-&lt;/CDDefinition>
-&lt;/CD>
 </div>
 </div>
 <div
@@ -885,5 +1269,8 @@ multiple of its arguments.
  <div id="cdout">
  </div>
 </div>
+<script>
+samplecd();
+</script>
  </body>
 </html>
