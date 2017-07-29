@@ -85,6 +85,12 @@ function vroot (o) {
 	    } else {
 		cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be CDGroup</p>";
 	    }
+	} else if (els[0].namespaceURI == omns) {
+	    if (els[0].localName=="OMOBJ") {
+		vOMOBJ(els[0]);
+	    } else {
+		cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be OMOBJ</p>";
+	    }
 	} else {
 	    cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root namespace:<br>" + els[0].namespaceURI + "<br>!=<br>" + cdns +" </p>";
 	}
@@ -300,8 +306,13 @@ function vOut(err,t){
     cdout.innerHTML = cdout.innerHTML +
 	"<p" + (err=="" ? "": " class='err'") +">" + t + err + "</p>";
 }
+
 function vsOut(err,t){
     return ("<p" + (err=="" ? "": " class='err'") +">" + t + err + "</p>");
+}
+
+function vsSpanOut(err,t){
+    return ("<span" + (err=="" ? "": " class='err'") +">" + t + err + "</span>");
 }
 
 function vTestRE(e,r) {
@@ -373,13 +384,6 @@ function vCDuses (e) {
 }
 
 
-function vsOMOBJ(e) {
-    if (e.localName=='OMOBJ' && e.namespaceURI==omns) {
-	return "OMOBJ";
-    } else {
-	return ("<p class='err'>Unexpected element {" + e.namespaceURI + "}" + e.localName + "</p>");
-    }
-}
 
 
 
@@ -498,14 +502,305 @@ function vCDDefinition (e) {
     }
 }
 
+function vOMOBJ(e) {
+    var err="";
+    vOut(err,"<b>OpenMath Object</b></p>");
+    var els=vChildren(e);
+    if (els.length = 1) {
+	cdout.innerHTML = cdout.innerHTML + "<div>"+ vsOMel(els[0])+ "</div>";
+    } else if (els.length=0) {
+	vOut("(Empty OMOBJ)","");
+    } else {
+	vOut(" (Unexpected element)", els[1].localName);
+    }
+}
+
+function vsOMel (c) {
+    var u="";
+    switch(c.localName) {
+    case "OMS":
+	u=vsOMS(c);
+	break;
+    case "OMV":
+	u=vsOMV(c);
+	break;
+    case "OMI":
+	u=vsOMI(c);
+	break;
+    case "OMB":
+	u=vsOMB(c);
+	break;
+    case "OMSTR":
+	u=vsOMSTR(c);
+	break;
+    case "OMF":
+	u=vsOMF(c);
+	break;
+    case "OMA":
+	u=vsOMA(c);
+	break;
+    case "OMBIND":
+	u=vsOMBIND(c);
+	break;
+    case "OME":
+	u=vsOME(c);
+	break;
+    case "OMATTR":
+	u=vsOMATTR(c);
+	break;
+    case "OMR":
+	u=vsOMR(c);
+	break;
+    default:
+	u=vsErr(c);
+    }
+    return u;
+}
+
+function vsOMA(e) {
+    var u="";
+    var els=vChildren(e);
+    for(var j=0;j<els.length;j++){
+	var c = els[j];
+	u+=vsOMel(c);
+	if(j==0){
+	    u+= "(";
+	} else if (j<els.length -1) {
+	    u+=", ";
+	}
+    }
+    u+=")";
+    return u;
+}
+
+function vsOMSTR(e) {
+    return '<tt>"' + vsTextOne(e,1,/./)+ '"</tt>';
+}
+
+function vsOMI(e) {
+    return vsTextOne(e,1,/^[0-9 \t\r\n]*$/);
+}
+
+function vsOMB(e) {
+    return vsTextOne(e,1,/./);
+}
+function vsOMV(e) {
+    var err="";
+    var v="";
+    var atts=e.attributes;
+    if(atts.length!=1 || atts[0].localName != "name") {
+	err ="(invalid OMV attributes)";
+    } else {
+	v=atts[0].value;
+	err+=(v.match(omNameRE)?"":" (invalid name)");
+    }
+    return "<i>" + vsSpanOut(err,v) + "</i>";
+}
+
+function vsOMF(e) {
+    var err="";
+    var d="";
+    var h="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	case "dec":
+	    if(h=="") {
+		d=atts[j].value;
+		err+=(n.match(/^[0-9.\-]+$/)?"":" (invalid number)");
+	    } else {
+		err+="(unexpected dec attribute)";
+	    }
+	    break;
+	case "hex":
+	    if(h=="") {
+		h=atts[j].value;
+		err+=(n.match(/^[0-9A-F]+$/)?"":" (invalid number)");
+	    } else {
+		err+="(unexpected hex attribute)";
+	    }
+	    break;
+	default:
+	    err="(unexpected attribute" + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 0) {
+	err += " (unexpected content in OMF)";
+    }
+    return vsSpanOut(err,h+d);
+}
+
+
+function vsOMS(e) {
+    var err="";
+    var n="";
+    var cd="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "cdbase":
+	    break;
+	case "name":
+	    n=atts[j].value;
+	    err+=(n.match(omNameRE)?"":" (invalid name)");
+	    break;
+	case "cd":
+	    cd=atts[j].value;
+	    err+=(cd.match(omNameRE)?"":" (invalid name)");
+	    break;
+	default:
+	    err="(unexpected attribute" + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 0) {
+	err += " (unexpected content in OMS)";
+    }
+    if(err=="") {
+	return ("<a href='../cd/" + cd +"'>" + n + "</a>");
+    } else {
+	return vsSpanOut(err,n);
+    }
+}
+
+function vsOMBIND(e) {
+    var err="";
+    var u="";
+    var cd="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "cdbase":
+	    break;
+	default:
+	    err="(unexpected attribute" + atts[j].localName +")";
+	}
+    }
+    var els=vChildren(e);
+    if(els.length==3) {
+	u +="(";
+	u+=vsOMel(els[0]);
+	u+="[";
+	u+=vsOMBVAR(els[1]);
+	u+="] . ";
+	u+=vsOMel(els[2]);
+	u+=")";
+    } else {
+	err += "(OMBIND should have 3 children)";
+    }
+    return vsSpanOut(err,u);
+}
+
+
+function vsOME(e) {
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err="(unexpected attribute" + atts[j].localName +")";
+	}
+    }
+    var els=vChildren(e);
+    var u = "<span class='ome'>Error( ";
+    if (els.length != 0||els[0].localName=="OMS") {
+	err += "(Missing OMS)";
+    } else {
+        u+=vsOMS(els[0]);
+    }
+    for(var j = 1; j<els.length;j++) {
+	u+= (j==1? ": " : ", ");
+	u+=vsOMel(els[j]);
+    }
+    u +=")</span>";
+    return vsSpanOut(err,u);
+}
+
+function vsOMOBJ(e) {
+    var err="";
+    var u="";
+    if (e.localName=='OMOBJ' && e.namespaceURI==omns) {
+	var els=vChildren(e);
+	if (els.length = 1) {
+	    u+=vsOMel(els[0]);
+	} else if (els.length=0) {
+	    err="(empty OMOBJ)";
+	} else {
+	    err="(Unexpected children in OMOBJ)";
+	}
+    } else {
+	err="(Unexpected element {" + e.namespaceURI + "}" + e.localName + ")";
+    }
+    return vsSpanOut(err,u);
+}
+
+function vsOMATTR(e) {
+    return "OMATTR";
+}
+
+
+function vsOMBVAR(e) {
+    var err="";
+    var u = "";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err="(unexpected attribute" + atts[j].localName +")";
+	}
+    }
+    var els=vChildren(e);
+    for(var j = 0; j<els.length;j++) {
+	u+= (j>0? ", " : "");
+	if(els[j].localName!="OMV" && els[j].localName!="OMV") err+="(Unexpected element)";
+	u+=vsOMel(els[j]);
+    }
+    return vsSpanOut(err,u);
+}
+
+
+function vsOMR(e) {
+    var err="";
+    var h="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	case "href":
+	    h=atts[j].value;
+	    err+=(cd.match(omURLRE)?"":" (URL)");
+	    break;
+	default:
+	    err="(unexpected attribute" + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 0) {
+	err += " (unexpected content in OMR)";
+    }
+    if(err=="") {
+	return ("<a href='" + h +"'>ref</a>");
+    } else {
+	return vsSpanOut(err,n);
+    }
+}
+
 </script>
  </head>
  <body>
-  <h1>OpenMath Content Dictionary Test Page</h1>
-    <p>Edit the CD below or drag a new CD on to the grey bar above the edit box.</p>
+  <h1>OpenMath XML Syntax Test Page</h1>
+    <p>Edit the CD below or drag a new CD (or other OpenMath file)
+    on to the grey bar above the edit box.</p>
     <p>Use the <b>check</b> button to
-check the CD. Currently CD, CDGroup and STS files are accepted, but OpenMath files may be added later.</p>
-  <p>Currently OpenMath Objects are not validated and just rendered as OMOBJ, the prefix form used in the main CD rendering will be used once OM validation is added.</p>
+check the CD. Currently OpenMath, CD, CDGroup and STS files are accepted.</p>
+
   
   <p><input type="button" onclick="checkcd()" value="Check"></input></p>
   <div
