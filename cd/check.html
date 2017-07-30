@@ -704,7 +704,10 @@ function vsOMB(e) {
     if (e.childNodes.length != 1) {
 	err += " (Unexpected content in OMB)";
     }
-    return vsSpanOut(err, e.textContent);
+    if(! e.textContent.match(/^[ \t\r\na-zA-Z0-9\+/]*=*\s*$/)) {
+	err += " (Invalid base64)";
+    }
+    return vsSpanOut(err, "<i>OMB</i>");
 }
 
 function vsOMV(e) {
