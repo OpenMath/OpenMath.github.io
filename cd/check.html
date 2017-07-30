@@ -649,7 +649,7 @@ function vsOMF(e) {
 	case "dec":
 	    if(h=="") {
 		d=atts[j].value;
-		err+=(n.match(/^[0-9.\-]+$/)?"":" (Invalid number)");
+		err+=(d.match(/^[0-9.\-]+$/)?"":" (Invalid number)");
 	    } else {
 		err+="(unexpected dec attribute)";
 	    }
@@ -657,7 +657,7 @@ function vsOMF(e) {
 	case "hex":
 	    if(h=="") {
 		h=atts[j].value;
-		err+=(n.match(/^[0-9A-F]+$/)?"":" (Invalid number)");
+		err+=(h.match(/^[0-9A-F]+$/)?"":" (Invalid number)");
 	    } else {
 		err+="(unexpected hex attribute)";
 	    }
