@@ -325,6 +325,9 @@ function vErr(c) {
 function vsErr(c) {
     return vsOut("(Unexpected element: " +c.localName + ")","");
 }
+function vsSpanErr(c) {
+    return vsSpanOut("(Unexpected element: " +c.localName + ")","");
+}
 
 function vTextOnly(e) {
     var c=vChildren(e);
@@ -606,7 +609,7 @@ function vsOMel (c) {
 	u=vsOMR(c);
 	break;
     default:
-	u=vsErr(c);
+	u=vsSpanErr(c);
     }
     return u;
 }
@@ -810,6 +813,35 @@ function vsOMBIND(e) {
 }
 
 
+function vsOMFOREIGN(e) {
+    var err="";
+    var u="<i>omforeign</i>(";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	alert(e.localName);
+	switch(atts[j].localName) {
+	case "id":
+	case "cdbase":
+	case "encoding":
+	    break;
+	default:
+	    err+=" (U!nexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    var els=vChildren(e);
+    for(var j=0;j<els.length;j++) {
+	var c=els[j];
+	if(j!=0) u+=", ";
+	if(c.namespaceURI==omns) {
+	    u+=vsOMel(c);
+	} else {
+	    u+="<i>foreign</i>";
+	}
+    }
+    return vsSpanOut(err,u);
+}
+
+
 function vsOME(e) {
     var err="";
     var atts=e.attributes;
@@ -925,7 +957,7 @@ function vsOMATP(e) {
 	    u+=vsOMS(c);
 	    u+=": ";
 	    if(v.localName=='OMFOREIGN') {
-		u+="<i>OMFOREIGN</i>";
+		u+=vsOMFOREIGN(v);
 	    } else {
 		u+=vsOMel(v);
 	    }
@@ -1047,6 +1079,73 @@ document.getElementById("cdin").textContent='\n\
         <OMV name="x"/>\n\
       </OMA>\n\
     </OMA>\n\
+\n\
+ <OMATTR>    \n\
+  <OMATP>\n\
+    <OMS cd="ecc" name="type" /> \n\
+    <OMS cd="ecc" name="real" />\n\
+    <OMS cd="sts" name="type" /> \n\
+    <OMS cd="sts" name="integer" />\n\
+  </OMATP> \n\
+  <OMV name="x" />\n\
+ </OMATTR>\n\
+\n\
+  <OMATTR>    \n\
+  <OMATP>\n\
+   <OMS cd="arith1" name="plus" />\n\
+   <OMFOREIGN><w xmlns=""/><x xmlns=""><y/><z/></x></OMFOREIGN>\n\
+  </OMATP> \n\
+  <OMV name="x" />\n\
+ </OMATTR>\n\
+\n\
+ <OMATTR>    \n\
+  <OMATP>\n\
+   <OMS cd="arith1" name="plus" />\n\
+   <OMFOREIGN><w/><x><y/><z/></x></OMFOREIGN>\n\
+  </OMATP> \n\
+  <OMV name="x" />\n\
+ </OMATTR>\n\
+\n\
+ <OMBIND>\n\
+  <OMS name="forall" cd="quant1"/>\n\
+  <OMBVAR>\n\
+   <OMATTR>\n\
+    <OMATP>\n\
+     <OMS name="plus" cd="arith1"/>\n\
+     <OMS name="plus" cd="arith1"/>\n\
+    </OMATP>\n\
+    <OMV name="x"/>\n\
+   </OMATTR>\n\
+  </OMBVAR>\n\
+  <OMV name="x"/>\n\
+ </OMBIND>\n\
+ \n\
+ <OMATTR>\n\
+  <OMATP>\n\
+   <OMS name="plus" cd="arith1"/>\n\
+   <OMS name="plus" cd="arith1"/>\n\
+  </OMATP>\n\
+  <OMI>1</OMI>\n\
+ </OMATTR>\n\
+ \n\
+ <OMBIND>\n\
+  <OMS name="forall" cd="quant1"/>\n\
+  <OMBVAR>\n\
+   <OMATTR>\n\
+    <OMATP>\n\
+     <OMS name="plus" cd="arith1"/>\n\
+     <OMS name="plus" cd="arith1"/>\n\
+    </OMATP>\n\
+    <OMI>1</OMI>\n\
+   </OMATTR>\n\
+  </OMBVAR>\n\
+  <OMV name="x"/>\n\
+ </OMBIND>\n\
+\n\
+ <OMI>77</OMI>\n\
+\n\
+ <OMI>77.9</OMI>\n\
+ \n\
   </OMA>\n\
 </OMOBJ>\n\
 ';
@@ -1388,83 +1487,6 @@ multiple of its arguments.\n\
 </FMP>\n\
 </CDDefinition>\n\
 </CD>\n\
-';
-}
-
-function samplecdb() {
-document.getElementById("cdin").textContent='\n\
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">\n\
- <OMA><OMS cd="arith1" name="plus"/>\n\
-\n\
- <OMATTR>    \n\
-  <OMATP>\n\
-    <OMS cd="ecc" name="type" /> \n\
-    <OMS cd="ecc" name="real" />\n\
-    <OMS cd="sts" name="type" /> \n\
-    <OMS cd="sts" name="integer" />\n\
-  </OMATP> \n\
-  <OMV name="x" />\n\
- </OMATTR>\n\
-\n\
-  <OMATTR>    \n\
-  <OMATP>\n\
-   <OMS cd="arith1" name="plus" />\n\
-   <OMFOREIGN><w xmlns=""/><x xmlns=""><y/><z/></x></OMFOREIGN>\n\
-  </OMATP> \n\
-  <OMV name="x" />\n\
- </OMATTR>\n\
-\n\
- <OMATTR>    \n\
-  <OMATP>\n\
-   <OMS cd="arith1" name="plus" />\n\
-   <OMFOREIGN><w/><x><y/><z/></x></OMFOREIGN>\n\
-  </OMATP> \n\
-  <OMV name="x" />\n\
- </OMATTR>\n\
-\n\
- <OMBIND>\n\
-  <OMS name="forall" cd="quant1"/>\n\
-  <OMBVAR>\n\
-   <OMATTR>\n\
-    <OMATP>\n\
-     <OMS name="plus" cd="arith1"/>\n\
-     <OMS name="plus" cd="arith1"/>\n\
-    </OMATP>\n\
-    <OMV name="x"/>\n\
-   </OMATTR>\n\
-  </OMBVAR>\n\
-  <OMV name="x"/>\n\
- </OMBIND>\n\
- \n\
- <OMATTR>\n\
-  <OMATP>\n\
-   <OMS name="plus" cd="arith1"/>\n\
-   <OMS name="plus" cd="arith1"/>\n\
-  </OMATP>\n\
-  <OMI>1</OMI>\n\
- </OMATTR>\n\
- \n\
- <OMBIND>\n\
-  <OMS name="forall" cd="quant1"/>\n\
-  <OMBVAR>\n\
-   <OMATTR>\n\
-    <OMATP>\n\
-     <OMS name="plus" cd="arith1"/>\n\
-     <OMS name="plus" cd="arith1"/>\n\
-    </OMATP>\n\
-    <OMI>1</OMI>\n\
-   </OMATTR>\n\
-  </OMBVAR>\n\
-  <OMV name="x"/>\n\
- </OMBIND>\n\
-\n\
- <OMI>77</OMI>\n\
-\n\
- <OMI>77.9</OMI>\n\
- \n\
- </OMA>\n\
-\n\
-</OMOBJ>\n\
 ';
 }
 
