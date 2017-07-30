@@ -4,7 +4,8 @@
   <title>CD check</title>
   <meta charset="UTF-8"/>
   <style>
-   .err {color: red}
+    .err {color: red}
+    span.ome {border: solid thin red}
    .indent{margin-left:2em;}
    .indent p {margin:0em;padding:0em;}
   </style>
@@ -391,7 +392,7 @@ function vTextOne(e,ct,re) {
     var err="";
     err += vTextOnly(e);
     err += vNoAttributes(e);
-    if (ct != 1) err += "(multiple " + e.localName +")";
+    if (ct != 1) err += " (Multiple " + e.localName +")";
     err += vTestRE(e,re);
     vOut(err,"<b>" + e.localName + ":</b> " +e.textContent);
 }
@@ -399,7 +400,7 @@ function vTextOne(e,ct,re) {
 function vsTextOne(e,ct,re) {
     var err="";
     err += vTextOnly(e);
-    if (ct != 1) err += "(multiple " + e.localName +")";
+    if (ct != 1) err += " (Multiple " + e.localName +")";
     err += vTestRE(e,re);
     return vsOut(err,"<b>" + e.localName + ":</b> " +e.textContent);
 }
@@ -638,16 +639,57 @@ function vsOMA(e) {
 }
 
 function vsOMSTR(e) {
-    return '<tt>"' + vsTextOne(e,1,/./)+ '"</tt>';
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 1) {
+	err += " (Unexpected content in OMSTR)";
+    }
+    return vsSpanOut(err, "<tt>\""+e.textContent + "\"</tt>");
 }
 
+
 function vsOMI(e) {
-    return vsTextOne(e,1,/^[0-9 \t\r\n]*$/);
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 1) {
+	err += " (Unexpected content in OMI)";
+    }
+    return vsSpanOut(err, e.textContent);
 }
 
 function vsOMB(e) {
-    return vsTextOne(e,1,/./);
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 1) {
+	err += " (Unexpected content in OMB)";
+    }
+    return vsSpanOut(err, e.textContent);
 }
+
 function vsOMV(e) {
     var err="";
     var v="";
@@ -884,6 +926,8 @@ function vsOMATP(e) {
 	    } else {
 		u+=vsOMel(v);
 	    }
+	} else {
+	    u+="<span class='err'>?? (unexpected attribute)</span>";
 	}
     }
     return vsSpanOut(err,u);
@@ -1343,6 +1387,7 @@ multiple of its arguments.\n\
 </CD>\n\
 ';
 }
+
 
 </script>
  </head>
