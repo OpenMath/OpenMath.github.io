@@ -162,7 +162,9 @@ function vCDGroup(e) {
 
 
 function vCDGroupMember (e) {
-    cdout.innerHTML = cdout.innerHTML + "<p><b>CDGroupMember:</b></p>";
+    var err="";
+    err += vNoAttributes(e);
+    vOut(err,"<b>CDGroupMember:</b>");
     var u= "<div class='indent'>";
     var els=vChildren(e);
     var j=0;
@@ -363,6 +365,7 @@ function vTestRE(e,r) {
 
 function vCDComment (e) {
     var err="";
+    err += vNoAttributes(e);
     err += vTextOnly(e);
     vOut(err,"<b>CDComment:</b>");
     if(err=="") {
@@ -372,6 +375,7 @@ function vCDComment (e) {
 
 function vsCDComment (e) {
     var err="";
+    err += vNoAttributes(e);
     err += vTextOnly(e);
     var u = vsOut(err,"<b>CDComment:</b>");
     if(err=="") u+= "<pre>" +e.textContent +"</pre>";
@@ -380,6 +384,7 @@ function vsCDComment (e) {
 
 function vCDSComment (e) {
     var err="";
+    err += vNoAttributes(e);
     err += vTextOnly(e);
     vOut(err,"<b>CDSComment:</b>");
     if(err==""){
@@ -388,13 +393,16 @@ function vCDSComment (e) {
 }
 
 function vDescription (e) {
-    cdout.innerHTML = cdout.innerHTML + "<p><b>Description:</b><p><div> " +e.innerHTML + "</div>";
+    var err="";
+    err += vNoAttributes(e);
+    vOut(err,"<b>Description:</b>");
+    cdout.innerHTML = cdout.innerHTML +"<div> " +e.innerHTML + "</div>";
 }
 
 function vTextOne(e,ct,re) {
     var err="";
-    err += vTextOnly(e);
     err += vNoAttributes(e);
+    err += vTextOnly(e);
     if (ct != 1) err += " (Multiple " + e.localName +")";
     err += vTestRE(e,re);
     vOut(err,"<b>" + e.localName + ":</b> " +e.textContent);
@@ -402,6 +410,7 @@ function vTextOne(e,ct,re) {
 
 function vsTextOne(e,ct,re) {
     var err="";
+    err += vNoAttributes(e);
     err += vTextOnly(e);
     if (ct != 1) err += " (Multiple " + e.localName +")";
     err += vTestRE(e,re);
@@ -410,7 +419,9 @@ function vsTextOne(e,ct,re) {
 
 
 function vCDuses (e) {
-    cdout.innerHTML = cdout.innerHTML + "<p><b>CDUses:</b></p>";
+    var err="";
+    err += vNoAttributes(e);
+    vOut(err,"<b>CDUses:</b>");
     var u= "<div class='indent'>";
     var els=vChildren(e);
     for(var j=0;j<els.length;j++){
@@ -1198,13 +1209,13 @@ document.getElementById("cdin").textContent='\n\
 <CDName>arith1</CDName>\n\
 <CDURL>http://www.openmath.org/cd/arith1.ocd</CDURL></CDGroupMember>\n\
 <CDComment>Constructor for Floating Point Numbers</CDComment>\n\
-<CDGroupMember>\n\
+<CDGroupMember x="y">\n\
 <CDName>bigfloat1</CDName>\n\
 <CDURL>http://www.openmath.org/cd/bigfloat1.ocd</CDURL></CDGroupMember>\n\
 <Example>example here</Example>\n\
 <CDComment>Calculus</CDComment>\n\
 <CDGroupMember>\n\
-<CDName>calculus1</CDName>\n\
+<CDName a="b">calculus1</CDName>\n\
 <CDURL>http://www.openmath.org/cd/calculus1.ocd</CDURL></CDGroupMember>\n\
 <CDComment>Linear Algebra - vector &amp; matrix constructors, those symbols which are dependant of orientation, and in MathML</CDComment>\n\
 <CDGroupMember>\n\
