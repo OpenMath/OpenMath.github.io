@@ -213,7 +213,9 @@ function vCDSignatures(e) {
 	    u+=vsOut(cd.match(omNameRE)?"":" (Invalid CD name)","<b>CD:</b> " + atts[j].value); 
 	    break;
 	default:
-	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	    if(! atts[j].name.startsWith("xmlns:")) {
+		err+=" (Unexpected attribute: " + atts[j].localName +")";
+	    }
 	}
     }
     if (tyc==0) err += " (Missing attribute: type)";
@@ -246,7 +248,9 @@ function vCDSignatures(e) {
 }
 
 function vCD(e) {
-    cdout.innerHTML = cdout.innerHTML + "<p><b>OpenMath Content Dictionary</b></p>";
+    var err="";
+    err += vNoAttributes(e);
+    vOut(err,"<b>OpenMath Content Dictionary</b>");
     var els=vChildren(e);
     var CDNamec=0;
     var CDURLc=0;
@@ -330,7 +334,8 @@ function vNoAttributes(e) {
     var atts = e.attributes;
     err="";
     for (var j=0;j<atts.length;j++){
-	if(atts[j].localName!='xmlns') err += " (Unexpected attribute: " + atts[j].localName + ")";
+	if(atts[j].localName!='xmlns' && (!atts[j].name.startsWith("xmlns:")))
+	   err += " (Unexpected attribute: " + atts[j].localName + ")";
     }
     return err;
 }
@@ -547,7 +552,9 @@ function vOMOBJ(e) {
 	case "xmlns":
 	    break;
 	default:
-	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	    if(! atts[j].name.startsWith("xmlns:")) {
+		err+=" (Unexpected attribute: " + atts[j].localName +")";
+	    }
 	}
     }
     vOut(err,"<b>OpenMath Object</b>");
@@ -668,7 +675,7 @@ function vsOMF(e) {
 		d=atts[j].value;
 		err+=(d.match(/^[0-9.\-]+$/)?"":" (Invalid number)");
 	    } else {
-		err+="(unexpected dec attribute)";
+		err+=" (Unexpected dec attribute)";
 	    }
 	    break;
 	case "hex":
@@ -676,7 +683,7 @@ function vsOMF(e) {
 		h=atts[j].value;
 		err+=(h.match(/^[0-9A-F]+$/)?"":" (Invalid number)");
 	    } else {
-		err+="(unexpected hex attribute)";
+		err+=" (Unexpected hex attribute)";
 	    }
 	    break;
 	default:
