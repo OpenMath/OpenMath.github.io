@@ -738,9 +738,9 @@ function vsOMF(e) {
 	    }
 	    break;
 	case "hex":
-	    if(h=="") {
+	    if(d=="") {
 		h=atts[j].value;
-		err+=(h.match(/^[0-9A-F]+$/)?"":" (Invalid number)");
+		err+=(h.match(/^\s*[0-9A-F]+\s*$/)?"":" (Invalid hex number)");
 	    } else {
 		err+=" (Unexpected hex attribute)";
 	    }
