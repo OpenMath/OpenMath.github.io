@@ -296,7 +296,7 @@ function vTextOnly(e) {
 function vNoAttributes(e) {
     var atts = e.attributes;
     err="";
-    for (var j=0;j++;j<atts.length){
+    for (var j=0;j<atts.length;j++){
 	if(atts[j].localName!='xmlns') err += " (Unexpected attribute: " + atts[j].localName + ")";
     }
     return err;
@@ -1264,7 +1264,7 @@ on to the grey bar above the edit box.</p>
 </div>
 <div
     style="width:47%;display:inline-block;border: solid black thin; background-color:#EEE;
-	   	     padding:0.5em;
+padding:0.5em; min-height:50em;
 	   overflow:auto;vertical-align:top">
  <h2>Output</h2>
  <div id="cdout">
