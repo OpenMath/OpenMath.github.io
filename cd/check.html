@@ -193,14 +193,31 @@ function vCDGroupMember (e) {
 function vCDSignatures(e) {
     err="";
     u="";
+    var ty="";
+    var cd="";
+    var tyc=0;
+    var cdc=0;
     var atts=e.attributes;
-    for(var j=0;j<atts.length;j++){
-	if(atts[j].localName=="type" || atts[j].localName=="cd"){
-	    u+="<p><b>" + atts[j].localName +":</b> " + atts[j].value;
-	} else if (atts[j].localName!="xmlns") {
-	    err += " (Unexpected attribute: " + atts[j].localName +")";
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "xmlns":
+	    break;
+	case "type":
+	    tyc++;
+	    ty=atts[j].value;
+	    u+=vsOut(ty.match(omNameRE)?"":" (Invalid type)","<b>Type:</b> " + atts[j].value); 
+	    break;
+	case "cd":
+	    cdc++;
+	    cd=atts[j].value;
+	    u+=vsOut(cd.match(omNameRE)?"":" (Invalid CD name)","<b>CD:</b> " + atts[j].value); 
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    if (tyc==0) err += " (Missing attribute: type)";
+    if (cdc==0) err += " (Missing attribute: cd)";
     vOut(err,"<b>OpenMath Content Dictionary Signature File</b>");
     cdout.innerHTML = cdout.innerHTML + u;
     var els=vChildren(e);
