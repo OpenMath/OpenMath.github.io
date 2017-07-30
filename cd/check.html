@@ -505,7 +505,19 @@ function vCDDefinition (e) {
 
 function vOMOBJ(e) {
     var err="";
-    vOut(err,"<b>OpenMath Object</b></p>");
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "version":
+	case "cdbase":
+	case "xmlns":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    vOut(err,"<b>OpenMath Object</b>");
     var els=vChildren(e);
     if (els.length = 1) {
 	cdout.innerHTML = cdout.innerHTML + "<div>"+ vsOMel(els[0])+ "</div>";
@@ -560,6 +572,17 @@ function vsOMel (c) {
 
 function vsOMA(e) {
     var u="";
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "cdbase":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
     var els=vChildren(e);
     for(var j=0;j<els.length;j++){
 	var c = els[j];
@@ -571,7 +594,7 @@ function vsOMA(e) {
 	}
     }
     u+=")";
-    return u;
+    return vsSpanOut(err,u);
 }
 
 function vsOMSTR(e) {
@@ -624,7 +647,7 @@ function vsOMF(e) {
 	    }
 	    break;
 	default:
-	    err="(unexpected attribute" + atts[j].localName +")";
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
     if (e.childNodes.length != 0) {
@@ -638,6 +661,8 @@ function vsOMS(e) {
     var err="";
     var n="";
     var cd="";
+    var nc=0;
+    var cdc=0;
     var atts=e.attributes;
     for(var j=0;j<atts.length;j++) {
 	switch(atts[j].localName) {
@@ -645,20 +670,24 @@ function vsOMS(e) {
 	case "cdbase":
 	    break;
 	case "name":
+	    nc++;
 	    n=atts[j].value;
 	    err+=(n.match(omNameRE)?"":" (invalid name)");
 	    break;
 	case "cd":
+	    cdc++;
 	    cd=atts[j].value;
 	    err+=(cd.match(omNameRE)?"":" (invalid name)");
 	    break;
 	default:
-	    err="(unexpected attribute" + atts[j].localName +")";
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
     if (e.childNodes.length != 0) {
 	err += " (unexpected content in OMS)";
     }
+    if (nc==0) err += " (Missing attribute: name)";
+    if (cdc==0) err += " (Missing attribute: cd)";
     if(err=="") {
 	return ("<a href='../cd/" + cd +"'>" + n + "</a>");
     } else {
@@ -677,7 +706,7 @@ function vsOMBIND(e) {
 	case "cdbase":
 	    break;
 	default:
-	    err="(unexpected attribute" + atts[j].localName +")";
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
     var els=vChildren(e);
@@ -704,7 +733,7 @@ function vsOME(e) {
 	case "id":
 	    break;
 	default:
-	    err="(unexpected attribute" + atts[j].localName +")";
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
     var els=vChildren(e);
@@ -726,6 +755,18 @@ function vsOMOBJ(e) {
     var err="";
     var u="";
     if (e.localName=='OMOBJ' && e.namespaceURI==omns) {
+	var atts=e.attributes;
+	for(var j=0;j<atts.length;j++) {
+	    switch(atts[j].localName) {
+	    case "id":
+	    case "version":
+	    case "cdbase":
+	    case "xmlns":
+		break;
+	    default:
+		err+=" (Unexpected attribute: " + atts[j].localName +")";
+	    }
+	}
 	var els=vChildren(e);
 	if (els.length = 1) {
 	    u+=vsOMel(els[0]);
@@ -754,7 +795,7 @@ function vsOMBVAR(e) {
 	case "id":
 	    break;
 	default:
-	    err="(unexpected attribute" + atts[j].localName +")";
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
     var els=vChildren(e);
@@ -780,7 +821,7 @@ function vsOMR(e) {
 	    err+=(cd.match(omURLRE)?"":" (URL)");
 	    break;
 	default:
-	    err="(unexpected attribute" + atts[j].localName +")";
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
     if (e.childNodes.length != 0) {
@@ -795,7 +836,7 @@ function vsOMR(e) {
 
 function sampleom() {
 document.getElementById("cdin").textContent='\n\
-<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">\n\
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" verrsion="2.0" cdbase="http://www.openmath.org/cd">\n\
   <OMA>\n\
     <OMS cd="relation1" name="="/>\n\
     <OMA>\n\
@@ -806,7 +847,7 @@ document.getElementById("cdin").textContent='\n\
           <OMBVAR>\n\
             <OMV name="y"/>\n\
           </OMBVAR>\n\
-          <OMA>\n\
+          <OMA style="bad">\n\
             <OMS cd="arith1" name="plus"/>\n\
             <OMA>\n\
               <OMV name="a"/>\n\
@@ -865,13 +906,11 @@ function samplecdg() {
 document.getElementById("cdin").textContent='\n\
 <CDGroup  xmlns="http://www.openmath.org/OpenMathCDG">\n\
 <CDGroupName>mathml-x</CDGroupName>\n\
-<CDGroupVersion> 2 </CDGroupVersion>\n\
-<CDGroupRevision> 0 </CDGroupRevision>\n\
-<CDGroupURL>\n\
-http://www.openmath.org/cdfiles/cdgroups/mathml.ocd</CDGroupURL>\n\
+<CDGroupVersion> 2.1 </CDGroupVersion>\n\
+<CDGroupRevision> b </CDGroupRevision>\n\
+<CDGroupURL>http://www.openmath.org/cdfiles/cdgroups/mathml.ocd</CDGroupURL>\n\
 <CDGroupDescription> MathML compatibility CD Group </CDGroupDescription>\n\
-<CDComment>This is an abbreviated  MathML CD group.\n\
-</CDComment>\n\
+<CDComment>This is an abbreviated  MathML CD group.</CDComment>\n\
 <CDComment>Algebra</CDComment>\n\
 <CDGroupMember>\n\
 <CDName>alg1</CDName>\n\
@@ -884,22 +923,11 @@ http://www.openmath.org/cdfiles/cdgroups/mathml.ocd</CDGroupURL>\n\
 <CDGroupMember>\n\
 <CDName>bigfloat1</CDName>\n\
 <CDURL>http://www.openmath.org/cd/bigfloat1.ocd</CDURL></CDGroupMember>\n\
+<Example>example here</Example>\n\
 <CDComment>Calculus</CDComment>\n\
 <CDGroupMember>\n\
 <CDName>calculus1</CDName>\n\
 <CDURL>http://www.openmath.org/cd/calculus1.ocd</CDURL></CDGroupMember>\n\
-<CDComment>Integer arithmetic</CDComment>\n\
-<CDGroupMember>\n\
-<CDName>integer 1</CDName>\n\
-<CDURL>http://www.openmath.org/cd/integer1.ocd</CDURL></CDGroupMember>\n\
-<CDComment>Intervals</CDComment>\n\
-<CDGroupMember>\n\
-<CDName>interval1</CDName>\n\
-<CDURL>http://www.openmath.org/cd/interval1.ocd</CDURL></CDGroupMember>\n\
-<CDComment>Linear Algebra - vector &amp; matrix constructors, those symbols which are independant of orientation, but in MathML</CDComment>\n\
-<CDGroupMember>\n\
-<CDName>linalg1</CDName>\n\
-<CDURL>http://www.openmath.org/cd/linalg1.ocd</CDURL></CDGroupMember>\n\
 <CDComment>Linear Algebra - vector &amp; matrix constructors, those symbols which are dependant of orientation, and in MathML</CDComment>\n\
 <CDGroupMember>\n\
 <CDName>linalg2</CDName>\n\
@@ -942,10 +970,6 @@ http://www.openmath.org/cdfiles/cdgroups/mathml.ocd</CDGroupURL>\n\
 <CDGroupMember>\n\
 <CDName>setname1</CDName>\n\
 <CDURL>http://www.openmath.org/cd/setname1.ocd</CDURL></CDGroupMember>\n\
-<CDComment>Rounding</CDComment>\n\
-<CDGroupMember>\n\
-<CDName>rounding1</CDName>\n\
-<CDURL>http://www.openmath.org/cd/rounding1.ocd</CDURL></CDGroupMember>\n\
 </CDGroup>\n\
 ';
 }
@@ -959,12 +983,12 @@ document.getElementById("cdin").textContent='\n\
 Based on Set1 STS file\n\
 </CDSComment>\n\
 \n\
-<Signature name="cartesian product">\n\
+<Signature name="cartesian_product">\n\
 <OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
   <OMA>\n\
     <OMS cd="sts" name="mapsto"/>\n\
     <OMA>\n\
-      <OMS cd="sts" name="nary"/>\n\
+      <OMS name="nary"/>\n\
       <OMA>\n\
         <OMS cd="sts" name="structure"/>\n\
 	<OMV name="Set"/>\n\
@@ -994,7 +1018,7 @@ Based on Set1 STS file\n\
 <CDComment>???</CDComment>\n\
 </Signature>\n\
 \n\
-<Signature name="suchthat">\n\
+<Signature name="such that">\n\
 <OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
  <OMA>\n\
   <OMS cd="sts" name="mapsto"/>\n\
