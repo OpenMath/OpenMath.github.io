@@ -835,7 +835,7 @@ function vsOMATTR(e) {
 	    u+=vsOMel(els[1]);
 	    u+="[";
 	    u+=vsOMATP(els[0]);
-	    u+="]";
+	    u+="])";
 	} else {
 	    err += "(OMBIND should have OMATP child)";
 	}
@@ -848,6 +848,7 @@ function vsOMATTR(e) {
 
 function vsOMATP(e) {
     var err="";
+    var u="";
     var atts=e.attributes;
     for(var j=0;j<atts.length;j++) {
 	switch(atts[j].localName) {
@@ -861,11 +862,22 @@ function vsOMATP(e) {
 	}
     }
     var els=vChildren(e);
-    for(var j=0;j<els.length;j++){
+    if(els.length%2 !=0) {
+	err+="( Unpaired attribute)";
+    }
+    for(var j=0;j<els.length;j=j+2){
 	var c = els[j];
-	if(j%2==0 && j!=0) u+=", ";
-	u+=vsOMel(c);
-	if(j%2==0) u+=": ";
+	var v = els[j+1];
+	if(c.localName=="OMS"){
+	    if(j!=0) u+=", ";
+	    u+=vsOMS(c);
+	    u+=": ";
+	    if(v.localName=='OMFOREIGN') {
+		u+="<i>OMFOREIGN</i>";
+	    } else {
+		u+=vsOMel(v);
+	    }
+	}
     }
     return vsSpanOut(err,u);
 }
