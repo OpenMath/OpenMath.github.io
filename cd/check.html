@@ -603,7 +603,7 @@ function vsOMel (c) {
 	u=vsOME(c);
 	break;
     case "OMATTR":
-	u=vsOMATTR(c);
+	u=vsOMATTR(c,false);
 	break;
     case "OMR":
 	u=vsOMR(c);
@@ -674,7 +674,7 @@ function vsOMI(e) {
 	err += " (Unexpected content in OMI)";
     }
     if(! e.textContent.match(/^\s*(-\s?)?[0-9]+(\s[0-9]+)*\s*$/)) {
-	err += " (Bad Integer syntax)";
+	err += " (Invalid Integer)";
     }
     return vsSpanOut(err, e.textContent);
 }
@@ -721,7 +721,7 @@ function vsOMF(e) {
 	case "dec":
 	    if(h=="") {
 		d=atts[j].value;
-		err+=(d.match(/^[0-9.\-]+$/)?"":" (Invalid number)");
+		err+=(d.match(/^\s*-?[0-9]*(\.[0-9]+)?([eE]-?[0-9]*(\.[0-9]+)?)?\s*$/)?"":" (Invalid Decimal)");
 	    } else {
 		err+=" (Unexpected dec attribute)";
 	    }
@@ -898,7 +898,7 @@ function vsOMOBJ(e) {
     return vsSpanOut(err,u);
 }
 
-function vsOMATTR(e) {
+function vsOMATTR(e,bvar) {
     var err="";
     var u="";
     var cd="";
@@ -915,8 +915,22 @@ function vsOMATTR(e) {
     var els=vChildren(e);
     if(els.length==2) {
 	if(els[0].localName=='OMATP'){
+	    var c=els[1];
 	    u +="(";
-	    u+=vsOMel(els[1]);
+	    if(bvar) {
+		switch(c.localName) {
+		case "OMV":
+		    u+=vsOMV(c);
+		    break;
+		case "OMATTR":
+		    u+=vsOMATTR(c,true);
+		    break;
+		default:
+		    u+=vsSpanErr(c);
+		}
+            } else {
+		u+=vsOMel(els[1]);
+	    }
 	    u+="[";
 	    u+=vsOMATP(els[0]);
 	    u+="])";
@@ -962,7 +976,7 @@ function vsOMATP(e) {
 		u+=vsOMel(v);
 	    }
 	} else {
-	    u+="<span class='err'>?? (unexpected attribute)</span>";
+	    u+="<span class='err'>?? (Unexpected attribute)</span>";
 	}
     }
     return vsSpanOut(err,u);
@@ -982,9 +996,18 @@ function vsOMBVAR(e) {
     }
     var els=vChildren(e);
     for(var j = 0; j<els.length;j++) {
+	var c=els[j];
 	u+= (j>0? ", " : "");
-	if(els[j].localName!="OMV" && els[j].localName!="OMATTR") err+="(Unexpected element)";
-	u+=vsOMel(els[j]);
+	switch(c.localName) {
+	case "OMV":
+	    u+=vsOMV(c);
+	    break;
+	case "OMATTR":
+	    u+=vsOMATTR(c,true);
+	    break;
+	default:
+	    u+=vsSpanErr(c);
+	}
     }
     return vsSpanOut(err,u);
 }
@@ -1146,6 +1169,12 @@ document.getElementById("cdin").textContent='\n\
 \n\
  <OMI>77.9</OMI>\n\
  \n\
+ <OMF dec="1.0"/>\n\
+ <OMF dec="1e2"/>\n\
+ <OMF dec="1E2"/>\n\
+ <OMF dec="1e-2"/>\n\
+ <OMF dec="-1e-2"/>\n\
+ <OMF dec="1e 2"/>\n\
   </OMA>\n\
 </OMOBJ>\n\
 ';
