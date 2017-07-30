@@ -51,8 +51,10 @@ function checkcd () {
 
     var oDOM = oParser.parseFromString(sMyString, "text/xml");
     if (oDOM.getElementsByTagName("parsererror").length>0) {
+	var x= oDOM.getElementsByTagName("parsererror")[0].textContent;
 	cdout.innerHTML =
-	    "<h3>XML Parse Error</h3>" + oDOM.getElementsByTagName("parsererror")[0].textContent;
+	    "<h3>XML Parse Error</h3><pre class='err'>\n" +
+	    oDOM.getElementsByTagName("parsererror")[0].textContent.replace(/&/g,'&amp;').replace(/</g,'&lt;') +"</pre>";
     } else {
 	cdout.innerHTML ="";
 	vroot(oDOM);
