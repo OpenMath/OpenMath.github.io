@@ -39,7 +39,7 @@ var omns="http://www.openmath.org/OpenMath";
 // regular expressions
    
 // ascii version for now
-var omNameRE= new RegExp(/^\s*[a-zA-Z][a-zA-Z0-9.\-_]*\s*$/);
+var omNameRE= new RegExp(/^\s*[^0-9\.!@#:;<>()+=,%\$"'?/\\|{}\[\]][^\.!@#:;<>()+=,%\$"'?/\\|{}\[\]]*\s*$/);
 var omURLRE= new RegExp(/^\s*[a-z]+:\/\/[^ ]*\s*$/);
 var omDateRE= new RegExp(/^\s*[0-9]{4}-(0[1-9]|1[12])-(0[1-9]|[12][0-9]|3[01])\s*$/);
 
