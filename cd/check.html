@@ -59,6 +59,20 @@ function checkcd () {
 	cdout.innerHTML ="";
 	vroot(oDOM);
     }
+	if (document.getElementsByClassName!=undefined) {
+            var errs=document.getElementsByClassName('err').length
+	    var cdoutwrapper=document.getElementById("cdoutwrapper");
+	    var errcount=document.getElementById("errcount");
+	    if(errs==0) {
+		cdoutwrapper.style.borderColor='green';
+		cdoutwrapper.style.borderWidth='.2em';
+		errcount.textContent='';
+	    } else {
+		cdoutwrapper.style.borderColor='red';
+		cdoutwrapper.style.borderWidth='.2em';
+		errcount.textContent=' (' +errs +' error' + (err==1? '':'s') +' found)';
+	    }
+	}
 }
 
 
@@ -318,7 +332,7 @@ function vsSpanOut(err,t){
 }
 
 function vTestRE(e,r) {
-    return (e.textContent.match(r) ? "" : " (invalid text)");
+    return (e.textContent.match(r) ? "" : " (Invalid text)");
 }
 
 function vCDComment (e) {
@@ -443,7 +457,7 @@ function vSignature (e) {
     for(var j=0;j<atts.length;j++){
 	if(atts[j].localName="name"){
 	    k= " (" + atts[j].value +")";
-	    err+=atts[j].value.match(omNameRE)?"":" (invalid name)";
+	    err+=atts[j].value.match(omNameRE)?"":" (Invalid name)";
 	} else {
 	    err += " (Unexpected attribute: " + atts[j].localName +")";
 	}
@@ -615,10 +629,10 @@ function vsOMV(e) {
     var v="";
     var atts=e.attributes;
     if(atts.length!=1 || atts[0].localName != "name") {
-	err ="(invalid OMV attributes)";
+	err =" (Invalid OMV attributes)";
     } else {
 	v=atts[0].value;
-	err+=(v.match(omNameRE)?"":" (invalid name)");
+	err+=(v.match(omNameRE)?"":" (Invalid name)");
     }
     return "<i>" + vsSpanOut(err,v) + "</i>";
 }
@@ -635,7 +649,7 @@ function vsOMF(e) {
 	case "dec":
 	    if(h=="") {
 		d=atts[j].value;
-		err+=(n.match(/^[0-9.\-]+$/)?"":" (invalid number)");
+		err+=(n.match(/^[0-9.\-]+$/)?"":" (Invalid number)");
 	    } else {
 		err+="(unexpected dec attribute)";
 	    }
@@ -643,7 +657,7 @@ function vsOMF(e) {
 	case "hex":
 	    if(h=="") {
 		h=atts[j].value;
-		err+=(n.match(/^[0-9A-F]+$/)?"":" (invalid number)");
+		err+=(n.match(/^[0-9A-F]+$/)?"":" (Invalid number)");
 	    } else {
 		err+="(unexpected hex attribute)";
 	    }
@@ -653,7 +667,7 @@ function vsOMF(e) {
 	}
     }
     if (e.childNodes.length != 0) {
-	err += " (unexpected content in OMF)";
+	err += " (Unexpected content in OMF)";
     }
     return vsSpanOut(err,h+d);
 }
@@ -674,19 +688,19 @@ function vsOMS(e) {
 	case "name":
 	    nc++;
 	    n=atts[j].value;
-	    err+=(n.match(omNameRE)?"":" (invalid name)");
+	    err+=(n.match(omNameRE)?"":" (Invalid name)");
 	    break;
 	case "cd":
 	    cdc++;
 	    cd=atts[j].value;
-	    err+=(cd.match(omNameRE)?"":" (invalid name)");
+	    err+=(cd.match(omNameRE)?"":" (Invalid name)");
 	    break;
 	default:
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
     if (e.childNodes.length != 0) {
-	err += " (unexpected content in OMS)";
+	err += " (Unexpected content in OMS)";
     }
     if (nc==0) err += " (Missing attribute: name)";
     if (cdc==0) err += " (Missing attribute: cd)";
@@ -827,7 +841,7 @@ function vsOMR(e) {
 	}
     }
     if (e.childNodes.length != 0) {
-	err += " (unexpected content in OMR)";
+	err += " (Unexpected content in OMR)";
     }
     if(err=="") {
 	return ("<a href='" + h +"'>ref</a>");
@@ -1288,11 +1302,11 @@ on to the grey bar above the edit box.</p>
     style="overflow:auto;white-space:pre;">
 </div>
 </div>
-<div
+<div id="cdoutwrapper"
     style="width:47%;display:inline-block;border: solid black thin; background-color:#EEE;
 padding:0.5em; min-height:50em;
 	   overflow:auto;vertical-align:top">
- <h2>Output</h2>
+ <h2>Output <span id="errcount"></span></h2>
  <div id="cdout">
  </div>
 </div>
