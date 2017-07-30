@@ -441,11 +441,12 @@ function vSignature (e) {
     for(var j=0;j<atts.length;j++){
 	if(atts[j].localName="name"){
 	    k= " (" + atts[j].value +")";
+	    err+=atts[j].value.match(omNameRE)?"":" (invalid name)";
 	} else {
 	    err += " (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
-    vOut(err, "<b>FMP" + k +":</b>");
+    vOut(err, "<b>Signature" + k +":</b>");
     if(err=="") {
 	var u= "<div class='indent'>";
 	var els=vChildren(e);
