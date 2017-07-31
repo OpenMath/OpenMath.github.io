@@ -1615,7 +1615,7 @@ multiple of its arguments.\n\
 
   <h1>OpenMath XML Syntax Test Page</h1>
     <p>Edit the CD below or drag a new CD (or other OpenMath file)
-on to the grey bar above the edit box.</p>
+into the edit box.</p>
     <p>Other (invalid) examples may be inserted using the buttons below.</p>
    
     <p>
@@ -1629,20 +1629,18 @@ on to the grey bar above the edit box.</p>
     <p>OpenMath, CD, CDGroup and STS files are accepted.</p>
 
    <p><input id="checkbutton" style="font-size:110%; padding:.5em;" type="button" onclick="checkcd()" value="Check"></input></p>
-  <div
+  <div id="cdinwrapper"
       style="width:47%;display:inline-block;border: solid thin black;
 	     padding:0.5em;
-   vertical-align:top">
-   <h2>Input</h2>
-
-   <div id="filedrop" style="background-color:#DDD; white-space: pre; margin-bottom:.5em; padding:1em;border: 1px solid black;"
+	     vertical-align:top"
       event.stopPropagation(); event.preventDefault();"
      ondragover="event.stopPropagation(); event.preventDefault();"
      ondrop="event.stopPropagation(); event.preventDefault();
-     dodrop(event);">Drop a file here from finder or explorer or edit the text below.</div>
+	dodrop(event);"
+       >
+   <h2>Input</h2>
 
-
-   <div id="cdin" contenteditable=true
+    <div id="cdin" contenteditable=true
     style="overflow:auto;white-space:pre;">
 </div>
 </div>
