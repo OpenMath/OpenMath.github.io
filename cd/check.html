@@ -7,7 +7,17 @@
     .err {color: red}
     span.ome {border: solid thin red}
    .indent{margin-left:2em;}
-   .indent p {margin:0em;padding:0em;}
+    .indent p {margin:0em;padding:0em;}
+
+    @media (max-width:50em) {
+    #cdinwrapper{width:95%;}
+    #cdoutwrapper{width:95%;}
+    }
+    @media (min-width:50em) {
+    #cdinwrapper{width:47%;}
+    #cdoutwrapper{width:47%;}
+    }
+    
   </style>
   <script>
 
@@ -1630,7 +1640,7 @@ into the edit box.</p>
 
    <p><input id="checkbutton" style="font-size:110%; padding:.5em;" type="button" onclick="checkcd()" value="Check"></input></p>
   <div id="cdinwrapper"
-      style="width:47%;display:inline-block;border: solid thin black;
+      style="display:inline-block;border: solid thin black;
 	     padding:0.5em;
 	     vertical-align:top"
       event.stopPropagation(); event.preventDefault();"
@@ -1645,7 +1655,7 @@ into the edit box.</p>
 </div>
 </div>
 <div id="cdoutwrapper"
-    style="width:47%;display:inline-block;border: solid black thin; background-color:#EEE;
+    style="display:inline-block;border: solid black thin; background-color:#EEE;
 padding:0.5em; min-height:50em;
 	   overflow:auto;vertical-align:top">
  <h2>Output <span id="errcount"></span></h2>
