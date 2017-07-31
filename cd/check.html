@@ -137,7 +137,13 @@ function vroot (o) {
 	} else {
 	    cdouttext = cdouttext
 	    // cdout.innerHTML = cdout.innerHTML
-		+ "<p class='err'>Bad root namespace:<br>" + els[0].namespaceURI + "<br>!=<br>" + cdns +" </p>";
+		+ "<p class='err'>Bad root namespace:<br>" +
+		els[0].namespaceURI + "<br><br>This tool can only validate XML using the following namespaces:<br>  " +
+		cdns + "<br>  " +
+		cdgns + "<br>  " +
+		cdsns + "<br>  " +
+		omns + 
+		"</p>";
 	}
     } else {
 	cdouttext = cdouttext
