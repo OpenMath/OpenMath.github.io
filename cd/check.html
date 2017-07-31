@@ -23,7 +23,9 @@ function dodrop(event) {
 	};
 	fr.readAsText(files[0]);
     } else {
-        cdout.innerHTML = "only drop one file at a time";
+	//        cdout.innerHTML =
+	cdouttext =
+	"only drop one file at a time";
     }      
 }
 
@@ -53,11 +55,14 @@ function checkcd () {
     var oDOM = oParser.parseFromString(sMyString, "text/xml");
     if (oDOM.getElementsByTagName("parsererror").length>0) {
 	var x= oDOM.getElementsByTagName("parsererror")[0].textContent;
-	cdout.innerHTML =
+	cdouttext =
+//	cdout.innerHTML =
 	    "<h3>XML Parse Error</h3><pre class='err'>\n" +
 	    oDOM.getElementsByTagName("parsererror")[0].textContent.replace(/&/g,'&amp;').replace(/</g,'&lt;') +"</pre>";
     } else {
-	cdout.innerHTML ="";
+	cdouttext =
+	    //	cdout.innerHTML =
+	    "";
 	vroot(oDOM);
     }
 	if (document.getElementsByClassName!=undefined) {
@@ -74,6 +79,9 @@ function checkcd () {
 		errcount.textContent=' (' +errs +' error' + (errs==1? '':'s') +' found)';
 	    }
 	}
+    cdout.innerHTML=cdouttext;
+    cdouttext="";
+    
 }
 
 
@@ -88,31 +96,43 @@ function vroot (o) {
 	    if (els[0].localName=="CD") {
 		vCD(els[0]);
 	    } else {
-		cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be CD</p>";
+	cdouttext = cdouttext
+		//		cdout.innerHTML = cdout.innerHTML
+		    + "<p class='err'>Bad root element: should be CD</p>";
 	    }
 	} else if (els[0].namespaceURI == cdsns) {
 	    if (els[0].localName=="CDSignatures") {
 		vCDSignatures(els[0]);
 	    } else {
-		cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be CDSignatures</p>";
+		cdouttext = cdouttext
+		// cdout.innerHTML = cdout.innerHTML
+		    + "<p class='err'>Bad root element: should be CDSignatures</p>";
 	    }
 	} else if (els[0].namespaceURI==cdgns) {
 	    if (els[0].localName=="CDGroup") {
 		vCDGroup(els[0]);
 	    } else {
-		cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be CDGroup</p>";
+		cdouttext = cdouttext
+		// cdout.innerHTML = cdout.innerHTML
+		    + "<p class='err'>Bad root element: should be CDGroup</p>";
 	    }
 	} else if (els[0].namespaceURI == omns) {
 	    if (els[0].localName=="OMOBJ") {
 		vOMOBJ(els[0]);
 	    } else {
-		cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root element: should be OMOBJ</p>";
+		cdouttext = cdouttext
+		// cdout.innerHTML = cdout.innerHTML
+		    + "<p class='err'>Bad root element: should be OMOBJ</p>";
 	    }
 	} else {
-	    cdout.innerHTML = cdout.innerHTML + "<p class='err'>Bad root namespace:<br>" + els[0].namespaceURI + "<br>!=<br>" + cdns +" </p>";
+	    cdouttext = cdouttext
+	    // cdout.innerHTML = cdout.innerHTML
+		+ "<p class='err'>Bad root namespace:<br>" + els[0].namespaceURI + "<br>!=<br>" + cdns +" </p>";
 	}
     } else {
-	cdout.innerHTML = cdout.innerHTML + "<p class='err'`c>multiple root elements</p>";
+	cdouttext = cdouttext
+	// cdout.innerHTML = cdout.innerHTML
+	    + "<p class='err'`c>multiple root elements</p>";
     }
 }
 
@@ -122,7 +142,9 @@ function vCDGroup(e) {
     err += vNoAttributes(e);
     err+=vsNoText(e);
     vOut(err,"<b>OpenMath Content Dictionary Group File</b>");
-    cdout.innerHTML = cdout.innerHTML + u;
+    cdouttext = cdouttext
+    //    cdout.innerHTML = cdout.innerHTML
+	+ u;
     var els=vChildren(e);
     var CDGNamec=0;
     var CDGURLc=0;
@@ -191,7 +213,9 @@ function vCDGroupMember (e) {
 	u+=vsErr(els[j]);
     }
     u+="</div>";
-    cdout.innerHTML = cdout.innerHTML + u;
+    cdouttext = cdouttext
+    //    cdout.innerHTML = cdout.innerHTML
+	+ u;
 }
 
 function vCDSignatures(e) {
@@ -226,7 +250,9 @@ function vCDSignatures(e) {
     if (cdc==0) err += " (Missing attribute: cd)";
     err+=vsNoText(e);
     vOut(err,"<b>OpenMath Content Dictionary Signature File</b>");
-    cdout.innerHTML = cdout.innerHTML + u;
+    cdouttext = cdouttext
+    //    cdout.innerHTML = cdout.innerHTML
+	+ u;
     var els=vChildren(e);
     var CDSStatusc=0;
     var CDSRDatec=0;
@@ -361,8 +387,9 @@ function vsNoText(n) {
     
 
 function vOut(err,t){
-    cdout.innerHTML = cdout.innerHTML +
-	"<p" + (err=="" ? "": " class='err'") +">" + t + err + "</p>";
+    cdouttext = cdouttext
+    //    cdout.innerHTML = cdout.innerHTML
+	+ "<p" + (err=="" ? "": " class='err'") +">" + t + err + "</p>";
 }
 
 function vsOut(err,t){
@@ -383,7 +410,9 @@ function vCDComment (e) {
     err += vTextOnly(e);
     vOut(err,"<b>CDComment:</b>");
     if(err=="") {
-	cdout.innerHTML = cdout.innerHTML +"<pre>" +e.innerHTML +"</pre>";
+	cdouttext = cdouttext
+	//	cdout.innerHTML = cdout.innerHTML
+	    +"<pre>" +e.innerHTML +"</pre>";
     }
 }
 
@@ -402,7 +431,9 @@ function vCDSComment (e) {
     err += vTextOnly(e);
     vOut(err,"<b>CDSComment:</b>");
     if(err==""){
-	cdout.innerHTML = cdout.innerHTML +"<pre>" +e.innerHTML +"</pre>";
+	cdouttext = cdouttext
+	//	cdout.innerHTML = cdout.innerHTML
+	    +"<pre>" +e.innerHTML +"</pre>";
     }
 }
 
@@ -410,7 +441,9 @@ function vDescription (e) {
     var err="";
     err += vNoAttributes(e);
     vOut(err,"<b>Description:</b>");
-    cdout.innerHTML = cdout.innerHTML +"<div> " +e.innerHTML + "</div>";
+    cdouttext = cdouttext
+    //    cdout.innerHTML = cdout.innerHTML
+	+"<div> " +e.innerHTML + "</div>";
 }
 
 function vTextOne(e,ct,re) {
@@ -448,7 +481,9 @@ function vCDuses (e) {
 	}
     }
     u+="</div>";
-    cdout.innerHTML = cdout.innerHTML + u;
+    cdouttext = cdouttext
+    //    cdout.innerHTML = cdout.innerHTML
+	+ u;
 }
 
 
@@ -471,7 +506,9 @@ function vExample (e) {
 	    }
 	}
     }
-    cdout.innerHTML = cdout.innerHTML + u;
+    cdouttext = cdouttext
+    //    cdout.innerHTML = cdout.innerHTML
+	+ u;
 }
 
 
@@ -499,7 +536,9 @@ function vFMP (e) {
 	    u+=vsErr(els[1]);
 	}
 	u+="</div>";
-	cdout.innerHTML = cdout.innerHTML + u;
+	cdouttext = cdouttext
+	//	cdout.innerHTML = cdout.innerHTML
+	    + u;
     }
 }
 
@@ -528,7 +567,9 @@ function vSignature (e) {
 	    u+=vsErr(els[1]);
 	}
 	u+="</div>";
-	cdout.innerHTML = cdout.innerHTML + u;
+	cdouttext = cdouttext
+	//	cdout.innerHTML = cdout.innerHTML
+	    + u;
     }
 }
 
@@ -593,7 +634,9 @@ function vOMOBJ(e) {
     vOut(err,"<b>OpenMath Object</b>");
     var els=vChildren(e);
     if (els.length = 1) {
-	cdout.innerHTML = cdout.innerHTML + "<div>"+ vsOMel(els[0])+ "</div>";
+	cdouttext = cdouttext
+	//	cdout.innerHTML = cdout.innerHTML
+	    + "<div>"+ vsOMel(els[0])+ "</div>";
     } else if (els.length=0) {
 	vOut("(Empty OMOBJ)","");
     } else {
