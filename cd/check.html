@@ -65,6 +65,8 @@ function checkcd () {
 	    "";
 	vroot(oDOM);
     }
+    cdout.innerHTML=cdouttext;
+    cdouttext="";
 	if (document.getElementsByClassName!=undefined) {
             var errs=document.getElementsByClassName('err').length
 	    var cdoutwrapper=document.getElementById("cdoutwrapper");
@@ -79,8 +81,6 @@ function checkcd () {
 		errcount.textContent=' (' +errs +' error' + (errs==1? '':'s') +' found)';
 	    }
 	}
-    cdout.innerHTML=cdouttext;
-    cdouttext="";
     
 }
 
