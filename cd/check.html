@@ -359,6 +359,7 @@ function vsNoText(n) {
     return err;
 }
     
+
 function vOut(err,t){
     cdout.innerHTML = cdout.innerHTML +
 	"<p" + (err=="" ? "": " class='err'") +">" + t + err + "</p>";
@@ -382,7 +383,7 @@ function vCDComment (e) {
     err += vTextOnly(e);
     vOut(err,"<b>CDComment:</b>");
     if(err=="") {
-	cdout.innerHTML = cdout.innerHTML +"<pre>" +e.textContent +"</pre>";
+	cdout.innerHTML = cdout.innerHTML +"<pre>" +e.innerHTML +"</pre>";
     }
 }
 
@@ -391,7 +392,7 @@ function vsCDComment (e) {
     err += vNoAttributes(e);
     err += vTextOnly(e);
     var u = vsOut(err,"<b>CDComment:</b>");
-    if(err=="") u+= "<pre>" +e.textContent +"</pre>";
+    if(err=="") u+= "<pre>" +e.innerHTML +"</pre>";
     return u;
 }
 
@@ -401,7 +402,7 @@ function vCDSComment (e) {
     err += vTextOnly(e);
     vOut(err,"<b>CDSComment:</b>");
     if(err==""){
-	cdout.innerHTML = cdout.innerHTML +"<pre>" +e.textContent +"</pre>";
+	cdout.innerHTML = cdout.innerHTML +"<pre>" +e.innerHTML +"</pre>";
     }
 }
 
@@ -418,7 +419,7 @@ function vTextOne(e,ct,re) {
     err += vTextOnly(e);
     if (ct != 1) err += " (Multiple " + e.localName +")";
     err += vTestRE(e,re);
-    vOut(err,"<b>" + e.localName + ":</b> " +e.textContent);
+    vOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
 }
 
 function vsTextOne(e,ct,re) {
@@ -427,7 +428,7 @@ function vsTextOne(e,ct,re) {
     err += vTextOnly(e);
     if (ct != 1) err += " (Multiple " + e.localName +")";
     err += vTestRE(e,re);
-    return vsOut(err,"<b>" + e.localName + ":</b> " +e.textContent);
+    return vsOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
 }
 
 
@@ -684,7 +685,7 @@ function vsOMSTR(e) {
     if (e.childNodes.length != 1) {
 	err += " (Unexpected content in OMSTR)";
     }
-    return vsSpanOut(err, "<tt>\""+e.textContent + "\"</tt>");
+    return vsSpanOut(err, "<tt>\""+e.innerHTML + "\"</tt>");
 }
 
 
@@ -1584,7 +1585,7 @@ on to the grey bar above the edit box.</p>
     <p>Use the <b>check</b> button to check the XML.</p>
     <p>OpenMath, CD, CDGroup and STS files are accepted.</p>
 
-   <p><input style="font-size:110%; padding:.5em;" type="button" onclick="checkcd()" value="Check"></input></p>
+   <p><input id="checkbutton" style="font-size:110%; padding:.5em;" type="button" onclick="checkcd()" value="Check"></input></p>
   <div
       style="width:47%;display:inline-block;border: solid thin black;
 	     padding:0.5em;
