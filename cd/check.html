@@ -120,6 +120,7 @@ function vCDGroup(e) {
     err="";
     u="";
     err += vNoAttributes(e);
+    err+=vsNoText(e);
     vOut(err,"<b>OpenMath Content Dictionary Group File</b>");
     cdout.innerHTML = cdout.innerHTML + u;
     var els=vChildren(e);
@@ -223,6 +224,7 @@ function vCDSignatures(e) {
     }
     if (tyc==0) err += " (Missing attribute: type)";
     if (cdc==0) err += " (Missing attribute: cd)";
+    err+=vsNoText(e);
     vOut(err,"<b>OpenMath Content Dictionary Signature File</b>");
     cdout.innerHTML = cdout.innerHTML + u;
     var els=vChildren(e);
@@ -253,6 +255,7 @@ function vCDSignatures(e) {
 function vCD(e) {
     var err="";
     err += vNoAttributes(e);
+    err+=vsNoText(e);
     vOut(err,"<b>OpenMath Content Dictionary</b>");
     var els=vChildren(e);
     var CDNamec=0;
@@ -431,6 +434,7 @@ function vsTextOne(e,ct,re) {
 function vCDuses (e) {
     var err="";
     err += vNoAttributes(e);
+    err+=vsNoText(e);
     vOut(err,"<b>CDUses:</b>");
     var u= "<div class='indent'>";
     var els=vChildren(e);
@@ -481,6 +485,7 @@ function vFMP (e) {
 	    err += " (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err+=vsNoText(e);
     vOut(err, "<b>FMP" + k +":</b>");
     if(err=="") {
 	var u= "<div class='indent'>";
@@ -509,6 +514,7 @@ function vSignature (e) {
 	    err += " (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err+=vsNoText(e);
     vOut(err, "<b>Signature" + k +":</b>");
     if(err=="") {
 	var u= "<div class='indent'>";
@@ -529,6 +535,7 @@ function vSignature (e) {
 function vCDDefinition (e) {
     var err="";
     err += vNoAttributes(e);
+    err+=vsNoText(e);
     vOut(err,"<b>CDDefinition:</b>");
     if(err==""){
 	var Namec=0;
@@ -822,6 +829,7 @@ function vsOMBIND(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err+=vsNoText(e);
     var els=vChildren(e);
     if(els.length==3) {
 	u +="(";
@@ -878,6 +886,7 @@ function vsOME(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err+=vsNoText(e);
     var els=vChildren(e);
     var u = "<span class='ome'>Error( ";
     if (els.length != 0||els[0].localName=="OMS") {
@@ -909,6 +918,7 @@ function vsOMOBJ(e) {
 		err+=" (Unexpected attribute: " + atts[j].localName +")";
 	    }
 	}
+	err+=vsNoText(e);
 	var els=vChildren(e);
 	if (els.length = 1) {
 	    u+=vsOMel(els[0]);
@@ -937,6 +947,7 @@ function vsOMATTR(e,bvar) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err+=vsNoText(e);
     var els=vChildren(e);
     if(els.length==2) {
 	if(els[0].localName=='OMATP'){
@@ -984,6 +995,7 @@ function vsOMATP(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err+=vsNoText(e);
     var els=vChildren(e);
     if(els.length%2 !=0) {
 	err+="( Unpaired attribute)";
@@ -1019,6 +1031,7 @@ function vsOMBVAR(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err+=vsNoText(e);
     var els=vChildren(e);
     for(var j = 0; j<els.length;j++) {
 	var c=els[j];
