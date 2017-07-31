@@ -1143,6 +1143,15 @@ function vsOMR(e) {
     }
 }
 
+function clearcdin() {
+    document.getElementById("cdin").textContent="";
+    var cdoutwrapper=document.getElementById("cdoutwrapper");
+    document.getElementById("errcount").textContent="";
+    cdout.textContent="";
+    cdoutwrapper.style.borderColor='black';
+    cdoutwrapper.style.borderWidth='thin';
+}
+
 function sampleom() {
 document.getElementById("cdin").textContent='\n\
 <OMOBJ xmlns="http://www.openmath.org/OpenMath" verrsion="2.0" cdbase="http://www.openmath.org/cd">\n\
@@ -1629,33 +1638,38 @@ multiple of its arguments.\n\
 
 
 <div>
- <div style="width:5em;float:left;margin-right:1em;">
+ <div style="width:5em;float:left;margin-right:1em;text-align:center">
     <a href="/">
-    <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+    <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/><br/>
+    Home
     </a>                
     </div>
 
-  <h1>OpenMath XML Syntax Test Page</h1>
-    <p>Edit the CD below or drag a new CD (or other OpenMath file)
-into the edit box.</p>
-    <p>Other (invalid) examples may be inserted using the buttons below.</p>
+    <h1>OpenMath XML Syntax Test Page</h1>
+    <div style="max-width:50em">
+    <p>The XML to be validated may be edited into the input box below directly,
+or by pasting in the text, or by dragging and dropping a file from your system file manager.</p>
+    <p>OpenMath, CD, CDGroup and STS files are accepted.</p>
+    <p>Alternatively one of the (invalid) examples may be inserted using the buttons below.</p>
    
     <p>
-  <input type="button" onclick="samplecd()" value="sample CD"></input>
-  <input type="button" onclick="samplecdg()" value="sample CDG"></input>
-  <input type="button" onclick="sampleom()" value="sample OM"></input>
-  <input type="button" onclick="samplests()" value="sample STS"></input>
+  <input type="button" onclick="samplecd()" value="Sample CD"></input>
+  <input type="button" onclick="samplecdg()" value="Sample CDG"></input>
+  <input type="button" onclick="sampleom()" value="Sample OM"></input>
+  <input type="button" onclick="samplests()" value="Sample STS"></input>
+    </p>
+    <p>
+  <input type="button" onclick="clearcdin()" value="Clear Form"></input>
     </p>
 
     <p>Use the <b>check</b> button to check the XML.</p>
-    <p>OpenMath, CD, CDGroup and STS files are accepted.</p>
-
+  </div>
    <p><input id="checkbutton" style="font-size:110%; padding:.5em;" type="button" onclick="checkcd()" value="Check"></input></p>
   <div id="cdinwrapper"
       style="display:inline-block;border: solid thin black;
 	     padding:0.5em;
-	     vertical-align:top"
-      event.stopPropagation(); event.preventDefault();"
+	     vertical-align:top;
+             min-height:50em;"
      ondragover="event.stopPropagation(); event.preventDefault();"
      ondrop="event.stopPropagation(); event.preventDefault();
 	dodrop(event);"
@@ -1663,7 +1677,8 @@ into the edit box.</p>
    <h2>Input</h2>
 
     <div id="cdin" contenteditable=true spellcheck="false"
-    style="overflow:auto;white-space:pre;">
+    style="overflow:auto;white-space:pre;"
+     >
 </div>
 </div>
 <div id="cdoutwrapper"
@@ -1675,7 +1690,7 @@ padding:0.5em; min-height:50em;
  </div>
 </div>
 <script>
-samplecd();
+//samplecd();
 </script>
  </body>
 </html>
