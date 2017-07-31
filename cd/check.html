@@ -338,7 +338,7 @@ function vTextOnly(e) {
 
 function vNoAttributes(e) {
     var atts = e.attributes;
-    err="";
+    var err="";
     for (var j=0;j<atts.length;j++){
 	if(atts[j].localName!='xmlns' && (!atts[j].name.startsWith("xmlns:")))
 	   err += " (Unexpected attribute: " + atts[j].localName + ")";
@@ -346,6 +346,16 @@ function vNoAttributes(e) {
     return err;
 }
 
+
+function vsNoText(n) {
+    var els=n.childNodes;
+    var err="";
+    for(var j=0;j<els.length; j++ ) {
+	if(els[j].nodeType==3 && (! els[j].nodeValue.match(/^\s*$/))) err+=" (Unexpected text: " + els[j].nodeValue +")";
+    }
+    return err;
+}
+    
 function vOut(err,t){
     cdout.innerHTML = cdout.innerHTML +
 	"<p" + (err=="" ? "": " class='err'") +">" + t + err + "</p>";
@@ -638,6 +648,7 @@ function vsOMA(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err+=vsNoText(e);
     var els=vChildren(e);
     for(var j=0;j<els.length;j++){
 	var c = els[j];
