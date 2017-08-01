@@ -23,7 +23,8 @@ Tools to use the RelaxNG schema include
   * nxml mode (emacs)
 
 ## Web Based Checking Tool.
-In addition to the grammar validators, this site offers an experimental
+In addition to the grammar validators, this site offers an experimental alternative:
+
 [OpenMath XML Syntax checking page](/cd/check.html).
 
 This implements a validator written in JavaScript and running directly in your browser.
@@ -33,7 +34,7 @@ from your system file manager on to the input box.
 The Javascript checks are loosely based on the constraints as specified in the RelaxNG Schema but
 Interleaved with an HTML presentation of the file, similar to that used for Content Dictionaries
 on this site. As such it is similar to the
-[XSLT based validator for OpenMath](https://github.com/OpenMath/CDSs/lib/xsl/omvalidate.xsl).
+[XSLT based validator for OpenMath](https://github.com/OpenMath/CDs/blob/master/lib/xsl/omvalidate.xsl).
 
 Using the Web interface allows more specific error reporting than possible with a generic validator
 and can, in principle, check details not specified in Grammarsm such as checking the existence of CD, or checking that symbol 
