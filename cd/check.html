@@ -15,6 +15,10 @@ restriction other than any restrictions required by appropriate laws.
     span.ome {border: solid thin red}
    .indent{margin-left:2em;}
     .indent p {margin:0em;padding:0em;}
+    .nav {background-color:blue; font-family:sans-serif;font-size:80%;
+	 color: white}
+    .nav a {color: white;text-decoration:none}
+    .nav a:hover {text-decoration:underline}
 
     @media (max-width:50em) {
     #cdinwrapper{width:95%;}
@@ -1640,14 +1644,16 @@ multiple of its arguments.\n\
 
 <div>
  <div style="width:5em;float:left;margin-right:1em;text-align:center">
-    <a href="/">
-    <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/><br/>
-    Home
-    </a>                
+    <a href="/"><img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/></a>
+    <br/>
+    <div class="nav">
+    <a href="/">OpenMath</a><br/>
+    <a href="/validation">Validation</a>
+    </div>
     </div>
 
     <h1>OpenMath XML Syntax Test Page</h1>
-    <div style="max-width:50em">
+    <div style="max-width:50em;clear:both">
     <p>The XML to be validated may be edited into the input box below directly,
 or by pasting in the text, or by dragging and dropping a file from your system file manager.</p>
     <p>OpenMath, CD, CDGroup and STS files are accepted.</p>
