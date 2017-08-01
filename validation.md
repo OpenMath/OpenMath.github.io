@@ -31,13 +31,14 @@ This implements a validator written in JavaScript and running directly in your b
 The XML to be checked may be edited in the page, or a file may be checked by dragging it 
 from your system file manager on to the input box.
 
-The Javascript checks are loosely based on the constraints as specified in the RelaxNG Schema but
-Interleaved with an HTML presentation of the file, similar to that used for Content Dictionaries
+The JavaScript checks are loosely based on the constraints as specified in the RelaxNG Schema but
+interleaved with an HTML presentation of the file, similar to that used for Content Dictionaries
 on this site. As such it is similar to the
-[XSLT based validator for OpenMath](https://github.com/OpenMath/CDs/blob/master/lib/xsl/omvalidate.xsl).
+[XSLT based validator for OpenMath](https://github.com/OpenMath/CDs/blob/master/lib/xsl/omvalidate.xsl)
+which was originally used as part of an online validation tool for the original OpenMath project site.
 
 Using the Web interface allows more specific error reporting than possible with a generic validator
-and can, in principle, check details not specified in Grammarsm such as checking the existence of CD, or checking that symbol 
+and can, in principle, check details not specified in grammars such as checking the existence of CD, or checking that symbol 
 names are not duplicated in CD files.
 
 
