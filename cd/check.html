@@ -67,6 +67,7 @@ var omDateRE= new RegExp(/^\s*[0-9]{4}-(0[1-9]|1[12])-(0[1-9]|[12][0-9]|3[01])\s
 function checkcd () {
     var cdout=document.getElementById("cdout");
     var sMyString = document.getElementById("cdin").textContent;
+
     var oParser = new DOMParser();
 
     var oDOM = oParser.parseFromString(sMyString, "text/xml");
@@ -924,7 +925,7 @@ function vsOMFOREIGN(e) {
 	case "encoding":
 	    break;
 	default:
-	    err+=" (U!nexpected attribute: " + atts[j].localName +")";
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
     var els=vChildren(e);
@@ -955,8 +956,8 @@ function vsOME(e) {
     err+=vsNoText(e);
     var els=vChildren(e);
     var u = "<span class='ome'>Error( ";
-    if (els.length != 0||els[0].localName=="OMS") {
-	err += "(Missing OMS)";
+    if (els.length == 0||els[0].localName!="OMS") {
+	err += " (Missing element OMS)";
     } else {
         u+=vsOMS(els[0]);
     }
