@@ -24,7 +24,7 @@ Tools to use the RelaxNG schema include
 
 ## Web Based Checking Tool.
 In addition to the grammar validators, this site offers an experimental
-[OpenMath XML Syntax checking page](/check.html).
+[OpenMath XML Syntax checking page](/cd/check.html).
 
 This implements a validator written in JavaScript and running directly in your browser.
 The XML to be checked may be edited in the page, or a file may be checked by dragging it 
