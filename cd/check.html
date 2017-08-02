@@ -505,7 +505,7 @@ function vName(e,ct) {
     if(CDDefs[thisn]==undefined){
 	CDDefs[thisn]=1;
     } else {
-	err+=" (Duplicate Definition)";
+	err+=" (Duplicate definition)";
     }
     err += vTestRE(e,omNameRE);
     vOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
@@ -624,8 +624,9 @@ function vCDDefinition (e) {
     var err="";
     err += vNoAttributes(e);
     err+=vsNoText(e);
-    vOut(err,"<b>CDDefinition:</b>");
+    vOut(err,"<b>CDDefinition</b>");
     if(err==""){
+	cdouttext+="<div class='indent'>";
 	var Namec=0;
 	var Rolec=0;
 	var Descriptionc=0;
@@ -658,6 +659,7 @@ function vCDDefinition (e) {
 		vErr(c);
 	    }
 	}
+	cdouttext+="</div>";
     }
 }
 
@@ -1650,6 +1652,11 @@ multiple of its arguments.\n\
   </OMA>\n\
 </OMOBJ>\n\
 </FMP>\n\
+</CDDefinition>\n\
+<CDDefinition>\n\
+ <Name> lcm </Name>\n\
+ <Role>application</Role>\n\
+ <Description> The symbol to represent the n-ary function to return the least common multiple of its arguments. </Description>\n\
 </CDDefinition>\n\
 </CD>\n\
 ';
