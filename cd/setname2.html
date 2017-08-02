@@ -799,7 +799,7 @@ The integers mod 12:
                      <button id="d40e301cmmla" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e301cmml')">Strict Content MathML</button>
                      <pre id="d40e301cmml" style="display:none; margin-top: 0.5em">
-&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn&gt;12&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;12&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
                   </div>
                   <button id="d40e301prefa" style="width:20em; background-color:#CCCCCC"
                           onclick="divfold('d40e301pref')">Prefix</button>
@@ -941,17 +941,17 @@ The integers mod m:
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
    &lt;semantics&gt;
-    &lt;cn&gt;4&lt;/cn&gt;
-    &lt;annotation-xml cd="sts" encoding="type"&gt;&lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn&gt;12&lt;/cn&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;annotation-xml cd="sts" encoding="type"&gt;&lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;12&lt;/cn&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
    &lt;/semantics&gt;
    &lt;semantics&gt;
-    &lt;cn&gt;5&lt;/cn&gt;
-    &lt;annotation-xml cd="sts" encoding="type"&gt;&lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn&gt;12&lt;/cn&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;annotation-xml cd="sts" encoding="type"&gt;&lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;12&lt;/cn&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
    &lt;/semantics&gt;
   &lt;/apply&gt;
   &lt;semantics&gt;
-   &lt;cn&gt;8&lt;/cn&gt;
-   &lt;annotation-xml cd="sts" encoding="type"&gt;&lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn&gt;12&lt;/cn&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
+   &lt;cn type="integer"&gt;8&lt;/cn&gt;
+   &lt;annotation-xml cd="sts" encoding="type"&gt;&lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;12&lt;/cn&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
   &lt;/semantics&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -1605,8 +1605,14 @@ This symbol represents an algebraic extension of any integral domain.
    &lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="polyu"&gt;poly_u_rep&lt;/csymbol&gt;
     &lt;ci&gt;x&lt;/ci&gt;
-    &lt;apply&gt;&lt;csymbol cd="polyu"&gt;term&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd="polyu"&gt;term&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyu"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyu"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
@@ -1954,15 +1960,15 @@ r_3 reals s.t.
     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;csymbol cd="setname2"&gt;H&lt;/csymbol&gt;&lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;csymbol cd="setname2"&gt;H&lt;/csymbol&gt;&lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
     &lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
     &lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
     &lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;

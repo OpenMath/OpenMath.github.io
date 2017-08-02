@@ -196,7 +196,7 @@
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;ci&gt;b&lt;/ci&gt;
   &lt;apply&gt;&lt;csymbol cd="list2"&gt;list_selector&lt;/csymbol&gt;
-   &lt;cn&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
@@ -295,11 +295,11 @@ $b = list2.list_selector(2, [$a , $b , $c])
                      <pre id="d40e79cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="list2"&gt;list_selector&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="list2"&gt;list_selector&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="list2"&gt;rest&lt;/csymbol&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
@@ -540,7 +540,11 @@ Specification of the first element of the list [1,2,3]
                      <pre id="d40e176cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="list2"&gt;first&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -755,7 +759,11 @@ Specification of the list [1,2,3], apart from the first element
                      <pre id="d40e240cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="list2"&gt;rest&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -1722,9 +1730,13 @@ The size of the list (3,6,9) = 3
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="list2"&gt;size&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;9&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
-  &lt;cn&gt;3&lt;/cn&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>

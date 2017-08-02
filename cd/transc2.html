@@ -1163,7 +1163,10 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;abs&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="transc2"&gt;arctan&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
    &lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+    &lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -1338,7 +1341,7 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
     &lt;/apply&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
-    &lt;cn&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
     &lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;
     &lt;csymbol cd="nums1"&gt;i&lt;/csymbol&gt;
    &lt;/apply&gt;
@@ -1484,7 +1487,10 @@ transc2.unwind($z) = ($z - ln(exp($z))) / (2 * nums1.pi * nums1.i)
      &lt;apply&gt;&lt;csymbol cd="complex1"&gt;imaginary&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
      &lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;
     &lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;
+    &lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
@@ -1767,10 +1773,10 @@ set1.in($z, setname1.C) ==&gt; set1.in(transc2.unwind($z), setname1.Z)
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;root&lt;/csymbol&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
        &lt;apply&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;
-        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
        &lt;/apply&gt;
       &lt;/apply&gt;
-      &lt;cn&gt;2&lt;/cn&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
      &lt;/apply&gt;
     &lt;/apply&gt;
    &lt;/apply&gt;

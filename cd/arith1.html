@@ -415,7 +415,7 @@ Integer and lcm(a,b) &gt; c.
     &lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
      &lt;bvar&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/bvar&gt;
      &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
-      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;cn type="integer"&gt;0&lt;/cn&gt;&lt;/apply&gt;
       &lt;apply&gt;&lt;csymbol cd="integer1"&gt;factorof&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
       &lt;apply&gt;&lt;csymbol cd="integer1"&gt;factorof&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
       &lt;apply&gt;&lt;csymbol cd="relation1"&gt;lt&lt;/csymbol&gt;
@@ -895,8 +895,11 @@ gcd(6,9) = 3
                      <pre id="d40e341cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;gcd&lt;/csymbol&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
-  &lt;cn&gt;3&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;gcd&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;6&lt;/cn&gt;
+   &lt;cn type="integer"&gt;9&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -1526,17 +1529,35 @@ The symbol representing an n-ary multiplication function.
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrix&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;/apply&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrix&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;7&lt;/cn&gt;&lt;cn&gt;8&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;5&lt;/cn&gt;
+     &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;7&lt;/cn&gt;
+     &lt;cn type="integer"&gt;8&lt;/cn&gt;
+    &lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrix&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;19&lt;/cn&gt;&lt;cn&gt;22&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;43&lt;/cn&gt;&lt;cn&gt;50&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;19&lt;/cn&gt;
+    &lt;cn type="integer"&gt;22&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;43&lt;/cn&gt;
+    &lt;cn type="integer"&gt;50&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -2414,7 +2435,7 @@ x\in C implies x^a = exp(a ln x)
   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;0&lt;/cn&gt;&lt;/apply&gt;
     &lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
@@ -2423,7 +2444,7 @@ x\in C implies x^a = exp(a ln x)
      &lt;ci&gt;x&lt;/ci&gt;
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
       &lt;ci&gt;x&lt;/ci&gt;
-      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
      &lt;/apply&gt;
     &lt;/apply&gt;
    &lt;/apply&gt;
@@ -2568,14 +2589,26 @@ x\in C implies x^a = exp(a ln x)
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrix&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;/apply&gt;
    &lt;/apply&gt;
-   &lt;cn&gt;3&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
   &lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrix&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;37&lt;/cn&gt;&lt;cn&gt;54&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;81&lt;/cn&gt;&lt;cn&gt;118&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;37&lt;/cn&gt;
+    &lt;cn type="integer"&gt;54&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;81&lt;/cn&gt;
+    &lt;cn type="integer"&gt;118&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -3345,10 +3378,13 @@ summed. Note that the sum may be over an infinite interval.
                      <pre id="d40e1304cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;10&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;10&lt;/cn&gt;
+  &lt;/apply&gt;
   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
-   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
   &lt;/bind&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -3493,7 +3529,7 @@ of all the integers between 1 and n inclusive.
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="integer1"&gt;factorial&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;product&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;&lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bind&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;

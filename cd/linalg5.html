@@ -414,7 +414,7 @@ A representation of the 2x2 identity matrix [[1,0],[0,1]]
                      <button id="d40e128cmmla" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e128cmml')">Strict Content MathML</button>
                      <pre id="d40e128cmml" style="display:none; margin-top: 0.5em">
-&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="linalg5"&gt;identity&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="linalg5"&gt;identity&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
                   </div>
                   <button id="d40e128prefa" style="width:20em; background-color:#CCCCCC"
                           onclick="divfold('d40e128pref')">Prefix</button>
@@ -1003,7 +1003,12 @@ A representation of the 2x2 zero matrix [[0,0],[0,0]]
                      <button id="d40e331cmmla" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e331cmml')">Strict Content MathML</button>
                      <pre id="d40e331cmml" style="display:none; margin-top: 0.5em">
-&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="linalg5"&gt;zero&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;zero&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;cn type="integer"&gt;2&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
                   </div>
                   <button id="d40e331prefa" style="width:20em; background-color:#CCCCCC"
                           onclick="divfold('d40e331pref')">Prefix</button>
@@ -1130,7 +1135,11 @@ The diagonal matrix with diagonal elements [1,2,3]
                              onclick="divfold('d40e363cmml')">Strict Content MathML</button>
                      <pre id="d40e363cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
- &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;diagonal_matrix&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;diagonal_matrix&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
+ &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
                   <button id="d40e363prefa" style="width:20em; background-color:#CCCCCC"
@@ -1379,7 +1388,10 @@ the third specifies the scalar multiplier.
                              onclick="divfold('d40e433cmml')">Strict Content MathML</button>
                      <pre id="d40e433cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
- &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;scalar&lt;/csymbol&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn type="real"&gt;1.5&lt;/cn&gt;&lt;/apply&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;scalar&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;4&lt;/cn&gt;
+  &lt;cn type="real"&gt;1.5&lt;/cn&gt;
+ &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
                   <button id="d40e433prefa" style="width:20em; background-color:#CCCCCC"
@@ -1740,25 +1752,29 @@ A specification of the (2,1) banded matrix:
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;banded&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;4&lt;/cn&gt;
-    &lt;cn&gt;8&lt;/cn&gt;
-    &lt;cn&gt;12&lt;/cn&gt;
-    &lt;cn&gt;15&lt;/cn&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;8&lt;/cn&gt;
+    &lt;cn type="integer"&gt;12&lt;/cn&gt;
+    &lt;cn type="integer"&gt;15&lt;/cn&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;1&lt;/cn&gt;
-    &lt;cn&gt;5&lt;/cn&gt;
-    &lt;cn&gt;9&lt;/cn&gt;
-    &lt;cn&gt;13&lt;/cn&gt;
-    &lt;cn&gt;16&lt;/cn&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;cn type="integer"&gt;9&lt;/cn&gt;
+    &lt;cn type="integer"&gt;13&lt;/cn&gt;
+    &lt;cn type="integer"&gt;16&lt;/cn&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;2&lt;/cn&gt;
-    &lt;cn&gt;6&lt;/cn&gt;
-    &lt;cn&gt;10&lt;/cn&gt;
-    &lt;cn&gt;14&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;10&lt;/cn&gt;
+    &lt;cn type="integer"&gt;14&lt;/cn&gt;
    &lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;7&lt;/cn&gt;&lt;cn&gt;11&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;7&lt;/cn&gt;
+    &lt;cn type="integer"&gt;11&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -2345,14 +2361,21 @@ An example to represent the symmetric matrix:
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;symmetric&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;1&lt;/cn&gt;
-    &lt;cn&gt;2&lt;/cn&gt;
-    &lt;cn&gt;3&lt;/cn&gt;
-    &lt;cn&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
    &lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;7&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;8&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;10&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;7&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;8&lt;/cn&gt;
+    &lt;cn type="integer"&gt;9&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn type="integer"&gt;10&lt;/cn&gt;&lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -2761,9 +2784,16 @@ An example to represent the skew-symmetric matrix:
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;skew-symmetric&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;7&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;7&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn type="integer"&gt;9&lt;/cn&gt;&lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -3072,11 +3102,20 @@ An example to describe the Hermitian matrix:
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;Hermitian&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="complex1"&gt;complex_cartesian&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd="complex1"&gt;complex_cartesian&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="complex1"&gt;complex_cartesian&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="complex1"&gt;complex_cartesian&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="complex1"&gt;complex_cartesian&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="complex1"&gt;complex_cartesian&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
@@ -3353,7 +3392,10 @@ An example to describe the anti-Hermitian matrix:
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;anti-Hermitian&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="complex1"&gt;complex_cartesian&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="complex1"&gt;complex_cartesian&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
@@ -3642,9 +3684,16 @@ An example to describe the upper triangular matrix:
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;upper-triangular&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn type="integer"&gt;6&lt;/cn&gt;&lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -3938,9 +3987,16 @@ An example to describe the lower triangular matrix:
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;lower-triangular&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -4116,25 +4172,29 @@ A specification of an upper-Hessenberg matrix of dimension 5:
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;upper-Hessenberg&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;4&lt;/cn&gt;
-    &lt;cn&gt;8&lt;/cn&gt;
-    &lt;cn&gt;12&lt;/cn&gt;
-    &lt;cn&gt;15&lt;/cn&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;8&lt;/cn&gt;
+    &lt;cn type="integer"&gt;12&lt;/cn&gt;
+    &lt;cn type="integer"&gt;15&lt;/cn&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;1&lt;/cn&gt;
-    &lt;cn&gt;5&lt;/cn&gt;
-    &lt;cn&gt;9&lt;/cn&gt;
-    &lt;cn&gt;13&lt;/cn&gt;
-    &lt;cn&gt;16&lt;/cn&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;cn type="integer"&gt;9&lt;/cn&gt;
+    &lt;cn type="integer"&gt;13&lt;/cn&gt;
+    &lt;cn type="integer"&gt;16&lt;/cn&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;2&lt;/cn&gt;
-    &lt;cn&gt;6&lt;/cn&gt;
-    &lt;cn&gt;10&lt;/cn&gt;
-    &lt;cn&gt;14&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;10&lt;/cn&gt;
+    &lt;cn type="integer"&gt;14&lt;/cn&gt;
    &lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;7&lt;/cn&gt;&lt;cn&gt;11&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;7&lt;/cn&gt;
+    &lt;cn type="integer"&gt;11&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -4473,25 +4533,29 @@ A specification of a lower-Hessenberg matrix of dimension 5:
  &lt;apply&gt;&lt;csymbol cd="linalg5"&gt;lower-Hessenberg&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;2&lt;/cn&gt;
-    &lt;cn&gt;5&lt;/cn&gt;
-    &lt;cn&gt;9&lt;/cn&gt;
-    &lt;cn&gt;13&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;cn type="integer"&gt;9&lt;/cn&gt;
+    &lt;cn type="integer"&gt;13&lt;/cn&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;1&lt;/cn&gt;
-    &lt;cn&gt;4&lt;/cn&gt;
-    &lt;cn&gt;8&lt;/cn&gt;
-    &lt;cn&gt;12&lt;/cn&gt;
-    &lt;cn&gt;16&lt;/cn&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;8&lt;/cn&gt;
+    &lt;cn type="integer"&gt;12&lt;/cn&gt;
+    &lt;cn type="integer"&gt;16&lt;/cn&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
-    &lt;cn&gt;3&lt;/cn&gt;
-    &lt;cn&gt;7&lt;/cn&gt;
-    &lt;cn&gt;11&lt;/cn&gt;
-    &lt;cn&gt;15&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;7&lt;/cn&gt;
+    &lt;cn type="integer"&gt;11&lt;/cn&gt;
+    &lt;cn type="integer"&gt;15&lt;/cn&gt;
    &lt;/apply&gt;
-   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;10&lt;/cn&gt;&lt;cn&gt;14&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;10&lt;/cn&gt;
+    &lt;cn type="integer"&gt;14&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -4852,17 +4916,17 @@ and the super-diagonal in that order.
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
-   &lt;cn&gt;3&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
   &lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;
-     &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
     &lt;/apply&gt;
-    &lt;cn&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;

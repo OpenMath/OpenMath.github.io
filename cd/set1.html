@@ -622,9 +622,12 @@ x ranges over the integral interval [0,10].
  &lt;apply&gt;&lt;csymbol cd="set1"&gt;map&lt;/csymbol&gt;
   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
-   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
   &lt;/bind&gt;
-  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;10&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;cn type="integer"&gt;10&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -765,9 +768,13 @@ The size of the set{3,6,9} = 3
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="set1"&gt;size&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;9&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
-  &lt;cn&gt;3&lt;/cn&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -987,7 +994,7 @@ the suchthat constructor.
   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
     &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
    &lt;/apply&gt;
   &lt;/bind&gt;
@@ -1117,7 +1124,11 @@ The set {3, 6, 9}
                              onclick="divfold('d40e337cmml')">Strict Content MathML</button>
                      <pre id="d40e337cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
- &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;cn type="integer"&gt;6&lt;/cn&gt;
+  &lt;cn type="integer"&gt;9&lt;/cn&gt;
+ &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
                   <button id="d40e337prefa" style="width:20em; background-color:#CCCCCC"
@@ -2257,8 +2268,12 @@ set1.in($a, $A) ==&gt;  not(set1.notin($a, $A))
                      <pre id="d40e744cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="set1"&gt;notin&lt;/csymbol&gt;
-  &lt;cn&gt;4&lt;/cn&gt;
-  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;cn type="integer"&gt;4&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -2495,8 +2510,15 @@ set1.prsubset($A, $B) ==&gt; set1.subset($A, $B) and $A != $B
                      <pre id="d40e830cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="set1"&gt;prsubset&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
-  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -2764,8 +2786,16 @@ set1.notsubset($A, $B) ==&gt; quant1.exists[$x -&gt; set1.in($x, $B) and set1.no
                      <pre id="d40e933cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="set1"&gt;notsubset&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
-  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;cn type="integer"&gt;4&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -3001,8 +3031,16 @@ set1.notprsubset($A, $B) ==&gt;  not(set1.prsubset($A, $B))
                      <pre id="d40e1020cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="set1"&gt;notprsubset&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
-  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
