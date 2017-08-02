@@ -177,6 +177,7 @@ function vCDGroup(e) {
     //    cdout.innerHTML = cdout.innerHTML
 	+ u;
     var els=vChildren(e);
+    CDDefs = [];
     var CDGNamec=0;
     var CDGURLc=0;
     var CDGVersionc=0;
@@ -227,7 +228,7 @@ function vCDGroupMember (e) {
 	j++;
     }
     if (els.length>j && els[j].localName=='CDName') {
-	u+=vsTextOne(els[j],1,omNameRE);
+	u+=vsCDGMCDName(els[j]);
 	j++;
     } else {
 	vsErr(els[j]);
@@ -493,6 +494,21 @@ function vsTextOne(e,ct,re) {
     err += vTextOnly(e);
     if (ct != 1) err += " (Multiple " + e.localName +")";
     err += vTestRE(e,re);
+    return vsOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
+}
+
+
+function vsCDGMCDName(e) {
+    var err="";
+    err += vNoAttributes(e);
+    err += vTextOnly(e);
+    err += vTestRE(e,omNameRE);
+    var thisn=e.textContent.trim();
+    if(CDDefs[thisn]==undefined){
+	CDDefs[thisn]=1;
+    } else {
+	err+=" (Duplicate CD Group Member)";
+    }
     return vsOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
 }
 
@@ -1357,6 +1373,10 @@ document.getElementById("cdin").textContent='\n\
 <CDName>mathmltypes</CDName>\n\
 <CDURL>http://www.openmath.org/cd/mathmltypes.ocd</CDURL>\n\
 </CDGroupMember>\n\
+<CDComment>Minima and maxima</CDComment>\n\
+<CDGroupMember>\n\
+<CDName>minmax1</CDName>\n\
+<CDURL>http://www.openmath.org/cd/minmax1.ocd</CDURL></CDGroupMember>\n\
 <CDComment>Minima and maxima</CDComment>\n\
 <CDGroupMember>\n\
 <CDName>minmax1</CDName>\n\
