@@ -220,7 +220,11 @@ The specific vector constructed in this example is [3,6,9].
                              onclick="divfold('d40e51cmml')">Strict Content MathML</button>
                      <pre id="d40e51cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
- &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;cn type="integer"&gt;6&lt;/cn&gt;
+  &lt;cn type="integer"&gt;9&lt;/cn&gt;
+ &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
                   <button id="d40e51prefa" style="width:20em; background-color:#CCCCCC"
@@ -327,7 +331,12 @@ Representation of a row of a matrix of length two containing the integers
                      <button id="d40e83cmmla" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e83cmml')">Strict Content MathML</button>
                      <pre id="d40e83cmml" style="display:none; margin-top: 0.5em">
-&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;cn type="integer"&gt;0&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
                   </div>
                   <button id="d40e83prefa" style="width:20em; background-color:#CCCCCC"
                           onclick="divfold('d40e83pref')">Prefix</button>
@@ -444,8 +453,14 @@ Representation of a 2x2 identity matrix
                      <pre id="d40e112cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrix&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
-  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;0&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;matrixrow&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>

@@ -228,8 +228,8 @@ covered in the encodings of integers.
                      <pre id="d40e51cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-  &lt;cn&gt;8&lt;/cn&gt;
-  &lt;apply&gt;&lt;csymbol cd="nums1"&gt;based_integer&lt;/csymbol&gt;&lt;cn&gt;8&lt;/cn&gt;&lt;cs&gt; 10 &lt;/cs&gt;&lt;/apply&gt;
+  &lt;cn type="integer"&gt;8&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="nums1"&gt;based_integer&lt;/csymbol&gt;&lt;cn type="integer"&gt;8&lt;/cn&gt;&lt;cs&gt; 10 &lt;/cs&gt;&lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -333,7 +333,12 @@ A representation of the rational number 1/2
                      <button id="d40e86cmmla" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('d40e86cmml')">Strict Content MathML</button>
                      <pre id="d40e86cmml" style="display:none; margin-top: 0.5em">
-&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="nums1"&gt;rational&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="nums1"&gt;rational&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;cn type="integer"&gt;2&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
                   </div>
                   <button id="d40e86prefa" style="width:20em; background-color:#CCCCCC"
                           onclick="divfold('d40e86pref')">Prefix</button>
@@ -810,7 +815,10 @@ i^2 = -1
                      <pre id="d40e238cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;csymbol cd="nums1"&gt;i&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+   &lt;csymbol cd="nums1"&gt;i&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -982,7 +990,7 @@ pi = 4 * the sum as j ranges from 0 to infinity of ((1/(4j+1))-(1/(4j+3)))
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
-   &lt;cn&gt;4&lt;/cn&gt;
+   &lt;cn type="integer"&gt;4&lt;/cn&gt;
    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
      &lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;
@@ -994,15 +1002,15 @@ pi = 4 * the sum as j ranges from 0 to infinity of ((1/(4j+1))-(1/(4j+3)))
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
        &lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;
        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
-        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/apply&gt;
+        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn type="integer"&gt;4&lt;/cn&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/apply&gt;
         &lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;
        &lt;/apply&gt;
       &lt;/apply&gt;
       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
        &lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;
        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
-        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/apply&gt;
-        &lt;cn&gt;3&lt;/cn&gt;
+        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;cn type="integer"&gt;4&lt;/cn&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/apply&gt;
+        &lt;cn type="integer"&gt;3&lt;/cn&gt;
        &lt;/apply&gt;
       &lt;/apply&gt;
      &lt;/apply&gt;
@@ -1296,7 +1304,7 @@ as m tends to infinity, this is approximately 0.5772 15664.
       &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
       &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
        &lt;bvar&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/bvar&gt;
-       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/apply&gt;
       &lt;/bind&gt;
      &lt;/apply&gt;
      &lt;apply&gt;&lt;csymbol cd="transc1"&gt;ln&lt;/csymbol&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;

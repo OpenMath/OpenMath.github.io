@@ -426,7 +426,7 @@ For all n 1 + 2 + ... + n = n(n+1)/2.
    &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
     &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="list1"&gt;make_list&lt;/csymbol&gt;
-     &lt;cn&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
      &lt;ci&gt;n&lt;/ci&gt;
      &lt;csymbol cd="fns1"&gt;identity&lt;/csymbol&gt;
     &lt;/apply&gt;
@@ -434,9 +434,9 @@ For all n 1 + 2 + ... + n = n(n+1)/2.
    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
      &lt;ci&gt;n&lt;/ci&gt;
-     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
     &lt;/apply&gt;
-    &lt;cn&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/bind&gt;
@@ -573,11 +573,11 @@ One may form a set in the following way. This gives the set {1^2, 2^2,
  &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
   &lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="list1"&gt;make_list&lt;/csymbol&gt;
-   &lt;cn&gt;1&lt;/cn&gt;
-   &lt;cn&gt;10&lt;/cn&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;10&lt;/cn&gt;
    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
     &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
-    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
    &lt;/bind&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;

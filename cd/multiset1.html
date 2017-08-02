@@ -235,9 +235,13 @@ The size of the multiset{3,3,9} = 3
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;size&lt;/csymbol&gt;
-   &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;9&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;9&lt;/cn&gt;
+   &lt;/apply&gt;
   &lt;/apply&gt;
-  &lt;cn&gt;3&lt;/cn&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -678,11 +682,11 @@ The multiset {4, 1, 0, 1 4}
                      <pre id="d40e191cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
-  &lt;cn&gt;4&lt;/cn&gt;
-  &lt;cn&gt;1&lt;/cn&gt;
-  &lt;cn&gt;0&lt;/cn&gt;
-  &lt;cn&gt;1&lt;/cn&gt;
-  &lt;cn&gt;4&lt;/cn&gt;
+  &lt;cn type="integer"&gt;4&lt;/cn&gt;
+  &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;cn type="integer"&gt;0&lt;/cn&gt;
+  &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;cn type="integer"&gt;4&lt;/cn&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -1743,12 +1747,12 @@ used to denote that the element is not in the given multiset.
                      <pre id="d40e569cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;notin&lt;/csymbol&gt;
-  &lt;cn&gt;4&lt;/cn&gt;
+  &lt;cn type="integer"&gt;4&lt;/cn&gt;
   &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
-   &lt;cn&gt;1&lt;/cn&gt;
-   &lt;cn&gt;1&lt;/cn&gt;
-   &lt;cn&gt;2&lt;/cn&gt;
-   &lt;cn&gt;3&lt;/cn&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
@@ -1880,8 +1884,15 @@ a subset of the second multiset but not actually equal to it.
                      <pre id="d40e612cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;prsubset&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
-  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -2022,8 +2033,16 @@ that the first multiset is not a subset of the second.
                      <pre id="d40e661cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;notsubset&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
-  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -2168,8 +2187,16 @@ actually equal to it.
                      <pre id="d40e712cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;notprsubset&lt;/csymbol&gt;
-  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
-  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="multiset1"&gt;multiset&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
