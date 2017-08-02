@@ -66,10 +66,13 @@ var omNameRE= new RegExp(/^\s*[^0-9\.!@#:;<>()+=,%\$"'?/\\|{}\[\] \t\n\r][^\.!@#
 var omURLRE= new RegExp(/^\s*[a-z]+:\/\/[^ ]*\s*$/);
 var omDateRE= new RegExp(/^\s*[0-9]{4}-(0[1-9]|1[12])-(0[1-9]|[12][0-9]|3[01])\s*$/);
 
+// output text built as a string
+var cdouttext="";
 
 // code for the check button
 function checkcd () {
     var cdout=document.getElementById("cdout");
+    var CDDefs;
     var sMyString = document.getElementById("cdin").textContent;
 
     var oParser = new DOMParser();
@@ -312,6 +315,7 @@ function vCD(e) {
     err+=vsNoText(e);
     vOut(err,"<b>OpenMath Content Dictionary</b>");
     var els=vChildren(e);
+    CDDefs = [];
     var CDNamec=0;
     var CDURLc=0;
     var CDBasec=0;
@@ -492,6 +496,20 @@ function vsTextOne(e,ct,re) {
     return vsOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
 }
 
+function vName(e,ct) {
+    var err="";
+    err += vNoAttributes(e);
+    err += vTextOnly(e);
+    if (ct != 1) err += " (Multiple " + e.localName +")";
+    var thisn=e.textContent.trim();
+    if(CDDefs[thisn]==undefined){
+	CDDefs[thisn]=1;
+    } else {
+	err+=" (Duplicate Definition)";
+    }
+    err += vTestRE(e,omNameRE);
+    vOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
+}
 
 function vCDuses (e) {
     var err="";
@@ -616,7 +634,7 @@ function vCDDefinition (e) {
 	    var c=els[j];
 	    switch(c.localName) {
 	    case "Name":
-		vTextOne(c,++Namec,omNameRE);
+		vName(c,++Namec);
 		break;
 	    case "Role":
 		vTextOne(c,++Rolec,/^\s*(binder|attribution|semantic-attribution|error|application|constant)\s*$/);
