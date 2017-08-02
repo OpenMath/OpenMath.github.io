@@ -58,6 +58,7 @@ var cdns="http://www.openmath.org/OpenMathCD";
 var cdsns="http://www.openmath.org/OpenMathCDS";
 var cdgns="http://www.openmath.org/OpenMathCDG";
 var omns="http://www.openmath.org/OpenMath";
+var mmlns="http://www.w3.org/1998/Math/MathML";
 
 // regular expressions
    
@@ -149,6 +150,14 @@ function vroot (o) {
 		// cdout.innerHTML = cdout.innerHTML
 		    + "<p class='err'>Bad root element: should be OMOBJ</p>";
 	    }
+	} else if (els[0].namespaceURI == mmlns) {
+	    if (els[0].localName=="math") {
+		vMMLmath(els[0]);
+	    } else {
+		cdouttext = cdouttext
+		// cdout.innerHTML = cdout.innerHTML
+		    + "<p class='err'>Bad root element: should be math</p>";
+	    }
 	} else {
 	    cdouttext = cdouttext
 	    // cdout.innerHTML = cdout.innerHTML
@@ -157,7 +166,8 @@ function vroot (o) {
 		cdns + "<br>  " +
 		cdgns + "<br>  " +
 		cdsns + "<br>  " +
-		omns + 
+		omns + "<br>  " +
+		mmlns + 
 		"</p>";
 	}
     } else {
@@ -1191,6 +1201,160 @@ function vsOMR(e) {
     }
 }
 
+
+// mathml
+
+function vMMLmath(e) {
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "version":
+	case "cdbase":
+	case "xmlns":
+	    break;
+	default:
+	    if(! atts[j].name.startsWith("xmlns:")) {
+		err+=" (Unexpected attribute: " + atts[j].localName +")";
+	    }
+	}
+    }
+    vOut(err,"<b>Strict Content MathML</b> (validation only partially implemented)");
+    var u="";
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "xmlns":
+	    break;
+	default:
+	    if(! atts[j].name.startsWith("xmlns:")) {
+		err+=" (Unexpected attribute: " + atts[j].localName +")";
+	    }
+	}
+    }
+    var els=vChildren(e);
+    for(var j=0;j<els.length;j++){
+	var c = els[j];
+	u+=vsMMLel(c);
+	if(j==0){
+	    u+= "(";
+	} else if (j<els.length -1) {
+	    u+=", ";
+	}
+    }
+    u+=")";
+   vOut(err,u);
+
+}
+
+function vsMMLel (e) {
+    var u="";
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "xmlns":
+	    break;
+	default:
+	    if(! atts[j].name.startsWith("xmlns:")) {
+		err+=" (Unexpected attribute: " + atts[j].localName +")";
+	    }
+	}
+    }
+    u+=e.localName;
+    var els=vChildren(e);
+    if(els.length>0) {
+	u+=" (";
+	for(var j=0;j<els.length;j++){
+	    var c = els[j];
+	    switch(c.localName) {
+	    case "mfrac":
+	    case "mfenced":
+	    case "mn":
+	    case "mi":
+	    case "mrow":
+		u+=vsSpanOut("(Presentation MathML: " + c.localName +")","");
+		break;
+	    case "sin":
+	    case "cos":
+		u+=vsSpanOut("(Not Strict Content MathML: " + c.localName +")","");
+		break;
+	    case "csymbol":
+		u+=vsMMLcsymbol(c);
+		break;
+	    case "cn":
+		u+=vsMMLcn(c);
+		break;
+	    default:
+		u+=vsMMLel(c);
+	    }
+	    if (j<els.length -1) {
+		u+=", ";
+	    }
+	}
+	u+=")";
+    }
+    return vsSpanOut(err,u);
+}
+
+
+function vsMMLcsymbol(e) {
+    var err="";
+    var n="";
+    var cd="";
+    var nc=0;
+    var cdc=0;
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "cdbase":
+	    break;
+	case "cd":
+	    cdc++;
+	    cd=atts[j].value;
+	    err+=(cd.match(omNameRE)?"":" (Invalid name)");
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    n=e.textContent;
+    err+=(n.match(omNameRE)?"":" (Invalid name)");
+    if (cdc==0) err += " (Missing attribute: cd)";
+    if(err=="") {
+	return ("<a href='../cd/" + cd +"'>" + n + "</a>");
+    } else {
+	return vsSpanOut(err,n);
+    }
+}
+
+function vsMMLcn(e) {
+    var err="";
+    var n="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	case "type":
+	    var ty=atts[j].value;
+	    err+=(ty.match("^\s*(integer|real|double|hexdouble)\s*$")?"":" (Invalid cn type)");
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    n=e.textContent;
+    return vsSpanOut(err,n);
+}
+
+// form button codes
+
 function clearcdin() {
     document.getElementById("cdin").textContent="";
     var cdoutwrapper=document.getElementById("cdoutwrapper");
@@ -1684,6 +1848,58 @@ multiple of its arguments.\n\
 ';
 }
 
+function samplemml() {
+document.getElementById("cdin").textContent='\n\
+<math xmlns="http://www.w3.org/1998/Math/MathML">\n\
+ <apply><csymbol cd="list1">list</csymbol>\n\
+\n\
+  <apply><csymbol cd="relation1">eq</csymbol>\n\
+  <apply><csymbol cd="integer1">factorial</csymbol><ci x="y">n</ci></apply>\n\
+  <apply><csymbol cd="arith1">product</csymbol>\n\
+   <apply><csymbol cd="interval1">integer_interval</csymbol><cn type="integer">1</cn><ci>n</ci></apply>\n\
+   <bind><csymbol cd="fns1">lambda</csymbol><bvar><ci>i</ci></bvar><ci>i</ci></bind>\n\
+  </apply>\n\
+ </apply>\n\
+\n\
+<mfrac><mi>a</mi><mn>2</mn></mfrac>\n\
+\n\
+ <apply><csymbol cd="logic1">implies</csymbol>\n\
+  <apply><csymbol cd="set1">in</csymbol><ci>x</ci><csymbol cd="setname1">C</csymbol></apply>\n\
+  <apply><csymbol cd="relation1">eq</csymbol>\n\
+   <apply><csymbol cd="arith1">root</csymbol><ci>x</ci><ci>n</ci></apply>\n\
+   <apply><csymbol cd="transc1">exp</csymbol>\n\
+    <apply><csymbol cd="arith1">divide</csymbol>\n\
+     <apply><csymbol cd="transc1">ln</csymbol><ci>x</ci></apply>\n\
+     <ci>n</ci>\n\
+    </apply>\n\
+   </apply>\n\
+  </apply>\n\
+ </apply>\n\
+\n\
+<apply><csymbol cd="relation1">eq</csymbol>\n\
+  <apply>\n\
+   <apply><csymbol cd="calculus1">partialdiff</csymbol>\n\
+    <apply><csymbol cd="list1">list</csymbol>\n\
+     <cn type="integer">1</cn>\n\
+     <cn type="integer">3</cn>\n\
+    </apply>\n\
+    <bind><csymbol cd="fns1">lambda</csymbol>\n\
+     <bvar><ci>x</ci></bvar>\n\
+     <bvar><ci>y</ci></bvar>\n\
+     <bvar><ci>z</ci></bvar>\n\
+     <apply><csymbol cd="arith1">times</csymbol><ci>x</ci><ci>y</ci><ci>z</ci></apply>\n\
+    </bind>\n\
+   </apply>\n\
+   <ci>y</ci>\n\
+  </apply>\n\
+  <ci>y</ci>\n\
+</apply>\n\
+\n\
+ </apply>\n\
+</math>\n\
+';
+}
+
 </script>
  </head>
     <body>
@@ -1711,6 +1927,7 @@ or by pasting in the text, or by dragging and dropping a file from your system f
   <input type="button" onclick="samplecdg()" value="Sample CDG"></input>
   <input type="button" onclick="sampleom()" value="Sample OM"></input>
   <input type="button" onclick="samplests()" value="Sample STS"></input>
+  <input type="button" onclick="samplemml()" value="Sample MML"></input>
     </p>
     <p>
   <input type="button" onclick="clearcdin()" value="Clear Form"></input>
