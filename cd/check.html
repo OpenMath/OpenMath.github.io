@@ -286,6 +286,7 @@ function vCDSignatures(e) {
     //    cdout.innerHTML = cdout.innerHTML
 	+ u;
     var els=vChildren(e);
+    CDDefs = [];
     var CDSStatusc=0;
     var CDSRDatec=0;
     var CDSRevisionc=0;
@@ -504,10 +505,10 @@ function vsCDGMCDName(e) {
     err += vTextOnly(e);
     err += vTestRE(e,omNameRE);
     var thisn=e.textContent.trim();
-    if(CDDefs[thisn]==undefined){
-	CDDefs[thisn]=1;
+    if(CDDefs[thisn]==1){
+	err+=" (Duplicate CD group member)";
     } else {
-	err+=" (Duplicate CD Group Member)";
+	CDDefs[thisn]=1;
     }
     return vsOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
 }
@@ -518,10 +519,10 @@ function vName(e,ct) {
     err += vTextOnly(e);
     if (ct != 1) err += " (Multiple " + e.localName +")";
     var thisn=e.textContent.trim();
-    if(CDDefs[thisn]==undefined){
-	CDDefs[thisn]=1;
-    } else {
+    if(CDDefs[thisn]==1){
 	err+=" (Duplicate definition)";
+    } else {
+	CDDefs[thisn]=1;
     }
     err += vTestRE(e,omNameRE);
     vOut(err,"<b>" + e.localName + ":</b> " +e.innerHTML);
@@ -612,6 +613,12 @@ function vSignature (e) {
 	if(atts[j].localName="name"){
 	    k= " (" + atts[j].value +")";
 	    err+=atts[j].value.match(omNameRE)?"":" (Invalid name)";
+	    var thisn=atts[j].value.trim();
+	    if(CDDefs[thisn]==1){
+		err+=" (Duplicate signature)";
+	    } else {
+		CDDefs[thisn]=1;
+	    }
 	} else {
 	    err += " (Unexpected attribute: " + atts[j].localName +")";
 	}
@@ -1565,7 +1572,7 @@ Based on Set1 STS file\n\
 </OMOBJ>\n\
 </Signature>\n\
 \n\
-<Signature name="notin" >\n\
+<Signature name="union" >\n\
 <OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
  <OMA>\n\
    <OMS name="mapsto" cd="sts" />\n\
@@ -1596,11 +1603,6 @@ Based on Set1 STS file\n\
     <OMV name="Set" />\n\
     <OMS cd="setname2" name="Boolean" />\n\
  </OMA>\n\
-</OMOBJ>\n\
-</Signature>\n\
-\n\
-<Signature name="notprsubset" >\n\
-<OMOBJ xmlns="http://www.openmath.org/OpenMath"> \n\
  <OMA>\n\
    <OMS name="mapsto" cd="sts" />\n\
     <OMV name="Set" />\n\
