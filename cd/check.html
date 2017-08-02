@@ -1274,13 +1274,42 @@ function vsMMLel (e) {
 	    switch(c.localName) {
 	    case "mfrac":
 	    case "mfenced":
+	    case "mo":
 	    case "mn":
 	    case "mi":
+	    case "ms":
+	    case "mtext":
+	    case "mstyle":
+	    case "mpadded":
+	    case "mphantom":
+	    case "menclose":
+	    case "mstack":
+	    case "mlongdiv":
+	    case "maction":
+	    case "mglyph":
+	    case "mspace":
+	    case "msub":
+	    case "msup":
+	    case "msubsup":
+	    case "mover":
+	    case "munder":
+	    case "munderover":
+	    case "msqrt":
+	    case "mtable":
+	    case "malign":
 	    case "mrow":
 		u+=vsSpanOut("(Presentation MathML: " + c.localName +")","");
 		break;
-	    case "sin":
-	    case "cos":
+	    case "forall": case "exists":
+	    case "eq": case "gt": case "lt": case "geq": case "leq":
+	    case "sum": case "product":
+	    case "limit":
+	    case "sin": case "cos": case "tan": case "sec": case "csc": case "cot": case "sinh": case "cosh": case "tanh": case "sech": case "csch": case "coth": case "arcsin": case "arccos": case "arctan": case "arccosh": case "arccot": case "arccoth": case "arccsc": case "arccsch": case "arcsec": case "arcsech": case "arcsinh": case "arctanh":
+	    case "mean": case "sdev": case "variance": case "median": case "mode":
+	    case "vector": case "matrix":
+	    case "vectorproduct": case "scalarproduct": case "outerproduct":
+	    case "integers": case "reals": case "rationals": case "naturalnumbers": case "complexes": case "primes": case "emptyset":
+	    case "exponentiale": case "imaginaryi": case "notanumber": case "true": case "false": case "pi": case "eulergamma": case "infinity":
 		u+=vsSpanOut("(Not Strict Content MathML: " + c.localName +")","");
 		break;
 	    case "csymbol":
@@ -1289,8 +1318,16 @@ function vsMMLel (e) {
 	    case "cn":
 		u+=vsMMLcn(c);
 		break;
-	    default:
+	    case "ci":
+		u+=vsMMLci(c);
+		break;
+	    case "apply":
+	    case "bind":
+	    case "bvar":
 		u+=vsMMLel(c);
+		break;
+	    default:
+		u+=vsErr(c);
 	    }
 	    if (j<els.length -1) {
 		u+=", ";
@@ -1351,6 +1388,25 @@ function vsMMLcn(e) {
     }
     n=e.textContent;
     return vsSpanOut(err,n);
+}
+function vsMMLci(e) {
+    var err="";
+    var n="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	case "type":
+	    var ty=atts[j].value;
+	    err+=(ty.match("^\s*(integer|rational|real|complex(-(polar|cartesian))?|constant|function|vector|list|set|matrix)\s*$")?"":" (Invalid ci type)");
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    n=e.textContent;
+    return vsSpanOut(err,"<i>"+n+"</i>");
 }
 
 // form button codes
@@ -1919,7 +1975,8 @@ document.getElementById("cdin").textContent='\n\
     <div style="max-width:50em;clear:both">
     <p>The XML to be validated may be edited into the input box below directly,
 or by pasting in the text, or by dragging and dropping a file from your system file manager.</p>
-    <p>OpenMath, CD, CDGroup and STS files are accepted.</p>
+    <p>OpenMath, CD, CDGroup and STS files are accepted,<br>
+    also Strict Content MathML (the subset of MathML aligned with OpenMath).</p>
     <p>Alternatively one of the (invalid) examples may be inserted using the buttons below.</p>
    
     <p>
