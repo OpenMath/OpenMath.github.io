@@ -66,7 +66,8 @@ should both be accepted.
 
 ### Non-Grammar errors and warnings
 The current implementation is very close to the RelaxNG grammar,
-however other non-grammatical constraint checks may be added, such as checking uniqueness of defined names, 
+however some non-grammatical constraint checks have been added, such as checking uniqueness of defined names.
+Other checks may be added in future, such as
 checking the existence of CD files referenced by symbols, etc. Also other more stylistic warnings could be added,
 such as checking that a CD has a comment specifying a licence.
 
