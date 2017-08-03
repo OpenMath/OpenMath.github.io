@@ -1,21 +1,26 @@
+
 ---
 layout: page
 title: OpenMath Content Dictionaries - CD Groups
 ---
-* [algstr1.cdg](algstr1.html)
-* [arith.cdg](arith.html)
-* [combinat1.cdg](combinat1.html)
-* [constants.cdg](constants.html)
-* [error.cdg](error.html)
-* [fns.cdg](fns.html)
-* [group1.cdg](group1.html)
-* [linalg.cdg](linalg.html)
-* [list.cdg](list.html)
-* [mathml.cdg](mathml.html)
-* [meta.cdg](meta.html)
-* [polygrp.cdg](polygrp.html)
-* [sets.cdg](sets.html)
-* [transc.cdg](transc.html)
-* [types1.cdg](types1.html)
-* [types2.cdg](types2.html)
-* [units.cdg](units.html)
+
+
+ |[algstr1](algstr1)|Basic Algebraic Structures This is the first version of the CC CD group. O.Caprotti 1999-20-08|
+ |[arith](arith)|Basic Arithmetic functions|
+ |[combinat1](combinat1)|Combinatorics CD Group|
+ |[constants](constants)|This CD group contains cds describing constants|
+ |[directives1](directives1)|CDs developed at RIACA|
+ |[error](error)|This CD group contains cds describing error symbols|
+ |[fns](fns)|Basic Operations on functions|
+ |[group1](group1)|Group Theory CD Group|
+ |[linalg](linalg)|Linear Algebra CD Group|
+ |[list](list)|Basic Arithmetic functions|
+ |[mathml](mathml)|MathML compatibility CD Group|
+ |[meta](meta)|Meta CD Group|
+ |[polygrp](polygrp)|Polynomial CD Group|
+ |[riaca_algebra](riaca_algebra)|CDs developed at RIACA|
+ |[sets](sets)|Cds which describe operations on sets and their names|
+ |[transc](transc)|Cds which describe transcendental functions|
+ |[types1](types1)|Types1 CD Group|
+ |[types2](types2)|Types CD Group|
+ |[units](units)|This CD group contains cds describing units and dimensions|
