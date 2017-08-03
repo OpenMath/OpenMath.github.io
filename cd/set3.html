@@ -1,0 +1,1049 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>set3</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: set3</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/set3.ocd">http://www.openmath.org/cd/set3.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="set3.ocd">set3.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="set3.omcd">set3.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#big_intersect">big_intersect</a>, <a href="#cartesian_power">cartesian_power</a>, <a href="#map_with_condition">map_with_condition</a>, <a href="#map_with_target">map_with_target</a>, <a href="#map_with_target_and_condition">map_with_target_and_condition</a>, <a href="#powerset">powerset</a>, <a href="#big_union">big_union</a>, <a href="#k_subsets">k_subsets</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 1999-05-10 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2003-04-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/set1.html">set1</a>, <a href="../../../cd/nums1.html">nums1</a>, <a href="../../../cd/setname1.html">setname1</a>
+               </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+            <p>
+    This CD defines more set functions.
+</p>
+
+
+
+            <hr/>
+            <h2>
+               <a name="big_intersect"> big_intersect </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a unary function whose argument should be a collection C of
+subsets of a given set. When applied to C, it represents the intersection
+over all members of C.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set3.html#big_intersect">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#big_union">big_union</a>]
+	  
+	    [Last: <a href="#map_with_target_and_condition">map_with_target_and_condition</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="big_union">big_union </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a unary function whose argument should be a collection C of
+subsets of a given set. When applied to C, it represents the union over all members of C.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set3.html#big_union">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#cartesian_power">cartesian_power</a>]
+	  
+	    [Previous: <a href="#big_intersect">big_intersect</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="cartesian_power"> cartesian_power </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a binary function whose first argument should be a set A and
+whose second argument should be a natural number k.
+When applied to A and k, it represents the Cartesian product of k copies of A.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set3.html#cartesian_power">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#powerset">powerset</a>]
+	  
+	    [Previous: <a href="#big_union">big_union</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="powerset"> powerset </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents unary function whose argument should be a set.
+When applied to a set X, it represents the collection of all subsets of X.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The intersection over all subsets of a given set X is the empty set.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e87xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e87xml')">OpenMath XML (source)</button>
+                     <pre id="d40e87xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="set3" name="big_intersect"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="set3" name="powerset"/&gt;
+                 &lt;OMV name="X"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMS cd="set1" name="emptyset"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e87cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e87cmml')">Strict Content MathML</button>
+                     <pre id="d40e87cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set3"&gt;big_intersect&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set3"&gt;powerset&lt;/csymbol&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="set1"&gt;emptyset&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e87prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e87pref')">Prefix</button>
+                  <div id="d40e87pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/set3.html#big_intersect">big_intersect</a>
+  (<a href="../../../cd/set3.html#powerset">powerset</a>
+  ( <i>X</i>)
+)
+, <a href="../../../cd/set1.html#emptyset">emptyset</a>)
+
+</div>
+                  <div>
+                     <button id="d40e87popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e87pop')">Popcorn</button>
+                     <div id="d40e87pop" style="display:none; margin-top: 0.5em">
+  set3.big_intersect(set3.powerset($X)) = set1.emptyset
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e87mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e87mml')">Rendered Presentation MathML</button>
+                     <div id="d40e87mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <msub>
+                                    <mo>&#8898;</mo>
+                                    <mrow>
+                                       <mi mathvariant="script">P</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>X</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </msub>
+                                 <mo>=</mo>
+                                 <mi>&#8709;</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set3.html#powerset">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#k_subsets">k_subsets</a>]
+	  
+	    [Previous: <a href="#cartesian_power">cartesian_power</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+  
+
+            <hr/>
+            <h2>
+               <a name="k_subsets">k_subsets</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a binary function whose first argument should be a set
+and whose second argument should be a natural number.
+When applied to a set X and a number k, it represents the collection of all subsets of X of
+size k.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set3.html#k_subsets">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#map_with_target">map_with_target</a>]
+	  
+	    [Previous: <a href="#powerset">powerset</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="map_with_target"> map_with_target </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a function with three arguments.
+The first argument is a function assignment f (in the form of a lambda
+binding),
+the second argument is a set X on which the first argument f is defined.
+The third argument specifies the range Y of the function.
+The symbol is used to denote the image {f(x) in Y | x in X} of application of the
+function f on the elements of X (so as to form a subset of Y).
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+One may form a set in the following way. This gives the set {1^2, 2^2,
+... , 10^2 }
+<div>
+                     <button id="d40e127xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e127xml')">OpenMath XML (source)</button>
+                     <pre id="d40e127xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="set3" name="map_with_target"/&gt;
+      &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+          &lt;OMBVAR&gt;&lt;OMV name="x"/&gt;&lt;/OMBVAR&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+               &lt;OMV name="x"/&gt;      &lt;OMI&gt; 2 &lt;/OMI&gt;
+          &lt;/OMA&gt;
+     &lt;/OMBIND&gt;
+     &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+          &lt;OMI&gt; 1 &lt;/OMI&gt;         &lt;OMI&gt; 10 &lt;/OMI&gt;
+     &lt;/OMA&gt;
+     &lt;OMS name="Z" cd="setname1"/&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e127cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e127cmml')">Strict Content MathML</button>
+                     <pre id="d40e127cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set3"&gt;map_with_target&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;10&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e127prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e127pref')">Prefix</button>
+                  <div id="d40e127pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set3.html#map_with_target">map_with_target</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [ <i>x</i>] .
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>x</i>,  2 )
+)
+, <a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  ( 1 ,  10 )
+, <a href="../../../cd/setname1.html#Z">Z</a>)
+
+</div>
+                  <div>
+                     <button id="d40e127popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e127pop')">Popcorn</button>
+                     <div id="d40e127pop" style="display:none; margin-top: 0.5em">
+  set3.map_with_target(fns1.lambda[$x -&gt; $x ^ 2], interval1.integer_interval(1, 10), setname1.Z)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e127mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e127mml')">Rendered Presentation MathML</button>
+                     <div id="d40e127mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  "  &gt;
+<mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <msup>
+                                       <mi>x</mi>
+                                       <mn> 2 </mn>
+                                    </msup>
+                                    <mo>&#8712;</mo>
+                                    <mi mathvariant="double-struck">Z</mi>
+                                 </mrow>
+                                 <mo>|</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>&#8712;</mo>
+                                    <mrow>
+                                       <mo>[</mo>
+                                       <mn> 1 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 10 </mn>
+                                       <mo>]</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The definition of a product of subsets X and Y of a group G:
+<div>
+                     <button id="d40e165xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e165xml')">OpenMath XML (source)</button>
+                     <pre id="d40e165xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+               &lt;OMV name="X"/&gt; &lt;OMV name="Y"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="set3" name="map_with_target"/&gt;
+               &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+                        &lt;OMBVAR&gt;      &lt;OMV name="x"/&gt;      &lt;OMV name="y"/&gt;  &lt;/OMBVAR&gt;
+                        &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                             &lt;OMV name="x"/&gt; &lt;OMV name="y"/&gt;
+                        &lt;/OMA&gt;
+              &lt;/OMBIND&gt;
+              &lt;OMA&gt;&lt;OMS cd="set1" name="cartesian_product"/&gt;
+                   &lt;OMV name="X"/&gt;   &lt;OMV name="Y"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMV name="G"/&gt; 
+         &lt;/OMA&gt;
+    &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e165cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e165cmml')">Strict Content MathML</button>
+                     <pre id="d40e165cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;ci&gt;Y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set3"&gt;map_with_target&lt;/csymbol&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/bind&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;cartesian_product&lt;/csymbol&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;ci&gt;Y&lt;/ci&gt;&lt;/apply&gt;
+   &lt;ci&gt;G&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e165prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e165pref')">Prefix</button>
+                  <div id="d40e165pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>X</i>,  <i>Y</i>)
+, <a href="../../../cd/set3.html#map_with_target">map_with_target</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [       <i>x</i>       
+                     <i>y</i>  ] .
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>x</i>,  <i>y</i>)
+)
+, <a href="../../../cd/set1.html#cartesian_product">cartesian_product</a>
+  ( <i>X</i>,  <i>Y</i>)
+,  <i>G</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e165popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e165pop')">Popcorn</button>
+                     <div id="d40e165pop" style="display:none; margin-top: 0.5em">
+     $X * $Y = set3.map_with_target(fns1.lambda[$x, $y -&gt; $x * $y], set1.cartesian_product($X, $Y), $G)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e165mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e165mml')">Rendered Presentation MathML</button>
+                     <div id="d40e165mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>X</mi>
+                                    <mo>&#8290;</mo>
+                                    <mi>Y</mi>
+                                 </mrow>
+                                 <mo>=</mo>"  &gt;
+<mrow>
+                                    <mo>{</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>x</mi>
+                                          <mo>&#8290;</mo>
+                                          <mi>y</mi>
+                                       </mrow>
+                                       <mo>&#8712;</mo>
+                                       <mi>G</mi>
+                                    </mrow>
+                                    <mo>|</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mi>y</mi>
+                                       <mo>&#8712;</mo>
+                                       <mrow>
+                                          <mi>X</mi>
+                                          <mo>&#215;</mo>
+                                          <mi>Y</mi>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>}</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set3.html#map_with_target">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#map_with_condition">map_with_condition</a>]
+	  
+	    [Previous: <a href="#k_subsets">k_subsets</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="map_with_condition"> map_with_condition </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a function with three arguments.
+The first argument is a function assignment f (in the form of a lambda
+binding),
+the second argument is a set X.
+The third argument specifies a Boolean function P on X defining the subset Z of X 
+(so Z = {x in X| P(x)}) on which the first argument f is defined, 
+The symbol is used to denote the image {f(x) | x in X and P(x)} of application of the
+function f on the elements of Z.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+One may form a set in the following way. This gives the set {2^2, 4^2,
+... , 10^2 }
+<div>
+                     <button id="d40e225xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e225xml')">OpenMath XML (source)</button>
+                     <pre id="d40e225xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="set3" name="map_with_condition"/&gt;
+      &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+          &lt;OMBVAR&gt;&lt;OMV name="x"/&gt;&lt;/OMBVAR&gt;
+          &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+               &lt;OMV name="x"/&gt;      &lt;OMI&gt; 2 &lt;/OMI&gt;
+          &lt;/OMA&gt;
+     &lt;/OMBIND&gt;
+     &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+          &lt;OMI&gt; 1 &lt;/OMI&gt;         &lt;OMI&gt; 10 &lt;/OMI&gt;
+     &lt;/OMA&gt;
+      &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+          &lt;OMBVAR&gt;&lt;OMV name="x"/&gt;&lt;/OMBVAR&gt;
+          &lt;OMA&gt;&lt;OMS cd="integer2" name="divides"/&gt;
+               &lt;OMI&gt; 2 &lt;/OMI&gt;&lt;OMV name="x"/&gt;      
+          &lt;/OMA&gt;
+     &lt;/OMBIND&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e225cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e225cmml')">Strict Content MathML</button>
+                     <pre id="d40e225cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set3"&gt;map_with_condition&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;10&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="integer2"&gt;divides&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e225prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e225pref')">Prefix</button>
+                  <div id="d40e225pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set3.html#map_with_condition">map_with_condition</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [ <i>x</i>] .
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>x</i>,  2 )
+)
+, <a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  ( 1 ,  10 )
+, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [ <i>x</i>] .
+  (<a href="../../../cd/integer2.html#divides">divides</a>
+  ( 2 ,  <i>x</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e225popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e225pop')">Popcorn</button>
+                     <div id="d40e225pop" style="display:none; margin-top: 0.5em">
+  set3.map_with_condition(fns1.lambda[$x -&gt; $x ^ 2], interval1.integer_interval(1, 10), fns1.lambda[$x -&gt; integer2.divides(2, $x)])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e225mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e225mml')">Rendered Presentation MathML</button>
+                     <div id="d40e225mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>{</mo>
+                                 <msup>
+                                    <mi>x</mi>
+                                    <mn> 2 </mn>
+                                 </msup>
+                                 <mo>|</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>&#8712;</mo>
+                                    <mrow>
+                                       <mo>[</mo>
+                                       <mn> 1 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 10 </mn>
+                                       <mo>]</mo>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 2 </mn>
+                                       <mo>|</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set3.html#map_with_condition">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#map_with_target_and_condition">map_with_target_and_condition</a>]
+	  
+	    [Previous: <a href="#map_with_target">map_with_target</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="map_with_target_and_condition"> map_with_target_and_condition </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a function with four arguments.
+The first argument is a function assignment f (in the form of a lambda
+binding),
+the second argument is a set X on which the first argument f is defined.
+The third argument specifies the range Y of the function.
+The fourth argument specifies a Boolean function P on X defining the subset Z of X 
+(so Z = {x in X| P(x)}) on which the first argument f is defined, 
+The symbol is used to denote the image {f(x) in Y | x in X and P(x)} of application of the
+function f on the elements of Z.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+One may form a set in the following way. This gives the set {1^2, 2^2,
+... , 10^2 }
+<div>
+                     <button id="d40e286xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e286xml')">OpenMath XML (source)</button>
+                     <pre id="d40e286xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="set3" name="map_with_target_and_condition"/&gt;
+       &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+            &lt;OMBVAR&gt;&lt;OMV name="x"/&gt;&lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+                 &lt;OMV name="x"/&gt;      &lt;OMI&gt; 2 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+       &lt;/OMBIND&gt;
+       &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+            &lt;OMI&gt; 1 &lt;/OMI&gt;         &lt;OMI&gt; 10 &lt;/OMI&gt;
+       &lt;/OMA&gt;
+       &lt;OMS cd="setname1" name="Z"/&gt;
+       &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+            &lt;OMBVAR&gt;&lt;OMV name="x"/&gt;&lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="integer2" name="divides"/&gt;
+                 &lt;OMI&gt; 2 &lt;/OMI&gt;&lt;OMV name="x"/&gt;      
+            &lt;/OMA&gt;
+       &lt;/OMBIND&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e286cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e286cmml')">Strict Content MathML</button>
+                     <pre id="d40e286cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="set3"&gt;map_with_target_and_condition&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;10&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="integer2"&gt;divides&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e286prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e286pref')">Prefix</button>
+                  <div id="d40e286pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/set3.html#map_with_target_and_condition">map_with_target_and_condition</a>
+  (<a href="../../../cd/fns1.html#lambda">lambda</a>
+  [ <i>x</i>] .
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>x</i>,  2 )
+)
+, <a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  ( 1 ,  10 )
+, <a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [ <i>x</i>] .
+  (<a href="../../../cd/integer2.html#divides">divides</a>
+  ( 2 ,  <i>x</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e286popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e286pop')">Popcorn</button>
+                     <div id="d40e286pop" style="display:none; margin-top: 0.5em">
+  set3.map_with_target_and_condition(fns1.lambda[$x -&gt; $x ^ 2], interval1.integer_interval(1, 10), setname1.Z, fns1.lambda[$x -&gt; integer2.divides(2, $x)])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e286mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e286mml')">Rendered Presentation MathML</button>
+                     <div id="d40e286mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>{</mo>
+                                 <mrow>
+                                    <msup>
+                                       <mi>x</mi>
+                                       <mn> 2 </mn>
+                                    </msup>
+                                    <mo>&#8712;</mo>
+                                    <mi mathvariant="double-struck">Z</mi>
+                                 </mrow>
+                                 <mo>|</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                    <mo>&#8712;</mo>
+                                    <mrow>
+                                       <mo>[</mo>
+                                       <mn> 1 </mn>
+                                       <mo separator="true">,</mo>
+                                       <mn> 10 </mn>
+                                       <mo>]</mo>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn> 2 </mn>
+                                       <mo>|</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>}</mo>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/set3.html#map_with_target_and_condition">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#big_intersect">big_intersect</a>]
+	  
+	    [Previous: <a href="#map_with_condition">map_with_condition</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>

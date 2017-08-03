@@ -1,0 +1,2543 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>plangeo3</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: plangeo3</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/plangeo3.ocd">http://www.openmath.org/cd/plangeo3.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="plangeo3.ocd">plangeo3.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="plangeo3.omcd">plangeo3.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#altitude">altitude</a>, <a href="#angle">angle</a>, <a href="#arc">arc</a>, <a href="#are_on_circle">are_on_circle</a>, <a href="#center">center</a>, <a href="#center_of">center_of</a>, <a href="#center_of_gravity">center_of_gravity</a>, <a href="#circle">circle</a>, <a href="#distance">distance</a>, <a href="#is_midpoint">is_midpoint</a>, <a href="#midpoint">midpoint</a>, <a href="#parallel">parallel</a>, <a href="#perpbisector">perpbisector</a>, <a href="#perpendicular">perpendicular</a>, <a href="#perpline">perpline</a>, <a href="#polarline">polarline</a>, <a href="#radius">radius</a>, <a href="#radius_of">radius_of</a>, <a href="#tangent">tangent</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 0 
+    (Revision 3)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-06-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+
+            <p> 
+This CD defines symbols for planar Euclidean geometry related to distance.
+</p>
+
+
+
+            <hr/>
+            <h2>
+               <a name="distance">distance</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The distance between two affine points is the Euclidean distance.
+The distance between two geometric objects O and O' is the infimum of the
+distances between two affine points, one on O and one on O'.  
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+The distance between two points A and B.
+
+<div>
+                     <button id="d40e41xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41xml')">OpenMath XML (source)</button>
+                     <pre id="d40e41xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="distance"/&gt;
+   &lt;OMV name="A"/&gt;
+   &lt;OMV name="B"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e41cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41cmml')">Strict Content MathML</button>
+                     <pre id="d40e41cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;distance&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e41prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e41pref')">Prefix</button>
+                  <div id="d40e41pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#distance">distance</a>
+  ( <i>A</i>,  <i>B</i>)
+
+</div>
+                  <div>
+                     <button id="d40e41popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41pop')">Popcorn</button>
+                     <div id="d40e41pop" style="display:none; margin-top: 0.5em">
+plangeo3.distance($A, $B)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e41mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e41mml')">Rendered Presentation MathML</button>
+                     <div id="d40e41mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>distance</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>A</mi>
+                                    <mo>,</mo>
+                                    <mi>B</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div> 
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#distance">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#perpendicular">perpendicular</a>]
+	  
+	    [Last: <a href="#arc">arc</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="perpendicular">perpendicular</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+perpendicular is a binary boolean function with input two lines,
+halflines or segments.
+Its value is true whenever the two inputs are perpendicular to each other. 
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+Testing perpendicularity of two lines L and M.
+
+<div>
+                     <button id="d40e65xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e65xml')">OpenMath XML (source)</button>
+                     <pre id="d40e65xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="perpendicular"/&gt;
+   &lt;OMV name="L"/&gt;
+   &lt;OMV name="M"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e65cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e65cmml')">Strict Content MathML</button>
+                     <pre id="d40e65cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;perpendicular&lt;/csymbol&gt;&lt;ci&gt;L&lt;/ci&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e65prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e65pref')">Prefix</button>
+                  <div id="d40e65pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#perpendicular">perpendicular</a>
+  ( <i>L</i>,  <i>M</i>)
+
+</div>
+                  <div>
+                     <button id="d40e65popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e65pop')">Popcorn</button>
+                     <div id="d40e65pop" style="display:none; margin-top: 0.5em">
+plangeo3.perpendicular($L, $M)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e65mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e65mml')">Rendered Presentation MathML</button>
+                     <div id="d40e65mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>perpendicular</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>L</mi>
+                                    <mo>,</mo>
+                                    <mi>M</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div> 
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#perpendicular">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#parallel">parallel</a>]
+	  
+	    [Previous: <a href="#distance">distance</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="parallel">parallel</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+parallel is a binary boolean function with input two lines,
+halflines or segments.
+Its value is true whenever the two inputs are parallel.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+Testing parallelism of two lines L and M.
+
+<div>
+                     <button id="d40e90xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e90xml')">OpenMath XML (source)</button>
+                     <pre id="d40e90xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="parallel"/&gt;
+   &lt;OMV name="L"/&gt;
+   &lt;OMV name="M"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e90cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e90cmml')">Strict Content MathML</button>
+                     <pre id="d40e90cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;parallel&lt;/csymbol&gt;&lt;ci&gt;L&lt;/ci&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e90prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e90pref')">Prefix</button>
+                  <div id="d40e90pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#parallel">parallel</a>
+  ( <i>L</i>,  <i>M</i>)
+
+</div>
+                  <div>
+                     <button id="d40e90popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e90pop')">Popcorn</button>
+                     <div id="d40e90pop" style="display:none; margin-top: 0.5em">
+plangeo3.parallel($L, $M)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e90mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e90mml')">Rendered Presentation MathML</button>
+                     <div id="d40e90mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>parallel</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>L</mi>
+                                    <mo>,</mo>
+                                    <mi>M</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div> 
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#parallel">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#circle">circle</a>]
+	  
+	    [Previous: <a href="#perpendicular">perpendicular</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table> 
+
+            <hr/>
+            <h2>
+               <a name="circle">circle</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The symbol represents a circle.
+The circle may be subject to constraints.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+The circle C with center A and radius 1 is given by
+
+<div>
+                     <button id="d40e114xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e114xml')">OpenMath XML (source)</button>
+                     <pre id="d40e114xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo3" name="circle"/&gt;
+    &lt;OMV name="C"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo3" name="center"/&gt;
+      &lt;OMV name="C"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo3" name="radius"/&gt;
+      &lt;OMV name="C"/&gt;
+      &lt;OMI&gt;1&lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e114cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e114cmml')">Strict Content MathML</button>
+                     <pre id="d40e114cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;circle&lt;/csymbol&gt;
+  &lt;ci&gt;C&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;center&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;radius&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e114prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e114pref')">Prefix</button>
+                  <div id="d40e114pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#circle">circle</a>
+  ( <i>C</i>, <a href="../../../cd/plangeo3.html#center">center</a>
+  ( <i>C</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo3.html#radius">radius</a>
+  ( <i>C</i>, 1)
+)
+
+</div>
+                  <div>
+                     <button id="d40e114popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e114pop')">Popcorn</button>
+                     <div id="d40e114pop" style="display:none; margin-top: 0.5em">
+  plangeo3.circle($C, plangeo3.center($C, $A), plangeo3.radius($C, 1))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e114mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e114mml')">Rendered Presentation MathML</button>
+                     <div id="d40e114mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>circle</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>C</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>center</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>C</mi>
+                                          <mo>,</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>radius</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>C</mi>
+                                          <mo>,</mo>
+                                          <mn>1</mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#circle">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#radius">radius</a>]
+	  
+	    [Previous: <a href="#parallel">parallel</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="radius">radius</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The radius of a circle.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The assertion that the radius of the circle C is 1:
+<div>
+                     <button id="d40e155xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e155xml')">OpenMath XML (source)</button>
+                     <pre id="d40e155xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+    &lt;OMS cd="plangeo3" name="radius"/&gt;
+    &lt;OMV name="C"/&gt;
+    &lt;OMI&gt;1&lt;/OMI&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e155cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e155cmml')">Strict Content MathML</button>
+                     <pre id="d40e155cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;radius&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e155prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e155pref')">Prefix</button>
+                  <div id="d40e155pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#radius">radius</a>
+  ( <i>C</i>, 1)
+
+</div>
+                  <div>
+                     <button id="d40e155popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e155pop')">Popcorn</button>
+                     <div id="d40e155pop" style="display:none; margin-top: 0.5em">
+plangeo3.radius($C, 1)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e155mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e155mml')">Rendered Presentation MathML</button>
+                     <div id="d40e155mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>radius</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>C</mi>
+                                    <mo>,</mo>
+                                    <mn>1</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>  
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#radius">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#radius_of">radius_of</a>]
+	  
+	    [Previous: <a href="#circle">circle</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="radius_of">radius_of</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Gives the radius of a circle.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The radius of the circle C is given by 
+<div>
+                     <button id="d40e180xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e180xml')">OpenMath XML (source)</button>
+                     <pre id="d40e180xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+    &lt;OMS cd="plangeo3" name="radius_of"/&gt;
+    &lt;OMV name="C"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e180cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e180cmml')">Strict Content MathML</button>
+                     <pre id="d40e180cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;radius_of&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e180prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e180pref')">Prefix</button>
+                  <div id="d40e180pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#radius_of">radius_of</a>
+  ( <i>C</i>)
+
+</div>
+                  <div>
+                     <button id="d40e180popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e180pop')">Popcorn</button>
+                     <div id="d40e180pop" style="display:none; margin-top: 0.5em">
+plangeo3.radius_of($C)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e180mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e180mml')">Rendered Presentation MathML</button>
+                     <div id="d40e180mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>radius_of</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>C</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>  
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#radius_of">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#center">center</a>]
+	  
+	    [Previous: <a href="#radius">radius</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="center">center</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Defines the center of a circle.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+The circle C with center A and radius 1 is given by
+
+<div>
+                     <button id="d40e202xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e202xml')">OpenMath XML (source)</button>
+                     <pre id="d40e202xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo3" name="circle"/&gt;
+    &lt;OMV name="C"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo3" name="center"/&gt;
+      &lt;OMV name="C"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="plangeo3" name="radius"/&gt;
+      &lt;OMV name="C"/&gt;
+      &lt;OMI&gt;1&lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e202cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e202cmml')">Strict Content MathML</button>
+                     <pre id="d40e202cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;circle&lt;/csymbol&gt;
+  &lt;ci&gt;C&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;center&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;radius&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e202prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e202pref')">Prefix</button>
+                  <div id="d40e202pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#circle">circle</a>
+  ( <i>C</i>, <a href="../../../cd/plangeo3.html#center">center</a>
+  ( <i>C</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo3.html#radius">radius</a>
+  ( <i>C</i>, 1)
+)
+
+</div>
+                  <div>
+                     <button id="d40e202popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e202pop')">Popcorn</button>
+                     <div id="d40e202pop" style="display:none; margin-top: 0.5em">
+  plangeo3.circle($C, plangeo3.center($C, $A), plangeo3.radius($C, 1))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e202mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e202mml')">Rendered Presentation MathML</button>
+                     <div id="d40e202mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>circle</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>C</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>center</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>C</mi>
+                                          <mo>,</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>radius</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>C</mi>
+                                          <mo>,</mo>
+                                          <mn>1</mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#center">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#center_of">center_of</a>]
+	  
+	    [Previous: <a href="#radius_of">radius_of</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="center_of">center_of</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Gives the center of the circle
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+If C is the circle of the previous example then the following gives A.
+
+<div>
+                     <button id="d40e243xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e243xml')">OpenMath XML (source)</button>
+                     <pre id="d40e243xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+      &lt;OMS cd="plangeo3" name="center_of"/&gt;
+      &lt;OMV name="C"/&gt;
+    &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e243cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e243cmml')">Strict Content MathML</button>
+                     <pre id="d40e243cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;center_of&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e243prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e243pref')">Prefix</button>
+                  <div id="d40e243pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#center_of">center_of</a>
+  ( <i>C</i>)
+
+</div>
+                  <div>
+                     <button id="d40e243popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e243pop')">Popcorn</button>
+                     <div id="d40e243pop" style="display:none; margin-top: 0.5em">
+plangeo3.center_of($C)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e243mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e243mml')">Rendered Presentation MathML</button>
+                     <div id="d40e243mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>center_of</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>C</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#center_of">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#are_on_circle">are_on_circle</a>]
+	  
+	    [Previous: <a href="#center">center</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="are_on_circle">are_on_circle</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The statement that a set of points is on one circle.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+This example states that A, B, C, and D lie on one circle.
+<div>
+                     <button id="d40e266xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e266xml')">OpenMath XML (source)</button>
+                     <pre id="d40e266xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="are_on_circle"/&gt;
+  &lt;OMV name="A"/&gt;
+  &lt;OMV name="B"/&gt;
+  &lt;OMV name="C"/&gt;
+  &lt;OMV name="D"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e266cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e266cmml')">Strict Content MathML</button>
+                     <pre id="d40e266cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;are_on_circle&lt;/csymbol&gt;
+  &lt;ci&gt;A&lt;/ci&gt;
+  &lt;ci&gt;B&lt;/ci&gt;
+  &lt;ci&gt;C&lt;/ci&gt;
+  &lt;ci&gt;D&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e266prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e266pref')">Prefix</button>
+                  <div id="d40e266pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#are_on_circle">are_on_circle</a>
+  ( <i>A</i>,  <i>B</i>,  <i>C</i>,  <i>D</i>)
+
+</div>
+                  <div>
+                     <button id="d40e266popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e266pop')">Popcorn</button>
+                     <div id="d40e266pop" style="display:none; margin-top: 0.5em">
+plangeo3.are_on_circle($A, $B, $C, $D)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e266mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e266mml')">Rendered Presentation MathML</button>
+                     <div id="d40e266mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>are_on_circle</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>A</mi>
+                                    <mo>,</mo>
+                                    <mi>B</mi>
+                                    <mo>,</mo>
+                                    <mi>C</mi>
+                                    <mo>,</mo>
+                                    <mi>D</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#are_on_circle">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#angle">angle</a>]
+	  
+	    [Previous: <a href="#center_of">center_of</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="angle">angle</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Angle of a corner, always measured in positive (anti-clockwise) direction.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+Notice that 
+<div>
+                     <button id="d40e294xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294xml')">OpenMath XML (source)</button>
+                     <pre id="d40e294xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="angle"/&gt;
+    &lt;OMA&gt;
+    &lt;OMS cd="plangeo2" name="corner"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMV name="B"/&gt;
+      &lt;OMV name="C"/&gt;
+    &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e294cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294cmml')">Strict Content MathML</button>
+                     <pre id="d40e294cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;angle&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo2"&gt;corner&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e294prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e294pref')">Prefix</button>
+                  <div id="d40e294pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#angle">angle</a>
+  (<a href="../../../cd/plangeo2.html#corner">corner</a>
+  ( <i>A</i>,  <i>B</i>,  <i>C</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e294popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294pop')">Popcorn</button>
+                     <div id="d40e294pop" style="display:none; margin-top: 0.5em">
+plangeo3.angle(plangeo2.corner($A, $B, $C))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e294mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e294mml')">Rendered Presentation MathML</button>
+                     <div id="d40e294mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>angle</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>corner</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>,</mo>
+                                          <mi>B</mi>
+                                          <mo>,</mo>
+                                          <mi>C</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div>
+                     <button id="d40e313xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e313xml')">OpenMath XML (source)</button>
+                     <pre id="d40e313xml" style="display:none">
+
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="angle"/&gt;
+    &lt;OMA&gt;
+    &lt;OMS cd="plangeo2" name="corner"/&gt;
+      &lt;OMV name="C"/&gt;
+      &lt;OMV name="B"/&gt;
+      &lt;OMV name="A"/&gt;
+    &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e313cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e313cmml')">Strict Content MathML</button>
+                     <pre id="d40e313cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;angle&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo2"&gt;corner&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e313prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e313pref')">Prefix</button>
+                  <div id="d40e313pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#angle">angle</a>
+  (<a href="../../../cd/plangeo2.html#corner">corner</a>
+  ( <i>C</i>,  <i>B</i>,  <i>A</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e313popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e313pop')">Popcorn</button>
+                     <div id="d40e313pop" style="display:none; margin-top: 0.5em">
+plangeo3.angle(plangeo2.corner($C, $B, $A))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e313mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e313mml')">Rendered Presentation MathML</button>
+                     <div id="d40e313mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>angle</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>corner</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>C</mi>
+                                          <mo>,</mo>
+                                          <mi>B</mi>
+                                          <mo>,</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+are not the same.
+
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#angle">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#midpoint">midpoint</a>]
+	  
+	    [Previous: <a href="#are_on_circle">are_on_circle</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="midpoint">midpoint</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The midpoint between two points or two endpoints of a segment.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+The midpoint of two points  A and B
+is the same as the midpoint of the segment S on A and B.
+
+<div>
+                     <button id="d40e344xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e344xml')">OpenMath XML (source)</button>
+                     <pre id="d40e344xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="midpoint"/&gt;
+      &lt;OMV name="A"/&gt;    
+      &lt;OMV name="B"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e344cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e344cmml')">Strict Content MathML</button>
+                     <pre id="d40e344cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;midpoint&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e344prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e344pref')">Prefix</button>
+                  <div id="d40e344pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#midpoint">midpoint</a>
+  ( <i>A</i>,  <i>B</i>)
+
+</div>
+                  <div>
+                     <button id="d40e344popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e344pop')">Popcorn</button>
+                     <div id="d40e344pop" style="display:none; margin-top: 0.5em">
+plangeo3.midpoint($A, $B)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e344mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e344mml')">Rendered Presentation MathML</button>
+                     <div id="d40e344mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>midpoint</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>A</mi>
+                                    <mo>,</mo>
+                                    <mi>B</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+equals
+
+<div>
+                     <button id="d40e356xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e356xml')">OpenMath XML (source)</button>
+                     <pre id="d40e356xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="midpoint"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo2" name="segment"/&gt;
+    &lt;OMV name="A"/&gt;
+    &lt;OMV name="B"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e356cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e356cmml')">Strict Content MathML</button>
+                     <pre id="d40e356cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;midpoint&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo2"&gt;segment&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e356prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e356pref')">Prefix</button>
+                  <div id="d40e356pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#midpoint">midpoint</a>
+  (<a href="../../../cd/plangeo2.html#segment">segment</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e356popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e356pop')">Popcorn</button>
+                     <div id="d40e356pop" style="display:none; margin-top: 0.5em">
+plangeo3.midpoint(plangeo2.segment($A, $B))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e356mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e356mml')">Rendered Presentation MathML</button>
+                     <div id="d40e356mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>midpoint</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>segment</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>,</mo>
+                                          <mi>B</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#midpoint">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_midpoint">is_midpoint</a>]
+	  
+	    [Previous: <a href="#angle">angle</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="is_midpoint">is_midpoint</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+The statement that one point is the midpoint of two others.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+This example states that C is the midpoint of A and B.
+<div>
+                     <button id="d40e385xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e385xml')">OpenMath XML (source)</button>
+                     <pre id="d40e385xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="is_midpoint"/&gt;
+  &lt;OMV name="C"/&gt;    
+  &lt;OMV name="A"/&gt;    
+  &lt;OMV name="B"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e385cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e385cmml')">Strict Content MathML</button>
+                     <pre id="d40e385cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;is_midpoint&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e385prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e385pref')">Prefix</button>
+                  <div id="d40e385pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#is_midpoint">is_midpoint</a>
+  ( <i>C</i>,  <i>A</i>,  <i>B</i>)
+
+</div>
+                  <div>
+                     <button id="d40e385popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e385pop')">Popcorn</button>
+                     <div id="d40e385pop" style="display:none; margin-top: 0.5em">
+plangeo3.is_midpoint($C, $A, $B)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e385mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e385mml')">Rendered Presentation MathML</button>
+                     <div id="d40e385mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>is_midpoint</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>C</mi>
+                                    <mo>,</mo>
+                                    <mi>A</mi>
+                                    <mo>,</mo>
+                                    <mi>B</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#is_midpoint">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#center_of_gravity">center_of_gravity</a>]
+	  
+	    [Previous: <a href="#midpoint">midpoint</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="center_of_gravity">center_of_gravity</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Center of gravity of a number  of points.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+The center of gravity G of three points A, B and C is defined as follows.
+
+<div>
+                     <button id="d40e411xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e411xml')">OpenMath XML (source)</button>
+                     <pre id="d40e411xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+&lt;OMS cd="plangeo1" name="point"/&gt;
+  &lt;OMV name="G"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo3" name="center_of_gravity"/&gt;
+      &lt;OMV name="A"/&gt;    
+      &lt;OMV name="B"/&gt;
+      &lt;OMV name="C"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e411cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e411cmml')">Strict Content MathML</button>
+                     <pre id="d40e411cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+  &lt;ci&gt;G&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;center_of_gravity&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e411prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e411pref')">Prefix</button>
+                  <div id="d40e411pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>G</i>, <a href="../../../cd/plangeo3.html#center_of_gravity">center_of_gravity</a>
+  ( <i>A</i>,  <i>B</i>,  <i>C</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e411popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e411pop')">Popcorn</button>
+                     <div id="d40e411pop" style="display:none; margin-top: 0.5em">
+plangeo1.point($G, plangeo3.center_of_gravity($A, $B, $C))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e411mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e411mml')">Rendered Presentation MathML</button>
+                     <div id="d40e411mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>point</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>G</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>center_of_gravity</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>,</mo>
+                                          <mi>B</mi>
+                                          <mo>,</mo>
+                                          <mi>C</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+
+                  <div>
+                     <button id="d40e435xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e435xml')">OpenMath XML (source)</button>
+                     <pre id="d40e435xml" style="display:none">
+
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+&lt;OMS cd="relation1" name="eq"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo3" name="center_of_gravity"/&gt;
+    &lt;OMV name="A"/&gt;    
+    &lt;OMV name="B"/&gt;
+  &lt;/OMA&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo3" name="midpoint"/&gt;
+    &lt;OMV name="A"/&gt;    
+    &lt;OMV name="B"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e435cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e435cmml')">Strict Content MathML</button>
+                     <pre id="d40e435cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;center_of_gravity&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;midpoint&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e435prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e435pref')">Prefix</button>
+                  <div id="d40e435pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/plangeo3.html#center_of_gravity">center_of_gravity</a>
+  ( <i>A</i>,  <i>B</i>)
+, <a href="../../../cd/plangeo3.html#midpoint">midpoint</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e435popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e435pop')">Popcorn</button>
+                     <div id="d40e435pop" style="display:none; margin-top: 0.5em">
+plangeo3.center_of_gravity($A, $B) = plangeo3.midpoint($A, $B)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e435mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e435mml')">Rendered Presentation MathML</button>
+                     <div id="d40e435mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>center_of_gravity</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>,</mo>
+                                       <mi>B</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>midpoint</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>A</mi>
+                                       <mo>,</mo>
+                                       <mi>B</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#center_of_gravity">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#perpbisector">perpbisector</a>]
+	  
+	    [Previous: <a href="#is_midpoint">is_midpoint</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="perpbisector">perpbisector</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Given two distinct points A and B, this is the line of all points at
+equal
+distance to both A and B.  
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+                  <div>
+                     <button id="d40e473xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e473xml')">OpenMath XML (source)</button>
+                     <pre id="d40e473xml" style="display:none"> 
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="perpbisector"/&gt;
+      &lt;OMV name="A"/&gt;    
+      &lt;OMV name="B"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e473cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e473cmml')">Strict Content MathML</button>
+                     <pre id="d40e473cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;perpbisector&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e473prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e473pref')">Prefix</button>
+                  <div id="d40e473pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#perpbisector">perpbisector</a>
+  ( <i>A</i>,  <i>B</i>)
+
+</div>
+                  <div>
+                     <button id="d40e473popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e473pop')">Popcorn</button>
+                     <div id="d40e473pop" style="display:none; margin-top: 0.5em">
+plangeo3.perpbisector($A, $B)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e473mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e473mml')">Rendered Presentation MathML</button>
+                     <div id="d40e473mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>perpbisector</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>A</mi>
+                                    <mo>,</mo>
+                                    <mi>B</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#perpbisector">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#altitude">altitude</a>]
+	  
+	    [Previous: <a href="#center_of_gravity">center_of_gravity</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="altitude">altitude</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Given a point p and a line L, this defines the segment starting at p
+and ending in the unique point of L closest to p.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+                  <div>
+                     <button id="d40e498xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e498xml')">OpenMath XML (source)</button>
+                     <pre id="d40e498xml" style="display:none"> 
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="altitude"/&gt;
+      &lt;OMV name="p"/&gt;    
+      &lt;OMV name="L"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e498cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e498cmml')">Strict Content MathML</button>
+                     <pre id="d40e498cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;altitude&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;L&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e498prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e498pref')">Prefix</button>
+                  <div id="d40e498pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#altitude">altitude</a>
+  ( <i>p</i>,  <i>L</i>)
+
+</div>
+                  <div>
+                     <button id="d40e498popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e498pop')">Popcorn</button>
+                     <div id="d40e498pop" style="display:none; margin-top: 0.5em">
+plangeo3.altitude($p, $L)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e498mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e498mml')">Rendered Presentation MathML</button>
+                     <div id="d40e498mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>altitude</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>p</mi>
+                                    <mo>,</mo>
+                                    <mi>L</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#altitude">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#perpline">perpline</a>]
+	  
+	    [Previous: <a href="#perpbisector">perpbisector</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="perpline">perpline</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Given a point p and a line L, this defines the line through p
+perpendicular to L.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+                  <div>
+                     <button id="d40e522xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e522xml')">OpenMath XML (source)</button>
+                     <pre id="d40e522xml" style="display:none"> 
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="perpline"/&gt;
+      &lt;OMV name="p"/&gt;    
+      &lt;OMV name="L"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e522cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e522cmml')">Strict Content MathML</button>
+                     <pre id="d40e522cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;perpline&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;L&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e522prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e522pref')">Prefix</button>
+                  <div id="d40e522pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#perpline">perpline</a>
+  ( <i>p</i>,  <i>L</i>)
+
+</div>
+                  <div>
+                     <button id="d40e522popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e522pop')">Popcorn</button>
+                     <div id="d40e522pop" style="display:none; margin-top: 0.5em">
+plangeo3.perpline($p, $L)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e522mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e522mml')">Rendered Presentation MathML</button>
+                     <div id="d40e522mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>perpline</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>p</mi>
+                                    <mo>,</mo>
+                                    <mi>L</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#perpline">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#polarline">polarline</a>]
+	  
+	    [Previous: <a href="#altitude">altitude</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/> 
+            <h2>
+               <a name="polarline">polarline</a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> Given a point p
+and a circle C this defines the polar line of p with respect to C.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> If p is incident with the circle C, the polar line of p with
+respect to C is the tangent line at p with respect to C.  
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+                  <div>
+                     <button id="d40e549xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e549xml')">OpenMath XML (source)</button>
+                     <pre id="d40e549xml" style="display:none"> 
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="polarline"/&gt;
+      &lt;OMV name="p"/&gt;    
+      &lt;OMV name="C"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e549cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e549cmml')">Strict Content MathML</button>
+                     <pre id="d40e549cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;polarline&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e549prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e549pref')">Prefix</button>
+                  <div id="d40e549pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#polarline">polarline</a>
+  ( <i>p</i>,  <i>C</i>)
+
+</div>
+                  <div>
+                     <button id="d40e549popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e549pop')">Popcorn</button>
+                     <div id="d40e549pop" style="display:none; margin-top: 0.5em">
+plangeo3.polarline($p, $C)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e549mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e549mml')">Rendered Presentation MathML</button>
+                     <div id="d40e549mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>polarline</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>p</mi>
+                                    <mo>,</mo>
+                                    <mi>C</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#polarline">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#tangent">tangent</a>]
+	  
+	    [Previous: <a href="#perpline">perpline</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="tangent">tangent</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+Given a line L and  a circle C this boolean checks whether
+L is a  tangent  line to  C.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+                  <div>
+                     <button id="d40e573xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e573xml')">OpenMath XML (source)</button>
+                     <pre id="d40e573xml" style="display:none"> 
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="tangent"/&gt;
+      &lt;OMV name="L"/&gt;    
+      &lt;OMV name="C"/&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e573cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e573cmml')">Strict Content MathML</button>
+                     <pre id="d40e573cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;tangent&lt;/csymbol&gt;&lt;ci&gt;L&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e573prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e573pref')">Prefix</button>
+                  <div id="d40e573pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#tangent">tangent</a>
+  ( <i>L</i>,  <i>C</i>)
+
+</div>
+                  <div>
+                     <button id="d40e573popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e573pop')">Popcorn</button>
+                     <div id="d40e573pop" style="display:none; margin-top: 0.5em">
+plangeo3.tangent($L, $C)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e573mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e573mml')">Rendered Presentation MathML</button>
+                     <div id="d40e573mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>tangent</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>L</mi>
+                                    <mo>,</mo>
+                                    <mi>C</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#tangent">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#arc">arc</a>]
+	  
+	    [Previous: <a href="#polarline">polarline</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="arc">arc</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+an arc of a circle M from A to B is the set of points of M that are
+encountered when traversing the circle clockwise from A to B.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> 
+                  <div>
+                     <button id="d40e597xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e597xml')">OpenMath XML (source)</button>
+                     <pre id="d40e597xml" style="display:none"> 
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;
+  &lt;OMS cd="plangeo3" name="arc"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo3" name="circle"/&gt;
+    &lt;OMV name="M"/&gt;
+  &lt;/OMA&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="point"/&gt;
+    &lt;OMV name="A"/&gt;
+  &lt;/OMA&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="plangeo1" name="point"/&gt;
+    &lt;OMV name="B"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e597cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e597cmml')">Strict Content MathML</button>
+                     <pre id="d40e597cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;arc&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo3"&gt;circle&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e597prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e597pref')">Prefix</button>
+                  <div id="d40e597pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo3.html#arc">arc</a>
+  (<a href="../../../cd/plangeo3.html#circle">circle</a>
+  ( <i>M</i>)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>B</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e597popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e597pop')">Popcorn</button>
+                     <div id="d40e597pop" style="display:none; margin-top: 0.5em">
+plangeo3.arc(plangeo3.circle($M), plangeo1.point($A), plangeo1.point($B))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e597mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e597mml')">Rendered Presentation MathML</button>
+                     <div id="d40e597mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>arc</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>circle</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>M</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>point</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>point</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>B</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div> 
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo3.html#arc">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#distance">distance</a>]
+	  
+	    [Previous: <a href="#tangent">tangent</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

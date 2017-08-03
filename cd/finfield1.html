@@ -1,0 +1,1860 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>finfield1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: finfield1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/finfield1.ocd">http://www.openmath.org/cd/finfield1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="finfield1.ocd">finfield1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="finfield1.omcd">finfield1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#conway_polynomial">conway_polynomial</a>, <a href="#discrete_log">discrete_log</a>, <a href="#field_by_conway">field_by_conway</a>, <a href="#field_by_conway">field_by_conway</a>, <a href="#is_primitive">is_primitive</a>, <a href="#is_primitive_poly">is_primitive_poly</a>, <a href="#minimal_polynomial">minimal_polynomial</a>, <a href="#primitive_element">primitive_element</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>1</dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd/>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+   
+   
+   
+   
+   
+   
+   
+   
+
+            <p>
+                 A CD to instantiate finite fields.
+   </p>
+
+            <pre>
+     Built by Arjeh M. Cohen 2003-02-25.
+   The information on Conway polynomials is largely taken from
+   &lt;a href="<a href="http://www.math.rwth-aachen.de/">http://www.math.rwth-aachen.de/</a>~Frank.Luebeck/"&gt;Frank Luebeck&lt;/a&gt;.
+
+   </pre>
+
+
+            <hr/>
+            <h2>
+               <a name="is_primitive">is_primitive</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p/>
+                  <p>This symbol represents a binary Boolean function. The first argument should be a
+finite field, the second a an element of that field. When applied to such
+arguments, the value represented is true if the second argument is a primitive
+element of the field, that is, a generator of the multiplicative group of the field.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/finfield1.html#is_primitive">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#field_by_conway">field_by_conway</a>]
+	  
+	    [Last: <a href="#discrete_log">discrete_log</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="field_by_conway">field_by_conway</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p/>
+                  <p>This symbol represents a binary function. The first argument should be a
+prime number p, the second argument a positive integer n. This symbol returns
+the field GF(q)[X]/ (C(X)), where q = p^n, X is an indeterminate, C(X) is the
+Conway polynomial f_{n,p}(X), and (C(X)) is the ideal in the
+polynomial ring GF(q)[X] generated by C(X).</p>
+                  <p/>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/finfield1.html#field_by_conway">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#primitive_element">primitive_element</a>]
+	  
+	    [Previous: <a href="#is_primitive">is_primitive</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="primitive_element">primitive_element</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p/>
+                  <p>This symbol has one or two arguments. If there is only one argument,
+it must be a prime power q. The optional second argument is a
+polynomial m which is primitive over the prime subfield of GF(q). This
+symbol returns a primitive element for GF(q) with minimal polynomial
+m. If there is only one argument, then the minimal polynomial is
+assumed to be the conway polynomial for GF(q).</p>
+                  <p/>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/finfield1.html#primitive_element">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_primitive_poly">is_primitive_poly</a>]
+	  
+	    [Previous: <a href="#field_by_conway">field_by_conway</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="is_primitive_poly">is_primitive_poly</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a Boolean-valued function with two arguments, the first of which should be a prime number p,
+and the second of which should be a polynomial with coefficients in GF(p).
+When applied to p and f, this
+symbol represents the value true if and only if f is a primitive polynomial,
+that is, f is irreducible over GF(p), so GF(p)[X]/(f) is a finite field of
+order p^n, where n is the degree of f, and the image of X in GF(p)[X]/(f) is a generator of the
+(cyclic) multiplicative group of GF(p)[X]/(f).
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/finfield1.html#is_primitive_poly">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#conway_polynomial">conway_polynomial</a>]
+	  
+	    [Previous: <a href="#primitive_element">primitive_element</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="conway_polynomial">conway_polynomial</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p/>
+                  <p>This symbol represents a binary function. Its arguments should be a prime
+number p and a positive integer n.</p>
+                  <p>Before defining which of the possible
+f(X) is the Conway polynomial we introduce an ordering of the (univariate)
+polynomials of degree n over GF(p).  Here the coefficients of the polynomials
+are taken in {0, ..., p-1}, the indeterminate is X.  Let g(X) =
+g_nX^n + ... + g_0 and h(X) =
+h_nX^n + ... + h_0.  Then we define g &lt; h
+if and only if there is an index k with g_i = h_i for i
+&gt; k and (-1)^{n-k} g_k &lt; (-1)^{n-k}
+h_k.</p>
+                  <p>
+The Conway polynomial f_{p,n}(X) for
+GF(p^n) is defined recursively as the smallest polynomial of
+degree n with respect to this ordering such that:
+ 
+1) f_{p,n}(X) is monic,</p>
+                  <p>2) f_{p,n}(X) is primitive, that is, it is irreducible and its
+zeros are generators of the
+(cyclic) multiplicative group of GF(p^n),</p>
+                  <p>3) for each proper divisor m of n we have that 
+f_{p,m}(X^{(p^n-1) / (p^m-1)})= 0 mod 
+f_{p,n}(X); that is, the ((p^n-1) / (p^m-1))-th
+power of a zero of f_{p,n}(X) is a zero of f_{p,m}(X).
+</p>
+               </dd>
+            </dl>
+
+
+            <pre>
+The existence of these polynomials can be shown with the Chinese
+Remainder Theorem, see W. Nickel, &lt;em&gt;Endliche Koerper in dem
+gruppentheoretischen Programmsystem GAP&lt;/em&gt;, Diploma thesis, RWTH
+Aachen (1988)
+
+Conway polynomials were defined by R. Parker. Their purpose is to
+provide a standard notation for elements in a finite field
+GF(p^n) with p^n elements, p being a prime.
+
+This is for example used within computer algebra systems to have data
+of finite field elements which can easily be ported between different
+programs.
+ 
+The Conway polynomials are also used in data bases like the Modular
+Atlas character tables, this was the original motivation for their
+definition.
+ 
+The computation method of computing the minimal polynomials of all
+compatible elements was rediscovered in
+
+L.S.Heath and N.A.Loehr, &lt;em&gt;New algorithms for generating Conway
+polynomials over finite fields&lt;/em&gt;, Proceedings of the Tenth Annual
+ACM-SIAM Symposium on Discrete Algorithms (Baltimore, MD, 1999),
+429--437, ACM, New York (1999)
+
+There are basically two methods to compute Conway polynomials.
+
+The first is to run through all polynomials of degree n over GF(p)
+with respect to the ordering defined above and to check the necessary
+conditions (for primitivity one has to check that for each proper
+(maximal) divisor k of p^n-1 we have that f_{p,n}(X)
+does not divide X^k-1).
+
+The second possibility is to take any representation of
+GF(p^n) and to enumerate all elements in that field which
+fulfill the compatibility condition 3. above. Then check for each of
+these elements if it is primitive and if yes compute its minimal
+polynomial over GF(p). The smallest polynomial found this way is the
+Conway polynomial.
+
+Both methods were used by R. Parker to compute a long list of Conway
+polynomials. These are available in computer algebra systems like &lt;a
+href="<a href="http://www.gap-system.org">http://www.gap-system.org</a>"&gt;GAP&lt;/a&gt; or &lt;a
+href="<a href="http://www.maths.usyd.edu.au:8000/u/magma/">http://www.maths.usyd.edu.au:8000/u/magma/</a>"&gt;Magma&lt;/a&gt; and they
+are used in several other programs, like the &lt;a
+href="<a href="http://www.math.rwth-aachen.de/">http://www.math.rwth-aachen.de/</a>~MTX/"&gt;MeatAxe&lt;/a&gt;.
+
+</pre>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+Some Conway polynomials for p = 2.
+
+<div>
+                     <button id="d40e81xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e81xml')">OpenMath XML (source)</button>
+                     <pre id="d40e81xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="finfield1" name="conway_polynomial"/&gt;
+                 &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="polyd1" name="DMP"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="poly_ring_d"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="setname2" name="GFp"/&gt;
+                           &lt;OMI&gt;2&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMI&gt;1&lt;/OMI&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="SDMP"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;0&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e81cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e81cmml')">Strict Content MathML</button>
+                     <pre id="d40e81cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="finfield1"&gt;conway_polynomial&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="setname2"&gt;GFp&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e81prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e81pref')">Prefix</button>
+                  <div id="d40e81pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/finfield1.html#conway_polynomial">conway_polynomial</a>
+  (2, 1)
+, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname2.html#GFp">GFp</a>
+  (2)
+, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 0)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 1)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e81popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e81pop')">Popcorn</button>
+                     <div id="d40e81pop" style="display:none; margin-top: 0.5em">
+       finfield1.conway_polynomial(2, 1) = polyd1.DMP(polyd1.poly_ring_d(setname2.GFp(2), 1), polyd1.SDMP(polyd1.term(1, 0), polyd1.term(1, 1)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e81mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e81mml')">Rendered Presentation MathML</button>
+                     <div id="d40e81mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>conway_polynomial</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>2</mn>
+                                       <mo>,</mo>
+                                       <mn>1</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>DMP</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>poly_ring_d</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msub>
+                                                <mi mathvariant="double-struck">GF</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                             <mo>,</mo>
+                                             <mn>1</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>SDMP</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>0</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>1</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+                  <div>
+                     <button id="d40e139xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e139xml')">OpenMath XML (source)</button>
+                     <pre id="d40e139xml" style="display:none">
+
+
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="finfield1" name="conway_polynomial"/&gt;
+                 &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="polyd1" name="DMP"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="poly_ring_d"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="setname2" name="GFp"/&gt;
+                           &lt;OMI&gt;2&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMI&gt;1&lt;/OMI&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="SDMP"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;0&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e139cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e139cmml')">Strict Content MathML</button>
+                     <pre id="d40e139cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="finfield1"&gt;conway_polynomial&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="setname2"&gt;GFp&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e139prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e139pref')">Prefix</button>
+                  <div id="d40e139pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/finfield1.html#conway_polynomial">conway_polynomial</a>
+  (2, 2)
+, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname2.html#GFp">GFp</a>
+  (2)
+, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 0)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 1)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 2)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e139popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e139pop')">Popcorn</button>
+                     <div id="d40e139pop" style="display:none; margin-top: 0.5em">
+       finfield1.conway_polynomial(2, 2) = polyd1.DMP(polyd1.poly_ring_d(setname2.GFp(2), 1), polyd1.SDMP(polyd1.term(1, 0), polyd1.term(1, 1), polyd1.term(1, 2)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e139mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e139mml')">Rendered Presentation MathML</button>
+                     <div id="d40e139mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>conway_polynomial</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>2</mn>
+                                       <mo>,</mo>
+                                       <mn>2</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>DMP</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>poly_ring_d</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msub>
+                                                <mi mathvariant="double-struck">GF</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                             <mo>,</mo>
+                                             <mn>1</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>SDMP</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>0</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>1</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>2</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div>
+                     <button id="d40e204xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e204xml')">OpenMath XML (source)</button>
+                     <pre id="d40e204xml" style="display:none">
+
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="finfield1" name="conway_polynomial"/&gt;
+                 &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="polyd1" name="DMP"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="poly_ring_d"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="setname2" name="GFp"/&gt;
+                           &lt;OMI&gt;2&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMI&gt;1&lt;/OMI&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="SDMP"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;0&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e204cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e204cmml')">Strict Content MathML</button>
+                     <pre id="d40e204cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="finfield1"&gt;conway_polynomial&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="setname2"&gt;GFp&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e204prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e204pref')">Prefix</button>
+                  <div id="d40e204pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/finfield1.html#conway_polynomial">conway_polynomial</a>
+  (2, 3)
+, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname2.html#GFp">GFp</a>
+  (2)
+, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 0)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 1)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 3)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e204popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e204pop')">Popcorn</button>
+                     <div id="d40e204pop" style="display:none; margin-top: 0.5em">
+       finfield1.conway_polynomial(2, 3) = polyd1.DMP(polyd1.poly_ring_d(setname2.GFp(2), 1), polyd1.SDMP(polyd1.term(1, 0), polyd1.term(1, 1), polyd1.term(1, 3)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e204mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e204mml')">Rendered Presentation MathML</button>
+                     <div id="d40e204mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>conway_polynomial</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>2</mn>
+                                       <mo>,</mo>
+                                       <mn>3</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>DMP</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>poly_ring_d</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msub>
+                                                <mi mathvariant="double-struck">GF</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                             <mo>,</mo>
+                                             <mn>1</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>SDMP</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>0</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>1</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>3</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div>
+                     <button id="d40e272xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e272xml')">OpenMath XML (source)</button>
+                     <pre id="d40e272xml" style="display:none">
+
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="finfield1" name="conway_polynomial"/&gt;
+                 &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;4&lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="polyd1" name="DMP"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="poly_ring_d"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="setname2" name="GFp"/&gt;
+                           &lt;OMI&gt;2&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMI&gt;1&lt;/OMI&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="SDMP"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;0&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;4&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e272cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e272cmml')">Strict Content MathML</button>
+                     <pre id="d40e272cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="finfield1"&gt;conway_polynomial&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;4&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="setname2"&gt;GFp&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e272prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e272pref')">Prefix</button>
+                  <div id="d40e272pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/finfield1.html#conway_polynomial">conway_polynomial</a>
+  (2, 4)
+, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname2.html#GFp">GFp</a>
+  (2)
+, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 0)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 1)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 4)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e272popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e272pop')">Popcorn</button>
+                     <div id="d40e272pop" style="display:none; margin-top: 0.5em">
+       finfield1.conway_polynomial(2, 4) = polyd1.DMP(polyd1.poly_ring_d(setname2.GFp(2), 1), polyd1.SDMP(polyd1.term(1, 0), polyd1.term(1, 1), polyd1.term(1, 4)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e272mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e272mml')">Rendered Presentation MathML</button>
+                     <div id="d40e272mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>conway_polynomial</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>2</mn>
+                                       <mo>,</mo>
+                                       <mn>4</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>DMP</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>poly_ring_d</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msub>
+                                                <mi mathvariant="double-struck">GF</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                             <mo>,</mo>
+                                             <mn>1</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>SDMP</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>0</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>1</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>4</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+                  <div>
+                     <button id="d40e339xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e339xml')">OpenMath XML (source)</button>
+                     <pre id="d40e339xml" style="display:none">
+
+
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="finfield1" name="conway_polynomial"/&gt;
+                 &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="polyd1" name="DMP"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="poly_ring_d"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="setname2" name="GFp"/&gt;
+                           &lt;OMI&gt;2&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMI&gt;1&lt;/OMI&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="SDMP"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;0&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e339cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e339cmml')">Strict Content MathML</button>
+                     <pre id="d40e339cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="finfield1"&gt;conway_polynomial&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;5&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="setname2"&gt;GFp&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e339prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e339pref')">Prefix</button>
+                  <div id="d40e339pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/finfield1.html#conway_polynomial">conway_polynomial</a>
+  (2, 5)
+, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname2.html#GFp">GFp</a>
+  (2)
+, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 0)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 2)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 5)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e339popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e339pop')">Popcorn</button>
+                     <div id="d40e339pop" style="display:none; margin-top: 0.5em">
+       finfield1.conway_polynomial(2, 5) = polyd1.DMP(polyd1.poly_ring_d(setname2.GFp(2), 1), polyd1.SDMP(polyd1.term(1, 0), polyd1.term(1, 2), polyd1.term(1, 5)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e339mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e339mml')">Rendered Presentation MathML</button>
+                     <div id="d40e339mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>conway_polynomial</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>2</mn>
+                                       <mo>,</mo>
+                                       <mn>5</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>DMP</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>poly_ring_d</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msub>
+                                                <mi mathvariant="double-struck">GF</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                             <mo>,</mo>
+                                             <mn>1</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>SDMP</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>0</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>2</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>5</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+                  <div>
+                     <button id="d40e406xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e406xml')">OpenMath XML (source)</button>
+                     <pre id="d40e406xml" style="display:none">
+
+
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="finfield1" name="conway_polynomial"/&gt;
+                 &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;6&lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="polyd1" name="DMP"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="poly_ring_d"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="setname2" name="GFp"/&gt;
+                           &lt;OMI&gt;2&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMI&gt;1&lt;/OMI&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="polyd1" name="SDMP"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;0&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;4&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="polyd1" name="term"/&gt;
+                           &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;6&lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e406cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e406cmml')">Strict Content MathML</button>
+                     <pre id="d40e406cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="finfield1"&gt;conway_polynomial&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;6&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="setname2"&gt;GFp&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e406prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e406pref')">Prefix</button>
+                  <div id="d40e406pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/finfield1.html#conway_polynomial">conway_polynomial</a>
+  (2, 6)
+, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname2.html#GFp">GFp</a>
+  (2)
+, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 0)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 3)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 4)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 6)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e406popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e406pop')">Popcorn</button>
+                     <div id="d40e406pop" style="display:none; margin-top: 0.5em">
+       finfield1.conway_polynomial(2, 6) = polyd1.DMP(polyd1.poly_ring_d(setname2.GFp(2), 1), polyd1.SDMP(polyd1.term(1, 0), polyd1.term(1, 3), polyd1.term(1, 4), polyd1.term(1, 6)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e406mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e406mml')">Rendered Presentation MathML</button>
+                     <div id="d40e406mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>conway_polynomial</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>2</mn>
+                                       <mo>,</mo>
+                                       <mn>6</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>DMP</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>poly_ring_d</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msub>
+                                                <mi mathvariant="double-struck">GF</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                             <mo>,</mo>
+                                             <mn>1</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>SDMP</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>0</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>3</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>4</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>term</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>6</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/finfield1.html#conway_polynomial">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#field_by_conway">field_by_conway</a>]
+	  
+	    [Previous: <a href="#is_primitive_poly">is_primitive_poly</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="field_by_conway">field_by_conway</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p/>
+                  <p>This symbol has two arguments.  Its first argument should be
+a prime number p and its second argument a positive integer n. 
+When applied to p and n, the result is the field defined as the quotient ring
+GF(p)[X]/(c(X)),
+where c(X)=conway_polynomial(p,n).
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+This field is equal to GF(p)[X]/(c(X)).
+</dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e497xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e497xml')">OpenMath XML (source)</button>
+                     <pre id="d40e497xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+         &lt;OMA&gt;&lt;OMS cd="finfield1" name="field_by_conway"/&gt;
+              &lt;OMV name="p"/&gt;&lt;OMV name="n"/&gt;
+         &lt;/OMA&gt;
+         &lt;OMA&gt;&lt;OMS cd="field3" name="field_by_poly"/&gt;
+              &lt;OMA&gt;&lt;OMS name="GFp" cd="setname2"/&gt;
+                   &lt;OMV name="p"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="finfield1" name="conway_polynomial"/&gt;
+                   &lt;OMV name="p"/&gt;&lt;OMV name="n"/&gt;
+              &lt;/OMA&gt;
+         &lt;/OMA&gt;
+    &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e497cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e497cmml')">Strict Content MathML</button>
+                     <pre id="d40e497cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="finfield1"&gt;field_by_conway&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="field3"&gt;field_by_poly&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="setname2"&gt;GFp&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="finfield1"&gt;conway_polynomial&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e497prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e497pref')">Prefix</button>
+                  <div id="d40e497pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/finfield1.html#field_by_conway">field_by_conway</a>
+  ( <i>p</i>,  <i>n</i>)
+, <a href="../../../cd/field3.html#field_by_poly">field_by_poly</a>
+  (<a href="../../../cd/setname2.html#GFp">GFp</a>
+  ( <i>p</i>)
+, <a href="../../../cd/finfield1.html#conway_polynomial">conway_polynomial</a>
+  ( <i>p</i>,  <i>n</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e497popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e497pop')">Popcorn</button>
+                     <div id="d40e497pop" style="display:none; margin-top: 0.5em">
+    finfield1.field_by_conway($p, $n) = field3.field_by_poly(setname2.GFp($p), finfield1.conway_polynomial($p, $n))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e497mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e497mml')">Rendered Presentation MathML</button>
+                     <div id="d40e497mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>field_by_conway</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>p</mi>
+                                       <mo>,</mo>
+                                       <mi>n</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>field_by_poly</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <msub>
+                                          <mi mathvariant="double-struck">GF</mi>
+                                          <mi>p</mi>
+                                       </msub>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>conway_polynomial</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>p</mi>
+                                             <mo>,</mo>
+                                             <mi>n</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/finfield1.html#field_by_conway">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#minimal_polynomial">minimal_polynomial</a>]
+	  
+	    [Previous: <a href="#conway_polynomial">conway_polynomial</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="minimal_polynomial">minimal_polynomial</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p/>
+                  <p>This symbol represents a function with one or two arguments. Its first
+argument should be an element x of a finite field F.  The second
+argument should be a subfield K of F.  It returns the minimal
+polynomial of x over K.  If there is only one argument, K defaults to
+the prime subfield of F.</p>
+                  <p/>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/finfield1.html#minimal_polynomial">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#discrete_log">discrete_log</a>]
+	  
+	    [Previous: <a href="#field_by_conway">field_by_conway</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="discrete_log">discrete_log</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p/>
+                  <p>This symbol represents a binary function. The first argument is the
+base b, a primitive element of a finite field F. The second argument
+is a nonzero element x in F. It returns the smallest nonnegative
+integer i such that x=b^i.</p>
+                  <p/>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+later
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/finfield1.html#discrete_log">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#is_primitive">is_primitive</a>]
+	  
+	    [Previous: <a href="#minimal_polynomial">minimal_polynomial</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+         </div>
+      </div>
+   </body>
+</html>

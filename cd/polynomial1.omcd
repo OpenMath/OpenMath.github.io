@@ -1,0 +1,311 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>polynomial1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/polynomial1.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-07-12</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-07-12</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDUses"/>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>alg1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>arith1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>logic1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>quant1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>set1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>setname1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>setname2</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>relation1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>fns1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>interval1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>integer1</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD holds a collection of basic constructs for univariate polynomials over rings. The data structures for polynomials can be arithmetic expressions, for instance using the ring1.expression symbol, or DMP as in the CD polyd1.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>coefficient_ring</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a unary function whose argument should be a polynomial. It represents the coefficient ring of the polynomial.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The coefficient ring is often explicitly given as part of the polynomial:</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="polynomial1" name="coefficient_ring"/>
+                  <OMA>
+                     <OMS cd="ring1" name="expression"/>
+                     <OMA>
+                        <OMS cd="ring1" name="expression"/>
+                        <OMA>
+                           <OMS cd="ring3" name="poly_ring"/>
+                           <OMA>
+                              <OMS cd="ringname1" name="Zm"/>
+                              <OMI>7</OMI>
+                           </OMA>
+                           <OMV name="X"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="power"/>
+                           <OMA>
+                              <OMS cd="arith1" name="plus"/>
+                              <OMV name="X"/>
+                              <OMI>1</OMI>
+                           </OMA>
+                           <OMI>2</OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="ringname1" name="Zm"/>
+                  <OMI>7</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>coefficient</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a binary function whose first argument should be a polynomial f and whose second argument should be a non-negative integer n. It represents the coefficient of the i-th power of the variable in the polynomial f.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The coefficient of the first power of X in the polynomial (X+1)^2 in (Z/7Z)[X] is equal to 2.</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="polynomial1" name="coefficient"/>
+                  <OMA>
+                     <OMS cd="ring1" name="expression"/>
+                     <OMA>
+                        <OMS cd="ring1" name="expression"/>
+                        <OMA>
+                           <OMS cd="ring3" name="poly_ring"/>
+                           <OMA>
+                              <OMS cd="ringname1" name="Zm"/>
+                              <OMI>7</OMI>
+                           </OMA>
+                           <OMV name="X"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="power"/>
+                           <OMA>
+                              <OMS cd="arith1" name="plus"/>
+                              <OMV name="X"/>
+                              <OMI>1</OMI>
+                           </OMA>
+                           <OMI>2</OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="ring1" name="expression"/>
+                  <OMA>
+                     <OMS cd="ringname1" name="Zm"/>
+                     <OMI>7</OMI>
+                  </OMA>
+                  <OMI>2</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>expand</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Expands a polynomial.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression is equivalent to the arithmetic expression X^2+2X+1 in (Z/7Z)[X].</OMSTR>
+            <OMA>
+               <OMS cd="polynomial1" name="expand"/>
+               <OMA>
+                  <OMS cd="ring1" name="expression"/>
+                  <OMA>
+                     <OMS cd="ring1" name="expression"/>
+                     <OMA>
+                        <OMS cd="ring3" name="poly_ring"/>
+                        <OMA>
+                           <OMS cd="ringname1" name="Zm"/>
+                           <OMI>7</OMI>
+                        </OMA>
+                        <OMV name="X"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="arith1" name="power"/>
+                        <OMA>
+                           <OMS cd="arith1" name="plus"/>
+                           <OMV name="X"/>
+                           <OMI>1</OMI>
+                        </OMA>
+                        <OMI>2</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>degree</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents its degree, that is the highest power of the variable occurring in a term of the polynomial. If the polynomial has no terms, it is the zero polynomial, in which case the value represented is -1.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>leading_term</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents its leading term, that is the term that is the product of the highest power of the variable and its coefficient. If the polynomial is zero, the value represented is zero.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>leading_coefficient</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents the coefficient of the monomial of highest degree. If the polynomial is zero, the value represented is zero.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>leading_monomial</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function, whose argument should be a nonzero univariate polynomial. When applied to such a polynomial, it represents the highest power of the variable occurring in the polynomial.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The leading term of a nonzero polynomial is the product of the leading monomial and the leading coefficient of the polynomial.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="polynomial1" name="leading_term"/>
+                  <OMV name="f"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMA>
+                     <OMS cd="polynomial1" name="leading_coefficient"/>
+                     <OMV name="f"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="polynomial1" name="leading_monomial"/>
+                     <OMV name="f"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

@@ -1,0 +1,608 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>polynomial2</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: polynomial2</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/polynomial2.ocd">http://www.openmath.org/cd/polynomial2.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="polynomial2.ocd">polynomial2.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="polynomial2.omcd">polynomial2.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#class">class</a>, <a href="#divides">divides</a>, <a href="#eqmod">eqmod</a>, <a href="#modulo_relation">modulo_relation</a>, <a href="#neqmod">neqmod</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-07-09 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1</dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-02-02 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="../../../cd/alg1.html">alg1</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/logic1.html">logic1</a>, <a href="../../../cd/quant1.html">quant1</a>, <a href="../../../cd/set1.html">set1</a>, <a href="../../../cd/setname1.html">setname1</a>, <a href="setname2.html">setname2</a>, <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/interval1.html">interval1</a>, <a href="../../../cd/integer1.html">integer1</a>, <a href="polynomial1.html">polynomial1</a>
+               </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+            <p>
+This CD holds a collection of basic modular arithmetic for univariate polynomials over rings.
+The data structures for polynomials can be arithmetic expressions, for
+instance using the ring1.expression symbol, or DMP as
+in the CD polyd1.
+</p>
+
+
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="modulo_relation">modulo_relation</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a univariate function, whose argument should be a polynomial.
+When applied to a polynomial m, it denotes the equivalence relation of being
+equal modulo m.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+modulo_relation(m)(a,b) is equivalent to eqmod(a,b,m).
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e85xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e85xml')">OpenMath XML (source)</button>
+                     <pre id="d40e85xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;&lt;OMS cd="logic1" name="equivalent"/&gt;
+     &lt;OMA&gt;&lt;OMA&gt;&lt;OMS cd="polynomial2" name="modulo_relation"/&gt;
+               &lt;OMV name="m"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMV name="a"/&gt;&lt;OMV name="b"/&gt;
+     &lt;/OMA&gt;
+     &lt;OMA&gt;&lt;OMS cd="polynomial2" name="eqmod"/&gt;
+          &lt;OMV name="a"/&gt;&lt;OMV name="b"/&gt; &lt;OMV name="m"/&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e85cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e85cmml')">Strict Content MathML</button>
+                     <pre id="d40e85cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;equivalent&lt;/csymbol&gt;
+  &lt;apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polynomial2"&gt;modulo_relation&lt;/csymbol&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+   &lt;ci&gt;a&lt;/ci&gt;
+   &lt;ci&gt;b&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polynomial2"&gt;eqmod&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e85prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e85pref')">Prefix</button>
+                  <div id="d40e85pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#equivalent">equivalent</a>
+  (<a href="../../../cd/polynomial2.html#modulo_relation">modulo_relation</a>
+  ( <i>m</i>)
+
+  ( <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/polynomial2.html#eqmod">eqmod</a>
+  ( <i>a</i>,  <i>b</i>,  <i>m</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e85popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e85pop')">Popcorn</button>
+                     <div id="d40e85pop" style="display:none; margin-top: 0.5em">
+logic1.equivalent(polynomial2.modulo_relation($m)($a, $b), polynomial2.eqmod($a, $b, $m))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e85mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e85mml')">Rendered Presentation MathML</button>
+                     <div id="d40e85mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>modulo_relation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>m</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>b</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8801;</mo>
+                                 <mrow>
+                                    <mi>eqmod</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>b</mi>
+                                       <mo>,</mo>
+                                       <mi>m</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial2.html#modulo_relation">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#divides">divides</a>]
+	  
+	    [Last: <a href="#class">class</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="divides">divides</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a bivariate Boolean function, whose arguments should be
+polynomials in the same polynomial ring.
+When applied to a and b, it denotes the property that a divides b.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The polynomial a divides the polynomial b with the same coefficient ring as a
+if and only
+there is a polynomial q over this coefficient ring 
+such that a * q =  b.
+
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e128xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e128xml')">OpenMath XML (source)</button>
+                     <pre id="d40e128xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;&lt;OMS cd="logic1" name="equivalent"/&gt;
+     &lt;OMA&gt;&lt;OMS cd="polynomial2" name="divides"/&gt;
+          &lt;OMV name="a"/&gt;&lt;OMV name="b"/&gt;
+     &lt;/OMA&gt;
+     &lt;OMA&gt;&lt;OMS cd="magma1" name="left_divides"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="magma1" name="magma"/&gt;
+               &lt;OMS cd="setname1" name="Z"/&gt;
+               &lt;OMS cd="arith1" name="times"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMV name="a"/&gt;&lt;OMV name="b"/&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e128cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e128cmml')">Strict Content MathML</button>
+                     <pre id="d40e128cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;equivalent&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polynomial2"&gt;divides&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="magma1"&gt;left_divides&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="magma1"&gt;magma&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;/apply&gt;
+   &lt;ci&gt;a&lt;/ci&gt;
+   &lt;ci&gt;b&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e128prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e128pref')">Prefix</button>
+                  <div id="d40e128pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#equivalent">equivalent</a>
+  (<a href="../../../cd/polynomial2.html#divides">divides</a>
+  ( <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/magma1.html#left_divides">left_divides</a>
+  (<a href="../../../cd/magma1.html#magma">magma</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/arith1.html#times">times</a>)
+,  <i>a</i>,  <i>b</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e128popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e128pop')">Popcorn</button>
+                     <div id="d40e128pop" style="display:none; margin-top: 0.5em">
+logic1.equivalent(polynomial2.divides($a, $b), magma1.left_divides(magma1.magma(setname1.Z, arith1.times), $a, $b))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e128mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e128mml')">Rendered Presentation MathML</button>
+                     <div id="d40e128mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>divides</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>b</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8801;</mo>
+                                 <mrow>
+                                    <mi>left_divides</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>magma</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi mathvariant="double-struck">Z</mi>
+                                             <mo>,</mo>
+                                             <mo>&#215;</mo>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>b</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial2.html#divides">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#eqmod">eqmod</a>]
+	  
+	    [Previous: <a href="#modulo_relation">modulo_relation</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="eqmod">eqmod</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a Boolean valued trivariate function, whose arguments should be polynomials.
+When applied to polynomials a, b, m, it denotes the Boolean 
+evalue of the assertion that a and b are equal modulo m.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial2.html#eqmod">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#neqmod">neqmod</a>]
+	  
+	    [Previous: <a href="#divides">divides</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="neqmod">neqmod</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a Boolean valued trivariate function, whose arguments should be polynomials.
+When applied to polynomials a, b, m, it denotes the Boolean 
+evalue of the assertion that a and b are not equal modulo m.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial2.html#neqmod">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#class">class</a>]
+	  
+	    [Previous: <a href="#eqmod">eqmod</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="class">class</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a bivariate function, whose arguments should be polynomials.
+If a, m are polynomials in a polynomial ring R[X], then class(a,m) denotes the residue class a mod m in
+the quotient ring R[X]/ (mR[X]).
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial2.html#class">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#modulo_relation">modulo_relation</a>]
+	  
+	    [Previous: <a href="#neqmod">neqmod</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+         </div>
+      </div>
+   </body>
+</html>

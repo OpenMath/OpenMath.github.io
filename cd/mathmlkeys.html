@@ -1,0 +1,354 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>mathmlkeys</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: mathmlkeys</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/mathmlkeys.ocd">http://www.openmath.org/cd/mathmlkeys.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="mathmlkeys.ocd">mathmlkeys.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="mathmlkeys.omcd">mathmlkeys.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#alternate-representation">alternate-representation</a>, <a href="#contentequiv">contentequiv</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2009-05-31</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>1
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2014-05-31</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+            <pre>     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+  
+  
+  
+  
+  
+  
+  
+  
+            <p>MathML3 and OpenMath provide semantic annotation facilities where the relation of the annotation to the annotated object is specified by special symols called keys. This content dictionary provides some keys for specifying the relations in semantic annotations.</p>
+
+            <hr/>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>attribution</dd>
+            </dl>
+            <h2>
+               <a name="alternate-representation">alternate-representation</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>This key specifies that the corresponding value is an alternate
+    representation of the annotated element in some unspecified way.</p>
+               </dd>
+            </dl>
+            <pre>
+    This key specifies that the corresponding value is an alternate 
+    representation of the annotated or attributed expression, it is expected 
+    that the encoding of the annotation is read either from the annotation 
+    content: in the case of MathML's annotation elements and in the case of the 
+    OMFOREIGN OpenMath expression, the encoding is provided as an attribute 
+    value.
+    This annotation key is used as the default relation for annotation and 
+    annotation-xml elements of MathML 3 that do not specify keys.
+    </pre>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+    An OpenMath expression and one of its alternate representations: the
+    presentation MathML delivered in the context of a spanish speaking user.
+    <div>
+                     <button id="d40e50xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e50xml')">OpenMath XML (source)</button>
+                     <pre id="d40e50xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+      &lt;OMATTR&gt;
+	&lt;OMATP&gt;
+	  &lt;OMS cd="mathmlkeys" name="alternate-representation"/&gt;
+          &lt;OMFOREIGN encoding="MathML-presentation"&gt;
+	    &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+	      &lt;mi&gt;sen&lt;/mi&gt;&lt;mfenced&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mfenced&gt;
+	    &lt;/math&gt;
+	  &lt;/OMFOREIGN&gt;
+	&lt;/OMATP&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="transc1" name="sin"/&gt;
+	  &lt;OMV name="x"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMATTR&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e50cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e50cmml')">Strict Content MathML</button>
+                     <pre id="d40e50cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;annotation-xml cd="mathmlkeys" encoding="alternate-representation"&gt;&lt;math&gt;&lt;mi&gt;sen&lt;/mi&gt;&lt;mfenced&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mfenced&gt;&lt;/math&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e50prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e50pref')">Prefix</button>
+                  <div id="d40e50pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+	  <a href="../../../cd/mathmlkeys.html#alternate-representation">alternate-representation</a>
+          
+	    
+	      senx
+	    
+	  
+	],
+  <a href="../../../cd/transc1.html#sin">sin</a>
+  ( <i>x</i>)
+)
+
+    </div>
+                  <div>
+                     <button id="d40e50popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e50pop')">Popcorn</button>
+                     <div id="d40e50pop" style="display:none; margin-top: 0.5em">
+      sin($x){mathmlkeys.alternate-representation -&gt; `MathML-presentation
+	    &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+	      &lt;mi&gt;sen&lt;/mi&gt;&lt;mfenced&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mfenced&gt;
+	    &lt;/math&gt;
+	  `}
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e50mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e50mml')">Rendered Presentation MathML</button>
+                     <div id="d40e50mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>sin</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+  
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/mathmlkeys.html#alternate-representation">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#contentequiv">contentequiv</a>]
+	  
+	    [Last: <a href="#contentequiv">contentequiv</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>semantic-attribution</dd>
+            </dl>
+            <h2>
+               <a name="contentequiv">contentequiv</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>This key specifies that the corresponding value is the content
+      MathML equivalent of the annotated element.</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/mathmlkeys.html#contentequiv">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#alternate-representation">alternate-representation</a>]
+	  
+	    [Previous: <a href="#alternate-representation">alternate-representation</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>

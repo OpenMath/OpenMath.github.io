@@ -1,0 +1,1702 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>field2</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: field2</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/field2.ocd">http://www.openmath.org/cd/field2.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="field2.ocd">field2.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="field2.omcd">field2.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#conjugation">conjugation</a>, <a href="#is_automorphism">is_automorphism</a>, <a href="#is_endomorphism">is_endomorphism</a>, <a href="#is_homomorphism">is_homomorphism</a>, <a href="#is_isomorphism">is_isomorphism</a>, <a href="#isomorphic">isomorphic</a>, <a href="#left_multiplication">left_multiplication</a>, <a href="#right_multiplication">right_multiplication</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-06-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+            <p> Basic functions for homomorphisms in field theory   </p>
+
+            <pre>
+Initiated by Arjeh M. Cohen 2004-03-05
+</pre>
+
+
+            <hr/>
+            <h2>
+               <a name="is_homomorphism"> is_homomorphism </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a boolean function with three arguments.
+The first and arguments are fields M, N,
+the third is a map f from the element set of M to the element set of N.
+When applied to M, N, and f, it denotes that f is a field homomorphism from M
+to N.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If is_homomorphism(M,N,f) then, for each pair of elements x, y of M, we have
+f(x * y) = f(x) * f(y).
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e47xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47xml')">OpenMath XML (source)</button>
+                     <pre id="d40e47xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="field2" name="is_homomorphism"/&gt;
+            &lt;OMV name="M"/&gt; &lt;OMV name="N"/&gt;  &lt;OMV name="f"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMBIND&gt;&lt;OMS cd="quant1" name="forall"/&gt;
+            &lt;OMBVAR&gt;&lt;OMV name="x"/&gt;&lt;OMV name="y"/&gt;  &lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="logic1" name="and"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="set1" name="in"/&gt;
+                           &lt;OMV name="x"/&gt;
+                           &lt;OMA&gt;&lt;OMS cd="field1" name="carrier"/&gt;
+                                &lt;OMV name="M"/&gt;
+                           &lt;/OMA&gt;
+                      &lt;/OMA&gt;
+	              &lt;OMA&gt;&lt;OMS cd="set1" name="in"/&gt;
+                           &lt;OMV name="y"/&gt;
+                           &lt;OMA&gt;&lt;OMS cd="field1" name="carrier"/&gt;
+                                &lt;OMV name="G"/&gt;
+                           &lt;/OMA&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                      &lt;OMA&gt;&lt;OMV name="f"/&gt;
+                           &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+	                        &lt;OMV name="x"/&gt; &lt;OMV name="y"/&gt;
+                           &lt;/OMA&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                           &lt;OMA&gt;&lt;OMV name="f"/&gt;
+                                &lt;OMV name="y"/&gt;
+                           &lt;/OMA&gt;
+                           &lt;OMA&gt;&lt;OMV name="f"/&gt;
+                                &lt;OMV name="x"/&gt;
+                           &lt;/OMA&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+             &lt;/OMA&gt;
+        &lt;/OMBIND&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e47cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47cmml')">Strict Content MathML</button>
+                     <pre id="d40e47cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="field2"&gt;is_homomorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;N&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+      &lt;ci&gt;x&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="field1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+      &lt;ci&gt;y&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="field1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;G&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;
+      &lt;ci&gt;f&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e47prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e47pref')">Prefix</button>
+                  <div id="d40e47pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/field2.html#is_homomorphism">is_homomorphism</a>
+  ( <i>M</i>,  <i>N</i>,  <i>f</i>)
+, <a href="../../../cd/quant1.html#forall">forall</a>
+  [ <i>x</i> 
+                     <i>y</i>  ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>, <a href="../../../cd/field1.html#carrier">carrier</a>
+  ( <i>M</i>)
+)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>y</i>, <a href="../../../cd/field1.html#carrier">carrier</a>
+  ( <i>G</i>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>f</i>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>x</i>,  <i>y</i>)
+)
+, <a href="../../../cd/arith1.html#times">times</a>
+  ( <i>f</i>
+  ( <i>y</i>)
+,  <i>f</i>
+  ( <i>x</i>)
+)
+)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e47popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47pop')">Popcorn</button>
+                     <div id="d40e47pop" style="display:none; margin-top: 0.5em">
+  field2.is_homomorphism($M, $N, $f) ==&gt; quant1.forall[$x, $y -&gt; set1.in($x, field1.carrier($M)) and set1.in($y, field1.carrier($G)) ==&gt; $f($x * $y) = $f($y) * $f($x)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e47mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e47mml')">Rendered Presentation MathML</button>
+                     <div id="d40e47mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_homomorphism</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>M</mi>
+                                       <mo>,</mo>
+                                       <mi>N</mi>
+                                       <mo>,</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mo>&#8704;</mo>
+                                    <mo>&#8201;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>,</mo>
+                                       <mi>y</mi>
+                                    </mrow>
+                                    <mo>.</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>x</mi>
+                                             <mo>&#8712;</mo>
+                                             <mrow>
+                                                <mi>carrier</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>M</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>&#8743;</mo>
+                                          <mrow>
+                                             <mi>y</mi>
+                                             <mo>&#8712;</mo>
+                                             <mrow>
+                                                <mi>carrier</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>G</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8658;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>f</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>x</mi>
+                                                   <mo>&#8290;</mo>
+                                                   <mi>y</mi>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mrow>
+                                             <mrow>
+                                                <mi>f</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>y</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>&#8290;</mo>
+                                             <mrow>
+                                                <mi>f</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>x</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e140xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e140xml')">OpenMath XML (source)</button>
+                     <pre id="d40e140xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="field2" name="is_homomorphism"/&gt;
+          &lt;OMV name="M"/&gt;  &lt;OMV name="N"/&gt; &lt;OMV name="f"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e140cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e140cmml')">Strict Content MathML</button>
+                     <pre id="d40e140cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="field2"&gt;is_homomorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;N&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e140prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e140pref')">Prefix</button>
+                  <div id="d40e140pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/field2.html#is_homomorphism">is_homomorphism</a>
+  ( <i>M</i>,  <i>N</i>,  <i>f</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e140popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e140pop')">Popcorn</button>
+                     <div id="d40e140pop" style="display:none; margin-top: 0.5em">
+     field2.is_homomorphism($M, $N, $f)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e140mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e140mml')">Rendered Presentation MathML</button>
+                     <div id="d40e140mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>is_homomorphism</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>N</mi>
+                                    <mo>,</mo>
+                                    <mi>f</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/field2.html#is_homomorphism">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_isomorphism">is_isomorphism</a>]
+	  
+	    [Last: <a href="#isomorphic">isomorphic</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="is_isomorphism"> is_isomorphism </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a boolean function with three arguments.
+The first and arguments are fields M, N,
+the third is a map f from the element set of M to the element set of N.
+When applied to M, N, and f, it denotes that f is a field isomorphism from M
+to N.
+This means that f is a homomorphism from M to N,
+that f is bijective, and that its inverse  is a homomorphism from N to M.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e166xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e166xml')">OpenMath XML (source)</button>
+                     <pre id="d40e166xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="field2" name="is_isomorphism"/&gt;
+          &lt;OMV name="M"/&gt;  &lt;OMV name="N"/&gt; &lt;OMV name="f"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e166cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e166cmml')">Strict Content MathML</button>
+                     <pre id="d40e166cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="field2"&gt;is_isomorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;N&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e166prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e166pref')">Prefix</button>
+                  <div id="d40e166pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/field2.html#is_isomorphism">is_isomorphism</a>
+  ( <i>M</i>,  <i>N</i>,  <i>f</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e166popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e166pop')">Popcorn</button>
+                     <div id="d40e166pop" style="display:none; margin-top: 0.5em">
+     field2.is_isomorphism($M, $N, $f)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e166mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e166mml')">Rendered Presentation MathML</button>
+                     <div id="d40e166mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>is_isomorphism</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>N</mi>
+                                    <mo>,</mo>
+                                    <mi>f</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/field2.html#is_isomorphism">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_endomorphism">is_endomorphism</a>]
+	  
+	    [Previous: <a href="#is_homomorphism">is_homomorphism</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="is_endomorphism"> is_endomorphism </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a boolean function with two arguments.
+The first argument is a field M,
+the second is a map f from the element set of M to the element set of M.
+When applied to M and f, it denotes that f is a field endomorphism from M
+to M.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If is_endomorphism(M,f) then is_homomorphism(M,M,f)
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e194xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e194xml')">OpenMath XML (source)</button>
+                     <pre id="d40e194xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="field2" name="is_endomorphism"/&gt;
+            &lt;OMV name="M"/&gt;  &lt;OMV name="f"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="field2" name="is_homomorphism"/&gt;
+            &lt;OMV name="M"/&gt; &lt;OMV name="M"/&gt;  &lt;OMV name="f"/&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e194cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e194cmml')">Strict Content MathML</button>
+                     <pre id="d40e194cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="field2"&gt;is_endomorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="field2"&gt;is_homomorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e194prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e194pref')">Prefix</button>
+                  <div id="d40e194pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/field2.html#is_endomorphism">is_endomorphism</a>
+  ( <i>M</i>,  <i>f</i>)
+, <a href="../../../cd/field2.html#is_homomorphism">is_homomorphism</a>
+  ( <i>M</i>,  <i>M</i>,  <i>f</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e194popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e194pop')">Popcorn</button>
+                     <div id="d40e194pop" style="display:none; margin-top: 0.5em">
+  field2.is_endomorphism($M, $f) ==&gt; field2.is_homomorphism($M, $M, $f)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e194mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e194mml')">Rendered Presentation MathML</button>
+                     <div id="d40e194mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_endomorphism</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>M</mi>
+                                       <mo>,</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mi>is_homomorphism</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>M</mi>
+                                       <mo>,</mo>
+                                       <mi>M</mi>
+                                       <mo>,</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e222xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e222xml')">OpenMath XML (source)</button>
+                     <pre id="d40e222xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="field2" name="is_endomorphism"/&gt;
+          &lt;OMV name="M"/&gt; &lt;OMV name="f"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e222cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e222cmml')">Strict Content MathML</button>
+                     <pre id="d40e222cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="field2"&gt;is_endomorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e222prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e222pref')">Prefix</button>
+                  <div id="d40e222pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/field2.html#is_endomorphism">is_endomorphism</a>
+  ( <i>M</i>,  <i>f</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e222popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e222pop')">Popcorn</button>
+                     <div id="d40e222pop" style="display:none; margin-top: 0.5em">
+     field2.is_endomorphism($M, $f)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e222mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e222mml')">Rendered Presentation MathML</button>
+                     <div id="d40e222mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>is_endomorphism</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>f</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/field2.html#is_endomorphism">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_automorphism">is_automorphism</a>]
+	  
+	    [Previous: <a href="#is_isomorphism">is_isomorphism</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="is_automorphism"> is_automorphism </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a boolean function with two arguments.
+The first is a field M,
+the second is a map f from the element set of M to the element set of M.
+When applied to M and f, it denotes a field automorphism f of  M.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If is_automorphism(M,f) then is_isomorphism(M,M,f)
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e248xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e248xml')">OpenMath XML (source)</button>
+                     <pre id="d40e248xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="field2" name="is_automorphism"/&gt;
+            &lt;OMV name="M"/&gt;  &lt;OMV name="f"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="field2" name="is_isomorphism"/&gt;
+            &lt;OMV name="M"/&gt; &lt;OMV name="M"/&gt;  &lt;OMV name="f"/&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e248cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e248cmml')">Strict Content MathML</button>
+                     <pre id="d40e248cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="field2"&gt;is_automorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="field2"&gt;is_isomorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e248prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e248pref')">Prefix</button>
+                  <div id="d40e248pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/field2.html#is_automorphism">is_automorphism</a>
+  ( <i>M</i>,  <i>f</i>)
+, <a href="../../../cd/field2.html#is_isomorphism">is_isomorphism</a>
+  ( <i>M</i>,  <i>M</i>,  <i>f</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e248popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e248pop')">Popcorn</button>
+                     <div id="d40e248pop" style="display:none; margin-top: 0.5em">
+  field2.is_automorphism($M, $f) ==&gt; field2.is_isomorphism($M, $M, $f)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e248mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e248mml')">Rendered Presentation MathML</button>
+                     <div id="d40e248mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_automorphism</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>M</mi>
+                                       <mo>,</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mi>is_isomorphism</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>M</mi>
+                                       <mo>,</mo>
+                                       <mi>M</mi>
+                                       <mo>,</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e276xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e276xml')">OpenMath XML (source)</button>
+                     <pre id="d40e276xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="field2" name="is_automorphism"/&gt;
+          &lt;OMV name="M"/&gt; &lt;OMV name="f"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e276cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e276cmml')">Strict Content MathML</button>
+                     <pre id="d40e276cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="field2"&gt;is_automorphism&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e276prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e276pref')">Prefix</button>
+                  <div id="d40e276pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/field2.html#is_automorphism">is_automorphism</a>
+  ( <i>M</i>,  <i>f</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e276popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e276pop')">Popcorn</button>
+                     <div id="d40e276pop" style="display:none; margin-top: 0.5em">
+     field2.is_automorphism($M, $f)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e276mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e276mml')">Rendered Presentation MathML</button>
+                     <div id="d40e276mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>is_automorphism</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>f</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/field2.html#is_automorphism">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#left_multiplication">left_multiplication</a>]
+	  
+	    [Previous: <a href="#is_endomorphism">is_endomorphism</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="left_multiplication"> left_multiplication </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a function with two arguments, which should be a field M
+and an element x of M.
+When applied to M and x, it denotes left multiplication on M by x.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+left_multiplication(M,x) (y) = x * y.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e302xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e302xml')">OpenMath XML (source)</button>
+                     <pre id="d40e302xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMBIND&gt;&lt;OMS cd="quant1" name="forall"/&gt;
+            &lt;OMBVAR&gt;&lt;OMV name="M"/&gt;&lt;OMV name="x"/&gt;&lt;OMV name="y"/&gt;  &lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                 &lt;OMA&gt;&lt;OMA&gt;&lt;OMS cd="field2" name="left_multiplication"/&gt;
+                           &lt;OMV name="M"/&gt; &lt;OMV name="x"/&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMV name="y"/&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="field1" name="multiplication"/&gt;
+                      &lt;OMV name="M"/&gt;
+                      &lt;OMV name="x"/&gt;&lt;OMV name="y"/&gt;
+                 &lt;/OMA&gt;
+             &lt;/OMA&gt;
+        &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e302cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e302cmml')">Strict Content MathML</button>
+                     <pre id="d40e302cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="field2"&gt;left_multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="field1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e302prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e302pref')">Prefix</button>
+                  <div id="d40e302pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [ <i>M</i> 
+                     <i>x</i> 
+                     <i>y</i>  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/field2.html#left_multiplication">left_multiplication</a>
+  ( <i>M</i>,  <i>x</i>)
+
+  ( <i>y</i>)
+, <a href="../../../cd/field1.html#multiplication">multiplication</a>
+  ( <i>M</i>,  <i>x</i>,  <i>y</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e302popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e302pop')">Popcorn</button>
+                     <div id="d40e302pop" style="display:none; margin-top: 0.5em">
+       quant1.forall[$M, $x, $y -&gt; field2.left_multiplication($M, $x)($y) = field1.multiplication($M, $x, $y)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e302mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e302mml')">Rendered Presentation MathML</button>
+                     <div id="d40e302mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>x</mi>
+                                    <mo>,</mo>
+                                    <mi>y</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>left_multiplication</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>,</mo>
+                                                <mi>x</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>y</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>multiplication</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>M</mi>
+                                          <mo>,</mo>
+                                          <mi>x</mi>
+                                          <mo>,</mo>
+                                          <mi>y</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/field2.html#left_multiplication">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#right_multiplication">right_multiplication</a>]
+	  
+	    [Previous: <a href="#is_automorphism">is_automorphism</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="right_multiplication"> right_multiplication </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a function with two arguments, which should be a field M
+and an element x of M.
+When applied to M and x, it denotes right multiplication on M by x.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+right_multiplication(M,x) (y) = y * x.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e355xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e355xml')">OpenMath XML (source)</button>
+                     <pre id="d40e355xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMBIND&gt;&lt;OMS cd="quant1" name="forall"/&gt;
+            &lt;OMBVAR&gt;&lt;OMV name="M"/&gt;&lt;OMV name="x"/&gt;&lt;OMV name="y"/&gt;  &lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                 &lt;OMA&gt;&lt;OMA&gt;&lt;OMS cd="field2" name="right_multiplication"/&gt;
+                           &lt;OMV name="M"/&gt; &lt;OMV name="x"/&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMV name="y"/&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="field1" name="multiplication"/&gt;
+                      &lt;OMV name="M"/&gt;
+                      &lt;OMV name="y"/&gt;&lt;OMV name="x"/&gt;
+                 &lt;/OMA&gt;
+             &lt;/OMA&gt;
+        &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e355cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e355cmml')">Strict Content MathML</button>
+                     <pre id="d40e355cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="field2"&gt;right_multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="field1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e355prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e355pref')">Prefix</button>
+                  <div id="d40e355pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [ <i>M</i> 
+                     <i>x</i> 
+                     <i>y</i>  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/field2.html#right_multiplication">right_multiplication</a>
+  ( <i>M</i>,  <i>x</i>)
+
+  ( <i>y</i>)
+, <a href="../../../cd/field1.html#multiplication">multiplication</a>
+  ( <i>M</i>,  <i>y</i>,  <i>x</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e355popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e355pop')">Popcorn</button>
+                     <div id="d40e355pop" style="display:none; margin-top: 0.5em">
+       quant1.forall[$M, $x, $y -&gt; field2.right_multiplication($M, $x)($y) = field1.multiplication($M, $y, $x)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e355mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e355mml')">Rendered Presentation MathML</button>
+                     <div id="d40e355mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>x</mi>
+                                    <mo>,</mo>
+                                    <mi>y</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>right_multiplication</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>,</mo>
+                                                <mi>x</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>y</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>multiplication</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>M</mi>
+                                          <mo>,</mo>
+                                          <mi>y</mi>
+                                          <mo>,</mo>
+                                          <mi>x</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/field2.html#right_multiplication">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#conjugation">conjugation</a>]
+	  
+	    [Previous: <a href="#left_multiplication">left_multiplication</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="conjugation"> conjugation </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a function with two arguments, which should be a field M
+and a nonzero element x of M.
+When applied to M and x, it denotes conjugation on M by x.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+conjugation(M,x) (y) = x * y * x^ {-1}.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e408xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e408xml')">OpenMath XML (source)</button>
+                     <pre id="d40e408xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+       &lt;OMBIND&gt;&lt;OMS cd="quant1" name="forall"/&gt;
+            &lt;OMBVAR&gt;&lt;OMV name="M"/&gt;&lt;OMV name="x"/&gt;&lt;OMV name="y"/&gt;  &lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                 &lt;OMA&gt;&lt;OMA&gt;&lt;OMS cd="field2" name="conjugation"/&gt;
+                           &lt;OMV name="M"/&gt; &lt;OMV name="x"/&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMV name="y"/&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="field1" name="expression"/&gt;
+                      &lt;OMV name="M"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                           &lt;OMV name="x"/&gt;
+                           &lt;OMV name="y"/&gt;
+                           &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+                                &lt;OMV name="x"/&gt;
+                                &lt;OMI&gt; -1&lt;/OMI&gt;
+                           &lt;/OMA&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+       &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e408cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e408cmml')">Strict Content MathML</button>
+                     <pre id="d40e408cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="field2"&gt;conjugation&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="field1"&gt;expression&lt;/csymbol&gt;
+    &lt;ci&gt;M&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;ci&gt;x&lt;/ci&gt;
+     &lt;ci&gt;y&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;-1&lt;/cn&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e408prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e408pref')">Prefix</button>
+                  <div id="d40e408pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [ <i>M</i> 
+                     <i>x</i> 
+                     <i>y</i>  ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/field2.html#conjugation">conjugation</a>
+  ( <i>M</i>,  <i>x</i>)
+
+  ( <i>y</i>)
+, <a href="../../../cd/field1.html#expression">expression</a>
+  ( <i>M</i>, <a href="../../../cd/arith1.html#times">times</a>
+  ( <i>x</i>,  <i>y</i>, <a href="../../../cd/arith1.html#power">power</a>
+  ( <i>x</i>,  -1)
+)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e408popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e408pop')">Popcorn</button>
+                     <div id="d40e408pop" style="display:none; margin-top: 0.5em">
+       quant1.forall[$M, $x, $y -&gt; field2.conjugation($M, $x)($y) = field1.expression($M, $x * $y * $x ^ -1)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e408mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e408mml')">Rendered Presentation MathML</button>
+                     <div id="d40e408mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>x</mi>
+                                    <mo>,</mo>
+                                    <mi>y</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>conjugation</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>,</mo>
+                                                <mi>x</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>y</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>expression</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>M</mi>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>x</mi>
+                                             <mo>&#8290;</mo>
+                                             <mi>y</mi>
+                                             <mo>&#8290;</mo>
+                                             <msup>
+                                                <mi>x</mi>
+                                                <mn> -1</mn>
+                                             </msup>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/field2.html#conjugation">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#isomorphic">isomorphic</a>]
+	  
+	    [Previous: <a href="#right_multiplication">right_multiplication</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="isomorphic"> isomorphic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a Boolean function with n arguments, n at least 2, which are fields.
+When applied to M_1, ..., M_n, it denotes the fact that there is an
+isomorphism from each M_i to each M_j.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e473xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e473xml')">OpenMath XML (source)</button>
+                     <pre id="d40e473xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="field2" name="isomorphic"/&gt;
+          &lt;OMV name="M"/&gt;  &lt;OMV name="N"/&gt; 
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e473cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e473cmml')">Strict Content MathML</button>
+                     <pre id="d40e473cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="field2"&gt;isomorphic&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;N&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e473prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e473pref')">Prefix</button>
+                  <div id="d40e473pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/field2.html#isomorphic">isomorphic</a>
+  ( <i>M</i>,  <i>N</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e473popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e473pop')">Popcorn</button>
+                     <div id="d40e473pop" style="display:none; margin-top: 0.5em">
+     field2.isomorphic($M, $N)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e473mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e473mml')">Rendered Presentation MathML</button>
+                     <div id="d40e473mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>isomorphic</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>N</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/field2.html#isomorphic">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#is_homomorphism">is_homomorphism</a>]
+	  
+	    [Previous: <a href="#conjugation">conjugation</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

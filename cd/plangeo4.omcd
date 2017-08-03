@@ -1,0 +1,398 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>plangeo4</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/plangeo4.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-06-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-06-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>5</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD defines symbols for planar Euclidean geometry. In particular, it is concerned with projective and affine coordinates of points and lines.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>set_coordinates</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol defines the coordinates of a point or a line. The coordinates are the projective coordinates and consist of a vector of length 3. Points whose third coordinates are zero are the points at infinity. The line whose first two coordinates are zero is the line at infinity.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMBIND>
+               <OMS cd="quant1" name="forall"/>
+               <OMBVAR>
+                  <OMV name="v"/>
+               </OMBVAR>
+               <OMA>
+                  <OMS cd="logic1" name="implies"/>
+                  <OMBIND>
+                     <OMS cd="quant1" name="exists"/>
+                     <OMBVAR>
+                        <OMV name="A"/>
+                     </OMBVAR>
+                     <OMA>
+                        <OMS cd="plangeo4" name="set_coordinates"/>
+                        <OMV name="A"/>
+                        <OMV name="v"/>
+                     </OMA>
+                  </OMBIND>
+                  <OMA>
+                     <OMS cd="logic1" name="not"/>
+                     <OMA>
+                        <OMS cd="logic1" name="and"/>
+                        <OMA>
+                           <OMS cd="relation1" name="eq"/>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>1</OMI>
+                              <OMV name="v"/>
+                           </OMA>
+                           <OMS cd="alg1" name="zero"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="relation1" name="eq"/>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>2</OMI>
+                              <OMV name="v"/>
+                           </OMA>
+                           <OMS cd="alg1" name="zero"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="relation1" name="eq"/>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>3</OMI>
+                              <OMV name="v"/>
+                           </OMA>
+                           <OMS cd="alg1" name="zero"/>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMBIND>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>coordinates</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This function yields the coordinates vector if applied to a point or line with coordinates.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="implies"/>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="relation1" name="eq"/>
+                     <OMV name="v"/>
+                     <OMA>
+                        <OMS cd="plangeo4" name="coordinates"/>
+                        <OMA>
+                           <OMS cd="plangeo1" name="point"/>
+                           <OMV name="A"/>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="relation1" name="eq"/>
+                        <OMV name="w"/>
+                        <OMA>
+                           <OMS cd="plangeo4" name="coordinates"/>
+                           <OMA>
+                              <OMS cd="plangeo1" name="line"/>
+                              <OMV name="L"/>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="eq"/>
+                     <OMA>
+                        <OMS cd="arith1" name="plus"/>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>1</OMI>
+                              <OMV name="v"/>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>1</OMI>
+                              <OMV name="w"/>
+                           </OMA>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>2</OMI>
+                              <OMV name="v"/>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>2</OMI>
+                              <OMV name="w"/>
+                           </OMA>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>3</OMI>
+                              <OMV name="v"/>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>3</OMI>
+                              <OMV name="w"/>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                     <OMS cd="alg1" name="zero"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>To extract the coordinates of a point A with coordinates (1,2,3):</OMSTR>
+            <OMA>
+               <OMS cd="plangeo4" name="coordinates"/>
+               <OMA>
+                  <OMS cd="plangeo1" name="point"/>
+                  <OMV name="A"/>
+                  <OMA>
+                     <OMS cd="plangeo4" name="set_coordinates"/>
+                     <OMV name="A"/>
+                     <OMA>
+                        <OMS cd="linalg2" name="vector"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                        <OMI>3</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_affine</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Boolean function testing whether a point or line is affine.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMBIND>
+               <OMS cd="quant1" name="forall"/>
+               <OMBVAR>
+                  <OMV name="v"/>
+               </OMBVAR>
+               <OMA>
+                  <OMS cd="logic1" name="implies"/>
+                  <OMBIND>
+                     <OMS cd="quant1" name="exists"/>
+                     <OMBVAR>
+                        <OMV name="A"/>
+                     </OMBVAR>
+                     <OMA>
+                        <OMS cd="plangeo1" name="point"/>
+                        <OMV name="A"/>
+                        <OMA>
+                           <OMS cd="plangeo4" name="set_coordinates"/>
+                           <OMV name="A"/>
+                           <OMV name="v"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="plangeo4" name="is_affine"/>
+                           <OMV name="A"/>
+                        </OMA>
+                     </OMA>
+                  </OMBIND>
+                  <OMA>
+                     <OMS cd="logic1" name="not"/>
+                     <OMA>
+                        <OMS cd="relation1" name="eq"/>
+                        <OMA>
+                           <OMS cd="linalg1" name="vector_selector"/>
+                           <OMI>3</OMI>
+                           <OMV name="v"/>
+                        </OMA>
+                        <OMS cd="alg1" name="zero"/>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMBIND>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMBIND>
+               <OMS cd="quant1" name="forall"/>
+               <OMBVAR>
+                  <OMV name="v"/>
+               </OMBVAR>
+               <OMA>
+                  <OMS cd="logic1" name="implies"/>
+                  <OMBIND>
+                     <OMS cd="quant1" name="exists"/>
+                     <OMBVAR>
+                        <OMV name="A"/>
+                     </OMBVAR>
+                     <OMA>
+                        <OMS cd="plangeo1" name="line"/>
+                        <OMV name="A"/>
+                        <OMA>
+                           <OMS cd="plangeo4" name="set_coordinates"/>
+                           <OMV name="A"/>
+                           <OMV name="v"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="plangeo4" name="is_affine"/>
+                           <OMV name="A"/>
+                        </OMA>
+                     </OMA>
+                  </OMBIND>
+                  <OMA>
+                     <OMS cd="logic1" name="not"/>
+                     <OMA>
+                        <OMS cd="logic1" name="and"/>
+                        <OMA>
+                           <OMS cd="relation1" name="eq"/>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>1</OMI>
+                              <OMV name="v"/>
+                           </OMA>
+                           <OMS cd="alg1" name="zero"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="relation1" name="eq"/>
+                           <OMA>
+                              <OMS cd="linalg1" name="vector_selector"/>
+                              <OMI>2</OMI>
+                              <OMV name="v"/>
+                           </OMA>
+                           <OMS cd="alg1" name="zero"/>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMBIND>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="plangeo4" name="is_affine"/>
+               <OMV name="A"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>affine_coordinates</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This function yields the affine coordinates vector if applied to a point or line with coordinates in the affine plane.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The affine coordinates (1/3,2/3) are expressed as follows for the point A with projective coordinates (1,2,3).</OMSTR>
+            <OMA>
+               <OMS cd="plangeo4" name="affine_coordinates"/>
+               <OMA>
+                  <OMS cd="plangeo1" name="point"/>
+                  <OMV name="A"/>
+                  <OMA>
+                     <OMS cd="plangeo4" name="set_coordinates"/>
+                     <OMV name="A"/>
+                     <OMA>
+                        <OMS cd="linalg2" name="vector"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                        <OMI>3</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>set_affine_coordinates</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Defines the affine coordinates of an affine point or line.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Assign the affine coordinates (1/3,2/3) to A.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo4" name="set_affine_coordinates"/>
+               <OMV name="A"/>
+               <OMA>
+                  <OMS cd="linalg2" name="vector"/>
+                  <OMA>
+                     <OMS cd="nums1" name="rational"/>
+                     <OMI> 1 </OMI>
+                     <OMI> 3 </OMI>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="nums1" name="rational"/>
+                     <OMI> 2 </OMI>
+                     <OMI> 3 </OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

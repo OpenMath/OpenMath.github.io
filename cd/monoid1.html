@@ -1,0 +1,2569 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>monoid1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: monoid1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/monoid1.ocd">http://www.openmath.org/cd/monoid1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="monoid1.ocd">monoid1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="monoid1.omcd">monoid1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#carrier">carrier</a>, <a href="#identity">identity</a>, <a href="#is_commutative">is_commutative</a>, <a href="#is_invertible">is_invertible</a>, <a href="#is_submonoid">is_submonoid</a>, <a href="#monoid">monoid</a>, <a href="#multiplication">multiplication</a>, <a href="#semigroup">semigroup</a>, <a href="#submonoid">submonoid</a>, <a href="#divisor_of">divisor_of</a>, <a href="#expression">expression</a>, <a href="#invertibles">invertibles</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 3 
+    (Revision 2)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-06-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+            <p> Basic functions for monoid theory   </p>
+
+            <pre>
+Initiated by Arjeh M. Cohen 2003-05-17
+Edited by AMC 2004-03-02
+</pre>
+
+            <hr/>
+            <h2>
+               <a name="monoid"> monoid </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a constructor for monoids. It takes three arguments in
+the following order: a set to specify the elements in the monoid, a
+binary operation to specify the monoid operation, and an element to
+specify the identity. The binary operation should act on elements of
+the set and return an element of the set.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+A monoid is closed under its operation.
+A monoid operation is associative.
+A monoid has an identity element.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e47xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47xml')">OpenMath XML (source)</button>
+                     <pre id="d40e47xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMV name="M"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="monoid1" name="monoid"/&gt;
+        &lt;OMV name="set"/&gt;
+        &lt;OMV name="binop"/&gt;
+        &lt;OMV name="elt"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="implies"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="and"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="x"/&gt;
+            &lt;OMV name="set"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="y"/&gt;
+            &lt;OMV name="set"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="in"/&gt;
+          &lt;OMA&gt;
+            &lt;OMV name="binop"/&gt;
+            &lt;OMV name="x"/&gt;
+            &lt;OMV name="y"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMV name="set"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;
+          &lt;OMV name="binop"/&gt;
+          &lt;OMV name="x"/&gt;
+          &lt;OMA&gt;
+            &lt;OMV name="binop"/&gt;
+            &lt;OMV name="y"/&gt;
+            &lt;OMV name="z"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMV name="binop"/&gt;
+          &lt;OMA&gt;
+            &lt;OMV name="binop"/&gt;
+            &lt;OMV name="x"/&gt;
+            &lt;OMV name="y"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMV name="z"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="and"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="in"/&gt;
+          &lt;OMV name="elt"/&gt;
+          &lt;OMV name="set"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMBIND&gt;
+          &lt;OMS cd="quant1" name="forall"/&gt;
+          &lt;OMBVAR&gt;
+            &lt;OMV name="x"/&gt;
+          &lt;/OMBVAR&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="logic1" name="implies"/&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="set1" name="in"/&gt;
+              &lt;OMV name="x"/&gt;
+              &lt;OMV name="set"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="logic1" name="and"/&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="relation1" name="eq"/&gt;
+                &lt;OMA&gt;
+                  &lt;OMV name="binop"/&gt;
+                  &lt;OMV name="elt"/&gt;
+                  &lt;OMV name="x"/&gt;
+                &lt;/OMA&gt;
+                &lt;OMV name="x"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="relation1" name="eq"/&gt;
+                &lt;OMA&gt;
+                  &lt;OMV name="binop"/&gt;
+                  &lt;OMV name="x"/&gt;
+                  &lt;OMV name="elt"/&gt;
+                &lt;/OMA&gt;
+                &lt;OMV name="x"/&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMBIND&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e47cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47cmml')">Strict Content MathML</button>
+                     <pre id="d40e47cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;ci&gt;M&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;monoid&lt;/csymbol&gt;&lt;ci&gt;set&lt;/ci&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;elt&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;set&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;set&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;set&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;
+     &lt;ci&gt;binop&lt;/ci&gt;
+     &lt;ci&gt;x&lt;/ci&gt;
+     &lt;apply&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;
+     &lt;ci&gt;binop&lt;/ci&gt;
+     &lt;apply&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;z&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;elt&lt;/ci&gt;&lt;ci&gt;set&lt;/ci&gt;&lt;/apply&gt;
+    &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;set&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;elt&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+        &lt;ci&gt;x&lt;/ci&gt;
+       &lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;elt&lt;/ci&gt;&lt;/apply&gt;
+        &lt;ci&gt;x&lt;/ci&gt;
+       &lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/bind&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e47prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e47pref')">Prefix</button>
+                  <div id="d40e47pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>M</i>, <a href="../../../cd/monoid1.html#monoid">monoid</a>
+  ( <i>set</i>,  <i>binop</i>,  <i>elt</i>)
+)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>,  <i>set</i>)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>y</i>,  <i>set</i>)
+)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>binop</i>
+  ( <i>x</i>,  <i>y</i>)
+,  <i>set</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>binop</i>
+  ( <i>x</i>,  <i>binop</i>
+  ( <i>y</i>,  <i>z</i>)
+)
+,  <i>binop</i>
+  ( <i>binop</i>
+  ( <i>x</i>,  <i>y</i>)
+,  <i>z</i>)
+)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>elt</i>,  <i>set</i>)
+, <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+             <i>x</i>
+          ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>,  <i>set</i>)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>binop</i>
+  ( <i>elt</i>,  <i>x</i>)
+,  <i>x</i>)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>binop</i>
+  ( <i>x</i>,  <i>elt</i>)
+,  <i>x</i>)
+)
+)
+)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e47popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47pop')">Popcorn</button>
+                     <div id="d40e47pop" style="display:none; margin-top: 0.5em">
+  $M = monoid1.monoid($set, $binop, $elt) ==&gt; (set1.in($x, $set) and set1.in($y, $set) ==&gt; set1.in($binop($x, $y), $set)) and $binop($x, $binop($y, $z)) = $binop($binop($x, $y), $z) and set1.in($elt, $set) and quant1.forall[$x -&gt; set1.in($x, $set) ==&gt; $binop($elt, $x) = $x and $binop($x, $elt) = $x]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e47mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e47mml')">Rendered Presentation MathML</button>
+                     <div id="d40e47mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>M</mi>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>monoid</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>set</mi>
+                                          <mo>,</mo>
+                                          <mi>binop</mi>
+                                          <mo>,</mo>
+                                          <mi>elt</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>x</mi>
+                                             <mo>&#8712;</mo>
+                                             <mi>set</mi>
+                                          </mrow>
+                                          <mo>&#8743;</mo>
+                                          <mrow>
+                                             <mi>y</mi>
+                                             <mo>&#8712;</mo>
+                                             <mi>set</mi>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8658;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>binop</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>x</mi>
+                                                <mo>,</mo>
+                                                <mi>y</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>&#8712;</mo>
+                                          <mi>set</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>binop</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>x</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>binop</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>y</mi>
+                                                   <mo>,</mo>
+                                                   <mi>z</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mrow>
+                                          <mi>binop</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>binop</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>x</mi>
+                                                   <mo>,</mo>
+                                                   <mi>y</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mi>z</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>elt</mi>
+                                          <mo>&#8712;</mo>
+                                          <mi>set</mi>
+                                       </mrow>
+                                       <mo>&#8743;</mo>
+                                       <mrow>
+                                          <mo>&#8704;</mo>
+                                          <mo>&#8201;</mo>
+                                          <mrow>
+                                             <mi>x</mi>
+                                          </mrow>
+                                          <mo>.</mo>
+                                          <mrow>
+                                             <mrow>
+                                                <mi>x</mi>
+                                                <mo>&#8712;</mo>
+                                                <mi>set</mi>
+                                             </mrow>
+                                             <mo>&#8658;</mo>
+                                             <mrow>
+                                                <mrow>
+                                                   <mrow>
+                                                      <mi>binop</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>elt</mi>
+                                                         <mo>,</mo>
+                                                         <mi>x</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>=</mo>
+                                                   <mi>x</mi>
+                                                </mrow>
+                                                <mo>&#8743;</mo>
+                                                <mrow>
+                                                   <mrow>
+                                                      <mi>binop</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>x</mi>
+                                                         <mo>,</mo>
+                                                         <mi>elt</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>=</mo>
+                                                   <mi>x</mi>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+This example represents the monoid which has as elements all positive
+and negative even numbers, the monoid operation is binary addition,
+inverses are the negative of the element and the identity is the zero
+element.
+
+<div>
+                     <button id="d40e237xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e237xml')">OpenMath XML (source)</button>
+                     <pre id="d40e237xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="monoid1" name="monoid"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="set1" name="suchthat"/&gt;
+            &lt;OMS cd="setname1" name="Z"/&gt;
+            &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+                    &lt;OMBVAR&gt; &lt;OMV name="x"/&gt;  &lt;/OMBVAR&gt;
+                    &lt;OMA&gt;&lt;OMS cd="set1" name="in"/&gt;
+                         &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+                              &lt;OMV name="x"/&gt;
+                              &lt;OMI&gt; 2 &lt;/OMI&gt;
+                         &lt;/OMA&gt;
+                         &lt;OMS cd="setname1" name="Z"/&gt;
+                    &lt;/OMA&gt;
+            &lt;/OMBIND&gt;
+       &lt;/OMA&gt;
+       &lt;OMS cd="arith1" name="plus"/&gt;
+       &lt;OMI&gt;0&lt;/OMI&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e237cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e237cmml')">Strict Content MathML</button>
+                     <pre id="d40e237cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;monoid&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;suchthat&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+     &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;0&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e237prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e237pref')">Prefix</button>
+                  <div id="d40e237pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/monoid1.html#monoid">monoid</a>
+  (<a href="../../../cd/set1.html#suchthat">suchthat</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [  <i>x</i>  ] .
+  (<a href="../../../cd/set1.html#in">in</a>
+  (<a href="../../../cd/arith1.html#divide">divide</a>
+  ( <i>x</i>,  2 )
+, <a href="../../../cd/setname1.html#Z">Z</a>)
+)
+)
+, <a href="../../../cd/arith1.html#plus">plus</a>, 0)
+
+</div>
+                  <div>
+                     <button id="d40e237popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e237pop')">Popcorn</button>
+                     <div id="d40e237pop" style="display:none; margin-top: 0.5em">
+  monoid1.monoid(set1.suchthat(setname1.Z, fns1.lambda[$x -&gt; set1.in($x / 2, setname1.Z)]), arith1.plus, 0)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e237mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e237mml')">Rendered Presentation MathML</button>
+                     <div id="d40e237mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>monoid</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mi>x</mi>
+                                          <mo>&#8712;</mo>
+                                          <mi mathvariant="double-struck">Z</mi>
+                                       </mrow>
+                                       <mo>|</mo>
+                                       <mrow>
+                                          <mfrac>
+                                             <mi>x</mi>
+                                             <mn> 2 </mn>
+                                          </mfrac>
+                                          <mo>&#8712;</mo>
+                                          <mi mathvariant="double-struck">Z</mi>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mo>+</mo>
+                                    <mo>,</mo>
+                                    <mn>0</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#monoid">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#carrier">carrier</a>]
+	  
+	    [Last: <a href="#expression">expression</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="carrier"> carrier </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a unary function, whose argument should be a
+monoid M (for instance constructed by monoid).
+When applied to M, its value should be the set of elements of a monoid. 
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The carrier of monoid(M,*,e) is M.
+
+<div>
+                     <button id="d40e292xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e292xml')">OpenMath XML (source)</button>
+                     <pre id="d40e292xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="monoid1" name="carrier"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="monoid1" name="monoid"/&gt;
+                 &lt;OMV name="M"/&gt;  &lt;OMV name="times"/&gt; &lt;OMV name="e"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMV name="M"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e292cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e292cmml')">Strict Content MathML</button>
+                     <pre id="d40e292cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;carrier&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;monoid&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;times&lt;/ci&gt;&lt;ci&gt;e&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;M&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e292prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e292pref')">Prefix</button>
+                  <div id="d40e292pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/monoid1.html#carrier">carrier</a>
+  (<a href="../../../cd/monoid1.html#monoid">monoid</a>
+  ( <i>M</i>,  <i>times</i>,  <i>e</i>)
+)
+,  <i>M</i>)
+
+</div>
+                  <div>
+                     <button id="d40e292popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e292pop')">Popcorn</button>
+                     <div id="d40e292pop" style="display:none; margin-top: 0.5em">
+  monoid1.carrier(monoid1.monoid($M, $times, $e)) = $M
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e292mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e292mml')">Rendered Presentation MathML</button>
+                     <div id="d40e292mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>carrier</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>monoid</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>M</mi>
+                                             <mo>,</mo>
+                                             <mi>times</mi>
+                                             <mo>,</mo>
+                                             <mi>e</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>M</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#carrier">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#multiplication">multiplication</a>]
+	  
+	    [Previous: <a href="#monoid">monoid</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="multiplication"> multiplication </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a unary function, whose argument should be a
+monoid M.  It returns the multiplication map on M. 
+We allow for the map to be n-ary.</p>
+                  <p/>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The multiplication of monoid(M,*,e) is *.
+
+<div>
+                     <button id="d40e327xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e327xml')">OpenMath XML (source)</button>
+                     <pre id="d40e327xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="monoid1" name="multiplication"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="monoid1" name="monoid"/&gt;
+                 &lt;OMV name="M"/&gt;  &lt;OMV name="times"/&gt; &lt;OMV name="e"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMV name="times"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e327cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e327cmml')">Strict Content MathML</button>
+                     <pre id="d40e327cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;multiplication&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;monoid&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;times&lt;/ci&gt;&lt;ci&gt;e&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;times&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e327prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e327pref')">Prefix</button>
+                  <div id="d40e327pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/monoid1.html#multiplication">multiplication</a>
+  (<a href="../../../cd/monoid1.html#monoid">monoid</a>
+  ( <i>M</i>,  <i>times</i>,  <i>e</i>)
+)
+,  <i>times</i>)
+
+</div>
+                  <div>
+                     <button id="d40e327popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e327pop')">Popcorn</button>
+                     <div id="d40e327pop" style="display:none; margin-top: 0.5em">
+  monoid1.multiplication(monoid1.monoid($M, $times, $e)) = $times
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e327mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e327mml')">Rendered Presentation MathML</button>
+                     <div id="d40e327mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>multiplication</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>monoid</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>M</mi>
+                                             <mo>,</mo>
+                                             <mi>times</mi>
+                                             <mo>,</mo>
+                                             <mi>e</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>times</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The product a_1 * ... * a_n of elements a_1, ..., a_n
+of M can be expressed as follows.
+
+  <div>
+                     <button id="d40e353xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e353xml')">OpenMath XML (source)</button>
+                     <pre id="d40e353xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+    &lt;OMA&gt;&lt;OMS cd="fns2" name="apply_to_list"/&gt;
+         &lt;OMA&gt;&lt;OMA&gt;&lt;OMS cd="monoid1" name="multiplication"/&gt;
+                   &lt;OMV name="M"/&gt;
+              &lt;/OMA&gt;         
+              &lt;OMA&gt;&lt;OMS cd="list3" name="list_of_lengthn"/&gt;
+                   &lt;OMV name="n"/&gt;  &lt;OMV name="a"/&gt;
+              &lt;/OMA&gt;
+         &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e353cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e353cmml')">Strict Content MathML</button>
+                     <pre id="d40e353cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
+  &lt;apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list3"&gt;list_of_lengthn&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e353prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e353pref')">Prefix</button>
+                  <div id="d40e353pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/monoid1.html#multiplication">multiplication</a>
+  ( <i>M</i>)
+
+  (<a href="../../../cd/list3.html#list_of_lengthn">list_of_lengthn</a>
+  ( <i>n</i>,  <i>a</i>)
+)
+)
+
+  </div>
+                  <div>
+                     <button id="d40e353popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e353pop')">Popcorn</button>
+                     <div id="d40e353pop" style="display:none; margin-top: 0.5em">
+    fns2.apply_to_list(monoid1.multiplication($M)(list3.list_of_lengthn($n, $a)))
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e353mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e353mml')">Rendered Presentation MathML</button>
+                     <div id="d40e353mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>apply_to_list</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>multiplication</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>list_of_lengthn</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>n</mi>
+                                                <mo>,</mo>
+                                                <mi>a</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#multiplication">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#identity">identity</a>]
+	  
+	    [Previous: <a href="#carrier">carrier</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="identity"> identity </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbols represents a unary function, whose argument should be a
+monoid.  It returns the identity element of the monoid.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The identity of monoid(M,*,e) is e.
+
+<div>
+                     <button id="d40e388xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e388xml')">OpenMath XML (source)</button>
+                     <pre id="d40e388xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="monoid1" name="identity"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="monoid1" name="monoid"/&gt;
+                 &lt;OMV name="M"/&gt;  &lt;OMV name="times"/&gt; &lt;OMV name="e"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMV name="e"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e388cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e388cmml')">Strict Content MathML</button>
+                     <pre id="d40e388cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;identity&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;monoid&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;times&lt;/ci&gt;&lt;ci&gt;e&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;e&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e388prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e388pref')">Prefix</button>
+                  <div id="d40e388pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/monoid1.html#identity">identity</a>
+  (<a href="../../../cd/monoid1.html#monoid">monoid</a>
+  ( <i>M</i>,  <i>times</i>,  <i>e</i>)
+)
+,  <i>e</i>)
+
+</div>
+                  <div>
+                     <button id="d40e388popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e388pop')">Popcorn</button>
+                     <div id="d40e388pop" style="display:none; margin-top: 0.5em">
+  monoid1.identity(monoid1.monoid($M, $times, $e)) = $e
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e388mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e388mml')">Rendered Presentation MathML</button>
+                     <div id="d40e388mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>identity</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>monoid</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>M</mi>
+                                             <mo>,</mo>
+                                             <mi>times</mi>
+                                             <mo>,</mo>
+                                             <mi>e</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>e</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#identity">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_commutative">is_commutative</a>]
+	  
+	    [Previous: <a href="#multiplication">multiplication</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="is_commutative"> is_commutative </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+The unary boolean function whose value is true iff the argument is a
+commutative monoid.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If is_commutative(M) then for all a,b in carrier(M) a*b = b*a
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e426xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e426xml')">OpenMath XML (source)</button>
+                     <pre id="d40e426xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="monoid1" name="is_commutative"/&gt;
+      &lt;OMV name="M"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS cd="quant1" name="forall"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMV name="b"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="implies"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="logic1" name="and"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="a"/&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="monoid1" name="carrier"/&gt;
+              &lt;OMV name="M"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="set1" name="in"/&gt;
+            &lt;OMV name="b"/&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="monoid1" name="carrier"/&gt;
+              &lt;OMV name="M"/&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="monoid1" name="multiplication"/&gt;
+              &lt;OMV name="M"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMV name="a"/&gt;
+            &lt;OMV name="b"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="monoid1" name="multiplication"/&gt;
+              &lt;OMV name="M"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMV name="b"/&gt;
+            &lt;OMV name="a"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e426cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e426cmml')">Strict Content MathML</button>
+                     <pre id="d40e426cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;is_commutative&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;bvar&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+      &lt;ci&gt;b&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;a&lt;/ci&gt;
+     &lt;ci&gt;b&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;b&lt;/ci&gt;
+     &lt;ci&gt;a&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e426prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e426pref')">Prefix</button>
+                  <div id="d40e426pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/monoid1.html#is_commutative">is_commutative</a>
+  ( <i>M</i>)
+, <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+         <i>a</i>
+                     <i>b</i>
+      ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>, <a href="../../../cd/monoid1.html#carrier">carrier</a>
+  ( <i>M</i>)
+)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>b</i>, <a href="../../../cd/monoid1.html#carrier">carrier</a>
+  ( <i>M</i>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/monoid1.html#multiplication">multiplication</a>
+  ( <i>M</i>)
+,  <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/monoid1.html#multiplication">multiplication</a>
+  ( <i>M</i>)
+
+  ( <i>b</i>,  <i>a</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e426popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e426pop')">Popcorn</button>
+                     <div id="d40e426pop" style="display:none; margin-top: 0.5em">
+  monoid1.is_commutative($M) ==&gt; quant1.forall[$a, $b -&gt; set1.in($a, monoid1.carrier($M)) and set1.in($b, monoid1.carrier($M)) ==&gt; monoid1.multiplication($M) = $a = $b ==&gt; monoid1.multiplication($M)($b, $a)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e426mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e426mml')">Rendered Presentation MathML</button>
+                     <div id="d40e426mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_commutative</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>M</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mo>&#8704;</mo>
+                                    <mo>&#8201;</mo>
+                                    <mrow>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>b</mi>
+                                    </mrow>
+                                    <mo>.</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>a</mi>
+                                             <mo>&#8712;</mo>
+                                             <mrow>
+                                                <mi>carrier</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>M</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>&#8743;</mo>
+                                          <mrow>
+                                             <mi>b</mi>
+                                             <mo>&#8712;</mo>
+                                             <mrow>
+                                                <mi>carrier</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>M</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8658;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>multiplication</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mi>a</mi>
+                                          <mo>=</mo>
+                                          <mi>b</mi>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#is_commutative">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_invertible">is_invertible</a>]
+	  
+	    [Previous: <a href="#identity">identity</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="is_invertible"> is_invertible </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a binary function, whose first argument is a monoid M
+and whose second argument is an element x of M.
+Its value is true iff the argument if x is invertible (that is, has a left and
+a right inverse) in M.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+x is invertible in M if and only if there is a in carrier(M)
+with  a*x = x*a = 1.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e536xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e536xml')">OpenMath XML (source)</button>
+                     <pre id="d40e536xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="logic1" name="equivalent"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="monoid1" name="is_invertible"/&gt;
+            &lt;OMV name="M"/&gt;            &lt;OMV name="x"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMBIND&gt;&lt;OMS cd="quant1" name="exists"/&gt;
+            &lt;OMBVAR&gt;   &lt;OMV name="a"/&gt;      &lt;/OMBVAR&gt;
+            &lt;OMA&gt;&lt;OMS cd="logic1" name="and"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="set1" name="in"/&gt;
+                      &lt;OMV name="a"/&gt;
+                      &lt;OMA&gt;&lt;OMS cd="monoid1" name="carrier"/&gt;
+                           &lt;OMV name="M"/&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                      &lt;OMA&gt;&lt;OMA&gt;&lt;OMS cd="monoid1" name="multiplication"/&gt;
+                                &lt;OMV name="M"/&gt;
+                           &lt;/OMA&gt;
+                           &lt;OMV name="x"/&gt;
+                           &lt;OMV name="a"/&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="monoid1" name="identity"/&gt;
+                           &lt;OMV name="M"/&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                      &lt;OMA&gt;&lt;OMA&gt;&lt;OMS cd="monoid1" name="multiplication"/&gt;
+                                &lt;OMV name="M"/&gt;
+                           &lt;/OMA&gt;
+                           &lt;OMV name="a"/&gt;
+                           &lt;OMV name="x"/&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMA&gt;&lt;OMS cd="monoid1" name="identity"/&gt;
+                           &lt;OMV name="M"/&gt;
+                      &lt;/OMA&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e536cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e536cmml')">Strict Content MathML</button>
+                     <pre id="d40e536cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;equivalent&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;is_invertible&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+     &lt;ci&gt;a&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+      &lt;ci&gt;x&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;identity&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;ci&gt;x&lt;/ci&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;identity&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e536prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e536pref')">Prefix</button>
+                  <div id="d40e536pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#equivalent">equivalent</a>
+  (<a href="../../../cd/monoid1.html#is_invertible">is_invertible</a>
+  ( <i>M</i>,  <i>x</i>)
+, <a href="../../../cd/quant1.html#exists">exists</a>
+  [    <i>a</i>      ] .
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>, <a href="../../../cd/monoid1.html#carrier">carrier</a>
+  ( <i>M</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/monoid1.html#multiplication">multiplication</a>
+  ( <i>M</i>)
+
+  ( <i>x</i>,  <i>a</i>)
+, <a href="../../../cd/monoid1.html#identity">identity</a>
+  ( <i>M</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/monoid1.html#multiplication">multiplication</a>
+  ( <i>M</i>)
+
+  ( <i>a</i>,  <i>x</i>)
+, <a href="../../../cd/monoid1.html#identity">identity</a>
+  ( <i>M</i>)
+)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e536popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e536pop')">Popcorn</button>
+                     <div id="d40e536pop" style="display:none; margin-top: 0.5em">
+  logic1.equivalent(monoid1.is_invertible($M, $x), quant1.exists[$a -&gt; set1.in($a, monoid1.carrier($M)) and monoid1.multiplication($M)($x, $a) = monoid1.identity($M) and monoid1.multiplication($M)($a, $x) = monoid1.identity($M)])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e536mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e536mml')">Rendered Presentation MathML</button>
+                     <div id="d40e536mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_invertible</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>M</mi>
+                                       <mo>,</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8801;</mo>
+                                 <mrow>
+                                    <mo>&#8707;</mo>
+                                    <mo>&#8201;</mo>
+                                    <mrow>
+                                       <mi>a</mi>
+                                    </mrow>
+                                    <mo>.</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>&#8712;</mo>
+                                          <mrow>
+                                             <mi>carrier</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8743;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>multiplication</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>M</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>x</mi>
+                                                <mo>,</mo>
+                                                <mi>a</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mrow>
+                                             <mi>identity</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8743;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>multiplication</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>M</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>x</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mrow>
+                                             <mi>identity</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#is_invertible">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_submonoid">is_submonoid</a>]
+	  
+	    [Previous: <a href="#is_commutative">is_commutative</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="is_submonoid"> is_submonoid </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+The binary boolean function whose value is true iff the second
+argument is a submonoid of the second.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If is_submonoid(M,N) then N is a nonempty set of elements of M and N
+is closed under multiplication and taking inverses.
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#is_submonoid">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#semigroup">semigroup</a>]
+	  
+	    [Previous: <a href="#is_invertible">is_invertible</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="semigroup"> semigroup </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a unary function, whose argument should be a monoid M.
+When applied to M its value is the semigroup underlying M.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e645xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e645xml')">OpenMath XML (source)</button>
+                     <pre id="d40e645xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="monoid1" name="semigroup"/&gt;
+          &lt;OMV name="M"/&gt; 
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e645cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e645cmml')">Strict Content MathML</button>
+                     <pre id="d40e645cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="monoid1"&gt;semigroup&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e645prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e645pref')">Prefix</button>
+                  <div id="d40e645pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/monoid1.html#semigroup">semigroup</a>
+  ( <i>M</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e645popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e645pop')">Popcorn</button>
+                     <div id="d40e645pop" style="display:none; margin-top: 0.5em">
+     monoid1.semigroup($M)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e645mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e645mml')">Rendered Presentation MathML</button>
+                     <div id="d40e645mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>semigroup</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#semigroup">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#submonoid">submonoid</a>]
+	  
+	    [Previous: <a href="#is_submonoid">is_submonoid</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="submonoid"> submonoid </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a constructor symbol with two arguments.  The first
+argument is a monoid M, the second a list or set, D, of elements of M.
+When applied to M and D, it denotes the submonoid of M generated by D.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e666xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e666xml')">OpenMath XML (source)</button>
+                     <pre id="d40e666xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="monoid1" name="submonoid"/&gt;
+          &lt;OMV name="M"/&gt;  &lt;OMV name="D"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e666cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e666cmml')">Strict Content MathML</button>
+                     <pre id="d40e666cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="monoid1"&gt;submonoid&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e666prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e666pref')">Prefix</button>
+                  <div id="d40e666pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/monoid1.html#submonoid">submonoid</a>
+  ( <i>M</i>,  <i>D</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e666popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e666pop')">Popcorn</button>
+                     <div id="d40e666pop" style="display:none; margin-top: 0.5em">
+     monoid1.submonoid($M, $D)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e666mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e666mml')">Rendered Presentation MathML</button>
+                     <div id="d40e666mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>submonoid</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>D</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+This example represents the submonoid of the multiplicative monoid of
+the nonzero reals generated by the constants Pi and E:
+
+<div>
+                     <button id="d40e680xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e680xml')">OpenMath XML (source)</button>
+                     <pre id="d40e680xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;&lt;OMS cd="monoid1" name="monoid"/&gt;
+     &lt;OMA&gt;&lt;OMS cd="monoid1" name="monoid"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="set1" name="suchthat"/&gt;
+               &lt;OMS cd="setname1" name="R"/&gt;
+               &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+                       &lt;OMBVAR&gt; &lt;OMV name="x"/&gt;
+                       &lt;/OMBVAR&gt;
+                       &lt;OMA&gt;&lt;OMS cd="relation1" name="neq"/&gt;
+                            &lt;OMV name="x"/&gt;
+                            &lt;OMS cd="alg1" name="zero"/&gt;
+                       &lt;/OMA&gt;
+               &lt;/OMBIND&gt;
+          &lt;/OMA&gt;
+          &lt;OMS cd="arith1" name="times"/&gt;
+     &lt;/OMA&gt;
+     &lt;OMA&gt;
+       &lt;OMS cd="list1" name="list"/&gt;
+         &lt;OMS cd="nums1" name="pi"/&gt;
+         &lt;OMS cd="nums1" name="e"/&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e680cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e680cmml')">Strict Content MathML</button>
+                     <pre id="d40e680cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;monoid&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;monoid&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;suchthat&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;neq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;&lt;/apply&gt;
+    &lt;/bind&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;
+   &lt;csymbol cd="nums1"&gt;e&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e680prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e680pref')">Prefix</button>
+                  <div id="d40e680pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/monoid1.html#monoid">monoid</a>
+  (<a href="../../../cd/monoid1.html#monoid">monoid</a>
+  (<a href="../../../cd/set1.html#suchthat">suchthat</a>
+  (<a href="../../../cd/setname1.html#R">R</a>, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [  <i>x</i>
+                       ] .
+  (<a href="../../../cd/relation1.html#neq">neq</a>
+  ( <i>x</i>, <a href="../../../cd/alg1.html#zero">zero</a>)
+)
+)
+, <a href="../../../cd/arith1.html#times">times</a>)
+, <a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/nums1.html#pi">pi</a>, <a href="../../../cd/nums1.html#e">e</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e680popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e680pop')">Popcorn</button>
+                     <div id="d40e680pop" style="display:none; margin-top: 0.5em">
+monoid1.monoid(monoid1.monoid(set1.suchthat(setname1.R, fns1.lambda[$x -&gt; $x != alg1.zero]), arith1.times), [nums1.pi , nums1.e])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e680mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e680mml')">Rendered Presentation MathML</button>
+                     <div id="d40e680mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>monoid</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>monoid</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mo>{</mo>
+                                             <mrow>
+                                                <mi>x</mi>
+                                                <mo>&#8712;</mo>
+                                                <mi mathvariant="double-struck">R</mi>
+                                             </mrow>
+                                             <mo>|</mo>
+                                             <mrow>
+                                                <mi>x</mi>
+                                                <mo>&#8800;</mo>
+                                                <mn>0</mn>
+                                             </mrow>
+                                             <mo>}</mo>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mo>&#215;</mo>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>&#960;</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>e</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#submonoid">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#invertibles">invertibles</a>]
+	  
+	    [Previous: <a href="#semigroup">semigroup</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="invertibles">invertibles </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a unary function.  Its argument should be a monoid M.
+When applied to M, it denotes the submonoid of M consisting of all
+invertible elements in M. This is a group.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e737xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e737xml')">OpenMath XML (source)</button>
+                     <pre id="d40e737xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="monoid1" name="invertibles"/&gt;
+          &lt;OMV name="M"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e737cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e737cmml')">Strict Content MathML</button>
+                     <pre id="d40e737cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="monoid1"&gt;invertibles&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e737prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e737pref')">Prefix</button>
+                  <div id="d40e737pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/monoid1.html#invertibles">invertibles</a>
+  ( <i>M</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e737popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e737pop')">Popcorn</button>
+                     <div id="d40e737pop" style="display:none; margin-top: 0.5em">
+     monoid1.invertibles($M)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e737mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e737mml')">Rendered Presentation MathML</button>
+                     <div id="d40e737mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>invertibles</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#invertibles">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#divisor_of">divisor_of</a>]
+	  
+	    [Previous: <a href="#submonoid">submonoid</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="divisor_of">divisor_of</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a ternary function.  Its first argument should be a
+monoid M and the second and third arguments should be elements of M.
+When applied to M, a, and b, it denotes the fact that a is a divisor
+of b in M. This means that there are u,v in carrier(M) such that
+uav=b.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e758xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e758xml')">OpenMath XML (source)</button>
+                     <pre id="d40e758xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="monoid1" name="divisor_of"/&gt;
+          &lt;OMV name="M"/&gt; &lt;OMV name="a"/&gt; &lt;OMV name="b"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e758cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e758cmml')">Strict Content MathML</button>
+                     <pre id="d40e758cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;divisor_of&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e758prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e758pref')">Prefix</button>
+                  <div id="d40e758pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/monoid1.html#divisor_of">divisor_of</a>
+  ( <i>M</i>,  <i>a</i>,  <i>b</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e758popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e758pop')">Popcorn</button>
+                     <div id="d40e758pop" style="display:none; margin-top: 0.5em">
+     monoid1.divisor_of($M, $a, $b)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e758mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e758mml')">Rendered Presentation MathML</button>
+                     <div id="d40e758mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>divisor_of</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>M</mi>
+                                    <mo>,</mo>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#divisor_of">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#expression">expression</a>]
+	  
+	    [Previous: <a href="#invertibles">invertibles</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="expression">expression</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a function with two arguments.  Its first
+argument should be a monoid. The
+second should be an arithmetic expression A,
+whose operators are
+times and power, and whose leaves are members of the carrier of G. 
+The second argument of power should be nonnegative. When applied to
+G and A, it denotes the element (of G) that is obtained from the
+leaves of A by applying the multiplication and the power map of G instead of the
+times and power
+from the CD arith1  appearing in A.
+The symbol alg1.one occurring in A will be interpreted as 
+the identity of G.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e783xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e783xml')">OpenMath XML (source)</button>
+                     <pre id="d40e783xml" style="display:none">
+  &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+         &lt;OMA&gt;&lt;OMS cd="group1" name="expression"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="monoid1" name="monoid"/&gt;
+                   &lt;OMS cd="setname1" name="Z"/&gt;
+                   &lt;OMS cd="arith1" name="plus"/&gt;
+                   &lt;OMI&gt;0&lt;/OMI&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                   &lt;OMI&gt;4&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+              &lt;/OMA&gt;
+         &lt;/OMA&gt;
+         &lt;OMI&gt;7&lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e783cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e783cmml')">Strict Content MathML</button>
+                     <pre id="d40e783cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="group1"&gt;expression&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="monoid1"&gt;monoid&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;cn type="integer"&gt;7&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e783prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e783pref')">Prefix</button>
+                  <div id="d40e783pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/group1.html#expression">expression</a>
+  (<a href="../../../cd/monoid1.html#monoid">monoid</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/arith1.html#plus">plus</a>, 0)
+, <a href="../../../cd/arith1.html#times">times</a>
+  (4, 3)
+)
+, 7)
+
+  </div>
+                  <div>
+                     <button id="d40e783popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e783pop')">Popcorn</button>
+                     <div id="d40e783pop" style="display:none; margin-top: 0.5em">
+    group1.expression(monoid1.monoid(setname1.Z, arith1.plus, 0), 4 * 3) = 7
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e783mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e783mml')">Rendered Presentation MathML</button>
+                     <div id="d40e783mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>expression</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>monoid</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi mathvariant="double-struck">Z</mi>
+                                             <mo>,</mo>
+                                             <mo>+</mo>
+                                             <mo>,</mo>
+                                             <mn>0</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mn>4</mn>
+                                          <mo>&#215;</mo>
+                                          <mn>3</mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mn>7</mn>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/monoid1.html#expression">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#monoid">monoid</a>]
+	  
+	    [Previous: <a href="#divisor_of">divisor_of</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+         </div>
+      </div>
+   </body>
+</html>

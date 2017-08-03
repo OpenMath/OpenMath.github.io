@@ -1,0 +1,709 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>polygb</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: polygb</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.win.tue.nl/~amc/oz/om/cds/polygb1.ocd">http://www.win.tue.nl/~amc/oz/om/cds/polygb1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="polygb.ocd">polygb.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="polygb.omcd">polygb.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#completely_reduced">completely_reduced</a>, <a href="#groebner">groebner</a>, <a href="#groebner_basis">groebner_basis</a>, <a href="#groebnered">groebnered</a>, <a href="#reduce">reduce</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-06-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+    
+
+   
+    
+    
+   
+   
+   
+
+            <p>
+     This CD contains operators for Groebner basis computations with polynomial expressions.
+     It is derived from surgery of polyd.
+   </p>
+
+
+
+            <pre>
+     Definition of some constructors
+</pre>
+
+            <hr/> 
+            <h2>
+               <a name="groebner_basis"> groebner_basis </a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> The
+constructor for a Groebner basis (reduced, minimal). The first is a
+list of variables, the second argument is an ordering, the third is
+the Groebner Basis itself (with respect to the ordering) that should
+be represented as a polynomial expression.  </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polygb.html#groebner_basis">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#groebner">groebner</a>]
+	  
+	    [Last: <a href="#reduce">reduce</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <pre>
+     Definition of operations
+</pre>
+
+
+            <hr/>
+            <h2>
+               <a name="groebner"> groebner </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+         The groebner basis (reduced, minimal) of a set of polynomials, with
+         respect to a given ordering. First argument is  a list of
+	 variables, the second is an ordering, the
+ third is a list of polynomials. A program that can compute
+         the basis is required to return a "groebner_basis" object.
+       </p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e57xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57xml')">OpenMath XML (source)</button>
+                     <pre id="d40e57xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+           &lt;OMA&gt;&lt;OMS name="groebner" cd="polygb1"/&gt;
+                &lt;OMA&gt;&lt;OMS name="list" cd="list1"/&gt;
+                               &lt;OMV name="x"/&gt;
+                               &lt;OMV name="y"/&gt;
+                &lt;/OMA&gt;
+
+                &lt;OMA&gt;&lt;OMS name="ordering" cd="polyd2"/&gt;
+                     &lt;OMS name="lexicographic" cd="polyd2"/&gt;
+                &lt;/OMA&gt;
+
+                &lt;OMA&gt;&lt;OMS name="list" cd="list1"/&gt;
+                     &lt;OMA&gt;&lt;OMS name="minus" cd="arith1"/&gt;    
+                          &lt;OMA&gt;&lt;OMS name="times" cd="arith1"/&gt;    
+                               &lt;OMA&gt;&lt;OMS name="power" cd="arith1"/&gt;    
+                                    &lt;OMV name="x"/&gt;
+                                    &lt;OMI&gt; 2 &lt;/OMI&gt;
+                               &lt;/OMA&gt;
+                               &lt;OMV name="y"/&gt;
+                          &lt;/OMA&gt;
+                          &lt;OMI&gt; 1 &lt;/OMI&gt;
+                     &lt;/OMA&gt;
+                     &lt;OMA&gt;&lt;OMS name="minus" cd="arith1"/&gt;    
+                          &lt;OMA&gt;&lt;OMS name="times" cd="arith1"/&gt;    
+                               &lt;OMA&gt;&lt;OMS name="power" cd="arith1"/&gt;    
+                                    &lt;OMV name="y"/&gt;
+                                    &lt;OMI&gt; 2 &lt;/OMI&gt;
+                               &lt;/OMA&gt;
+                               &lt;OMV name="x"/&gt;
+                          &lt;/OMA&gt;
+                     &lt;OMI&gt; 1 &lt;/OMI&gt;
+                     &lt;/OMA&gt;
+                &lt;/OMA&gt;
+           &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e57cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57cmml')">Strict Content MathML</button>
+                     <pre id="d40e57cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="polygb1"&gt;groebner&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd2"&gt;ordering&lt;/csymbol&gt;&lt;csymbol cd="polyd2"&gt;lexicographic&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;y&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;x&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e57prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e57pref')">Prefix</button>
+                  <div id="d40e57pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/polygb1.html#groebner">groebner</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  ( <i>x</i>,  <i>y</i>)
+, <a href="../../../cd/polyd2.html#ordering">ordering</a>
+  (<a href="../../../cd/polyd2.html#lexicographic">lexicographic</a>)
+, <a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>x</i>,  2 )
+,  <i>y</i>)
+,  1 )
+, <a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>y</i>,  2 )
+,  <i>x</i>)
+,  1 )
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e57popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57pop')">Popcorn</button>
+                     <div id="d40e57pop" style="display:none; margin-top: 0.5em">
+           polygb1.groebner([$x , $y], polyd2.ordering(polyd2.lexicographic), [$x ^ 2 * $y - 1 , $y ^ 2 * $x - 1])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e57mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e57mml')">Rendered Presentation MathML</button>
+                     <div id="d40e57mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>groebner</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>y</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>ordering</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>lexicographic</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mtable>
+                                       <mtr>
+                                          <mtd columnalign="left">
+                                             <mrow>
+                                                <mrow>
+                                                   <msup>
+                                                      <mi>x</mi>
+                                                      <mn> 2 </mn>
+                                                   </msup>
+                                                   <mo>&#8290;</mo>
+                                                   <mi>y</mi>
+                                                </mrow>
+                                                <mo>-</mo>
+                                                <mn> 1 </mn>
+                                             </mrow>
+                                          </mtd>
+                                       </mtr>
+                                       <mtr>
+                                          <mtd columnalign="left">
+                                             <mrow>
+                                                <mrow>
+                                                   <msup>
+                                                      <mi>y</mi>
+                                                      <mn> 2 </mn>
+                                                   </msup>
+                                                   <mo>&#8290;</mo>
+                                                   <mi>x</mi>
+                                                </mrow>
+                                                <mo>-</mo>
+                                                <mn> 1 </mn>
+                                             </mrow>
+                                          </mtd>
+                                       </mtr>
+                                    </mtable>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polygb.html#groebner">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#groebnered">groebnered</a>]
+	  
+	    [Previous: <a href="#groebner_basis">groebner_basis</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="groebnered"> groebnered </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          The constructor for a Groebner basis (reduced, minimal). The first
+          argument is an ordering, the second is the Groebner Basis itself
+          (with respect to the ordering) that should be represented as a DMPL.
+       </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polygb.html#groebnered">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#completely_reduced">completely_reduced</a>]
+	  
+	    [Previous: <a href="#groebner">groebner</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="completely_reduced"> completely_reduced </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          This attribute, attached to a groebnered object, says 'true' if
+          the base is fully reduced, i.e. no monomial is divisible by the
+          leading monomial of any other polynomial.
+       </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polygb.html#completely_reduced">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#reduce">reduce</a>]
+	  
+	    [Previous: <a href="#groebnered">groebnered</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="reduce"> reduce </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p/>
+                  <p>         The reduction of a polynomial with respect to a list P of
+	 polynomials.  First argument is a polynomial expression p, the
+	 second argument is the list P of polynomials, the third argument
+	 is a list of variables, the fourth argument is a monomial
+	 reduction ordering.  A program implementing this operation
+	 should return a polynomial which represents a polynomial
+	 reduced from p with respect to P.  This means
+	 that p is expressible as the sum of the
+	 returned polynomial and a linear combination of the
+	 polynomials from P with coefficients being polynomials
+	 in the variables given in the third argument, and that no
+	 monomial of the returned polynomial is divisible by the
+	 leading monomial of an element from P. </p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e156xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e156xml')">OpenMath XML (source)</button>
+                     <pre id="d40e156xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+           &lt;OMA&gt;&lt;OMS name="reduce" cd="polygb1"/&gt;
+                &lt;OMA&gt;&lt;OMS name="power" cd="arith1"/&gt;
+                     &lt;OMV name="x"/&gt;
+                     &lt;OMI&gt;3&lt;/OMI&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;&lt;OMS name="list" cd="list1"/&gt;
+                     &lt;OMA&gt;&lt;OMS name="plus" cd="arith1"/&gt;
+                          &lt;OMA&gt;&lt;OMS name="power" cd="arith1"/&gt;
+                               &lt;OMV name="y"/&gt;
+                               &lt;OMI&gt;3&lt;/OMI&gt;
+			  &lt;/OMA&gt;			       
+                          &lt;OMI&gt;-1&lt;/OMI&gt;
+                     &lt;/OMA&gt;
+                     &lt;OMA&gt;&lt;OMS name="minus" cd="arith1"/&gt;
+                          &lt;OMV name="x"/&gt;
+                          &lt;OMV name="y"/&gt;
+                     &lt;/OMA&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;&lt;OMS name="list" cd="list1"/&gt;
+                     &lt;OMV name="x"/&gt;&lt;OMV name="y"/&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;&lt;OMS name="ordering" cd="polyd2"/&gt;
+                     &lt;OMS name="lexicographic" cd="polyd2"/&gt;
+                &lt;/OMA&gt;
+           &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e156cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e156cmml')">Strict Content MathML</button>
+                     <pre id="d40e156cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="polygb1"&gt;reduce&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;cn type="integer"&gt;3&lt;/cn&gt;&lt;/apply&gt;
+    &lt;cn type="integer"&gt;-1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd2"&gt;ordering&lt;/csymbol&gt;&lt;csymbol cd="polyd2"&gt;lexicographic&lt;/csymbol&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e156prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e156pref')">Prefix</button>
+                  <div id="d40e156pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/polygb1.html#reduce">reduce</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>x</i>, 3)
+, <a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>y</i>, 3)
+, -1)
+, <a href="../../../cd/arith1.html#minus">minus</a>
+  ( <i>x</i>,  <i>y</i>)
+)
+, <a href="../../../cd/list1.html#list">list</a>
+  ( <i>x</i>,  <i>y</i>)
+, <a href="../../../cd/polyd2.html#ordering">ordering</a>
+  (<a href="../../../cd/polyd2.html#lexicographic">lexicographic</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e156popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e156pop')">Popcorn</button>
+                     <div id="d40e156pop" style="display:none; margin-top: 0.5em">
+           polygb1.reduce($x ^ 3, [$y ^ 3 + -1 , $x - $y], [$x , $y], polyd2.ordering(polyd2.lexicographic))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e156mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e156mml')">Rendered Presentation MathML</button>
+                     <div id="d40e156mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>reduce</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <msup>
+                                       <mi>x</mi>
+                                       <mn>3</mn>
+                                    </msup>
+                                    <mo>,</mo>
+                                    <mtable>
+                                       <mtr>
+                                          <mtd columnalign="left">
+                                             <mrow>
+                                                <msup>
+                                                   <mi>y</mi>
+                                                   <mn>3</mn>
+                                                </msup>
+                                                <mo>-</mo>
+                                                <mn>1</mn>
+                                             </mrow>
+                                          </mtd>
+                                       </mtr>
+                                       <mtr>
+                                          <mtd columnalign="left">
+                                             <mrow>
+                                                <mi>x</mi>
+                                                <mo>-</mo>
+                                                <mi>y</mi>
+                                             </mrow>
+                                          </mtd>
+                                       </mtr>
+                                    </mtable>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>x</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>y</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>ordering</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>lexicographic</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polygb.html#reduce">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#groebner_basis">groebner_basis</a>]
+	  
+	    [Previous: <a href="#completely_reduced">completely_reduced</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+
+
+         </div>
+      </div>
+   </body>
+</html>

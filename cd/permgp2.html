@@ -1,0 +1,1217 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>permgp2</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: permgp2</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/permgp2.ocd">http://www.openmath.org/cd/permgp2.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="permgp2.ocd">permgp2.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="permgp2.omcd">permgp2.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#alternating_group">alternating_group</a>, <a href="#symmetric_group">symmetric_group</a>, <a href="#cyclic_group">cyclic_group</a>, <a href="#dihedral_group">dihedral_group</a>, <a href="#quaternion_group">quaternion_group</a>, <a href="#vierer_group">vierer_group</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>1
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd/>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+   
+
+   
+   
+   
+   
+   
+   
+
+            <p>
+                 A CD of functions for permutation groups.
+ Primarily for defining the best known permutation groups.
+   </p>
+
+            <pre>
+     Built by Arjeh M. Cohen 2003-02-16.
+   </pre>
+
+
+            <hr/>
+            <h2>
+               <a name="symmetric_group"> symmetric_group </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a unary function. Its argument is either a
+positive integer or a set.
+When evaluated on a set, it represents the
+permutation group of all permutations of that set.
+When evaluated on a positive integer n, it represents the
+permutation group of all permutations of the set {1,..., n}.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The permutation group generated by (1,2) and (2,3) is equal to the
+symmetric group on {1,2,3}.
+
+<div>
+                     <button id="d40e41xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41xml')">OpenMath XML (source)</button>
+                     <pre id="d40e41xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+	&lt;OMA&gt;&lt;OMS cd="permgp1" name="group"/&gt;
+             &lt;OMS cd="permutation1" name="right_compose"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="permutation1" name="permutation"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+	     &lt;/OMA&gt;
+	     &lt;OMA&gt;&lt;OMS cd="permutation1" name="permutation"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+		       &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+                  &lt;/OMA&gt;
+             &lt;/OMA&gt;
+        &lt;/OMA&gt;
+	&lt;OMA&gt;&lt;OMS cd="permgp2" name="symmetric_group"/&gt;
+             &lt;OMI&gt;3&lt;/OMI&gt;
+        &lt;/OMA&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e41cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41cmml')">Strict Content MathML</button>
+                     <pre id="d40e41cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="permgp1"&gt;group&lt;/csymbol&gt;
+   &lt;csymbol cd="permutation1"&gt;right_compose&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;permutation&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;permutation&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="permgp2"&gt;symmetric_group&lt;/csymbol&gt;&lt;cn type="integer"&gt;3&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e41prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e41pref')">Prefix</button>
+                  <div id="d40e41pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/permgp1.html#group">group</a>
+  (<a href="../../../cd/permutation1.html#right_compose">right_compose</a>, <a href="../../../cd/permutation1.html#permutation">permutation</a>
+  (<a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (1, 2)
+)
+, <a href="../../../cd/permutation1.html#permutation">permutation</a>
+  (<a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (2, 3)
+)
+)
+, <a href="../../../cd/permgp2.html#symmetric_group">symmetric_group</a>
+  (3)
+)
+
+</div>
+                  <div>
+                     <button id="d40e41popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41pop')">Popcorn</button>
+                     <div id="d40e41pop" style="display:none; margin-top: 0.5em">
+   permgp1.group(permutation1.right_compose, permutation1.permutation(permutation1.cycle(1, 2)), permutation1.permutation(permutation1.cycle(2, 3))) = permgp2.symmetric_group(3)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e41mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e41mml')">Rendered Presentation MathML</button>
+                     <div id="d40e41mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>group</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>right_compose</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>permutation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>2</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>permutation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>2</mn>
+                                                   <mo>,</mo>
+                                                   <mn>3</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <msub>
+                                    <mi>S</mi>
+                                    <mn>3</mn>
+                                 </msub>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/permgp2.html#symmetric_group">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#alternating_group">alternating_group</a>]
+	  
+	    [Last: <a href="#vierer_group">vierer_group</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="alternating_group"> alternating_group </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a unary function. Its argument is either a
+positive integer or a set.
+When evaluated on a set, it represents the
+permutation group of all even permutations of that set.
+When evaluated on a positive integer n, it represents the
+permutation group of all even permutations of the set {1,..., n}.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The permutation group generated by (1,2,3) and (3,4,5) is equal to the
+alternating group on {1,2,3,4,5}.
+
+<div>
+                     <button id="d40e99xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e99xml')">OpenMath XML (source)</button>
+                     <pre id="d40e99xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+	&lt;OMA&gt;&lt;OMS cd="permgp1" name="group"/&gt;
+             &lt;OMS cd="permutation1" name="right_compose"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="permutation1" name="permutation"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+	     &lt;/OMA&gt;
+	     &lt;OMA&gt;&lt;OMS cd="permutation1" name="permutation"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+		       &lt;OMI&gt;3&lt;/OMI&gt;&lt;OMI&gt;4&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;
+                  &lt;/OMA&gt;
+             &lt;/OMA&gt;
+        &lt;/OMA&gt;
+	&lt;OMA&gt;&lt;OMS cd="permgp2" name="alternating_group"/&gt;
+             &lt;OMI&gt;5&lt;/OMI&gt;
+        &lt;/OMA&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e99cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e99cmml')">Strict Content MathML</button>
+                     <pre id="d40e99cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="permgp1"&gt;group&lt;/csymbol&gt;
+   &lt;csymbol cd="permutation1"&gt;right_compose&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;permutation&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;permutation&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;4&lt;/cn&gt;
+     &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="permgp2"&gt;alternating_group&lt;/csymbol&gt;&lt;cn type="integer"&gt;5&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e99prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e99pref')">Prefix</button>
+                  <div id="d40e99pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/permgp1.html#group">group</a>
+  (<a href="../../../cd/permutation1.html#right_compose">right_compose</a>, <a href="../../../cd/permutation1.html#permutation">permutation</a>
+  (<a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (1, 2, 3)
+)
+, <a href="../../../cd/permutation1.html#permutation">permutation</a>
+  (<a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (3, 4, 5)
+)
+)
+, <a href="../../../cd/permgp2.html#alternating_group">alternating_group</a>
+  (5)
+)
+
+</div>
+                  <div>
+                     <button id="d40e99popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e99pop')">Popcorn</button>
+                     <div id="d40e99pop" style="display:none; margin-top: 0.5em">
+   permgp1.group(permutation1.right_compose, permutation1.permutation(permutation1.cycle(1, 2, 3)), permutation1.permutation(permutation1.cycle(3, 4, 5))) = permgp2.alternating_group(5)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e99mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e99mml')">Rendered Presentation MathML</button>
+                     <div id="d40e99mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>group</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>right_compose</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>permutation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>2</mn>
+                                                   <mo>,</mo>
+                                                   <mn>3</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>permutation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>3</mn>
+                                                   <mo>,</mo>
+                                                   <mn>4</mn>
+                                                   <mo>,</mo>
+                                                   <mn>5</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <msub>
+                                    <mi>Alt</mi>
+                                    <mn>5</mn>
+                                 </msub>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/permgp2.html#alternating_group">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#cyclic_group">cyclic_group</a>]
+	  
+	    [Previous: <a href="#symmetric_group">symmetric_group</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="cyclic_group">cyclic_group</a>
+            </h2>
+
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a unary function whose argument should be a positive
+ integer.
+ When evaluated at the integer n, it represents the
+permutation group generated by the permutation (1,2,...,n).
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/permgp2.html#cyclic_group">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#dihedral_group">dihedral_group</a>]
+	  
+	    [Previous: <a href="#alternating_group">alternating_group</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+            <hr/>
+
+            <h2>
+               <a name="dihedral_group">dihedral_group</a>
+            </h2>
+
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a unary function whose argument should be a positive
+ integer.
+ When evaluated at the integer n, it represents the
+dihedral group of all 2n permutations of {1,2,...,n} preserving the n-gon 
+1,2,...,n.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The group is generated by the permutations (1,2,...,n) and
+(1,n)(2,n-1)(3,n-3) ....(n/2-1/2,n/2+1/2) if n is odd and 
+by the permutations (1,2,...,n) and
+(1,n)(2,n-1)(3,n-3) ....(n/2-1,n/2+1) if n is odd.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The dihedral group on 3 (letters) coincides with the symmetric group
+on 3 (letters).
+
+<div>
+                     <button id="d40e174xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e174xml')">OpenMath XML (source)</button>
+                     <pre id="d40e174xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="permgp2" name="dihedral_group"/&gt;
+             &lt;OMI&gt;3&lt;/OMI&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="permgp2" name="symmetric_group"/&gt;
+             &lt;OMI&gt;3&lt;/OMI&gt;
+        &lt;/OMA&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e174cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e174cmml')">Strict Content MathML</button>
+                     <pre id="d40e174cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="permgp2"&gt;dihedral_group&lt;/csymbol&gt;&lt;cn type="integer"&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="permgp2"&gt;symmetric_group&lt;/csymbol&gt;&lt;cn type="integer"&gt;3&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e174prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e174pref')">Prefix</button>
+                  <div id="d40e174pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/permgp2.html#dihedral_group">dihedral_group</a>
+  (3)
+, <a href="../../../cd/permgp2.html#symmetric_group">symmetric_group</a>
+  (3)
+)
+
+</div>
+                  <div>
+                     <button id="d40e174popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e174pop')">Popcorn</button>
+                     <div id="d40e174pop" style="display:none; margin-top: 0.5em">
+   permgp2.dihedral_group(3) = permgp2.symmetric_group(3)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e174mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e174mml')">Rendered Presentation MathML</button>
+                     <div id="d40e174mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <msub>
+                                    <mi>D</mi>
+                                    <mn>3</mn>
+                                 </msub>
+                                 <mo>=</mo>
+                                 <msub>
+                                    <mi>S</mi>
+                                    <mn>3</mn>
+                                 </msub>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/permgp2.html#dihedral_group">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#quaternion_group">quaternion_group</a>]
+	  
+	    [Previous: <a href="#cyclic_group">cyclic_group</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+
+            <h2>
+               <a name="quaternion_group">quaternion_group</a>
+            </h2>
+
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the quaternion group of order 8, viewed as a
+permutation group by means of the regular representation
+(multiplication from the right).
+It is generated by (1,2,3,4)(5,8,6,7) and
+(1,5,2,6)(3,7,4,8).
+(In the usual notation, the 8 elements are 1, -1, i, -i, j, -j, k, -k.)
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e207xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e207xml')">OpenMath XML (source)</button>
+                     <pre id="d40e207xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+	&lt;OMA&gt;&lt;OMS cd="permgp1" name="group"/&gt;
+             &lt;OMS cd="permutation1" name="right_compose"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="permutation1" name="permutation"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;4&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;5&lt;/OMI&gt;&lt;OMI&gt;8&lt;/OMI&gt;&lt;OMI&gt;6&lt;/OMI&gt;&lt;OMI&gt;7&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+	     &lt;/OMA&gt;
+             &lt;OMA&gt;&lt;OMS cd="permutation1" name="permutation"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;6&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;3&lt;/OMI&gt;&lt;OMI&gt;7&lt;/OMI&gt;&lt;OMI&gt;5&lt;/OMI&gt;&lt;OMI&gt;8&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+	     &lt;/OMA&gt;
+        &lt;/OMA&gt;
+	&lt;OMS cd="permgp2" name="quaternion_group"/&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e207cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e207cmml')">Strict Content MathML</button>
+                     <pre id="d40e207cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="permgp1"&gt;group&lt;/csymbol&gt;
+   &lt;csymbol cd="permutation1"&gt;right_compose&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;permutation&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;5&lt;/cn&gt;
+     &lt;cn type="integer"&gt;8&lt;/cn&gt;
+     &lt;cn type="integer"&gt;6&lt;/cn&gt;
+     &lt;cn type="integer"&gt;7&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;permutation&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;5&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;7&lt;/cn&gt;
+     &lt;cn type="integer"&gt;5&lt;/cn&gt;
+     &lt;cn type="integer"&gt;8&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="permgp2"&gt;quaternion_group&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e207prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e207pref')">Prefix</button>
+                  <div id="d40e207pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/permgp1.html#group">group</a>
+  (<a href="../../../cd/permutation1.html#right_compose">right_compose</a>, <a href="../../../cd/permutation1.html#permutation">permutation</a>
+  (<a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (1, 3, 2, 4)
+, <a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (5, 8, 6, 7)
+)
+, <a href="../../../cd/permutation1.html#permutation">permutation</a>
+  (<a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (1, 5, 2, 6)
+, <a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (3, 7, 5, 8)
+)
+)
+, <a href="../../../cd/permgp2.html#quaternion_group">quaternion_group</a>)
+
+</div>
+                  <div>
+                     <button id="d40e207popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e207pop')">Popcorn</button>
+                     <div id="d40e207pop" style="display:none; margin-top: 0.5em">
+   permgp1.group(permutation1.right_compose, permutation1.permutation(permutation1.cycle(1, 3, 2, 4), permutation1.cycle(5, 8, 6, 7)), permutation1.permutation(permutation1.cycle(1, 5, 2, 6), permutation1.cycle(3, 7, 5, 8))) = permgp2.quaternion_group
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e207mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e207mml')">Rendered Presentation MathML</button>
+                     <div id="d40e207mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>group</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>right_compose</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>permutation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>3</mn>
+                                                   <mo>,</mo>
+                                                   <mn>2</mn>
+                                                   <mo>,</mo>
+                                                   <mn>4</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>5</mn>
+                                                   <mo>,</mo>
+                                                   <mn>8</mn>
+                                                   <mo>,</mo>
+                                                   <mn>6</mn>
+                                                   <mo>,</mo>
+                                                   <mn>7</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>permutation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>5</mn>
+                                                   <mo>,</mo>
+                                                   <mn>2</mn>
+                                                   <mo>,</mo>
+                                                   <mn>6</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>3</mn>
+                                                   <mo>,</mo>
+                                                   <mn>7</mn>
+                                                   <mo>,</mo>
+                                                   <mn>5</mn>
+                                                   <mo>,</mo>
+                                                   <mn>8</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>quaternion_group</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/permgp2.html#quaternion_group">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#vierer_group">vierer_group</a>]
+	  
+	    [Previous: <a href="#dihedral_group">dihedral_group</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+
+            <h2>
+               <a name="vierer_group">vierer_group</a>
+            </h2>
+
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents the Klein Vierer group of order 4, viewed as a
+permutation group of degree 4.
+It consists of the identity, (1,2)(3,4), (1,3)(2,4), and (1,4)(2,3).
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e294xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294xml')">OpenMath XML (source)</button>
+                     <pre id="d40e294xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+	&lt;OMA&gt;&lt;OMS cd="permgp1" name="group"/&gt;
+             &lt;OMS cd="permutation1" name="right_compose"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="permutation1" name="permutation"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;2&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;3&lt;/OMI&gt;&lt;OMI&gt;4&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+	     &lt;/OMA&gt;
+             &lt;OMA&gt;&lt;OMS cd="permutation1" name="permutation"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;1&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+                  &lt;OMA&gt;&lt;OMS cd="permutation1" name="cycle"/&gt;
+                       &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;4&lt;/OMI&gt;
+		  &lt;/OMA&gt;
+	     &lt;/OMA&gt;
+        &lt;/OMA&gt;
+	&lt;OMS cd="permgp2" name="vierer_group"/&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e294cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294cmml')">Strict Content MathML</button>
+                     <pre id="d40e294cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="permgp1"&gt;group&lt;/csymbol&gt;
+   &lt;csymbol cd="permutation1"&gt;right_compose&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;permutation&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;permutation&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="permutation1"&gt;cycle&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="permgp2"&gt;vierer_group&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e294prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e294pref')">Prefix</button>
+                  <div id="d40e294pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/permgp1.html#group">group</a>
+  (<a href="../../../cd/permutation1.html#right_compose">right_compose</a>, <a href="../../../cd/permutation1.html#permutation">permutation</a>
+  (<a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (1, 2)
+, <a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (3, 4)
+)
+, <a href="../../../cd/permutation1.html#permutation">permutation</a>
+  (<a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (1, 3)
+, <a href="../../../cd/permutation1.html#cycle">cycle</a>
+  (2, 4)
+)
+)
+, <a href="../../../cd/permgp2.html#vierer_group">vierer_group</a>)
+
+</div>
+                  <div>
+                     <button id="d40e294popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294pop')">Popcorn</button>
+                     <div id="d40e294pop" style="display:none; margin-top: 0.5em">
+   permgp1.group(permutation1.right_compose, permutation1.permutation(permutation1.cycle(1, 2), permutation1.cycle(3, 4)), permutation1.permutation(permutation1.cycle(1, 3), permutation1.cycle(2, 4))) = permgp2.vierer_group
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e294mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e294mml')">Rendered Presentation MathML</button>
+                     <div id="d40e294mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>group</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>right_compose</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>permutation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>2</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>3</mn>
+                                                   <mo>,</mo>
+                                                   <mn>4</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>permutation</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>1</mn>
+                                                   <mo>,</mo>
+                                                   <mn>3</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>cycle</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mn>2</mn>
+                                                   <mo>,</mo>
+                                                   <mn>4</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>vierer_group</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/permgp2.html#vierer_group">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#symmetric_group">symmetric_group</a>]
+	  
+	    [Previous: <a href="#quaternion_group">quaternion_group</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+         </div>
+      </div>
+   </body>
+</html>

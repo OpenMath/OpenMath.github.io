@@ -1,0 +1,1809 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>semigroup1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: semigroup1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/semigroup1.ocd">http://www.openmath.org/cd/semigroup1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="semigroup1.ocd">semigroup1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="semigroup1.omcd">semigroup1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#carrier">carrier</a>, <a href="#is_commutative">is_commutative</a>, <a href="#is_subsemigroup">is_subsemigroup</a>, <a href="#multiplication">multiplication</a>, <a href="#semigroup">semigroup</a>, <a href="#subsemigroup">subsemigroup</a>, <a href="#expression">expression</a>, <a href="#factor_of">factor_of</a>, <a href="#magma">magma</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 3 
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-06-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+            <p> Basic functions for semigroup theory   </p>
+
+            <pre>
+Initiated by Arjeh M. Cohen 2003-05-17
+Edited AMC 2004-0304
+</pre>
+
+
+
+            <hr/>
+            <h2>
+               <a name="semigroup"> semigroup </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a constructor for semigroups. It takes two arguments in
+the following order: a set to specify the elements in the semigroup,
+and a binary operation to specify the semigroup operation. The binary
+operation should act on elements of the set and return an element of
+the set.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+A semigroup is closed under its operation.
+A semigroup operation is associative.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e47xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47xml')">OpenMath XML (source)</button>
+                     <pre id="d40e47xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMV name="S"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="semigroup1" name="semigroup"/&gt;
+	&lt;OMV name="set"/&gt;
+	&lt;OMV name="binop"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="implies"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="logic1" name="and"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="set1" name="in"/&gt;
+	    &lt;OMV name="x"/&gt;
+	    &lt;OMV name="set"/&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="set1" name="in"/&gt;
+	    &lt;OMV name="y"/&gt;
+	    &lt;OMV name="set"/&gt;
+	  &lt;/OMA&gt;
+	&lt;/OMA&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="set1" name="in"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMV name="binop"/&gt;
+	    &lt;OMV name="x"/&gt;
+	    &lt;OMV name="y"/&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMV name="set"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMV name="binop"/&gt;
+	  &lt;OMV name="x"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMV name="binop"/&gt;
+	    &lt;OMV name="y"/&gt;
+	    &lt;OMV name="z"/&gt;
+	  &lt;/OMA&gt;
+	&lt;/OMA&gt;
+	&lt;OMA&gt;
+	  &lt;OMV name="binop"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMV name="binop"/&gt;
+	    &lt;OMV name="x"/&gt;
+	    &lt;OMV name="y"/&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMV name="z"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e47cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47cmml')">Strict Content MathML</button>
+                     <pre id="d40e47cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;ci&gt;S&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;semigroup&lt;/csymbol&gt;&lt;ci&gt;set&lt;/ci&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;set&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;set&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;set&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;
+     &lt;ci&gt;binop&lt;/ci&gt;
+     &lt;ci&gt;x&lt;/ci&gt;
+     &lt;apply&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;
+     &lt;ci&gt;binop&lt;/ci&gt;
+     &lt;apply&gt;&lt;ci&gt;binop&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;z&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e47prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e47pref')">Prefix</button>
+                  <div id="d40e47pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>S</i>, <a href="../../../cd/semigroup1.html#semigroup">semigroup</a>
+  ( <i>set</i>,  <i>binop</i>)
+)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>,  <i>set</i>)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>y</i>,  <i>set</i>)
+)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>binop</i>
+  ( <i>x</i>,  <i>y</i>)
+,  <i>set</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>binop</i>
+  ( <i>x</i>,  <i>binop</i>
+  ( <i>y</i>,  <i>z</i>)
+)
+,  <i>binop</i>
+  ( <i>binop</i>
+  ( <i>x</i>,  <i>y</i>)
+,  <i>z</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e47popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e47pop')">Popcorn</button>
+                     <div id="d40e47pop" style="display:none; margin-top: 0.5em">
+  $S = semigroup1.semigroup($set, $binop) ==&gt; (set1.in($x, $set) and set1.in($y, $set) ==&gt; set1.in($binop($x, $y), $set)) and $binop($x, $binop($y, $z)) = $binop($binop($x, $y), $z)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e47mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e47mml')">Rendered Presentation MathML</button>
+                     <div id="d40e47mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>S</mi>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>semigroup</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>set</mi>
+                                          <mo>,</mo>
+                                          <mi>binop</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>x</mi>
+                                             <mo>&#8712;</mo>
+                                             <mi>set</mi>
+                                          </mrow>
+                                          <mo>&#8743;</mo>
+                                          <mrow>
+                                             <mi>y</mi>
+                                             <mo>&#8712;</mo>
+                                             <mi>set</mi>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8658;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>binop</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>x</mi>
+                                                <mo>,</mo>
+                                                <mi>y</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>&#8712;</mo>
+                                          <mi>set</mi>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>binop</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>x</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>binop</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>y</mi>
+                                                   <mo>,</mo>
+                                                   <mi>z</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mrow>
+                                          <mi>binop</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>binop</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>x</mi>
+                                                   <mo>,</mo>
+                                                   <mi>y</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mi>z</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+This example represents the semigroup of all functions f: R -&gt; R with
+function composition as the operation.
+
+<div>
+                     <button id="d40e160xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e160xml')">OpenMath XML (source)</button>
+                     <pre id="d40e160xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="semigroup1" name="semigroup"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+      &lt;OMS cd="setname1" name="R"/&gt;
+      &lt;OMS cd="setname1" name="R"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="fns1" name="left_compose"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e160cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e160cmml')">Strict Content MathML</button>
+                     <pre id="d40e160cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;semigroup&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="fns1"&gt;left_compose&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e160prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e160pref')">Prefix</button>
+                  <div id="d40e160pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/semigroup1.html#semigroup">semigroup</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
+  (<a href="../../../cd/setname1.html#R">R</a>, <a href="../../../cd/setname1.html#R">R</a>)
+, <a href="../../../cd/fns1.html#left_compose">left_compose</a>)
+
+</div>
+                  <div>
+                     <button id="d40e160popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e160pop')">Popcorn</button>
+                     <div id="d40e160pop" style="display:none; margin-top: 0.5em">
+  semigroup1.semigroup(setname1.R ^ setname1.R, fns1.left_compose)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e160mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e160mml')">Rendered Presentation MathML</button>
+                     <div id="d40e160mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>semigroup</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <msup>
+                                       <mi mathvariant="double-struck">R</mi>
+                                       <mi mathvariant="double-struck">R</mi>
+                                    </msup>
+                                    <mo>,</mo>
+                                    <mo>o</mo>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#semigroup">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#carrier">carrier</a>]
+	  
+	    [Last: <a href="#expression">expression</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="carrier"> carrier </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a unary function, whose argument should be a
+semigroup S (for instance constructed by semigroup).  When
+applied to S, its value should be the set of elements of S.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The carrier of semigroup(S,*) is S.
+
+<div>
+                     <button id="d40e190xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e190xml')">OpenMath XML (source)</button>
+                     <pre id="d40e190xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="semigroup1" name="carrier"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="semigroup1" name="semigroup"/&gt;
+                 &lt;OMV name="S"/&gt;  &lt;OMV name="times"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMV name="S"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e190cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e190cmml')">Strict Content MathML</button>
+                     <pre id="d40e190cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;carrier&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;semigroup&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;ci&gt;times&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;S&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e190prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e190pref')">Prefix</button>
+                  <div id="d40e190pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/semigroup1.html#carrier">carrier</a>
+  (<a href="../../../cd/semigroup1.html#semigroup">semigroup</a>
+  ( <i>S</i>,  <i>times</i>)
+)
+,  <i>S</i>)
+
+</div>
+                  <div>
+                     <button id="d40e190popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e190pop')">Popcorn</button>
+                     <div id="d40e190pop" style="display:none; margin-top: 0.5em">
+  semigroup1.carrier(semigroup1.semigroup($S, $times)) = $S
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e190mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e190mml')">Rendered Presentation MathML</button>
+                     <div id="d40e190mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>carrier</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>semigroup</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>S</mi>
+                                             <mo>,</mo>
+                                             <mi>times</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>S</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#carrier">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#multiplication">multiplication</a>]
+	  
+	    [Previous: <a href="#semigroup">semigroup</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="multiplication"> multiplication </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a unary function, whose argument should be a
+semigroup S.  It returns the multiplication map on S. 
+We allow for the map to be n-ary.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The multiplication of semigroup(S,*) is *.
+
+<div>
+                     <button id="d40e223xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e223xml')">OpenMath XML (source)</button>
+                     <pre id="d40e223xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="semigroup1" name="multiplication"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="semigroup1" name="semigroup"/&gt;
+                 &lt;OMV name="S"/&gt;  &lt;OMV name="times"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMV name="times"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e223cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e223cmml')">Strict Content MathML</button>
+                     <pre id="d40e223cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;multiplication&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;semigroup&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;ci&gt;times&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;times&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e223prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e223pref')">Prefix</button>
+                  <div id="d40e223pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/semigroup1.html#multiplication">multiplication</a>
+  (<a href="../../../cd/semigroup1.html#semigroup">semigroup</a>
+  ( <i>S</i>,  <i>times</i>)
+)
+,  <i>times</i>)
+
+</div>
+                  <div>
+                     <button id="d40e223popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e223pop')">Popcorn</button>
+                     <div id="d40e223pop" style="display:none; margin-top: 0.5em">
+  semigroup1.multiplication(semigroup1.semigroup($S, $times)) = $times
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e223mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e223mml')">Rendered Presentation MathML</button>
+                     <div id="d40e223mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>multiplication</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>semigroup</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>S</mi>
+                                             <mo>,</mo>
+                                             <mi>times</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>times</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#multiplication">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_commutative">is_commutative</a>]
+	  
+	    [Previous: <a href="#carrier">carrier</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="is_commutative"> is_commutative </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+The unary boolean function whose value is true iff the argument is a
+commutative semigroup.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If is_commutative(S) then for all a,b in carrier(S) a*b = b*a
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e259xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e259xml')">OpenMath XML (source)</button>
+                     <pre id="d40e259xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="semigroup1" name="is_commutative"/&gt;
+      &lt;OMV name="S"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMBIND&gt;
+      &lt;OMS cd="quant1" name="forall"/&gt;
+      &lt;OMBVAR&gt;
+        &lt;OMV name="a"/&gt;
+	&lt;OMV name="b"/&gt;
+      &lt;/OMBVAR&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="logic1" name="implies"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="logic1" name="and"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="set1" name="in"/&gt;
+	    &lt;OMV name="a"/&gt;
+	    &lt;OMA&gt;
+	      &lt;OMS cd="semigroup1" name="carrier"/&gt;
+	      &lt;OMV name="S"/&gt;
+	    &lt;/OMA&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="set1" name="in"/&gt;
+	    &lt;OMV name="b"/&gt;
+	    &lt;OMA&gt;
+	      &lt;OMS cd="semigroup1" name="carrier"/&gt;
+	      &lt;OMV name="S"/&gt;
+	    &lt;/OMA&gt;
+	  &lt;/OMA&gt;
+	&lt;/OMA&gt;
+	&lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+          &lt;OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="semigroup1" name="multiplication"/&gt;
+              &lt;OMV name="S"/&gt;
+            &lt;/OMA&gt;
+	    &lt;OMV name="a"/&gt;
+	    &lt;OMV name="b"/&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="semigroup1" name="multiplication"/&gt;
+              &lt;OMV name="S"/&gt;
+            &lt;/OMA&gt;
+	    &lt;OMV name="b"/&gt;
+	    &lt;OMV name="a"/&gt;
+	  &lt;/OMA&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMBIND&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e259cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e259cmml')">Strict Content MathML</button>
+                     <pre id="d40e259cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;is_commutative&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;bvar&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+      &lt;ci&gt;b&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;/apply&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;ci&gt;b&lt;/ci&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;/apply&gt;
+      &lt;ci&gt;b&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e259prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e259pref')">Prefix</button>
+                  <div id="d40e259pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/semigroup1.html#is_commutative">is_commutative</a>
+  ( <i>S</i>)
+, <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+         <i>a</i>
+	                    <i>b</i>
+      ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>, <a href="../../../cd/semigroup1.html#carrier">carrier</a>
+  ( <i>S</i>)
+)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>b</i>, <a href="../../../cd/semigroup1.html#carrier">carrier</a>
+  ( <i>S</i>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/semigroup1.html#multiplication">multiplication</a>
+  ( <i>S</i>)
+
+  ( <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/semigroup1.html#multiplication">multiplication</a>
+  ( <i>S</i>)
+
+  ( <i>b</i>,  <i>a</i>)
+)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e259popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e259pop')">Popcorn</button>
+                     <div id="d40e259pop" style="display:none; margin-top: 0.5em">
+  semigroup1.is_commutative($S) ==&gt; quant1.forall[$a, $b -&gt; set1.in($a, semigroup1.carrier($S)) and set1.in($b, semigroup1.carrier($S)) ==&gt; semigroup1.multiplication($S)($a, $b) = semigroup1.multiplication($S)($b, $a)]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e259mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e259mml')">Rendered Presentation MathML</button>
+                     <div id="d40e259mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_commutative</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>S</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mo>&#8704;</mo>
+                                    <mo>&#8201;</mo>
+                                    <mrow>
+                                       <mi>a</mi>
+                                       <mo>,</mo>
+                                       <mi>b</mi>
+                                    </mrow>
+                                    <mo>.</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>a</mi>
+                                             <mo>&#8712;</mo>
+                                             <mrow>
+                                                <mi>carrier</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>S</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>&#8743;</mo>
+                                          <mrow>
+                                             <mi>b</mi>
+                                             <mo>&#8712;</mo>
+                                             <mrow>
+                                                <mi>carrier</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>S</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8658;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>multiplication</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>S</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>b</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mrow>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>multiplication</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>S</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>b</mi>
+                                                <mo>,</mo>
+                                                <mi>a</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#is_commutative">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_subsemigroup">is_subsemigroup</a>]
+	  
+	    [Previous: <a href="#multiplication">multiplication</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="is_subsemigroup"> is_subsemigroup </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+The binary boolean function whose value is true iff the second
+argument is a subsemigroup of the second.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If is_subsemigroup(S,T) then T is a set of elements of S and T
+is closed under multiplication.
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#is_subsemigroup">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#magma">magma</a>]
+	  
+	    [Previous: <a href="#is_commutative">is_commutative</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="magma">magma</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a unary function.  Its argument should be a semigroup
+S.  When applied to S, it denotes the magma with the same element set
+and binary operation as S.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e378xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e378xml')">OpenMath XML (source)</button>
+                     <pre id="d40e378xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="semigroup1" name="magma"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="semigroup1" name="semigroup"/&gt;
+        &lt;OMV name="X"/&gt;
+        &lt;OMV name="times"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="magma1" name="magma"/&gt;
+      &lt;OMV name="X"/&gt;
+      &lt;OMV name="times"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e378cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e378cmml')">Strict Content MathML</button>
+                     <pre id="d40e378cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;magma&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;semigroup&lt;/csymbol&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;ci&gt;times&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="magma1"&gt;magma&lt;/csymbol&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;ci&gt;times&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e378prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e378pref')">Prefix</button>
+                  <div id="d40e378pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/semigroup1.html#magma">magma</a>
+  (<a href="../../../cd/semigroup1.html#semigroup">semigroup</a>
+  ( <i>X</i>,  <i>times</i>)
+)
+, <a href="../../../cd/magma1.html#magma">magma</a>
+  ( <i>X</i>,  <i>times</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e378popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e378pop')">Popcorn</button>
+                     <div id="d40e378pop" style="display:none; margin-top: 0.5em">
+  semigroup1.magma(semigroup1.semigroup($X, $times)) = magma1.magma($X, $times)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e378mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e378mml')">Rendered Presentation MathML</button>
+                     <div id="d40e378mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>magma</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>semigroup</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>X</mi>
+                                             <mo>,</mo>
+                                             <mi>times</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>magma</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>X</mi>
+                                       <mo>,</mo>
+                                       <mi>times</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#magma">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#subsemigroup">subsemigroup</a>]
+	  
+	    [Previous: <a href="#is_subsemigroup">is_subsemigroup</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="subsemigroup"> subsemigroup </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a constructor symbol with two arguments.  The first
+argument is a semigroup S, the second a list or set, D, of elements of S.
+When applied to S and D, it denotes the subsemigroup of S generated by D.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e417xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e417xml')">OpenMath XML (source)</button>
+                     <pre id="d40e417xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="semigroup1" name="subsemigroup"/&gt;
+          &lt;OMV name="S"/&gt;  &lt;OMV name="D"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e417cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e417cmml')">Strict Content MathML</button>
+                     <pre id="d40e417cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;subsemigroup&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e417prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e417pref')">Prefix</button>
+                  <div id="d40e417pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/semigroup1.html#subsemigroup">subsemigroup</a>
+  ( <i>S</i>,  <i>D</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e417popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e417pop')">Popcorn</button>
+                     <div id="d40e417pop" style="display:none; margin-top: 0.5em">
+     semigroup1.subsemigroup($S, $D)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e417mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e417mml')">Rendered Presentation MathML</button>
+                     <div id="d40e417mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>subsemigroup</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>S</mi>
+                                    <mo>,</mo>
+                                    <mi>D</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+This example represents the subsemigroup of the multiplicative semigroup of
+the nonzero reals generated by the constants Pi and E:
+
+<div>
+                     <button id="d40e431xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e431xml')">OpenMath XML (source)</button>
+                     <pre id="d40e431xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;&lt;OMS cd="semigroup1" name="semigroup"/&gt;
+     &lt;OMA&gt;&lt;OMS cd="semigroup1" name="semigroup"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="set1" name="suchthat"/&gt;
+               &lt;OMS cd="setname1" name="R"/&gt;
+               &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+                       &lt;OMBVAR&gt; &lt;OMV name="x"/&gt;
+                       &lt;/OMBVAR&gt;
+                       &lt;OMA&gt;&lt;OMS cd="relation1" name="neq"/&gt;
+                            &lt;OMV name="x"/&gt;
+                            &lt;OMS cd="alg1" name="zero"/&gt;
+                       &lt;/OMA&gt;
+               &lt;/OMBIND&gt;
+          &lt;/OMA&gt;
+          &lt;OMS cd="arith1" name="times"/&gt;
+     &lt;/OMA&gt;
+     &lt;OMA&gt;
+       &lt;OMS cd="list1" name="list"/&gt;
+         &lt;OMS cd="nums1" name="pi"/&gt;
+         &lt;OMS cd="nums1" name="e"/&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e431cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e431cmml')">Strict Content MathML</button>
+                     <pre id="d40e431cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;semigroup&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;semigroup&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;suchthat&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;neq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;&lt;/apply&gt;
+    &lt;/bind&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;
+   &lt;csymbol cd="nums1"&gt;e&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e431prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e431pref')">Prefix</button>
+                  <div id="d40e431pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/semigroup1.html#semigroup">semigroup</a>
+  (<a href="../../../cd/semigroup1.html#semigroup">semigroup</a>
+  (<a href="../../../cd/set1.html#suchthat">suchthat</a>
+  (<a href="../../../cd/setname1.html#R">R</a>, <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [  <i>x</i>
+                       ] .
+  (<a href="../../../cd/relation1.html#neq">neq</a>
+  ( <i>x</i>, <a href="../../../cd/alg1.html#zero">zero</a>)
+)
+)
+, <a href="../../../cd/arith1.html#times">times</a>)
+, <a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/nums1.html#pi">pi</a>, <a href="../../../cd/nums1.html#e">e</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e431popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e431pop')">Popcorn</button>
+                     <div id="d40e431pop" style="display:none; margin-top: 0.5em">
+semigroup1.semigroup(semigroup1.semigroup(set1.suchthat(setname1.R, fns1.lambda[$x -&gt; $x != alg1.zero]), arith1.times), [nums1.pi , nums1.e])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e431mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e431mml')">Rendered Presentation MathML</button>
+                     <div id="d40e431mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>semigroup</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>semigroup</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mo>{</mo>
+                                             <mrow>
+                                                <mi>x</mi>
+                                                <mo>&#8712;</mo>
+                                                <mi mathvariant="double-struck">R</mi>
+                                             </mrow>
+                                             <mo>|</mo>
+                                             <mrow>
+                                                <mi>x</mi>
+                                                <mo>&#8800;</mo>
+                                                <mn>0</mn>
+                                             </mrow>
+                                             <mo>}</mo>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mo>&#215;</mo>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>&#960;</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>e</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#subsemigroup">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#factor_of">factor_of</a>]
+	  
+	    [Previous: <a href="#magma">magma</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="factor_of">factor_of</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a ternary function.  Its first argument should be a
+semigroup S and the second and third arguments should be elements of
+S.  When applied to S, a, and b, it denotes the fact that a is a
+divisor of b in S. This means that there are u,v in carrier(S) such
+that uav=b.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e489xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e489xml')">OpenMath XML (source)</button>
+                     <pre id="d40e489xml" style="display:none">
+    &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+     &lt;OMA&gt;&lt;OMS cd="semigroup1" name="factor_of"/&gt;
+          &lt;OMV name="S"/&gt;          &lt;OMV name="a"/&gt;          &lt;OMV name="b"/&gt;
+     &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e489cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e489cmml')">Strict Content MathML</button>
+                     <pre id="d40e489cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;factor_of&lt;/csymbol&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e489prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e489pref')">Prefix</button>
+                  <div id="d40e489pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/semigroup1.html#factor_of">factor_of</a>
+  ( <i>S</i>,  <i>a</i>,  <i>b</i>)
+
+    </div>
+                  <div>
+                     <button id="d40e489popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e489pop')">Popcorn</button>
+                     <div id="d40e489pop" style="display:none; margin-top: 0.5em">
+     semigroup1.factor_of($S, $a, $b)
+    </div>
+                  </div>
+                  <div>
+                     <button id="d40e489mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e489mml')">Rendered Presentation MathML</button>
+                     <div id="d40e489mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>factor_of</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>S</mi>
+                                    <mo>,</mo>
+                                    <mi>a</mi>
+                                    <mo>,</mo>
+                                    <mi>b</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#factor_of">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#expression">expression</a>]
+	  
+	    [Previous: <a href="#subsemigroup">subsemigroup</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="expression">expression</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a function with two arguments.  Its first
+argument should be a semigroup G. The
+second should be an arithmetic expression A,
+whose operators are
+times and power, and whose leaves are members of the carrier of G. 
+The second argument of power should be positive. When applied to
+G and A, it denotes the element (of G) that is obtained from the
+leaves of A by applying the multiplication and the power map of G instead of the
+times and power of the CD arith1 appearing in A.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e514xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e514xml')">OpenMath XML (source)</button>
+                     <pre id="d40e514xml" style="display:none">
+  &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+         &lt;OMA&gt;&lt;OMS cd="group1" name="expression"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="semigroup1" name="semigroup"/&gt;
+                   &lt;OMS cd="setname1" name="Z"/&gt;
+                   &lt;OMS cd="arith1" name="plus"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                   &lt;OMI&gt;2&lt;/OMI&gt;&lt;OMI&gt;3&lt;/OMI&gt;
+              &lt;/OMA&gt;
+         &lt;/OMA&gt;
+         &lt;OMI&gt;5&lt;/OMI&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e514cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e514cmml')">Strict Content MathML</button>
+                     <pre id="d40e514cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="group1"&gt;expression&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="semigroup1"&gt;semigroup&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;cn type="integer"&gt;5&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e514prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e514pref')">Prefix</button>
+                  <div id="d40e514pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/group1.html#expression">expression</a>
+  (<a href="../../../cd/semigroup1.html#semigroup">semigroup</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/arith1.html#plus">plus</a>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  (2, 3)
+)
+, 5)
+
+  </div>
+                  <div>
+                     <button id="d40e514popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e514pop')">Popcorn</button>
+                     <div id="d40e514pop" style="display:none; margin-top: 0.5em">
+    group1.expression(semigroup1.semigroup(setname1.Z, arith1.plus), 2 * 3) = 5
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e514mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e514mml')">Rendered Presentation MathML</button>
+                     <div id="d40e514mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>expression</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>semigroup</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi mathvariant="double-struck">Z</mi>
+                                             <mo>,</mo>
+                                             <mo>+</mo>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mn>2</mn>
+                                          <mo>&#215;</mo>
+                                          <mn>3</mn>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mn>5</mn>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/semigroup1.html#expression">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#semigroup">semigroup</a>]
+	  
+	    [Previous: <a href="#factor_of">factor_of</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

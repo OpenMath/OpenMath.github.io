@@ -1,0 +1,1599 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>directives1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: directives1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.riaca.win.tue.nl/cds/directives/directives1.ocd">http://www.riaca.win.tue.nl/cds/directives/directives1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="directives1.ocd">directives1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="directives1.omcd">directives1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#decide">decide</a>, <a href="#disprove">disprove</a>, <a href="#evaluate_to_type">evaluate_to_type</a>, <a href="#explore">explore</a>, <a href="#find">find</a>, <a href="#prove">prove</a>, <a href="#prove_in_theory">prove_in_theory</a>, <a href="#response">response</a>, <a href="#evaluate">evaluate</a>, <a href="#look_up">look_up</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 
+    (Revision 3)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-06-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/> 
+    
+   
+   
+    
+    
+   
+   
+   
+
+   
+            <p> </p>
+            <p>The primal objective of OpenMath objects is to represent mathematical
+   expressions. In this Content Dictionary another objective is
+   addressed, namely to express an action related to a mathematical
+   expression. Such a request for an action is generally referred to
+   as a query.  The specific queries are called directives. In this CD
+   we define some.  An entity (software) carrying out the query is
+   referred to as a service.  The service might return an OpenMath
+   object. To formalize this object, we also introduce the symbol
+   response in this CD.</p>
+            <p>amc 2004-03-18: added the directive explore.
+amc 2004-03-24: removed redundancies.</p>
+            <p/>
+
+
+            <hr/>
+            <h2>
+               <a name="evaluate">evaluate</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a function with one argument, which should be a
+mathematical expression.
+When applied to a mathematical expression, it asks for an evaluation
+or simplification of the expression. The evaluation or simplification
+to be carried out by a service is a simpler mathematical expression (in some definition of complexity
+of objects) which is equal to the argument.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> The value of sin(Pi) is zero.
+The expression below asks for sin(Pi) to be evaluated, and so
+a service receiving the object is supposed to return zero.
+<div>
+                     <button id="d40e41xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41xml')">OpenMath XML (source)</button>
+                     <pre id="d40e41xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+ &lt;OMA&gt;&lt;OMS cd="directives1" name="evaluate"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="transc1" name="sin"/&gt;
+           &lt;OMS cd="nums1" name="pi"/&gt;
+      &lt;/OMA&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e41cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41cmml')">Strict Content MathML</button>
+                     <pre id="d40e41cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="directives1"&gt;evaluate&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e41prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e41pref')">Prefix</button>
+                  <div id="d40e41pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/directives1.html#evaluate">evaluate</a>
+  (<a href="../../../cd/transc1.html#sin">sin</a>
+  (<a href="../../../cd/nums1.html#pi">pi</a>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e41popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41pop')">Popcorn</button>
+                     <div id="d40e41pop" style="display:none; margin-top: 0.5em">
+ directives1.evaluate(sin(nums1.pi))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e41mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e41mml')">Rendered Presentation MathML</button>
+                     <div id="d40e41mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>evaluate</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>sin</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>&#960;</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#evaluate">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#evaluate_to_type">evaluate_to_type</a>]
+	  
+	    [Last: <a href="#explore">explore</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="evaluate_to_type"> evaluate_to_type </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>      
+This symbol is a function with two arguments, which should be
+a mathematical expression and a type.
+When applied to a mathematical expression E and a type T, it asks for an evaluation
+or simplification of E to a mathematical expression of type T.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> The value of (7*6)/2 is a natural number.
+The expression below asks for this integer.
+<div>
+                     <button id="d40e66xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e66xml')">OpenMath XML (source)</button>
+                     <pre id="d40e66xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+ &lt;OMA&gt;&lt;OMS cd="directives1" name="evaluate"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="divide"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                &lt;OMI&gt;7&lt;/OMI&gt;&lt;OMI&gt;6&lt;/OMI&gt;
+           &lt;/OMA&gt;
+           &lt;OMI&gt;2&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMS cd="setname1" name="N"/&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e66cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e66cmml')">Strict Content MathML</button>
+                     <pre id="d40e66cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="directives1"&gt;evaluate&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;7&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="setname1"&gt;N&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e66prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e66pref')">Prefix</button>
+                  <div id="d40e66pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/directives1.html#evaluate">evaluate</a>
+  (<a href="../../../cd/arith1.html#divide">divide</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (7, 6)
+, 2)
+, <a href="../../../cd/setname1.html#N">N</a>)
+
+</div>
+                  <div>
+                     <button id="d40e66popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e66pop')">Popcorn</button>
+                     <div id="d40e66pop" style="display:none; margin-top: 0.5em">
+ directives1.evaluate((7 * 6) / 2, setname1.N)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e66mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e66mml')">Rendered Presentation MathML</button>
+                     <div id="d40e66mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>evaluate</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mfrac>
+                                       <mrow>
+                                          <mn>7</mn>
+                                          <mo>&#215;</mo>
+                                          <mn>6</mn>
+                                       </mrow>
+                                       <mn>2</mn>
+                                    </mfrac>
+                                    <mo>,</mo>
+                                    <mi mathvariant="double-struck">N</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The type of the responded object should be equal to the
+specification,
+that is the second argument of the evaluate_to_type.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e97xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e97xml')">OpenMath XML (source)</button>
+                     <pre id="d40e97xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+ &lt;OMATTR&gt;
+      &lt;OMATP&gt;&lt;OMS cd="ecc" name="type"/&gt;
+             &lt;OMV name="T"/&gt;
+      &lt;/OMATP&gt;
+      &lt;OMA&gt;&lt;OMS cd="directives1" name="response"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="directives1" name="evaluate_to_type"/&gt;
+                &lt;OMV name="x"/&gt;                     &lt;OMV name="T"/&gt;
+           &lt;/OMA&gt;
+      &lt;/OMA&gt;
+ &lt;/OMATTR&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e97cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e97cmml')">Strict Content MathML</button>
+                     <pre id="d40e97cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="directives1"&gt;response&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="directives1"&gt;evaluate_to_type&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;T&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;annotation-xml cd="ecc" encoding="type"&gt;&lt;ci&gt;T&lt;/ci&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e97prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e97pref')">Prefix</button>
+                  <div id="d40e97pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/ecc.html#type">type</a>
+                     <i>T</i>
+      ],
+  <a href="../../../cd/directives1.html#response">response</a>
+  (<a href="../../../cd/directives1.html#evaluate_to_type">evaluate_to_type</a>
+  ( <i>x</i>,  <i>T</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e97popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e97pop')">Popcorn</button>
+                     <div id="d40e97pop" style="display:none; margin-top: 0.5em">
+ directives1.response(directives1.evaluate_to_type($x, $T)){ecc.type -&gt; $T}
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e97mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e97mml')">Rendered Presentation MathML</button>
+                     <div id="d40e97mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>response</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>evaluate_to_type</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>x</mi>
+                                          <mo>,</mo>
+                                          <mi>T</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#evaluate_to_type">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#look_up">look_up</a>]
+	  
+	    [Previous: <a href="#evaluate">evaluate</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="look_up">look_up</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a function with one argument, which should be a
+mathematical expression.
+When applied to a mathematical expression, it asks for mathematical
+expressions related to the argument. If the argument is a single
+OpenMath symbol, the service might respond by the list of all
+properties in the CD containing the argument.
+Alternatively, the service can provide a list of CDs which use the CD
+in which the argument occurs.</p>
+                  <p>Another service might return all documents in which the symbol occurs.</p>
+                  <p>If the argument is a more complicated object, the same services could
+be called for, but then with all OpenMath symbols occurring in the
+argument instead of the single one.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> Looking up sin is expressed as follows:
+
+<div>
+                     <button id="d40e134xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134xml')">OpenMath XML (source)</button>
+                     <pre id="d40e134xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+ &lt;OMA&gt;&lt;OMS cd="directives1" name="look_up"/&gt;
+      &lt;OMS cd="transc1" name="sin"/&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e134cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134cmml')">Strict Content MathML</button>
+                     <pre id="d40e134cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="directives1"&gt;look_up&lt;/csymbol&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e134prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e134pref')">Prefix</button>
+                  <div id="d40e134pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/directives1.html#look_up">look_up</a>
+  (<a href="../../../cd/transc1.html#sin">sin</a>)
+
+</div>
+                  <div>
+                     <button id="d40e134popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e134pop')">Popcorn</button>
+                     <div id="d40e134pop" style="display:none; margin-top: 0.5em">
+ directives1.look_up(sin)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e134mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e134mml')">Rendered Presentation MathML</button>
+                     <div id="d40e134mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>look_up</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>sin</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#look_up">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#response">response</a>]
+	  
+	    [Previous: <a href="#evaluate_to_type">evaluate_to_type</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="response"> response </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a function of one argument, which should be a query.
+When applied to a query, it refers to the response a service might
+give.
+It will mainly be used in this CD to express formal mathematical
+properties
+of queries.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#response">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#prove">prove</a>]
+	  
+	    [Previous: <a href="#look_up">look_up</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="prove"> prove </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a function with one argument, which should be a clause.
+When applied to a clause C, it asks for a
+proof of C.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#prove">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#disprove">disprove</a>]
+	  
+	    [Previous: <a href="#response">response</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="disprove"> disprove </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a function with one argument, which should be a clause.
+When applied to a clause C, it asks for a
+proof of that C does not hold. 
+</p>
+               </dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+Asking to disprove C  amounts to
+asking for a proof that C does not hold.
+(In other words, this symbol is completely redundant,
+even in multi-valued logic.***)
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e176xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e176xml')">OpenMath XML (source)</button>
+                     <pre id="d40e176xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+ &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="directives1" name="disprove"/&gt;
+           &lt;OMV name="C"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="directives1" name="prove"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="logic1" name="not"/&gt;
+                &lt;OMV name="C"/&gt;
+           &lt;/OMA&gt;
+      &lt;/OMA&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e176cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e176cmml')">Strict Content MathML</button>
+                     <pre id="d40e176cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="directives1"&gt;disprove&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="directives1"&gt;prove&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e176prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e176pref')">Prefix</button>
+                  <div id="d40e176pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/directives1.html#disprove">disprove</a>
+  ( <i>C</i>)
+, <a href="../../../cd/directives1.html#prove">prove</a>
+  (<a href="../../../cd/logic1.html#not">not</a>
+  ( <i>C</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e176popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e176pop')">Popcorn</button>
+                     <div id="d40e176pop" style="display:none; margin-top: 0.5em">
+ directives1.disprove($C) = directives1.prove( not($C))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e176mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e176mml')">Rendered Presentation MathML</button>
+                     <div id="d40e176mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>disprove</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>C</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>prove</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mo>&#172;</mo>
+                                       <mi>C</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#disprove">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#prove_in_theory">prove_in_theory</a>]
+	  
+	    [Previous: <a href="#prove">prove</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="prove_in_theory"> prove_in_theory </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a function with two arguments, the first of which
+should be a clause and the second of which should be a symbol
+indicating a logic theory.
+When applied to arguments C, T, it asks for a
+proof of C in theory T.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#prove_in_theory">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#find">find</a>]
+	  
+	    [Previous: <a href="#disprove">disprove</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="find"> find </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a binder, whose body should be a clause.
+When bound to a variable (or list of variables) x with body P(x), it asks for a
+mathematical expression A such that P(A) holds.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+Searching for a real number x such that sin(x) = 0
+ <div>
+                     <button id="d40e220xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e220xml')">OpenMath XML (source)</button>
+                     <pre id="d40e220xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+ &lt;OMBIND&gt;&lt;OMS cd="directives1" name="find"/&gt;
+         &lt;OMBVAR&gt;&lt;OMV name="x"/&gt;&lt;/OMBVAR&gt;
+         &lt;OMA&gt;&lt;OMS cd="logic1" name="and"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="set1" name="in"/&gt;
+                   &lt;OMV name="x"/&gt;&lt;OMS cd="setname1" name="R"/&gt;
+              &lt;/OMA&gt;
+              &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                   &lt;OMA&gt;&lt;OMS cd="transc1" name="sin"/&gt;&lt;OMV name="x"/&gt;&lt;/OMA&gt;
+                   &lt;OMI&gt;0&lt;/OMI&gt;
+              &lt;/OMA&gt;
+         &lt;/OMA&gt;
+ &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e220cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e220cmml')">Strict Content MathML</button>
+                     <pre id="d40e220cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="directives1"&gt;find&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e220prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e220pref')">Prefix</button>
+                  <div id="d40e220pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/directives1.html#find">find</a>
+  [ <i>x</i>] .
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>, <a href="../../../cd/setname1.html#R">R</a>)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/transc1.html#sin">sin</a>
+  ( <i>x</i>)
+, 0)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e220popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e220pop')">Popcorn</button>
+                     <div id="d40e220pop" style="display:none; margin-top: 0.5em">
+ directives1.find[$x -&gt; set1.in($x, setname1.R) and sin($x) = 0]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e220mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e220mml')">Rendered Presentation MathML</button>
+                     <div id="d40e220mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>find</mi>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>x</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>&#8712;</mo>
+                                       <mi mathvariant="double-struck">R</mi>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>sin</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>x</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mn>0</mn>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+is to be compared to asking for an inverse of x:
+
+ <div>
+                     <button id="d40e252xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e252xml')">OpenMath XML (source)</button>
+                     <pre id="d40e252xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+ &lt;OMA&gt;&lt;OMS cd="directives1" name="evaluate_to_type"/&gt;
+      &lt;OMA&gt;&lt;OMA&gt;&lt;OMS cd="fns1" name="inverse"/&gt;
+                &lt;OMS cd="transc1" name="sin"/&gt;
+           &lt;/OMA&gt;
+           &lt;OMI&gt;0&lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMS cd="setname1" name="R"/&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e252cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e252cmml')">Strict Content MathML</button>
+                     <pre id="d40e252cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="directives1"&gt;evaluate_to_type&lt;/csymbol&gt;
+  &lt;apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns1"&gt;inverse&lt;/csymbol&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;cn type="integer"&gt;0&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e252prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e252pref')">Prefix</button>
+                  <div id="d40e252pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/directives1.html#evaluate_to_type">evaluate_to_type</a>
+  (<a href="../../../cd/fns1.html#inverse">inverse</a>
+  (<a href="../../../cd/transc1.html#sin">sin</a>)
+
+  (0)
+, <a href="../../../cd/setname1.html#R">R</a>)
+
+</div>
+                  <div>
+                     <button id="d40e252popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e252pop')">Popcorn</button>
+                     <div id="d40e252pop" style="display:none; margin-top: 0.5em">
+ directives1.evaluate_to_type(fns1.inverse(sin)(0), setname1.R)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e252mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e252mml')">Rendered Presentation MathML</button>
+                     <div id="d40e252mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>evaluate_to_type</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msup>
+                                             <mi>sin</mi>
+                                             <mn>-1</mn>
+                                          </msup>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn>0</mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mi mathvariant="double-struck">R</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The body of argument with the binder x replaced by the response should
+be a true statement.
+</dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e278xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e278xml')">OpenMath XML (source)</button>
+                     <pre id="d40e278xml" style="display:none">
+ &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMV name="P"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="directives1" name="response"/&gt;
+            &lt;OMBIND&gt;&lt;OMS cd="directives1" name="find"/&gt;
+                    &lt;OMBVAR&gt;&lt;OMV name="x"/&gt;&lt;/OMBVAR&gt;
+                    &lt;OMV name="P"/&gt;
+            &lt;/OMBIND&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e278cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e278cmml')">Strict Content MathML</button>
+                     <pre id="d40e278cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;
+  &lt;ci&gt;P&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="directives1"&gt;response&lt;/csymbol&gt;
+   &lt;bind&gt;&lt;csymbol cd="directives1"&gt;find&lt;/csymbol&gt;&lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;&lt;ci&gt;P&lt;/ci&gt;&lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e278prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e278pref')">Prefix</button>
+                  <div id="d40e278pref" style="display:none; margin-top: 0.5em">
+                     <i>P</i>
+  (<a href="../../../cd/directives1.html#response">response</a>
+  (<a href="../../../cd/directives1.html#find">find</a>
+  [ <i>x</i>] .
+  ( <i>P</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e278popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e278pop')">Popcorn</button>
+                     <div id="d40e278pop" style="display:none; margin-top: 0.5em">
+  $P(directives1.response(directives1.find[$x -&gt; $P]))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e278mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e278mml')">Rendered Presentation MathML</button>
+                     <div id="d40e278mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>P</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>response</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>find</mi>
+                                             <mo>&#8201;</mo>
+                                             <mrow>
+                                                <mi>x</mi>
+                                             </mrow>
+                                             <mo>.</mo>
+                                             <mi>P</mi>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#find">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#decide">decide</a>]
+	  
+	    [Previous: <a href="#prove_in_theory">prove_in_theory</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="decide"> decide </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a function with one argument, which should be a clause.
+When applied to a clause, it asks whether
+the clause holds. 
+</p>
+               </dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The question if sin(Pi) is equal to zero can be phrased as follows.
+<div>
+                     <button id="d40e311xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e311xml')">OpenMath XML (source)</button>
+                     <pre id="d40e311xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+ &lt;OMA&gt;&lt;OMS cd="directives1" name="decide"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="transc1" name="sin"/&gt;
+                &lt;OMS cd="nums1" name="pi"/&gt;
+           &lt;/OMA&gt;
+           &lt;OMI&gt;0&lt;/OMI&gt;
+      &lt;/OMA&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e311cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e311cmml')">Strict Content MathML</button>
+                     <pre id="d40e311cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="directives1"&gt;decide&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;csymbol cd="nums1"&gt;pi&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;cn type="integer"&gt;0&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e311prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e311pref')">Prefix</button>
+                  <div id="d40e311pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/directives1.html#decide">decide</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/transc1.html#sin">sin</a>
+  (<a href="../../../cd/nums1.html#pi">pi</a>)
+, 0)
+)
+
+</div>
+                  <div>
+                     <button id="d40e311popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e311pop')">Popcorn</button>
+                     <div id="d40e311pop" style="display:none; margin-top: 0.5em">
+ directives1.decide(sin(nums1.pi) = 0)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e311mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e311mml')">Rendered Presentation MathML</button>
+                     <div id="d40e311mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>decide</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>sin</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>&#960;</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mn>0</mn>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The response to the decide query is logically equivalent to the truth of the argument.
+</dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e337xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e337xml')">OpenMath XML (source)</button>
+                     <pre id="d40e337xml" style="display:none">
+ &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+   &lt;OMA&gt;&lt;OMS cd="logic1" name="equivalent"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="directives1" name="response"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="directives1" name="decide"/&gt;
+                  &lt;OMV name="P"/&gt;
+             &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMV name="P"/&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e337cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e337cmml')">Strict Content MathML</button>
+                     <pre id="d40e337cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;equivalent&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="directives1"&gt;response&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="directives1"&gt;decide&lt;/csymbol&gt;&lt;ci&gt;P&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;P&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e337prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e337pref')">Prefix</button>
+                  <div id="d40e337pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#equivalent">equivalent</a>
+  (<a href="../../../cd/directives1.html#response">response</a>
+  (<a href="../../../cd/directives1.html#decide">decide</a>
+  ( <i>P</i>)
+)
+,  <i>P</i>)
+
+</div>
+                  <div>
+                     <button id="d40e337popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e337pop')">Popcorn</button>
+                     <div id="d40e337pop" style="display:none; margin-top: 0.5em">
+   logic1.equivalent(directives1.response(directives1.decide($P)), $P)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e337mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e337mml')">Rendered Presentation MathML</button>
+                     <div id="d40e337mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>response</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>decide</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>P</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8801;</mo>
+                                 <mi>P</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#decide">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#explore">explore</a>]
+	  
+	    [Previous: <a href="#find">find</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="explore"> explore </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>      
+This symbol is a unary function whose argument should be
+a mathematical assertion.
+When applied to an assertion A, it asks for conditions under which the
+assertion holds.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> Given the Pappos configuration P, the Pappos thesis T asserts that
+three points of the configuration are collinear.
+A conceivable answer to the explore directive with the assertion that in
+configuration P the thesis T holds, is a nondegeneracy condition that makes
+the assertion valid.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+A response R should satisfy the requirement that R implies the
+assertion.
+
+</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e374xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e374xml')">OpenMath XML (source)</button>
+                     <pre id="d40e374xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+      &lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="directives1" name="response"/&gt;
+                &lt;OMA&gt;&lt;OMS cd="directives1" name="explore"/&gt;
+                     &lt;OMV name="A"/&gt;                    
+                &lt;/OMA&gt;
+           &lt;/OMA&gt;
+           &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e374cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e374cmml')">Strict Content MathML</button>
+                     <pre id="d40e374cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="directives1"&gt;response&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="directives1"&gt;explore&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;A&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e374prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e374pref')">Prefix</button>
+                  <div id="d40e374pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/directives1.html#response">response</a>
+  (<a href="../../../cd/directives1.html#explore">explore</a>
+  ( <i>A</i>)
+)
+,  <i>A</i>)
+
+</div>
+                  <div>
+                     <button id="d40e374popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e374pop')">Popcorn</button>
+                     <div id="d40e374pop" style="display:none; margin-top: 0.5em">
+      directives1.response(directives1.explore($A)) ==&gt; $A
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e374mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e374mml')">Rendered Presentation MathML</button>
+                     <div id="d40e374mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>response</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>explore</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mi>A</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/directives1.html#explore">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#evaluate">evaluate</a>]
+	  
+	    [Previous: <a href="#decide">decide</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,260 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>ringname1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/ringname1.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2005-04-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-03-08</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDUses"/>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>alg1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>arith1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>fns1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>fns2</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>group1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>group2</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>logic1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>monoid1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>monoid2</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>nums1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>quant1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>relation1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>set1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>setname1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>ring1</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>A CD of names of frequently used rings in ring theory.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>Written by Arjeh M. Cohen 2004-03-08</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>Z</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents the ring of integers.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The integer 1 is the identity element of this ring.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS name="eq" cd="relation1"/>
+               <OMA>
+                  <OMS name="identity" cd="ring1"/>
+                  <OMS name="Z" cd="ringname1"/>
+               </OMA>
+               <OMI>1</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The carrier set of this ring is the set of integers.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS name="eq" cd="relation1"/>
+               <OMA>
+                  <OMS name="carrier" cd="ring1"/>
+                  <OMS name="Z" cd="ringname1"/>
+               </OMA>
+               <OMS name="Z" cd="setname1"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>quaternions</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function. Its argument is a ring R. When evaluated on R, the function represents the ring of quaternions over R, that is, the ring with basis 1,i,j,k over R such that ij=-ji=k, i^2=j^2=k^2=-1.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The quaternion ring over R is isomorphic to the quotient of the free ring over R generated by i, j, k subject to the relations ij=-ji=k and i^2=j^2=k^2=-1.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="ring2" name="isomorphic"/>
+               <OMA>
+                  <OMS cd="ringname1" name="quaternions"/>
+                  <OMV name="R"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="ring3" name="quotient_ring"/>
+                  <OMA id="fr">
+                     <OMS cd="ring3" name="free_ring"/>
+                     <OMS cd="fieldname1" name="Q"/>
+                     <OMV name="i"/>
+                     <OMV name="j"/>
+                     <OMV name="k"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="ring3" name="ideal"/>
+                     <OMR href="#fr"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMA>
+                           <OMS cd="arith1" name="minus"/>
+                           <OMA>
+                              <OMS cd="arith1" name="times"/>
+                              <OMV name="i"/>
+                              <OMV name="j"/>
+                           </OMA>
+                           <OMV name="k"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="plus"/>
+                           <OMA>
+                              <OMS cd="arith1" name="times"/>
+                              <OMV name="j"/>
+                              <OMV name="i"/>
+                           </OMA>
+                           <OMV name="k"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="plus"/>
+                           <OMA>
+                              <OMS cd="arith1" name="power"/>
+                              <OMV name="i"/>
+                              <OMI>2</OMI>
+                           </OMA>
+                           <OMI>1</OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="plus"/>
+                           <OMA>
+                              <OMS cd="arith1" name="power"/>
+                              <OMV name="j"/>
+                              <OMI>2</OMI>
+                           </OMA>
+                           <OMI>1</OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="plus"/>
+                           <OMA>
+                              <OMS cd="arith1" name="power"/>
+                              <OMV name="k"/>
+                              <OMI>2</OMI>
+                           </OMA>
+                           <OMI>1</OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>Zm</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents the ring of integers modulo m, where m is not necessarily a prime. It takes one argument, the integer m.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The ring of integers mod 12:</OMSTR>
+            <OMA>
+               <OMS name="Zm" cd="ringname1"/>
+               <OMI> 12 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

@@ -353,13 +353,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#anonymous">polyd1/<br/>anonymous</a>
+         <a href="../cd/polyd.html#anonymous">polyd/<br/>anonymous</a>
       </td>
       <td>Indicates a variable that we do not want to name</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#anonymous">polyd/<br/>anonymous</a>
+         <a href="../cd/polyd1.html#anonymous">polyd1/<br/>anonymous</a>
       </td>
       <td>Indicates a variable that we do not want to name</td>
    </tr>
@@ -1103,15 +1103,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/metagrp.html#CDComment">metagrp/<br/>CDComment</a>
-      </td>
-      <td>This symbol is used to represent the element of a CDGroup which explains some aspect of the corresponding content dictionary. It should have one string argument which makes that explanation.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/meta.html#CDComment">meta/<br/>CDComment</a>
       </td>
       <td>This symbol is used to represent the element of a content dictionary which explains some aspect of that content dictionary. It should have one string argument which makes that explanation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/metagrp.html#CDComment">metagrp/<br/>CDComment</a>
+      </td>
+      <td>This symbol is used to represent the element of a CDGroup which explains some aspect of the corresponding content dictionary. It should have one string argument which makes that explanation.</td>
    </tr>
    <tr>
       <td>
@@ -1163,15 +1163,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/metagrp.html#CDName">metagrp/<br/>CDName</a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDName element. It has one string argument, this should be the string corresponding to the name of a content dictionary which is in this CDGroup.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/meta.html#CDName">meta/<br/>CDName</a>
       </td>
       <td>An element which contains the string corresponding to the name of the CD. The string must match the syntax for CD names given in the OpenMath Standard. Here and elsewhere white space occurring at the beginning or end of the string will be ignored.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/metagrp.html#CDName">metagrp/<br/>CDName</a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDName element. It has one string argument, this should be the string corresponding to the name of a content dictionary which is in this CDGroup.</td>
    </tr>
    <tr>
       <td>
@@ -1217,15 +1217,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/metagrp.html#CDURL">metagrp/<br/>CDURL</a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDURL element. It has one string argument, this should be the string corresponding to the contents of the CDURL element for each Content Dictionary in the CDGroup. The element is optional, in case it is missing, the location of the CDGroup identified by the element CDGroupURL is assumed.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/meta.html#CDURL">meta/<br/>CDURL</a>
       </td>
       <td>An optional element. If it is used it contains a string representing the URL where the canonical reference copy of this CD is stored.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/metagrp.html#CDURL">metagrp/<br/>CDURL</a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDURL element. It has one string argument, this should be the string corresponding to the contents of the CDURL element for each Content Dictionary in the CDGroup. The element is optional, in case it is missing, the location of the CDGroup identified by the element CDGroupURL is assumed.</td>
    </tr>
    <tr>
       <td>
@@ -1235,15 +1235,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/metagrp.html#CDVersion">metagrp/<br/>CDVersion</a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDVersion element. It has one integral argument, this should specify which version of the content dictionary is to be taken as member of the CDGroup. The element is optional. In case it is missing, the last version is the one included in the CDGroup.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/meta.html#CDVersion">meta/<br/>CDVersion</a>
       </td>
       <td>An element which contains a version number for the CD. This should be a non negative integer. Any change to the CD that affects existing OpenMath applications that support this CD should result in an increase in the version number.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/metagrp.html#CDVersion">metagrp/<br/>CDVersion</a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDVersion element. It has one integral argument, this should specify which version of the content dictionary is to be taken as member of the CDGroup. The element is optional. In case it is missing, the last version is the one included in the CDGroup.</td>
    </tr>
    <tr>
       <td>
@@ -1409,27 +1409,27 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#coefficient">polynomial1/<br/>coefficient</a>
-      </td>
-      <td>This symbol is a binary function whose first argument should be a polynomial f and whose second argument should be a non-negative integer n. It represents the coefficient of the i-th power of the variable in the polynomial f.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/poly.html#coefficient">poly/<br/>coefficient</a>
       </td>
       <td>The coefficient with respect to a list of variables (the second argument) raised to a list of powers (the third argument). Zero if no such term is present. Not all variables need be specified.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#coefficient_ring">polynomial1/<br/>coefficient_ring</a>
+         <a href="../cd/polynomial1.html#coefficient">polynomial1/<br/>coefficient</a>
       </td>
-      <td>This symbol is a unary function whose argument should be a polynomial. It represents the coefficient ring of the polynomial.</td>
+      <td>This symbol is a binary function whose first argument should be a polynomial f and whose second argument should be a non-negative integer n. It represents the coefficient of the i-th power of the variable in the polynomial f.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/poly.html#coefficient_ring">poly/<br/>coefficient_ring</a>
       </td>
       <td>The coefficient ring.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial1.html#coefficient_ring">polynomial1/<br/>coefficient_ring</a>
+      </td>
+      <td>This symbol is a unary function whose argument should be a polynomial. It represents the coefficient ring of the polynomial.</td>
    </tr>
    <tr>
       <td>
@@ -1919,15 +1919,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#degree">polynomial1/<br/>degree</a>
-      </td>
-      <td>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents its degree, that is the highest power of the variable occurring in a term of the polynomial. If the polynomial has no terms, it is the zero polynomial, in which case the value represented is -1.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/poly.html#degree">poly/<br/>degree</a>
       </td>
       <td>The total degree of its argument. The value returned is a non-negative integer. We note that the degree of 0 is undefined. Note that this operation takes no account of any weights that have been defined: see weighted_degree in polyd.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial1.html#degree">polynomial1/<br/>degree</a>
+      </td>
+      <td>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents its degree, that is the highest power of the variable occurring in a term of the polynomial. If the polynomial has no terms, it is the zero polynomial, in which case the value represented is -1.</td>
    </tr>
    <tr>
       <td>
@@ -2273,27 +2273,27 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#DMP">polyd1/<br/>DMP</a>
-      </td>
-      <td>The constructor of DMPs. The first argument is the polynomial ring containing the polynomial and the second is a "SDMP". Should be of the form DMP(poly_ring_d(...), SDMP(...))</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#DMP">polyd/<br/>DMP</a>
       </td>
       <td>The constructor of DMPs. The first argument is the polynomial ring containing the polynomial and the second is a "SDMP". Should be of the form DMP(PolyRingD(...), SDMP(...))</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#DMPL">polyd1/<br/>DMPL</a>
+         <a href="../cd/polyd1.html#DMP">polyd1/<br/>DMP</a>
       </td>
-      <td>The constructor for lists of multivariate polynomial members of the same polynomial ring. The first argument is a polynomial ring and the rest are "SDMP"s. DMPL can be attributed with the "ordering" symbol to indicate a particular ordering for monomials of all its polynomials. Should be of the form DMPL(poly_ring_d(...), SDMP(...)+)</td>
+      <td>The constructor of DMPs. The first argument is the polynomial ring containing the polynomial and the second is a "SDMP". Should be of the form DMP(poly_ring_d(...), SDMP(...))</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/polyd.html#DMPL">polyd/<br/>DMPL</a>
       </td>
       <td>The constructor for lists of multivariate polynomial members of the same polynomial ring. The first argument is a polynomial ring and the rest are "SDMP"s. DMPL can be attributed with the "ordering" symbol to indicate a particular ordering for monomials of all its polynomials. Should be of the form DMPL(PolyRingD(...), SDMP(...)+)</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd1.html#DMPL">polyd1/<br/>DMPL</a>
+      </td>
+      <td>The constructor for lists of multivariate polynomial members of the same polynomial ring. The first argument is a polynomial ring and the rest are "SDMP"s. DMPL can be attributed with the "ordering" symbol to indicate a particular ordering for monomials of all its polynomials. Should be of the form DMPL(poly_ring_d(...), SDMP(...)+)</td>
    </tr>
    <tr>
       <td>
@@ -2369,13 +2369,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#elimination">polyd2/<br/>elimination</a>
+         <a href="../cd/polyd.html#elimination">polyd/<br/>elimination</a>
       </td>
       <td>This is an ordering, which is partially in terms of one ordering, and partially in terms of another. First argument is a number of variables. Second is ordering to apply on the first so many variables. Third is an ordering on the rest, to be used to break ties.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#elimination">polyd/<br/>elimination</a>
+         <a href="../cd/polyd2.html#elimination">polyd2/<br/>elimination</a>
       </td>
       <td>This is an ordering, which is partially in terms of one ordering, and partially in terms of another. First argument is a number of variables. Second is ordering to apply on the first so many variables. Third is an ordering on the rest, to be used to break ties.</td>
    </tr>
@@ -2639,15 +2639,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#expand">polynomial1/<br/>expand</a>
-      </td>
-      <td>Expands a polynomial.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/poly.html#expand">poly/<br/>expand</a>
       </td>
       <td>Converts a factored or squarefreed form into the expanded polynomial over the same ring, so that factored(recursive) -&gt; recursive, etc.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial1.html#expand">polynomial1/<br/>expand</a>
+      </td>
+      <td>Expands a polynomial.</td>
    </tr>
    <tr>
       <td>
@@ -3095,15 +3095,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial3.html#gcd">polynomial3/<br/>gcd</a>
-      </td>
-      <td>The n-ary greatest common divisor for univariate polynomials over fields.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/poly.html#gcd">poly/<br/>gcd</a>
       </td>
       <td>The n-ary greatest common divisor of its polynomial arguments. This is unique up to units.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial3.html#gcd">polynomial3/<br/>gcd</a>
+      </td>
+      <td>The n-ary greatest common divisor for univariate polynomials over fields.</td>
    </tr>
    <tr>
       <td>
@@ -3221,27 +3221,27 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#graded_lexicographic">polyd2/<br/>graded_lexicographic</a>
-      </td>
-      <td>Total degree order, graded with the lexicographic ordering.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#graded_lexicographic">polyd/<br/>graded_lexicographic</a>
       </td>
       <td>Total degree order, graded with the lexicographic ordering. Note that, if a poly_ring_d_named is used, lexigographic refers to the order of the variables in the poly_ring_d_named, not to their order as strings.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#graded_reverse_lexicographic">polyd2/<br/>graded_reverse_lexicographic</a>
+         <a href="../cd/polyd2.html#graded_lexicographic">polyd2/<br/>graded_lexicographic</a>
       </td>
-      <td>Total degree order, graded with the reverse lexicographic ordering.</td>
+      <td>Total degree order, graded with the lexicographic ordering.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/polyd.html#graded_reverse_lexicographic">polyd/<br/>graded_reverse_lexicographic</a>
       </td>
       <td>Total degree order, graded with the reverse lexicographic ordering. Note that, if a poly_ring_d_named is used, lexigographic refers to the order of the variables in the poly_ring_d_named, not to their order as strings.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd2.html#graded_reverse_lexicographic">polyd2/<br/>graded_reverse_lexicographic</a>
+      </td>
+      <td>Total degree order, graded with the reverse lexicographic ordering.</td>
    </tr>
    <tr>
       <td>
@@ -4625,15 +4625,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#leading_coefficient">polynomial1/<br/>leading_coefficient</a>
-      </td>
-      <td>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents the coefficient of the monomial of highest degree. If the polynomial is zero, the value represented is zero.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/poly.html#leading_coefficient">poly/<br/>leading_coefficient</a>
       </td>
       <td>The leading coefficient with respect to a variable (the second argument). We note that the leading coefficient of 0 is undefined.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial1.html#leading_coefficient">polynomial1/<br/>leading_coefficient</a>
+      </td>
+      <td>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents the coefficient of the monomial of highest degree. If the polynomial is zero, the value represented is zero.</td>
    </tr>
    <tr>
       <td>
@@ -4823,15 +4823,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#lexicographic">polyd2/<br/>lexicographic</a>
-      </td>
-      <td>The lexicographic ordering of monomials.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#lexicographic">polyd/<br/>lexicographic</a>
       </td>
       <td>The lexicographic ordering of terms. Note that, if a poly_ring_d_named is used, lexigographic refers to the order of the variables in the poly_ring_d_named, not to their order as strings.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd2.html#lexicographic">polyd2/<br/>lexicographic</a>
+      </td>
+      <td>The lexicographic ordering of monomials.</td>
    </tr>
    <tr>
       <td>
@@ -5249,13 +5249,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#matrix_ordering">polyd2/<br/>matrix_ordering</a>
+         <a href="../cd/polyd.html#matrix_ordering">polyd/<br/>matrix_ordering</a>
       </td>
       <td>The argument is a matrix with as many columns as indeterminates (= rank). Each row in turm is multiplied by the column vector of exponents to produce a weighting for comparison purposes.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#matrix_ordering">polyd/<br/>matrix_ordering</a>
+         <a href="../cd/polyd2.html#matrix_ordering">polyd2/<br/>matrix_ordering</a>
       </td>
       <td>The argument is a matrix with as many columns as indeterminates (= rank). Each row in turm is multiplied by the column vector of exponents to produce a weighting for comparison purposes.</td>
    </tr>
@@ -6383,15 +6383,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#ordering">polyd2/<br/>ordering</a>
-      </td>
-      <td>Used as an attribute to indicate an ordering of the monomials in a polynomial or list of polynomials. The value of this attribute should be one of the constructors specifying ordering.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#ordering">polyd/<br/>ordering</a>
       </td>
       <td>Used as an attribute to indicate an ordering of the terms in a polynomial or list of polynomials. The value of this attribute should be one of the constructors specifying ordering.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd2.html#ordering">polyd2/<br/>ordering</a>
+      </td>
+      <td>Used as an attribute to indicate an ordering of the monomials in a polynomial or list of polynomials. The value of this attribute should be one of the constructors specifying ordering.</td>
    </tr>
    <tr>
       <td>
@@ -6737,15 +6737,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#plus">polyd1/<br/>plus</a>
-      </td>
-      <td>The sum. The argument is a DMPL. The sum lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#plus">polyd/<br/>plus</a>
       </td>
       <td>The sum. The argument is a DMPL. The sum lies within the same "PolyRingD" i.e. a program implementing this operation should return a DMP with the same "poly_ring_d" (or "poly_ring_d_named").</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd1.html#plus">polyd1/<br/>plus</a>
+      </td>
+      <td>The sum. The argument is a DMPL. The sum lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
    </tr>
    <tr>
       <td>
@@ -6821,25 +6821,25 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#poly_ring_d">polyd1/<br/>poly_ring_d</a>
-      </td>
-      <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the number of variables as an integer.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#poly_ring_d">polyd/<br/>poly_ring_d</a>
       </td>
       <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the number of variables as an integer.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#poly_ring_d_named">polyd1/<br/>poly_ring_d_named</a>
+         <a href="../cd/polyd1.html#poly_ring_d">polyd1/<br/>poly_ring_d</a>
+      </td>
+      <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the number of variables as an integer.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd.html#poly_ring_d_named">polyd/<br/>poly_ring_d_named</a>
       </td>
       <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the remaining arguments are the names of the variables. The first variable given is the most important from the point of view of lexicographic ordering, then the second, and so on.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#poly_ring_d_named">polyd/<br/>poly_ring_d_named</a>
+         <a href="../cd/polyd1.html#poly_ring_d_named">polyd1/<br/>poly_ring_d_named</a>
       </td>
       <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the remaining arguments are the names of the variables. The first variable given is the most important from the point of view of lexicographic ordering, then the second, and so on.</td>
    </tr>
@@ -6953,9 +6953,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#power">polyd1/<br/>power</a>
+         <a href="../cd/poly.html#power">poly/<br/>power</a>
       </td>
-      <td>The power. First argument is a DMP, second argument is the integer power. The power lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
+      <td>Takes a polynomial and a (non-negative) integer and produces a formal power. Although OpenMath does not specify operational semantics, the idea here is that these powers are not evaluated. We note that the power from arith1 would suggest the expanded form.</td>
    </tr>
    <tr>
       <td>
@@ -6965,9 +6965,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/poly.html#power">poly/<br/>power</a>
+         <a href="../cd/polyd1.html#power">polyd1/<br/>power</a>
       </td>
-      <td>Takes a polynomial and a (non-negative) integer and produces a formal power. Although OpenMath does not specify operational semantics, the idea here is that these powers are not evaluated. We note that the power from arith1 would suggest the expanded form.</td>
+      <td>The power. First argument is a DMP, second argument is the integer power. The power lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
    </tr>
    <tr>
       <td>
@@ -7469,15 +7469,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#reverse_lexicographic">polyd2/<br/>reverse_lexicographic</a>
-      </td>
-      <td>The reverse lexicographic ordering of monomials</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#reverse_lexicographic">polyd/<br/>reverse_lexicographic</a>
       </td>
       <td>The reverse lexicographic ordering of terms. Note that, if a poly_ring_d_named is used, lexigographic refers to the order of the variables in the poly_ring_d_named, not to their order as strings.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd2.html#reverse_lexicographic">polyd2/<br/>reverse_lexicographic</a>
+      </td>
+      <td>The reverse lexicographic ordering of monomials</td>
    </tr>
    <tr>
       <td>
@@ -7721,15 +7721,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#SDMP">polyd1/<br/>SDMP</a>
-      </td>
-      <td>The constructor for multivariate polynomials without any indication of variables or domain for the coefficients. Its arguments are just "monomial"s. No monomials should differ only by the coefficient (i.e it is not permitted to have both "2*x*y" and "x*y" as monomials in a SDMP). SDMP can be attributed with the "ordering" symbol to indicate a particular ordering of its monomials. This attribute shall not be set if the SDMP is part of DMPL that has this attribute set.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#SDMP">polyd/<br/>SDMP</a>
       </td>
       <td>The constructor for multivariate polynomials without any indication of variables or domain for the coefficients. Its arguments are just "term"s. No terms should differ only by the coefficient (i.e it is not permitted to have both "2*x*y" and "x*y" as terms in a SDMP). SDMP can be attributed with the "ordering" symbol to indicate a particular ordering of its terms. This attribute shall not be set if the SDMP is part of DMPL that has this attribute set. If the SDMP is ordered, explicitly or implicitly via an outer ordering, the terms must be in decreasing order with respect to this order. The zero polynomial is represented by an SDMP with no terms.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd1.html#SDMP">polyd1/<br/>SDMP</a>
+      </td>
+      <td>The constructor for multivariate polynomials without any indication of variables or domain for the coefficients. Its arguments are just "monomial"s. No monomials should differ only by the coefficient (i.e it is not permitted to have both "2*x*y" and "x*y" as monomials in a SDMP). SDMP can be attributed with the "ordering" symbol to indicate a particular ordering of its monomials. This attribute shall not be set if the SDMP is part of DMPL that has this attribute set.</td>
    </tr>
    <tr>
       <td>
@@ -7811,15 +7811,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/semigroup1.html#semigroup">semigroup1/<br/>semigroup</a>
-      </td>
-      <td>This symbol is a constructor for semigroups. It takes two arguments in the following order: a set to specify the elements in the semigroup, and a binary operation to specify the semigroup operation. The binary operation should act on elements of the set and return an element of the set.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/semigroup.html#Semigroup">semigroup/<br/>Semigroup</a>
       </td>
       <td>The contructor for the type of semigroups as a Setoid with a binary operation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/semigroup1.html#semigroup">semigroup1/<br/>semigroup</a>
+      </td>
+      <td>This symbol is a constructor for semigroups. It takes two arguments in the following order: a set to specify the elements in the semigroup, and a binary operation to specify the semigroup operation. The binary operation should act on elements of the set and return an element of the set.</td>
    </tr>
    <tr>
       <td>
@@ -8441,15 +8441,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#term">polyd1/<br/>term</a>
-      </td>
-      <td>The constructor of monomials. Valid applications are of the form Term(coeff, exp1, exp2, ... expn) which represents the monomial coeff * var1^exp1*...varn^expn where n is the number of variables, expi are non-negative integers.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#term">polyd/<br/>term</a>
       </td>
       <td>The constructor of terms. Valid applications are of the form Term(coeff, exp1, exp2, ... expn) which represents the term coeff * var1^exp1*...varn^expn where n is the number of variables, expi are non-negative integers. coeff should be non-zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd1.html#term">polyd1/<br/>term</a>
+      </td>
+      <td>The constructor of monomials. Valid applications are of the form Term(coeff, exp1, exp2, ... expn) which represents the monomial coeff * var1^exp1*...varn^expn where n is the number of variables, expi are non-negative integers.</td>
    </tr>
    <tr>
       <td>
@@ -8519,15 +8519,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#times">polyd1/<br/>times</a>
-      </td>
-      <td>The product. The argument is a DMPL. The product lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#times">polyd/<br/>times</a>
       </td>
       <td>The product. The argument is a DMPL. The product lies within the same "PolyRingD" i.e. a program implementing this operation should return a DMP with the same "poly_ring_d" (or "poly_ring_d_named").</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd1.html#times">polyd1/<br/>times</a>
+      </td>
+      <td>The product. The argument is a DMPL. The product lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
    </tr>
    <tr>
       <td>
@@ -8993,25 +8993,25 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#weighted">polyd2/<br/>weighted</a>
-      </td>
-      <td>The first argument is a list of integers to act as variable weights, and the second is an ordering. The result is an ordering.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#weighted">polyd/<br/>weighted</a>
       </td>
       <td>The first argument is a list of integers to act as variable weights, and the second is an ordering. The result is an ordering.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#weighted_degree">polyd2/<br/>weighted_degree</a>
+         <a href="../cd/polyd2.html#weighted">polyd2/<br/>weighted</a>
+      </td>
+      <td>The first argument is a list of integers to act as variable weights, and the second is an ordering. The result is an ordering.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd.html#weighted_degree">polyd/<br/>weighted_degree</a>
       </td>
       <td>The total degree of its argument, taking into account any weights declared. The value returned is an integer: non-negative if the weights are. We note that the degree of 0 is undefined.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#weighted_degree">polyd/<br/>weighted_degree</a>
+         <a href="../cd/polyd2.html#weighted_degree">polyd2/<br/>weighted_degree</a>
       </td>
       <td>The total degree of its argument, taking into account any weights declared. The value returned is an integer: non-negative if the weights are. We note that the degree of 0 is undefined.</td>
    </tr>

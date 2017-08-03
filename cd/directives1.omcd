@@ -1,0 +1,343 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>directives1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.riaca.win.tue.nl/cds/directives/directives1.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-06-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-06-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>3</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>The primal objective of OpenMath objects is to represent mathematical expressions. In this Content Dictionary another objective is addressed, namely to express an action related to a mathematical expression. Such a request for an action is generally referred to as a query. The specific queries are called directives. In this CD we define some. An entity (software) carrying out the query is referred to as a service. The service might return an OpenMath object. To formalize this object, we also introduce the symbol response in this CD. amc 2004-03-18: added the directive explore. amc 2004-03-24: removed redundancies.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>evaluate</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function with one argument, which should be a mathematical expression. When applied to a mathematical expression, it asks for an evaluation or simplification of the expression. The evaluation or simplification to be carried out by a service is a simpler mathematical expression (in some definition of complexity of objects) which is equal to the argument.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The value of sin(Pi) is zero. The expression below asks for sin(Pi) to be evaluated, and so a service receiving the object is supposed to return zero.</OMSTR>
+            <OMA>
+               <OMS cd="directives1" name="evaluate"/>
+               <OMA>
+                  <OMS cd="transc1" name="sin"/>
+                  <OMS cd="nums1" name="pi"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>evaluate_to_type</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function with two arguments, which should be a mathematical expression and a type. When applied to a mathematical expression E and a type T, it asks for an evaluation or simplification of E to a mathematical expression of type T.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The value of (7*6)/2 is a natural number. The expression below asks for this integer.</OMSTR>
+            <OMA>
+               <OMS cd="directives1" name="evaluate"/>
+               <OMA>
+                  <OMS cd="arith1" name="divide"/>
+                  <OMA>
+                     <OMS cd="arith1" name="times"/>
+                     <OMI>7</OMI>
+                     <OMI>6</OMI>
+                  </OMA>
+                  <OMI>2</OMI>
+               </OMA>
+               <OMS cd="setname1" name="N"/>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The type of the responded object should be equal to the specification, that is the second argument of the evaluate_to_type.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMATTR>
+               <OMATP>
+                  <OMS cd="ecc" name="type"/>
+                  <OMV name="T"/>
+               </OMATP>
+               <OMA>
+                  <OMS cd="directives1" name="response"/>
+                  <OMA>
+                     <OMS cd="directives1" name="evaluate_to_type"/>
+                     <OMV name="x"/>
+                     <OMV name="T"/>
+                  </OMA>
+               </OMA>
+            </OMATTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>look_up</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function with one argument, which should be a mathematical expression. When applied to a mathematical expression, it asks for mathematical expressions related to the argument. If the argument is a single OpenMath symbol, the service might respond by the list of all properties in the CD containing the argument. Alternatively, the service can provide a list of CDs which use the CD in which the argument occurs. Another service might return all documents in which the symbol occurs. If the argument is a more complicated object, the same services could be called for, but then with all OpenMath symbols occurring in the argument instead of the single one.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Looking up sin is expressed as follows:</OMSTR>
+            <OMA>
+               <OMS cd="directives1" name="look_up"/>
+               <OMS cd="transc1" name="sin"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>response</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function of one argument, which should be a query. When applied to a query, it refers to the response a service might give. It will mainly be used in this CD to express formal mathematical properties of queries.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>prove</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function with one argument, which should be a clause. When applied to a clause C, it asks for a proof of C.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>disprove</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function with one argument, which should be a clause. When applied to a clause C, it asks for a proof of that C does not hold.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>Asking to disprove C amounts to asking for a proof that C does not hold. (In other words, this symbol is completely redundant, even in multi-valued logic.***)</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="directives1" name="disprove"/>
+                  <OMV name="C"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="directives1" name="prove"/>
+                  <OMA>
+                     <OMS cd="logic1" name="not"/>
+                     <OMV name="C"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>prove_in_theory</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function with two arguments, the first of which should be a clause and the second of which should be a symbol indicating a logic theory. When applied to arguments C, T, it asks for a proof of C in theory T.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>find</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a binder, whose body should be a clause. When bound to a variable (or list of variables) x with body P(x), it asks for a mathematical expression A such that P(A) holds.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Searching for a real number x such that sin(x) = 0</OMSTR>
+            <OMBIND>
+               <OMS cd="directives1" name="find"/>
+               <OMBVAR>
+                  <OMV name="x"/>
+               </OMBVAR>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="set1" name="in"/>
+                     <OMV name="x"/>
+                     <OMS cd="setname1" name="R"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="eq"/>
+                     <OMA>
+                        <OMS cd="transc1" name="sin"/>
+                        <OMV name="x"/>
+                     </OMA>
+                     <OMI>0</OMI>
+                  </OMA>
+               </OMA>
+            </OMBIND>
+            <OMSTR>is to be compared to asking for an inverse of x:</OMSTR>
+            <OMA>
+               <OMS cd="directives1" name="evaluate_to_type"/>
+               <OMA>
+                  <OMA>
+                     <OMS cd="fns1" name="inverse"/>
+                     <OMS cd="transc1" name="sin"/>
+                  </OMA>
+                  <OMI>0</OMI>
+               </OMA>
+               <OMS cd="setname1" name="R"/>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The body of argument with the binder x replaced by the response should be a true statement.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMV name="P"/>
+               <OMA>
+                  <OMS cd="directives1" name="response"/>
+                  <OMBIND>
+                     <OMS cd="directives1" name="find"/>
+                     <OMBVAR>
+                        <OMV name="x"/>
+                     </OMBVAR>
+                     <OMV name="P"/>
+                  </OMBIND>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>decide</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function with one argument, which should be a clause. When applied to a clause, it asks whether the clause holds.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The question if sin(Pi) is equal to zero can be phrased as follows.</OMSTR>
+            <OMA>
+               <OMS cd="directives1" name="decide"/>
+               <OMA>
+                  <OMS cd="relation1" name="eq"/>
+                  <OMA>
+                     <OMS cd="transc1" name="sin"/>
+                     <OMS cd="nums1" name="pi"/>
+                  </OMA>
+                  <OMI>0</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The response to the decide query is logically equivalent to the truth of the argument.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="equivalent"/>
+               <OMA>
+                  <OMS cd="directives1" name="response"/>
+                  <OMA>
+                     <OMS cd="directives1" name="decide"/>
+                     <OMV name="P"/>
+                  </OMA>
+               </OMA>
+               <OMV name="P"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>explore</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a unary function whose argument should be a mathematical assertion. When applied to an assertion A, it asks for conditions under which the assertion holds.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Given the Pappos configuration P, the Pappos thesis T asserts that three points of the configuration are collinear. A conceivable answer to the explore directive with the assertion that in configuration P the thesis T holds, is a nondegeneracy condition that makes the assertion valid.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>A response R should satisfy the requirement that R implies the assertion.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="implies"/>
+               <OMA>
+                  <OMS cd="directives1" name="response"/>
+                  <OMA>
+                     <OMS cd="directives1" name="explore"/>
+                     <OMV name="A"/>
+                  </OMA>
+               </OMA>
+               <OMV name="A"/>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

@@ -1,0 +1,263 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>group4</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/group4.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-06-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-06-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>2</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>A CD of sets constructed from groups</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>Written by Arjeh M. Cohen 2004-03-02. Edited AMC 2004-03-05</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>conjugacy_classes</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function whose argument should be a group. Its value on a group is the set of conjugacy classes of that group.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>conjugacy_class_representatives</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function whose argument should be a group. Its value on a group is a set of representatives of the conjugacy classes of that group.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>are_conjugate</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a boolean ternary function whose first argument is a group G and whose second and third arguments are elements x and y of G. Its value on G, x, and y is true if and only if x and y are conjugate in G.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>x and y are conjugate if and only if there is h in G such that x = h y h^(-1).</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="equivalent"/>
+               <OMA>
+                  <OMS cd="group4" name="are_conjugate"/>
+                  <OMV name="G"/>
+                  <OMV name="x"/>
+                  <OMV name="y"/>
+               </OMA>
+               <OMBIND>
+                  <OMS cd="quant1" name="exists"/>
+                  <OMBVAR>
+                     <OMV name="h"/>
+                  </OMBVAR>
+                  <OMA>
+                     <OMS cd="logic1" name="and"/>
+                     <OMA>
+                        <OMS cd="set1" name="in"/>
+                        <OMV name="h"/>
+                        <OMA>
+                           <OMS cd="group1" name="carrier"/>
+                           <OMV name="G"/>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="relation1" name="eq"/>
+                        <OMV name="x"/>
+                        <OMA>
+                           <OMS cd="group1" name="expression"/>
+                           <OMV name="G"/>
+                           <OMA>
+                              <OMS cd="arith1" name="times"/>
+                              <OMV name="h"/>
+                              <OMV name="y"/>
+                              <OMA>
+                                 <OMS cd="arith1" name="power"/>
+                                 <OMV name="h"/>
+                                 <OMI>-1</OMI>
+                              </OMA>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMBIND>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>conjugacy_class</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a binary function, whose first argument is a group G and whose second argument is an element x of G. Its value on G and x is the set of elements which are conjugate to x in G.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The conjugacy class in G of h is the subset {g^(-1) h g | g in G} of G.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="group4" name="conjugacy_class"/>
+                  <OMV name="G"/>
+                  <OMV name="h"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="set1" name="suchthat"/>
+                  <OMA>
+                     <OMS cd="group1" name="carrier"/>
+                     <OMV name="G"/>
+                  </OMA>
+                  <OMBIND>
+                     <OMS cd="fns1" name="lambda"/>
+                     <OMBVAR>
+                        <OMV name="x"/>
+                     </OMBVAR>
+                     <OMA>
+                        <OMS cd="group4" name="are_conjugate"/>
+                        <OMV name="G"/>
+                        <OMV name="x"/>
+                        <OMV name="h"/>
+                     </OMA>
+                  </OMBIND>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>left_transversal</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The binary function whose value is a set of representatives for the left cosets of the second argument as a subgroup of the first.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>right_transversal</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The binary function whose value is a set of representatives for the right cosets of the second argument as a subgroup of the first.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>left_coset</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a ternary function whose first argument is a group G, whose second argument is a subgroup H of G, and whose third argument is an element x of G. Its value on G, H, and x is the left coset of H in G containing x, that is, the set x H.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>right_coset</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a ternary function whose first argument is a group G, whose second argument is a subgroup H of G, and whose third argument is an element x of G. Its value on G, H, and x is the right coset of H in G containing x, that is, the set H x.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>left_cosets</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The binary function whose value is the set of left cosets of the second argument in the first.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>right_cosets</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The binary function whose value is the set of right cosets of the second argument in the first.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>left_coset_representative</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a quaternary function whose first argument is a group G, whose second argument is a subgroup H of G, whose third argument is left_transversal T of H in G, and whose fourth argument is an element of G. It assigns to G, H, T, g the element of t of T representing the left coset of H containing g, that is, t H = g H .</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>right_coset_representative</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a quaternary function whose first argument is a group G, whose second argument is a subgroup H of G, whose third argument is right_transversal T of H in G, and whose fourth argument is an element of G. It assigns to G, H, T, g the element of t of T representing the right coset of H containing g, that is, H t = H g.</OMSTR>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

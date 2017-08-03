@@ -1,0 +1,493 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>plangeo3</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/plangeo3.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-06-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-06-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>3</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD defines symbols for planar Euclidean geometry related to distance.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>distance</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The distance between two affine points is the Euclidean distance. The distance between two geometric objects O and O' is the infimum of the distances between two affine points, one on O and one on O'.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The distance between two points A and B.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="distance"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>perpendicular</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>perpendicular is a binary boolean function with input two lines, halflines or segments. Its value is true whenever the two inputs are perpendicular to each other.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Testing perpendicularity of two lines L and M.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="perpendicular"/>
+               <OMV name="L"/>
+               <OMV name="M"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>parallel</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>parallel is a binary boolean function with input two lines, halflines or segments. Its value is true whenever the two inputs are parallel.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Testing parallelism of two lines L and M.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="parallel"/>
+               <OMV name="L"/>
+               <OMV name="M"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>circle</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol represents a circle. The circle may be subject to constraints.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The circle C with center A and radius 1 is given by</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="circle"/>
+               <OMV name="C"/>
+               <OMA>
+                  <OMS cd="plangeo3" name="center"/>
+                  <OMV name="C"/>
+                  <OMV name="A"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="plangeo3" name="radius"/>
+                  <OMV name="C"/>
+                  <OMI>1</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>radius</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The radius of a circle.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The assertion that the radius of the circle C is 1:</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="radius"/>
+               <OMV name="C"/>
+               <OMI>1</OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>radius_of</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Gives the radius of a circle.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The radius of the circle C is given by</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="radius_of"/>
+               <OMV name="C"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>center</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Defines the center of a circle.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The circle C with center A and radius 1 is given by</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="circle"/>
+               <OMV name="C"/>
+               <OMA>
+                  <OMS cd="plangeo3" name="center"/>
+                  <OMV name="C"/>
+                  <OMV name="A"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="plangeo3" name="radius"/>
+                  <OMV name="C"/>
+                  <OMI>1</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>center_of</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Gives the center of the circle</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>If C is the circle of the previous example then the following gives A.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="center_of"/>
+               <OMV name="C"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>are_on_circle</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The statement that a set of points is on one circle.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that A, B, C, and D lie on one circle.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="are_on_circle"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+               <OMV name="C"/>
+               <OMV name="D"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>angle</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Angle of a corner, always measured in positive (anti-clockwise) direction.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Notice that</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="angle"/>
+               <OMA>
+                  <OMS cd="plangeo2" name="corner"/>
+                  <OMV name="A"/>
+                  <OMV name="B"/>
+                  <OMV name="C"/>
+               </OMA>
+            </OMA>
+            <OMA>
+               <OMS cd="plangeo3" name="angle"/>
+               <OMA>
+                  <OMS cd="plangeo2" name="corner"/>
+                  <OMV name="C"/>
+                  <OMV name="B"/>
+                  <OMV name="A"/>
+               </OMA>
+            </OMA>
+            <OMSTR>are not the same.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>midpoint</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The midpoint between two points or two endpoints of a segment.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The midpoint of two points A and B is the same as the midpoint of the segment S on A and B.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="midpoint"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+            </OMA>
+            <OMSTR>equals</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="midpoint"/>
+               <OMA>
+                  <OMS cd="plangeo2" name="segment"/>
+                  <OMV name="A"/>
+                  <OMV name="B"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_midpoint</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The statement that one point is the midpoint of two others.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>This example states that C is the midpoint of A and B.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo3" name="is_midpoint"/>
+               <OMV name="C"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>center_of_gravity</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Center of gravity of a number of points.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The center of gravity G of three points A, B and C is defined as follows.</OMSTR>
+            <OMA>
+               <OMS cd="plangeo1" name="point"/>
+               <OMV name="G"/>
+               <OMA>
+                  <OMS cd="plangeo3" name="center_of_gravity"/>
+                  <OMV name="A"/>
+                  <OMV name="B"/>
+                  <OMV name="C"/>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="plangeo3" name="center_of_gravity"/>
+                  <OMV name="A"/>
+                  <OMV name="B"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="plangeo3" name="midpoint"/>
+                  <OMV name="A"/>
+                  <OMV name="B"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>perpbisector</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Given two distinct points A and B, this is the line of all points at equal distance to both A and B.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="plangeo3" name="perpbisector"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>altitude</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Given a point p and a line L, this defines the segment starting at p and ending in the unique point of L closest to p.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="plangeo3" name="altitude"/>
+               <OMV name="p"/>
+               <OMV name="L"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>perpline</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Given a point p and a line L, this defines the line through p perpendicular to L.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="plangeo3" name="perpline"/>
+               <OMV name="p"/>
+               <OMV name="L"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>polarline</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Given a point p and a circle C this defines the polar line of p with respect to C.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>If p is incident with the circle C, the polar line of p with respect to C is the tangent line at p with respect to C.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="plangeo3" name="polarline"/>
+               <OMV name="p"/>
+               <OMV name="C"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>tangent</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>Given a line L and a circle C this boolean checks whether L is a tangent line to C.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="plangeo3" name="tangent"/>
+               <OMV name="L"/>
+               <OMV name="C"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>arc</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>an arc of a circle M from A to B is the set of points of M that are encountered when traversing the circle clockwise from A to B.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="plangeo3" name="arc"/>
+               <OMA>
+                  <OMS cd="plangeo3" name="circle"/>
+                  <OMV name="M"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="plangeo1" name="point"/>
+                  <OMV name="A"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="plangeo1" name="point"/>
+                  <OMV name="B"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

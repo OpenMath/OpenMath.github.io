@@ -1,0 +1,2415 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>ring3</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: ring3</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/ring3.ocd">http://www.openmath.org/cd/ring3.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="ring3.ocd">ring3.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="ring3.omcd">ring3.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#free_ring">free_ring</a>, <a href="#ideal">ideal</a>, <a href="#integers">integers</a>, <a href="#invertibles">invertibles</a>, <a href="#is_ideal">is_ideal</a>, <a href="#kernel">kernel</a>, <a href="#m_poly_ring">m_poly_ring</a>, <a href="#matrix_ring">matrix_ring</a>, <a href="#multiplicative_group">multiplicative_group</a>, <a href="#poly_ring">poly_ring</a>, <a href="#principal_ideal">principal_ideal</a>, <a href="#quotient_ring">quotient_ring</a>, <a href="#direct_power">direct_power</a>, <a href="#direct_product">direct_product</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-06-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+            <p> A CD of 
+functions for basic constructions in ring theory.
+The quaternion definition is still very shaky.   </p>
+
+            <pre>
+Written by Arjeh M. Cohen 2004-02-25
+</pre>
+
+            <hr/>
+            <h2>
+               <a name="is_ideal"> is_ideal</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+The binary boolean function whose value is true if and only if the second
+argument is an ideal of the second.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If is_ideal(S,I) then I is a nonempty set of elements of S and I
+is a subgroup of the additive group of S and
+closed under multiplication by elements of S.
+</dd>
+            </dl>
+
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#is_ideal">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#ideal">ideal</a>]
+	  
+	    [Last: <a href="#integers">integers</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+
+            <hr/> 
+            <h2>
+               <a name="ideal"> ideal </a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol represents a
+binary function. The first argument is a ring R and the second argument is a
+list or a set.  When evaluated on R and such a second argument, the function
+represents the ideal in R generated by the entries of the list or set.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The ideal in the free ring on the letters a, b generated by a*b-b*a:
+
+<div>
+                     <button id="d40e57xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57xml')">OpenMath XML (source)</button>
+                     <pre id="d40e57xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="ring3" name="ideal"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="ring3" name="free_ring"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                 &lt;OMV name="a"/&gt;  &lt;OMV name="b"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+                 &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                      &lt;OMV name="a"/&gt;  &lt;OMV name="b"/&gt;
+                 &lt;/OMA&gt;
+                 &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                      &lt;OMV name="b"/&gt;  &lt;OMV name="a"/&gt;
+                 &lt;/OMA&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e57cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57cmml')">Strict Content MathML</button>
+                     <pre id="d40e57cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ring3"&gt;ideal&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;free_ring&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e57prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e57pref')">Prefix</button>
+                  <div id="d40e57pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring3.html#ideal">ideal</a>
+  (<a href="../../../cd/ring3.html#free_ring">free_ring</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  ( <i>a</i>,  <i>b</i>)
+)
+, <a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  ( <i>b</i>,  <i>a</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e57popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e57pop')">Popcorn</button>
+                     <div id="d40e57pop" style="display:none; margin-top: 0.5em">
+  ring3.ideal(ring3.free_ring([$a , $b]), [$a * $b - $b * $a])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e57mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e57mml')">Rendered Presentation MathML</button>
+                     <div id="d40e57mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>ideal</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>free_ring</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>a</mi>
+                                             <mo separator="true">,</mo>
+                                             <mi>b</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mtable>
+                                       <mtr>
+                                          <mtd columnalign="left">
+                                             <mrow>
+                                                <mrow>
+                                                   <mi>a</mi>
+                                                   <mo>&#8290;</mo>
+                                                   <mi>b</mi>
+                                                </mrow>
+                                                <mo>-</mo>
+                                                <mrow>
+                                                   <mi>b</mi>
+                                                   <mo>&#8290;</mo>
+                                                   <mi>a</mi>
+                                                </mrow>
+                                             </mrow>
+                                          </mtd>
+                                       </mtr>
+                                    </mtable>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#ideal">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#kernel">kernel</a>]
+	  
+	    [Previous: <a href="#is_ideal">is_ideal</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+            <hr/> 
+            <h2>
+               <a name="kernel"> kernel </a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol represents a
+unary function. Its argument is a ring homomorphism f : R -&gt; S.  When evaluated on f, the function
+represents the kernel in R of f, that is, the subset {x in R | f(x) = 0}.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The kernel of a ring homomorphism is an ideal.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e115xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e115xml')">OpenMath XML (source)</button>
+                     <pre id="d40e115xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="ring2" name="is_homomorphism"/&gt;
+            &lt;OMV name="R"/&gt;  &lt;OMV name="S"/&gt;   &lt;OMV name="f"/&gt; 
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="ring3" name="is_ideal"/&gt;
+            &lt;OMV name="R"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="ring3" name="kernel"/&gt;
+                 &lt;OMV name="f"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e115cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e115cmml')">Strict Content MathML</button>
+                     <pre id="d40e115cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring2"&gt;is_homomorphism&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;is_ideal&lt;/csymbol&gt;
+   &lt;ci&gt;R&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring3"&gt;kernel&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e115prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e115pref')">Prefix</button>
+                  <div id="d40e115pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/ring2.html#is_homomorphism">is_homomorphism</a>
+  ( <i>R</i>,  <i>S</i>,  <i>f</i>)
+, <a href="../../../cd/ring3.html#is_ideal">is_ideal</a>
+  ( <i>R</i>, <a href="../../../cd/ring3.html#kernel">kernel</a>
+  ( <i>f</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e115popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e115pop')">Popcorn</button>
+                     <div id="d40e115pop" style="display:none; margin-top: 0.5em">
+  ring2.is_homomorphism($R, $S, $f) ==&gt; ring3.is_ideal($R, ring3.kernel($f))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e115mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e115mml')">Rendered Presentation MathML</button>
+                     <div id="d40e115mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_homomorphism</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>,</mo>
+                                       <mi>S</mi>
+                                       <mo>,</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mi>is_ideal</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>kernel</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>f</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#kernel">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#principal_ideal">principal_ideal</a>]
+	  
+	    [Previous: <a href="#ideal">ideal</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+
+            <hr/> 
+            <h2>
+               <a name="principal_ideal"> principal_ideal </a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol represents a
+binary function. The first argument is a ring R and the second argument is an
+element of R.  When evaluated on R and such a second argument, the function
+represents the ideal in R generated by the second argument.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The ideal in the free ring over the rationals on the letters a, b generated by a*b-b*a:
+
+<div>
+                     <button id="d40e156xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e156xml')">OpenMath XML (source)</button>
+                     <pre id="d40e156xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="ring3" name="principal_ideal"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="ring3" name="free_ring"/&gt;
+            &lt;OMS cd="fieldname1" name="Q"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                 &lt;OMV name="a"/&gt;  &lt;OMV name="b"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                 &lt;OMV name="a"/&gt;  &lt;OMV name="b"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                 &lt;OMV name="b"/&gt;  &lt;OMV name="a"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e156cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e156cmml')">Strict Content MathML</button>
+                     <pre id="d40e156cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ring3"&gt;principal_ideal&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;free_ring&lt;/csymbol&gt;
+   &lt;csymbol cd="fieldname1"&gt;Q&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e156prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e156pref')">Prefix</button>
+                  <div id="d40e156pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring3.html#principal_ideal">principal_ideal</a>
+  (<a href="../../../cd/ring3.html#free_ring">free_ring</a>
+  (<a href="../../../cd/fieldname1.html#Q">Q</a>, <a href="../../../cd/list1.html#list">list</a>
+  ( <i>a</i>,  <i>b</i>)
+)
+, <a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  ( <i>b</i>,  <i>a</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e156popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e156pop')">Popcorn</button>
+                     <div id="d40e156pop" style="display:none; margin-top: 0.5em">
+  ring3.principal_ideal(ring3.free_ring(fieldname1.Q, [$a , $b]), $a * $b - $b * $a)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e156mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e156mml')">Rendered Presentation MathML</button>
+                     <div id="d40e156mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>principal_ideal</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>free_ring</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>Q</mi>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>a</mi>
+                                             <mo separator="true">,</mo>
+                                             <mi>b</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>&#8290;</mo>
+                                          <mi>b</mi>
+                                       </mrow>
+                                       <mo>-</mo>
+                                       <mrow>
+                                          <mi>b</mi>
+                                          <mo>&#8290;</mo>
+                                          <mi>a</mi>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#principal_ideal">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#free_ring">free_ring</a>]
+	  
+	    [Previous: <a href="#kernel">kernel</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="free_ring"> free_ring </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a binary function. The first argument should be a ring
+and the second a list or a
+set.  When evaluated on such arguments R and L, the function represents the
+free ring over R generated by the elements (or entries) of L.
+This ring can also be viewed as the ring of non-commutative polynomials over R
+with variables the elements of L.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The free ring over R on the letters a, b:
+
+<div>
+                     <button id="d40e209xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209xml')">OpenMath XML (source)</button>
+                     <pre id="d40e209xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="ring3" name="free_ring"/&gt;
+       &lt;OMV name="R"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="a"/&gt;  &lt;OMV name="b"/&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e209cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209cmml')">Strict Content MathML</button>
+                     <pre id="d40e209cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ring3"&gt;free_ring&lt;/csymbol&gt;
+  &lt;ci&gt;R&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e209prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e209pref')">Prefix</button>
+                  <div id="d40e209pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring3.html#free_ring">free_ring</a>
+  ( <i>R</i>, <a href="../../../cd/list1.html#list">list</a>
+  ( <i>a</i>,  <i>b</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e209popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e209pop')">Popcorn</button>
+                     <div id="d40e209pop" style="display:none; margin-top: 0.5em">
+  ring3.free_ring($R, [$a , $b])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e209mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e209mml')">Rendered Presentation MathML</button>
+                     <div id="d40e209mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>free_ring</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>R</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>b</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#free_ring">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#poly_ring">poly_ring</a>]
+	  
+	    [Previous: <a href="#principal_ideal">principal_ideal</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="poly_ring"> poly_ring </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a binary function. The first argument should be a ring
+and the second a variable.  When evaluated on such arguments R and X, the function represents the
+free commutative ring over R generated by X.
+This ring can also be viewed as the ring of polynomials over R 
+with indeterminate X.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The polynomial ring over R with indeterminate X:
+
+<div>
+                     <button id="d40e238xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e238xml')">OpenMath XML (source)</button>
+                     <pre id="d40e238xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="ring3" name="poly_ring"/&gt;
+       &lt;OMV name="R"/&gt;
+       &lt;OMV name="X"/&gt; 
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e238cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e238cmml')">Strict Content MathML</button>
+                     <pre id="d40e238cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="ring3"&gt;poly_ring&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e238prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e238pref')">Prefix</button>
+                  <div id="d40e238pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring3.html#poly_ring">poly_ring</a>
+  ( <i>R</i>,  <i>X</i>)
+
+</div>
+                  <div>
+                     <button id="d40e238popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e238pop')">Popcorn</button>
+                     <div id="d40e238pop" style="display:none; margin-top: 0.5em">
+  ring3.poly_ring($R, $X)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e238mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e238mml')">Rendered Presentation MathML</button>
+                     <div id="d40e238mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>poly_ring</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>R</mi>
+                                    <mo>,</mo>
+                                    <mi>X</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#poly_ring">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#m_poly_ring">m_poly_ring</a>]
+	  
+	    [Previous: <a href="#free_ring">free_ring</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="m_poly_ring"> m_poly_ring </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a binary function. The first argument should be a ring
+and the second a list or a
+set.  When evaluated on such arguments R and L, the function represents the
+free commutative ring over R generated by the elements (or entries) of L.
+This ring can also be viewed as the ring of polynomials over R
+with variables the elements of L.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The polynomial ring over R with variables a, b:
+
+<div>
+                     <button id="d40e261xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e261xml')">OpenMath XML (source)</button>
+                     <pre id="d40e261xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="ring3" name="m_poly_ring"/&gt;
+       &lt;OMV name="R"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="a"/&gt;  &lt;OMV name="b"/&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e261cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e261cmml')">Strict Content MathML</button>
+                     <pre id="d40e261cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ring3"&gt;m_poly_ring&lt;/csymbol&gt;
+  &lt;ci&gt;R&lt;/ci&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e261prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e261pref')">Prefix</button>
+                  <div id="d40e261pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring3.html#m_poly_ring">m_poly_ring</a>
+  ( <i>R</i>, <a href="../../../cd/list1.html#list">list</a>
+  ( <i>a</i>,  <i>b</i>)
+)
+
+</div>
+                  <div>
+                     <button id="d40e261popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e261pop')">Popcorn</button>
+                     <div id="d40e261pop" style="display:none; margin-top: 0.5em">
+  ring3.m_poly_ring($R, [$a , $b])
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e261mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e261mml')">Rendered Presentation MathML</button>
+                     <div id="d40e261mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>m_poly_ring</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>R</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>a</mi>
+                                       <mo separator="true">,</mo>
+                                       <mi>b</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#m_poly_ring">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#matrix_ring">matrix_ring</a>]
+	  
+	    [Previous: <a href="#poly_ring">poly_ring</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="matrix_ring"> matrix_ring </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a binary function. The first argument is a positive
+integer n, the second is a
+ring R.  When evaluated on such argument n and R, the function represents the
+ring of n x n matrices over R.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The ring of 1 x 1 matrices over R is isomorphic to R.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e294xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294xml')">OpenMath XML (source)</button>
+                     <pre id="d40e294xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="ring2" name="isomorphic"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="ring3" name="matrix_ring"/&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;  &lt;OMV name="R"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMV name="R"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e294cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294cmml')">Strict Content MathML</button>
+                     <pre id="d40e294cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ring2"&gt;isomorphic&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;matrix_ring&lt;/csymbol&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+  &lt;ci&gt;R&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e294prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e294pref')">Prefix</button>
+                  <div id="d40e294pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring2.html#isomorphic">isomorphic</a>
+  (<a href="../../../cd/ring3.html#matrix_ring">matrix_ring</a>
+  (1,  <i>R</i>)
+,  <i>R</i>)
+
+</div>
+                  <div>
+                     <button id="d40e294popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e294pop')">Popcorn</button>
+                     <div id="d40e294pop" style="display:none; margin-top: 0.5em">
+  ring2.isomorphic(ring3.matrix_ring(1, $R), $R)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e294mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e294mml')">Rendered Presentation MathML</button>
+                     <div id="d40e294mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>isomorphic</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>matrix_ring</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn>1</mn>
+                                          <mo>,</mo>
+                                          <mi>R</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mi>R</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#matrix_ring">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#direct_product">direct_product</a>]
+	  
+	    [Previous: <a href="#m_poly_ring">m_poly_ring</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="direct_product">direct_product</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This is a symbol with two or more arguments, all of which are rings.  
+It denotes the ring that is the direct product of its arguments.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#direct_product">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#direct_power">direct_power</a>]
+	  
+	    [Previous: <a href="#matrix_ring">matrix_ring</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="direct_power">direct_power</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This is a symbol with two arguments.
+The first argument should be a ring  S
+and the second argument a positive integer n.
+It denotes the direct product of n copies of S.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e333xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e333xml')">OpenMath XML (source)</button>
+                     <pre id="d40e333xml" style="display:none">
+  &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="ring3" name="direct_product"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="ring1" name="ring"/&gt;
+                &lt;OMS cd="setname1" name="Z"/&gt;
+                &lt;OMS cd="arith1" name="plus"/&gt;
+                &lt;OMS cd="arith1" name="unary_minus"/&gt;
+                &lt;OMI&gt;0&lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="ring1" name="ring"/&gt;
+                &lt;OMS cd="setname1" name="Z"/&gt;
+                &lt;OMS cd="arith1" name="plus"/&gt;
+                &lt;OMS cd="arith1" name="unary_minus"/&gt;
+                &lt;OMI&gt;0&lt;/OMI&gt;
+            &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="ring3" name="direct_power"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="ring1" name="ring"/&gt;
+                &lt;OMS cd="setname1" name="Z"/&gt;
+                &lt;OMS cd="arith1" name="plus"/&gt;
+                &lt;OMS cd="arith1" name="unary_minus"/&gt;
+                &lt;OMI&gt;0&lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMI&gt;2&lt;/OMI&gt;
+        &lt;/OMA&gt;
+   &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e333cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e333cmml')">Strict Content MathML</button>
+                     <pre id="d40e333cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;direct_product&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;ring&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;ring&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;direct_power&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;ring&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;unary_minus&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e333prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e333pref')">Prefix</button>
+                  <div id="d40e333pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/ring3.html#direct_product">direct_product</a>
+  (<a href="../../../cd/ring1.html#ring">ring</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/arith1.html#plus">plus</a>, <a href="../../../cd/arith1.html#unary_minus">unary_minus</a>, 0)
+, <a href="../../../cd/ring1.html#ring">ring</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/arith1.html#plus">plus</a>, <a href="../../../cd/arith1.html#unary_minus">unary_minus</a>, 0)
+)
+, <a href="../../../cd/ring3.html#direct_power">direct_power</a>
+  (<a href="../../../cd/ring1.html#ring">ring</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/arith1.html#plus">plus</a>, <a href="../../../cd/arith1.html#unary_minus">unary_minus</a>, 0)
+, 2)
+)
+
+  </div>
+                  <div>
+                     <button id="d40e333popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e333pop')">Popcorn</button>
+                     <div id="d40e333pop" style="display:none; margin-top: 0.5em">
+    ring3.direct_product(ring1.ring(setname1.Z, arith1.plus, arith1.unary_minus, 0), ring1.ring(setname1.Z, arith1.plus, arith1.unary_minus, 0)) = ring3.direct_power(ring1.ring(setname1.Z, arith1.plus, arith1.unary_minus, 0), 2)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e333mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e333mml')">Rendered Presentation MathML</button>
+                     <div id="d40e333mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>direct_product</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>ring</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi mathvariant="double-struck">Z</mi>
+                                             <mo>,</mo>
+                                             <mo>+</mo>
+                                             <mo>,</mo>
+                                             <mo>-</mo>
+                                             <mo>,</mo>
+                                             <mn>0</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>ring</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi mathvariant="double-struck">Z</mi>
+                                             <mo>,</mo>
+                                             <mo>+</mo>
+                                             <mo>,</mo>
+                                             <mo>-</mo>
+                                             <mo>,</mo>
+                                             <mn>0</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>direct_power</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>ring</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi mathvariant="double-struck">Z</mi>
+                                             <mo>,</mo>
+                                             <mo>+</mo>
+                                             <mo>,</mo>
+                                             <mo>-</mo>
+                                             <mo>,</mo>
+                                             <mn>0</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn>2</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#direct_power">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#quotient_ring">quotient_ring</a>]
+	  
+	    [Previous: <a href="#direct_product">direct_product</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="quotient_ring"> quotient_ring </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This is a binary function, whose first argument is
+a ring R and whose second argument is an ideal I of R.
+When applied to R and I,
+it denotes the quotient ring of R
+by I.
+</p>
+               </dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+
+The carrier of the ring of integers modulo 2 is introduced as Zm(2) in the CD
+setname2. The ring can also be defined as follows.
+
+<div>
+                     <button id="d40e402xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e402xml')">OpenMath XML (source)</button>
+                     <pre id="d40e402xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+          &lt;OMA&gt;&lt;OMS cd="ring3" name="quotient_ring"/&gt;&lt;!-- (Z/2Z) --&gt;
+               &lt;OMA&gt;&lt;OMS cd="ring1" name="ring"/&gt;&lt;!-- Z --&gt;
+                  &lt;OMS cd="setname1" name="Z"/&gt;
+                  &lt;OMS cd="arith1" name="plus"/&gt;
+                  &lt;OMI&gt;0&lt;/OMI&gt;
+                  &lt;OMS cd="arith1" name="minus"/&gt;
+                  &lt;OMS cd="arith1" name="times"/&gt;
+                  &lt;OMI&gt;1&lt;/OMI&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="ring3" name="ideal"/&gt;&lt;!-- 2Z --&gt;
+                  &lt;OMA&gt;&lt;OMS cd="ring1" name="ring"/&gt;&lt;!-- Z --&gt;
+                     &lt;OMS cd="setname1" name="Z"/&gt;
+                     &lt;OMS cd="arith1" name="plus"/&gt;
+                     &lt;OMI&gt;0&lt;/OMI&gt;
+                     &lt;OMS cd="arith1" name="minus"/&gt;
+                     &lt;OMS cd="arith1" name="times"/&gt;
+                     &lt;OMI&gt;1&lt;/OMI&gt;
+                  &lt;/OMA&gt;
+                  &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                     &lt;OMI&gt;2&lt;/OMI&gt;
+                  &lt;/OMA&gt;
+               &lt;/OMA&gt;
+          &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e402cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e402cmml')">Strict Content MathML</button>
+                     <pre id="d40e402cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ring3"&gt;quotient_ring&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring1"&gt;ring&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+   &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+   &lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;ideal&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;ring&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e402prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e402pref')">Prefix</button>
+                  <div id="d40e402pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring3.html#quotient_ring">quotient_ring</a>
+  (<a href="../../../cd/ring1.html#ring">ring</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/arith1.html#plus">plus</a>, 0, <a href="../../../cd/arith1.html#minus">minus</a>, <a href="../../../cd/arith1.html#times">times</a>, 1)
+, <a href="../../../cd/ring3.html#ideal">ideal</a>
+  (<a href="../../../cd/ring1.html#ring">ring</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/arith1.html#plus">plus</a>, 0, <a href="../../../cd/arith1.html#minus">minus</a>, <a href="../../../cd/arith1.html#times">times</a>, 1)
+, <a href="../../../cd/list1.html#list">list</a>
+  (2)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e402popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e402pop')">Popcorn</button>
+                     <div id="d40e402pop" style="display:none; margin-top: 0.5em">
+          ring3.quotient_ring(ring1.ring(setname1.Z, arith1.plus, 0, arith1.minus, arith1.times, 1), ring3.ideal(ring1.ring(setname1.Z, arith1.plus, 0, arith1.minus, arith1.times, 1), [2]))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e402mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e402mml')">Rendered Presentation MathML</button>
+                     <div id="d40e402mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>quotient_ring</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>ring</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi mathvariant="double-struck">Z</mi>
+                                          <mo>,</mo>
+                                          <mo>+</mo>
+                                          <mo>,</mo>
+                                          <mn>0</mn>
+                                          <mo>,</mo>
+                                          <mo>-</mo>
+                                          <mo>,</mo>
+                                          <mo>&#215;</mo>
+                                          <mo>,</mo>
+                                          <mn>1</mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>ideal</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>ring</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi mathvariant="double-struck">Z</mi>
+                                                <mo>,</mo>
+                                                <mo>+</mo>
+                                                <mo>,</mo>
+                                                <mn>0</mn>
+                                                <mo>,</mo>
+                                                <mo>-</mo>
+                                                <mo>,</mo>
+                                                <mo>&#215;</mo>
+                                                <mo>,</mo>
+                                                <mn>1</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mn>2</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The ring
+(Z/2Z)[x]/(x^2+x+1)
+
+<div>
+                     <button id="d40e465xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e465xml')">OpenMath XML (source)</button>
+                     <pre id="d40e465xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+   &lt;OMA&gt;&lt;OMS cd="ring3" name="quotient_ring"/&gt;&lt;!-- (Z/2Z)[x]/(x^2+x+1) --&gt;
+      &lt;OMA&gt;&lt;OMS cd="ring3" name="poly_ring"/&gt;&lt;!-- (Z/2Z)[x] --&gt;
+         &lt;OMA&gt;&lt;OMS cd="setname2" name="Zm"/&gt;&lt;!-- (Z/2Z) --&gt;
+               &lt;OMI&gt;2&lt;/OMI&gt;
+         &lt;/OMA&gt;
+         &lt;OMV name="x"/&gt;&lt;!-- [x] --&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="ring3" name="ideal"/&gt;&lt;!-- (x^2+x+1) --&gt;
+         &lt;OMA&gt;&lt;OMS cd="ring3" name="poly_ring"/&gt;&lt;!-- (Z/2Z)[x] --&gt;
+              &lt;OMA&gt;&lt;OMS cd="setname2" name="Zm"/&gt;&lt;!-- (Z/2Z) --&gt;
+                   &lt;OMI&gt;2&lt;/OMI&gt;
+              &lt;/OMA&gt;
+              &lt;OMV name="x"/&gt;
+         &lt;/OMA&gt;
+         &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+                  &lt;OMV name="x"/&gt;
+                  &lt;OMI&gt;2&lt;/OMI&gt;
+               &lt;/OMA&gt;
+               &lt;OMV name="x"/&gt;
+               &lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;/OMA&gt;
+         &lt;/OMA&gt;
+      &lt;/OMA&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e465cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e465cmml')">Strict Content MathML</button>
+                     <pre id="d40e465cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ring3"&gt;quotient_ring&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;poly_ring&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;ideal&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring3"&gt;poly_ring&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;x&lt;/ci&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e465prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e465pref')">Prefix</button>
+                  <div id="d40e465pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring3.html#quotient_ring">quotient_ring</a>
+  (<a href="../../../cd/ring3.html#poly_ring">poly_ring</a>
+  (<a href="../../../cd/setname2.html#Zm">Zm</a>
+  (2)
+,  <i>x</i>)
+, <a href="../../../cd/ring3.html#ideal">ideal</a>
+  (<a href="../../../cd/ring3.html#poly_ring">poly_ring</a>
+  (<a href="../../../cd/setname2.html#Zm">Zm</a>
+  (2)
+,  <i>x</i>)
+, <a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>x</i>, 2)
+,  <i>x</i>, 1)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e465popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e465pop')">Popcorn</button>
+                     <div id="d40e465pop" style="display:none; margin-top: 0.5em">
+   ring3.quotient_ring(ring3.poly_ring(setname2.Zm(2), $x), ring3.ideal(ring3.poly_ring(setname2.Zm(2), $x), [$x ^ 2 + $x + 1]))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e465mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e465mml')">Rendered Presentation MathML</button>
+                     <div id="d40e465mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>quotient_ring</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>poly_ring</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi mathvariant="double-struck">Z</mi>
+                                             <mn>2</mn>
+                                          </msub>
+                                          <mo>,</mo>
+                                          <mi>x</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>ideal</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>poly_ring</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <msub>
+                                                   <mi mathvariant="double-struck">Z</mi>
+                                                   <mn>2</mn>
+                                                </msub>
+                                                <mo>,</mo>
+                                                <mi>x</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mtable>
+                                             <mtr>
+                                                <mtd columnalign="left">
+                                                   <mrow>
+                                                      <msup>
+                                                         <mi>x</mi>
+                                                         <mn>2</mn>
+                                                      </msup>
+                                                      <mo>+</mo>
+                                                      <mi>x</mi>
+                                                      <mo>+</mo>
+                                                      <mn>1</mn>
+                                                   </mrow>
+                                                </mtd>
+                                             </mtr>
+                                          </mtable>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+Using the xref mechanism it can also be represented as
+<div>
+                     <button id="d40e531xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e531xml')">OpenMath XML (source)</button>
+                     <pre id="d40e531xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+   &lt;OMA&gt;&lt;OMS cd="ring3" name="quotient_ring"/&gt;&lt;!-- (Z/2Z)[x]/(x^2+x+1) --&gt;
+        &lt;OMA id="domain"&gt;&lt;OMS cd="ring3" name="poly_ring"/&gt;&lt;!-- (Z/2Z)[x] --&gt;
+             &lt;OMA&gt;&lt;OMS cd="setname2" name="Zm"/&gt;&lt;!-- (Z/2Z) --&gt;
+                  &lt;OMI&gt;2&lt;/OMI&gt;
+             &lt;/OMA&gt;
+             &lt;OMV name="x"/&gt;&lt;!-- [x] --&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="ring3" name="principal_ideal"/&gt;&lt;!-- (x^2+x+1) --&gt;
+             &lt;OMR href="#domain"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+                       &lt;OMV name="x"/&gt; &lt;OMI&gt;2&lt;/OMI&gt;
+                  &lt;/OMA&gt;
+                  &lt;OMV name="x"/&gt;
+                  &lt;OMI&gt;1&lt;/OMI&gt;
+             &lt;/OMA&gt;
+        &lt;/OMA&gt;
+   &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e531cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e531cmml')">Strict Content MathML</button>
+                     <pre id="d40e531cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="ring3"&gt;quotient_ring&lt;/csymbol&gt;
+  &lt;apply id="domain"&gt;&lt;csymbol cd="ring3"&gt;poly_ring&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="setname2"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;principal_ideal&lt;/csymbol&gt;
+   &lt;share href="#domain"/&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e531prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e531pref')">Prefix</button>
+                  <div id="d40e531pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/ring3.html#quotient_ring">quotient_ring</a>
+  (<a href="../../../cd/ring3.html#poly_ring">poly_ring</a>
+  (<a href="../../../cd/setname2.html#Zm">Zm</a>
+  (2)
+,  <i>x</i>)
+, <a href="../../../cd/ring3.html#principal_ideal">principal_ideal</a>
+  (, <a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/arith1.html#power">power</a>
+  ( <i>x</i>, 2)
+,  <i>x</i>, 1)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e531popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e531pop')">Popcorn</button>
+                     <div id="d40e531pop" style="display:none; margin-top: 0.5em">
+   ring3.quotient_ring(ring3.poly_ring(setname2.Zm(2), $x):domain, ring3.principal_ideal(#domain, $x ^ 2 + $x + 1))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e531mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e531mml')">Rendered Presentation MathML</button>
+                     <div id="d40e531mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>quotient_ring</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>poly_ring</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi mathvariant="double-struck">Z</mi>
+                                             <mn>2</mn>
+                                          </msub>
+                                          <mo>,</mo>
+                                          <mi>x</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>principal_ideal</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>poly_ring</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <msub>
+                                                   <mi mathvariant="double-struck">Z</mi>
+                                                   <mn>2</mn>
+                                                </msub>
+                                                <mo>,</mo>
+                                                <mi>x</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <msup>
+                                                <mi>x</mi>
+                                                <mn>2</mn>
+                                             </msup>
+                                             <mo>+</mo>
+                                             <mi>x</mi>
+                                             <mo>+</mo>
+                                             <mn>1</mn>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#quotient_ring">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#multiplicative_group">multiplicative_group</a>]
+	  
+	    [Previous: <a href="#direct_power">direct_power</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="multiplicative_group"> multiplicative_group </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This is a unary function, whose argument is
+a ring R. When applied to R,
+it denotes the group of invertible elements of R with respect to the
+multiplication on R.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The multiplicative group of the ring R is the group of invertible
+elements of the multiplicative monoid of R.
+</dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e595xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e595xml')">OpenMath XML (source)</button>
+                     <pre id="d40e595xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="ring3" name="invertibles"/&gt;
+            &lt;OMV name="R"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="group3" name="invertibles"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="ring1" name="multiplicative_monoid"/&gt;
+                 &lt;OMV name="R"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e595cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e595cmml')">Strict Content MathML</button>
+                     <pre id="d40e595cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;invertibles&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="group3"&gt;invertibles&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;multiplicative_monoid&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e595prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e595pref')">Prefix</button>
+                  <div id="d40e595pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/ring3.html#invertibles">invertibles</a>
+  ( <i>R</i>)
+, <a href="../../../cd/group3.html#invertibles">invertibles</a>
+  (<a href="../../../cd/ring1.html#multiplicative_monoid">multiplicative_monoid</a>
+  ( <i>R</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e595popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e595pop')">Popcorn</button>
+                     <div id="d40e595pop" style="display:none; margin-top: 0.5em">
+  ring3.invertibles($R) = group3.invertibles(ring1.multiplicative_monoid($R))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e595mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e595mml')">Rendered Presentation MathML</button>
+                     <div id="d40e595mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>invertibles</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>invertibles</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>multiplicative_monoid</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#multiplicative_group">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#invertibles">invertibles</a>]
+	  
+	    [Previous: <a href="#quotient_ring">quotient_ring</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="invertibles"> invertibles </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This is a unary function, whose argument is
+a ring R. When applied to R,
+it denotes the set of invertible elements of R with respect to the
+multiplication on R.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The  carrier of the 
+multiplicative group of the ring R is the set of invertible
+elements of R.
+</dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e633xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e633xml')">OpenMath XML (source)</button>
+                     <pre id="d40e633xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="ring3" name="invertibles"/&gt;
+            &lt;OMV name="R"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="group1" name="carrier"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="ring3" name="multiplicative_group"/&gt;
+                 &lt;OMV name="R"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e633cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e633cmml')">Strict Content MathML</button>
+                     <pre id="d40e633cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring3"&gt;invertibles&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="group1"&gt;carrier&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring3"&gt;multiplicative_group&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e633prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e633pref')">Prefix</button>
+                  <div id="d40e633pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/ring3.html#invertibles">invertibles</a>
+  ( <i>R</i>)
+, <a href="../../../cd/group1.html#carrier">carrier</a>
+  (<a href="../../../cd/ring3.html#multiplicative_group">multiplicative_group</a>
+  ( <i>R</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e633popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e633pop')">Popcorn</button>
+                     <div id="d40e633pop" style="display:none; margin-top: 0.5em">
+  ring3.invertibles($R) = group1.carrier(ring3.multiplicative_group($R))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e633mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e633mml')">Rendered Presentation MathML</button>
+                     <div id="d40e633mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>invertibles</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>carrier</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>multiplicative_group</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#invertibles">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#integers">integers</a>]
+	  
+	    [Previous: <a href="#multiplicative_group">multiplicative_group</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="integers"> integers </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This is a symbol representing the ring of integers.
+</p>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The ring of integers is (Z, +,0,-,*,1), where +,-,* are the standard
+arithmetic operations.
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e672xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e672xml')">OpenMath XML (source)</button>
+                     <pre id="d40e672xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMS cd="ring3" name="integers"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="ring1" name="ring"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="setname1" name="Z"/&gt;
+                 &lt;OMS cd="arith1" name="plus"/&gt;
+                 &lt;OMI&gt;0&lt;/OMI&gt;
+                 &lt;OMS cd="arith1" name="minus"/&gt;
+                 &lt;OMS cd="arith1" name="times"/&gt;
+                 &lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e672cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e672cmml')">Strict Content MathML</button>
+                     <pre id="d40e672cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;csymbol cd="ring3"&gt;integers&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring1"&gt;ring&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+    &lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e672prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e672pref')">Prefix</button>
+                  <div id="d40e672pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/ring3.html#integers">integers</a>, <a href="../../../cd/ring1.html#ring">ring</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>, 0, <a href="../../../cd/arith1.html#minus">minus</a>, <a href="../../../cd/arith1.html#times">times</a>, 1)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e672popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e672pop')">Popcorn</button>
+                     <div id="d40e672pop" style="display:none; margin-top: 0.5em">
+  ring3.integers = ring1.ring(setname1.Z(arith1.plus, 0, arith1.minus, arith1.times, 1))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e672mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e672mml')">Rendered Presentation MathML</button>
+                     <div id="d40e672mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>integers</mi>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>ring</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi mathvariant="double-struck">Z</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/ring3.html#integers">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#is_ideal">is_ideal</a>]
+	  
+	    [Previous: <a href="#invertibles">invertibles</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+         </div>
+      </div>
+   </body>
+</html>

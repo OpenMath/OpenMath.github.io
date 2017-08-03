@@ -1,0 +1,264 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>polynomial3</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/polynomial3.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-07-12</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-07-12</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDUses"/>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>alg1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>arith1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>logic1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>quant1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>set1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>setname1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>setname2</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>relation1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>fns1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>interval1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>integer1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>polynomial1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>polynomial2</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD holds a collection of basic modular arithmetic for polynomials over fields. The data structures for polynomials can be arithmetic expressions, for instance using the ring1.expression symbol, or DMP as in the CD polyd1.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>gcd</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The n-ary greatest common divisor for univariate polynomials over fields.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The gcd(X,Y,Z).</OMSTR>
+            <OMA>
+               <OMS cd="polynomial3" name="gcd"/>
+               <OMV name="X"/>
+               <OMV name="Y"/>
+               <OMV name="Z"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>factors</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a unary function, whose argument should be a polynomial f. When applied to f, it represents a complete list of irreducible factors of f.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression represents the list [X+1,X+1] of rational polynomials.</OMSTR>
+            <OMA>
+               <OMS cd="polynomial3" name="factors"/>
+               <OMA>
+                  <OMS cd="ring1" name="expression"/>
+                  <OMA>
+                     <OMS cd="ring1" name="expression"/>
+                     <OMA>
+                        <OMS cd="ring3" name="poly_ring"/>
+                        <OMS cd="fieldname1" name="Q"/>
+                        <OMV name="X"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="arith1" name="plus"/>
+                        <OMA>
+                           <OMS cd="arith1" name="power"/>
+                           <OMV name="X"/>
+                           <OMI>2</OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMI>2</OMI>
+                           <OMV name="X"/>
+                        </OMA>
+                        <OMI>1</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>quotient</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents the binary division operator on univariate polynomials over fields. That is, for univariate polynomials a and b, quotient(a,b) denotes the polynomial q such that a=b*q+r, with degree(r) less than degree(b).</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>For all a,b with a,b univariate polynomials over a field F we have a = b * quotient(a,b) + remainder(a,b) and degree(remainder(a,b)) is less than degree(b).</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMBIND>
+               <OMS cd="quant1" name="forall"/>
+               <OMBVAR>
+                  <OMV name="a"/>
+                  <OMV name="b"/>
+               </OMBVAR>
+               <OMA>
+                  <OMS cd="logic1" name="implies"/>
+                  <OMA>
+                     <OMS cd="logic1" name="and"/>
+                     <OMA>
+                        <OMS cd="set1" name="in"/>
+                        <OMV name="a"/>
+                        <OMA id="pr">
+                           <OMS cd="polyd1" name="poly_ring_d"/>
+                           <OMV name="F"/>
+                           <OMI>1</OMI>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="set1" name="in"/>
+                        <OMV name="b"/>
+                        <OMR href="#pr"/>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="logic1" name="and"/>
+                     <OMA>
+                        <OMS cd="relation1" name="eq"/>
+                        <OMV name="a"/>
+                        <OMA>
+                           <OMS cd="arith1" name="plus"/>
+                           <OMA>
+                              <OMS cd="arith1" name="times"/>
+                              <OMV name="b"/>
+                              <OMA id="q">
+                                 <OMS cd="polynomial3" name="quotient"/>
+                                 <OMV name="a"/>
+                                 <OMV name="b"/>
+                              </OMA>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="polynomial3" name="remainder"/>
+                              <OMV name="a"/>
+                              <OMV name="b"/>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="relation1" name="lt"/>
+                        <OMA>
+                           <OMS cd="polynomial1" name="degree"/>
+                           <OMR href="#r"/>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="polynomial1" name="degree"/>
+                           <OMV name="b"/>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMBIND>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>remainder</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The symbol represents a binary function, whose arguments should be univariate polynomials in the same polynomial ring whose coefficient ring is a field. When applied to a and b, it represents the polynomial remainder after division of a by b.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDComment"/>
+            <OMSTR>For univariate polynomials a and b, remainder(a,b) denotes r such that a=b*q+r, with degree(r) less than degree(b). See remainder for a formal statement of this property.</OMSTR>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

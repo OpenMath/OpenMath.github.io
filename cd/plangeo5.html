@@ -1,0 +1,2896 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>plangeo5</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: plangeo5</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.win.tue.nl/~amc/oz/om/cds/plangeo5.ocd">http://www.win.tue.nl/~amc/oz/om/cds/plangeo5.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="plangeo5.ocd">plangeo5.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="plangeo5.omcd">plangeo5.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#coordinatize">coordinatize</a>, <a href="#ideal">ideal</a>, <a href="#is_coordinatized">is_coordinatized</a>, <a href="#polynomial_assertion">polynomial_assertion</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-06-01 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>0
+    (Revision 2)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-06-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	           <p>
+		This CD contains symbols
+		for generating polynomial systems from affine planar geometry configurations.
+	</p>
+
+
+
+            <hr/>
+            <h2>
+               <a name="coordinatize">coordinatize</a>
+            </h2>
+
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a function of one argument which must be a
+configuration or an assertion (as defined in plangeo1).</p>
+                  <p>When applied to a configuration C, it stands for the same
+configuration but now with coordinates attached to each object of C.
+The new variables are bound within an OMBIND element with head element
+the lambda symbol. The bound variables (placed within an OMBVAR
+element) are the new variables, and the last argument of OMBIND is
+the expression C in which each object is coordinatized.</p>
+                  <p>If an object already has coordinates, these are left as they are. If
+not, then new variables are introduced to coordinatize the object.</p>
+                  <p>When applied to an assertion of the form assertion(C,S), it leads to
+the same result except that the last argument of OMBIND is the assertion
+whose configuration argument is the expression C in which each object
+is coordinatized, and whose thesis argument is S.</p>
+                  <p/>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The coordinatized version of the affine triangle with points A,B,C and lines
+a, b, c (through B and C, A and C, and A and B respectively)
+described in two ways:
+
+<div>
+                     <button id="d40e41xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41xml')">OpenMath XML (source)</button>
+                     <pre id="d40e41xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="plangeo5" name="coordinatize"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="configuration"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+        &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+        &lt;OMV name="c"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+          &lt;OMV name="c"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="c"/&gt;
+          &lt;OMV name="A"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="c"/&gt;
+          &lt;OMV name="B"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+        &lt;OMV name="C"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+          &lt;OMV name="C"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;OMI&gt;0&lt;/OMI&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+       &lt;OMV name="a"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+         &lt;OMV name="a"/&gt;
+         &lt;OMV name="B"/&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+         &lt;OMV name="a"/&gt;
+         &lt;OMV name="C"/&gt;
+       &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+        &lt;OMV name="b"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="b"/&gt;
+          &lt;OMV name="A"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="b"/&gt;
+          &lt;OMV name="C"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e41cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41cmml')">Strict Content MathML</button>
+                     <pre id="d40e41cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo5"&gt;coordinatize&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;c&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;c&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+    &lt;ci&gt;C&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;C&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;a&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;b&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e41prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e41pref')">Prefix</button>
+                  <div id="d40e41pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo5.html#coordinatize">coordinatize</a>
+  (<a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>B</i>)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>c</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>c</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  (1, 1, 1)
+)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>c</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>c</i>,  <i>B</i>)
+)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>C</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>C</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  (1, 0, 1)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>a</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>a</i>,  <i>B</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>a</i>,  <i>C</i>)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>b</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>b</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>b</i>,  <i>C</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e41popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e41pop')">Popcorn</button>
+                     <div id="d40e41pop" style="display:none; margin-top: 0.5em">
+  plangeo5.coordinatize(plangeo1.configuration(plangeo1.point($A), plangeo1.point($B), plangeo1.line($c, plangeo4.set_affine_coordinates($c, linalg2.vector(1, 1, 1)), plangeo1.incident($c, $A), plangeo1.incident($c, $B)), plangeo1.point($C, plangeo4.set_affine_coordinates($C, linalg2.vector(1, 0, 1))), plangeo1.line($a, plangeo1.incident($a, $B), plangeo1.incident($a, $C)), plangeo1.line($b, plangeo1.incident($b, $A), plangeo1.incident($b, $C))))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e41mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e41mml')">Rendered Presentation MathML</button>
+                     <div id="d40e41mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>coordinatize</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>configuration</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>point</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>A</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>point</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>B</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>line</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>c</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>set_affine_coordinates</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>c</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mn>1</mn>
+                                                         <mo separator="true">,</mo>
+                                                         <mn>1</mn>
+                                                         <mo separator="true">,</mo>
+                                                         <mn>1</mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>c</mi>
+                                                      <mo>,</mo>
+                                                      <mi>A</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>c</mi>
+                                                      <mo>,</mo>
+                                                      <mi>B</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>point</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>C</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>set_affine_coordinates</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>C</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mn>1</mn>
+                                                         <mo separator="true">,</mo>
+                                                         <mn>0</mn>
+                                                         <mo separator="true">,</mo>
+                                                         <mn>1</mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>line</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>a</mi>
+                                                      <mo>,</mo>
+                                                      <mi>B</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>a</mi>
+                                                      <mo>,</mo>
+                                                      <mi>C</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>line</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>b</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>b</mi>
+                                                      <mo>,</mo>
+                                                      <mi>A</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>b</mi>
+                                                      <mo>,</mo>
+                                                      <mi>C</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div>
+                     <button id="d40e175xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e175xml')">OpenMath XML (source)</button>
+                     <pre id="d40e175xml" style="display:none">
+
+
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+    &lt;OMBVAR&gt;
+            &lt;OMV name="xA"/&gt;
+            &lt;OMV name="yA"/&gt;
+            &lt;OMV name="xB"/&gt;
+            &lt;OMV name="yB"/&gt;
+            &lt;OMV name="xa"/&gt;
+            &lt;OMV name="ya"/&gt;          
+            &lt;OMV name="za"/&gt;
+            &lt;OMV name="xb"/&gt;
+            &lt;OMV name="yb"/&gt;
+            &lt;OMV name="zb"/&gt;          
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="configuration"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+          &lt;OMV name="A"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+            &lt;OMV name="xA"/&gt;
+            &lt;OMV name="yA"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+        &lt;OMV name="B"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+          &lt;OMV name="B"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+            &lt;OMV name="xB"/&gt;
+            &lt;OMV name="yB"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+        &lt;OMV name="c"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_coordinates"/&gt;
+          &lt;OMV name="c"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="c"/&gt;
+          &lt;OMV name="A"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="c"/&gt;
+          &lt;OMV name="B"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+        &lt;OMV name="C"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+          &lt;OMV name="C"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+            &lt;OMI&gt;1&lt;/OMI&gt;
+            &lt;OMI&gt;0&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_coordinates"/&gt;
+          &lt;OMV name="a"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+            &lt;OMV name="xa"/&gt;
+            &lt;OMV name="ya"/&gt;          
+            &lt;OMV name="za"/&gt;          
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="a"/&gt;
+          &lt;OMV name="B"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="a"/&gt;
+          &lt;OMV name="C"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+        &lt;OMV name="b"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_coordinates"/&gt;
+          &lt;OMV name="b"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+            &lt;OMV name="xb"/&gt;
+            &lt;OMV name="yb"/&gt;          
+            &lt;OMV name="zb"/&gt;          
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="b"/&gt;
+          &lt;OMV name="A"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+          &lt;OMV name="b"/&gt;
+          &lt;OMV name="C"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e175cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e175cmml')">Strict Content MathML</button>
+                     <pre id="d40e175cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;xA&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;yA&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;xB&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;yB&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;xa&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;ya&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;za&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;xb&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;yb&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;zb&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+    &lt;ci&gt;A&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;A&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xA&lt;/ci&gt;&lt;ci&gt;yA&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+    &lt;ci&gt;B&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;B&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xB&lt;/ci&gt;&lt;ci&gt;yB&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;c&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;c&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+    &lt;ci&gt;C&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;C&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;a&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;a&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xa&lt;/ci&gt;&lt;ci&gt;ya&lt;/ci&gt;&lt;ci&gt;za&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;b&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;b&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xb&lt;/ci&gt;&lt;ci&gt;yb&lt;/ci&gt;&lt;ci&gt;zb&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e175prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e175pref')">Prefix</button>
+                  <div id="d40e175pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+             <i>xA</i>
+                     <i>yA</i>
+                     <i>xB</i>
+                     <i>yB</i>
+                     <i>xa</i>
+                     <i>ya</i>          
+                     <i>za</i>
+                     <i>xb</i>
+                     <i>yb</i>
+                     <i>zb</i>          
+    ] .
+  (<a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>A</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xA</i>,  <i>yA</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>B</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>B</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xB</i>,  <i>yB</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>c</i>, <a href="../../../cd/plangeo4.html#set_coordinates">set_coordinates</a>
+  ( <i>c</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  (1, 1, 1)
+)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>c</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>c</i>,  <i>B</i>)
+)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>C</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>C</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  (1, 0)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>a</i>, <a href="../../../cd/plangeo4.html#set_coordinates">set_coordinates</a>
+  ( <i>a</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xa</i>,  <i>ya</i>,  <i>za</i>)
+)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>a</i>,  <i>B</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>a</i>,  <i>C</i>)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>b</i>, <a href="../../../cd/plangeo4.html#set_coordinates">set_coordinates</a>
+  ( <i>b</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xb</i>,  <i>yb</i>,  <i>zb</i>)
+)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>b</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>b</i>,  <i>C</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e175popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e175pop')">Popcorn</button>
+                     <div id="d40e175pop" style="display:none; margin-top: 0.5em">
+  fns1.lambda[$xA, $yA, $xB, $yB, $xa, $ya, $za, $xb, $yb, $zb -&gt; plangeo1.configuration(plangeo1.point($A, plangeo4.set_affine_coordinates($A, linalg2.vector($xA, $yA))), plangeo1.point($B, plangeo4.set_affine_coordinates($B, linalg2.vector($xB, $yB))), plangeo1.line($c, plangeo4.set_coordinates($c, linalg2.vector(1, 1, 1)), plangeo1.incident($c, $A), plangeo1.incident($c, $B)), plangeo1.point($C, plangeo4.set_affine_coordinates($C, linalg2.vector(1, 0))), plangeo1.line($a, plangeo4.set_coordinates($a, linalg2.vector($xa, $ya, $za)), plangeo1.incident($a, $B), plangeo1.incident($a, $C)), plangeo1.line($b, plangeo4.set_coordinates($b, linalg2.vector($xb, $yb, $zb)), plangeo1.incident($b, $A), plangeo1.incident($b, $C)))]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e175mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e175mml')">Rendered Presentation MathML</button>
+                     <div id="d40e175mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#955;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>xA</mi>
+                                    <mo>,</mo>
+                                    <mi>yA</mi>
+                                    <mo>,</mo>
+                                    <mi>xB</mi>
+                                    <mo>,</mo>
+                                    <mi>yB</mi>
+                                    <mo>,</mo>
+                                    <mi>xa</mi>
+                                    <mo>,</mo>
+                                    <mi>ya</mi>
+                                    <mo>,</mo>
+                                    <mi>za</mi>
+                                    <mo>,</mo>
+                                    <mi>xb</mi>
+                                    <mo>,</mo>
+                                    <mi>yb</mi>
+                                    <mo>,</mo>
+                                    <mi>zb</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mi>configuration</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>set_affine_coordinates</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>A</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>xA</mi>
+                                                      <mo separator="true">,</mo>
+                                                      <mi>yA</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>B</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>set_affine_coordinates</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>B</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>xB</mi>
+                                                      <mo separator="true">,</mo>
+                                                      <mi>yB</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>line</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>c</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>set_coordinates</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>c</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>1</mn>
+                                                      <mo separator="true">,</mo>
+                                                      <mn>1</mn>
+                                                      <mo separator="true">,</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>c</mi>
+                                                   <mo>,</mo>
+                                                   <mi>A</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>c</mi>
+                                                   <mo>,</mo>
+                                                   <mi>B</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>point</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>C</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>set_affine_coordinates</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>C</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>1</mn>
+                                                      <mo separator="true">,</mo>
+                                                      <mn>0</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>line</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>a</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>set_coordinates</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>a</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>xa</mi>
+                                                      <mo separator="true">,</mo>
+                                                      <mi>ya</mi>
+                                                      <mo separator="true">,</mo>
+                                                      <mi>za</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>a</mi>
+                                                   <mo>,</mo>
+                                                   <mi>B</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>a</mi>
+                                                   <mo>,</mo>
+                                                   <mi>C</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>line</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>b</mi>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>set_coordinates</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>b</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>xb</mi>
+                                                      <mo separator="true">,</mo>
+                                                      <mi>yb</mi>
+                                                      <mo separator="true">,</mo>
+                                                      <mi>zb</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>b</mi>
+                                                   <mo>,</mo>
+                                                   <mi>A</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>incident</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>b</mi>
+                                                   <mo>,</mo>
+                                                   <mi>C</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd> The coordinatization of the assertion that two distinct
+lines meet in only one point is expressed as follows.
+
+<div>
+                     <button id="d40e393xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e393xml')">OpenMath XML (source)</button>
+                     <pre id="d40e393xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;&lt;OMS cd="plangeo5" name="coordinatize"/&gt;
+     &lt;OMA&gt;&lt;OMS cd="plangeo1" name="assertion"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="plangeo1" name="configuration"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt; 
+                    &lt;OMV name="A"/&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt; 
+                    &lt;OMV name="B"/&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+                    &lt;OMV name="l"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+                         &lt;OMV name="A"/&gt;
+                         &lt;OMV name="l"/&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+                         &lt;OMV name="B"/&gt;
+                         &lt;OMV name="l"/&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+                    &lt;OMV name="m"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+                         &lt;OMV name="A"/&gt;
+                         &lt;OMV name="m"/&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+                         &lt;OMV name="B"/&gt;
+                         &lt;OMV name="m"/&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMA&gt;&lt;OMS cd="logic1" name="not"/&gt;
+                         &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                              &lt;OMV name="l"/&gt;
+                              &lt;OMV name="m"/&gt;
+                         &lt;/OMA&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                    &lt;OMV name="A"/&gt;
+                    &lt;OMV name="B"/&gt;
+               &lt;/OMA&gt;
+          &lt;/OMA&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e393cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e393cmml')">Strict Content MathML</button>
+                     <pre id="d40e393cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo5"&gt;coordinatize&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;assertion&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+     &lt;ci&gt;l&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+     &lt;ci&gt;m&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e393prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e393pref')">Prefix</button>
+                  <div id="d40e393pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo5.html#coordinatize">coordinatize</a>
+  (<a href="../../../cd/plangeo1.html#assertion">assertion</a>
+  (<a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>B</i>)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>l</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>B</i>,  <i>l</i>)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>m</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>m</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>B</i>,  <i>m</i>)
+, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>l</i>,  <i>m</i>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e393popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e393pop')">Popcorn</button>
+                     <div id="d40e393pop" style="display:none; margin-top: 0.5em">
+plangeo5.coordinatize(plangeo1.assertion(plangeo1.configuration(plangeo1.point($A), plangeo1.point($B), plangeo1.line($l, plangeo1.incident($A, $l), plangeo1.incident($B, $l)), plangeo1.line($m, plangeo1.incident($A, $m), plangeo1.incident($B, $m),  not($l = $m)), $A = $B)))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e393mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e393mml')">Rendered Presentation MathML</button>
+                     <div id="d40e393mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>coordinatize</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>assertion</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>configuration</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>point</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>A</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>point</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>B</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>line</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>l</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>incident</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>A</mi>
+                                                            <mo>,</mo>
+                                                            <mi>l</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>incident</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>B</mi>
+                                                            <mo>,</mo>
+                                                            <mi>l</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>line</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>m</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>incident</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>A</mi>
+                                                            <mo>,</mo>
+                                                            <mi>m</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>incident</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>B</mi>
+                                                            <mo>,</mo>
+                                                            <mi>m</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mo>&#172;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>l</mi>
+                                                         <mo>=</mo>
+                                                         <mi>m</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>A</mi>
+                                                   <mo>=</mo>
+                                                   <mi>B</mi>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+It is equivalent to following expression.
+
+<div>
+                     <button id="d40e484xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e484xml')">OpenMath XML (source)</button>
+                     <pre id="d40e484xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+&lt;OMBVAR&gt;&lt;OMV name="xA"/&gt;&lt;OMV name="yA"/&gt;
+        &lt;OMV name="xB"/&gt;&lt;OMV name="yB"/&gt;
+        &lt;OMV name="xl"/&gt;&lt;OMV name="yl"/&gt;&lt;OMV name="zl"/&gt;
+        &lt;OMV name="xm"/&gt;&lt;OMV name="ym"/&gt;&lt;OMV name="zm"/&gt;
+&lt;/OMBVAR&gt;
+&lt;OMA&gt;&lt;OMS cd="plangeo1" name="assertion"/&gt;
+     &lt;OMA&gt;&lt;OMS cd="plangeo1" name="configuration"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt; 
+               &lt;OMV name="A"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+                    &lt;OMV name="A"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+                         &lt;OMV name="xA"/&gt;
+                         &lt;OMV name="yA"/&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt; 
+               &lt;OMV name="B"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+                    &lt;OMV name="B"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+                         &lt;OMV name="xB"/&gt;
+                         &lt;OMV name="yB"/&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+               &lt;OMV name="l"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+                    &lt;OMV name="A"/&gt;
+                    &lt;OMV name="l"/&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+                    &lt;OMV name="B"/&gt;
+                    &lt;OMV name="l"/&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_coordinates"/&gt;
+                    &lt;OMV name="l"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+                         &lt;OMV name="xl"/&gt;&lt;OMV name="yl"/&gt;&lt;OMV name="zl"/&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+               &lt;OMV name="m"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+                    &lt;OMV name="A"/&gt;
+                    &lt;OMV name="m"/&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+                    &lt;OMV name="B"/&gt;
+                    &lt;OMV name="m"/&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="logic1" name="not"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+                         &lt;OMV name="l"/&gt;
+                         &lt;OMV name="m"/&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_coordinates"/&gt;
+                    &lt;OMV name="m"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+                         &lt;OMV name="xm"/&gt; &lt;OMV name="ym"/&gt;&lt;OMV name="zm"/&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+               &lt;OMV name="A"/&gt;
+               &lt;OMV name="B"/&gt;
+          &lt;/OMA&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e484cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e484cmml')">Strict Content MathML</button>
+                     <pre id="d40e484cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;xA&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;yA&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;xB&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;yB&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;xl&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;yl&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;zl&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;xm&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;ym&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;zm&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;assertion&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+     &lt;ci&gt;A&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+      &lt;ci&gt;A&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xA&lt;/ci&gt;&lt;ci&gt;yA&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+     &lt;ci&gt;B&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+      &lt;ci&gt;B&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xB&lt;/ci&gt;&lt;ci&gt;yB&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+     &lt;ci&gt;l&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_coordinates&lt;/csymbol&gt;
+      &lt;ci&gt;l&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xl&lt;/ci&gt;&lt;ci&gt;yl&lt;/ci&gt;&lt;ci&gt;zl&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+     &lt;ci&gt;m&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_coordinates&lt;/csymbol&gt;
+      &lt;ci&gt;m&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xm&lt;/ci&gt;&lt;ci&gt;ym&lt;/ci&gt;&lt;ci&gt;zm&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e484prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e484pref')">Prefix</button>
+                  <div id="d40e484pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [ <i>xA</i> 
+                     <i>yA</i>
+                     <i>xB</i> 
+                     <i>yB</i>
+                     <i>xl</i> 
+                     <i>yl</i> 
+                     <i>zl</i>
+                     <i>xm</i> 
+                     <i>ym</i> 
+                     <i>zm</i>
+] .
+  (<a href="../../../cd/plangeo1.html#assertion">assertion</a>
+  (<a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>A</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xA</i>,  <i>yA</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>B</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>B</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xB</i>,  <i>yB</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>l</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>l</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>B</i>,  <i>l</i>)
+, <a href="../../../cd/plangeo4.html#set_coordinates">set_coordinates</a>
+  ( <i>l</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xl</i>,  <i>yl</i>,  <i>zl</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>m</i>, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>A</i>,  <i>m</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>B</i>,  <i>m</i>)
+, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>l</i>,  <i>m</i>)
+)
+, <a href="../../../cd/plangeo4.html#set_coordinates">set_coordinates</a>
+  ( <i>m</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xm</i>,  <i>ym</i>,  <i>zm</i>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>A</i>,  <i>B</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e484popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e484pop')">Popcorn</button>
+                     <div id="d40e484pop" style="display:none; margin-top: 0.5em">
+fns1.lambda[$xA, $yA, $xB, $yB, $xl, $yl, $zl, $xm, $ym, $zm -&gt; plangeo1.assertion(plangeo1.configuration(plangeo1.point($A, plangeo4.set_affine_coordinates($A, linalg2.vector($xA, $yA))), plangeo1.point($B, plangeo4.set_affine_coordinates($B, linalg2.vector($xB, $yB))), plangeo1.line($l, plangeo1.incident($A, $l), plangeo1.incident($B, $l), plangeo4.set_coordinates($l, linalg2.vector($xl, $yl, $zl))), plangeo1.line($m, plangeo1.incident($A, $m), plangeo1.incident($B, $m),  not($l = $m), plangeo4.set_coordinates($m, linalg2.vector($xm, $ym, $zm))), $A = $B))]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e484mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e484mml')">Rendered Presentation MathML</button>
+                     <div id="d40e484mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#955;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>xA</mi>
+                                    <mo>,</mo>
+                                    <mi>yA</mi>
+                                    <mo>,</mo>
+                                    <mi>xB</mi>
+                                    <mo>,</mo>
+                                    <mi>yB</mi>
+                                    <mo>,</mo>
+                                    <mi>xl</mi>
+                                    <mo>,</mo>
+                                    <mi>yl</mi>
+                                    <mo>,</mo>
+                                    <mi>zl</mi>
+                                    <mo>,</mo>
+                                    <mi>xm</mi>
+                                    <mo>,</mo>
+                                    <mi>ym</mi>
+                                    <mo>,</mo>
+                                    <mi>zm</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mi>assertion</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>configuration</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>point</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>A</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>set_affine_coordinates</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>A</mi>
+                                                         <mo>,</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>xA</mi>
+                                                            <mo separator="true">,</mo>
+                                                            <mi>yA</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>point</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>B</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>set_affine_coordinates</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>B</mi>
+                                                         <mo>,</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>xB</mi>
+                                                            <mo separator="true">,</mo>
+                                                            <mi>yB</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>line</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>l</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>incident</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>A</mi>
+                                                         <mo>,</mo>
+                                                         <mi>l</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>incident</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>B</mi>
+                                                         <mo>,</mo>
+                                                         <mi>l</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>set_coordinates</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>l</mi>
+                                                         <mo>,</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>xl</mi>
+                                                            <mo separator="true">,</mo>
+                                                            <mi>yl</mi>
+                                                            <mo separator="true">,</mo>
+                                                            <mi>zl</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>line</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>m</mi>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>incident</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>A</mi>
+                                                         <mo>,</mo>
+                                                         <mi>m</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>incident</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>B</mi>
+                                                         <mo>,</mo>
+                                                         <mi>m</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <mo>&#172;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>l</mi>
+                                                      <mo>=</mo>
+                                                      <mi>m</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>set_coordinates</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>m</mi>
+                                                         <mo>,</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>xm</mi>
+                                                            <mo separator="true">,</mo>
+                                                            <mi>ym</mi>
+                                                            <mo separator="true">,</mo>
+                                                            <mi>zm</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>A</mi>
+                                                <mo>=</mo>
+                                                <mi>B</mi>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo5.html#coordinatize">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_coordinatized">is_coordinatized</a>]
+	  
+	    [Last: <a href="#polynomial_assertion">polynomial_assertion</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/>
+            <h2>
+               <a name="is_coordinatized">is_coordinatized</a>
+            </h2>
+
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol is a boolean valued function of one argument which must be a
+configuration.</p>
+                  <p>When applied to an argument C, it represent the value true if C is a
+configuration such that each object occurring in C (as well as in its
+subconfigurations) has coordinates (that is, the set_affine_coordinates field
+is present as an argument to the object), and value false otherwise.</p>
+                  <p>If an object already has coordinates, these are left as they are. If
+not, then new variables are introduced to coordinatize the object.
+</p>
+               </dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo5.html#is_coordinatized">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#ideal">ideal</a>]
+	  
+	    [Previous: <a href="#coordinatize">coordinatize</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/> 
+            <h2>
+               <a name="ideal">ideal</a>
+            </h2> 
+
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol is a function in one argument, which should
+		be a coordinatized configuration (that is, each
+		geometric object involved has coordinates).  </p>
+                  <p>When evaluated at
+		a configuration C it represents a function (given by a
+		lambda binder) mapping the new parameters (arising
+		when the inequality properties in the configuration
+		are being translated into polynomials) to a list of
+		polynomials in the coordinates that are variables
+		which, when equated to zero, represent conditions
+		equivalent to those describing the configuration C.</p>
+                  <p>When evaluated at an assertion assertion(C,S) it represents a function (given by a
+		lambda binder) mapping the new parameters (arising
+		when the inequality properties in the configuration
+		are being translated into polynomials) to a list of
+		polynomials in the coordinates that are variables
+		which, when equated to zero, represent conditions
+		equivalent to those describing the configuration C.</p>
+                  <p/>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The following expression is an ideal of a coordinatized triangle.
+
+
+<div>
+                     <button id="d40e671xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e671xml')">OpenMath XML (source)</button>
+                     <pre id="d40e671xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+&lt;OMA&gt;&lt;OMS cd="plangeo5" name="ideal"/&gt;
+  &lt;OMA&gt;&lt;OMS cd="plangeo1" name="configuration"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+      &lt;OMV name="A"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+        &lt;OMV name="A"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+          &lt;OMV name="xA"/&gt;
+          &lt;OMV name="yA"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+      &lt;OMV name="B"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+        &lt;OMV name="B"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+          &lt;OMV name="xB"/&gt;
+          &lt;OMV name="yB"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="logic1" name="not"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+          &lt;OMV name="B"/&gt;
+          &lt;OMV name="A"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+      &lt;OMV name="c"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_coordinates"/&gt;
+        &lt;OMV name="c"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+          &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;OMI&gt;1&lt;/OMI&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="c"/&gt;
+        &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="c"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="point"/&gt;
+      &lt;OMV name="C"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_affine_coordinates"/&gt;
+        &lt;OMV name="C"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+          &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;OMI&gt;0&lt;/OMI&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+      &lt;OMV name="a"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_coordinates"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+          &lt;OMV name="xa"/&gt;&lt;OMV name="ya"/&gt;&lt;OMV name="za"/&gt;          
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMV name="B"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="a"/&gt;
+        &lt;OMV name="C"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="plangeo1" name="line"/&gt;
+      &lt;OMV name="b"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo4" name="set_coordinates"/&gt;
+        &lt;OMV name="b"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="linalg2" name="vector"/&gt;
+          &lt;OMV name="xb"/&gt;&lt;OMV name="yb"/&gt;&lt;OMV name="zb"/&gt;          
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="b"/&gt;
+        &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="plangeo1" name="incident"/&gt;
+        &lt;OMV name="b"/&gt;
+        &lt;OMV name="C"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e671cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e671cmml')">Strict Content MathML</button>
+                     <pre id="d40e671cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="plangeo5"&gt;ideal&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;configuration&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+    &lt;ci&gt;A&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;A&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xA&lt;/ci&gt;&lt;ci&gt;yA&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+    &lt;ci&gt;B&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;B&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xB&lt;/ci&gt;&lt;ci&gt;yB&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;not&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;c&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;c&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;point&lt;/csymbol&gt;
+    &lt;ci&gt;C&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_affine_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;C&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;a&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;a&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xa&lt;/ci&gt;&lt;ci&gt;ya&lt;/ci&gt;&lt;ci&gt;za&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;line&lt;/csymbol&gt;
+    &lt;ci&gt;b&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo4"&gt;set_coordinates&lt;/csymbol&gt;
+     &lt;ci&gt;b&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;ci&gt;xb&lt;/ci&gt;&lt;ci&gt;yb&lt;/ci&gt;&lt;ci&gt;zb&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="plangeo1"&gt;incident&lt;/csymbol&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e671prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e671pref')">Prefix</button>
+                  <div id="d40e671pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/plangeo5.html#ideal">ideal</a>
+  (<a href="../../../cd/plangeo1.html#configuration">configuration</a>
+  (<a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>A</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>A</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xA</i>,  <i>yA</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>B</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>B</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xB</i>,  <i>yB</i>)
+)
+, <a href="../../../cd/logic1.html#not">not</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>B</i>,  <i>A</i>)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>c</i>, <a href="../../../cd/plangeo4.html#set_coordinates">set_coordinates</a>
+  ( <i>c</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  (1, 1, 1)
+)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>c</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>c</i>,  <i>B</i>)
+)
+, <a href="../../../cd/plangeo1.html#point">point</a>
+  ( <i>C</i>, <a href="../../../cd/plangeo4.html#set_affine_coordinates">set_affine_coordinates</a>
+  ( <i>C</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  (1, 0)
+)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>a</i>, <a href="../../../cd/plangeo4.html#set_coordinates">set_coordinates</a>
+  ( <i>a</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xa</i>,  <i>ya</i>,  <i>za</i>)
+)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>a</i>,  <i>B</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>a</i>,  <i>C</i>)
+)
+, <a href="../../../cd/plangeo1.html#line">line</a>
+  ( <i>b</i>, <a href="../../../cd/plangeo4.html#set_coordinates">set_coordinates</a>
+  ( <i>b</i>, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( <i>xb</i>,  <i>yb</i>,  <i>zb</i>)
+)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>b</i>,  <i>A</i>)
+, <a href="../../../cd/plangeo1.html#incident">incident</a>
+  ( <i>b</i>,  <i>C</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e671popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e671pop')">Popcorn</button>
+                     <div id="d40e671pop" style="display:none; margin-top: 0.5em">
+plangeo5.ideal(plangeo1.configuration(plangeo1.point($A, plangeo4.set_affine_coordinates($A, linalg2.vector($xA, $yA))), plangeo1.point($B, plangeo4.set_affine_coordinates($B, linalg2.vector($xB, $yB)),  not($B = $A)), plangeo1.line($c, plangeo4.set_coordinates($c, linalg2.vector(1, 1, 1)), plangeo1.incident($c, $A), plangeo1.incident($c, $B)), plangeo1.point($C, plangeo4.set_affine_coordinates($C, linalg2.vector(1, 0))), plangeo1.line($a, plangeo4.set_coordinates($a, linalg2.vector($xa, $ya, $za)), plangeo1.incident($a, $B), plangeo1.incident($a, $C)), plangeo1.line($b, plangeo4.set_coordinates($b, linalg2.vector($xb, $yb, $zb)), plangeo1.incident($b, $A), plangeo1.incident($b, $C))))
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e671mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e671mml')">Rendered Presentation MathML</button>
+                     <div id="d40e671mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>ideal</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>configuration</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>point</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>A</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>set_affine_coordinates</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>A</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>xA</mi>
+                                                         <mo separator="true">,</mo>
+                                                         <mi>yA</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>point</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>B</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>set_affine_coordinates</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>B</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>xB</mi>
+                                                         <mo separator="true">,</mo>
+                                                         <mi>yB</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mo>&#172;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>B</mi>
+                                                   <mo>=</mo>
+                                                   <mi>A</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>line</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>c</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>set_coordinates</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>c</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mn>1</mn>
+                                                         <mo separator="true">,</mo>
+                                                         <mn>1</mn>
+                                                         <mo separator="true">,</mo>
+                                                         <mn>1</mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>c</mi>
+                                                      <mo>,</mo>
+                                                      <mi>A</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>c</mi>
+                                                      <mo>,</mo>
+                                                      <mi>B</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>point</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>C</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>set_affine_coordinates</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>C</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mn>1</mn>
+                                                         <mo separator="true">,</mo>
+                                                         <mn>0</mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>line</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>set_coordinates</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>a</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>xa</mi>
+                                                         <mo separator="true">,</mo>
+                                                         <mi>ya</mi>
+                                                         <mo separator="true">,</mo>
+                                                         <mi>za</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>a</mi>
+                                                      <mo>,</mo>
+                                                      <mi>B</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>a</mi>
+                                                      <mo>,</mo>
+                                                      <mi>C</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>line</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>b</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>set_coordinates</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>b</mi>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>xb</mi>
+                                                         <mo separator="true">,</mo>
+                                                         <mi>yb</mi>
+                                                         <mo separator="true">,</mo>
+                                                         <mi>zb</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>b</mi>
+                                                      <mo>,</mo>
+                                                      <mi>A</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>incident</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>b</mi>
+                                                      <mo>,</mo>
+                                                      <mi>C</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+Its evaluation should be equivalent to
+<div>
+                     <button id="d40e870xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e870xml')">OpenMath XML (source)</button>
+                     <pre id="d40e870xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMBIND&gt;&lt;OMS cd="fns1" name="lambda"/&gt;
+    &lt;OMBVAR&gt;
+            &lt;OMV name="xh"/&gt;&lt;OMV name="yh"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+         &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+              &lt;OMV name="xA"/&gt;&lt;OMV name="yA"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+             &lt;OMV name="xB"/&gt;&lt;OMV name="yB"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="fns2" name="apply_to_list"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                       &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                            &lt;OMV name="xa"/&gt;&lt;OMV name="xB"/&gt;
+                       &lt;/OMA&gt;
+                       &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                            &lt;OMV name="ya"/&gt;&lt;OMV name="yB"/&gt;
+                       &lt;/OMA&gt;
+                       &lt;OMV name="za"/&gt;
+                  &lt;/OMA&gt;
+             &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+              &lt;OMV name="xa"/&gt;&lt;OMV name="za"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="fns2" name="apply_to_list"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                       &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                            &lt;OMV name="xA"/&gt;&lt;OMV name="xb"/&gt;
+                       &lt;/OMA&gt;
+                       &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                            &lt;OMV name="yA"/&gt;&lt;OMV name="yb"/&gt;
+                       &lt;/OMA&gt;
+                       &lt;OMV name="zb"/&gt;
+                  &lt;/OMA&gt;
+             &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+           &lt;OMV name="xb"/&gt;&lt;OMV name="zb"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="fns2" name="apply_to_list"/&gt;
+             &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                  &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                       &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                            &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+                                 &lt;OMV name="xA"/&gt;&lt;OMV name="xB"/&gt;
+                            &lt;/OMA&gt;
+                            &lt;OMV name="xh"/&gt;
+                       &lt;/OMA&gt;
+                       &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+                            &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+                                 &lt;OMV name="yA"/&gt;&lt;OMV name="yB"/&gt;
+                            &lt;/OMA&gt;
+                            &lt;OMV name="yh"/&gt;
+                       &lt;/OMA&gt;
+                       &lt;OMI&gt;-1&lt;/OMI&gt;
+                  &lt;/OMA&gt;
+             &lt;/OMA&gt;
+        &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e870cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e870cmml')">Strict Content MathML</button>
+                     <pre id="d40e870cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;xh&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;yh&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;xA&lt;/ci&gt;&lt;ci&gt;yA&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;xB&lt;/ci&gt;&lt;ci&gt;yB&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;xa&lt;/ci&gt;&lt;ci&gt;xB&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;ya&lt;/ci&gt;&lt;ci&gt;yB&lt;/ci&gt;&lt;/apply&gt;
+      &lt;ci&gt;za&lt;/ci&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;xa&lt;/ci&gt;&lt;ci&gt;za&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;xA&lt;/ci&gt;&lt;ci&gt;xb&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;&lt;ci&gt;yA&lt;/ci&gt;&lt;ci&gt;yb&lt;/ci&gt;&lt;/apply&gt;
+      &lt;ci&gt;zb&lt;/ci&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;xb&lt;/ci&gt;&lt;ci&gt;zb&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;xA&lt;/ci&gt;&lt;ci&gt;xB&lt;/ci&gt;&lt;/apply&gt;
+       &lt;ci&gt;xh&lt;/ci&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;&lt;ci&gt;yA&lt;/ci&gt;&lt;ci&gt;yB&lt;/ci&gt;&lt;/apply&gt;
+       &lt;ci&gt;yh&lt;/ci&gt;
+      &lt;/apply&gt;
+      &lt;cn type="integer"&gt;-1&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e870prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e870pref')">Prefix</button>
+                  <div id="d40e870pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/fns1.html#lambda">lambda</a>
+  [
+             <i>xh</i> 
+                     <i>yh</i>
+    ] .
+  (<a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>xA</i>,  <i>yA</i>)
+, <a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>xB</i>,  <i>yB</i>)
+, <a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>xa</i>,  <i>xB</i>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  ( <i>ya</i>,  <i>yB</i>)
+,  <i>za</i>)
+)
+)
+, <a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>xa</i>,  <i>za</i>)
+, <a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>xA</i>,  <i>xb</i>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  ( <i>yA</i>,  <i>yb</i>)
+,  <i>zb</i>)
+)
+)
+, <a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>xb</i>,  <i>zb</i>)
+, <a href="../../../cd/fns2.html#apply_to_list">apply_to_list</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
+  ( <i>xA</i>,  <i>xB</i>)
+,  <i>xh</i>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
+  ( <i>yA</i>,  <i>yB</i>)
+,  <i>yh</i>)
+, -1)
+)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e870popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e870pop')">Popcorn</button>
+                     <div id="d40e870pop" style="display:none; margin-top: 0.5em">
+  fns1.lambda[$xh, $yh -&gt; [$xA + $yA , $xB + $yB , fns2.apply_to_list([$xa * $xB , $ya * $yB , $za]) , $xa + $za , fns2.apply_to_list([$xA * $xb , $yA * $yb , $zb]) , $xb + $zb , fns2.apply_to_list([($xA - $xB) * $xh , ($yA - $yB) * $yh , -1])]]
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e870mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e870mml')">Rendered Presentation MathML</button>
+                     <div id="d40e870mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#955;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>xh</mi>
+                                    <mo>,</mo>
+                                    <mi>yh</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mtable>
+                                    <mtr>
+                                       <mtd columnalign="left">
+                                          <mrow>
+                                             <mi>xA</mi>
+                                             <mo>+</mo>
+                                             <mi>yA</mi>
+                                          </mrow>
+                                       </mtd>
+                                    </mtr>
+                                    <mtr>
+                                       <mtd columnalign="left">
+                                          <mrow>
+                                             <mi>xB</mi>
+                                             <mo>+</mo>
+                                             <mi>yB</mi>
+                                          </mrow>
+                                       </mtd>
+                                    </mtr>
+                                    <mtr>
+                                       <mtd columnalign="left">
+                                          <mrow>
+                                             <mi>apply_to_list</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>xa</mi>
+                                                         <mo>&#8290;</mo>
+                                                         <mi>xB</mi>
+                                                      </mrow>
+                                                      <mo separator="true">,</mo>
+                                                      <mrow>
+                                                         <mi>ya</mi>
+                                                         <mo>&#8290;</mo>
+                                                         <mi>yB</mi>
+                                                      </mrow>
+                                                      <mo separator="true">,</mo>
+                                                      <mi>za</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mtd>
+                                    </mtr>
+                                    <mtr>
+                                       <mtd columnalign="left">
+                                          <mrow>
+                                             <mi>xa</mi>
+                                             <mo>+</mo>
+                                             <mi>za</mi>
+                                          </mrow>
+                                       </mtd>
+                                    </mtr>
+                                    <mtr>
+                                       <mtd columnalign="left">
+                                          <mrow>
+                                             <mi>apply_to_list</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>xA</mi>
+                                                         <mo>&#8290;</mo>
+                                                         <mi>xb</mi>
+                                                      </mrow>
+                                                      <mo separator="true">,</mo>
+                                                      <mrow>
+                                                         <mi>yA</mi>
+                                                         <mo>&#8290;</mo>
+                                                         <mi>yb</mi>
+                                                      </mrow>
+                                                      <mo separator="true">,</mo>
+                                                      <mi>zb</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mtd>
+                                    </mtr>
+                                    <mtr>
+                                       <mtd columnalign="left">
+                                          <mrow>
+                                             <mi>xb</mi>
+                                             <mo>+</mo>
+                                             <mi>zb</mi>
+                                          </mrow>
+                                       </mtd>
+                                    </mtr>
+                                    <mtr>
+                                       <mtd columnalign="left">
+                                          <mrow>
+                                             <mi>apply_to_list</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mtable>
+                                                      <mtr>
+                                                         <mtd columnalign="left">
+                                                            <mrow>
+                                                               <mrow>
+                                                                  <mo>(</mo>
+                                                                  <mi>xA</mi>
+                                                                  <mo>-</mo>
+                                                                  <mi>xB</mi>
+                                                                  <mo>)</mo>
+                                                               </mrow>
+                                                               <mo>&#8290;</mo>
+                                                               <mi>xh</mi>
+                                                            </mrow>
+                                                         </mtd>
+                                                      </mtr>
+                                                      <mtr>
+                                                         <mtd columnalign="left">
+                                                            <mrow>
+                                                               <mrow>
+                                                                  <mo>(</mo>
+                                                                  <mi>yA</mi>
+                                                                  <mo>-</mo>
+                                                                  <mi>yB</mi>
+                                                                  <mo>)</mo>
+                                                               </mrow>
+                                                               <mo>&#8290;</mo>
+                                                               <mi>yh</mi>
+                                                            </mrow>
+                                                         </mtd>
+                                                      </mtr>
+                                                      <mtr>
+                                                         <mtd columnalign="left">
+                                                            <mn>-1</mn>
+                                                         </mtd>
+                                                      </mtr>
+                                                   </mtable>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mtd>
+                                    </mtr>
+                                 </mtable>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo5.html#ideal">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#polynomial_assertion">polynomial_assertion</a>]
+	  
+	    [Previous: <a href="#is_coordinatized">is_coordinatized</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/> 
+            <h2>
+               <a name="polynomial_assertion">polynomial_assertion</a>
+            </h2> 
+
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol is a function in one argument, which should
+		be an assertion whose configuration is coordinatized
+		(that is, each geometric object involved has
+		coordinates).</p>
+                  <p>When evaluated at an assertion assertion(C,T) it represents the
+assertion that the constant polynomial 1 belongs to the ideal of the
+polynomial ring over a coefficient ring R containing the rationals and
+all global (unbound) coordinates of C,
+in the bound variables of ideal(C) and an external variable t, generated by
+ideal(C)[bound variables] and 1-f_T t. Here
+f_T is a polynomial such that f_T=0  is equivalent to the thesis
+T being true. </p>
+                  <p>This means f_T is in the radical ideal of ideal(C)[bound variables].
+The interpretation is as follows:
+There are no parameter choices for the bound variables such that
+f_T is nonzero. In other words, for all parameter choices of a
+coordinatization of C, we must have f_T=0.
+So the truth of the assertion that thesis T holds in configuration C is reflected by the truth of
+polynomial_assertion(C,T).</p>
+                  <p>
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/plangeo5.html#polynomial_assertion">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#coordinatize">coordinatize</a>]
+	  
+	    [Previous: <a href="#ideal">ideal</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

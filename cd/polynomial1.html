@@ -1,0 +1,1105 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>polynomial1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: polynomial1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/polynomial1.ocd">http://www.openmath.org/cd/polynomial1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="polynomial1.ocd">polynomial1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="polynomial1.omcd">polynomial1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#expand">expand</a>, <a href="#coefficient">coefficient</a>, <a href="#coefficient_ring">coefficient_ring</a>, <a href="#degree">degree</a>, <a href="#leading_coefficient">leading_coefficient</a>, <a href="#leading_monomial">leading_monomial</a>, <a href="#leading_term">leading_term</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-07-12 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 0 </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-07-12   </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="../../../cd/alg1.html">alg1</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/logic1.html">logic1</a>, <a href="../../../cd/quant1.html">quant1</a>, <a href="../../../cd/set1.html">set1</a>, <a href="../../../cd/setname1.html">setname1</a>, <a href="setname2.html">setname2</a>, <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/interval1.html">interval1</a>, <a href="../../../cd/integer1.html">integer1</a>
+               </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+            <p>
+This CD holds a collection of basic constructs for univariate polynomials over rings.
+The data structures for polynomials can be arithmetic expressions, for
+instance using the ring1.expression symbol, or DMP as
+in the CD polyd1.
+</p>
+
+
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="coefficient_ring">coefficient_ring </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a unary function whose argument should be a polynomial.
+It represents the coefficient ring of the polynomial. 
+    </p>
+               </dd>
+            </dl>   
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+
+The coefficient ring is often explicitly given as part of the polynomial:
+
+  <div>
+                     <button id="d40e81xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e81xml')">OpenMath XML (source)</button>
+                     <pre id="d40e81xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+     &lt;OMA&gt;&lt;OMS cd="polynomial1" name="coefficient_ring"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="ring1" name="expression"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="ring1" name="expression"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="ring3" name="poly_ring"/&gt;
+                         &lt;OMA&gt;&lt;OMS cd="ringname1" name="Zm"/&gt;
+                              &lt;OMI&gt;7&lt;/OMI&gt;
+                         &lt;/OMA&gt;
+                         &lt;OMV name="X"/&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+                         &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                              &lt;OMV name="X"/&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+                         &lt;/OMA&gt;
+                         &lt;OMI&gt;2&lt;/OMI&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+          &lt;/OMA&gt;
+     &lt;/OMA&gt;
+     &lt;OMA&gt;&lt;OMS cd="ringname1" name="Zm"/&gt;
+          &lt;OMI&gt;7&lt;/OMI&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e81cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e81cmml')">Strict Content MathML</button>
+                     <pre id="d40e81cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polynomial1"&gt;coefficient_ring&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;expression&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="ring1"&gt;expression&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="ring3"&gt;poly_ring&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="ringname1"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;7&lt;/cn&gt;&lt;/apply&gt;
+      &lt;ci&gt;X&lt;/ci&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ringname1"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;7&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e81prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e81pref')">Prefix</button>
+                  <div id="d40e81pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/polynomial1.html#coefficient_ring">coefficient_ring</a>
+  (<a href="../../../cd/ring1.html#expression">expression</a>
+  (<a href="../../../cd/ring1.html#expression">expression</a>
+  (<a href="../../../cd/ring3.html#poly_ring">poly_ring</a>
+  (<a href="../../../cd/ringname1.html#Zm">Zm</a>
+  (7)
+,  <i>X</i>)
+, <a href="../../../cd/arith1.html#power">power</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>X</i>, 1)
+, 2)
+)
+)
+)
+, <a href="../../../cd/ringname1.html#Zm">Zm</a>
+  (7)
+)
+
+  </div>
+                  <div>
+                     <button id="d40e81popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e81pop')">Popcorn</button>
+                     <div id="d40e81pop" style="display:none; margin-top: 0.5em">
+polynomial1.coefficient_ring(ring1.expression(ring1.expression(ring3.poly_ring(ringname1.Zm(7), $X), ($X + 1) ^ 2))) = ringname1.Zm(7)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e81mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e81mml')">Rendered Presentation MathML</button>
+                     <div id="d40e81mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>coefficient_ring</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>expression</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>expression</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mrow>
+                                                      <mi>poly_ring</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mrow>
+                                                            <mi>Zm</mi>
+                                                            <mo>&#8289;</mo>
+                                                            <mrow>
+                                                               <mo>(</mo>
+                                                               <mn>7</mn>
+                                                               <mo>)</mo>
+                                                            </mrow>
+                                                         </mrow>
+                                                         <mo>,</mo>
+                                                         <mi>X</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <msup>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>X</mi>
+                                                         <mo>+</mo>
+                                                         <mn>1</mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mn>2</mn>
+                                                   </msup>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>Zm</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>7</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial1.html#coefficient_ring">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#coefficient">coefficient</a>]
+	  
+	    [Last: <a href="#leading_monomial">leading_monomial</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="coefficient">coefficient </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol is a binary function whose first argument should be a polynomial
+f    and whose second argument should be a non-negative integer n.
+It represents the coefficient of the i-th power of the variable in the
+    polynomial f. 
+    </p>
+               </dd>
+            </dl>   
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+
+The coefficient of the first power of X in the polynomial (X+1)^2 in (Z/7Z)[X]
+is equal to 2.
+
+  <div>
+                     <button id="d40e151xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e151xml')">OpenMath XML (source)</button>
+                     <pre id="d40e151xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+     &lt;OMA&gt;&lt;OMS cd="polynomial1" name="coefficient"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="ring1" name="expression"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="ring1" name="expression"/&gt;
+                    &lt;OMA&gt;&lt;OMS cd="ring3" name="poly_ring"/&gt;
+                         &lt;OMA&gt;&lt;OMS cd="ringname1" name="Zm"/&gt;
+                              &lt;OMI&gt;7&lt;/OMI&gt;
+                         &lt;/OMA&gt;
+                         &lt;OMV name="X"/&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+                         &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                              &lt;OMV name="X"/&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+                         &lt;/OMA&gt;
+                         &lt;OMI&gt;2&lt;/OMI&gt;
+                    &lt;/OMA&gt;
+               &lt;/OMA&gt;
+          &lt;/OMA&gt;
+     &lt;/OMA&gt;
+     &lt;OMA&gt;&lt;OMS cd="ring1" name="expression"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="ringname1" name="Zm"/&gt;
+               &lt;OMI&gt;7&lt;/OMI&gt;
+          &lt;/OMA&gt;
+          &lt;OMI&gt;2&lt;/OMI&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e151cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e151cmml')">Strict Content MathML</button>
+                     <pre id="d40e151cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polynomial1"&gt;coefficient&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;expression&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="ring1"&gt;expression&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="ring3"&gt;poly_ring&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="ringname1"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;7&lt;/cn&gt;&lt;/apply&gt;
+      &lt;ci&gt;X&lt;/ci&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring1"&gt;expression&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ringname1"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;7&lt;/cn&gt;&lt;/apply&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e151prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e151pref')">Prefix</button>
+                  <div id="d40e151pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/polynomial1.html#coefficient">coefficient</a>
+  (<a href="../../../cd/ring1.html#expression">expression</a>
+  (<a href="../../../cd/ring1.html#expression">expression</a>
+  (<a href="../../../cd/ring3.html#poly_ring">poly_ring</a>
+  (<a href="../../../cd/ringname1.html#Zm">Zm</a>
+  (7)
+,  <i>X</i>)
+, <a href="../../../cd/arith1.html#power">power</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>X</i>, 1)
+, 2)
+)
+)
+)
+, <a href="../../../cd/ring1.html#expression">expression</a>
+  (<a href="../../../cd/ringname1.html#Zm">Zm</a>
+  (7)
+, 2)
+)
+
+  </div>
+                  <div>
+                     <button id="d40e151popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e151pop')">Popcorn</button>
+                     <div id="d40e151pop" style="display:none; margin-top: 0.5em">
+polynomial1.coefficient(ring1.expression(ring1.expression(ring3.poly_ring(ringname1.Zm(7), $X), ($X + 1) ^ 2))) = ring1.expression(ringname1.Zm(7), 2)
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e151mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e151mml')">Rendered Presentation MathML</button>
+                     <div id="d40e151mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>coefficient</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>expression</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>expression</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mrow>
+                                                      <mi>poly_ring</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mrow>
+                                                            <mi>Zm</mi>
+                                                            <mo>&#8289;</mo>
+                                                            <mrow>
+                                                               <mo>(</mo>
+                                                               <mn>7</mn>
+                                                               <mo>)</mo>
+                                                            </mrow>
+                                                         </mrow>
+                                                         <mo>,</mo>
+                                                         <mi>X</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <msup>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>X</mi>
+                                                         <mo>+</mo>
+                                                         <mn>1</mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                      <mn>2</mn>
+                                                   </msup>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>expression</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>Zm</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mn>7</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn>2</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial1.html#coefficient">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#expand">expand</a>]
+	  
+	    [Previous: <a href="#coefficient_ring">coefficient_ring</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="expand"> expand </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+     Expands a polynomial. 
+    </p>
+               </dd>
+            </dl>   
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The following expression is equivalent to the arithmetic expression X^2+2X+1 in (Z/7Z)[X].
+
+  <div>
+                     <button id="d40e227xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e227xml')">OpenMath XML (source)</button>
+                     <pre id="d40e227xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+    &lt;OMA&gt;&lt;OMS cd="polynomial1" name="expand"/&gt;
+         &lt;OMA&gt;&lt;OMS cd="ring1" name="expression"/&gt;
+              &lt;OMA&gt;&lt;OMS cd="ring1" name="expression"/&gt;
+                   &lt;OMA&gt;&lt;OMS cd="ring3" name="poly_ring"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="ringname1" name="Zm"/&gt;
+                             &lt;OMI&gt;7&lt;/OMI&gt;
+                        &lt;/OMA&gt;
+                        &lt;OMV name="X"/&gt;
+                   &lt;/OMA&gt;
+                   &lt;OMA&gt;&lt;OMS cd="arith1" name="power"/&gt;
+                        &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
+                             &lt;OMV name="X"/&gt;&lt;OMI&gt;1&lt;/OMI&gt;
+                        &lt;/OMA&gt;
+                        &lt;OMI&gt;2&lt;/OMI&gt;
+                   &lt;/OMA&gt;
+              &lt;/OMA&gt;
+         &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e227cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e227cmml')">Strict Content MathML</button>
+                     <pre id="d40e227cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="polynomial1"&gt;expand&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="ring1"&gt;expression&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;expression&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="ring3"&gt;poly_ring&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="ringname1"&gt;Zm&lt;/csymbol&gt;&lt;cn type="integer"&gt;7&lt;/cn&gt;&lt;/apply&gt;
+     &lt;ci&gt;X&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e227prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e227pref')">Prefix</button>
+                  <div id="d40e227pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/polynomial1.html#expand">expand</a>
+  (<a href="../../../cd/ring1.html#expression">expression</a>
+  (<a href="../../../cd/ring1.html#expression">expression</a>
+  (<a href="../../../cd/ring3.html#poly_ring">poly_ring</a>
+  (<a href="../../../cd/ringname1.html#Zm">Zm</a>
+  (7)
+,  <i>X</i>)
+, <a href="../../../cd/arith1.html#power">power</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>X</i>, 1)
+, 2)
+)
+)
+)
+
+  </div>
+                  <div>
+                     <button id="d40e227popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e227pop')">Popcorn</button>
+                     <div id="d40e227pop" style="display:none; margin-top: 0.5em">
+    polynomial1.expand(ring1.expression(ring1.expression(ring3.poly_ring(ringname1.Zm(7), $X), ($X + 1) ^ 2)))
+  </div>
+                  </div>
+                  <div>
+                     <button id="d40e227mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e227mml')">Rendered Presentation MathML</button>
+                     <div id="d40e227mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>expand</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>expression</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>expression</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>poly_ring</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>Zm</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn>7</mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mi>X</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <msup>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>X</mi>
+                                                      <mo>+</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mn>2</mn>
+                                                </msup>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial1.html#expand">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#degree">degree</a>]
+	  
+	    [Previous: <a href="#coefficient">coefficient</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <hr/> 
+            <h2>
+               <a name="degree">degree</a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol represents a
+unary function, whose argument should be univariate polynomial.  When applied
+to a polynomial, it represents its degree, that is the highest power of the
+variable occurring in a term of the polynomial. If the polynomial has no
+terms, it is the zero polynomial, in which case the value represented is -1.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial1.html#degree">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#leading_term">leading_term</a>]
+	  
+	    [Previous: <a href="#expand">expand</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/> 
+            <h2>
+               <a name="leading_term">leading_term</a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol represents a
+unary function, whose argument should be univariate polynomial.  When applied
+to a polynomial, it represents its leading term, that is the term  that is the
+product of
+the highest power of the variable and its coefficient.
+If the polynomial is zero, the value represented is zero.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial1.html#leading_term">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#leading_coefficient">leading_coefficient</a>]
+	  
+	    [Previous: <a href="#degree">degree</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/> 
+            <h2>
+               <a name="leading_coefficient">leading_coefficient</a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol represents a
+unary function, whose argument should be univariate polynomial.  When applied
+to a polynomial, it represents the coefficient of the monomial of highest degree.
+If the polynomial is zero, the value represented is zero.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial1.html#leading_coefficient">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#leading_monomial">leading_monomial</a>]
+	  
+	    [Previous: <a href="#leading_term">leading_term</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/> 
+            <h2>
+               <a name="leading_monomial">leading_monomial</a>
+            </h2> 
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> This symbol represents a
+unary function, whose argument should be a nonzero univariate polynomial.  When applied
+to such a polynomial, it represents the highest power of the variable
+occurring in the polynomial.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+The leading term of a nonzero polynomial is the product of the
+leading monomial and the leading coefficient of the polynomial.
+</dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e312xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e312xml')">OpenMath XML (source)</button>
+                     <pre id="d40e312xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+&lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+     &lt;OMA&gt;&lt;OMS cd="polynomial1" name="leading_term"/&gt;
+          &lt;OMV name="f"/&gt;
+     &lt;/OMA&gt;
+     &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+          &lt;OMA&gt;&lt;OMS cd="polynomial1" name="leading_coefficient"/&gt;
+               &lt;OMV name="f"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;&lt;OMS cd="polynomial1" name="leading_monomial"/&gt;
+               &lt;OMV name="f"/&gt;
+          &lt;/OMA&gt;
+     &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e312cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e312cmml')">Strict Content MathML</button>
+                     <pre id="d40e312cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polynomial1"&gt;leading_term&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polynomial1"&gt;leading_coefficient&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polynomial1"&gt;leading_monomial&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e312prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e312pref')">Prefix</button>
+                  <div id="d40e312pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/polynomial1.html#leading_term">leading_term</a>
+  ( <i>f</i>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/polynomial1.html#leading_coefficient">leading_coefficient</a>
+  ( <i>f</i>)
+, <a href="../../../cd/polynomial1.html#leading_monomial">leading_monomial</a>
+  ( <i>f</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="d40e312popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e312pop')">Popcorn</button>
+                     <div id="d40e312pop" style="display:none; margin-top: 0.5em">
+polynomial1.leading_term($f) = polynomial1.leading_coefficient($f) * polynomial1.leading_monomial($f)
+</div>
+                  </div>
+                  <div>
+                     <button id="d40e312mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e312mml')">Rendered Presentation MathML</button>
+                     <div id="d40e312mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>leading_term</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>f</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>leading_coefficient</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>f</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8290;</mo>
+                                    <mrow>
+                                       <mi>leading_monomial</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>f</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polynomial1.html#leading_monomial">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#coefficient_ring">coefficient_ring</a>]
+	  
+	    [Previous: <a href="#leading_coefficient">leading_coefficient</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+         </div>
+      </div>
+   </body>
+</html>

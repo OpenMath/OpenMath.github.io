@@ -1,0 +1,881 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>polyd2</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: polyd2</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/polyd2.ocd">http://www.openmath.org/cd/polyd2.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="polyd2.ocd">polyd2.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="polyd2.omcd">polyd2.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#elimination">elimination</a>, <a href="#graded_lexicographic">graded_lexicographic</a>, <a href="#graded_reverse_lexicographic">graded_reverse_lexicographic</a>, <a href="#lexicographic">lexicographic</a>, <a href="#matrix_ordering">matrix_ordering</a>, <a href="#ordering">ordering</a>, <a href="#reverse_lexicographic">reverse_lexicographic</a>, <a href="#weighted">weighted</a>, <a href="#weighted_degree">weighted_degree</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-07-07 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 3 </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2006-04-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+    
+
+   
+    
+    
+   
+   
+   
+
+            <p>
+     This CD defines symbols for ordering of monomial for
+     Distributed Multivariate Polynomials, which were defined in polyd1.
+</p>
+
+            <pre>
+Original OpenMath v1.1 Poly 1997
+Update to Current Format 1999-07-07 DPC
+Move the names of rings to setname.ocd 1999-11-09 JHD
+Delete those items moved to the new poly.ocd 1999-11-14 JHD
+Delete those items pertaining to Groebner bases 2004-07-07 AMC
+
+These are of use for canonical ways of writing polynomials and for Groebner bases
+</pre>
+            <hr/>
+            <h2>
+               <a name="ordering"> ordering </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          Used as an attribute to indicate an ordering of the monomials in a
+          polynomial or list of polynomials. The value of this attribute
+          should be one of the constructors specifying ordering. 
+       </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#ordering">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#lexicographic">lexicographic</a>]
+	  
+	    [Last: <a href="#weighted_degree">weighted_degree</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <pre>
+          The following orders on monomials have their standards definitions, 
+         see, for example, "Ideals, Varieties and Algorithms", D. Cox, 
+         J.B. Little and D. O'Shea, Springer Verlag.
+</pre>
+
+            <hr/>
+            <h2>
+               <a name="lexicographic"> lexicographic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          The lexicographic ordering of monomials.
+       </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#lexicographic">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#reverse_lexicographic">reverse_lexicographic</a>]
+	  
+	    [Previous: <a href="#ordering">ordering</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="reverse_lexicographic"> reverse_lexicographic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          The reverse lexicographic ordering of monomials
+       </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#reverse_lexicographic">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#graded_lexicographic">graded_lexicographic</a>]
+	  
+	    [Previous: <a href="#lexicographic">lexicographic</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="graded_lexicographic"> graded_lexicographic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          Total degree order, graded with the lexicographic ordering.
+       </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#graded_lexicographic">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#graded_reverse_lexicographic">graded_reverse_lexicographic</a>]
+	  
+	    [Previous: <a href="#reverse_lexicographic">reverse_lexicographic</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="graded_reverse_lexicographic"> graded_reverse_lexicographic </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          Total degree order, graded with the reverse lexicographic ordering.
+       </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#graded_reverse_lexicographic">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#elimination">elimination</a>]
+	  
+	    [Previous: <a href="#graded_lexicographic">graded_lexicographic</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="elimination"> elimination </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          This is an ordering, which is partially in terms of one
+          ordering, and partially in terms of another.
+          First argument is a number of variables.
+          Second is ordering to apply on the first so many variables.
+          Third is an ordering on the rest, to be used to break ties.
+       </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e97xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e97xml')">OpenMath XML (source)</button>
+                     <pre id="d40e97xml" style="display:none">
+         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+           &lt;OMA&gt;
+             &lt;OMS name="elimination" cd="polyd2"/&gt;
+             &lt;OMI&gt; 1 &lt;/OMI&gt;
+             &lt;OMS name="lexicographic" cd="polyd2"/&gt;
+             &lt;OMS name="graded_reverse_lexicographic" cd="polyd2"/&gt;
+           &lt;/OMA&gt;
+         &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e97cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e97cmml')">Strict Content MathML</button>
+                     <pre id="d40e97cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="polyd2"&gt;elimination&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;csymbol cd="polyd2"&gt;lexicographic&lt;/csymbol&gt;
+  &lt;csymbol cd="polyd2"&gt;graded_reverse_lexicographic&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e97prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e97pref')">Prefix</button>
+                  <div id="d40e97pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/polyd2.html#elimination">elimination</a>
+  ( 1 , <a href="../../../cd/polyd2.html#lexicographic">lexicographic</a>, <a href="../../../cd/polyd2.html#graded_reverse_lexicographic">graded_reverse_lexicographic</a>)
+
+         </div>
+                  <div>
+                     <button id="d40e97popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e97pop')">Popcorn</button>
+                     <div id="d40e97pop" style="display:none; margin-top: 0.5em">
+           polyd2.elimination(1, polyd2.lexicographic, polyd2.graded_reverse_lexicographic)
+         </div>
+                  </div>
+                  <div>
+                     <button id="d40e97mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e97mml')">Rendered Presentation MathML</button>
+                     <div id="d40e97mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>elimination</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn> 1 </mn>
+                                    <mo>,</mo>
+                                    <mi>lexicographic</mi>
+                                    <mo>,</mo>
+                                    <mi>graded_reverse_lexicographic</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#elimination">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#matrix_ordering">matrix_ordering</a>]
+	  
+	    [Previous: <a href="#graded_reverse_lexicographic">graded_reverse_lexicographic</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="matrix_ordering"> matrix_ordering </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          The argument is a matrix with as many columns as indeterminates
+          (= rank). Each row in turm is multiplied by the column vector of
+          exponents to produce a weighting for comparison purposes.
+       </p>
+               </dd>
+            </dl> 
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#matrix_ordering">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#weighted">weighted</a>]
+	  
+	    [Previous: <a href="#elimination">elimination</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="weighted"> weighted </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+          The first argument is a list of integers to act as variable weights,
+          and the second is an ordering. The result is an ordering.
+       </p>
+               </dd>
+            </dl> 
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#weighted">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#weighted_degree">weighted_degree</a>]
+	  
+	    [Previous: <a href="#matrix_ordering">matrix_ordering</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+            <pre>
+  We need a few more orderings... 
+</pre>
+
+            <pre>
+     Definition of some other constructors
+</pre>
+
+            <hr/>
+            <h2>
+               <a name="weighted_degree"> weighted_degree </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+        The total degree of its argument, taking into account any weights 
+        declared. The value returned is an integer: non-negative if the 
+        weights are. We note that the degree of 0 is undefined.
+      </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="d40e148xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e148xml')">OpenMath XML (source)</button>
+                     <pre id="d40e148xml" style="display:none">
+        &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+          &lt;OMA&gt;
+            &lt;OMS name="eq" cd="relation1"/&gt;
+            &lt;OMA&gt;
+              &lt;OMS name="weighted_degree" cd="polyd2"/&gt;
+              &lt;OMA&gt;
+                &lt;OMS name="DMP" cd="polyd1"/&gt;
+                &lt;OMA&gt;
+                  &lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+                  &lt;OMS name="Q" cd="setname1"/&gt;
+                  &lt;OMI&gt; 3 &lt;/OMI&gt;
+                &lt;/OMA&gt;
+                &lt;OMATTR&gt;
+                  &lt;OMATP&gt;
+                    &lt;OMS name="ordering" cd="polyd2"/&gt;
+                    &lt;OMA&gt;
+                      &lt;OMS name="weighted" cd="polyd2"/&gt;
+                      &lt;OMA&gt;
+                        &lt;OMS name="list" cd="list1"/&gt;
+                        &lt;OMI&gt; 1 &lt;/OMI&gt;
+                        &lt;OMI&gt; 2 &lt;/OMI&gt;
+                        &lt;OMI&gt; 3 &lt;/OMI&gt;
+                      &lt;/OMA&gt;
+                      &lt;OMS name="graded_lexicographic" cd="polyd2"/&gt;
+                    &lt;/OMA&gt;
+                  &lt;/OMATP&gt;
+                  &lt;OMA&gt;
+                    &lt;OMS name="SDMP" cd="polyd1"/&gt;
+                    &lt;OMA&gt;
+                      &lt;OMS name="term" cd="polyd1"/&gt;
+                      &lt;OMI&gt; 1 &lt;/OMI&gt;
+                      &lt;OMI&gt; 0 &lt;/OMI&gt;
+                      &lt;OMI&gt; 0 &lt;/OMI&gt;
+                      &lt;OMI&gt; 1 &lt;/OMI&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMA&gt;
+                      &lt;OMS name="term" cd="polyd1"/&gt;
+                      &lt;OMI&gt; 2 &lt;/OMI&gt;
+                      &lt;OMI&gt; 2 &lt;/OMI&gt;
+                      &lt;OMI&gt; 0 &lt;/OMI&gt;
+                      &lt;OMI&gt; 0 &lt;/OMI&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMA&gt;
+                      &lt;OMS name="term" cd="polyd1"/&gt;
+                      &lt;OMI&gt; 3 &lt;/OMI&gt;
+                      &lt;OMI&gt; 0 &lt;/OMI&gt;
+                      &lt;OMI&gt; 1 &lt;/OMI&gt;
+                      &lt;OMI&gt; 0 &lt;/OMI&gt;
+                    &lt;/OMA&gt;
+                    &lt;OMA&gt;
+                      &lt;OMS name="term" cd="polyd1"/&gt;
+                      &lt;OMI&gt; 4 &lt;/OMI&gt;
+                      &lt;OMI&gt; 1 &lt;/OMI&gt;
+                      &lt;OMI&gt; 0 &lt;/OMI&gt;
+                      &lt;OMI&gt; 0 &lt;/OMI&gt;
+                    &lt;/OMA&gt;
+                  &lt;/OMA&gt;
+                &lt;/OMATTR&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+            &lt;OMI&gt; 3 &lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="d40e148cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e148cmml')">Strict Content MathML</button>
+                     <pre id="d40e148cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd2"&gt;weighted_degree&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+     &lt;csymbol cd="setname1"&gt;Q&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;semantics&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+       &lt;cn type="integer"&gt;1&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+       &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+       &lt;cn type="integer"&gt;2&lt;/cn&gt;
+       &lt;cn type="integer"&gt;2&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+       &lt;cn type="integer"&gt;3&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+       &lt;cn type="integer"&gt;1&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+       &lt;cn type="integer"&gt;4&lt;/cn&gt;
+       &lt;cn type="integer"&gt;1&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;annotation-xml cd="polyd2" encoding="ordering"&gt;
+      &lt;apply&gt;&lt;csymbol cd="polyd2"&gt;weighted&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+        &lt;cn type="integer"&gt;1&lt;/cn&gt;
+        &lt;cn type="integer"&gt;2&lt;/cn&gt;
+        &lt;cn type="integer"&gt;3&lt;/cn&gt;
+       &lt;/apply&gt;
+       &lt;csymbol cd="polyd2"&gt;graded_lexicographic&lt;/csymbol&gt;
+      &lt;/apply&gt;
+     &lt;/annotation-xml&gt;
+    &lt;/semantics&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="d40e148prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d40e148pref')">Prefix</button>
+                  <div id="d40e148pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/polyd2.html#weighted_degree">weighted_degree</a>
+  (<a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname1.html#Q">Q</a>,  3 )
+, <b>Attrib</b>([
+                    <a href="../../../cd/polyd2.html#ordering">ordering</a>
+                    <a href="../../../cd/polyd2.html#weighted">weighted</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  ( 1 ,  2 ,  3 )
+, <a href="../../../cd/polyd2.html#graded_lexicographic">graded_lexicographic</a>)
+
+                  ],
+  <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  ( 1 ,  0 ,  0 ,  1 )
+, <a href="../../../cd/polyd1.html#term">term</a>
+  ( 2 ,  2 ,  0 ,  0 )
+, <a href="../../../cd/polyd1.html#term">term</a>
+  ( 3 ,  0 ,  1 ,  0 )
+, <a href="../../../cd/polyd1.html#term">term</a>
+  ( 4 ,  1 ,  0 ,  0 )
+)
+)
+)
+)
+,  3 )
+
+        </div>
+                  <div>
+                     <button id="d40e148popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d40e148pop')">Popcorn</button>
+                     <div id="d40e148pop" style="display:none; margin-top: 0.5em">
+          polyd2.weighted_degree(polyd1.DMP(polyd1.poly_ring_d(setname1.Q, 3), polyd1.SDMP(polyd1.term(1, 0, 0, 1), polyd1.term(2, 2, 0, 0), polyd1.term(3, 0, 1, 0), polyd1.term(4, 1, 0, 0)){polyd2.ordering -&gt; polyd2.weighted([1 , 2 , 3], polyd2.graded_lexicographic)})) = 3
+        </div>
+                  </div>
+                  <div>
+                     <button id="d40e148mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d40e148mml')">Rendered Presentation MathML</button>
+                     <div id="d40e148mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>weighted_degree</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>DMP</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>poly_ring_d</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi mathvariant="double-struck">Q</mi>
+                                                   <mo>,</mo>
+                                                   <mn> 3 </mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mrow>
+                                                <mi>SDMP</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mrow>
+                                                      <mi>term</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mn> 1 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 0 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 0 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 1 </mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>term</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mn> 2 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 2 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 0 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 0 </mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>term</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mn> 3 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 0 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 1 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 0 </mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>,</mo>
+                                                   <mrow>
+                                                      <mi>term</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mn> 4 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 1 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 0 </mn>
+                                                         <mo>,</mo>
+                                                         <mn> 0 </mn>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mn> 3 </mn>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/polyd2.html#weighted_degree">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#ordering">ordering</a>]
+	  
+	    [Previous: <a href="#weighted">weighted</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+         </div>
+      </div>
+   </body>
+</html>
