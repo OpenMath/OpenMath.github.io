@@ -64,7 +64,7 @@ var mmlns="http://www.w3.org/1998/Math/MathML";
    
 // ascii version for now
 var omNameRE= new RegExp(/^\s*[^0-9\.!@#:;<>()+=,%\$"'?/\\|{}\[\] \t\n\r][^\.!@#:;<>()+=,%\$"'?/\\|{}\[\] \t\n\r]*\s*$/);
-var omURLRE= new RegExp(/^\s*[a-z]+:\/\/[^ ]*\s*$/);
+var omURLRE= new RegExp(/^\s*[^ ]*\s*$/);
 var omDateRE= new RegExp(/^\s*[0-9]{4}-(0[1-9]|1[12])-(0[1-9]|[12][0-9]|3[01])\s*$/);
 
 // output text built as a string
@@ -1185,7 +1185,7 @@ function vsOMR(e) {
 	    break;
 	case "href":
 	    h=atts[j].value;
-	    err+=(cd.match(omURLRE)?"":" (URL)");
+	    err+=(h.match(omURLRE)?"":" (URL)");
 	    break;
 	default:
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
@@ -1197,7 +1197,7 @@ function vsOMR(e) {
     if(err=="") {
 	return ("<a href='" + h +"'>ref</a>");
     } else {
-	return vsSpanOut(err,n);
+	return vsSpanOut(err,"");
     }
 }
 
@@ -1249,10 +1249,12 @@ function vsMMLel (e) {
 	break;
     case "declare":
     case "piecewise": case "interval":
-    case  "inverse": case "ident": case "domain": case "codomain": case "image": case "ln": case "log": case "moment":
+    case  "inverse": case "ident": case "domain": case "codomain": case "image":
+    case "ln": case "log": case "moment":
     case "lambda": case "compose":
     case "quotient": case "divide": case "minus": case "power": case "rem": case "root":
-    case "factorial": case "minus": case "root": case "abs": case "conjugate": case "arg": case "real": case "imaginary": case "floor": case "ceiling": case "exp":
+    case "factorial": case "minus": case "root": case "abs": case "conjugate": case "arg":
+    case "real": case "imaginary": case "floor": case "ceiling": case "exp":
     case "plus": case "times": case "gcd": case "lcm":
     case "and": case "or": case "xor": case "not": case "equivalent":
     case "implies":
@@ -1268,14 +1270,18 @@ function vsMMLel (e) {
     case "card":
     case "sum": case "product":
     case "limit":
-    case "sin": case "cos": case "tan": case "sec": case "csc": case "cot": case "sinh": case "cosh": case "tanh": case "sech": case "csch": case "coth":
-    case "arcsin": case "arccos": case "arctan": case "arccosh": case "arccot": case "arccoth": case "arccsc": case "arccsch": case "arcsec": case "arcsech": case "arcsinh": case "arctanh":
+    case "sin": case "cos": case "tan": case "sec": case "csc": case "cot":
+    case "sinh": case "cosh": case "tanh": case "sech": case "csch": case "coth":
+    case "arcsin": case "arccos": case "arctan": case "arccosh": case "arccot": case "arccoth":
+    case "arccsc": case "arccsch": case "arcsec": case "arcsech": case "arcsinh": case "arctanh":
     case "mean": case "sdev": case "variance": case "median": case "mode":
     case "vector": case "matrix": case "matrixrow": case "determinant": case "transpose":
     case "selector":
     case "vectorproduct": case "scalarproduct": case "outerproduct":
-    case "integers": case "reals": case "rationals": case "naturalnumbers": case "complexes": case "primes": case "emptyset":
-    case "exponentiale": case "imaginaryi": case "notanumber": case "true": case "false": case "pi": case "eulergamma": case "infinity":
+    case "integers": case "reals": case "rationals": case "naturalnumbers": case "complexes":
+    case "primes": case "emptyset":
+    case "exponentiale": case "imaginaryi": case "notanumber": case "true": case "false":
+    case "pi": case "eulergamma": case "infinity":
 	u+=vsSpanOut("(Not Strict Content MathML: " + e.localName +")","");
 	break;
     case "csymbol":
@@ -1303,8 +1309,10 @@ function vsMMLel (e) {
 	u+=vsMMLbind(e);
 	break;
     case "share":
+	u+=vsMMLshare(e);
+	break;
     case "cs":
-	u+=e.localName
+	u+=vsMMLcs(e);
 	break;
     default:
 	u+=vsErr(e);
@@ -1549,6 +1557,49 @@ function vsMMLbvar (e) {
     return vsSpanOut(err,u);
 }
     
+function vsMMLshare(e) {
+    var err="";
+    var h="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	case "src":
+	    h=atts[j].value;
+	    err+=(h.match(omURLRE)?"":" (URL)");
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 0) {
+	err += " (Unexpected content in share)";
+    }
+    if(err=="") {
+	return ("<a href='" + h +"'>ref</a>");
+    } else {
+	return vsSpanOut(err,"");
+    }
+}
+
+function vsMMLcs(e) {
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 1) {
+	err += " (Unexpected content in OMSTR)";
+    }
+    return vsSpanOut(err, "<tt>\""+e.innerHTML + "\"</tt>");
+}
+
 // form button codes
 
 function clearcdin() {
