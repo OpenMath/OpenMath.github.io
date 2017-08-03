@@ -1239,15 +1239,9 @@ function vMMLmath(e) {
     for(var j=0;j<els.length;j++){
 	var c = els[j];
 	u+=vsMMLel(c);
-	if(j==0){
-	    u+= "(";
-	} else if (j<els.length -1) {
-	    u+=", ";
-	}
+	if (j<els.length -1) u+=", ";
     }
-    u+=")";
-   vOut(err,u);
-
+    vOut(err,u);
 }
 
 function vsMMLel (e) {
@@ -1272,32 +1266,16 @@ function vsMMLel (e) {
 	for(var j=0;j<els.length;j++){
 	    var c = els[j];
 	    switch(c.localName) {
-	    case "mfrac":
-	    case "mfenced":
-	    case "mo":
-	    case "mn":
-	    case "mi":
-	    case "ms":
-	    case "mtext":
+	    case "mrow": case "mfenced":
+	    case "mo": case "mn": case "mi": case "ms": case "mtext":
 	    case "mstyle":
-	    case "mpadded":
-	    case "mphantom":
-	    case "menclose":
-	    case "mstack":
-	    case "mlongdiv":
-	    case "maction":
+	    case "mpadded": case "mphantom": case "menclose": case "maction":
+	    case "mtable": case "mstack": case "mlongdiv":
 	    case "mglyph":
 	    case "mspace":
-	    case "msub":
-	    case "msup":
-	    case "msubsup":
-	    case "mover":
-	    case "munder":
-	    case "munderover":
-	    case "msqrt":
-	    case "mtable":
-	    case "malign":
-	    case "mrow":
+	    case "msub": case "msup": case "msubsup":
+	    case "mover": case "munder": case "munderover":
+	    case "msqrt": case "mfrac":
 		u+=vsSpanOut("(Presentation MathML: " + c.localName +")","");
 		break;
 	    case "forall": case "exists":
@@ -1321,9 +1299,16 @@ function vsMMLel (e) {
 	    case "ci":
 		u+=vsMMLci(c);
 		break;
+	    case "semantics":
+		u+=vsMMLsemantics(c);
+		break;
 	    case "apply":
 	    case "bind":
 	    case "bvar":
+	    case "share":
+	    case "cerror":
+	    case "cbytes":
+	    case "cs":
 		u+=vsMMLel(c);
 		break;
 	    default:
@@ -1409,6 +1394,55 @@ function vsMMLci(e) {
     return vsSpanOut(err,"<i>"+n+"</i>");
 }
 
+function vsMMLsemantics(e) {
+    var err="";
+    var u="";
+    var n="";
+    var cd="";
+    var nc=0;
+    var cdc=0;
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	case "cdbase":
+	    break;
+	case "cd":
+	    cdc++;
+	    cd=atts[j].value;
+	    err+=(cd.match(omNameRE)?"":" (Invalid name)");
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    err+=vsNoText(e);
+    u+=vsSpanOut(err,u);
+    var els=vChildren(e);
+    if(els.length>0) {
+	u+=vsMMLel(els[0]);
+    } else {
+	err+=" (Missing body to semantics)";
+    }
+    if(els.length>1) {
+	u+="[";
+	for(var j=1;j<els.length;j++) {
+	    var c=els[j];
+	    switch(c.localName) {
+	    case("annotation"):
+		u+="annotation";
+		break;
+	    case("annotation-xml"):
+		u+="annotation-xml";
+		break;
+	    default:
+		u+=vsErr(c);
+	    }
+	}
+	u+="]";
+    }
+    return vsSpanOut(err,u);
+}
 // form button codes
 
 function clearcdin() {
