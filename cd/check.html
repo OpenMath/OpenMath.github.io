@@ -1205,6 +1205,7 @@ function vsOMR(e) {
 // mathml
 
 function vMMLmath(e) {
+    var u="";
     var err="";
     var atts=e.attributes;
     for(var j=0;j<atts.length;j++) {
@@ -1216,25 +1217,11 @@ function vMMLmath(e) {
 	    break;
 	default:
 	    if(! atts[j].name.startsWith("xmlns:")) {
-		err+=" (Unexpected attribute: " + atts[j].localName +")";
+		err+=" (!mUnexpected attribute: " + atts[j].localName +")";
 	    }
 	}
     }
     vOut(err,"<b>Strict Content MathML</b> (validation only partially implemented)");
-    var u="";
-    var err="";
-    var atts=e.attributes;
-    for(var j=0;j<atts.length;j++) {
-	switch(atts[j].localName) {
-	case "id":
-	case "xmlns":
-	    break;
-	default:
-	    if(! atts[j].name.startsWith("xmlns:")) {
-		err+=" (Unexpected attribute: " + atts[j].localName +")";
-	    }
-	}
-    }
     var els=vChildren(e);
     for(var j=0;j<els.length;j++){
 	var c = els[j];
@@ -1247,82 +1234,102 @@ function vMMLmath(e) {
 function vsMMLel (e) {
     var u="";
     var err="";
-    var atts=e.attributes;
-    for(var j=0;j<atts.length;j++) {
-	switch(atts[j].localName) {
-	case "id":
-	case "xmlns":
-	    break;
-	default:
-	    if(! atts[j].name.startsWith("xmlns:")) {
-		err+=" (Unexpected attribute: " + atts[j].localName +")";
-	    }
-	}
-    }
-    u+=e.localName;
-    var els=vChildren(e);
-    if(els.length>0) {
-	u+=" (";
-	for(var j=0;j<els.length;j++){
-	    var c = els[j];
-	    switch(c.localName) {
-	    case "mrow": case "mfenced":
-	    case "mo": case "mn": case "mi": case "ms": case "mtext":
-	    case "mstyle":
-	    case "mpadded": case "mphantom": case "menclose": case "maction":
-	    case "mtable": case "mstack": case "mlongdiv":
-	    case "mglyph":
-	    case "mspace":
-	    case "msub": case "msup": case "msubsup":
-	    case "mover": case "munder": case "munderover":
-	    case "msqrt": case "mfrac":
-		u+=vsSpanOut("(Presentation MathML: " + c.localName +")","");
-		break;
-	    case "forall": case "exists":
-	    case "eq": case "gt": case "lt": case "geq": case "leq":
-	    case "sum": case "product":
-	    case "limit":
-	    case "sin": case "cos": case "tan": case "sec": case "csc": case "cot": case "sinh": case "cosh": case "tanh": case "sech": case "csch": case "coth": case "arcsin": case "arccos": case "arctan": case "arccosh": case "arccot": case "arccoth": case "arccsc": case "arccsch": case "arcsec": case "arcsech": case "arcsinh": case "arctanh":
-	    case "mean": case "sdev": case "variance": case "median": case "mode":
-	    case "vector": case "matrix":
-	    case "vectorproduct": case "scalarproduct": case "outerproduct":
-	    case "integers": case "reals": case "rationals": case "naturalnumbers": case "complexes": case "primes": case "emptyset":
-	    case "exponentiale": case "imaginaryi": case "notanumber": case "true": case "false": case "pi": case "eulergamma": case "infinity":
-		u+=vsSpanOut("(Not Strict Content MathML: " + c.localName +")","");
-		break;
-	    case "csymbol":
-		u+=vsMMLcsymbol(c);
-		break;
-	    case "cn":
-		u+=vsMMLcn(c);
-		break;
-	    case "ci":
-		u+=vsMMLci(c);
-		break;
-	    case "semantics":
-		u+=vsMMLsemantics(c);
-		break;
-	    case "apply":
-	    case "bind":
-	    case "bvar":
-	    case "share":
-	    case "cerror":
-	    case "cbytes":
-	    case "cs":
-		u+=vsMMLel(c);
-		break;
-	    default:
-		u+=vsErr(c);
-	    }
-	    if (j<els.length -1) {
-		u+=", ";
-	    }
-	}
-	u+=")";
+    switch(e.localName) {
+    case "mrow": case "mfenced":
+    case "mo": case "mn": case "mi": case "ms": case "mtext":
+    case "mstyle":
+    case "mpadded": case "mphantom": case "menclose": case "maction":
+    case "mtable": case "mstack": case "mlongdiv":
+    case "mglyph":
+    case "mspace":
+    case "msub": case "msup": case "msubsup":
+    case "mover": case "munder": case "munderover":
+    case "msqrt": case "mfrac":
+	u+=vsSpanOut("(Presentation MathML: " + e.localName +")","");
+	break;
+    case "declare":
+    case "piecewise": case "interval":
+    case  "inverse": case "ident": case "domain": case "codomain": case "image": case "ln": case "log": case "moment":
+    case "lambda": case "compose":
+    case "quotient": case "divide": case "minus": case "power": case "rem": case "root":
+    case "factorial": case "minus": case "root": case "abs": case "conjugate": case "arg": case "real": case "imaginary": case "floor": case "ceiling": case "exp":
+    case "plus": case "times": case "gcd": case "lcm":
+    case "and": case "or": case "xor": case "not": case "equivalent":
+    case "implies":
+    case "max": case "min":
+    case "forall": case "exists":
+    case "eq": case "gt": case "lt": case "geq": case "leq":
+    case "neq": case "approx": case "factorof": case "tendsto":
+    case "sum": case "product":
+    case "int": case "diff": case "partialdiff":
+    case "divergence": case "grad": case "curl": case "laplacian":
+    case "union": case "intersect": case "cartesianproduct":
+    case "in": case "notin": case "notsubset": case "notprsubset": case "setdiff":
+    case "card":
+    case "sum": case "product":
+    case "limit":
+    case "sin": case "cos": case "tan": case "sec": case "csc": case "cot": case "sinh": case "cosh": case "tanh": case "sech": case "csch": case "coth":
+    case "arcsin": case "arccos": case "arctan": case "arccosh": case "arccot": case "arccoth": case "arccsc": case "arccsch": case "arcsec": case "arcsech": case "arcsinh": case "arctanh":
+    case "mean": case "sdev": case "variance": case "median": case "mode":
+    case "vector": case "matrix": case "matrixrow": case "determinant": case "transpose":
+    case "selector":
+    case "vectorproduct": case "scalarproduct": case "outerproduct":
+    case "integers": case "reals": case "rationals": case "naturalnumbers": case "complexes": case "primes": case "emptyset":
+    case "exponentiale": case "imaginaryi": case "notanumber": case "true": case "false": case "pi": case "eulergamma": case "infinity":
+	u+=vsSpanOut("(Not Strict Content MathML: " + e.localName +")","");
+	break;
+    case "csymbol":
+	u+=vsMMLcsymbol(e);
+	break;
+    case "cn":
+	u+=vsMMLcn(e);
+	break;
+    case "ci":
+	u+=vsMMLci(e);
+	break;
+    case "semantics":
+	u+=vsMMLsemantics(e);
+	break;
+    case "cerror":
+	u+=vsMMLerror(e);
+	break;
+    case "apply":
+	u+=vsMMLapply(e);
+	break;
+    case "cbytes":
+	u+=vsMMLcbytes(e);
+	break;
+    case "bind":
+	u+=vsMMLbind(e);
+	break;
+    case "share":
+    case "cs":
+	u+=e.localName
+	break;
+    default:
+	u+=vsErr(e);
     }
     return vsSpanOut(err,u);
 }
 
+
+function vsMMLapply(e) {
+    var u="";
+    var err="";
+    var els=vChildren(e);
+    if(els.length>0) {
+	u+=vsMMLel(els[0]);
+	if(els.length>1) {
+	    for(var j=1;j<els.length;j++){
+		u+=(j==1?"(":", ");
+		var c = els[j];
+		u+=vsMMLel(c);
+	    }
+	    u+=")";
+	}
+    }
+    return vsSpanOut(err,u);
+}
 
 function vsMMLcsymbol(e) {
     var err="";
@@ -1425,9 +1432,9 @@ function vsMMLsemantics(e) {
 	err+=" (Missing body to semantics)";
     }
     if(els.length>1) {
-	u+="[";
 	for(var j=1;j<els.length;j++) {
 	    var c=els[j];
+	    u+=(j==1?"<sub>[":", ");
 	    switch(c.localName) {
 	    case("annotation"):
 		u+="annotation";
@@ -1439,10 +1446,109 @@ function vsMMLsemantics(e) {
 		u+=vsErr(c);
 	    }
 	}
-	u+="]";
+	u+="]<sub>";
     }
     return vsSpanOut(err,u);
 }
+
+
+function vsMMLerror(e) {
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    err+=vsNoText(e);
+    var els=vChildren(e);
+    var u = "<span class='ome'>Error( ";
+    if (els.length == 0||els[0].localName!="csymbol") {
+	err += " (Missing element csymbol)";
+    } else {
+        u+=vsMMLcsymbol(els[0]);
+    }
+    for(var j = 1; j<els.length;j++) {
+	u+= (j==1? ": " : ", ");
+	u+=vsMMLel(els[j]);
+    }
+    u +=")</span>";
+    return vsSpanOut(err,u);
+}
+
+
+function vsMMLcbytes(e) {
+    var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    if (e.childNodes.length != 1) {
+	err += " (Unexpected content in cbytes)";
+    }
+    if(! e.textContent.match(/^[ \t\r\na-zA-Z0-9\+/]*=*\s*$/)) {
+	err += " (Invalid base64)";
+    }
+    return vsSpanOut(err, "<i>Base64</i>");
+}
+
+function vsMMLbind(e) {
+    var err="";
+    var u="";
+    var cd="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    err+=vsNoText(e);
+    var els=vChildren(e);
+    if(els.length > 1 && els[els.length-1].localName!="bvar") {
+	u +="(";
+	u+=vsMMLel(els[0]);
+	u+="[";
+	for(var j=1;j<els.length-1;j++){
+	    var c=els[j];
+	    if(c.localName=="bvar"){
+		if(j>1) u+=", ";
+		u+=vsMMLbvar(c);
+	    } else {
+		err+=" (Unexpected element in bind: " + c.localName +")";
+	    }
+	}
+	u+="] . ";
+	u+=vsMMLel(els[els.length-1]);
+	u+=")";
+    } else {
+	err += "(Missing content for bind)";
+    }
+    return vsSpanOut(err,u);
+}
+
+function vsMMLbvar (e) {
+    var err="";
+    var u="";
+    var els=vChildren(e);
+    if (els.length==1 && (els[0].localName=="ci"  || els[0].localName=="semantics")) {
+	u+=vsMMLel(els[0]);
+    } else {
+	err="(Malformed bvar)";
+    }
+    return vsSpanOut(err,u);
+}
+    
 // form button codes
 
 function clearcdin() {
@@ -1941,50 +2047,72 @@ multiple of its arguments.\n\
 function samplemml() {
 document.getElementById("cdin").textContent='\n\
 <math xmlns="http://www.w3.org/1998/Math/MathML">\n\
- <apply><csymbol cd="list1">list</csymbol>\n\
+ <apply>\n\
+  <csymbol cd="list1">list</csymbol>\n\
 \n\
-  <apply><csymbol cd="relation1">eq</csymbol>\n\
-  <apply><csymbol cd="integer1">factorial</csymbol><ci x="y">n</ci></apply>\n\
-  <apply><csymbol cd="arith1">product</csymbol>\n\
-   <apply><csymbol cd="interval1">integer_interval</csymbol><cn type="integer">1</cn><ci>n</ci></apply>\n\
-   <bind><csymbol cd="fns1">lambda</csymbol><bvar><ci>i</ci></bvar><ci>i</ci></bind>\n\
-  </apply>\n\
- </apply>\n\
 \n\
-<mfrac><mi>a</mi><mn>2</mn></mfrac>\n\
-\n\
- <apply><csymbol cd="logic1">implies</csymbol>\n\
-  <apply><csymbol cd="set1">in</csymbol><ci>x</ci><csymbol cd="setname1">C</csymbol></apply>\n\
-  <apply><csymbol cd="relation1">eq</csymbol>\n\
-   <apply><csymbol cd="arith1">root</csymbol><ci>x</ci><ci>n</ci></apply>\n\
-   <apply><csymbol cd="transc1">exp</csymbol>\n\
-    <apply><csymbol cd="arith1">divide</csymbol>\n\
-     <apply><csymbol cd="transc1">ln</csymbol><ci>x</ci></apply>\n\
+  <apply>\n\
+   <csymbol cd="relation1">eq</csymbol>\n\
+   <apply>\n\
+    <csymbol cd="integer1">factorial</csymbol>\n\
+   <ci x="y">n</ci></apply>\n\
+   <apply>\n\
+    <csymbol cd="arith1">product</csymbol>\n\
+    <apply>\n\
+     <csymbol cd="interval1">integer_interval</csymbol>\n\
+     <cn type="integer">1</cn>\n\
      <ci>n</ci>\n\
     </apply>\n\
+    <bind>\n\
+     <csymbol cd="fns1">lambda</csymbol>\n\
+     <bvar><ci>i</ci></bvar>\n\
+     <ci>i</ci>\n\
+    </bind>\n\
    </apply>\n\
   </apply>\n\
- </apply>\n\
+  \n\
+  <cerror><csymbol cd="z">zzz</csymbol><apply><ci>a</ci><ci>b</ci></apply></cerror>\n\
 \n\
-<apply><csymbol cd="relation1">eq</csymbol>\n\
-  <apply>\n\
-   <apply><csymbol cd="calculus1">partialdiff</csymbol>\n\
-    <apply><csymbol cd="list1">list</csymbol>\n\
-     <cn type="integer">1</cn>\n\
-     <cn type="integer">3</cn>\n\
+  <mfrac><mi>a</mi><mn>2</mn></mfrac>\n\
+  \n\
+  <semantics>\n\
+  <ci>x</ci>\n\
+  <annotation cd="mathmlattr"\n\
+     name="class" encoding="text/plain">foo</annotation>\n\
+  <annotation-xml cd="mathmlattr" name="foreign" encoding="MathML-Content">\n\
+    <apply><csymbol cd="mathmlattr">foreign_attribute</csymbol>\n\
+      <cs>http://example.com</cs>\n\
+      <cs>other</cs>\n\
+      <cs>att</cs>\n\
+      <cs>bla</cs>\n\
     </apply>\n\
-    <bind><csymbol cd="fns1">lambda</csymbol>\n\
-     <bvar><ci>x</ci></bvar>\n\
-     <bvar><ci>y</ci></bvar>\n\
-     <bvar><ci>z</ci></bvar>\n\
-     <apply><csymbol cd="arith1">times</csymbol><ci>x</ci><ci>y</ci><ci>z</ci></apply>\n\
-    </bind>\n\
+  </annotation-xml>\n\
+  </semantics>\n\
+\n\
+\n\
+  <cbytes>AB123</cbytes>\n\
+\n\
+  <apply>\n\
+   <csymbol cd="relation1">eq</csymbol>\n\
+   <apply>\n\
+    <apply>\n\
+     <csymbol cd="calculus1">partialdiff</csymbol>\n\
+     <apply><csymbol cd="list1">list</csymbol>\n\
+     <cn type="integer">1</cn> <cn type="integer">3</cn>\n\
+     </apply>\n\
+     <bind>\n\
+      <csymbol cd="fns1">lambda</csymbol>\n\
+      <bvar><ci>x</ci></bvar>\n\
+      <bvar><ci>y</ci></bvar>\n\
+      <bvar><ci>z</ci></bvar>\n\
+      <apply><csymbol cd="arith1">times</csymbol><ci>x</ci><ci>y</ci><ci>z</ci></apply>\n\
+     </bind>\n\
+    </apply>\n\
+    <ci>y</ci>\n\
    </apply>\n\
    <ci>y</ci>\n\
   </apply>\n\
-  <ci>y</ci>\n\
-</apply>\n\
-\n\
+  \n\
  </apply>\n\
 </math>\n\
 ';
