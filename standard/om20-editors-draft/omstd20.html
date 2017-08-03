@@ -147,8 +147,8 @@ list-style-type: lower-roman;
          
          
          <div class="mdata"><span class="mdatahead">Editors</span><br />
-            S. Buswell, O. Caprotti, D. P. Carlisle, M. C. Dewar, M. Gaëtano, M. Kohlhase, J. H. Davenport (revision 1) and P. D.F. Ion
-            (revision 1)
+            S. Buswell, O. Caprotti, D. P. Carlisle, M. C. Dewar, M. Gaëtano, M. Kohlhase, J. H. Davenport
+            (revision 1) and P. D.F. Ion (revision 1)
             
          </div>
          
@@ -161,7 +161,7 @@ list-style-type: lower-roman;
          
          
          <div class="mdata" style="font-size:110%;background-color:#EEE;padding:.5em;">
-            <b>Editors' Draft:</b> Built 2017-07-22<br />
+            <b>Editors' Draft:</b> Built 2017-08-03<br />
             Source Repository: <a href="https://github.com/OpenMath/OMSTD/">https://github.com/OpenMath/OMSTD</a><br />
             This Version: <a href="https://openmath.github.io/standard/om20-editors-draft/">https://openmath.github.io/standard/om20-editors-draft</a><br />
             Normative version: <a href="https://openmath.github.io/standard/om20-2004-06-30/">https://openmath.github.io/standard/om20-2004-06-30</a>
@@ -363,8 +363,8 @@ list-style-type: lower-roman;
             </p>
             
             <p>
-               This standard does not describe the mechanisms by which software systems may offer, or make use of, computational services.
-               The currently-suggested mechanism is the 
+               This standard does not describe the mechanisms by which software systems may offer,
+               or make use of, computational services. The currently-suggested mechanism is the 
                Symbolic Computation Software Composability Protocol (SCSCP) 
                <a href="#SCSCP13">[1]</a>.
                
@@ -5984,7 +5984,8 @@ list-style-type: lower-roman;
                               <mn>31</mn>
                            </msup>
                         </math>. In the
-                        case of token identifiers 2, 34, 66, 130, 162, and 194 the integer is assembled by 
+                        case of token identifiers 2, 34, 66, 130, 162, and 194 the integer is assembled by
+                        
                         concatenating the string of decimal digits in the packets in sequence order
                         (which corresponds to most significant first).  Note that in all cases only
                         the sequence-initial packet may contain a signed
@@ -6546,7 +6547,8 @@ list-style-type: lower-roman;
                   
                   <dd>
                      
-                     <p>are encoded using the internal reference tags [30] and [30+128] (the sharing flag cannot
+                     <p>are encoded using the internal reference tags [30] and [30+128] (the sharing flag
+                        cannot
                         be set on this tag, since chains of references are not allowed in the <i>OpenMath</i>
                         binary encoding) with long flag set if the number of <i>OpenMath</i> sub-objects in the
                         encoded <i>OpenMath</i> is
@@ -6564,7 +6566,8 @@ list-style-type: lower-roman;
                   
                   <dd>
                      
-                     <p>are encoded using the external reference tags [31] and [31+128] (the sharing flag cannot
+                     <p>are encoded using the external reference tags [31] and [31+128] (the sharing flag
+                        cannot
                         be set on this tag, since chains of references are not allowed in the <i>OpenMath</i>
                         binary encoding) with the
                         long flag set if the number of bytes in the reference URI is
@@ -7088,7 +7091,8 @@ list-style-type: lower-roman;
                   
                   
                   <p>The main difference is the interpretation of the sharing flag (bit 7),
-                     which can be set on all objects that allow it. Instead of encoding a reference to a
+                     which can be set on all objects that allow it. Instead of encoding a reference to
+                     a
                      previous occurrence of an object of the same type, it indicates
                      whether an object will be referenced later in the encoding. This
                      corresponds to the information, whether an <small><code>id</code></small>
@@ -7370,7 +7374,8 @@ list-style-type: lower-roman;
                         </msup>
                         <mo>-</mo>
                         <mn>8</mn>
-                     </math>       bytes (sharing variables saves up to 256 bytes for trees up to depth 8 and wastes space
+                     </math>       bytes (sharing variables saves up to 256 bytes for trees up to depth 8 and
+                     wastes space
                      for greater depths). The shared <abbr>XML</abbr> encoding only uses
                      
                      <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -10580,172 +10585,163 @@ Author: David Carlisle
             
             <div class="literal"><pre>&lt;<span style="font-weight: bold; color: blue">CDGroup</span>
  xmlns="http://www.openmath.org/OpenMathCDG"&gt;<span id="d2t14472"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupName</span>&gt;<span id="d2t14474"></span>mathml&lt;/<span style="font-weight: bold; color: blue">CDGroupName</span>&gt;<span id="d2t14475"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupVersion</span>&gt;<span id="d2t14477"></span> 2 &lt;/<span style="font-weight: bold; color: blue">CDGroupVersion</span>&gt;<span id="d2t14478"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupRevision</span>&gt;<span id="d2t14480"></span> 0 &lt;/<span style="font-weight: bold; color: blue">CDGroupRevision</span>&gt;<span id="d2t14481"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupURL</span>&gt;<span id="d2t14483"></span>http://www.openmath.org/cdfiles/cdgroups/mathml.cdg&lt;/<span style="font-weight: bold; color: blue">CDGroupURL</span>&gt;<span id="d2t14484"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupDescription</span>&gt;<span id="d2t14486"></span> MathML compatibility CD Group &lt;/<span style="font-weight: bold; color: blue">CDGroupDescription</span>&gt;<span id="d2t14487"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14490"></span>Algebra&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14491"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14493"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14495"></span>alg1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14496"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14498"></span>http://www.openmath.org/cd/alg1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14499"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14500"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14502"></span>Arithmetic&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14503"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14505"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14507"></span>arith1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14508"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14510"></span>http://www.openmath.org/cd/arith1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14511"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14512"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14514"></span>Constructor for Floating Point Numbers&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14515"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14517"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14519"></span>bigfloat1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14520"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14522"></span>http://www.openmath.org/cd/bigfloat1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14523"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14524"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14527"></span>Calculus&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14528"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14530"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14532"></span>calculus1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14533"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14535"></span>http://www.openmath.org/cd/calculus1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14536"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14537"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14539"></span>Operations on and constructors for complex numbers&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14540"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14542"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14544"></span>complex1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14545"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14547"></span>http://www.openmath.org/cd/complex1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14548"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14549"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14551"></span>Functions on functions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14552"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14554"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14556"></span>fns1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14557"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14559"></span>http://www.openmath.org/cd/fns1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14560"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14561"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14564"></span>Integer arithmetic&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14565"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14567"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14569"></span>integer1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14570"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14572"></span>http://www.openmath.org/cd/integer1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14573"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14574"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14576"></span>Intervals&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14577"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14579"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14581"></span>interval1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14582"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14584"></span>http://www.openmath.org/cd/interval1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14585"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14586"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14588"></span>Linear Algebra - vector &amp;amp; matrix constructors, those symbols which are independant of orientation, but in MathML&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14589"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14591"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14593"></span>linalg1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14594"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14596"></span>http://www.openmath.org/cd/linalg1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14597"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14598"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14601"></span>Linear Algebra - vector &amp;amp; matrix constructors, those symbols which are dependant of orientation, and in MathML&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14602"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14604"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14606"></span>linalg2&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14607"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14609"></span>http://www.openmath.org/cd/linalg2.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14610"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14611"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14613"></span>Limits of unary functions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14614"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14616"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14618"></span>limit1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14619"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14621"></span>http://www.openmath.org/cd/limit1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14622"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14623"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14625"></span>List constructors&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14626"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14628"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14630"></span>list1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14631"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14633"></span>http://www.openmath.org/cd/list1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14634"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14635"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14638"></span>Basic logical operators&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14639"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14641"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14643"></span>logic1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14644"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14646"></span>http://www.openmath.org/cd/logic1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14647"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14648"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14650"></span>
-MathML Numerical Types
-&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14651"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14653"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14655"></span>mathmltypes&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14656"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14658"></span>http://www.openmath.org/cd/mathmltypes.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14659"></span>
-
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14660"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14662"></span>
-MathML attributes
-&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14663"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14665"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14667"></span>mathmlattr&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14668"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14670"></span>http://www.openmath.org/cd/mathmlattr.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14671"></span>
-
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14672"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14675"></span>
-MathML Keys
-&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14676"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14678"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14680"></span>mathmlkeys&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14681"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14683"></span>http://www.openmath.org/cd/mathmlkeys.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14684"></span>
-
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14685"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14687"></span>Minima and maxima&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14688"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14690"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14692"></span>minmax1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14693"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14695"></span>http://www.openmath.org/cd/minmax1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14696"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14697"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14699"></span>Multset-theoretic operators and constructors&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14700"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14702"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14704"></span>multiset1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14705"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14707"></span>http://www.openmath.org/cd/multiset1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14708"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14709"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14712"></span>Symbols for creating numbers, including some defined constants
-(which can be seen as nullary constructors)&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14713"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14715"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14717"></span>nums1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14718"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14720"></span>http://www.openmath.org/cd/nums1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14721"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14722"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14724"></span>Symbols for creating piecewise definitions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14725"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14727"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14729"></span>piece1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14730"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14732"></span>http://www.openmath.org/cd/piece1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14733"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14734"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14736"></span>The basic quantifiers forall and exists.&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14737"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14739"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14741"></span>quant1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14742"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14744"></span>http://www.openmath.org/cd/quant1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14745"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14746"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14749"></span>Common arithmetic relations&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14750"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14752"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14754"></span>relation1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14755"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14757"></span>http://www.openmath.org/cd/relation1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14758"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14759"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14761"></span>Number sets&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14762"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14764"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14766"></span>setname1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14767"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14769"></span>http://www.openmath.org/cd/setname1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14770"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14771"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14773"></span>Rounding&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14774"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14776"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14778"></span>rounding1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14779"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14781"></span>http://www.openmath.org/cd/rounding1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14782"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14783"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14786"></span>Set-theoretic operators and constructors&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14787"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14789"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14791"></span>set1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14792"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14794"></span>http://www.openmath.org/cd/set1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14795"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14796"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14798"></span>Basic data orientated statistical operators&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14799"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14801"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14803"></span>s_data1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14804"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14806"></span>http://www.openmath.org/cd/s_data1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14807"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14808"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14810"></span>Basic random variable orientated statistical operators&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14811"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14813"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14815"></span>s_dist1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14816"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14818"></span>http://www.openmath.org/cd/s_dist1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14819"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14820"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14823"></span>Basic transcendental functions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14824"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14826"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14828"></span>transc1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14829"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14831"></span>http://www.openmath.org/cd/transc1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14832"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14833"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14835"></span>Vector calculus functions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14836"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14838"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14840"></span>veccalc1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14841"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14843"></span>http://www.openmath.org/cd/veccalc1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14844"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14845"></span>
-&lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14847"></span>Alternative encoding symbols for compatibility with the MathML
-Semantic mapping constructs.&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14848"></span>
-&lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14850"></span>
-&lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14852"></span>altenc&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14853"></span>
-&lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14855"></span>http://www.openmath.org/cd/altenc.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14856"></span>
-&lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14857"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupName</span>&gt;<span id="d2t14474"></span>mathml&lt;/<span style="font-weight: bold; color: blue">CDGroupName</span>&gt;<span id="d2t14475"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupVersion</span>&gt;<span id="d2t14477"></span> 2 &lt;/<span style="font-weight: bold; color: blue">CDGroupVersion</span>&gt;<span id="d2t14478"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupRevision</span>&gt;<span id="d2t14480"></span> 1 &lt;/<span style="font-weight: bold; color: blue">CDGroupRevision</span>&gt;<span id="d2t14481"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupURL</span>&gt;<span id="d2t14483"></span>http://www.openmath.org/cdfiles/cdgroups/mathml.cdg&lt;/<span style="font-weight: bold; color: blue">CDGroupURL</span>&gt;<span id="d2t14484"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupDescription</span>&gt;<span id="d2t14486"></span>MathML compatibility CD Group &lt;/<span style="font-weight: bold; color: blue">CDGroupDescription</span>&gt;<span id="d2t14487"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14490"></span>Algebra&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14491"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14493"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14495"></span>alg1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14496"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14498"></span>http://www.openmath.org/cd/alg1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14499"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14500"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14502"></span>Arithmetic&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14503"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14505"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14507"></span>arith1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14508"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14510"></span>http://www.openmath.org/cd/arith1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14511"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14512"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14514"></span>Constructor for Floating Point Numbers&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14515"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14517"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14519"></span>bigfloat1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14520"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14522"></span>http://www.openmath.org/cd/bigfloat1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14523"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14524"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14527"></span>Calculus&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14528"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14530"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14532"></span>calculus1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14533"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14535"></span>http://www.openmath.org/cd/calculus1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14536"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14537"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14539"></span>Operations on and constructors for complex numbers&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14540"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14542"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14544"></span>complex1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14545"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14547"></span>http://www.openmath.org/cd/complex1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14548"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14549"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14551"></span>Functions on functions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14552"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14554"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14556"></span>fns1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14557"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14559"></span>http://www.openmath.org/cd/fns1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14560"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14561"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14564"></span>Integer arithmetic&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14565"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14567"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14569"></span>integer1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14570"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14572"></span>http://www.openmath.org/cd/integer1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14573"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14574"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14576"></span>Intervals&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14577"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14579"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14581"></span>interval1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14582"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14584"></span>http://www.openmath.org/cd/interval1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14585"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14586"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14588"></span>Linear Algebra - vector &amp;amp; matrix constructors, those symbols which are independant of orientation, but in MathML&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14589"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14591"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14593"></span>linalg1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14594"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14596"></span>http://www.openmath.org/cd/linalg1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14597"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14598"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14601"></span>Linear Algebra - vector &amp;amp; matrix constructors, those symbols which are dependant of orientation, and in MathML&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14602"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14604"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14606"></span>linalg2&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14607"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14609"></span>http://www.openmath.org/cd/linalg2.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14610"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14611"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14613"></span>Limits of unary functions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14614"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14616"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14618"></span>limit1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14619"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14621"></span>http://www.openmath.org/cd/limit1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14622"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14623"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14625"></span>List constructors&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14626"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14628"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14630"></span>list1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14631"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14633"></span>http://www.openmath.org/cd/list1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14634"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14635"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14638"></span>Basic logical operators&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14639"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14641"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14643"></span>logic1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14644"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14646"></span>http://www.openmath.org/cd/logic1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14647"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14648"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14650"></span>MathML Numerical Types&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14651"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14653"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14655"></span>mathmltypes&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14656"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14658"></span>http://www.openmath.org/cd/mathmltypes.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14659"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14660"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14662"></span>MathML attributes&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14663"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14665"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14667"></span>mathmlattr&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14668"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14670"></span>http://www.openmath.org/cd/mathmlattr.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14671"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14672"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14675"></span>MathML Keys&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14676"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14678"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14680"></span>mathmlkeys&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14681"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14683"></span>http://www.openmath.org/cd/mathmlkeys.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14684"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14685"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14687"></span>Minima and maxima&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14688"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14690"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14692"></span>minmax1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14693"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14695"></span>http://www.openmath.org/cd/minmax1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14696"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14697"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14699"></span>Multset-theoretic operators and constructors&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14700"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14702"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14704"></span>multiset1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14705"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14707"></span>http://www.openmath.org/cd/multiset1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14708"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14709"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14712"></span>Symbols for creating numbers, including some defined constants
+ (which can be seen as nullary constructors)&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14713"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14715"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14717"></span>nums1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14718"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14720"></span>http://www.openmath.org/cd/nums1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14721"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14722"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14724"></span>Symbols for creating piecewise definitions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14725"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14727"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14729"></span>piece1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14730"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14732"></span>http://www.openmath.org/cd/piece1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14733"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14734"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14736"></span>The basic quantifiers forall and exists.&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14737"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14739"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14741"></span>quant1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14742"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14744"></span>http://www.openmath.org/cd/quant1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14745"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14746"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14749"></span>Common arithmetic relations&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14750"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14752"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14754"></span>relation1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14755"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14757"></span>http://www.openmath.org/cd/relation1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14758"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14759"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14761"></span>Number sets&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14762"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14764"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14766"></span>setname1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14767"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14769"></span>http://www.openmath.org/cd/setname1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14770"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14771"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14773"></span>Rounding&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14774"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14776"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14778"></span>rounding1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14779"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14781"></span>http://www.openmath.org/cd/rounding1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14782"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14783"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14786"></span>Set-theoretic operators and constructors&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14787"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14789"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14791"></span>set1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14792"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14794"></span>http://www.openmath.org/cd/set1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14795"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14796"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14798"></span>Basic data orientated statistical operators&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14799"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14801"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14803"></span>s_data1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14804"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14806"></span>http://www.openmath.org/cd/s_data1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14807"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14808"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14810"></span>Basic random variable orientated statistical operators&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14811"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14813"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14815"></span>s_dist1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14816"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14818"></span>http://www.openmath.org/cd/s_dist1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14819"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14820"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14823"></span>Basic transcendental functions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14824"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14826"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14828"></span>transc1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14829"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14831"></span>http://www.openmath.org/cd/transc1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14832"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14833"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14835"></span>Vector calculus functions&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14836"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14838"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14840"></span>veccalc1&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14841"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14843"></span>http://www.openmath.org/cd/veccalc1.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14844"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14845"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14847"></span>Alternative encoding symbols for compatibility with the MathML
+ Semantic mapping constructs.&lt;/<span style="font-weight: bold; color: blue">CDComment</span>&gt;<span id="d2t14848"></span>
+ &lt;<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14850"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14852"></span>altenc&lt;/<span style="font-weight: bold; color: blue">CDName</span>&gt;<span id="d2t14853"></span>
+  &lt;<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14855"></span>http://www.openmath.org/cd/altenc.ocd&lt;/<span style="font-weight: bold; color: blue">CDURL</span>&gt;<span id="d2t14856"></span>
+ &lt;/<span style="font-weight: bold; color: blue">CDGroupMember</span>&gt;<span id="d2t14857"></span>
 &lt;/<span style="font-weight: bold; color: blue">CDGroup</span>&gt;</pre></div>
             
             
@@ -11543,7 +11539,8 @@ The application does not know about the CD specfun1
 
 &lt;!-- Elements which can appear inside an OpenMath object --&gt;
 
-&lt;!ENTITY % omel "OMS|OMV|OMI|OMB|OMSTR|OMF|OMA|OMBIND|OME|OMATTR|OMR"&gt;
+&lt;!ENTITY % omel "OMS|OMV|OMI|OMB|OMSTR|OMF
+                 |OMA|OMBIND|OME|OMATTR|OMR"&gt;
 
 &lt;!-- OpenMath object constructor --&gt;
 
@@ -11923,23 +11920,25 @@ Any elements not in the om namespace
                
                <li>
                   <p>
-                     	  The phrase "in little endian format" was unhelpfully included in the description of the binary integer encoding, which
-                     contradicted the later "network byte order". Now removed.
+                     	  The phrase "in little endian format" was unhelpfully included in the description
+                     of the binary integer encoding, which contradicted the later "network byte order".
+                     Now removed.
                      
                   </p>
                </li>
                
                <li>
                   <p>
-                     		Section 3.1.2 described the OpenMath XML value of <small><code>hex</code></small> as "from lowest to highest bits using a  least significant byte ordering". This wording was copied from section 4.2.1.2 of
-                     <a href="#MathML_2014">[19]</a>, but is close to meaningless.  Replaced by the current "in network byte order".
+                     		Section 3.1.2 described the OpenMath XML value of <small><code>hex</code></small> as "from lowest to highest bits using a  least significant byte ordering". This wording
+                     was copied from section 4.2.1.2 of <a href="#MathML_2014">[19]</a>, but is close to meaningless.  Replaced by the current "in network byte order".
                      
                   </p>
                </li>
                
                <li>
                   <p>
-                     		The example of binary encoding of floats in 3.2.2 "For example, 0.1 is encoded as <small><code>0x03 0x000000000000f03f</code></small>" was wrong, and has been replaced by the same example as the XML encoding.
+                     		The example of binary encoding of floats in 3.2.2 "For example, 0.1 is encoded as
+                     <small><code>0x03 0x000000000000f03f</code></small>" was wrong, and has been replaced by the same example as the XML encoding.
                      
                   </p>
                </li>
@@ -11951,8 +11950,8 @@ Any elements not in the om namespace
                </li>
                
                <li>
-                  <p>The "Note on names", which used to refer to Unicode 2.0, has been upgraded to allow for XML 1.0 5th edition and more specifically
-                     erratum NE17 in <a href="#erratum_NE17">[16]</a>, so that the current version of Unicode is incorporated.
+                  <p>The "Note on names", which used to refer to Unicode 2.0, has been upgraded to allow
+                     for XML 1.0 5th edition and more specifically erratum NE17 in <a href="#erratum_NE17">[16]</a>, so that the current version of Unicode is incorporated.
                      
                   </p>
                </li>
@@ -11974,7 +11973,8 @@ Any elements not in the om namespace
          <p id="SCSCP13"><b>[1]</b>  
             S. Freundt, P. Horn, A. Konovalov, S. Linton, D. Roozemond
             <i>Symbolic Computation Software Composability Protocol SCSCP Specification 1.3</i>, March 22, 2009.<br /><a href="https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf">https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf</a></p>
-         <p id="rfc2045"><b>[2]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message Bodies</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</a></p>
+         <p id="rfc2045"><b>[2]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message
+               Bodies</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</a></p>
          <p id="rfc2046"><b>[3]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part Two: Media
                Types</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2046.txt">http://www.ietf.org/rfc/rfc2046.txt</a></p>
          <p id="OMD132b"><b>[4]</b>  Olga Caprotti and Arjeh M. Cohen <i>A Type System for <i>OpenMath</i></i> 1.3.2b <i>OpenMath</i> Esprit Consortium, February 1999.<br /><a href="http://www.openmath.org/standard/ecc.pdf">http://www.openmath.org/standard/ecc.pdf</a></p>
@@ -11984,7 +11984,8 @@ Any elements not in the om namespace
          <p id="RELAX"><b>[8]</b>  OASIS Committee Specification <i>RELAX NG Specification</i>, December 2001.<br /><a href="http://www.oasis-open.org/committees/relax-ng/spec-20011203.html">http://www.oasis-open.org/committees/relax-ng/spec-20011203.html</a></p>
          <p id="OM_2.0r0"><b>[9]</b>  OpenMath Consortium <i><i>OpenMath</i> Version 2.0</i>, June 2004.<br /><a href="http://www.openmath.org/standard/om20-2004-06-30/">http://www.openmath.org/standard/om20-2004-06-30/</a></p>
          <p id="OM_primer"><b>[10]</b>  OpenMath Consortium <i><i>OpenMath</i> Primer</i>, June 2004.<br /><a href="http://www.openmath.org/standard/primer/">http://www.openmath.org/standard/primer/</a></p>
-         <p id="iso9660"><b>[11]</b>  Technical committee / subcommittee: JTC 1 <i>ISO 9660:1988 Information processing – Volume and File Structure of CDROM for Information Interchange</i>, 1988.<br /><a href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505">http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505</a></p>
+         <p id="iso9660"><b>[11]</b>  Technical committee / subcommittee: JTC 1 <i>ISO 9660:1988 Information processing – Volume and File Structure of CDROM for Information
+               Interchange</i>, 1988.<br /><a href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505">http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505</a></p>
          <p id="UNICODE"><b>[12]</b>  Unicode Consortium <i>The Unicode Standard: Version <span>4.0.0</span></i> Addison-Wesley, 2003.<br /><a href="http://www.unicode.org/versions/Unicode4.0.0">Online edition available from http://www.unicode.org/versions/Unicode4.0.0</a></p>
          <p id="XSD"><b>[13]</b>  World Wide Web Consortium <i>XML Schema Part 1: Structures &amp; Part 2: Datatypes</i>, May 2001.<br /><a href="http://www.w3.org/TR/xmlschema-1/">http://www.w3.org/TR/xmlschema-1/</a><br /><a href="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</a></p>
          <p id="xmlns"><b>[14]</b>  World Wide Web Consortium <i>Namespaces in XML</i>, January 1999.<br /><a href="http://www.w3.org/TR/REC-xml-names/">http://www.w3.org/TR/REC-xml-names/</a></p>
