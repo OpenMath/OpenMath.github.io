@@ -7,6 +7,7 @@ title:  Validationg OpenMath XML
 
 OpenMath defines several XML formats, in particular the formats for for OpenMath Objects,
 Content Dictionaries, Content Dictionary Groups, and Signature files.
+OpenMath may also be encoded using Content MathML syntax.
 
 ## XML Grammar Definitions
 
@@ -46,7 +47,7 @@ names are not duplicated in CD files.
 ### Accessibility
 All error messages are shown in red, inlined into an HTML presentation of the supplied XML file.
 The colouring is always specified via the CSS class `err` so other presentatins may be used, also the 
-error message is never marked just by colour, the error message text is always added in parenthesis after teh 
+error message is never marked just by colour, the error message text is always added in parenthesis after the 
 invalid expression such as `(Unexpected attribute ...)`
 
 ### Browser compatibility
