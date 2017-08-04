@@ -1217,11 +1217,13 @@ function vMMLmath(e) {
 	    break;
 	default:
 	    if(! atts[j].name.startsWith("xmlns:")) {
-		err+=" (!mUnexpected attribute: " + atts[j].localName +")";
+		err+=" (Unexpected attribute: " + atts[j].localName +")";
 	    }
 	}
     }
     vOut(err,"<b>Strict Content MathML</b>");
+    err="";
+    err+=vsNoText(e);
     var els=vChildren(e);
     for(var j=0;j<els.length;j++){
 	var c = els[j];
@@ -1370,6 +1372,7 @@ function vsMMLcsymbol(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err += vTextOnly(e);
     n=e.textContent;
     err+=(n.match(omNameRE)?"":" (Invalid name)");
     if (cdc==0) err += " (Missing attribute: cd)";
@@ -1396,6 +1399,7 @@ function vsMMLcn(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err += vTextOnly(e);
     n=e.textContent;
     return vsSpanOut(err,n);
 }
@@ -1415,6 +1419,7 @@ function vsMMLci(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
+    err += vTextOnly(e);
     n=e.textContent;
     return vsSpanOut(err,"<i>"+n+"</i>");
 }
@@ -1509,9 +1514,7 @@ function vsMMLcbytes(e) {
 	    err+=" (Unexpected attribute: " + atts[j].localName +")";
 	}
     }
-    if (e.childNodes.length != 1) {
-	err += " (Unexpected content in cbytes)";
-    }
+    err += vTextOnly(e);
     if(! e.textContent.match(/^[ \t\r\na-zA-Z0-9\+/]*=*\s*$/)) {
 	err += " (Invalid base64)";
     }
