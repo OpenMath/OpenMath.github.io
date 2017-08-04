@@ -1221,7 +1221,7 @@ function vMMLmath(e) {
 	    }
 	}
     }
-    vOut(err,"<b>Strict Content MathML</b> (validation only partially implemented)");
+    vOut(err,"<b>Strict Content MathML</b>");
     var els=vChildren(e);
     for(var j=0;j<els.length;j++){
 	var c = els[j];
@@ -1324,6 +1324,16 @@ function vsMMLel (e) {
 function vsMMLapply(e) {
     var u="";
     var err="";
+    var atts=e.attributes;
+    for(var j=0;j<atts.length;j++) {
+	switch(atts[j].localName) {
+	case "id":
+	    break;
+	default:
+	    err+=" (Unexpected attribute: " + atts[j].localName +")";
+	}
+    }
+    err+=vsNoText(e);
     var els=vChildren(e);
     if(els.length>0) {
 	u+=vsMMLel(els[0]);
