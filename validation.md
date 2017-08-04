@@ -1,9 +1,8 @@
 ---
 layout: page
-title:  Validationg OpenMath XML
+title:  Validating OpenMath XML
 ---
 
-# Validation of OpenMath Files.
 
 OpenMath defines several XML formats, in particular the formats for for OpenMath Objects,
 Content Dictionaries, Content Dictionary Groups, and Signature files.
