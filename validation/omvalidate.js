@@ -20,7 +20,7 @@ function dodrop(event) {
 // end of file drop code
 
 // style for prefix math display
-var ommathindent=true;
+var ommathindent=false;
 
 
 function omindent (c) {
