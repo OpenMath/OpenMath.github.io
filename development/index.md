@@ -4,7 +4,7 @@ title: Development of OpenMath
 ---
 
 Various parts of OpenMath are currently under development by members of the
-[OpenMath Society](./society/). Most of the development is organized publicakly via our
+[OpenMath Society](./society/). Most of the development is organized publicly via our
 [GitHub Group](https://github.com/OpenMath), where some notable repositories are:
 
 * [OpenMath Standard](http://github.com/OpenMath/OMSTD)
@@ -26,8 +26,8 @@ to collect [extensions proposals](http://github.com/OpenMath/OM3).
  
 The current set of projects is
 
-* referencing and indexing extenal CD sources
-* developing new langauge integrating
+* referencing and indexing external CD sources
+* developing new language integration
 * redoing the OpenMath Software page
 
 
