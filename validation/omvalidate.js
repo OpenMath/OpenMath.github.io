@@ -900,7 +900,7 @@ function vsOMS(e) {
     if (nc==0) err += " (Missing attribute: name)";
     if (cdc==0) err += " (Missing attribute: cd)";
     if(err=="") {
-	return ("<a href='../cd/" + cd +"'>" + n + "</a>");
+	return ("<a href='../cd/" + cd + '#' + n + "'>" + n + "</a>");
     } else {
 	return vsSpanOut(err,n);
     }
@@ -1343,7 +1343,7 @@ function vsMMLcsymbol(e) {
     err+=(n.match(omNameRE)?"":" (Invalid name)");
     if (cdc==0) err += " (Missing attribute: cd)";
     if(err=="") {
-	return ("<a href='../cd/" + cd +"'>" + n + "</a>");
+	return ("<a href='../cd/" + cd + '#' + n + "'>" + n + "</a>");
     } else {
 	return vsSpanOut(err,n);
     }
@@ -1556,7 +1556,7 @@ function vsMMLshare(e) {
 	err += " (Unexpected content in share)";
     }
     if(err=="") {
-	return ("<a href='" + h +"'>ref</a>");
+	return ("<a href='" + h + "'>ref</a>");
     } else {
 	return vsSpanOut(err,"");
     }
