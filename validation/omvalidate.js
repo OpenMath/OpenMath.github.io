@@ -1595,7 +1595,7 @@ function vsMMLcs(e) {
 	}
     }
     if (e.childNodes.length != 1) {
-	err += " (Unexpected content in OMSTR)";
+	err += " (Unexpected content in cs)";
     }
     return vsSpanOut(err, "<tt>\""+e.innerHTML + "\"</tt>");
 }
