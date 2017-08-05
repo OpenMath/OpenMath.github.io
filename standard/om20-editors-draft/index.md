@@ -54,3 +54,6 @@ Generated from the source repository [OMSTD](https://github.com/OpenMath/OMSTD)
 <td> <a href="omcdgroup2.dtd">omcdgroup2.dtd</a> </td>
 </tr>
 </table>
+
+## Online validation tool
+A JavaScript [validation tool is also available](/validation#web-based-checking-tool) as an alternative to using the Schema.
