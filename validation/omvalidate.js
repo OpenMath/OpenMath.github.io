@@ -19,6 +19,19 @@ function dodrop(event) {
 
 // end of file drop code
 
+// style for prefix math display
+var ommathindent=true;
+
+
+function omindent (c) {
+    u='<br>';
+    for(var p=c;p.nodeType==1;p=p.parentNode){
+	u+='\u00a0';
+    }
+    return u;
+}
+
+
 // namespaces
 var cdns="http://www.openmath.org/OpenMathCD";
 var cdsns="http://www.openmath.org/OpenMathCDS";
@@ -142,6 +155,9 @@ function vroot (o) {
 	    + "<p class='err'`c>multiple root elements</p>";
     }
 }
+
+
+
 
 function vCDGroup(e) {
     err="";
@@ -750,6 +766,7 @@ function vsOMA(e) {
     var els=vChildren(e);
     for(var j=0;j<els.length;j++){
 	var c = els[j];
+	if (j>0 && ommathindent) u+=omindent(c);
 	u+=vsOMel(c);
 	if(j==0){
 	    u+= "(";
@@ -925,9 +942,11 @@ function vsOMBIND(e) {
     if(els.length==3) {
 	u +="(";
 	u+=vsOMel(els[0]);
-	u+="[";
+	if (ommathindent) u+=omindent(els[0]);
+	u+=" [";
 	u+=vsOMBVAR(els[1]);
 	u+="] . ";
+	if (ommathindent) u+=omindent(els[2]);
 	u+=vsOMel(els[2]);
 	u+=")";
     } else {
@@ -1057,9 +1076,9 @@ function vsOMATTR(e,bvar) {
             } else {
 		u+=vsOMel(els[1]);
 	    }
-	    u+="[";
+	    u+="<sub>[";
 	    u+=vsOMATP(els[0]);
-	    u+="])";
+	    u+="]</sub>)";
 	} else {
 	    err += "(OMBIND should have OMATP child)";
 	}
@@ -1309,6 +1328,7 @@ function vsMMLapply(e) {
 	    for(var j=1;j<els.length;j++){
 		u+=(j==1?"(":", ");
 		var c = els[j];
+		if (ommathindent) u+=omindent(c);
 		u+=vsMMLel(c);
 	    }
 	    u+=")";
@@ -1516,6 +1536,7 @@ function vsMMLbind(e) {
 	    }
 	}
 	u+="] . ";
+	if (ommathindent) u+=omindent(c);
 	u+=vsMMLel(els[els.length-1]);
 	u+=")";
     } else {
