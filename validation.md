@@ -45,13 +45,16 @@ names are not duplicated in CD files.
 ## Notes on the Web based validator
 ### Accessibility
 All error messages are shown in red, inlined into an HTML presentation of the supplied XML file.
-The colouring is always specified via the CSS class `err` so other presentatins may be used, also the 
-error message is never marked just by colour, the error message text is always added in parenthesis after the 
+The colouring is always specified via the CSS class `err` so other presentations may be used.
+Also the error message is never marked just by colour, the error message text is always added in parenthesis after the 
 invalid expression such as `(Unexpected attribute ...)`
 
 ### Browser compatibility
 Most reasonably current browsers should support the validation tool, it has been tested in Firefox,
-Chrome, Internet Explorer and Edge.
+Chrome, Internet Explorer and Edge. Note that the XML is not uploaded to the sever, all teh validation is implemented 
+within the browser, so some details are browswer-specific, notably the error messages for files that are not well formed
+depend on the XML parser being used by the browser.
+
 
 ### Namespace support
 The validator should support files using prefixed or unprefixed namespaces, so 
