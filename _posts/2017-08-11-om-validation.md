@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New online Validatiuon tool for OpenMath files and CDs
+title: New online validation tool for OpenMath files and CDs
 ---
 
 An experimental online validator (using custom JavaScript, not the normative schema)
