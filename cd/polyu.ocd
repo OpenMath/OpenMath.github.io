@@ -32,21 +32,18 @@
      society at http://www.openmath.org.
 </CDComment>
 
-   <CDName> polyu </CDName> 
+   <CDName> polyu </CDName>
+<CDBase>http://www.openmath.org/cd</CDBase> 
    <CDURL> http://www.openmath.org/cd/polyu.ocd </CDURL>
    <CDReviewDate>2017-12-31</CDReviewDate> 
-   <CDDate> 2003-08-06 </CDDate> 
+   <CDDate>2004-03-30</CDDate> 
    <CDStatus> experimental </CDStatus>
-   <CDVersion> 1 </CDVersion>
+   <CDVersion>2</CDVersion>
    <CDRevision>1</CDRevision>
 <CDComment>
-  Author: James Davenport
+  Author: OpenMath Consortium
+  SourceURL: https://github.com/OpenMath/CDs
 </CDComment>
-<CDUses>
-  <CDName>polyr</CDName>
-  <CDName>relation1</CDName>
-  <CDName>setname1</CDName>
-</CDUses>
    <Description>
      This CD contains operators to deal with polynomials and more precisely 
      Univariate Polynomials.
@@ -57,8 +54,7 @@
      being polynomials in the rest of the variables, and therefore univariates
      are a special case. This is provided as a separate CD to allow for 
      univariate-only operations (e.g. composition) and for systems that only
-     understand univariates, e.g. NTL. These polynomials are also used to 
-     express minimal polynomials for algebraic extensions (see setname2).
+     understand univariates, e.g. NTL.
    </Description>
 
 <CDComment>
@@ -80,6 +76,7 @@ Based on recursive polynomials 2003-08-06 JHD
 
     <CDDefinition>
        <Name> term </Name>
+<Role>application</Role>
        <Description>
           A constructor for monomials, that is products of powers and
           elements of the base ring.
@@ -91,6 +88,7 @@ Based on recursive polynomials 2003-08-06 JHD
 
     <CDDefinition>
        <Name> poly_u_rep </Name>
+<Role>application</Role>
        <Description>
          A constructor for the representation of polynomials.
          The first argument is the polynomial variable, the rest are
@@ -100,7 +98,7 @@ Based on recursive polynomials 2003-08-06 JHD
 
        The polynomial x^6 + 3*x^5 + 2 may be encoded as:
 
-         <OMOBJ xmlns="http://www.openmath.org/OpenMath">
+         <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
            <OMA>
              <OMS name="poly_u_rep" cd="polyu"/>
              <OMV name="x"/>
@@ -126,6 +124,7 @@ Based on recursive polynomials 2003-08-06 JHD
 
     <CDDefinition>
        <Name> polynomial_u </Name>
+<Role>application</Role>
        <Description>
          The constructor of Recursive Polynomials. The first argument
          is the polynomial ring containing the polynomial and the second
@@ -137,7 +136,7 @@ Based on recursive polynomials 2003-08-06 JHD
          polynomial ring with the integers as the coefficient ring and 
          variable x may be encoded as:
 
-         <OMOBJ xmlns="http://www.openmath.org/OpenMath">
+         <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
            <OMA>
              <OMS name="polynomial_u" cd="polyu"/>
              <OMA>
@@ -176,6 +175,7 @@ Based on recursive polynomials 2003-08-06 JHD
 
     <CDDefinition>
        <Name> polynomial_ring_u </Name>
+<Role>application</Role>
        <Description> 
          The constructor of a univariate polynomial ring. The first argument
          is a ring (the ring of the coefficients), the second is the variable.
@@ -185,7 +185,7 @@ Based on recursive polynomials 2003-08-06 JHD
 	 constructed using isomorphic, but different, constructors).
        </CMP>
        <FMP>
-         <OMOBJ xmlns="http://www.openmath.org/OpenMath">
+         <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
            <OMA>
              <OMS name="eq" cd="relation1"/>
              <OMA>
@@ -202,7 +202,7 @@ Based on recursive polynomials 2003-08-06 JHD
          </OMOBJ>
        </FMP>
        <Example>
-         <OMOBJ xmlns="http://www.openmath.org/OpenMath">
+         <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
            <OMA>
              <OMS name="polynomial_ring_u" cd="polyu"/>
              <OMS name="Z" cd="setname1"/>

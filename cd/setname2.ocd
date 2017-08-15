@@ -1,4 +1,5 @@
 <CD xmlns="http://www.openmath.org/OpenMathCD">
+
 <CDComment>
 
      This document is distributed in the hope that it will be useful, 
@@ -33,26 +34,17 @@
 </CDComment>
 
 <CDName> setname2 </CDName>
+<CDBase>http://www.openmath.org/cd</CDBase>
 <CDURL> http://www.openmath.org/cd/setname2.ocd </CDURL>
 <CDReviewDate>2017-12-31</CDReviewDate>
-<CDDate> 2000-02-02 </CDDate>
-<CDVersion> 3 </CDVersion>
+<CDDate>2004-03-30</CDDate>
+<CDVersion>3</CDVersion>
 <CDRevision>1</CDRevision>
 <CDComment>
-  Author: James Davenport
+  Author: OpenMath Consortium
+  SourceURL: https://github.com/OpenMath/CDs
 </CDComment>
 <CDStatus> experimental </CDStatus>
-<CDUses>
-  <CDName>alg1</CDName>
-  <CDName>arith1</CDName>
-  <CDName>logic1</CDName>
-  <CDName>polyu</CDName>
-  <CDName>quant1</CDName>
-  <CDName>relation1</CDName>
-  <CDName>setname1</CDName>
-  <CDName>set1</CDName>
-  <CDName>sts</CDName>
-</CDUses>
 <Description>
     This CD defines some common sets of mathematics.
 </Description>
@@ -60,11 +52,11 @@
 Written by J.H. Davenport on 1999-04-18.
 Revised to add Zm, GFp, GFpn on 1999-11-09.
 Revised to add QuotientField and A on 1999-11-19.
-AlgebraicExtension added 2003-09-16
 </CDComment>
 
 <CDDefinition>
 <Name> Boolean </Name>
+<Role>constant</Role>
 <Description> 
 This symbol represents the set of Booleans. That is the truth values,
 true and false.
@@ -75,7 +67,7 @@ nb not= b implies nb = not b)
 </CMP>
 
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMBIND>
     <OMS cd="quant1" name="forall"/>
     <OMBVAR>
@@ -123,6 +115,7 @@ nb not= b implies nb = not b)
 
 <CDDefinition>
 <Name> A </Name>
+<Role>constant</Role>
 <Description> 
 This symbol represents the set of algebraic numbers.
 </Description>
@@ -130,7 +123,7 @@ This symbol represents the set of algebraic numbers.
 <CMP> The algebraic numbers are a proper subset of the reals </CMP>
 
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="set1" name="prsubset"/>
     <OMS cd="setname2" name="A"/>
@@ -142,7 +135,7 @@ This symbol represents the set of algebraic numbers.
 <CMP> The rationals are a proper subset of the algebraic numbers </CMP>
 
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="set1" name="prsubset"/>
     <OMS cd="setname1" name="Q"/>
@@ -154,6 +147,7 @@ This symbol represents the set of algebraic numbers.
 
 <CDDefinition>
 <Name> Zm </Name>
+<Role>application</Role>
 <Description> 
 This symbol represents the set of integers modulo m, where m is not necessarily
 a prime. It takes one argument, the integer m.
@@ -165,7 +159,7 @@ there exists an n such that n is an integer and n &lt;= m  and x^n = x
 </CMP>
 
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMBIND>
     <OMS cd="quant1" name="forall"/>
     <OMBVAR>
@@ -216,7 +210,7 @@ there exists an n such that n is an integer and n &lt;= m  and x^n = x
 
 <Example>
 The integers mod 12:
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="Zm" cd="setname2"/>
     <OMI> 12 </OMI>
@@ -226,7 +220,7 @@ The integers mod 12:
 
 <Example>
 The integers mod m:
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="Zm" cd="setname2"/>
     <OMV name="m"/>
@@ -236,7 +230,7 @@ The integers mod m:
 
 <Example>
 4*5=8 in Z mod 12
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="eq" cd="relation1"/>
     <OMA>
@@ -279,13 +273,14 @@ The integers mod m:
 
 <CDDefinition>
 <Name> GFp </Name>
+<Role>application</Role>
 <Description> 
 This symbol represents the finite field of integers modulo p, where p is a 
 prime.
 </Description>
 <CMP> x^p = x mod p </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="eq" cd="relation1"/>
     <OMA>
@@ -319,11 +314,12 @@ prime.
 
 <CDDefinition>
 <Name> GFpn </Name>
+<Role>application</Role>
 <Description> 
 This symbol represents the finite field with p^n elements, where p is a prime.
 </Description>
 <Example>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="eq" cd="relation1"/>
     <OMA>
@@ -342,13 +338,14 @@ This symbol represents the finite field with p^n elements, where p is a prime.
 
 <CDDefinition>
 <Name> QuotientField </Name>
+<Role>application</Role>
 <Description> 
 This symbol represents the quotient field of any integral domain.
 </Description>
 
 <Example> The rationals equals QuotientField(Integers)
 
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
 <OMA>
   <OMS cd="relation1" name="eq"/>
   <OMS cd="setname1" name="Q"/>
@@ -362,7 +359,7 @@ This symbol represents the quotient field of any integral domain.
 
 <CMP> R is a field iff QuotientField(R)=R </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="equivalent" cd="logic1"/>
     <OMA>
@@ -387,44 +384,8 @@ This symbol represents the quotient field of any integral domain.
 </CDDefinition>
 
 <CDDefinition>
-<Name> AlgebraicExtension </Name>
-<Description> 
-This symbol represents an algebraic extension of any integral domain.
-</Description>
-
-<Example> The complex numbers are the extension of the reals by a root
-          of x^2+1
-
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
-<OMA>
-  <OMS cd="relation1" name="eq"/>
-  <OMS cd="setname1" name="C"/>
-  <OMA>
-    <OMS cd="setname2" name="AlgebraicExtension"/>
-    <OMS cd="setname1" name="R"/>
-    <OMA>
-      <OMS cd="polyu" name="poly_u_rep"/>
-      <OMV name="x"/>
-      <OMA>
-        <OMS cd="polyu" name="term"/> 
-	<OMI> 2 </OMI>
-	<OMI> 1 </OMI>
-      </OMA>
-      <OMA>
-        <OMS cd="polyu" name="term"/> 
-	<OMI> 0 </OMI>
-	<OMI> 1 </OMI>
-      </OMA>
-    </OMA>
-  </OMA>
-</OMA>
-</OMOBJ>
-</Example>
-
-</CDDefinition>
-
-<CDDefinition>
 <Name> H </Name>
+<Role>constant</Role>
 <Description> 
 This  symbol represents the set of quaternions.
 </Description>
@@ -438,7 +399,7 @@ r_3 reals s.t.
 </CMP>
 
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="logic1" name="and"/>
     <OMA>
@@ -620,7 +581,7 @@ r_3 reals s.t.
 
 <Example>
 There exists a,b in the quaternions s.t. a*b neq b*a
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMBIND>
     <OMS cd="quant1" name="exists"/>
     <OMBVAR>

@@ -3,12 +3,12 @@
    <OMA>
       <OMS cd="meta" name="CD"/>
       <OMA>
-         <OMS cd="meta" name="CDComment"/>
-         <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
-      </OMA>
-      <OMA>
          <OMS cd="meta" name="CDName"/>
          <OMSTR>permutation1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDURL"/>
@@ -16,11 +16,11 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2002-10-21</OMSTR>
+         <OMSTR>2004-06-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDReviewDate"/>
-         <OMSTR>2017-12-31</OMSTR>
+         <OMSTR>2006-06-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDStatus"/>
@@ -32,58 +32,266 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDRevision"/>
-         <OMSTR>5</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: Arjeh Cohen</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDUses"/>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>arith1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>fns1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>fns2</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>list1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>logic1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>multiset1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>nums1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>quant1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>relation1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>set1</OMSTR>
-         </OMA>
+         <OMSTR>7</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="Description"/>
-         <OMSTR>This CD defines permutations with finite support. In order to make available permutations of arbitrary objects, permutations are defined as sets of cycles. The set on which the permutation acts is not specified. To this end, cycles of length 0 or 1 do not occur in permutations. When viewed as the set of cycles which are its arguments, the symbol permutation has a normal form constructor.</OMSTR>
+         <OMSTR>This CD defines permutations with finite support. In order to make available permutations of arbitrary objects, permutations are defined as sets of cycles. The set on which the permutation acts is not specified. To this end, cycles of length 0 or 1 do not occur in permutations. When viewed as the set of cycles which are its arguments, the symbol permutation has a normal form constructor. All symbols defined in this CD may appear as the head of an application. For such symbols, we distinguish between functions and constructors. A function is thought of as a mathematical function, which can be evaluated on its arguments, a constructor uses its arguments as fields of a structure. (In principle, the arguments of a constructor should be accessible; we have not introduced separate symbols to enable access because the `destruction' of the mathematical object can take place in phrasebooks.) The constructors in this CD are cycle, permutation, list_perm, and endomap. The operations inverse, left_compose, right_compose are also defined in this CD, although the most general purpose version already occurs in fns1, fns2. The reasons is two-fold: first, strictly speaking, our permutations are not maps, and so these notions havfe to redefined. A more practical reason is that with dynamical loading, it is easier to encode and decode a new symbol in the CD at hand rather than a symbol in a CD that is previously dealt with. Revision 0.1: fix added; error in support example corrected. Revision 0.2: added endomap. Help of Henny Wilbrink.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>endomap</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is an n-ary constructor. Its arguments should be positive integers. When applied to arguments a_1,...,a_n, the resulting value is the map sending i to a_i for i=1,...,n.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression represents the map on on {1,2,3,4,5} sending 1, 2, and 5 to 2, and 3 and 4 to 1.</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="endomap"/>
+               <OMI>2</OMI>
+               <OMI>2</OMI>
+               <OMI>1</OMI>
+               <OMI>1</OMI>
+               <OMI>2</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to true.</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="endomap"/>
+                     <OMI> 5 </OMI>
+                     <OMI> 1 </OMI>
+                     <OMI> 3 </OMI>
+                     <OMI> 2 </OMI>
+                     <OMI> 4 </OMI>
+                  </OMA>
+                  <OMI> 4 </OMI>
+               </OMA>
+               <OMI> 2 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>list_perm</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is an n-ary constructor. Its arguments should be distinct positive integers in the interval [1,n]. When applied to arguments a_1,...,a_n, the resulting value is the permutation mapping i to a_i for i=1,...,n.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following two expressions represent the same permutation of {1,2,3,4,5}.</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="list_perm"/>
+               <OMI>2</OMI>
+               <OMI>3</OMI>
+               <OMI>1</OMI>
+               <OMI>5</OMI>
+               <OMI>4</OMI>
+            </OMA>
+            <OMA>
+               <OMS cd="permutation1" name="permutation"/>
+               <OMA>
+                  <OMS cd="permutation1" name="cycle"/>
+                  <OMI>1</OMI>
+                  <OMI>2</OMI>
+                  <OMI>3</OMI>
+               </OMA>
+               <OMA>
+                  <OMS cd="permutation1" name="cycle"/>
+                  <OMI>4</OMI>
+                  <OMI>5</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to true.</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="list_perm"/>
+                     <OMI> 5 </OMI>
+                     <OMI> 1 </OMI>
+                     <OMI> 3 </OMI>
+                     <OMI> 2 </OMI>
+                     <OMI> 4 </OMI>
+                  </OMA>
+                  <OMI> 4 </OMI>
+               </OMA>
+               <OMI> 2 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_endomap</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is an n-ary function. Its arguments should be positive integers. When applied to arguments a_1,...,a_n, the resulting value is true if a_i is at most n for all i, otherwise it is false.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to true</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="is_endomap"/>
+               <OMI>1</OMI>
+               <OMI>3</OMI>
+               <OMI>1</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to false</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="is_endomap"/>
+               <OMI>2</OMI>
+               <OMI>3</OMI>
+               <OMI>5</OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_list_perm</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is an n-ary function. Its arguments should be positive integers. When applied to arguments a_1,...,a_n, the resulting value is true if a_i is at most n for all i and all a_i are distinct, otherwise it is false.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to false</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="is_list_perm"/>
+               <OMI>1</OMI>
+               <OMI>3</OMI>
+               <OMI>1</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to false</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="is_list_perm"/>
+               <OMI>2</OMI>
+               <OMI>3</OMI>
+               <OMI>5</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to true</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="is_list_perm"/>
+               <OMI>2</OMI>
+               <OMI>3</OMI>
+               <OMI>1</OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>domain</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a function with one argument which is a endomap. When applied to a endomap whose arguments are a_1,...,a_n, it represents the set {1,...,n}.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression represents the set {1,2,3,4,5}.</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="domain"/>
+               <OMA>
+                  <OMS cd="permutation1" name="endomap"/>
+                  <OMI>4</OMI>
+                  <OMI>3</OMI>
+                  <OMI>5</OMI>
+                  <OMI>5</OMI>
+                  <OMI>5</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_bijective</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol has one argument which should be a endomap p. It returns true if {a_1,...,a_n}={1,...,n} where a_1,...a_n are the arguments of p and false otherwise.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to true.</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="is_bijective"/>
+               <OMA>
+                  <OMS cd="permutation1" name="endomap"/>
+                  <OMI>1</OMI>
+                  <OMI>3</OMI>
+                  <OMI>2</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following expression evaluates to false.</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="is_bijective"/>
+               <OMA>
+                  <OMS cd="permutation1" name="endomap"/>
+                  <OMI>2</OMI>
+                  <OMI>3</OMI>
+                  <OMI>5</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>endomap_left_compose</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a binary function. Its arguments should be endomaps with identical domain D. When applied to arguments P1 and P2, the resulting value is the endomap which maps x in D to P1(P2(x)).</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>endomap_right_compose</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a binary function. Its arguments should be endomaps with identical domain D. When applied to arguments P1 and P2, the resulting value is the endomap which maps x in D to P2(P1(x)).</OMSTR>
+         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
@@ -93,7 +301,7 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol is an n-ary function, with n at least 1. It marks a relation on the set of its arguments a_1, a_2,...,a_n consisting of the pairs (a_i,a_{i+1}) for i=1,...,n-1 and the pair (a_n,a_1). The arguments a_i should all be distinct. The number n is referred to as the length of the cycle.</OMSTR>
+            <OMSTR>This symbol is an n-ary constructor. It marks a relation on the set of its arguments a_1, a_2,...,a_n consisting of the pairs (a_i,a_{i+1}) for i=1,...,n-1 and the pair (a_n,a_1). The arguments a_i should all be distinct. The number n is referred to as the length of the cycle.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
@@ -142,7 +350,7 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbols is an n-ary function whose arguments are cycles of length at least 2 with the property that all entries of all cycles are mutually distinct. The permutation symbol constructs a bijective map from the set X of entries of the cycles to X. The map is defined as follows: if E occurs as an entry of a cycle, then the permutation maps E to the entry following E in the same cycle if it exists and to the first entry in the same cycle otherwise.</OMSTR>
+            <OMSTR>This symbol is an n-ary constructor whose arguments are cycles of length at least 2 with the property that all entries of all cycles are mutually distinct. The permutation symbol constructs a bijective map from the set X of entries of the cycles to X. The map is defined as follows: if E occurs as an entry of a cycle, then the permutation maps E to the entry following E in the same cycle if it exists and to the first entry in the same cycle otherwise. When applied to an element y outside X, the constructed permutation is considered to fix y.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
@@ -168,7 +376,7 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="Example"/>
-            <OMSTR>The permutation (1,5,4,2)(6,7) sending 1 to 5, 5 to 4, 4 to 2, 2 to 1, 6 to 7, 7 to 6, is given by</OMSTR>
+            <OMSTR>The permutation (1,5,4)(6,7) sending 1 to 5, 5 to 4, 4 to 1, 6 to 7, 7 to 6, is given by</OMSTR>
             <OMA>
                <OMS cd="permutation1" name="permutation"/>
                <OMA>
@@ -176,7 +384,6 @@
                   <OMI> 1 </OMI>
                   <OMI> 5 </OMI>
                   <OMI> 4 </OMI>
-                  <OMI> 2 </OMI>
                </OMA>
                <OMA>
                   <OMS cd="permutation1" name="cycle"/>
@@ -185,113 +392,12 @@
                </OMA>
             </OMA>
          </OMA>
-         <OMA>
-            <OMS cd="meta" name="Example"/>
-            <OMSTR>The following two expressions represent the same permutation of {1,2,3,4,5}.</OMSTR>
-            <OMA>
-               <OMS cd="fns1" name="inverse"/>
-               <OMA>
-                  <OMS cd="permutation1" name="permutation"/>
-                  <OMA>
-                     <OMS cd="permutation1" name="cycle"/>
-                     <OMI>1</OMI>
-                     <OMI>3</OMI>
-                     <OMI>2</OMI>
-                  </OMA>
-                  <OMA>
-                     <OMS cd="permutation1" name="cycle"/>
-                     <OMI>4</OMI>
-                     <OMI>5</OMI>
-                  </OMA>
-               </OMA>
-            </OMA>
-            <OMA>
-               <OMS cd="permutation1" name="permutation"/>
-               <OMA>
-                  <OMS cd="permutation1" name="cycle"/>
-                  <OMI>1</OMI>
-                  <OMI>2</OMI>
-                  <OMI>3</OMI>
-               </OMA>
-               <OMA>
-                  <OMS cd="permutation1" name="cycle"/>
-                  <OMI>4</OMI>
-                  <OMI>5</OMI>
-               </OMA>
-            </OMA>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="Example"/>
-            <OMSTR>Left and right composition of two permutations may lead to distinct results:</OMSTR>
-            <OMA>
-               <OMS cd="relation1" name="eq"/>
-               <OMA>
-                  <OMS cd="fns1" name="left_compose"/>
-                  <OMA>
-                     <OMS cd="permutation1" name="permutation"/>
-                     <OMA>
-                        <OMS cd="permutation1" name="cycle"/>
-                        <OMI>1</OMI>
-                        <OMI>2</OMI>
-                     </OMA>
-                  </OMA>
-                  <OMA>
-                     <OMS cd="permutation1" name="permutation"/>
-                     <OMA>
-                        <OMS cd="permutation1" name="cycle"/>
-                        <OMI>1</OMI>
-                        <OMI>2</OMI>
-                        <OMI>3</OMI>
-                     </OMA>
-                  </OMA>
-               </OMA>
-               <OMA>
-                  <OMS cd="permutation1" name="permutation"/>
-                  <OMA>
-                     <OMS cd="permutation1" name="cycle"/>
-                     <OMI>2</OMI>
-                     <OMI>3</OMI>
-                  </OMA>
-               </OMA>
-            </OMA>
-            <OMA>
-               <OMS cd="relation1" name="eq"/>
-               <OMA>
-                  <OMS cd="fns1" name="right_compose"/>
-                  <OMA>
-                     <OMS cd="permutation1" name="permutation"/>
-                     <OMA>
-                        <OMS cd="permutation1" name="cycle"/>
-                        <OMI>1</OMI>
-                        <OMI>2</OMI>
-                     </OMA>
-                  </OMA>
-                  <OMA>
-                     <OMS cd="permutation1" name="permutation"/>
-                     <OMA>
-                        <OMS cd="permutation1" name="cycle"/>
-                        <OMI>1</OMI>
-                        <OMI>2</OMI>
-                        <OMI>3</OMI>
-                     </OMA>
-                  </OMA>
-               </OMA>
-               <OMA>
-                  <OMS cd="permutation1" name="permutation"/>
-                  <OMA>
-                     <OMS cd="permutation1" name="cycle"/>
-                     <OMI>1</OMI>
-                     <OMI>3</OMI>
-                  </OMA>
-               </OMA>
-            </OMA>
-         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
-            <OMSTR>is_perm</OMSTR>
+            <OMSTR>is_permutation</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -299,13 +405,13 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
-            <OMSTR>If is_perm(A) is true then permutation(A) is well defined.</OMSTR>
+            <OMSTR>If is_permutation(A) is true then permutation(A) is well defined.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Example"/>
             <OMSTR>The following value is the boolean false</OMSTR>
             <OMA>
-               <OMS cd="permutation1" name="is_perm"/>
+               <OMS cd="permutation1" name="is_permutation"/>
                <OMA>
                   <OMS cd="set1" name="set"/>
                   <OMA>
@@ -320,7 +426,7 @@
             </OMA>
             <OMSTR>whereas the following value is true</OMSTR>
             <OMA>
-               <OMS cd="permutation1" name="is_perm"/>
+               <OMS cd="permutation1" name="is_permutation"/>
                <OMA>
                   <OMS cd="set1" name="set"/>
                   <OMA>
@@ -343,28 +449,31 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol is a function with one argument which is a permutation. When applied to a permutation P whose arguments are the cycles A1,...,An, it represents the set A which is the union of the entries of all Ai for i=1,...,n.</OMSTR>
+            <OMSTR>This symbol is a function with one argument which is a permutation. When applied to a permutation whose arguments are the cycles A1,...,An, it represents the set A which is the union of the entries of all Ai for i=1,...,n.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Example"/>
-            <OMSTR>The following expression represents the set {jan,piet,klaas,4,5}.</OMSTR>
+            <OMSTR>The following expression represents the set {jan,piet,klaas,3,4,5}.</OMSTR>
             <OMA>
-               <OMS cd="permutation1" name="permutation"/>
+               <OMS cd="permutation1" name="support"/>
                <OMA>
-                  <OMS cd="permutation1" name="cycle"/>
-                  <OMSTR>jan</OMSTR>
-                  <OMI>4</OMI>
-                  <OMSTR>klaas</OMSTR>
-               </OMA>
-               <OMA>
-                  <OMS cd="permutation1" name="cycle"/>
-                  <OMI>3</OMI>
-                  <OMSTR>klaas</OMSTR>
-               </OMA>
-               <OMA>
-                  <OMS cd="permutation1" name="cycle"/>
-                  <OMSTR>piet</OMSTR>
-                  <OMI>5</OMI>
+                  <OMS cd="permutation1" name="permutation"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMSTR>jan</OMSTR>
+                     <OMI>4</OMI>
+                     <OMSTR>klaas</OMSTR>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMI>3</OMI>
+                     <OMSTR>klaas</OMSTR>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMSTR>piet</OMSTR>
+                     <OMI>5</OMI>
+                  </OMA>
                </OMA>
             </OMA>
          </OMA>
@@ -373,55 +482,79 @@
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
-            <OMSTR>perm</OMSTR>
+            <OMSTR>fix</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol is an n-ary function. Its arguments should be positive integers. When applied to arguments a_1,...,a_n, the resulting value is the permutation mapping i to a_i.</OMSTR>
+            <OMSTR>This symbol is a function with two arguments. The first argument should be a permutation, the second argument a set. When applied to a permutation g and a set X, it represents the subset A of X all points that do not belong to the support of g.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Example"/>
-            <OMSTR>The following two expressions represent the same permutation of {1,2,3,4,5}.</OMSTR>
+            <OMSTR>The following expression represents the set {1,2}.</OMSTR>
             <OMA>
-               <OMS cd="permutation1" name="perm"/>
-               <OMI>2</OMI>
-               <OMI>3</OMI>
-               <OMI>1</OMI>
-               <OMI>5</OMI>
-               <OMI>4</OMI>
-            </OMA>
-            <OMA>
-               <OMS cd="permutation1" name="permutation"/>
+               <OMS cd="permutation1" name="support"/>
                <OMA>
-                  <OMS cd="permutation1" name="cycle"/>
-                  <OMI>1</OMI>
+                  <OMS cd="permutation1" name="permutation"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMSTR>jan</OMSTR>
+                     <OMI>4</OMI>
+                     <OMSTR>klaas</OMSTR>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMI>3</OMI>
+                     <OMSTR>klaas</OMSTR>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMSTR>piet</OMSTR>
+                     <OMI>5</OMI>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="set1" name="set"/>
+                  <OMA>
+                     <OMS cd="interval1" name="integer_interval"/>
+                     <OMI>1</OMI>
+                     <OMI>5</OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>cycles</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol has one argument which should be a endomap p. It returns the list of cycles of p.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following two objects represent the same list.</OMSTR>
+            <OMA>
+               <OMS cd="permutation1" name="cycles"/>
+               <OMA>
+                  <OMS cd="permutation1" name="endomap"/>
                   <OMI>2</OMI>
                   <OMI>3</OMI>
-               </OMA>
-               <OMA>
-                  <OMS cd="permutation1" name="cycle"/>
                   <OMI>4</OMI>
+                  <OMI>2</OMI>
                   <OMI>5</OMI>
                </OMA>
             </OMA>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="Example"/>
-            <OMSTR>The following expression evaluates to true.</OMSTR>
             <OMA>
-               <OMS cd="relation1" name="eq"/>
+               <OMS cd="list1" name="list"/>
                <OMA>
-                  <OMA>
-                     <OMS cd="permutation1" name="perm"/>
-                     <OMI> 5 </OMI>
-                     <OMI> 1 </OMI>
-                     <OMI> 3 </OMI>
-                     <OMI> 2 </OMI>
-                     <OMI> 4 </OMI>
-                  </OMA>
-                  <OMI> 4 </OMI>
+                  <OMS cd="permutation1" name="cycle"/>
+                  <OMI>2</OMI>
+                  <OMI>3</OMI>
+                  <OMI>4</OMI>
                </OMA>
-               <OMI> 2 </OMI>
             </OMA>
          </OMA>
       </OMA>
@@ -429,42 +562,32 @@
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
-            <OMSTR>listperm</OMSTR>
+            <OMSTR>listendomap</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol is a function with one argument which is a permutation whose support consists of positive integers. When applied to such a permutation P, it represents the list of length n whose i-th entry is the image of i under P. Here n is at least the maximum of the support of P.</OMSTR>
+            <OMSTR>This symbol is a function with one argument which is a permutation whose support consists of positive integers. When applied to such a permutation P, it represents the list of length n whose i-th entry is the image of i under P, where n is the maximum of the support of P.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Example"/>
             <OMSTR>The following two expressions represent the same list.</OMSTR>
             <OMA>
-               <OMS cd="permutation1" name="listperm"/>
+               <OMS cd="permutation1" name="listendomap"/>
                <OMA>
                   <OMS cd="permutation1" name="permutation"/>
                   <OMA>
                      <OMS cd="permutation1" name="cycle"/>
                      <OMI> 1 </OMI>
-                     <OMI> 5 </OMI>
                      <OMI> 4 </OMI>
-                     <OMI> 2 </OMI>
-                  </OMA>
-                  <OMA>
-                     <OMS cd="permutation1" name="cycle"/>
-                     <OMI> 6 </OMI>
-                     <OMI> 7 </OMI>
                   </OMA>
                </OMA>
             </OMA>
             <OMA>
                <OMS cd="list1" name="list"/>
-               <OMI> 5 </OMI>
-               <OMI> 1 </OMI>
-               <OMI> 3 </OMI>
-               <OMI> 2 </OMI>
-               <OMI> 4 </OMI>
-               <OMI> 7 </OMI>
-               <OMI> 6 </OMI>
+               <OMI>4</OMI>
+               <OMI>2</OMI>
+               <OMI>3</OMI>
+               <OMI>1</OMI>
             </OMA>
          </OMA>
       </OMA>
@@ -491,11 +614,11 @@
                   <OMA>
                      <OMS cd="logic1" name="and"/>
                      <OMA>
-                        <OMS cd="permutation1" name="is_perm"/>
+                        <OMS cd="permutation1" name="is_permutation"/>
                         <OMV name="P"/>
                      </OMA>
                      <OMA>
-                        <OMS cd="permutation1" name="is_perm"/>
+                        <OMS cd="permutation1" name="is_permutation"/>
                         <OMV name="Q"/>
                      </OMA>
                   </OMA>
@@ -505,7 +628,7 @@
                         <OMS cd="permutation1" name="cycle_type"/>
                         <OMA>
                            <OMS cd="fns2" name="apply_to_list"/>
-                           <OMS cd="fns1" name="left_compose"/>
+                           <OMS cd="permutation1" name="left_compose"/>
                            <OMA>
                               <OMS cd="list1" name="list"/>
                               <OMV name="Q"/>
@@ -586,7 +709,7 @@
                <OMA>
                   <OMS cd="logic1" name="implies"/>
                   <OMA>
-                     <OMS cd="permutation1" name="is_perm"/>
+                     <OMS cd="permutation1" name="is_permutation"/>
                      <OMV name="P"/>
                   </OMA>
                   <OMA>
@@ -677,7 +800,7 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
-            <OMSTR>If the cycle type of a permutation P equals [a_1,...,a_m], then the sign is equal to (-1)^(s-m) where b = a_1+...+a_m.</OMSTR>
+            <OMSTR>If the cycle type of a permutation P equals [a_1,...,a_m], then the sign is equal to (-1)^(s-m) where s = a_1+...+a_m.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="FMP"/>
@@ -758,6 +881,217 @@
                   </OMA>
                </OMA>
                <OMI> -1 </OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>inverse</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a unary function. Its argument should be a permutation. When applied to argument P, the resulting value is the inverse permutation of P.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The following two expressions represent the same permutation of {1,2,3,4,5}.</OMSTR>
+            <OMA>
+               <OMS cd="fns1" name="inverse"/>
+               <OMA>
+                  <OMS cd="permutation1" name="permutation"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMI>1</OMI>
+                     <OMI>3</OMI>
+                     <OMI>2</OMI>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMI>4</OMI>
+                     <OMI>5</OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+            <OMA>
+               <OMS cd="permutation1" name="permutation"/>
+               <OMA>
+                  <OMS cd="permutation1" name="cycle"/>
+                  <OMI>1</OMI>
+                  <OMI>2</OMI>
+                  <OMI>3</OMI>
+               </OMA>
+               <OMA>
+                  <OMS cd="permutation1" name="cycle"/>
+                  <OMI>4</OMI>
+                  <OMI>5</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>left_compose</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a binary function. Its arguments should be permutations. When applied to arguments P1 and P2, the resulting value is the permutation which maps x in Support(P1) union Support(P2) to P1(P2(x)).</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Left and right composition of two permutations may lead to distinct results:</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="permutation1" name="left_compose"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="permutation"/>
+                     <OMA>
+                        <OMS cd="permutation1" name="cycle"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="permutation"/>
+                     <OMA>
+                        <OMS cd="permutation1" name="cycle"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                        <OMI>3</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="permutation1" name="permutation"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMI>2</OMI>
+                     <OMI>3</OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>right_compose</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a binary function. Its arguments should be permutations. When applied to arguments P1 and P2, the resulting value is the permutation which maps x in Support(P1) union Support(P2) to P2(P1(x)).</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Left and right composition of two permutations may lead to distinct results. Compare the following with the corresponding example in the definition of left_compose.</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="permutation1" name="right_compose"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="permutation"/>
+                     <OMA>
+                        <OMS cd="permutation1" name="cycle"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="permutation"/>
+                     <OMA>
+                        <OMS cd="permutation1" name="cycle"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                        <OMI>3</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="permutation1" name="permutation"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="cycle"/>
+                     <OMI>1</OMI>
+                     <OMI>3</OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>action</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbols is a binary function whose first argument is a permutation (or a endomap) and whose second argument is a point. When applied to permutation or endomap p and point x, it represents the image of the point x under the permutation p.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>The permutation (1,5,4)(6,7) sends 1 to 5, so</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="permutation1" name="action"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="permutation"/>
+                     <OMA>
+                        <OMS cd="permutation1" name="cycle"/>
+                        <OMI>1</OMI>
+                        <OMI> 5 </OMI>
+                        <OMI> 4 </OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="permutation1" name="cycle"/>
+                        <OMI> 6 </OMI>
+                        <OMI> 7 </OMI>
+                     </OMA>
+                  </OMA>
+                  <OMI>1</OMI>
+               </OMA>
+               <OMI>5</OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>permutationsn</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a unary function. Its argument should be a positive integer. When applied to argument n, the resulting value is the set of all permutations of the set {1,..., n}.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>Both sides of the following equality represent the two permutations on {1,2}.</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="permutation1" name="permutationsn"/>
+                  <OMI>2</OMI>
+               </OMA>
+               <OMA>
+                  <OMS cd="set1" name="set"/>
+                  <OMA>
+                     <OMS cd="permutation1" name="permutation"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="permutation1" name="permutation"/>
+                     <OMA>
+                        <OMS cd="permutation1" name="cycle"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
             </OMA>
          </OMA>
       </OMA>

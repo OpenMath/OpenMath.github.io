@@ -11,6 +11,10 @@
          <OMSTR>transc2</OMSTR>
       </OMA>
       <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
          <OMS cd="meta" name="CDURL"/>
          <OMSTR>http://www.openmath.org/cd/transc2.ocd</OMSTR>
       </OMA>
@@ -20,66 +24,23 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2002-09-11</OMSTR>
+         <OMSTR>2004-03-30</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDVersion"/>
-         <OMSTR>1</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDRevision"/>
          <OMSTR>2</OMSTR>
       </OMA>
       <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>1</OMSTR>
+      </OMA>
+      <OMA>
          <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: James Davenport</OMSTR>
+         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDStatus"/>
          <OMSTR>experimental</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDUses"/>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>alg1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>arith1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>complex1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>interval1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>logic1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>nums1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>relation1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>set1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>setname1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>transc1</OMSTR>
-         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="Description"/>
@@ -92,8 +53,12 @@
             <OMSTR>arctan</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol represents the two-argument arctan function as in Fortran's ATAN2. arctan(y,x) is a value of arctan(y/x). For real x,y arctan(y,x) is positive when y is positive, negative when y is negative. If y is zero, the result is 0 if x is positive, and $\pi$ if x is negative. If x is zero, the result has absolute value $\pi/2$.</OMSTR>
+            <OMSTR>This symbol represents the two-argument arctan function as in Fortran's ATAN2. arctan(x,y) is a value of arctan(y/x). For real x,y arctan(x,y) is positive when y is positive, negative when y is negative. If y is zero, the result is 0 if x is positive, and $\pi$ if x is negative. If x is zero, the result has absolute value $\pi/2$.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
@@ -104,7 +69,7 @@
             <OMA>
                <OMS name="implies" cd="logic1"/>
                <OMA>
-                  <OMS name="ne" cd="relation1"/>
+                  <OMS name="neq" cd="relation1"/>
                   <OMV name="x"/>
                   <OMS name="zero" cd="alg1"/>
                </OMA>
@@ -114,8 +79,8 @@
                      <OMS name="tan" cd="transc1"/>
                      <OMA>
                         <OMS name="arctan" cd="transc2"/>
-                        <OMV name="y"/>
                         <OMV name="x"/>
+                        <OMV name="y"/>
                      </OMA>
                   </OMA>
                   <OMA>
@@ -128,7 +93,7 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
-            <OMSTR>$x,y \in {\bf R} \implies \pi &lt; arctan(y,x)\le\pi$.</OMSTR>
+            <OMSTR>$x,y \in {\bf R} \implies -\pi &lt; arctan(y,x)\le\pi$.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="FMP"/>
@@ -309,7 +274,7 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
-            <OMSTR>$x=0 \implies |arctan(y,x)|=\pi/2$.</OMSTR>
+            <OMSTR>$x=0 \implies |arctan(y,x)|=\pi$.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="FMP"/>
@@ -343,6 +308,10 @@
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>unwind</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -461,13 +430,11 @@
                            <OMS cd="arith1" name="root"/>
                            <OMA>
                               <OMS cd="arith1" name="minus"/>
+                              <OMS cd="alg1" name="one"/>
                               <OMA>
-                                 <OMS cd="alg1" name="one"/>
-                                 <OMA>
-                                    <OMS cd="arith1" name="power"/>
-                                    <OMV name="z"/>
-                                    <OMI> 2 </OMI>
-                                 </OMA>
+                                 <OMS cd="arith1" name="power"/>
+                                 <OMV name="z"/>
+                                 <OMI> 2 </OMI>
                               </OMA>
                            </OMA>
                            <OMI> 2 </OMI>

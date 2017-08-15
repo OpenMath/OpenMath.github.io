@@ -78,6 +78,12 @@
                   <a href="http://www.openmath.org/cd/polyu.ocd">http://www.openmath.org/cd/polyu.ocd</a>
                </dd>
                <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
                   <span class="dt">CD File:</span>
                </dt>
                <dd>
@@ -100,11 +106,11 @@
                <dt>
                   <span class="dt">Date:</span>
                </dt>
-               <dd> 2003-08-06 </dd>
+               <dd>2004-03-30</dd>
                <dt>
                   <span class="dt">Version:</span>
                </dt>
-               <dd> 1 
+               <dd>2
     (Revision 1)
   </dd>
                <dt>
@@ -115,12 +121,6 @@
                   <span class="dt">Status:</span>
                </dt>
                <dd> experimental </dd>
-               <dt>
-                  <span class="dt">Uses CD:</span>
-               </dt>
-               <dd>
-                  <a href="../../../cd/polyr.html">polyr</a>, <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/setname1.html">setname1</a>
-               </dd>
             </dl>
             <hr/>
             <pre>
@@ -156,7 +156,8 @@
      society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
 </pre>
 
-    
+   
+ 
    
     
     
@@ -164,9 +165,9 @@
    
    
             <pre>
-  Author: James Davenport
-</pre>
-
+  Author: OpenMath Consortium
+  SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
+            </pre>
             <p>
      This CD contains operators to deal with polynomials and more precisely 
      Univariate Polynomials.
@@ -177,8 +178,7 @@
      being polynomials in the rest of the variables, and therefore univariates
      are a special case. This is provided as a separate CD to allow for 
      univariate-only operations (e.g. composition) and for systems that only
-     understand univariates, e.g. NTL. These polynomials are also used to 
-     express minimal polynomials for algebraic extensions (see setname2).
+     understand univariates, e.g. NTL.
    </p>
 
             <pre>
@@ -202,6 +202,12 @@ Based on recursive polynomials 2003-08-06 JHD
             <h2>
                <a name="term"> term </a>
             </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
             <dl>
                <dt>
                   <span class="dt">Description:</span>
@@ -247,6 +253,12 @@ Based on recursive polynomials 2003-08-06 JHD
             </h2>
             <dl>
                <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
                   <span class="dt">Description:</span>
                </dt>
                <dd>
@@ -266,9 +278,9 @@ Based on recursive polynomials 2003-08-06 JHD
        The polynomial x^6 + 3*x^5 + 2 may be encoded as:
 
          <div>
-                     <button id="d40e75xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e75xml')">OpenMath XML (source)</button>
-                     <pre id="d40e75xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+                     <button id="d51814e72xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e72xml')">OpenMath XML (source)</button>
+                     <pre id="d51814e72xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
            &lt;OMA&gt;
              &lt;OMS name="poly_u_rep" cd="polyu"/&gt;
              &lt;OMV name="x"/&gt;
@@ -291,9 +303,9 @@ Based on recursive polynomials 2003-08-06 JHD
          &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="d40e75cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e75cmml')">Strict Content MathML</button>
-                     <pre id="d40e75cmml" style="display:none; margin-top: 0.5em">
+                     <button id="d51814e72cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e72cmml')">Strict Content MathML</button>
+                     <pre id="d51814e72cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="polyu"&gt;poly_u_rep&lt;/csymbol&gt;
   &lt;ci&gt;x&lt;/ci&gt;
@@ -312,9 +324,9 @@ Based on recursive polynomials 2003-08-06 JHD
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="d40e75prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('d40e75pref')">Prefix</button>
-                  <div id="d40e75pref" style="display:none; margin-top: 0.5em">
+                  <button id="d51814e72prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d51814e72pref')">Prefix</button>
+                  <div id="d51814e72pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/polyu.html#poly_u_rep">poly_u_rep</a>
   ( <i>x</i>, <a href="../../../cd/polyu.html#term">term</a>
   ( 6 ,  1 )
@@ -326,16 +338,16 @@ Based on recursive polynomials 2003-08-06 JHD
 
          </div>
                   <div>
-                     <button id="d40e75popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e75pop')">Popcorn</button>
-                     <div id="d40e75pop" style="display:none; margin-top: 0.5em">
+                     <button id="d51814e72popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e72pop')">Popcorn</button>
+                     <div id="d51814e72pop" style="display:none; margin-top: 0.5em">
            polyu.poly_u_rep($x, polyu.term(6, 1), polyu.term(5, 3), polyu.term(0, 2))
          </div>
                   </div>
                   <div>
-                     <button id="d40e75mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('d40e75mml')">Rendered Presentation MathML</button>
-                     <div id="d40e75mml" style="display:block; margin-top: 0.5em">
+                     <button id="d51814e72mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d51814e72mml')">Rendered Presentation MathML</button>
+                     <div id="d51814e72mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -420,6 +432,12 @@ Based on recursive polynomials 2003-08-06 JHD
             </h2>
             <dl>
                <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
                   <span class="dt">Description:</span>
                </dt>
                <dd>
@@ -441,9 +459,9 @@ Based on recursive polynomials 2003-08-06 JHD
          variable x may be encoded as:
 
          <div>
-                     <button id="d40e130xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e130xml')">OpenMath XML (source)</button>
-                     <pre id="d40e130xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+                     <button id="d51814e130xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e130xml')">OpenMath XML (source)</button>
+                     <pre id="d51814e130xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
            &lt;OMA&gt;
              &lt;OMS name="polynomial_u" cd="polyu"/&gt;
              &lt;OMA&gt;
@@ -474,9 +492,9 @@ Based on recursive polynomials 2003-08-06 JHD
          &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="d40e130cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e130cmml')">Strict Content MathML</button>
-                     <pre id="d40e130cmml" style="display:none; margin-top: 0.5em">
+                     <button id="d51814e130cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e130cmml')">Strict Content MathML</button>
+                     <pre id="d51814e130cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="polyu"&gt;polynomial_u&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="polyu"&gt;polynomial_ring_u&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
@@ -498,9 +516,9 @@ Based on recursive polynomials 2003-08-06 JHD
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="d40e130prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('d40e130pref')">Prefix</button>
-                  <div id="d40e130pref" style="display:none; margin-top: 0.5em">
+                  <button id="d51814e130prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d51814e130pref')">Prefix</button>
+                  <div id="d51814e130pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/polyu.html#polynomial_u">polynomial_u</a>
   (<a href="../../../cd/polyu.html#polynomial_ring_u">polynomial_ring_u</a>
   (<a href="../../../cd/setname1.html#Z">Z</a>,  <i>x</i>)
@@ -516,16 +534,16 @@ Based on recursive polynomials 2003-08-06 JHD
 
          </div>
                   <div>
-                     <button id="d40e130popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e130pop')">Popcorn</button>
-                     <div id="d40e130pop" style="display:none; margin-top: 0.5em">
+                     <button id="d51814e130popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e130pop')">Popcorn</button>
+                     <div id="d51814e130pop" style="display:none; margin-top: 0.5em">
            polyu.polynomial_u(polyu.polynomial_ring_u(setname1.Z, $x), polyu.poly_u_rep($x, polyu.term(6, 1), polyu.term(5, 3), polyu.term(0, 2)))
          </div>
                   </div>
                   <div>
-                     <button id="d40e130mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('d40e130mml')">Rendered Presentation MathML</button>
-                     <div id="d40e130mml" style="display:block; margin-top: 0.5em">
+                     <button id="d51814e130mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d51814e130mml')">Rendered Presentation MathML</button>
+                     <div id="d51814e130mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -635,6 +653,12 @@ Based on recursive polynomials 2003-08-06 JHD
             </h2>
             <dl>
                <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
                   <span class="dt">Description:</span>
                </dt>
                <dd>
@@ -659,10 +683,10 @@ Based on recursive polynomials 2003-08-06 JHD
                </dt>
                <dd>
                   <div>
-                     <button id="d40e206xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e206xml')">OpenMath XML (source)</button>
-                     <pre id="d40e206xml" style="display:none">
-         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+                     <button id="d51814e209xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e209xml')">OpenMath XML (source)</button>
+                     <pre id="d51814e209xml" style="display:none">
+         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
            &lt;OMA&gt;
              &lt;OMS name="eq" cd="relation1"/&gt;
              &lt;OMA&gt;
@@ -679,9 +703,9 @@ Based on recursive polynomials 2003-08-06 JHD
          &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="d40e206cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e206cmml')">Strict Content MathML</button>
-                     <pre id="d40e206cmml" style="display:none; margin-top: 0.5em">
+                     <button id="d51814e209cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e209cmml')">Strict Content MathML</button>
+                     <pre id="d51814e209cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="polyu"&gt;polynomial_ring_u&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
@@ -689,9 +713,9 @@ Based on recursive polynomials 2003-08-06 JHD
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="d40e206prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('d40e206pref')">Prefix</button>
-                  <div id="d40e206pref" style="display:none; margin-top: 0.5em">
+                  <button id="d51814e209prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d51814e209pref')">Prefix</button>
+                  <div id="d51814e209pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/polyu.html#polynomial_ring_u">polynomial_ring_u</a>
   ( <i>R</i>,  <i>x</i>)
@@ -701,16 +725,16 @@ Based on recursive polynomials 2003-08-06 JHD
 
          </div>
                   <div>
-                     <button id="d40e206popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e206pop')">Popcorn</button>
-                     <div id="d40e206pop" style="display:none; margin-top: 0.5em">
+                     <button id="d51814e209popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e209pop')">Popcorn</button>
+                     <div id="d51814e209pop" style="display:none; margin-top: 0.5em">
            polyu.polynomial_ring_u($R, $x) = polyr.polynomial_ring_r($R, $x)
          </div>
                   </div>
                   <div>
-                     <button id="d40e206mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('d40e206mml')">Rendered Presentation MathML</button>
-                     <div id="d40e206mml" style="display:block; margin-top: 0.5em">
+                     <button id="d51814e209mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d51814e209mml')">Rendered Presentation MathML</button>
+                     <div id="d51814e209mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -750,10 +774,10 @@ Based on recursive polynomials 2003-08-06 JHD
                </dt>
                <dd>
                   <div>
-                     <button id="d40e235xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e235xml')">OpenMath XML (source)</button>
-                     <pre id="d40e235xml" style="display:none">
-         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+                     <button id="d51814e239xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e239xml')">OpenMath XML (source)</button>
+                     <pre id="d51814e239xml" style="display:none">
+         &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
            &lt;OMA&gt;
              &lt;OMS name="polynomial_ring_u" cd="polyu"/&gt;
              &lt;OMS name="Z" cd="setname1"/&gt;
@@ -762,31 +786,31 @@ Based on recursive polynomials 2003-08-06 JHD
          &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="d40e235cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e235cmml')">Strict Content MathML</button>
-                     <pre id="d40e235cmml" style="display:none; margin-top: 0.5em">
+                     <button id="d51814e239cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e239cmml')">Strict Content MathML</button>
+                     <pre id="d51814e239cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="polyu"&gt;polynomial_ring_u&lt;/csymbol&gt;&lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="d40e235prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('d40e235pref')">Prefix</button>
-                  <div id="d40e235pref" style="display:none; margin-top: 0.5em">
+                  <button id="d51814e239prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d51814e239pref')">Prefix</button>
+                  <div id="d51814e239pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/polyu.html#polynomial_ring_u">polynomial_ring_u</a>
   (<a href="../../../cd/setname1.html#Z">Z</a>,  <i>x</i>)
 
          </div>
                   <div>
-                     <button id="d40e235popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e235pop')">Popcorn</button>
-                     <div id="d40e235pop" style="display:none; margin-top: 0.5em">
+                     <button id="d51814e239popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d51814e239pop')">Popcorn</button>
+                     <div id="d51814e239pop" style="display:none; margin-top: 0.5em">
            polyu.polynomial_ring_u(setname1.Z, $x)
          </div>
                   </div>
                   <div>
-                     <button id="d40e235mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('d40e235mml')">Rendered Presentation MathML</button>
-                     <div id="d40e235mml" style="display:block; margin-top: 0.5em">
+                     <button id="d51814e239mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d51814e239mml')">Rendered Presentation MathML</button>
+                     <div id="d51814e239mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">

@@ -34,27 +34,17 @@
 </CDComment>
 
 <CDName> transc2 </CDName>
+<CDBase>http://www.openmath.org/cd</CDBase>
 <CDURL> http://www.openmath.org/cd/transc2.ocd </CDURL>
 <CDReviewDate>2017-12-31</CDReviewDate>
-<CDDate> 2002-09-11 </CDDate>
-<CDVersion> 1 </CDVersion>
-<CDRevision>2</CDRevision>
+<CDDate>2004-03-30</CDDate>
+<CDVersion>2</CDVersion>
+<CDRevision>1</CDRevision>
 <CDComment>
-  Author: James Davenport
+  Author: OpenMath Consortium
+  SourceURL: https://github.com/OpenMath/CDs
 </CDComment>
 <CDStatus> experimental </CDStatus>
-<CDUses>
-  <CDName> alg1      </CDName>
-  <CDName> arith1    </CDName>
-  <CDName> complex1  </CDName>
-  <CDName> interval1 </CDName>
-  <CDName> logic1    </CDName>
-  <CDName> nums1     </CDName>
-  <CDName> relation1 </CDName>
-  <CDName> set1      </CDName>
-  <CDName> setname1  </CDName>
-  <CDName> transc1   </CDName>
-</CDUses>
 <Description> 
     This CD holds the definition of a two-argument version of arctan,
     useful for defining the argument of a complex number, and equivalent
@@ -66,9 +56,10 @@
 
 <CDDefinition>
 <Name> arctan </Name>
+<Role>application</Role>
 <Description> 
 This symbol represents the two-argument arctan function as in Fortran's
-ATAN2. arctan(y,x) is a value of arctan(y/x). For real x,y arctan(y,x) is
+ATAN2. arctan(x,y) is a value of arctan(y/x). For real x,y arctan(x,y) is
 positive when y is positive, negative when y is negative. If y is zero, the
 result is 0 if x is positive, and $\pi$ if x is negative. If x is zero, the
 result has absolute value $\pi/2$.
@@ -77,11 +68,11 @@ result has absolute value $\pi/2$.
 x not 0 implies tan(arctan(y,x))=y/x
 </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="implies" cd="logic1"/>
     <OMA>
-      <OMS name="ne" cd="relation1"/>
+      <OMS name="neq" cd="relation1"/>
       <OMV name="x"/>
       <OMS name="zero" cd="alg1"/>
     </OMA>
@@ -91,8 +82,8 @@ x not 0 implies tan(arctan(y,x))=y/x
         <OMS name="tan" cd="transc1"/>
         <OMA>
           <OMS name="arctan" cd="transc2"/>
-          <OMV name="y"/>
           <OMV name="x"/>
+          <OMV name="y"/>
         </OMA>
       </OMA>
       <OMA>
@@ -105,10 +96,10 @@ x not 0 implies tan(arctan(y,x))=y/x
 </OMOBJ>
 </FMP>
 <CMP>
-$x,y \in {\bf R} \implies \pi &lt; arctan(y,x)\le\pi$.
+$x,y \in {\bf R} \implies -\pi &lt; arctan(y,x)\le\pi$.
 </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="implies" cd="logic1"/>
     <OMA>
@@ -144,10 +135,10 @@ $x,y \in {\bf R} \implies \pi &lt; arctan(y,x)\le\pi$.
 </OMOBJ>
 </FMP>
 <CMP>
-$Re(y)>0 \implies Re(arctan(y,x))>0$.
+$Re(y)&gt;0 \implies Re(arctan(y,x))&gt;0$.
 </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="implies" cd="logic1"/>
     <OMA>
@@ -177,7 +168,7 @@ $Re(y)>0 \implies Re(arctan(y,x))>0$.
 $Re(y) &lt; 0 \implies Re(arctan(y,x)) &lt; 0$.
 </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="implies" cd="logic1"/>
     <OMA>
@@ -204,10 +195,10 @@ $Re(y) &lt; 0 \implies Re(arctan(y,x)) &lt; 0$.
 </OMOBJ>
 </FMP>
 <CMP>
-$Re(y)=0 and Re(x)>0 \implies Re(arctan(y,x))=0$.
+$Re(y)=0 and Re(x)&gt;0 \implies Re(arctan(y,x))=0$.
 </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="implies" cd="logic1"/>
     <OMA>
@@ -248,7 +239,7 @@ $Re(y)=0 and Re(x)>0 \implies Re(arctan(y,x))=0$.
 $Re(y)=0 and Re(x) &lt; 0 \implies Re(arctan(y,x))=\pi$.
 </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="implies" cd="logic1"/>
     <OMA>
@@ -286,10 +277,10 @@ $Re(y)=0 and Re(x) &lt; 0 \implies Re(arctan(y,x))=\pi$.
 </OMOBJ>
 </FMP>
 <CMP>
-$x=0 \implies |arctan(y,x)|=\pi/2$.
+$x=0 \implies |arctan(y,x)|=\pi$.
 </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS name="implies" cd="logic1"/>
     <OMA>
@@ -319,6 +310,7 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
 
 <CDDefinition>
 <Name> unwind </Name>
+<Role>application</Role>
 <Description> 
    The unwinding number denotes the extent to which $z=\ln\exp z$ is not
    true. It was orignally defined in Corless,R.M. &amp; Jeffrey,D.J., The
@@ -331,7 +323,7 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
 
 <CMP> unwind(z)=(z-ln exp z)/(2pi i) </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
 <OMA>
   <OMS cd="relation1" name="eq"/>
   <OMA>
@@ -364,7 +356,7 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
 
 <CMP> unwind(z)=ceiling((Im z - pi)/(2pi)) </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
 <OMA>
   <OMS cd="relation1" name="eq"/>
   <OMA>
@@ -396,7 +388,7 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
 
 <CMP> z in C implies unwind(z) in Z </CMP>
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
 <OMA>
   <OMS cd="logic1" name="implies"/>
   <OMA>
@@ -420,7 +412,7 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
     \arcsin z = \arctan\frac z{\sqrt{1-z^2}} +\pi\K(-\ln(1+z))-\pi\K(-\ln(1-z)).
 </CDComment>
 <Example>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
 <OMA>
   <OMS cd="relation1" name="eq"/>
   <OMA>
@@ -438,14 +430,12 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
 	  <OMS cd="arith1" name="root"/>
           <OMA>
 	    <OMS cd="arith1" name="minus"/>
-            <OMA>
 	      <OMS cd="alg1" name="one"/>
 	      <OMA>
 	        <OMS cd="arith1" name="power"/>
                 <OMV name="z"/>
 	        <OMI> 2 </OMI>
 	      </OMA>
-            </OMA>
           </OMA>
 	  <OMI> 2 </OMI>
         </OMA>
@@ -494,4 +484,3 @@ $x=0 \implies |arctan(y,x)|=\pi/2$.
 </CDDefinition>
 
 </CD>
-

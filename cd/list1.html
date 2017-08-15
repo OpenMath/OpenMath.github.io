@@ -78,6 +78,12 @@
                   <a href="http://www.openmath.org/cd/list1.ocd">http://www.openmath.org/cd/list1.ocd</a>
                </dd>
                <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
                   <span class="dt">CD File:</span>
                </dt>
                <dd>
@@ -100,27 +106,21 @@
                <dt>
                   <span class="dt">Date:</span>
                </dt>
-               <dd> 2004-11-22 </dd>
+               <dd>2004-03-30</dd>
                <dt>
                   <span class="dt">Version:</span>
                </dt>
-               <dd> 3 
+               <dd>3
     (Revision 1)
   </dd>
                <dt>
                   <span class="dt">Review Date:</span>
                </dt>
-               <dd>2017-12-31</dd>
+               <dd>2006-03-30</dd>
                <dt>
                   <span class="dt">Status:</span>
                </dt>
                <dd> official </dd>
-               <dt>
-                  <span class="dt">Uses CD:</span>
-               </dt>
-               <dd>
-                  <a href="../../../cd/alg1.html">alg1</a>, <a href="../../../cd/arith1.html">arith1</a>, <a href="../../../cd/fns1.html">fns1</a>, <a href="../../../cd/interval1.html">interval1</a>, <a href="../../../cd/logic1.html">logic1</a>, <a href="../../../cd/relation1.html">relation1</a>, <a href="../../../cd/setname1.html">setname1</a>, <a href="../../../cd/set1.html">set1</a>
-               </dd>
             </dl>
             <hr/>
 
@@ -163,17 +163,16 @@
 
 
 
-            <pre>
-  Author: Arjeh Cohen
-</pre>
 
+            <pre>
+  Author: OpenMath Consortium
+  SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
+            </pre>
 
 
             <p>
     This CD is intended to be `compatible' with MathML list
-    constructs. A.M. Cohen slightly edited the description of the
-suchthat symbol
-(eq, "the set" replaced by "a set X").
+    constructs.
 </p>
 
             <hr/>
@@ -182,12 +181,18 @@ suchthat symbol
             </h2>
             <dl>
                <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
                   <span class="dt">Description:</span>
                </dt>
                <dd>
                   <p>
 This symbol represents a mapping function which may be used to
-construct lists; it takes as arguments a function from X to Y and a
+construct lists, it takes as arguments a function from X to Y and a
 list over X in that order. The value that is returned is a list of
 values in Y. The argument list may be a set or an integer_interval.
 </p>
@@ -203,9 +208,9 @@ The list of even values between 0 and 20 in ascending order, that is
 the values 2x in ascending order, where x ranges over the integral
 interval [0,10]. 
 <div>
-                     <button id="d40e73xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e73xml')">OpenMath XML (source)</button>
-                     <pre id="d40e73xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+                     <button id="d38528e51xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e51xml')">OpenMath XML (source)</button>
+                     <pre id="d38528e51xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
   &lt;OMA&gt;
     &lt;OMS cd="list1" name="map"/&gt;
     &lt;OMBIND&gt;
@@ -228,9 +233,9 @@ interval [0,10].
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="d40e73cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e73cmml')">Strict Content MathML</button>
-                     <pre id="d40e73cmml" style="display:none; margin-top: 0.5em">
+                     <button id="d38528e51cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e51cmml')">Strict Content MathML</button>
+                     <pre id="d38528e51cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="list1"&gt;map&lt;/csymbol&gt;
   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
@@ -244,9 +249,9 @@ interval [0,10].
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="d40e73prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('d40e73pref')">Prefix</button>
-                  <div id="d40e73pref" style="display:none; margin-top: 0.5em">
+                  <button id="d38528e51prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d38528e51pref')">Prefix</button>
+                  <div id="d38528e51pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/list1.html#map">map</a>
   (<a href="../../../cd/fns1.html#lambda">lambda</a>
   [
@@ -261,16 +266,16 @@ interval [0,10].
 
 </div>
                   <div>
-                     <button id="d40e73popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e73pop')">Popcorn</button>
-                     <div id="d40e73pop" style="display:none; margin-top: 0.5em">
+                     <button id="d38528e51popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e51pop')">Popcorn</button>
+                     <div id="d38528e51pop" style="display:none; margin-top: 0.5em">
   list1.map(fns1.lambda[$x -&gt; 2 * $x], interval1.integer_interval(0, 10))
 </div>
                   </div>
                   <div>
-                     <button id="d40e73mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('d40e73mml')">Rendered Presentation MathML</button>
-                     <div id="d40e73mml" style="display:block; margin-top: 0.5em">
+                     <button id="d38528e51mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d38528e51mml')">Rendered Presentation MathML</button>
+                     <div id="d38528e51mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -335,14 +340,20 @@ interval [0,10].
             </h2>
             <dl>
                <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
                   <span class="dt">Description:</span>
                </dt>
                <dd>
                   <p>
 This symbol represents the suchthat function which may be used to
-construct lists; it takes two arguments. The first argument should be a
-set X which contains the elements of the list, the second argument should
-be a predicate, that is a function from the set X to the booleans which
+construct lists, it takes two arguments. The first argument should be the
+set which contains the elements of the list, the second argument should
+be a predicate, that is a function from the set to the booleans which
 describes if an element is to be in the list returned.
 </p>
                </dd>
@@ -356,9 +367,9 @@ describes if an element is to be in the list returned.
 This example shows how to construct the list of even positive integers less
 than 100, using the suchthat constructor.
 <div>
-                     <button id="d40e124xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e124xml')">OpenMath XML (source)</button>
-                     <pre id="d40e124xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+                     <button id="d38528e105xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e105xml')">OpenMath XML (source)</button>
+                     <pre id="d38528e105xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
   &lt;OMA&gt;
     &lt;OMS cd="list1" name="suchthat"/&gt;
     &lt;OMS cd="setname1" name="Z"/&gt;
@@ -394,9 +405,9 @@ than 100, using the suchthat constructor.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="d40e124cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e124cmml')">Strict Content MathML</button>
-                     <pre id="d40e124cmml" style="display:none; margin-top: 0.5em">
+                     <button id="d38528e105cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e105cmml')">Strict Content MathML</button>
+                     <pre id="d38528e105cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="list1"&gt;suchthat&lt;/csymbol&gt;
   &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
@@ -414,9 +425,9 @@ than 100, using the suchthat constructor.
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="d40e124prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('d40e124pref')">Prefix</button>
-                  <div id="d40e124pref" style="display:none; margin-top: 0.5em">
+                  <button id="d38528e105prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d38528e105pref')">Prefix</button>
+                  <div id="d38528e105pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/list1.html#suchthat">suchthat</a>
   (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/fns1.html#lambda">lambda</a>
   [
@@ -437,16 +448,16 @@ than 100, using the suchthat constructor.
 
 </div>
                   <div>
-                     <button id="d40e124popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e124pop')">Popcorn</button>
-                     <div id="d40e124pop" style="display:none; margin-top: 0.5em">
+                     <button id="d38528e105popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e105pop')">Popcorn</button>
+                     <div id="d38528e105pop" style="display:none; margin-top: 0.5em">
   list1.suchthat(setname1.Z, fns1.lambda[$x -&gt; $x &gt;= alg1.zero and $x &lt; 100 and set1.in($x / 2, setname1.Z)])
 </div>
                   </div>
                   <div>
-                     <button id="d40e124mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('d40e124mml')">Rendered Presentation MathML</button>
-                     <div id="d40e124mml" style="display:block; margin-top: 0.5em">
+                     <button id="d38528e105mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d38528e105mml')">Rendered Presentation MathML</button>
+                     <div id="d38528e105mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -522,6 +533,12 @@ than 100, using the suchthat constructor.
             </h2>
             <dl>
                <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
                   <span class="dt">Description:</span>
                </dt>
                <dd>
@@ -539,9 +556,9 @@ list entries must be given explicitly.
                <dd>
 The list 3, 6, 9.
 <div>
-                     <button id="d40e197xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e197xml')">OpenMath XML (source)</button>
-                     <pre id="d40e197xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+                     <button id="d38528e181xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e181xml')">OpenMath XML (source)</button>
+                     <pre id="d38528e181xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
   &lt;OMA&gt;
     &lt;OMS cd="list1" name="list"/&gt;
     &lt;OMI&gt; 3 &lt;/OMI&gt;
@@ -551,9 +568,9 @@ The list 3, 6, 9.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="d40e197cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e197cmml')">Strict Content MathML</button>
-                     <pre id="d40e197cmml" style="display:none; margin-top: 0.5em">
+                     <button id="d38528e181cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e181cmml')">Strict Content MathML</button>
+                     <pre id="d38528e181cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
   &lt;cn type="integer"&gt;3&lt;/cn&gt;
@@ -562,24 +579,24 @@ The list 3, 6, 9.
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="d40e197prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('d40e197pref')">Prefix</button>
-                  <div id="d40e197pref" style="display:none; margin-top: 0.5em">
+                  <button id="d38528e181prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('d38528e181pref')">Prefix</button>
+                  <div id="d38528e181pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/list1.html#list">list</a>
   ( 3 ,  6 ,  9 )
 
 </div>
                   <div>
-                     <button id="d40e197popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('d40e197pop')">Popcorn</button>
-                     <div id="d40e197pop" style="display:none; margin-top: 0.5em">
+                     <button id="d38528e181popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('d38528e181pop')">Popcorn</button>
+                     <div id="d38528e181pop" style="display:none; margin-top: 0.5em">
   [3 , 6 , 9]
 </div>
                   </div>
                   <div>
-                     <button id="d40e197mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('d40e197mml')">Rendered Presentation MathML</button>
-                     <div id="d40e197mml" style="display:block; margin-top: 0.5em">
+                     <button id="d38528e181mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('d38528e181mml')">Rendered Presentation MathML</button>
+                     <div id="d38528e181mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">

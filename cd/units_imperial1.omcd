@@ -3,10 +3,6 @@
    <OMA>
       <OMS cd="meta" name="CD"/>
       <OMA>
-         <OMS cd="meta" name="CDComment"/>
-         <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
-      </OMA>
-      <OMA>
          <OMS cd="meta" name="CDName"/>
          <OMSTR>units_imperial1</OMSTR>
       </OMA>
@@ -24,7 +20,7 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2003-08-21</OMSTR>
+         <OMSTR>2004-08-27</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDVersion"/>
@@ -32,30 +28,11 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDRevision"/>
-         <OMSTR>2</OMSTR>
+         <OMSTR>1</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: James Davenport</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDUses"/>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>arith1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>relation1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>units_metric1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>units_time1</OMSTR>
-         </OMA>
+         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="Description"/>
@@ -199,6 +176,26 @@
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the measure of one (imperial) pint. This is the standard imperial measure for volume. See units_us1 for the U.S. pint.</OMSTR>
          </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>1 pint = 0.568 litres</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS name="eq" cd="relation1"/>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMI> 1 </OMI>
+                  <OMS name="pint" cd="units_imperial1"/>
+               </OMA>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMF dec="0.568"/>
+                  <OMS name="litre" cd="units_metric1"/>
+               </OMA>
+            </OMA>
+         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
@@ -218,7 +215,7 @@
             <OMS cd="meta" name="FMP"/>
             <OMA>
                <OMS name="eq" cd="relation1"/>
-               <OMS name="miles_per_h" cd="units_imperial1"/>
+               <OMS name="miles_per_hr" cd="units_imperial1"/>
                <OMA>
                   <OMS name="divide" cd="arith1"/>
                   <OMS name="mile" cd="units_imperial1"/>
@@ -245,10 +242,10 @@
             <OMS cd="meta" name="FMP"/>
             <OMA>
                <OMS name="eq" cd="relation1"/>
-               <OMS name="miles_per_h" cd="units_imperial1"/>
+               <OMS name="miles_per_hr_sqrd" cd="units_imperial1"/>
                <OMA>
                   <OMS name="divide" cd="arith1"/>
-                  <OMS name="mile_per_hr" cd="units_imperial1"/>
+                  <OMS name="miles_per_hr" cd="units_imperial1"/>
                   <OMS name="hour" cd="units_time1"/>
                </OMA>
             </OMA>
@@ -264,6 +261,26 @@
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the measure of the mass which weighs one pound under the influence of standard gravity.</OMSTR>
          </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>1 pound = 0.45359237 kilograms</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS name="eq" cd="relation1"/>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMI> 1 </OMI>
+                  <OMS name="pound_mass" cd="units_imperial1"/>
+               </OMA>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMF dec="453.59"/>
+                  <OMS name="gramme" cd="units_metric1"/>
+               </OMA>
+            </OMA>
+         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
@@ -274,6 +291,26 @@
          <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the measure of force of one pound.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>1 pound force = 4.44822 Newtons</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS name="eq" cd="relation1"/>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMI> 1 </OMI>
+                  <OMS name="pound_force" cd="units_imperial1"/>
+               </OMA>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMF dec="4.448"/>
+                  <OMS name="Newton" cd="units_metric1"/>
+               </OMA>
+            </OMA>
          </OMA>
       </OMA>
       <OMA>
@@ -286,6 +323,30 @@
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the measure of one degree Fahrenheit. This is the standard imperial measure for temperature.</OMSTR>
          </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>1 degree Fahrenheit = 0.5556*(1-32) degrees Celsius</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS name="eq" cd="relation1"/>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMI> 1 </OMI>
+                  <OMS name="degree_Fahrenheit" cd="units_imperial1"/>
+               </OMA>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMF dec="0.5556"/>
+                  <OMA>
+                     <OMS name="minus" cd="arith1"/>
+                     <OMS name="degree_Celsius" cd="units_metric1"/>
+                     <OMI> 32 </OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
@@ -296,6 +357,26 @@
          <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the measure of one bar. This is the standard imperial measure for pressure.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>1 bar = 100 000 Pascals</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS name="eq" cd="relation1"/>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMI> 1 </OMI>
+                  <OMS name="bar" cd="units_imperial1"/>
+               </OMA>
+               <OMA>
+                  <OMS name="times" cd="arith1"/>
+                  <OMI> 100000 </OMI>
+                  <OMS name="Pascal" cd="units_metric1"/>
+               </OMA>
+            </OMA>
          </OMA>
       </OMA>
    </OMA>

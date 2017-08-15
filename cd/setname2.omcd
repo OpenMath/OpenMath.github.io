@@ -11,6 +11,10 @@
          <OMSTR>setname2</OMSTR>
       </OMA>
       <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
          <OMS cd="meta" name="CDURL"/>
          <OMSTR>http://www.openmath.org/cd/setname2.ocd</OMSTR>
       </OMA>
@@ -20,7 +24,7 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2000-02-02</OMSTR>
+         <OMSTR>2004-03-30</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDVersion"/>
@@ -32,50 +36,11 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: James Davenport</OMSTR>
+         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDStatus"/>
          <OMSTR>experimental</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDUses"/>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>alg1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>arith1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>logic1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>polyu</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>quant1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>relation1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>setname1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>set1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>sts</OMSTR>
-         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="Description"/>
@@ -83,13 +48,17 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Written by J.H. Davenport on 1999-04-18. Revised to add Zm, GFp, GFpn on 1999-11-09. Revised to add QuotientField and A on 1999-11-19. AlgebraicExtension added 2003-09-16</OMSTR>
+         <OMSTR>Written by J.H. Davenport on 1999-04-18. Revised to add Zm, GFp, GFpn on 1999-11-09. Revised to add QuotientField and A on 1999-11-19.</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>Boolean</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -151,6 +120,10 @@
             <OMSTR>A</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the set of algebraic numbers.</OMSTR>
          </OMA>
@@ -184,6 +157,10 @@
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>Zm</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -305,6 +282,10 @@
             <OMSTR>GFp</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the finite field of integers modulo p, where p is a prime.</OMSTR>
          </OMA>
@@ -350,6 +331,10 @@
             <OMSTR>GFpn</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the finite field with p^n elements, where p is a prime.</OMSTR>
          </OMA>
@@ -374,6 +359,10 @@
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>QuotientField</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -422,44 +411,11 @@
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
-            <OMSTR>AlgebraicExtension</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol represents an algebraic extension of any integral domain.</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="Example"/>
-            <OMSTR>The complex numbers are the extension of the reals by a root of x^2+1</OMSTR>
-            <OMA>
-               <OMS cd="relation1" name="eq"/>
-               <OMS cd="setname1" name="C"/>
-               <OMA>
-                  <OMS cd="setname2" name="AlgebraicExtension"/>
-                  <OMS cd="setname1" name="R"/>
-                  <OMA>
-                     <OMS cd="polyu" name="poly_u_rep"/>
-                     <OMV name="x"/>
-                     <OMA>
-                        <OMS cd="polyu" name="term"/>
-                        <OMI> 2 </OMI>
-                        <OMI> 1 </OMI>
-                     </OMA>
-                     <OMA>
-                        <OMS cd="polyu" name="term"/>
-                        <OMI> 0 </OMI>
-                        <OMI> 1 </OMI>
-                     </OMA>
-                  </OMA>
-               </OMA>
-            </OMA>
-         </OMA>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDDefinition"/>
-         <OMA>
-            <OMS cd="meta" name="Name"/>
             <OMSTR>H</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>

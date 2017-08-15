@@ -11,6 +11,10 @@
          <OMSTR>dimensions1</OMSTR>
       </OMA>
       <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
          <OMS cd="meta" name="CDURL"/>
          <OMSTR>http://www.openmath.org/cd/dimensions1.ocd</OMSTR>
       </OMA>
@@ -24,7 +28,7 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2003-08-20</OMSTR>
+         <OMSTR>2004-03-30</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDVersion"/>
@@ -32,26 +36,11 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDRevision"/>
-         <OMSTR>2</OMSTR>
+         <OMSTR>1</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: James Davenport</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDUses"/>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>norm1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>arith1</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CDName"/>
-            <OMSTR>relation1</OMSTR>
-         </OMA>
+         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="Description"/>
@@ -64,6 +53,10 @@
             <OMSTR>length</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the length physical dimension.</OMSTR>
          </OMA>
@@ -73,6 +66,10 @@
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>area</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -100,6 +97,10 @@
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>volume</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -130,6 +131,10 @@
             <OMSTR>speed</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the speed physical dimension. It is the size of the derivative of distance with respect to time.</OMSTR>
          </OMA>
@@ -154,28 +159,44 @@
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
-            <OMSTR>velocity</OMSTR>
+            <OMSTR>displacement</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol represents the velocity physical dimension. It is the derivative of (vector) distance with respect to time.</OMSTR>
+            <OMSTR>This symbol represents the spatial difference between two points. The direction of the displacement is taken into account as well as the distance between the points.</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>velocity</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents the velocity physical dimension. It is the derivative of distance with respect to time.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
-            <OMSTR>velocity = displacement/second</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CMP"/>
-            <OMSTR>speed is the Euclidean norm of velocity</OMSTR>
+            <OMSTR>velocity = displacement/time</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="FMP"/>
             <OMA>
-               <OMS name="eq" cd="relation1"/>
-               <OMS name="speed" cd="dimensions1"/>
+               <OMS cd="relation1" name="eq"/>
+               <OMS cd="dimensions1" name="velocity"/>
                <OMA>
-                  <OMS name="Euclidean_norm" cd="norm1"/>
-                  <OMS name="velocity" cd="dimensions1"/>
+                  <OMS cd="arith1" name="divide"/>
+                  <OMS cd="dimensions1" name="displacement"/>
+                  <OMS cd="dimensions1" name="time"/>
                </OMA>
             </OMA>
          </OMA>
@@ -187,12 +208,16 @@
             <OMSTR>acceleration</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the acceleration physical dimension. It is the second derivative of distance with respect to time.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
-            <OMSTR>acceleration = length/(time^2)</OMSTR>
+            <OMSTR>acceleration = displacement/(time^2)</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="FMP"/>
@@ -201,9 +226,9 @@
                <OMS cd="dimensions1" name="acceleration"/>
                <OMA>
                   <OMS cd="arith1" name="divide"/>
-                  <OMS cd="dimensions1" name="length"/>
+                  <OMS cd="dimensions1" name="displacement"/>
                   <OMA>
-                     <OMS cd="arith1" name="divide"/>
+                     <OMS cd="arith1" name="power"/>
                      <OMS cd="dimensions1" name="time"/>
                      <OMI> 2 </OMI>
                   </OMA>
@@ -218,8 +243,12 @@
             <OMSTR>time</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol represents the time physical dimension. Note that the main units for time are defined in the units_time1 CD.</OMSTR>
+            <OMSTR>This symbol represents the time physical dimension.</OMSTR>
          </OMA>
       </OMA>
       <OMA>
@@ -227,6 +256,10 @@
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>mass</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -238,6 +271,10 @@
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>force</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -255,7 +292,15 @@
                <OMA>
                   <OMS cd="arith1" name="times"/>
                   <OMS cd="dimensions1" name="mass"/>
-                  <OMS cd="dimensions1" name="acceleration"/>
+                  <OMA>
+                     <OMS cd="arith1" name="divide"/>
+                     <OMS cd="dimensions1" name="length"/>
+                     <OMA>
+                        <OMS cd="arith1" name="power"/>
+                        <OMS cd="dimensions1" name="time"/>
+                        <OMI> 2 </OMI>
+                     </OMA>
+                  </OMA>
                </OMA>
             </OMA>
          </OMA>
@@ -267,6 +312,10 @@
             <OMSTR>temperature</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the temperature physical dimension.</OMSTR>
          </OMA>
@@ -276,6 +325,10 @@
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>pressure</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -305,12 +358,28 @@
             <OMSTR>charge</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the charge physical dimension.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
             <OMSTR>charge = current/voltage</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMS cd="dimensions1" name="charge"/>
+               <OMA>
+                  <OMS cd="arith1" name="divide"/>
+                  <OMS cd="dimensions1" name="current"/>
+                  <OMS cd="dimensions1" name="voltage"/>
+               </OMA>
+            </OMA>
          </OMA>
       </OMA>
       <OMA>
@@ -320,12 +389,28 @@
             <OMSTR>current</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the current physical dimension.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
             <OMSTR>current = voltage*charge</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMS cd="dimensions1" name="current"/>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMS cd="dimensions1" name="voltage"/>
+                  <OMS cd="dimensions1" name="charge"/>
+               </OMA>
+            </OMA>
          </OMA>
       </OMA>
       <OMA>
@@ -335,12 +420,28 @@
             <OMSTR>voltage</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the voltage physical dimension.</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="CMP"/>
             <OMSTR>voltage = current/charge</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMS cd="dimensions1" name="voltage"/>
+               <OMA>
+                  <OMS cd="arith1" name="divide"/>
+                  <OMS cd="dimensions1" name="current"/>
+                  <OMS cd="dimensions1" name="charge"/>
+               </OMA>
+            </OMA>
          </OMA>
       </OMA>
       <OMA>
@@ -350,6 +451,10 @@
             <OMSTR>resistance</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the resistance physical dimension, it is the resistance that an electrical circuit has to flow of charge.</OMSTR>
          </OMA>
@@ -357,12 +462,28 @@
             <OMS cd="meta" name="CMP"/>
             <OMSTR>resistance = voltage/current</OMSTR>
          </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMS cd="dimensions1" name="resistance"/>
+               <OMA>
+                  <OMS cd="arith1" name="divide"/>
+                  <OMS cd="dimensions1" name="voltage"/>
+                  <OMS cd="dimensions1" name="current"/>
+               </OMA>
+            </OMA>
+         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>density</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -392,6 +513,10 @@
             <OMSTR>energy</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the energy physical dimension.</OMSTR>
          </OMA>
@@ -400,18 +525,26 @@
             <OMSTR>energy = mass*length^2/time^2</OMSTR>
          </OMA>
          <OMA>
-            <OMS cd="meta" name="CMP"/>
-            <OMSTR>energy = force*length</OMSTR>
-         </OMA>
-         <OMA>
             <OMS cd="meta" name="FMP"/>
             <OMA>
                <OMS cd="relation1" name="eq"/>
                <OMS cd="dimensions1" name="energy"/>
                <OMA>
-                  <OMS cd="arith1" name="times"/>
-                  <OMS cd="dimensions1" name="force"/>
-                  <OMS cd="dimensions1" name="length"/>
+                  <OMS cd="arith1" name="divide"/>
+                  <OMA>
+                     <OMS cd="arith1" name="times"/>
+                     <OMS cd="dimensions1" name="mass"/>
+                     <OMA>
+                        <OMS cd="arith1" name="power"/>
+                        <OMS cd="dimensions1" name="length"/>
+                        <OMI> 2 </OMI>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="arith1" name="power"/>
+                     <OMS cd="dimensions1" name="time"/>
+                     <OMI> 2 </OMI>
+                  </OMA>
                </OMA>
             </OMA>
          </OMA>
@@ -423,6 +556,10 @@
             <OMSTR>concentration</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="Description"/>
             <OMSTR>This symbol represents the concentration physical dimension, it is the amount of a substance in a volume.</OMSTR>
          </OMA>
@@ -430,12 +567,32 @@
             <OMS cd="meta" name="CMP"/>
             <OMSTR>concentration = mass/length^3</OMSTR>
          </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMS cd="dimensions1" name="concentration"/>
+               <OMA>
+                  <OMS cd="arith1" name="divide"/>
+                  <OMS cd="dimensions1" name="mass"/>
+                  <OMA>
+                     <OMS cd="arith1" name="power"/>
+                     <OMS cd="dimensions1" name="length"/>
+                     <OMI> 3 </OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
             <OMSTR>momentum</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>constant</OMSTR>
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
@@ -449,38 +606,11 @@
             <OMS cd="meta" name="FMP"/>
             <OMA>
                <OMS cd="relation1" name="eq"/>
-               <OMS cd="dimensions1" name="momentun"/>
+               <OMS cd="dimensions1" name="momentum"/>
                <OMA>
                   <OMS cd="arith1" name="times"/>
                   <OMS cd="dimensions1" name="mass"/>
                   <OMS cd="dimensions1" name="velocity"/>
-               </OMA>
-            </OMA>
-         </OMA>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDDefinition"/>
-         <OMA>
-            <OMS cd="meta" name="Name"/>
-            <OMSTR>power</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol represents the power physical dimension, it is energy per time.</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="CMP"/>
-            <OMSTR>power = energy/time</OMSTR>
-         </OMA>
-         <OMA>
-            <OMS cd="meta" name="FMP"/>
-            <OMA>
-               <OMS cd="relation1" name="eq"/>
-               <OMS cd="dimensions1" name="power"/>
-               <OMA>
-                  <OMS cd="arith1" name="divide"/>
-                  <OMS cd="dimensions1" name="energy"/>
-                  <OMS cd="dimensions1" name="time"/>
                </OMA>
             </OMA>
          </OMA>

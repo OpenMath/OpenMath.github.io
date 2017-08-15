@@ -1,4 +1,5 @@
 <CD xmlns="http://www.openmath.org/OpenMathCD">
+
 <CDComment>
 
      This document is distributed in the hope that it will be useful, 
@@ -33,20 +34,17 @@
 </CDComment>
 
 <CDName> dimensions1 </CDName>
+<CDBase>http://www.openmath.org/cd</CDBase>
 <CDURL> http://www.openmath.org/cd/dimensions1.ocd </CDURL>
 <CDReviewDate>2017-12-31</CDReviewDate>
 <CDStatus> experimental </CDStatus>
-<CDDate> 2003-08-20 </CDDate>
-<CDVersion> 4 </CDVersion>
-<CDRevision>2</CDRevision>
+<CDDate>2004-03-30</CDDate>
+<CDVersion>4</CDVersion>
+<CDRevision>1</CDRevision>
 <CDComment>
-  Author: James Davenport
+  Author: OpenMath Consortium
+  SourceURL: https://github.com/OpenMath/CDs
 </CDComment>
-<CDUses>
-<CDName>norm1</CDName>
-<CDName>arith1</CDName>
-<CDName>relation1</CDName>
-</CDUses>
 
 <Description> 
 This CD defines symbols which represent basic physical dimensions.
@@ -54,6 +52,7 @@ This CD defines symbols which represent basic physical dimensions.
 
 <CDDefinition>
 <Name> length </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the length physical dimension.
 </Description>
@@ -62,13 +61,14 @@ This symbol represents the length physical dimension.
 
 <CDDefinition>
 <Name> area </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the area physical dimension.
 </Description>
 
 <CMP> area = length*length </CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
     <OMS cd="dimensions1" name="area"/>
@@ -83,13 +83,14 @@ This symbol represents the area physical dimension.
 
 <CDDefinition>
 <Name> volume </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the volume physical dimension.
 </Description>
 
 <CMP> volume = length*length*length </CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
     <OMS cd="dimensions1" name="volume"/>
@@ -105,6 +106,7 @@ This symbol represents the volume physical dimension.
 
 <CDDefinition>
 <Name> speed </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the speed physical dimension. It is the size of the
 derivative of distance with respect to time.
@@ -112,7 +114,7 @@ derivative of distance with respect to time.
 
 <CMP>speed = length/time</CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
     <OMS cd="dimensions1" name="speed"/>
@@ -123,53 +125,65 @@ derivative of distance with respect to time.
     </OMA>
   </OMA>
 </OMOBJ></FMP>
+</CDDefinition>
 
+<CDDefinition>
+  <Name> displacement </Name>
+<Role>constant</Role>
+  <Description>
+This symbol represents the spatial difference between two points.
+The direction of the displacement is taken into account as well as the
+distance between the points.
+  </Description>
 </CDDefinition>
 
 <CDDefinition>
 <Name> velocity </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the velocity physical dimension. It is the
-derivative of (vector) distance with respect to time.
+derivative of distance with respect to time.
 </Description>
 
-<CMP> velocity = displacement/second</CMP>
-<CMP> speed is the Euclidean norm of velocity </CMP>
+<CMP> velocity = displacement/time</CMP>
+
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
-  <OMA>
-    <OMS name="eq" cd="relation1"/>
-    <OMS name="speed" cd="dimensions1"/>
-    <OMA>
-      <OMS name="Euclidean_norm" cd="norm1"/>
-      <OMS name="velocity" cd="dimensions1"/>
-    </OMA>
-  </OMA>
-</OMOBJ>
+    <OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+      <OMA>
+        <OMS cd="relation1" name="eq"/>
+        <OMS cd="dimensions1" name="velocity"/>
+        <OMA>
+          <OMS cd="arith1" name="divide"/>
+          <OMS cd="dimensions1" name="displacement"/>
+          <OMS cd="dimensions1" name="time"/>
+        </OMA>
+      </OMA>
+    </OMOBJ>
 </FMP>
 
 </CDDefinition>
 
 <CDDefinition>
 <Name> acceleration </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the acceleration physical dimension. It is the
 second derivative of distance with respect to time.
 </Description>
 
-<CMP>acceleration = length/(time^2)</CMP>
+<CMP>acceleration = displacement/(time^2)</CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
     <OMS cd="dimensions1" name="acceleration"/>
     <OMA>
       <OMS cd="arith1" name="divide"/>
-      <OMS cd="dimensions1" name="length"/>
+      <OMS cd="dimensions1" name="displacement"/>
       <OMA>
-        <OMS cd="arith1" name="divide"/>
+        <OMS cd="arith1" name="power"/>
         <OMS cd="dimensions1" name="time"/>
-	<OMI> 2 </OMI>
+        <OMI> 2 </OMI>
       </OMA>
     </OMA>
   </OMA>
@@ -179,14 +193,15 @@ second derivative of distance with respect to time.
 
 <CDDefinition>
 <Name> time </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the time physical dimension.
-Note that the main units for time are defined in the units_time1 CD.
 </Description>
 </CDDefinition>
 
 <CDDefinition>
 <Name> mass </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the mass physical dimension.
 </Description>
@@ -194,20 +209,29 @@ This symbol represents the mass physical dimension.
 
 <CDDefinition>
 <Name> force </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the force physical dimension. 
 </Description>
 
 <CMP> force = mass*length/time^2 </CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
     <OMS cd="dimensions1" name="force"/>
     <OMA>
       <OMS cd="arith1" name="times"/>
       <OMS cd="dimensions1" name="mass"/>
-      <OMS cd="dimensions1" name="acceleration"/>
+      <OMA>
+        <OMS cd="arith1" name="divide"/>
+        <OMS cd="dimensions1" name="length"/>
+        <OMA>
+          <OMS cd="arith1" name="power"/>
+          <OMS cd="dimensions1" name="time"/>
+          <OMI> 2 </OMI>
+        </OMA>
+      </OMA>
     </OMA>
   </OMA>
 </OMOBJ></FMP>
@@ -216,6 +240,7 @@ This symbol represents the force physical dimension.
 
 <CDDefinition>
 <Name> temperature </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the temperature physical dimension.
 </Description>
@@ -224,13 +249,14 @@ This symbol represents the temperature physical dimension.
 
 <CDDefinition>
 <Name> pressure </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the pressure physical dimension.
 </Description>
 
 <CMP> pressure = force/area </CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
     <OMS cd="dimensions1" name="pressure"/>
@@ -246,36 +272,76 @@ This symbol represents the pressure physical dimension.
 
 <CDDefinition>
 <Name> charge </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the charge physical dimension.
 </Description>
 
 <CMP> charge = current/voltage </CMP>
 
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+  <OMA>
+    <OMS cd="relation1" name="eq"/>
+    <OMS cd="dimensions1" name="charge"/>
+    <OMA>
+      <OMS cd="arith1" name="divide"/>
+      <OMS cd="dimensions1" name="current"/>
+      <OMS cd="dimensions1" name="voltage"/>
+    </OMA>
+  </OMA>
+</OMOBJ></FMP>
+
 </CDDefinition>
 
 <CDDefinition>
 <Name> current </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the current physical dimension.
 </Description>
 
 <CMP> current = voltage*charge </CMP>
 
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+  <OMA>
+    <OMS cd="relation1" name="eq"/>
+    <OMS cd="dimensions1" name="current"/>
+    <OMA>
+      <OMS cd="arith1" name="times"/>
+      <OMS cd="dimensions1" name="voltage"/>
+      <OMS cd="dimensions1" name="charge"/>
+    </OMA>
+  </OMA>
+</OMOBJ></FMP>
+
 </CDDefinition>
 
 <CDDefinition>
 <Name> voltage </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the voltage physical dimension.
 </Description>
 
 <CMP> voltage = current/charge </CMP>
 
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+  <OMA>
+    <OMS cd="relation1" name="eq"/>
+    <OMS cd="dimensions1" name="voltage"/>
+    <OMA>
+      <OMS cd="arith1" name="divide"/>
+      <OMS cd="dimensions1" name="current"/>
+      <OMS cd="dimensions1" name="charge"/>
+    </OMA>
+  </OMA>
+</OMOBJ></FMP>
+
 </CDDefinition>
 
 <CDDefinition>
 <Name> resistance </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the resistance physical dimension, it is the
 resistance that an electrical circuit has to flow of charge.
@@ -283,10 +349,23 @@ resistance that an electrical circuit has to flow of charge.
 
 <CMP> resistance = voltage/current </CMP>
 
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
+  <OMA>
+    <OMS cd="relation1" name="eq"/>
+    <OMS cd="dimensions1" name="resistance"/>
+    <OMA>
+      <OMS cd="arith1" name="divide"/>
+      <OMS cd="dimensions1" name="voltage"/>
+      <OMS cd="dimensions1" name="current"/>
+    </OMA>
+  </OMA>
+</OMOBJ></FMP>
+
 </CDDefinition>
 
 <CDDefinition>
 <Name> density </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the density physical dimension, it is the mass
 per unit volume.
@@ -294,7 +373,7 @@ per unit volume.
 
 <CMP> density = mass/volume </CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
     <OMS cd="dimensions1" name="density"/>
@@ -310,21 +389,33 @@ per unit volume.
 
 <CDDefinition>
 <Name> energy </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the energy physical dimension.
 </Description>
 
 <CMP> energy = mass*length^2/time^2 </CMP>
-<CMP> energy = force*length </CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
     <OMS cd="dimensions1" name="energy"/>
     <OMA>
-      <OMS cd="arith1" name="times"/>
-      <OMS cd="dimensions1" name="force"/>
-      <OMS cd="dimensions1" name="length"/>
+      <OMS cd="arith1" name="divide"/>
+      <OMA>
+        <OMS cd="arith1" name="times"/>
+        <OMS cd="dimensions1" name="mass"/>
+        <OMA>
+          <OMS cd="arith1" name="power"/>
+          <OMS cd="dimensions1" name="length"/>
+          <OMI> 2 </OMI>
+        </OMA>
+      </OMA>
+      <OMA>
+        <OMS cd="arith1" name="power"/>
+        <OMS cd="dimensions1" name="time"/>
+        <OMI> 2 </OMI>
+      </OMA>
     </OMA>
   </OMA>
 </OMOBJ></FMP>
@@ -333,6 +424,7 @@ This symbol represents the energy physical dimension.
 
 <CDDefinition>
 <Name> concentration </Name>
+<Role>constant</Role>
 <Description>
 This symbol represents the concentration physical dimension, it is the
 amount of a substance in a volume.
@@ -340,25 +432,18 @@ amount of a substance in a volume.
 
 <CMP> concentration = mass/length^3 </CMP>
 
-</CDDefinition>
-
-<CDDefinition>
-<Name> momentum </Name>
-<Description>
-This symbol represents the momentum physical dimension, it is mass
-times velocity.
-</Description>
-
-<CMP> momentum = mass*velocity </CMP>
-
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
-    <OMS cd="dimensions1" name="momentun"/>
+    <OMS cd="dimensions1" name="concentration"/>
     <OMA>
-      <OMS cd="arith1" name="times"/>
+      <OMS cd="arith1" name="divide"/>
       <OMS cd="dimensions1" name="mass"/>
-      <OMS cd="dimensions1" name="velocity"/>
+      <OMA>
+        <OMS cd="arith1" name="power"/>
+        <OMS cd="dimensions1" name="length"/>
+        <OMI> 3 </OMI>
+      </OMA>
     </OMA>
   </OMA>
 </OMOBJ></FMP>
@@ -366,22 +451,23 @@ times velocity.
 </CDDefinition>
 
 <CDDefinition>
-<Name> power </Name>
+<Name> momentum </Name>
+<Role>constant</Role>
 <Description>
-This symbol represents the power physical dimension, it is energy
-per time.
+This symbol represents the momentum physical dimension, it is mass
+times velocity.
 </Description>
 
-<CMP> power = energy/time </CMP>
+<CMP> momentum = mass*velocity </CMP>
 
-<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd">
   <OMA>
     <OMS cd="relation1" name="eq"/>
-    <OMS cd="dimensions1" name="power"/>
+    <OMS cd="dimensions1" name="momentum"/>
     <OMA>
-      <OMS cd="arith1" name="divide"/>
-      <OMS cd="dimensions1" name="energy"/>
-      <OMS cd="dimensions1" name="time"/>
+      <OMS cd="arith1" name="times"/>
+      <OMS cd="dimensions1" name="mass"/>
+      <OMS cd="dimensions1" name="velocity"/>
     </OMA>
   </OMA>
 </OMOBJ></FMP>

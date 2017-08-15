@@ -1,53 +1,16 @@
 <CD xmlns="http://www.openmath.org/OpenMathCD">
-<CDComment>
-
-     This document is distributed in the hope that it will be useful, 
-     but WITHOUT ANY WARRANTY; without even the implied warranty of 
-     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-     The copyright holder grants you permission to redistribute this 
-     document freely as a verbatim copy. Furthermore, the copyright
-     holder permits you to develop any derived work from this document
-     provided that the following conditions are met.
-       a) The derived work acknowledges the fact that it is derived from
-          this document, and maintains a prominent reference in the 
-          work to the original source.
-       b) The fact that the derived work is not the original OpenMath 
-          document is stated prominently in the derived work.  Moreover if
-          both this document and the derived work are Content Dictionaries
-          then the derived work must include a different CDName element,
-          chosen so that it cannot be confused with any works adopted by
-          the OpenMath Society.  In particular, if there is a Content 
-          Dictionary Group whose name is, for example, `math' containing
-          Content Dictionaries named `math1', `math2' etc., then you should 
-          not name a derived Content Dictionary `mathN' where N is an integer.
-          However you are free to name it `private_mathN' or some such.  This
-          is because the names `mathN' may be used by the OpenMath Society
-          for future extensions.
-       c) The derived work is distributed under terms that allow the
-          compilation of derived works, but keep paragraphs a) and b)
-          intact.  The simplest way to do this is to distribute the derived
-          work under the OpenMath license, but this is not a requirement.
-     If you have questions about this license please contact the OpenMath
-     society at http://www.openmath.org.
-</CDComment>
-
 <CDName> units_metric1 </CDName>
 <CDURL> http://www.openmath.org/cd/units_metric1.ocd </CDURL>
 <CDReviewDate>2017-12-31</CDReviewDate>
 <CDStatus> experimental </CDStatus>
-<CDDate> 2003-08-20 </CDDate>
+<CDDate> 2004-08-27 </CDDate>
 <CDVersion> 3 </CDVersion>
 <CDRevision>1</CDRevision>
 <CDComment>
-  Author: James Davenport
+  Author: OpenMath Consortium
+  SourceURL: https://github.com/OpenMath/CDs
 </CDComment>
-<CDUses>
-<CDName>relations1</CDName>
-<CDName>arith1</CDName>
-<CDName>relation1</CDName>
-<CDName>units_time1</CDName>
-</CDUses>
+
 
 <Description> 
 This CD defines symbols to represent the basic physical units in the SI
@@ -73,7 +36,7 @@ standard SI measure for physical area.
 
 <FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
 <OMA>
-  <OMS name="eq" cd="relations1"/>
+  <OMS name="eq" cd="relation1"/>
   <OMS name="metre_sqrd" cd="units_metric1"/>
   <OMA>
     <OMS name="times" cd="arith1"/>
@@ -96,15 +59,15 @@ metric measure for physical volume.
 
 <FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
 <OMA>
-  <OMS name="eq" cd="relations1"/>
+  <OMS name="eq" cd="relation1"/>
   <OMA>
     <OMS name="times" cd="arith1"/>
-    <OMI> 1000 </OMI>
+    <OMI> 1 </OMI>
     <OMS name="litre" cd="units_metric1"/>
   </OMA>
   <OMA>
     <OMS name="times" cd="arith1"/>
-    <OMI> 1 </OMI>
+    <OMF dec="0.001"/>
     <OMA>
       <OMS name="power" cd="arith1"/>
       <OMS name="metre" cd="units_metric1"/>
@@ -122,9 +85,25 @@ metric measure for physical volume.
 This symbol represents the previous (1901-1964) measure of one litre. This 
 used to be a standard metric measure for physical volume.
 </Description>
-<CMP> A lire is, since 1901 and until 1964, the volume occupied by a 
+<CMP> A litre is, since 1901 and until 1964, the volume occupied by a 
       kilogramme of water at maximum density and standard pressure. 
       The difference is about 0.0028%. </CMP>
+
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+  <OMA>
+    <OMS name="eq" cd="relation1"/>
+    <OMA>
+      <OMS name="times" cd="arith1"/>
+      <OMI> 1 </OMI>
+      <OMS name="litre_pre1964" cd="units_metric1"/>
+    </OMA>
+    <OMA>
+      <OMS name="times" cd="arith1"/>
+      <OMF dec="1.000028"/>
+      <OMS name="litre" cd="units_metric1"/>
+    </OMA>
+  </OMA>
+</OMOBJ></FMP>
 
 </CDDefinition>
 
@@ -134,6 +113,21 @@ used to be a standard metric measure for physical volume.
 This symbol represents the measure of one metre per second. This is
 the standard SI measure for speed.
 </Description>
+
+<CMP> 1 metres_per_second = 1 metre in 1 second </CMP>
+
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMA>
+  <OMS name="eq" cd="relation1"/>
+  <OMS name="metres_per_second" cd="units_metric1"/>
+  <OMA>
+    <OMS name="divide" cd="arith1"/> 
+    <OMS name="metre" cd="units_metric1"/> 
+    <OMS name="second" cd="units_time1"/> 
+  </OMA>
+</OMA>
+</OMOBJ></FMP>
+
 </CDDefinition>
 
 <CDDefinition>
@@ -142,6 +136,21 @@ the standard SI measure for speed.
 This symbol represents the measure of one metre per second
 squared. This is the standard SI measure for acceleration.
 </Description>
+
+<CMP> 1 metres_per_second_sqrd = 1 metres_per_second (change) in 1 second </CMP>
+
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMA>
+  <OMS name="eq" cd="relation1"/>
+  <OMS name="metres_per_second_sqrd" cd="units_metric1"/>
+  <OMA>
+    <OMS name="divide" cd="arith1"/> 
+    <OMS name="metres_per_second" cd="units_metric1"/> 
+    <OMS name="second" cd="units_time1"/> 
+  </OMA>
+</OMA>
+</OMOBJ></FMP>
+
 </CDDefinition>
 
 <CDDefinition>
@@ -154,7 +163,7 @@ SI measure for time.
 
 <FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
 <OMA>
-  <OMS name="eq" cd="relations1"/>
+  <OMS name="eq" cd="relation1"/>
   <OMS name="second" cd="units_metric1"/>
   <OMS name="second" cd="units_time1"/>
 </OMA>
@@ -205,6 +214,25 @@ SI measure for power.
 This symbol represents the measure of one degree Kelvin. This is a standard
 SI measure for temperature relative to absolute zero.
 </Description>
+
+<CMP> 1 degree Kelvin = 1 - 273.15 degrees Celsius </CMP>
+
+<FMP><OMOBJ xmlns="http://www.openmath.org/OpenMath">
+  <OMA>
+    <OMS name="eq" cd="relation1"/>
+    <OMA>
+      <OMS name="times" cd="arith1"/>
+      <OMI> 1 </OMI>
+      <OMS name="degree_Kelvin" cd="units_metric1"/>
+    </OMA>
+    <OMA>
+      <OMS name="minus" cd="arith1"/>
+      <OMS name="degree_Celsius" cd="units_metric1"/>
+      <OMF dec="273.15"/>
+    </OMA>
+  </OMA>
+</OMOBJ></FMP>
+
 </CDDefinition>
 
 <CDDefinition>

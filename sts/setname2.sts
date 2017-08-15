@@ -1,4 +1,5 @@
 <CDSignatures xmlns="http://www.openmath.org/OpenMathCDS" type="sts" cd="setname2">
+<CDSStatus> official </CDSStatus>
 <CDSComment>
  Written by JHD 1999-11-19, using the "structure"
  construct added to STS.
@@ -8,13 +9,13 @@
 </CDSComment>
 
 <Signature name="Boolean" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> 
   <OMV name="Set"/>
 </OMOBJ>
 </Signature>
 
 <Signature name="Zm" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> 
   <OMA>
     <OMS name="mapsto" cd="sts"/>
     <OMS name="N" cd="setname1"/>
@@ -27,7 +28,7 @@
 </Signature>
 
 <Signature name="GFp" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> 
   <OMA>
     <OMS name="mapsto" cd="sts"/>
     <OMS name="P" cd="setname1"/>
@@ -40,7 +41,7 @@
 </Signature>
 
 <Signature name="GFpn" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> 
   <OMA>
     <OMS name="mapsto" cd="sts"/>
     <OMS name="P" cd="setname1"/>
@@ -54,8 +55,9 @@
 </Signature>
 
 <Signature name="QuotientField" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> 
   <OMA>
+    <OMS name="mapsto" cd="sts"/>
     <OMA>
       <OMS name="structure" cd="sts"/>
       <OMV name="IntegralDomain"/>
@@ -68,34 +70,16 @@
 </OMOBJ>
 </Signature>
 
-<Signature name="AlgebraicExtension" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
-  <OMA>
-    <OMA>
-      <OMS name="structure" cd="sts"/>
-      <OMV name="IntegralDomain"/>
-    </OMA>
-    <OMV name="poly_u_rep"/>
-    <OMA>
-       <OMS name="structure" cd="sts"/>
-       <OMV name="IntegralDomain"/>
-     </OMA>
-  </OMA>
-</OMOBJ>
-</Signature>
-
 <Signature name="H" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> 
   <OMV name="Field"/>
 </OMOBJ>
 </Signature>
 
 <Signature name="A" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath"/>
-</Signature>
-
-<Signature name="QuotientField" >
-<OMOBJ xmlns="http://www.openmath.org/OpenMath"/>
+<OMOBJ xmlns="http://www.openmath.org/OpenMath"> 
+  <OMV name="Field"/>
+</OMOBJ>
 </Signature>
 
 </CDSignatures>

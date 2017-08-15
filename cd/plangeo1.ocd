@@ -1,74 +1,34 @@
 <CD xmlns="http://www.openmath.org/OpenMathCD">
-<CDComment>
-
-     This document is distributed in the hope that it will be useful, 
-     but WITHOUT ANY WARRANTY; without even the implied warranty of 
-     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-     The copyright holder grants you permission to redistribute this 
-     document freely as a verbatim copy. Furthermore, the copyright
-     holder permits you to develop any derived work from this document
-     provided that the following conditions are met.
-       a) The derived work acknowledges the fact that it is derived from
-          this document, and maintains a prominent reference in the 
-          work to the original source.
-       b) The fact that the derived work is not the original OpenMath 
-          document is stated prominently in the derived work.  Moreover if
-          both this document and the derived work are Content Dictionaries
-          then the derived work must include a different CDName element,
-          chosen so that it cannot be confused with any works adopted by
-          the OpenMath Society.  In particular, if there is a Content 
-          Dictionary Group whose name is, for example, `math' containing
-          Content Dictionaries named `math1', `math2' etc., then you should 
-          not name a derived Content Dictionary `mathN' where N is an integer.
-          However you are free to name it `private_mathN' or some such.  This
-          is because the names `mathN' may be used by the OpenMath Society
-          for future extensions.
-       c) The derived work is distributed under terms that allow the
-          compilation of derived works, but keep paragraphs a) and b)
-          intact.  The simplest way to do this is to distribute the derived
-          work under the OpenMath license, but this is not a requirement.
-     If you have questions about this license please contact the OpenMath
-     society at http://www.openmath.org.
-</CDComment>
-
 <CDName>plangeo1</CDName>
+<CDBase> http://www.openmath.org/cd </CDBase>
 <CDURL> http://www.win.tue.nl/~amc/oz/om/cds/plangeo1.ocd </CDURL>
-<CDReviewDate>2017-12-31</CDReviewDate>
-<CDStatus> experimental </CDStatus>
-<CDDate> 2002-03-15 </CDDate>
+<CDReviewDate> 2006-06-01 </CDReviewDate>
+<CDStatus>experimental</CDStatus>
+<CDDate> 2004-06-01 </CDDate>
 <CDVersion> 0 </CDVersion>
-<CDRevision>2</CDRevision>
-<CDComment>
-  Author: Arjeh Cohen
-</CDComment>
-<CDUses>
-  <CDName>logic1.ocd</CDName>
-  <CDName>relation1.ocd</CDName>
-</CDUses>
+<CDRevision> 5 </CDRevision>
 
 <Description> 
 This CD defines symbols for planar Euclidean geometry.
-</Description>
+</Description> 
 
+<CDDefinition> 
 
-
-
-<CDDefinition>
 <Name> point </Name>
-<Description> 
-The symbol is used to indicate a point of  planar Euclidean geometry
-by a variable. The point may (but need not) be subject to constraints.
-The symbol takes the variable as the first argument and the constraints
-as further arguments.
+
+<Description>
+The symbol is used to indicate a point of planar Euclidean geometry by
+a variable. The point may (but need not) be subject to constraints.
+The symbol takes the variable as the first argument and the
+constraints as further arguments.
 </Description>
 
 
 <Example> 
-Given two lines  l and m,  a point  A  on l and m
-is defined by: 
 
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+Given two lines l and m, a point A on l and m is defined by:
+
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
   <OMA>
     <OMS cd="plangeo1" name="point"/>
     <OMV name="A"/>
@@ -101,7 +61,7 @@ as further arguments.
 <Example> Given points A and B, a line l through A and B
 is defined  by: 
 
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
   <OMA>
     <OMS cd="plangeo1" name="line"/>
     <OMV name="l"/>
@@ -136,7 +96,7 @@ That a point A is incident to a line l
 is given by: 
 
 
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
   <OMA>
     <OMS cd="plangeo1" name="incident"/>
     <OMV name="A"/>
@@ -156,10 +116,10 @@ planar geometry consisting of a sequence of geometric objects like points,
 lines,  etc, but also of other configurations.
 </Description>
 
-<Example> The configuration of  a point A and a line l  incident to  A 
+<Example> The configuration of a point A and a line l incident to  A 
 is defined by:
 
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
 <OMA>
   <OMS cd="plangeo1" name="configuration"/>
     <OMA>
@@ -182,7 +142,7 @@ is defined by:
 <Example> The prevous configuration of a point A and a line l incident
 with A can be extended by adding a second point B incident with l:
 
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
 <OMA>
   <OMS cd="plangeo1" name="configuration"/>
     <OMA>
@@ -217,7 +177,7 @@ with A can be extended by adding a second point B incident with l:
 <Example>
 We describe a triangle on the distinct points A, B, C and lines a, b, c:
 
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
 <OMA>
   <OMS cd="plangeo1" name="configuration"/>
   <OMA>
@@ -316,7 +276,7 @@ If A and B are objects of the same type, then they are not incident.
 </CMP>
 
 <FMP>
-<OMOBJ xmlns="http://www.openmath.org/OpenMath">
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
   <OMA>
     <OMS cd="logic1" name="implies"/>
     <OMA>
@@ -343,5 +303,92 @@ If A and B are objects of the same type, then they are not incident.
 </FMP>
 
 </CDDefinition>
+
+
+
+
+<CDDefinition>
+<Name> assertion </Name>
+<Description> 
+The symbol is a constructor with two arguments.
+Its first argument should be a 
+configuration, its second argument a statement about the
+configuration, called thesis.
+When applied to a configuration C and a thesis T, the OpenMath object assertion(C,T)
+expresses the assertion that T holds in C.
+</Description>
+
+<Example> The assertion that two distinct lines meet in only one point
+can be expressed as follows using the assertion symbol.
+
+
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
+<OMA><OMS cd="plangeo1" name="assertion"/>
+     <OMA><OMS cd="plangeo1" name="configuration"/>
+          <OMA><OMS cd="plangeo1" name="point"/> 
+               <OMV name="A"/>
+          </OMA>
+          <OMA><OMS cd="plangeo1" name="point"/> 
+               <OMV name="B"/>
+          </OMA>
+          <OMA><OMS cd="plangeo1" name="line"/>
+               <OMV name="l"/>
+               <OMA><OMS cd="plangeo1" name="incident"/>
+                    <OMV name="A"/>
+                    <OMV name="l"/>
+               </OMA>
+               <OMA><OMS cd="plangeo1" name="incident"/>
+                    <OMV name="B"/>
+                    <OMV name="l"/>
+               </OMA>
+          </OMA>
+          <OMA><OMS cd="plangeo1" name="line"/>
+               <OMV name="m"/>
+               <OMA><OMS cd="plangeo1" name="incident"/>
+                    <OMV name="A"/>
+                    <OMV name="m"/>
+               </OMA>
+               <OMA><OMS cd="plangeo1" name="incident"/>
+                    <OMV name="B"/>
+                    <OMV name="m"/>
+               </OMA>
+               <OMA><OMS cd="logic1" name="not"/>
+                    <OMA><OMS cd="relation1" name="eq"/>
+                         <OMV name="l"/>
+                         <OMV name="m"/>
+                    </OMA>
+               </OMA>
+          </OMA>
+          <OMA><OMS cd="relation1" name="eq"/>
+               <OMV name="A"/>
+               <OMV name="B"/>
+          </OMA>
+     </OMA>
+</OMA>
+</OMOBJ>
+</Example>
+
+</CDDefinition>
+
+<CDDefinition>
+<Name>are_on_line</Name>
+<Description> 
+The statement that a set of points is collinear.
+</Description>
+
+<Example> 
+This example states that A, B, C, and D are collinear.
+<OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0">
+<OMA>
+  <OMS cd="plangeo1" name="are_on_line"/>
+  <OMV name="A"/>
+  <OMV name="B"/>
+  <OMV name="C"/>
+  <OMV name="D"/>
+</OMA>
+</OMOBJ>
+</Example>
+</CDDefinition>
+
 
 </CD>
