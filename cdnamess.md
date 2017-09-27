@@ -555,10 +555,6 @@
       <td>experimental (contributed)</td>
    </tr>
    <tr>
-      <th style="text-align:left"><a href="../cd/plangeo1.html">plangeo1</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
       <th style="text-align:left"><a href="../cd/poly1p.html">poly1p</a></th>
       <td>experimental (contributed)</td>
    </tr>

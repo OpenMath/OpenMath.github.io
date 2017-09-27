@@ -1475,12 +1475,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo1.html#configuration">plangeo1/<br/>configuration</a>
-      </td>
-      <td>The symbol represents a configuration in Euclidean planar geometry consisting of a sequence of geometric objects like points, lines, etc, but also of other configurations.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ThreeDgeo3.html#configuration">ThreeDgeo3/<br/>configuration</a>
       </td>
       <td>The symbol represents a configuration in Euclidean 3-dimensional geometry consisting of a sequence of geometric objects like points, lines, etc, but also of other configurations.</td>
@@ -3503,12 +3497,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo1.html#incident">plangeo1/<br/>incident</a>
-      </td>
-      <td>The symbol represents the logical incidence function which is a binary function taking arguments representing geometric objects like points and lines and returning a boolean value. It is true if and only if the first argument is incident to the second.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ThreeDgeo2.html#incident">ThreeDgeo2/<br/>incident</a>
       </td>
       <td>The symbol represents the logical incidence function which is a binary function taking arguments representing geometric objects like points and lines and returning a boolean value. It is true if and only if the first argument is incident to the second.</td>
@@ -4688,12 +4676,6 @@
          <a href="../cd/moreerrors.html#limitation">moreerrors/<br/>limitation</a>
       </td>
       <td>This symbol represents the error which is returned when an application reads an error caused by the limitations of an implementation when dealing with OpenMath objects such as limits on the size of objects or on the kind of objects manipulated. This can include limits on the size of a bytearray or integer, a limit on the number of arguments of an application or the inability to deal with Unicode characters outside ISO latin 1. It will have at least one argument, which is a string describing the problem. It may have a second argument which is relevant to the error.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/plangeo1.html#line">plangeo1/<br/>line</a>
-      </td>
-      <td>The symbol is used to indicate a line of planar Euclidean geometry by a variable. The line may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
    </tr>
    <tr>
       <td>
@@ -6476,12 +6458,6 @@
          <a href="../cd/hypergeo0.html#pochhammer">hypergeo0/<br/>pochhammer</a>
       </td>
       <td>Pochhammer symbol</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/plangeo1.html#point">plangeo1/<br/>point</a>
-      </td>
-      <td>The symbol is used to indicate a point of planar Euclidean geometry by a variable. The point may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
    </tr>
    <tr>
       <td>
@@ -8300,12 +8276,6 @@
          <a href="../cd/meta_cats.html#type">meta_cats/<br/>type</a>
       </td>
       <td>This symbol is unary and returns the type of its argument.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/plangeo1.html#type">plangeo1/<br/>type</a>
-      </td>
-      <td>The symbol represents the type of the basic geometric objects: points, lines, configuration.</td>
    </tr>
    <tr>
       <td>

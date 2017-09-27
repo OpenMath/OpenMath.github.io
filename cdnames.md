@@ -463,10 +463,6 @@
       <td>experimental</td>
    </tr>
    <tr>
-      <th style="text-align:left"><a href="../cd/plangeo1.html">plangeo1</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
       <th style="text-align:left"><a href="../cd/plangeo2.html">plangeo2</a></th>
       <td>experimental</td>
    </tr>
