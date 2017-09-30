@@ -1,7 +1,15 @@
+<h1>OpenMath Symbols</h1>
+<p>A combined list of all 1531 symbols defined in this Content Dictionary collection.</p>
 <table>
    <tr>
       <th>Symbol</th>
       <th>Description</th>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/setname2.html#A">setname2/<br/>A</a>
+      </td>
+      <td>This symbol represents the set of algebraic numbers.</td>
    </tr>
    <tr>
       <td>
@@ -161,6 +169,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_imperial1.html#acre">units_imperial1/<br/>acre</a>
+      </td>
+      <td>This symbol represents the measure of one acre. This is a standard imperial measure for area.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_us1.html#acre_us_survey">units_us1/<br/>acre_us_survey</a>
       </td>
       <td>This symbol represents the measure of one U.S. Survey acre.</td>
@@ -245,6 +259,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/setname2.html#AlgebraicExtension">setname2/<br/>AlgebraicExtension</a>
+      </td>
+      <td>This symbol represents an algebraic extension of any integral domain.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/interval_types.html#algebraicIntervalType">interval_types/<br/>algebraicIntervalType</a>
       </td>
       <td>This symbol represents the type of algebraic intervals.</td>
@@ -305,6 +325,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_metric1.html#amp">units_metric1/<br/>amp</a>
+      </td>
+      <td>This symbol represents the measure of one amp. This is the standard SI measure for current.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/SI_BaseUnits1.html#ampere">SI_BaseUnits1/<br/>ampere</a>
       </td>
       <td>This symbol represents the measure of one ampere, the standard SI unit of measure for quantities of electric current. It has the short symbol form, "A", in upright roman font.</td>
@@ -329,13 +355,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#anonymous">polyd1/<br/>anonymous</a>
+         <a href="../cd/polyd.html#anonymous">polyd/<br/>anonymous</a>
       </td>
       <td>Indicates a variable that we do not want to name</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#anonymous">polyd/<br/>anonymous</a>
+         <a href="../cd/polyd1.html#anonymous">polyd1/<br/>anonymous</a>
       </td>
       <td>Indicates a variable that we do not want to name</td>
    </tr>
@@ -389,13 +415,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/relation2.html#approx">relation2/<br/>approx</a>
+         <a href="../cd/relation1.html#approx">relation1/<br/>approx</a>
       </td>
       <td>This symbol is used to denote the approximate equality of its two arguments.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/relation1.html#approx">relation1/<br/>approx</a>
+         <a href="../cd/relation2.html#approx">relation2/<br/>approx</a>
       </td>
       <td>This symbol is used to denote the approximate equality of its two arguments.</td>
    </tr>
@@ -407,21 +433,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arccos">transc3/<br/>arccos</a>
-      </td>
-      <td>This symbol represents the arccos function. This is the multivalued inverse of the cos function.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/transc1.html#arccos">transc1/<br/>arccos</a>
       </td>
       <td>This symbol represents the arccos function. This is the inverse of the cos function as described in Abramowitz and Stegun, section 4.4. It takes one argument.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arccosh">transc3/<br/>arccosh</a>
+         <a href="../cd/transc3.html#arccos">transc3/<br/>arccos</a>
       </td>
-      <td>This symbol represents the Arccosh function as described in Abramowitz and Stegun, section 4.6.</td>
+      <td>This symbol represents the arccos function. This is the multivalued inverse of the cos function.</td>
    </tr>
    <tr>
       <td>
@@ -431,9 +451,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arccot">transc3/<br/>arccot</a>
+         <a href="../cd/transc3.html#arccosh">transc3/<br/>arccosh</a>
       </td>
-      <td>This symbol represents the multi-valued arccot function as the inverse of cot</td>
+      <td>This symbol represents the Arccosh function as described in Abramowitz and Stegun, section 4.6.</td>
    </tr>
    <tr>
       <td>
@@ -443,9 +463,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arccoth">transc3/<br/>arccoth</a>
+         <a href="../cd/transc3.html#arccot">transc3/<br/>arccot</a>
       </td>
-      <td>This symbol represents the Arccoth function as described in Abramowitz and Stegun, section 4.6.</td>
+      <td>This symbol represents the multi-valued arccot function as the inverse of cot</td>
    </tr>
    <tr>
       <td>
@@ -455,9 +475,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arccsc">transc3/<br/>arccsc</a>
+         <a href="../cd/transc3.html#arccoth">transc3/<br/>arccoth</a>
       </td>
-      <td>This symbol represents the multivalued arccsc function as the inverse of csc.</td>
+      <td>This symbol represents the Arccoth function as described in Abramowitz and Stegun, section 4.6.</td>
    </tr>
    <tr>
       <td>
@@ -467,9 +487,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arccsch">transc3/<br/>arccsch</a>
+         <a href="../cd/transc3.html#arccsc">transc3/<br/>arccsc</a>
       </td>
-      <td>This symbol represents the Arccsch function as described in Abramowitz and Stegun, section 4.6.</td>
+      <td>This symbol represents the multivalued arccsc function as the inverse of csc.</td>
    </tr>
    <tr>
       <td>
@@ -479,9 +499,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arcsec">transc3/<br/>arcsec</a>
+         <a href="../cd/transc3.html#arccsch">transc3/<br/>arccsch</a>
       </td>
-      <td>This symbol represents the multivalued arcsec function as the inverse of sec.</td>
+      <td>This symbol represents the Arccsch function as described in Abramowitz and Stegun, section 4.6.</td>
    </tr>
    <tr>
       <td>
@@ -491,9 +511,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arcsech">transc3/<br/>arcsech</a>
+         <a href="../cd/transc3.html#arcsec">transc3/<br/>arcsec</a>
       </td>
-      <td>This symbol represents the Arcsech function as described in Abramowitz and Stegun, section 4.6.</td>
+      <td>This symbol represents the multivalued arcsec function as the inverse of sec.</td>
    </tr>
    <tr>
       <td>
@@ -503,9 +523,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arcsin">transc3/<br/>arcsin</a>
+         <a href="../cd/transc3.html#arcsech">transc3/<br/>arcsech</a>
       </td>
-      <td>This symbol represents the arcsin function. This is the multi-valued inverse of the sin function as described in Abramowitz and Stegun, section 4.4. It takes one argument.</td>
+      <td>This symbol represents the Arcsech function as described in Abramowitz and Stegun, section 4.6.</td>
    </tr>
    <tr>
       <td>
@@ -515,9 +535,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arcsinh">transc3/<br/>arcsinh</a>
+         <a href="../cd/transc3.html#arcsin">transc3/<br/>arcsin</a>
       </td>
-      <td>This symbol represents the Arcsinh function as described in Abramowitz and Stegun, section 4.6.</td>
+      <td>This symbol represents the arcsin function. This is the multi-valued inverse of the sin function as described in Abramowitz and Stegun, section 4.4. It takes one argument.</td>
    </tr>
    <tr>
       <td>
@@ -527,15 +547,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc2.html#arctan">transc2/<br/>arctan</a>
+         <a href="../cd/transc3.html#arcsinh">transc3/<br/>arcsinh</a>
       </td>
-      <td>This symbol represents the two-argument arctan function as in Fortran's ATAN2. arctan(x,y) is a value of arctan(y/x). For real x,y arctan(x,y) is positive when y is positive, negative when y is negative. If y is zero, the result is 0 if x is positive, and $\pi$ if x is negative. If x is zero, the result has absolute value $\pi/2$.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/transc3.html#arctan">transc3/<br/>arctan</a>
-      </td>
-      <td>This symbol represents the arctan function. This is the multi-valued inverse of the tan function.</td>
+      <td>This symbol represents the Arcsinh function as described in Abramowitz and Stegun, section 4.6.</td>
    </tr>
    <tr>
       <td>
@@ -545,15 +559,33 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#arctanh">transc3/<br/>arctanh</a>
+         <a href="../cd/transc2.html#arctan">transc2/<br/>arctan</a>
       </td>
-      <td>This symbol represents the Arctanh function as described in Abramowitz and Stegun, section 4.6.</td>
+      <td>This symbol represents the two-argument arctan function as in Fortran's ATAN2. arctan(x,y) is a value of arctan(y/x). For real x,y arctan(x,y) is positive when y is positive, negative when y is negative. If y is zero, the result is 0 if x is positive, and $\pi$ if x is negative. If x is zero, the result has absolute value $\pi/2$.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/transc2.html#arctan">transc2/<br/>arctan</a>
+      </td>
+      <td>This symbol represents the two-argument arctan function as in Fortran's ATAN2. arctan(y,x) is a value of arctan(y/x). For real x,y arctan(y,x) is positive when y is positive, negative when y is negative. If y is zero, the result is 0 if x is positive, and $\pi$ if x is negative. If x is zero, the result has absolute value $\pi/2$.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/transc3.html#arctan">transc3/<br/>arctan</a>
+      </td>
+      <td>This symbol represents the arctan function. This is the multi-valued inverse of the tan function.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/transc1.html#arctanh">transc1/<br/>arctanh</a>
       </td>
       <td>This symbol represents the arctanh function as described in Abramowitz and Stegun, section 4.6.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/transc3.html#arctanh">transc3/<br/>arctanh</a>
+      </td>
+      <td>This symbol represents the Arctanh function as described in Abramowitz and Stegun, section 4.6.</td>
    </tr>
    <tr>
       <td>
@@ -683,6 +715,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_siprefix1.html#atto">units_siprefix1/<br/>atto</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-18$</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/sts.html#attribution">sts/<br/>attribution</a>
       </td>
       <td>An `attribution' object consists of pairs of keys and values. The use of the symbol `attribution' in a signature indicates that the symbol is to be used as a key.</td>
@@ -752,6 +790,12 @@
          <a href="../cd/linalg5.html#banded">linalg5/<br/>banded</a>
       </td>
       <td>This symbol represents a (p,q) banded matrix, it takes one argument. A (p,q) banded matrix should always be square. The lower non-zero subdiagonal is the first element of the argument, whilst the highest non-zero super-diagonal is given by the last element of the argument. The argument determines the band of possibly non-zero entries which are positioned around the diagonal. It should be a vector of vectors, we note that they will not all be the same length, however the length of the vectors determine p and q. The longest element specifies the diagonal of the matrix and hence the size of the matrix. Every element not in the band is zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_imperial1.html#bar">units_imperial1/<br/>bar</a>
+      </td>
+      <td>This symbol represents the measure of one bar. This is the standard imperial measure for pressure.</td>
    </tr>
    <tr>
       <td>
@@ -893,6 +937,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/setname2.html#Boolean">setname2/<br/>Boolean</a>
+      </td>
+      <td>This symbol represents the set of Booleans. That is the truth values, true and false.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/limit1.html#both_sides">limit1/<br/>both_sides</a>
       </td>
       <td>This symbol is used within a limit construct to show the limit is being approached from both sides. It takes no arguments.</td>
@@ -920,6 +970,18 @@
          <a href="../cd/units_time1.html#calendar_month">units_time1/<br/>calendar_month</a>
       </td>
       <td>This symbol represents the measure of one month of (calendar) time.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_time1.html#calendar_month">units_time1/<br/>calendar_month</a>
+      </td>
+      <td>This symbol represents the measure of one month of (calendar) time.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_time1.html#calendar_year">units_time1/<br/>calendar_year</a>
+      </td>
+      <td>This symbol represents the measure of one year of (calendar) time.</td>
    </tr>
    <tr>
       <td>
@@ -1043,15 +1105,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/metagrp.html#CDComment">metagrp/<br/>CDComment</a>
-      </td>
-      <td>This symbol is used to represent the element of a CDGroup which explains some aspect of the corresponding content dictionary. It should have one string argument which makes that explanation.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/meta.html#CDComment">meta/<br/>CDComment</a>
       </td>
       <td>This symbol is used to represent the element of a content dictionary which explains some aspect of that content dictionary. It should have one string argument which makes that explanation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/metagrp.html#CDComment">metagrp/<br/>CDComment</a>
+      </td>
+      <td>This symbol is used to represent the element of a CDGroup which explains some aspect of the corresponding content dictionary. It should have one string argument which makes that explanation.</td>
    </tr>
    <tr>
       <td>
@@ -1103,15 +1165,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/metagrp.html#CDName">metagrp/<br/>CDName</a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDName element. It has one string argument, this should be the string corresponding to the name of a content dictionary which is in this CDGroup.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/meta.html#CDName">meta/<br/>CDName</a>
       </td>
       <td>An element which contains the string corresponding to the name of the CD. The string must match the syntax for CD names given in the OpenMath Standard. Here and elsewhere white space occurring at the beginning or end of the string will be ignored.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/metagrp.html#CDName">metagrp/<br/>CDName</a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDName element. It has one string argument, this should be the string corresponding to the name of a content dictionary which is in this CDGroup.</td>
    </tr>
    <tr>
       <td>
@@ -1157,15 +1219,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/metagrp.html#CDURL">metagrp/<br/>CDURL</a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDURL element. It has one string argument, this should be the string corresponding to the contents of the CDURL element for each Content Dictionary in the CDGroup. The element is optional, in case it is missing, the location of the CDGroup identified by the element CDGroupURL is assumed.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/meta.html#CDURL">meta/<br/>CDURL</a>
       </td>
       <td>An optional element. If it is used it contains a string representing the URL where the canonical reference copy of this CD is stored.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/metagrp.html#CDURL">metagrp/<br/>CDURL</a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDURL element. It has one string argument, this should be the string corresponding to the contents of the CDURL element for each Content Dictionary in the CDGroup. The element is optional, in case it is missing, the location of the CDGroup identified by the element CDGroupURL is assumed.</td>
    </tr>
    <tr>
       <td>
@@ -1175,15 +1237,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/metagrp.html#CDVersion">metagrp/<br/>CDVersion</a>
-      </td>
-      <td>This symbol represents the element of a CDGroup which describes each CDVersion element. It has one integral argument, this should specify which version of the content dictionary is to be taken as member of the CDGroup. The element is optional. In case it is missing, the last version is the one included in the CDGroup.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/meta.html#CDVersion">meta/<br/>CDVersion</a>
       </td>
       <td>An element which contains a version number for the CD. This should be a non negative integer. Any change to the CD that affects existing OpenMath applications that support this CD should result in an increase in the version number.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/metagrp.html#CDVersion">metagrp/<br/>CDVersion</a>
+      </td>
+      <td>This symbol represents the element of a CDGroup which describes each CDVersion element. It has one integral argument, this should specify which version of the content dictionary is to be taken as member of the CDGroup. The element is optional. In case it is missing, the last version is the one included in the CDGroup.</td>
    </tr>
    <tr>
       <td>
@@ -1220,6 +1282,12 @@
          <a href="../cd/plangeo3.html#center_of_gravity">plangeo3/<br/>center_of_gravity</a>
       </td>
       <td>Center of gravity of a number of points.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#centi">units_siprefix1/<br/>centi</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $0.01$</td>
    </tr>
    <tr>
       <td>
@@ -1271,15 +1339,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo3.html#circle">plangeo3/<br/>circle</a>
-      </td>
-      <td>The symbol represents a circle. The circle may be subject to constraints.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/intpath1.html#circle">intpath1/<br/>circle</a>
       </td>
       <td>The symbol circle(c,r) is the circle in the Riemann sphere of which center is c and the radius is r. The direction of the circle is the counter clockwise. When the center is intpath1.infty, the radius should be given in the standard coordinate t=1/z at the infinity.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/plangeo3.html#circle">plangeo3/<br/>circle</a>
+      </td>
+      <td>The symbol represents a circle. The circle may be subject to constraints.</td>
    </tr>
    <tr>
       <td>
@@ -1343,27 +1411,27 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#coefficient">polynomial1/<br/>coefficient</a>
-      </td>
-      <td>This symbol is a binary function whose first argument should be a polynomial f and whose second argument should be a non-negative integer n. It represents the coefficient of the i-th power of the variable in the polynomial f.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/poly.html#coefficient">poly/<br/>coefficient</a>
       </td>
       <td>The coefficient with respect to a list of variables (the second argument) raised to a list of powers (the third argument). Zero if no such term is present. Not all variables need be specified.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#coefficient_ring">polynomial1/<br/>coefficient_ring</a>
+         <a href="../cd/polynomial1.html#coefficient">polynomial1/<br/>coefficient</a>
       </td>
-      <td>This symbol is a unary function whose argument should be a polynomial. It represents the coefficient ring of the polynomial.</td>
+      <td>This symbol is a binary function whose first argument should be a polynomial f and whose second argument should be a non-negative integer n. It represents the coefficient of the i-th power of the variable in the polynomial f.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/poly.html#coefficient_ring">poly/<br/>coefficient_ring</a>
       </td>
       <td>The coefficient ring.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial1.html#coefficient_ring">polynomial1/<br/>coefficient_ring</a>
+      </td>
+      <td>This symbol is a unary function whose argument should be a polynomial. It represents the coefficient ring of the polynomial.</td>
    </tr>
    <tr>
       <td>
@@ -1466,6 +1534,12 @@
          <a href="../cd/SI_DerivedQuantities1.html#conductance">SI_DerivedQuantities1/<br/>conductance</a>
       </td>
       <td>This symbol represents the physical quantity of electrical conductance, the inverse of resistance. A variable representing an arbitrary quantity of conductance is commonly represented with the italic, upper case letter, "G" or "S".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/plangeo1.html#configuration">plangeo1/<br/>configuration</a>
+      </td>
+      <td>The symbol represents a configuration in Euclidean planar geometry consisting of a sequence of geometric objects like points, lines, etc, but also of other configurations.</td>
    </tr>
    <tr>
       <td>
@@ -1649,15 +1723,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SI_NamedDerivedUnits1.html#coulomb">SI_NamedDerivedUnits1/<br/>coulomb</a>
+      </td>
+      <td>This symbol represents an SI unit of electric charge. It has the short symbol form, "C".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#Coulomb">units_metric1/<br/>Coulomb</a>
       </td>
       <td>This symbol represents the measure of one Coulomb. This is the standard SI measure for charge.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SI_NamedDerivedUnits1.html#coulomb">SI_NamedDerivedUnits1/<br/>coulomb</a>
+         <a href="../cd/units_metric1.html#Coulomb">units_metric1/<br/>Coulomb</a>
       </td>
-      <td>This symbol represents an SI unit of electric charge. It has the short symbol form, "C".</td>
+      <td>This symbol represents the measure of one Coulomb. This is the standard SI measure for charge.</td>
    </tr>
    <tr>
       <td>
@@ -1769,15 +1849,27 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SIUsed_OffSystemUnits1.html#day">SIUsed_OffSystemUnits1/<br/>day</a>
+      </td>
+      <td>This symbol represents the measure of one day of time. It has the short symbol form, "d".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_time1.html#day">units_time1/<br/>day</a>
       </td>
       <td>This symbol represents the measure of one day of time. The definitions below ignore the possibilities of "leap seconds".</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SIUsed_OffSystemUnits1.html#day">SIUsed_OffSystemUnits1/<br/>day</a>
+         <a href="../cd/units_time1.html#day">units_time1/<br/>day</a>
       </td>
-      <td>This symbol represents the measure of one day of time. It has the short symbol form, "d".</td>
+      <td>This symbol represents the measure of one day of time. The definitions below ignore the possibilities of "leap seconds".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#deci">units_siprefix1/<br/>deci</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $0.1$</td>
    </tr>
    <tr>
       <td>
@@ -1817,27 +1909,27 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/cauchypv.html#defint">cauchypv/<br/>defint</a>
-      </td>
-      <td>This symbol is used to represent definite (Cauchy principal value) integration of unary functions. It takes two arguments; the first being the range (e.g. a set) of integration, and the second the function.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/calculus1.html#defint">calculus1/<br/>defint</a>
       </td>
       <td>This symbol is used to represent definite integration of unary functions. It takes two arguments; the first being the range (e.g. a set) of integration, and the second the function.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#degree">polynomial1/<br/>degree</a>
+         <a href="../cd/cauchypv.html#defint">cauchypv/<br/>defint</a>
       </td>
-      <td>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents its degree, that is the highest power of the variable occurring in a term of the polynomial. If the polynomial has no terms, it is the zero polynomial, in which case the value represented is -1.</td>
+      <td>This symbol is used to represent definite (Cauchy principal value) integration of unary functions. It takes two arguments; the first being the range (e.g. a set) of integration, and the second the function.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/poly.html#degree">poly/<br/>degree</a>
       </td>
       <td>The total degree of its argument. The value returned is a non-negative integer. We note that the degree of 0 is undefined. Note that this operation takes no account of any weights that have been defined: see weighted_degree in polyd.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial1.html#degree">polynomial1/<br/>degree</a>
+      </td>
+      <td>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents its degree, that is the highest power of the variable occurring in a term of the polynomial. If the polynomial has no terms, it is the zero polynomial, in which case the value represented is -1.</td>
    </tr>
    <tr>
       <td>
@@ -1859,6 +1951,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_metric1.html#degree_Celsius">units_metric1/<br/>degree_Celsius</a>
+      </td>
+      <td>This symbol represents the measure of one degree Celsius. This is a standard metric measure for temperature.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_imperial1.html#degree_Fahrenheit">units_imperial1/<br/>degree_Fahrenheit</a>
+      </td>
+      <td>This symbol represents the measure of one degree Fahrenheit. This is the standard imperial measure for temperature.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_imperial1.html#degree_Fahrenheit">units_imperial1/<br/>degree_Fahrenheit</a>
       </td>
       <td>This symbol represents the measure of one degree Fahrenheit. This is the standard imperial measure for temperature.</td>
@@ -1871,9 +1975,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_metric1.html#degree_Kelvin">units_metric1/<br/>degree_Kelvin</a>
+      </td>
+      <td>This symbol represents the measure of one degree Kelvin. This is a standard SI measure for temperature relative to absolute zero.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/poly.html#degree_wrt">poly/<br/>degree_wrt</a>
       </td>
       <td>The degree with respect to a variable (the second argument). We note that the degree of 0 is undefined.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#deka">units_siprefix1/<br/>deka</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10$</td>
    </tr>
    <tr>
       <td>
@@ -2105,12 +2221,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#displacement">dimensions1/<br/>displacement</a>
-      </td>
-      <td>This symbol represents the spatial difference between two points. The direction of the displacement is taken into account as well as the distance between the points.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/directives1.html#disprove">directives1/<br/>disprove</a>
       </td>
       <td>This symbol is a function with one argument, which should be a clause. When applied to a clause C, it asks for a proof of that C does not hold.</td>
@@ -2135,15 +2245,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/opnode.html#divide">opnode/<br/>divide</a>
-      </td>
-      <td>A constant value, constructs the divide for division nodes.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/arith1.html#divide">arith1/<br/>divide</a>
       </td>
       <td>This symbol represents a (binary) division function denoting the first argument right-divided by the second, i.e. divide(a,b)=a*inverse(b). It is the inverse of the multiplication function defined by the symbol times in this CD.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/opnode.html#divide">opnode/<br/>divide</a>
+      </td>
+      <td>A constant value, constructs the divide for division nodes.</td>
    </tr>
    <tr>
       <td>
@@ -2165,21 +2275,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#DMP">polyd1/<br/>DMP</a>
-      </td>
-      <td>The constructor of DMPs. The first argument is the polynomial ring containing the polynomial and the second is a "SDMP". Should be of the form DMP(poly_ring_d(...), SDMP(...))</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#DMP">polyd/<br/>DMP</a>
       </td>
       <td>The constructor of DMPs. The first argument is the polynomial ring containing the polynomial and the second is a "SDMP". Should be of the form DMP(PolyRingD(...), SDMP(...))</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#DMPL">polyd1/<br/>DMPL</a>
+         <a href="../cd/polyd1.html#DMP">polyd1/<br/>DMP</a>
       </td>
-      <td>The constructor for lists of multivariate polynomial members of the same polynomial ring. The first argument is a polynomial ring and the rest are "SDMP"s. DMPL can be attributed with the "ordering" symbol to indicate a particular ordering for monomials of all its polynomials. Should be of the form DMPL(poly_ring_d(...), SDMP(...)+)</td>
+      <td>The constructor of DMPs. The first argument is the polynomial ring containing the polynomial and the second is a "SDMP". Should be of the form DMP(poly_ring_d(...), SDMP(...))</td>
    </tr>
    <tr>
       <td>
@@ -2189,9 +2293,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/permutation1.html#domain">permutation1/<br/>domain</a>
+         <a href="../cd/polyd1.html#DMPL">polyd1/<br/>DMPL</a>
       </td>
-      <td>This symbol is a function with one argument which is a endomap. When applied to a endomap whose arguments are a_1,...,a_n, it represents the set {1,...,n}.</td>
+      <td>The constructor for lists of multivariate polynomial members of the same polynomial ring. The first argument is a polynomial ring and the rest are "SDMP"s. DMPL can be attributed with the "ordering" symbol to indicate a particular ordering for monomials of all its polynomials. Should be of the form DMPL(poly_ring_d(...), SDMP(...)+)</td>
    </tr>
    <tr>
       <td>
@@ -2207,21 +2311,27 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/permutation1.html#domain">permutation1/<br/>domain</a>
+      </td>
+      <td>This symbol is a function with one argument which is a endomap. When applied to a endomap whose arguments are a_1,...,a_n, it represents the set {1,...,n}.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/fns1.html#domainofapplication">fns1/<br/>domainofapplication</a>
       </td>
       <td>The domainofapplication element denotes the domain over which a given function is being applied. It is intended in MathML to be a more general alternative to specification of this domain using such quantifier elements as bvar, lowlimit or condition.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/nums1.html#e">nums1/<br/>e</a>
-      </td>
-      <td>This symbol represents the base of the natural logarithm, approximately 2.718. See Abramowitz and Stegun, Handbook of Mathematical Functions, section 4.1.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/expint.html#E">expint/<br/>E</a>
       </td>
       <td>The symbol E defines the generalised exponential integral as in Abramovitz &amp; Stegun equation 5.1.4. This is an ordinary integral: $$E_n(z)=\int_1^{-\infty}\frac{e^{-zt}}{t^n} dt\qquad(\Re z&gt;0)$$ which is then extended by analytic continuation (this latter is not currently represented in the FMPs) to the complex plane slit along the negative real axis. Note that OpenMath's definition is curried, i.e. E(n) is a function.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/nums1.html#e">nums1/<br/>e</a>
+      </td>
+      <td>This symbol represents the base of the natural logarithm, approximately 2.718. See Abramowitz and Stegun, Handbook of Mathematical Functions, section 4.1.</td>
    </tr>
    <tr>
       <td>
@@ -2261,13 +2371,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#elimination">polyd2/<br/>elimination</a>
+         <a href="../cd/polyd.html#elimination">polyd/<br/>elimination</a>
       </td>
       <td>This is an ordering, which is partially in terms of one ordering, and partially in terms of another. First argument is a number of variables. Second is ordering to apply on the first so many variables. Third is an ordering on the rest, to be used to break ties.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#elimination">polyd/<br/>elimination</a>
+         <a href="../cd/polyd2.html#elimination">polyd2/<br/>elimination</a>
       </td>
       <td>This is an ordering, which is partially in terms of one ordering, and partially in terms of another. First argument is a number of variables. Second is ordering to apply on the first so many variables. Third is an ordering on the rest, to be used to break ties.</td>
    </tr>
@@ -2501,6 +2611,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_siprefix1.html#exa">units_siprefix1/<br/>exa</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^18$</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/meta.html#Example">meta/<br/>Example</a>
       </td>
       <td>An element which contains an arbitrary number of children, each of which is either a string or an OpenMath Object. These children give examples in natural language, or in OpenMath, of the enclosing symbol definition.</td>
@@ -2525,15 +2641,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#expand">polynomial1/<br/>expand</a>
-      </td>
-      <td>Expands a polynomial.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/poly.html#expand">poly/<br/>expand</a>
       </td>
       <td>Converts a factored or squarefreed form into the expanded polynomial over the same ring, so that factored(recursive) -&gt; recursive, etc.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial1.html#expand">polynomial1/<br/>expand</a>
+      </td>
+      <td>Expands a polynomial.</td>
    </tr>
    <tr>
       <td>
@@ -2675,21 +2791,27 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_siprefix1.html#femto">units_siprefix1/<br/>femto</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-15$</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/combinat1.html#Fibonacci">combinat1/<br/>Fibonacci</a>
       </td>
       <td>The Fibonacci numbers, defined by the linear recurrence: Fibonacci(0) = 0, Fibonacci(1) = 1, and Fibonacci(n + 1) = Fibonacci(n) + Fibonacci(n - 1). Note that some authors define Fibonacci(0) = 1.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/field1.html#field">field1/<br/>field</a>
-      </td>
-      <td>This symbol is a constructor for fields. It takes seven arguments R, a, o, n, m, e, i: which are, respectively, a set R to specify the elements in the field, a binary operation a on R, an element o of R, and a unary operation n on R such that [R,a,o,n] is a commutative group, a binary operation m on R, an element e of R, and a map from R - {o} to itself such that [R,m,e] is a monoid and such that [R - {o},m',e,i] is a group, where m' is the restriction of m to R -{o}.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/algebraic_cats.html#field">algebraic_cats/<br/>field</a>
       </td>
       <td>This symbol is the constructor for fields. A field is an Abelian group under +, the set of the field complement {0} with * is an Abelian group, a field has a further rule which associates the two operations, that is left and right distributivity. The field constructor takes seven arguments: The set of the field. A binary function into itself to represent the multiplication operation, *. A binary function into itself to represent the addition operation, +. A member of the set of the field to specify the multiplicative identity, 1. A member of the set of the field to specify the additive identity, 0. A unary function taking the set of the field into itself to represent the multiplicative inverses (i.e. inverses under *). A unary function taking the set of the field into itself to represent the additive inverses (i.e. inverses under +, or negatives).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/field1.html#field">field1/<br/>field</a>
+      </td>
+      <td>This symbol is a constructor for fields. It takes seven arguments R, a, o, n, m, e, i: which are, respectively, a set R to specify the elements in the field, a binary operation a on R, an element o of R, and a unary operation n on R such that [R,a,o,n] is a commutative group, a binary operation m on R, an element e of R, and a map from R - {o} to itself such that [R,m,e] is a monoid and such that [R - {o},m',e,i] is a group, where m' is the restriction of m to R -{o}.</td>
    </tr>
    <tr>
       <td>
@@ -2825,6 +2947,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_imperial1.html#foot">units_imperial1/<br/>foot</a>
+      </td>
+      <td>This symbol represents the measure of one foot. This is the standard imperial measure for distance.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_us1.html#foot_us_survey">units_us1/<br/>foot_us_survey</a>
       </td>
       <td>This symbol represents the measure of one U.S. Survey foot.</td>
@@ -2951,15 +3079,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/nums1.html#gamma">nums1/<br/>gamma</a>
-      </td>
-      <td>A symbol to convey the notion of the gamma constant as defined in Abramowitz and Stegun, Handbook of Mathematical Functions, section 6.1.3. It is the limit of 1 + 1/2 + 1/3 + ... + 1/m - ln m as m tends to infinity, this is approximately 0.5772 15664.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/hypergeo0.html#gamma">hypergeo0/<br/>gamma</a>
       </td>
       <td>Euler's gamma function</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/nums1.html#gamma">nums1/<br/>gamma</a>
+      </td>
+      <td>A symbol to convey the notion of the gamma constant as defined in Abramowitz and Stegun, Handbook of Mathematical Functions, section 6.1.3. It is the limit of 1 + 1/2 + 1/3 + ... + 1/m - ln m as m tends to infinity, this is approximately 0.5772 15664.</td>
    </tr>
    <tr>
       <td>
@@ -2969,9 +3097,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial3.html#gcd">polynomial3/<br/>gcd</a>
+         <a href="../cd/arith1.html#gcd">arith1/<br/>gcd</a>
       </td>
-      <td>The n-ary greatest common divisor for univariate polynomials over fields.</td>
+      <td>The symbol to represent the n-ary function to return the gcd (greatest common divisor) of its arguments.</td>
    </tr>
    <tr>
       <td>
@@ -2981,15 +3109,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyoperators1.html#gcd">polyoperators1/<br/>gcd</a>
+         <a href="../cd/polynomial3.html#gcd">polynomial3/<br/>gcd</a>
       </td>
-      <td>The n-ary greatest common divisor for univariate polynomials.</td>
+      <td>The n-ary greatest common divisor for univariate polynomials over fields.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/arith1.html#gcd">arith1/<br/>gcd</a>
+         <a href="../cd/polyoperators1.html#gcd">polyoperators1/<br/>gcd</a>
       </td>
-      <td>The symbol to represent the n-ary function to return the gcd (greatest common divisor) of its arguments.</td>
+      <td>The n-ary greatest common divisor for univariate polynomials.</td>
    </tr>
    <tr>
       <td>
@@ -3029,6 +3157,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/setname2.html#GFp">setname2/<br/>GFp</a>
+      </td>
+      <td>This symbol represents the finite field of integers modulo p, where p is a prime.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/setname2.html#GFpn">setname2/<br/>GFpn</a>
+      </td>
+      <td>This symbol represents the finite field with p^n elements, where p is a prime.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/setname2.html#GFpn">setname2/<br/>GFpn</a>
       </td>
       <td>This symbol represents the finite field with p^n elements, where p is a prime.</td>
@@ -3038,6 +3178,12 @@
          <a href="../cd/units_binaryprefix1.html#gibi">units_binaryprefix1/<br/>gibi</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $2^30$. The full technical name is gigabinary.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#giga">units_siprefix1/<br/>giga</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^9$</td>
    </tr>
    <tr>
       <td>
@@ -3077,21 +3223,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#graded_lexicographic">polyd2/<br/>graded_lexicographic</a>
-      </td>
-      <td>Total degree order, graded with the lexicographic ordering.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#graded_lexicographic">polyd/<br/>graded_lexicographic</a>
       </td>
       <td>Total degree order, graded with the lexicographic ordering. Note that, if a poly_ring_d_named is used, lexigographic refers to the order of the variables in the poly_ring_d_named, not to their order as strings.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#graded_reverse_lexicographic">polyd2/<br/>graded_reverse_lexicographic</a>
+         <a href="../cd/polyd2.html#graded_lexicographic">polyd2/<br/>graded_lexicographic</a>
       </td>
-      <td>Total degree order, graded with the reverse lexicographic ordering.</td>
+      <td>Total degree order, graded with the lexicographic ordering.</td>
    </tr>
    <tr>
       <td>
@@ -3101,9 +3241,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polyd2.html#graded_reverse_lexicographic">polyd2/<br/>graded_reverse_lexicographic</a>
+      </td>
+      <td>Total degree order, graded with the reverse lexicographic ordering.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/SI_NamedDerivedUnits1.html#gram">SI_NamedDerivedUnits1/<br/>gram</a>
       </td>
       <td>This symbol represents one gram. This unit is implied by the incorporation of the prefix "kilo" in the base unit standard, kilogram. Since SI prefixes may not, by SI standard, be presented by prepending to "kilogram", the gram is introduced for the application of prefixes. By itself, gram should not appear in SI compliant presentation. It has the short symbol form, "g".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_metric1.html#gramme">units_metric1/<br/>gramme</a>
+      </td>
+      <td>This symbol represents the measure of one gramme. This is not quite the standard SI measure for mass, which is the kilogramme, but OpenMath chooses to regard the gramme as standard, otherwise one would have to call it the milli-kilogramme.</td>
    </tr>
    <tr>
       <td>
@@ -3167,6 +3319,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/algebraic_cats.html#group">algebraic_cats/<br/>group</a>
+      </td>
+      <td>This symbol is the constructor for groups, that is a monoid for which every element is invertible. The group constructor takes four arguments, the set of the group, a binary function taking two elements of the set into itself to represent the operation of the group, an element of the set to represent the identity of the group and a unary function taking the set into itself to specify inverse elements of the group.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/generic_alg_cats.html#group">generic_alg_cats/<br/>group</a>
+      </td>
+      <td>This Symbol represents the generic category of group.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/gp1.html#group">gp1/<br/>group</a>
       </td>
       <td>The n-ary function Group. The group generated by its arguments. The arguments must have a natural group operation associated with them.</td>
@@ -3182,18 +3346,6 @@
          <a href="../cd/permgp1.html#group">permgp1/<br/>group</a>
       </td>
       <td>This symbol represents an n-ary function. The first argument is a group operation (usually, left_compose or right_compose), the other n-1 arguments represent permutations. When evaluated on such arguments, the function represents the permutation group generated by the last n-1 arguments.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/algebraic_cats.html#group">algebraic_cats/<br/>group</a>
-      </td>
-      <td>This symbol is the constructor for groups, that is a monoid for which every element is invertible. The group constructor takes four arguments, the set of the group, a binary function taking two elements of the set into itself to represent the operation of the group, an element of the set to represent the identity of the group and a unary function taking the set into itself to specify inverse elements of the group.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/generic_alg_cats.html#group">generic_alg_cats/<br/>group</a>
-      </td>
-      <td>This Symbol represents the generic category of group.</td>
    </tr>
    <tr>
       <td>
@@ -3257,6 +3409,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/setname2.html#H">setname2/<br/>H</a>
+      </td>
+      <td>This symbol represents the set of quaternions.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/plangeo2.html#halfline">plangeo2/<br/>halfline</a>
       </td>
       <td>The halfline starting at A and going through B. The symbol takes as arguments the points A and B.</td>
@@ -3284,6 +3442,12 @@
          <a href="../cd/SI_DerivedQuantities1.html#heat">SI_DerivedQuantities1/<br/>heat</a>
       </td>
       <td>This symbol represents the physical quantity of energy that is transferred from one object to another due to a difference in temperature.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#hecto">units_siprefix1/<br/>hecto</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $100$</td>
    </tr>
    <tr>
       <td>
@@ -3335,15 +3499,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SIUsed_OffSystemUnits1.html#hour">SIUsed_OffSystemUnits1/<br/>hour</a>
+      </td>
+      <td>This symbol represents the measure of one hour of time. It has the short symbol form, "h".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_time1.html#hour">units_time1/<br/>hour</a>
       </td>
       <td>This symbol represents the measure of one hour of time.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SIUsed_OffSystemUnits1.html#hour">SIUsed_OffSystemUnits1/<br/>hour</a>
+         <a href="../cd/units_time1.html#hour">units_time1/<br/>hour</a>
       </td>
-      <td>This symbol represents the measure of one hour of time. It has the short symbol form, "h".</td>
+      <td>This symbol represents the measure of one hour of time.</td>
    </tr>
    <tr>
       <td>
@@ -3401,6 +3571,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/fns1.html#identity">fns1/<br/>identity</a>
+      </td>
+      <td>The identity function, it takes one argument and returns the same value.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/group1.html#identity">group1/<br/>identity</a>
       </td>
       <td>This symbols represents a unary function, whose argument should be a group. It returns the identity element of the group.</td>
@@ -3422,12 +3598,6 @@
          <a href="../cd/ring1.html#identity">ring1/<br/>identity</a>
       </td>
       <td>This symbols represents a unary function, whose argument should be a ring. It returns the identity element of the ring.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/fns1.html#identity">fns1/<br/>identity</a>
-      </td>
-      <td>The identity function, it takes one argument and returns the same value.</td>
    </tr>
    <tr>
       <td>
@@ -3467,15 +3637,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polygb2.html#in">polygb2/<br/>in</a>
-      </td>
-      <td>This symbol is a function of at least 4 arguments. The first argument is a polynomial p, the second is a list of variables, the third is an ordering the fourth is a list of polynomials B, and, optionally, the fifth is a polynomial_ring. When applied to its arguments, it represents the boolean value of the assertion that p belongs to the ideal generated by B.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/multiset1.html#in">multiset1/<br/>in</a>
       </td>
       <td>This symbol has two arguments, an element and a multiset. It is used to denote that the element is in the given multiset.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polygb2.html#in">polygb2/<br/>in</a>
+      </td>
+      <td>This symbol is a function of at least 4 arguments. The first argument is a polynomial p, the second is a list of variables, the third is an ordering the fourth is a list of polynomials B, and, optionally, the fifth is a polynomial_ring. When applied to its arguments, it represents the boolean value of the assertion that p belongs to the ideal generated by B.</td>
    </tr>
    <tr>
       <td>
@@ -3488,6 +3658,12 @@
          <a href="../cd/polygb2.html#in_radical">polygb2/<br/>in_radical</a>
       </td>
       <td>This symbol is a function of at least 4 arguments. The first argument should be a polynomial p, the second is a list of variables, the third is an ordering the fourth is a list of polynomials B, and optionally: the fifth is a polynomial_ring. When applied to its arguments, it represents the boolean value of the assertion that p belongs to the radical ideal generated by B.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/plangeo1.html#incident">plangeo1/<br/>incident</a>
+      </td>
+      <td>The symbol represents the logical incidence function which is a binary function taking arguments representing geometric objects like points and lines and returning a boolean value. It is true if and only if the first argument is incident to the second.</td>
    </tr>
    <tr>
       <td>
@@ -3731,15 +3907,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/permutation1.html#inverse">permutation1/<br/>inverse</a>
-      </td>
-      <td>This symbol is a unary function. Its argument should be a permutation. When applied to argument P, the resulting value is the inverse permutation of P.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/fns1.html#inverse">fns1/<br/>inverse</a>
       </td>
       <td>This symbol is used to describe the inverse of its argument (a function). This inverse may only be partially defined because the function may not have been surjective. If the function is not surjective the inverse function is ill-defined without further stipulations. No assumptions are made on the semantics of this inverse.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/permutation1.html#inverse">permutation1/<br/>inverse</a>
+      </td>
+      <td>This symbol is a unary function. Its argument should be a permutation. When applied to argument P, the resulting value is the inverse permutation of P.</td>
    </tr>
    <tr>
       <td>
@@ -4283,15 +4459,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SI_NamedDerivedUnits1.html#joule">SI_NamedDerivedUnits1/<br/>joule</a>
+      </td>
+      <td>This symbol represents an SI unit of energy. It has the short symbol form, "J".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#Joule">units_metric1/<br/>Joule</a>
       </td>
       <td>This symbol represents the measure of one Joule. This is the standard SI measure for energy.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SI_NamedDerivedUnits1.html#joule">SI_NamedDerivedUnits1/<br/>joule</a>
+         <a href="../cd/units_metric1.html#Joule">units_metric1/<br/>Joule</a>
       </td>
-      <td>This symbol represents an SI unit of energy. It has the short symbol form, "J".</td>
+      <td>This symbol represents the measure of one Joule. This is the standard SI measure for energy.</td>
    </tr>
    <tr>
       <td>
@@ -4319,12 +4501,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/ring3.html#kernel">ring3/<br/>kernel</a>
-      </td>
-      <td>This symbol represents a unary function. Its argument is a ring homomorphism f : R -&gt; S. When evaluated on f, the function represents the kernel in R of f, that is, the subset {x in R | f(x) = 0}.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/hypergeon0.html#kernel">hypergeon0/<br/>kernel</a>
       </td>
       <td>It returns the kernel of the map defined by a matrix in a specified domain.</td>
@@ -4337,9 +4513,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/ring3.html#kernel">ring3/<br/>kernel</a>
+      </td>
+      <td>This symbol represents a unary function. Its argument is a ring homomorphism f : R -&gt; S. When evaluated on f, the function represents the kernel in R of f, that is, the subset {x in R | f(x) = 0}.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_binaryprefix1.html#kibi">units_binaryprefix1/<br/>kibi</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $2^10$. The full technical name is kilobinary.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#kilo">units_siprefix1/<br/>kilo</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $1000$</td>
    </tr>
    <tr>
       <td>
@@ -4385,15 +4573,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/lc.html#Lambda">lc/<br/>Lambda</a>
-      </td>
-      <td>The abstraction constructor. It is followed by a list of variables and an OpenMath object.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/fns1.html#lambda">fns1/<br/>lambda</a>
       </td>
       <td>This symbol is used to represent anonymous functions as lambda expansions. It is used in a binder that takes two further arguments, the first of which is a list of variables, and the second of which is an expression, and it forms the function which is the lambda extraction of the expression</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/lc.html#Lambda">lc/<br/>Lambda</a>
+      </td>
+      <td>The abstraction constructor. It is followed by a list of variables and an OpenMath object.</td>
    </tr>
    <tr>
       <td>
@@ -4427,27 +4615,27 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/poly.html#lcm">poly/<br/>lcm</a>
-      </td>
-      <td>The least common multiple of its polynomial arguments. This is unique up to units, but the choice must be compatible with that made for gcd: see the CMP/FMP.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/arith1.html#lcm">arith1/<br/>lcm</a>
       </td>
       <td>The symbol to represent the n-ary function to return the least common multiple of its arguments.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial1.html#leading_coefficient">polynomial1/<br/>leading_coefficient</a>
+         <a href="../cd/poly.html#lcm">poly/<br/>lcm</a>
       </td>
-      <td>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents the coefficient of the monomial of highest degree. If the polynomial is zero, the value represented is zero.</td>
+      <td>The least common multiple of its polynomial arguments. This is unique up to units, but the choice must be compatible with that made for gcd: see the CMP/FMP.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/poly.html#leading_coefficient">poly/<br/>leading_coefficient</a>
       </td>
       <td>The leading coefficient with respect to a variable (the second argument). We note that the leading coefficient of 0 is undefined.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial1.html#leading_coefficient">polynomial1/<br/>leading_coefficient</a>
+      </td>
+      <td>This symbol represents a unary function, whose argument should be univariate polynomial. When applied to a polynomial, it represents the coefficient of the monomial of highest degree. If the polynomial is zero, the value represented is zero.</td>
    </tr>
    <tr>
       <td>
@@ -4463,15 +4651,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/permutation1.html#left_compose">permutation1/<br/>left_compose</a>
-      </td>
-      <td>This symbol is a binary function. Its arguments should be permutations. When applied to arguments P1 and P2, the resulting value is the permutation which maps x in Support(P1) union Support(P2) to P1(P2(x)).</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/fns1.html#left_compose">fns1/<br/>left_compose</a>
       </td>
       <td>This symbol represents the function which forms the left-composition of its two (function) arguments.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/permutation1.html#left_compose">permutation1/<br/>left_compose</a>
+      </td>
+      <td>This symbol is a binary function. Its arguments should be permutations. When applied to arguments P1 and P2, the resulting value is the permutation which maps x in Support(P1) union Support(P2) to P1(P2(x)).</td>
    </tr>
    <tr>
       <td>
@@ -4589,6 +4777,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/dimensions1.html#length">dimensions1/<br/>length</a>
+      </td>
+      <td>This symbol represents the length physical dimension.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/list3.html#length">list3/<br/>length</a>
       </td>
       <td>This symbol represents a function whose argument should be a list. It returns the length of its argument.</td>
@@ -4601,21 +4795,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyslp.html#length">polyslp/<br/>length</a>
-      </td>
-      <td>A unary function taking an slp as argument and returning the length of this slp.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#length">dimensions1/<br/>length</a>
-      </td>
-      <td>This symbol represents the length physical dimension.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/permutation1.html#length">permutation1/<br/>length</a>
       </td>
       <td>This symbol is a function with one argument, which must be a cycle. When applied to cycle(a_1,a_2,...,a_n), it returns the number n. This number is referred to as the length of the cycle.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyslp.html#length">polyslp/<br/>length</a>
+      </td>
+      <td>A unary function taking an slp as argument and returning the length of this slp.</td>
    </tr>
    <tr>
       <td>
@@ -4637,15 +4825,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#lexicographic">polyd2/<br/>lexicographic</a>
-      </td>
-      <td>The lexicographic ordering of monomials.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#lexicographic">polyd/<br/>lexicographic</a>
       </td>
       <td>The lexicographic ordering of terms. Note that, if a poly_ring_d_named is used, lexigographic refers to the order of the variables in the poly_ring_d_named, not to their order as strings.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd2.html#lexicographic">polyd2/<br/>lexicographic</a>
+      </td>
+      <td>The lexicographic ordering of monomials.</td>
    </tr>
    <tr>
       <td>
@@ -4676,6 +4864,12 @@
          <a href="../cd/moreerrors.html#limitation">moreerrors/<br/>limitation</a>
       </td>
       <td>This symbol represents the error which is returned when an application reads an error caused by the limitations of an implementation when dealing with OpenMath objects such as limits on the size of objects or on the kind of objects manipulated. This can include limits on the size of a bytearray or integer, a limit on the number of arguments of an application or the inability to deal with Unicode characters outside ISO latin 1. It will have at least one argument, which is a string describing the problem. It may have a second argument which is relevant to the error.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/plangeo1.html#line">plangeo1/<br/>line</a>
+      </td>
+      <td>The symbol is used to indicate a line of planar Euclidean geometry by a variable. The line may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
    </tr>
    <tr>
       <td>
@@ -4787,15 +4981,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SIUsed_OffSystemUnits1.html#litre">SIUsed_OffSystemUnits1/<br/>litre</a>
+      </td>
+      <td>This symbol represents the volume measure of one litre. It has the short symbol form, "l" or "L".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#litre">units_metric1/<br/>litre</a>
       </td>
       <td>This symbol represents the measure of one litre. This is a standard metric measure for physical volume.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SIUsed_OffSystemUnits1.html#litre">SIUsed_OffSystemUnits1/<br/>litre</a>
+         <a href="../cd/units_metric1.html#litre">units_metric1/<br/>litre</a>
       </td>
-      <td>This symbol represents the volume measure of one litre. It has the short symbol form, "l" or "L".</td>
+      <td>This symbol represents the measure of one litre. This is a standard metric measure for physical volume.</td>
    </tr>
    <tr>
       <td>
@@ -4805,15 +5005,21 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#ln">transc3/<br/>ln</a>
+         <a href="../cd/units_metric1.html#litre_pre1964">units_metric1/<br/>litre_pre1964</a>
       </td>
-      <td>This symbol represents the ln function (natural logarithm) as a multivalued function.</td>
+      <td>This symbol represents the previous (1901-1964) measure of one litre. This used to be a standard metric measure for physical volume.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/transc1.html#ln">transc1/<br/>ln</a>
       </td>
       <td>This symbol represents the ln function (natural logarithm) as described in Abramowitz and Stegun, section 4.1. It takes one argument. Note the description in the CMP/FMP of the branch cut. If signed zeros are in use, the inequality needs to be non-strict.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/transc3.html#ln">transc3/<br/>ln</a>
+      </td>
+      <td>This symbol represents the ln function (natural logarithm) as a multivalued function.</td>
    </tr>
    <tr>
       <td>
@@ -4829,13 +5035,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc3.html#log">transc3/<br/>log</a>
+         <a href="../cd/transc1.html#log">transc1/<br/>log</a>
       </td>
       <td>This symbol represents a binary log function; the first argument is the base, to which the second argument is log'ed. It is defined in Abramowitz and Stegun, Handbook of Mathematical Functions, section 4.1</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc1.html#log">transc1/<br/>log</a>
+         <a href="../cd/transc3.html#log">transc3/<br/>log</a>
       </td>
       <td>This symbol represents a binary log function; the first argument is the base, to which the second argument is log'ed. It is defined in Abramowitz and Stegun, Handbook of Mathematical Functions, section 4.1</td>
    </tr>
@@ -4949,15 +5155,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/set1.html#map">set1/<br/>map</a>
-      </td>
-      <td>This symbol represents a mapping function which may be used to construct sets, it takes as arguments a function from X to Y and a set over X in that order. The value that is returned is a set of values in Y. The argument list may be a set or an integer_interval.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/list1.html#map">list1/<br/>map</a>
       </td>
       <td>This symbol represents a mapping function which may be used to construct lists; it takes as arguments a function from X to Y and a list over X in that order. The value that is returned is a list of values in Y. The argument list may be a set or an integer_interval.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/set1.html#map">set1/<br/>map</a>
+      </td>
+      <td>This symbol represents a mapping function which may be used to construct sets, it takes as arguments a function from X to Y and a set over X in that order. The value that is returned is a set of values in Y. The argument list may be a set or an integer_interval.</td>
    </tr>
    <tr>
       <td>
@@ -5027,15 +5233,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/linalg3.html#matrix">linalg3/<br/>matrix</a>
-      </td>
-      <td>This symbol is an n-ary matrix constructor which requires matrixcolumn's as arguments. It is used to represent matrices.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/linalg2.html#matrix">linalg2/<br/>matrix</a>
       </td>
       <td>This symbol is an n-ary matrix constructor which requires matrixrow's as arguments. It is used to represent matrices.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg3.html#matrix">linalg3/<br/>matrix</a>
+      </td>
+      <td>This symbol is an n-ary matrix constructor which requires matrixcolumn's as arguments. It is used to represent matrices.</td>
    </tr>
    <tr>
       <td>
@@ -5045,13 +5251,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#matrix_ordering">polyd2/<br/>matrix_ordering</a>
+         <a href="../cd/polyd.html#matrix_ordering">polyd/<br/>matrix_ordering</a>
       </td>
       <td>The argument is a matrix with as many columns as indeterminates (= rank). Each row in turm is multiplied by the column vector of exponents to produce a weighting for comparison purposes.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#matrix_ordering">polyd/<br/>matrix_ordering</a>
+         <a href="../cd/polyd2.html#matrix_ordering">polyd2/<br/>matrix_ordering</a>
       </td>
       <td>The argument is a matrix with as many columns as indeterminates (= rank). Each row in turm is multiplied by the column vector of exponents to produce a weighting for comparison purposes.</td>
    </tr>
@@ -5129,15 +5335,33 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_metric1.html#metre">units_metric1/<br/>metre</a>
+         <a href="../cd/units_siprefix1.html#mega">units_siprefix1/<br/>mega</a>
       </td>
-      <td>This symbol represents the measure of one metre. This is the standard SI unit measure for physical distance.</td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^6$</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/SI_BaseUnits1.html#metre">SI_BaseUnits1/<br/>metre</a>
       </td>
       <td>This symbol represents the measure of one metre of length, the standard SI unit of measure for quantities of length or physical distance. It has the short symbol form, "m", in upright roman font.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_metric1.html#metre">units_metric1/<br/>metre</a>
+      </td>
+      <td>This symbol represents the measure of one metre. This is the standard SI unit measure for physical distance.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_metric1.html#metre">units_metric1/<br/>metre</a>
+      </td>
+      <td>This symbol represents the measure of one metre. This is the standard SI unit measure for physical distance.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_metric1.html#metre_sqrd">units_metric1/<br/>metre_sqrd</a>
+      </td>
+      <td>This symbol represents the measure of one metre squared. This is the standard SI measure for physical area.</td>
    </tr>
    <tr>
       <td>
@@ -5153,6 +5377,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_metric1.html#metres_per_second">units_metric1/<br/>metres_per_second</a>
+      </td>
+      <td>This symbol represents the measure of one metre per second. This is the standard SI measure for speed.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_metric1.html#metres_per_second_sqrd">units_metric1/<br/>metres_per_second_sqrd</a>
+      </td>
+      <td>This symbol represents the measure of one metre per second squared. This is the standard SI measure for acceleration.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#metres_per_second_sqrd">units_metric1/<br/>metres_per_second_sqrd</a>
       </td>
       <td>This symbol represents the measure of one metre per second squared. This is the standard SI measure for acceleration.</td>
@@ -5162,6 +5398,12 @@
          <a href="../cd/tensor1.html#metric_tensor">tensor1/<br/>metric_tensor</a>
       </td>
       <td>This symbol represents the metric tensor, typically depicted using a lower case g. The metric tensor is a nondegenerate, symmetric bilinear form. It defines the ideas of leng th and angle in a metric space, the most common example being the Euclidean metric. The square of a differential length, ds*ds, is given by the bilinear product of the coordinate differentials, dx^i, with the metric tensor.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#micro">units_siprefix1/<br/>micro</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-6$</td>
    </tr>
    <tr>
       <td>
@@ -5189,6 +5431,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_imperial1.html#mile">units_imperial1/<br/>mile</a>
+      </td>
+      <td>This symbol represents the measure of one (land, or statute) mile. This is a standard imperial measure for distance, defined in terms of the foot.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_us1.html#mile_us_survey">units_us1/<br/>mile_us_survey</a>
       </td>
       <td>This symbol represents the measure of one U.S. Survey mile.</td>
@@ -5201,9 +5449,27 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_imperial1.html#miles_per_hr">units_imperial1/<br/>miles_per_hr</a>
+      </td>
+      <td>This symbol represents the measure of one mile per hour. This is a standard imperial measure for speed.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_imperial1.html#miles_per_hr_sqrd">units_imperial1/<br/>miles_per_hr_sqrd</a>
       </td>
       <td>This symbol represents the measure of one mile per hour squared. This is a standard imperial measure for acceleration.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_imperial1.html#miles_per_hr_sqrd">units_imperial1/<br/>miles_per_hr_sqrd</a>
+      </td>
+      <td>This symbol represents the measure of one mile per hour squared. This is a standard imperial measure for acceleration.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#milli">units_siprefix1/<br/>milli</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $0.001$</td>
    </tr>
    <tr>
       <td>
@@ -5231,6 +5497,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/arith1.html#minus">arith1/<br/>minus</a>
+      </td>
+      <td>The symbol representing a binary minus function. This is equivalent to adding the additive inverse.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/field1.html#minus">field1/<br/>minus</a>
       </td>
       <td>This symbol represents a unary function, whose argument should be a field S. It returns the map sending an element of S to its additive inverse.</td>
@@ -5249,12 +5521,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/arith1.html#minus">arith1/<br/>minus</a>
-      </td>
-      <td>The symbol representing a binary minus function. This is equivalent to adding the additive inverse.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/hypergeon0.html#minus_part">hypergeon0/<br/>minus_part</a>
       </td>
       <td>The argument is a vector. It replaces positive elements in the vector to zero and negative elements to their absolute values.</td>
@@ -5267,15 +5533,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SIUsed_OffSystemUnits1.html#minute">SIUsed_OffSystemUnits1/<br/>minute</a>
+      </td>
+      <td>This symbol represents the measure of one minute of time. It has the short symbol form, "min".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_time1.html#minute">units_time1/<br/>minute</a>
       </td>
       <td>This symbol represents the measure of one minute of time.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SIUsed_OffSystemUnits1.html#minute">SIUsed_OffSystemUnits1/<br/>minute</a>
+         <a href="../cd/units_time1.html#minute">units_time1/<br/>minute</a>
       </td>
-      <td>This symbol represents the measure of one minute of time. It has the short symbol form, "min".</td>
+      <td>This symbol represents the measure of one minute of time.</td>
    </tr>
    <tr>
       <td>
@@ -5357,18 +5629,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/group1.html#monoid">group1/<br/>monoid</a>
-      </td>
-      <td>This symbol is a unary function, whose argument should be a group G. When applied to G its value is the monoid underlying G.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/monoid1.html#monoid">monoid1/<br/>monoid</a>
-      </td>
-      <td>This symbol is a constructor for monoids. It takes three arguments in the following order: a set to specify the elements in the monoid, a binary operation to specify the monoid operation, and an element to specify the identity. The binary operation should act on elements of the set and return an element of the set.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/algebraic_cats.html#monoid">algebraic_cats/<br/>monoid</a>
       </td>
       <td>This is the constructor for monoids. A monoid comprises a set and an operation over elements of the set. The set must contain a unique identity element (relative to the operation). That is an element, I, such that I*a=a*I=a where a represents an arbitrary element of S and * represents the operation. The operation * must be associative over S. The monoid constructor takes three arguments, the set of the monoid, a binary function taking two elements of the set into itself to represent the operation of the monoid and an element of the set to represent the identity of the monoid.</td>
@@ -5378,6 +5638,18 @@
          <a href="../cd/generic_alg_cats.html#monoid">generic_alg_cats/<br/>monoid</a>
       </td>
       <td>This Symbol represents the generic category of monoid.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/group1.html#monoid">group1/<br/>monoid</a>
+      </td>
+      <td>This symbol is a unary function, whose argument should be a group G. When applied to G its value is the monoid underlying G.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/monoid1.html#monoid">monoid1/<br/>monoid</a>
+      </td>
+      <td>This symbol is a constructor for monoids. It takes three arguments in the following order: a set to specify the elements in the monoid, a binary operation to specify the monoid operation, and an element to specify the identity. The binary operation should act on elements of the set and return an element of the set.</td>
    </tr>
    <tr>
       <td>
@@ -5519,6 +5791,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_siprefix1.html#nano">units_siprefix1/<br/>nano</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-9$</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/sts.html#nary">sts/<br/>nary</a>
       </td>
       <td>Constructs a child of mapsto which denotes an arbitrary number of copies of the argument of nary.</td>
@@ -5561,15 +5839,27 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SI_NamedDerivedUnits1.html#newton">SI_NamedDerivedUnits1/<br/>newton</a>
+      </td>
+      <td>This symbol represents an SI unit of force. It has the short symbol form, "N".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#Newton">units_metric1/<br/>Newton</a>
       </td>
       <td>This symbol represents the measure of one Newton. This is the standard SI measure for force.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SI_NamedDerivedUnits1.html#newton">SI_NamedDerivedUnits1/<br/>newton</a>
+         <a href="../cd/units_metric1.html#Newton">units_metric1/<br/>Newton</a>
       </td>
-      <td>This symbol represents an SI unit of force. It has the short symbol form, "N".</td>
+      <td>This symbol represents the measure of one Newton. This is the standard SI measure for force.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_metric1.html#Newton_per_sqr_metre">units_metric1/<br/>Newton_per_sqr_metre</a>
+      </td>
+      <td>This symbol represents the measure of one Newton per square metre. This is another (deprecated in OpenMath) name for the standard SI measure for pressure, the Pascal.</td>
    </tr>
    <tr>
       <td>
@@ -5879,15 +6169,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/relation0.html#order">relation0/<br/>order</a>
-      </td>
-      <td>Proposition; the type of order relations, namely relations that are reflexive, antisymmetric and transitive.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/permutation1.html#order">permutation1/<br/>order</a>
       </td>
       <td>This symbol is a function with one argument which should be a permutation. When applied to a permutation P, it represents the least positive integer n for which composition of n copies of P represents the identity (that is, a permutation with empty support). Note: in this definition of the order, it does not matter whether left_compose or right_compose is being used.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/relation0.html#order">relation0/<br/>order</a>
+      </td>
+      <td>Proposition; the type of order relations, namely relations that are reflexive, antisymmetric and transitive.</td>
    </tr>
    <tr>
       <td>
@@ -6095,15 +6385,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#ordering">polyd2/<br/>ordering</a>
-      </td>
-      <td>Used as an attribute to indicate an ordering of the monomials in a polynomial or list of polynomials. The value of this attribute should be one of the constructors specifying ordering.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#ordering">polyd/<br/>ordering</a>
       </td>
       <td>Used as an attribute to indicate an ordering of the terms in a polynomial or list of polynomials. The value of this attribute should be one of the constructors specifying ordering.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd2.html#ordering">polyd2/<br/>ordering</a>
+      </td>
+      <td>Used as an attribute to indicate an ordering of the monomials in a polynomial or list of polynomials. The value of this attribute should be one of the constructors specifying ordering.</td>
    </tr>
    <tr>
       <td>
@@ -6203,15 +6493,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SI_NamedDerivedUnits1.html#pascal">SI_NamedDerivedUnits1/<br/>pascal</a>
+      </td>
+      <td>This symbol represents an SI unit of pressure. It has the short symbol form, "Pa".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#Pascal">units_metric1/<br/>Pascal</a>
       </td>
       <td>This symbol represents the measure of one Newton per square metre. This is the standard SI measure for pressure.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SI_NamedDerivedUnits1.html#pascal">SI_NamedDerivedUnits1/<br/>pascal</a>
+         <a href="../cd/units_metric1.html#Pascal">units_metric1/<br/>Pascal</a>
       </td>
-      <td>This symbol represents an SI unit of pressure. It has the short symbol form, "Pa".</td>
+      <td>This symbol represents the measure of one Newton per square metre. This is the standard SI measure for pressure.</td>
    </tr>
    <tr>
       <td>
@@ -6293,9 +6589,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_siprefix1.html#peta">units_siprefix1/<br/>peta</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^15$</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/nums1.html#pi">nums1/<br/>pi</a>
       </td>
       <td>A symbol to convey the notion of pi, approximately 3.142. The ratio of the circumference of a circle to its diameter.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#pico">units_siprefix1/<br/>pico</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-12$</td>
    </tr>
    <tr>
       <td>
@@ -6332,6 +6640,12 @@
          <a href="../cd/aggregate_cats.html#piecewiseContinuousSetType">aggregate_cats/<br/>piecewiseContinuousSetType</a>
       </td>
       <td>This symbol represents the type of piecewise continuous sets.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_imperial1.html#pint">units_imperial1/<br/>pint</a>
+      </td>
+      <td>This symbol represents the measure of one (imperial) pint. This is the standard imperial measure for volume. See units_us1 for the U.S. pint.</td>
    </tr>
    <tr>
       <td>
@@ -6413,6 +6727,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/arith1.html#plus">arith1/<br/>plus</a>
+      </td>
+      <td>The symbol representing an n-ary commutative function plus.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/indnat.html#plus">indnat/<br/>plus</a>
       </td>
       <td>Addition of natural numbers defined recursively by using the successor.</td>
@@ -6425,21 +6745,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#plus">polyd1/<br/>plus</a>
-      </td>
-      <td>The sum. The argument is a DMPL. The sum lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#plus">polyd/<br/>plus</a>
       </td>
       <td>The sum. The argument is a DMPL. The sum lies within the same "PolyRingD" i.e. a program implementing this operation should return a DMP with the same "poly_ring_d" (or "poly_ring_d_named").</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/arith1.html#plus">arith1/<br/>plus</a>
+         <a href="../cd/polyd1.html#plus">polyd1/<br/>plus</a>
       </td>
-      <td>The symbol representing an n-ary commutative function plus.</td>
+      <td>The sum. The argument is a DMPL. The sum lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
    </tr>
    <tr>
       <td>
@@ -6458,6 +6772,12 @@
          <a href="../cd/hypergeo0.html#pochhammer">hypergeo0/<br/>pochhammer</a>
       </td>
       <td>Pochhammer symbol</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/plangeo1.html#point">plangeo1/<br/>point</a>
+      </td>
+      <td>The symbol is used to indicate a point of planar Euclidean geometry by a variable. The point may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
    </tr>
    <tr>
       <td>
@@ -6503,21 +6823,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#poly_ring_d">polyd1/<br/>poly_ring_d</a>
-      </td>
-      <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the number of variables as an integer.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#poly_ring_d">polyd/<br/>poly_ring_d</a>
       </td>
       <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the number of variables as an integer.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#poly_ring_d_named">polyd1/<br/>poly_ring_d_named</a>
+         <a href="../cd/polyd1.html#poly_ring_d">polyd1/<br/>poly_ring_d</a>
       </td>
-      <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the remaining arguments are the names of the variables. The first variable given is the most important from the point of view of lexicographic ordering, then the second, and so on.</td>
+      <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the number of variables as an integer.</td>
    </tr>
    <tr>
       <td>
@@ -6527,9 +6841,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polyd1.html#poly_ring_d_named">polyd1/<br/>poly_ring_d_named</a>
+      </td>
+      <td>The constructor of polynomial ring. The first argument is a ring (the ring of the coefficients), the remaining arguments are the names of the variables. The first variable given is the most important from the point of view of lexicographic ordering, then the second, and so on.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/polyslp.html#poly_ring_SLP">polyslp/<br/>poly_ring_SLP</a>
       </td>
       <td>The constructor of the polynomial ring. The first argument is a ring, (the ring of the coefficients), the rest are the variables, in any order.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyu.html#poly_u_rep">polyu/<br/>poly_u_rep</a>
+      </td>
+      <td>A constructor for the representation of polynomials. The first argument is the polynomial variable, the rest are monomials (in decreasing order of exponent).</td>
    </tr>
    <tr>
       <td>
@@ -6569,9 +6895,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polyu.html#polynomial_ring_u">polyu/<br/>polynomial_ring_u</a>
+      </td>
+      <td>The constructor of a univariate polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the variable.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/polyslp.html#polynomial_SLP">polyslp/<br/>polynomial_SLP</a>
       </td>
       <td>The constructor of Polynomials built with Straight Line Program representation. The first argument is the polynomial ring containing the polynomial built with poly_ring_SLP, The second argument is the program body built with prog_body.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyu.html#polynomial_u">polyu/<br/>polynomial_u</a>
+      </td>
+      <td>The constructor of Recursive Polynomials. The first argument is the polynomial ring containing the polynomial and the second is a "poly_u_rep".</td>
    </tr>
    <tr>
       <td>
@@ -6587,9 +6925,33 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_imperial1.html#pound_force">units_imperial1/<br/>pound_force</a>
+      </td>
+      <td>This symbol represents the measure of force of one pound.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_imperial1.html#pound_mass">units_imperial1/<br/>pound_mass</a>
       </td>
       <td>This symbol represents the measure of the mass which weighs one pound under the influence of standard gravity.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_imperial1.html#pound_mass">units_imperial1/<br/>pound_mass</a>
+      </td>
+      <td>This symbol represents the measure of the mass which weighs one pound under the influence of standard gravity.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/arith1.html#power">arith1/<br/>power</a>
+      </td>
+      <td>This symbol represents a power function. The first argument is raised to the power of the second argument. When the second argument is not an integer, powering is defined in terms of exponentials and logarithms for the complex and real numbers. This operator can represent general powering.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/dimensions1.html#power">dimensions1/<br/>power</a>
+      </td>
+      <td>This symbol represents the power physical dimension, it is energy per time.</td>
    </tr>
    <tr>
       <td>
@@ -6605,9 +6967,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#power">polyd1/<br/>power</a>
+         <a href="../cd/poly.html#power">poly/<br/>power</a>
       </td>
-      <td>The power. First argument is a DMP, second argument is the integer power. The power lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
+      <td>Takes a polynomial and a (non-negative) integer and produces a formal power. Although OpenMath does not specify operational semantics, the idea here is that these powers are not evaluated. We note that the power from arith1 would suggest the expanded form.</td>
    </tr>
    <tr>
       <td>
@@ -6617,27 +6979,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/poly.html#power">poly/<br/>power</a>
+         <a href="../cd/polyd1.html#power">polyd1/<br/>power</a>
       </td>
-      <td>Takes a polynomial and a (non-negative) integer and produces a formal power. Although OpenMath does not specify operational semantics, the idea here is that these powers are not evaluated. We note that the power from arith1 would suggest the expanded form.</td>
+      <td>The power. First argument is a DMP, second argument is the integer power. The power lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/ring1.html#power">ring1/<br/>power</a>
       </td>
       <td>This is a symbol with two or three arguments. Its first argument should be a an element g of a ring and the second argument should be an integer. The optional third argument is the ring G containing g. It denotes the element g^k in G.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/arith1.html#power">arith1/<br/>power</a>
-      </td>
-      <td>This symbol represents a power function. The first argument is raised to the power of the second argument. When the second argument is not an integer, powering is defined in terms of exponentials and logarithms for the complex and real numbers. This operator can represent general powering.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#power">dimensions1/<br/>power</a>
-      </td>
-      <td>This symbol represents the power physical dimension, it is energy per time.</td>
    </tr>
    <tr>
       <td>
@@ -6671,15 +7021,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/rdf.html#prefix">rdf/<br/>prefix</a>
+      </td>
+      <td>A symbol to be used as the head of the OpenMath application to construct a prefix mapping that can be used as a value of the prefixes attribution. The two arguments of this function should be OpenMath strings representing in order, the prefix and the corresponding namespace URI.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_ops1.html#prefix">units_ops1/<br/>prefix</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by 1,000 ($10^{3}$)</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/rdf.html#prefix">rdf/<br/>prefix</a>
+         <a href="../cd/units_ops1.html#prefix">units_ops1/<br/>prefix</a>
       </td>
-      <td>A symbol to be used as the head of the OpenMath application to construct a prefix mapping that can be used as a value of the prefixes attribution. The two arguments of this function should be OpenMath strings representing in order, the prefix and the corresponding namespace URI.</td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by 1,000 ($10^{3}$)</td>
    </tr>
    <tr>
       <td>
@@ -6827,6 +7183,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/integer1.html#quotient">integer1/<br/>quotient</a>
+      </td>
+      <td>The symbol to represent the integer (binary) division operator. That is, for integers a and b, quotient(a,b) denotes q such that a=b*q+r, with |r| less than |b| and a*r positive.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/polynomial3.html#quotient">polynomial3/<br/>quotient</a>
       </td>
       <td>This symbol represents the binary division operator on univariate polynomials over fields. That is, for univariate polynomials a and b, quotient(a,b) denotes the polynomial q such that a=b*q+r, with degree(r) less than degree(b).</td>
@@ -6836,12 +7198,6 @@
          <a href="../cd/polyslp.html#quotient">polyslp/<br/>quotient</a>
       </td>
       <td>A quotient function for polynomials represented by slps. It is a requirement that this is an exact division.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/integer1.html#quotient">integer1/<br/>quotient</a>
-      </td>
-      <td>The symbol to represent the integer (binary) division operator. That is, for integers a and b, quotient(a,b) denotes q such that a=b*q+r, with |r| less than |b| and a*r positive.</td>
    </tr>
    <tr>
       <td>
@@ -6872,6 +7228,12 @@
          <a href="../cd/ring3.html#quotient_ring">ring3/<br/>quotient_ring</a>
       </td>
       <td>This is a binary function, whose first argument is a ring R and whose second argument is an ideal I of R. When applied to R and I, it denotes the quotient ring of R by I.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/setname2.html#QuotientField">setname2/<br/>QuotientField</a>
+      </td>
+      <td>This symbol represents the quotient field of any integral domain.</td>
    </tr>
    <tr>
       <td>
@@ -7025,15 +7387,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polynomial3.html#remainder">polynomial3/<br/>remainder</a>
-      </td>
-      <td>The symbol represents a binary function, whose arguments should be univariate polynomials in the same polynomial ring whose coefficient ring is a field. When applied to a and b, it represents the polynomial remainder after division of a by b.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/integer1.html#remainder">integer1/<br/>remainder</a>
       </td>
       <td>The symbol to represent the integer remainder after (binary) division. For integers a and b, remainder(a,b) denotes r such that a=b*q+r, with |r| less than |b| and a*r positive.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial3.html#remainder">polynomial3/<br/>remainder</a>
+      </td>
+      <td>The symbol represents a binary function, whose arguments should be univariate polynomials in the same polynomial ring whose coefficient ring is a field. When applied to a and b, it represents the polynomial remainder after division of a by b.</td>
    </tr>
    <tr>
       <td>
@@ -7109,15 +7471,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#reverse_lexicographic">polyd2/<br/>reverse_lexicographic</a>
-      </td>
-      <td>The reverse lexicographic ordering of monomials</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#reverse_lexicographic">polyd/<br/>reverse_lexicographic</a>
       </td>
       <td>The reverse lexicographic ordering of terms. Note that, if a poly_ring_d_named is used, lexigographic refers to the order of the variables in the poly_ring_d_named, not to their order as strings.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd2.html#reverse_lexicographic">polyd2/<br/>reverse_lexicographic</a>
+      </td>
+      <td>The reverse lexicographic ordering of monomials</td>
    </tr>
    <tr>
       <td>
@@ -7229,12 +7591,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/ring1.html#ring">ring1/<br/>ring</a>
-      </td>
-      <td>This symbol is a constructor for rings. It takes six arguments R, a, o, i, m, e,: which are, respectively, a set R to specify the elements in the ring, a binary operation a on R, an element o of R, and a unary operation i on R such that [R,a,o,i] is a commutative group, a binary operation m on R and an element e of R such that [R,m,e] is a monoid.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/algebraic_cats.html#ring">algebraic_cats/<br/>ring</a>
       </td>
       <td>This symbol is the constructor for rings. A ring is a set together with two operations + and *. A ring is an Abelian group under + and a semigroup under *. A ring has a further rule which associates the two operation, that is left and right distributivity. The ring constructor takes five arguments, the set of the ring, a binary function from the set into itself to represent the * operation, a binary function from the set into itself to represent the + operation, an element of the set of the ring to represent the additive identity 0 and a unary function from the set into itself to represent additive inverses (i.e. inverses under +, or negatives).</td>
@@ -7244,6 +7600,12 @@
          <a href="../cd/generic_alg_cats.html#ring">generic_alg_cats/<br/>ring</a>
       </td>
       <td>This Symbol represents the generic category of ring.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/ring1.html#ring">ring1/<br/>ring</a>
+      </td>
+      <td>This symbol is a constructor for rings. It takes six arguments R, a, o, i, m, e,: which are, respectively, a set R to specify the elements in the ring, a binary operation a on R, an element o of R, and a unary operation i on R such that [R,a,o,i] is a commutative group, a binary operation m on R and an element e of R such that [R,m,e] is a monoid.</td>
    </tr>
    <tr>
       <td>
@@ -7361,15 +7723,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#SDMP">polyd1/<br/>SDMP</a>
-      </td>
-      <td>The constructor for multivariate polynomials without any indication of variables or domain for the coefficients. Its arguments are just "monomial"s. No monomials should differ only by the coefficient (i.e it is not permitted to have both "2*x*y" and "x*y" as monomials in a SDMP). SDMP can be attributed with the "ordering" symbol to indicate a particular ordering of its monomials. This attribute shall not be set if the SDMP is part of DMPL that has this attribute set.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#SDMP">polyd/<br/>SDMP</a>
       </td>
       <td>The constructor for multivariate polynomials without any indication of variables or domain for the coefficients. Its arguments are just "term"s. No terms should differ only by the coefficient (i.e it is not permitted to have both "2*x*y" and "x*y" as terms in a SDMP). SDMP can be attributed with the "ordering" symbol to indicate a particular ordering of its terms. This attribute shall not be set if the SDMP is part of DMPL that has this attribute set. If the SDMP is ordered, explicitly or implicitly via an outer ordering, the terms must be in decreasing order with respect to this order. The zero polynomial is represented by an SDMP with no terms.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd1.html#SDMP">polyd1/<br/>SDMP</a>
+      </td>
+      <td>The constructor for multivariate polynomials without any indication of variables or domain for the coefficients. Its arguments are just "monomial"s. No monomials should differ only by the coefficient (i.e it is not permitted to have both "2*x*y" and "x*y" as monomials in a SDMP). SDMP can be attributed with the "ordering" symbol to indicate a particular ordering of its monomials. This attribute shall not be set if the SDMP is part of DMPL that has this attribute set.</td>
    </tr>
    <tr>
       <td>
@@ -7385,6 +7747,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SI_BaseUnits1.html#second">SI_BaseUnits1/<br/>second</a>
+      </td>
+      <td>This symbol represents the measure of one second of time, the standard SI unit of measure for quantities of time. It has the short symbol form, "s", in upright roman font.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_metric1.html#second">units_metric1/<br/>second</a>
+      </td>
+      <td>This symbol represents the measure of one second. This is the standard SI measure for time.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#second">units_metric1/<br/>second</a>
       </td>
       <td>This symbol represents the measure of one second. This is the standard SI measure for time.</td>
@@ -7397,9 +7771,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/SI_BaseUnits1.html#second">SI_BaseUnits1/<br/>second</a>
+         <a href="../cd/units_time1.html#second">units_time1/<br/>second</a>
       </td>
-      <td>This symbol represents the measure of one second of time, the standard SI unit of measure for quantities of time. It has the short symbol form, "s", in upright roman font.</td>
+      <td>This symbol represents the measure of one second of time. This is the standard SI unit measure for time.</td>
    </tr>
    <tr>
       <td>
@@ -7409,15 +7783,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo2.html#segment">plangeo2/<br/>segment</a>
-      </td>
-      <td>The segment of a line between two points of the line. The segment is contained in the affine part of the line. The symbol takes as arguments the two points.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/intpath1.html#segment">intpath1/<br/>segment</a>
       </td>
       <td>The symbol segment(a,b) is the segment from the point a to the point b in the complex plane. If the arguments are sectors given by path_in_sector, it means the segment from a point in the circular border of the sector to a point in the circular border of the another sector.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/plangeo2.html#segment">plangeo2/<br/>segment</a>
+      </td>
+      <td>The segment of a line between two points of the line. The segment is contained in the affine part of the line. The symbol takes as arguments the two points.</td>
    </tr>
    <tr>
       <td>
@@ -7433,24 +7807,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/monoid1.html#semigroup">monoid1/<br/>semigroup</a>
-      </td>
-      <td>This symbol is a unary function, whose argument should be a monoid M. When applied to M its value is the semigroup underlying M.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/semigroup1.html#semigroup">semigroup1/<br/>semigroup</a>
-      </td>
-      <td>This symbol is a constructor for semigroups. It takes two arguments in the following order: a set to specify the elements in the semigroup, and a binary operation to specify the semigroup operation. The binary operation should act on elements of the set and return an element of the set.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/semigroup.html#Semigroup">semigroup/<br/>Semigroup</a>
-      </td>
-      <td>The contructor for the type of semigroups as a Setoid with a binary operation.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/algebraic_cats.html#semigroup">algebraic_cats/<br/>semigroup</a>
       </td>
       <td>This symbol is the constructor for semigroups, that is groupoids for which the operator of the semigroup is associative over the set of the semigroup. The semigroup constructor takes two arguments, the set of the semigroup and a binary function which represents the operation of the semigroup.</td>
@@ -7460,6 +7816,24 @@
          <a href="../cd/generic_alg_cats.html#semigroup">generic_alg_cats/<br/>semigroup</a>
       </td>
       <td>This Symbol represents the generic category of semigroup.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/monoid1.html#semigroup">monoid1/<br/>semigroup</a>
+      </td>
+      <td>This symbol is a unary function, whose argument should be a monoid M. When applied to M its value is the semigroup underlying M.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/semigroup.html#Semigroup">semigroup/<br/>Semigroup</a>
+      </td>
+      <td>The contructor for the type of semigroups as a Setoid with a binary operation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/semigroup1.html#semigroup">semigroup1/<br/>semigroup</a>
+      </td>
+      <td>This symbol is a constructor for semigroups. It takes two arguments in the following order: a set to specify the elements in the semigroup, and a binary operation to specify the semigroup operation. The binary operation should act on elements of the set and return an element of the set.</td>
    </tr>
    <tr>
       <td>
@@ -7913,15 +8287,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/set1.html#suchthat">set1/<br/>suchthat</a>
-      </td>
-      <td>This symbol represents the suchthat function which may be used to construct sets, it takes two arguments. The first argument should be the set which contains the elements of the set we wish to represent, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the set returned.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/list1.html#suchthat">list1/<br/>suchthat</a>
       </td>
       <td>This symbol represents the suchthat function which may be used to construct lists; it takes two arguments. The first argument should be a set X which contains the elements of the list, the second argument should be a predicate, that is a function from the set X to the booleans which describes if an element is to be in the list returned.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/set1.html#suchthat">set1/<br/>suchthat</a>
+      </td>
+      <td>This symbol represents the suchthat function which may be used to construct sets, it takes two arguments. The first argument should be the set which contains the elements of the set we wish to represent, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the set returned.</td>
    </tr>
    <tr>
       <td>
@@ -8063,9 +8437,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#term">polyd1/<br/>term</a>
+         <a href="../cd/units_siprefix1.html#tera">units_siprefix1/<br/>tera</a>
       </td>
-      <td>The constructor of monomials. Valid applications are of the form Term(coeff, exp1, exp2, ... expn) which represents the monomial coeff * var1^exp1*...varn^expn where n is the number of variables, expi are non-negative integers.</td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^12$</td>
    </tr>
    <tr>
       <td>
@@ -8075,9 +8449,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polyd1.html#term">polyd1/<br/>term</a>
+      </td>
+      <td>The constructor of monomials. Valid applications are of the form Term(coeff, exp1, exp2, ... expn) which represents the monomial coeff * var1^exp1*...varn^expn where n is the number of variables, expi are non-negative integers.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/polyr.html#term">polyr/<br/>term</a>
       </td>
       <td>A constructor for monomials, that is products of powers and elements of the base ring. First argument is from N (the exponent of the variable implied by an outer poly_r_rep) second argument is a coefficient (from the ground field, or a polynomial in lesser variables).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyu.html#term">polyu/<br/>term</a>
+      </td>
+      <td>A constructor for monomials, that is products of powers and elements of the base ring. First argument is from N (the exponent of the variable implied by an outer poly_u_rep) second argument is a coefficient (from the ground field)</td>
    </tr>
    <tr>
       <td>
@@ -8117,9 +8503,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/arith1.html#times">arith1/<br/>times</a>
+      </td>
+      <td>The symbol representing an n-ary multiplication function.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/arith2.html#times">arith2/<br/>times</a>
       </td>
       <td>The symbol representing an n-ary multiplication function inheriting from the times in arith1, but with the extra property that here it must be commutative.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/freealg1.html#times">freealg1/<br/>times</a>
+      </td>
+      <td>Multiplication in the free algebra.</td>
    </tr>
    <tr>
       <td>
@@ -8135,27 +8533,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd1.html#times">polyd1/<br/>times</a>
-      </td>
-      <td>The product. The argument is a DMPL. The product lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#times">polyd/<br/>times</a>
       </td>
       <td>The product. The argument is a DMPL. The product lies within the same "PolyRingD" i.e. a program implementing this operation should return a DMP with the same "poly_ring_d" (or "poly_ring_d_named").</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/arith1.html#times">arith1/<br/>times</a>
+         <a href="../cd/polyd1.html#times">polyd1/<br/>times</a>
       </td>
-      <td>The symbol representing an n-ary multiplication function.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/freealg1.html#times">freealg1/<br/>times</a>
-      </td>
-      <td>Multiplication in the free algebra.</td>
+      <td>The product. The argument is a DMPL. The product lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
    </tr>
    <tr>
       <td>
@@ -8249,6 +8635,24 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/mathmltypes.html#type">mathmltypes/<br/>type</a>
+      </td>
+      <td>A symbol to be used within an OpenMath attribute to specify the type of the object.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/meta_cats.html#type">meta_cats/<br/>type</a>
+      </td>
+      <td>This symbol is unary and returns the type of its argument.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/plangeo1.html#type">plangeo1/<br/>type</a>
+      </td>
+      <td>The symbol represents the type of the basic geometric objects: points, lines, configuration.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/plangeo1.html#type">plangeo1/<br/>type</a>
       </td>
       <td>The symbol represents the type of the basic geometric objects: points, lines, configuration.</td>
@@ -8264,18 +8668,6 @@
          <a href="../cd/typesorts.html#Type">typesorts/<br/>Type</a>
       </td>
       <td>The cumulative type of the type of sets in a hierarchy of types.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/mathmltypes.html#type">mathmltypes/<br/>type</a>
-      </td>
-      <td>A symbol to be used within an OpenMath attribute to specify the type of the object.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/meta_cats.html#type">meta_cats/<br/>type</a>
-      </td>
-      <td>This symbol is unary and returns the type of its argument.</td>
    </tr>
    <tr>
       <td>
@@ -8363,9 +8755,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_sts.html#unit_prefix">units_sts/<br/>unit_prefix</a>
+      </td>
+      <td>The type of all unit prefixes, such as "kilo".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/error.html#unsupported_CD">error/<br/>unsupported_CD</a>
       </td>
       <td>This symbol represents the error which is raised when an application reads a symbol where the mentioned content dictionary is not present. When receiving such a symbol, the application should act as if it had received the OpenMath error object constructed from unsupported_CD and the symbol from the unsupported Content Dictionary as in the example below.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/transc2.html#unwind">transc2/<br/>unwind</a>
+      </td>
+      <td>The unwinding number denotes the extent to which $z=\ln\exp z$ is not true. It was orignally defined in Corless,R.M. &amp; Jeffrey,D.J., The Unwinding Number. SIGSAM Bulletin 30(1996) 2, pp. 28-35. However, we take the definition (which has a change of sign) from Corless,R.M., Davenport,J.H., Jeffrey,D.J. &amp; Watt,S.M., According to Abramowitz and Stegun. SIGSAM Bulletin 34(2000) 2, pp. 58--65. Note that the symbol is normally denoted by ${\cal K}$.</td>
    </tr>
    <tr>
       <td>
@@ -8423,15 +8827,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/linalg3.html#vector">linalg3/<br/>vector</a>
-      </td>
-      <td>This symbol represents an n-ary function used to construct (or describe) vectors. Vectors in this CD are considered to be column vectors, and must therefore be transposed to be considered as row vectors.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/linalg2.html#vector">linalg2/<br/>vector</a>
       </td>
       <td>This symbol represents an n-ary function used to construct (or describe) vectors. Vectors in this CD are considered to be row vectors and must therefore be transposed to be considered as column vectors.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg3.html#vector">linalg3/<br/>vector</a>
+      </td>
+      <td>This symbol represents an n-ary function used to construct (or describe) vectors. Vectors in this CD are considered to be column vectors, and must therefore be transposed to be considered as row vectors.</td>
    </tr>
    <tr>
       <td>
@@ -8485,7 +8889,7 @@
       <td>
          <a href="../cd/dimensions1.html#velocity">dimensions1/<br/>velocity</a>
       </td>
-      <td>This symbol represents the velocity physical dimension. It is the derivative of distance with respect to time.</td>
+      <td>This symbol represents the velocity physical dimension. It is the derivative of (vector) distance with respect to time.</td>
    </tr>
    <tr>
       <td>
@@ -8501,15 +8905,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SI_NamedDerivedUnits1.html#volt">SI_NamedDerivedUnits1/<br/>volt</a>
+      </td>
+      <td>This symbol represents an SI unit of voltage or electric tension. It has the short symbol form, "V".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#volt">units_metric1/<br/>volt</a>
       </td>
       <td>This symbol represents the measure of one volt. This is the standard SI measure for voltage.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SI_NamedDerivedUnits1.html#volt">SI_NamedDerivedUnits1/<br/>volt</a>
+         <a href="../cd/units_metric1.html#volt">units_metric1/<br/>volt</a>
       </td>
-      <td>This symbol represents an SI unit of voltage or electric tension. It has the short symbol form, "V".</td>
+      <td>This symbol represents the measure of one volt. This is the standard SI measure for voltage.</td>
    </tr>
    <tr>
       <td>
@@ -8549,15 +8959,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/SI_NamedDerivedUnits1.html#watt">SI_NamedDerivedUnits1/<br/>watt</a>
+      </td>
+      <td>This symbol represents an SI unit of power, a joule per second. It has the short symbol form, "W".</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_metric1.html#Watt">units_metric1/<br/>Watt</a>
       </td>
       <td>This symbol represents the measure of one Watt. This is the standard SI measure for power.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/SI_NamedDerivedUnits1.html#watt">SI_NamedDerivedUnits1/<br/>watt</a>
+         <a href="../cd/units_metric1.html#Watt">units_metric1/<br/>Watt</a>
       </td>
-      <td>This symbol represents an SI unit of power, a joule per second. It has the short symbol form, "W".</td>
+      <td>This symbol represents the measure of one Watt. This is the standard SI measure for power.</td>
    </tr>
    <tr>
       <td>
@@ -8573,9 +8989,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#weighted">polyd2/<br/>weighted</a>
+         <a href="../cd/units_time1.html#week">units_time1/<br/>week</a>
       </td>
-      <td>The first argument is a list of integers to act as variable weights, and the second is an ordering. The result is an ordering.</td>
+      <td>This symbol represents the measure of one week of time.</td>
    </tr>
    <tr>
       <td>
@@ -8585,13 +9001,19 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd2.html#weighted_degree">polyd2/<br/>weighted_degree</a>
+         <a href="../cd/polyd2.html#weighted">polyd2/<br/>weighted</a>
+      </td>
+      <td>The first argument is a list of integers to act as variable weights, and the second is an ordering. The result is an ordering.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polyd.html#weighted_degree">polyd/<br/>weighted_degree</a>
       </td>
       <td>The total degree of its argument, taking into account any weights declared. The value returned is an integer: non-negative if the weights are. We note that the degree of 0 is undefined.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyd.html#weighted_degree">polyd/<br/>weighted_degree</a>
+         <a href="../cd/polyd2.html#weighted_degree">polyd2/<br/>weighted_degree</a>
       </td>
       <td>The total degree of its argument, taking into account any weights declared. The value returned is an integer: non-negative if the weights are. We note that the degree of 0 is undefined.</td>
    </tr>
@@ -8627,6 +9049,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_imperial1.html#yard">units_imperial1/<br/>yard</a>
+      </td>
+      <td>This symbol represents the measure of one yard. This is a standard imperial measure for distance, defined in terms of the foot.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_us1.html#yard_us_survey">units_us1/<br/>yard_us_survey</a>
       </td>
       <td>This symbol represents the measure of one U.S. Survey yard.</td>
@@ -8636,6 +9064,18 @@
          <a href="../cd/units_siprefix1.html#yocto">units_siprefix1/<br/>yocto</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-24$</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#yocto">units_siprefix1/<br/>yocto</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-24$</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/units_siprefix1.html#yotta">units_siprefix1/<br/>yotta</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^24$</td>
    </tr>
    <tr>
       <td>
@@ -8663,6 +9103,24 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_siprefix1.html#zepto">units_siprefix1/<br/>zepto</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-21$</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/alg1.html#zero">alg1/<br/>zero</a>
+      </td>
+      <td>This symbol represents the additive identity element.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/alg1.html#zero">alg1/<br/>zero</a>
+      </td>
+      <td>This symbol represents the additive identity element.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/field1.html#zero">field1/<br/>zero</a>
       </td>
       <td>This symbols represents a unary function, whose argument should be a field. It returns the zero element of the field.</td>
@@ -8681,27 +9139,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/ring1.html#zero">ring1/<br/>zero</a>
-      </td>
-      <td>This symbols represents a unary function, whose argument should be a ring. It returns the zero element of the ring.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/alg1.html#zero">alg1/<br/>zero</a>
-      </td>
-      <td>This symbol represents the additive identity element.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/linalg7.html#zero">linalg7/<br/>zero</a>
       </td>
       <td>The zero symbol represents the zero vector, it takes one parameter which should be the length (dimension in some terminology) of the vector.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/alg1.html#zero">alg1/<br/>zero</a>
+         <a href="../cd/ring1.html#zero">ring1/<br/>zero</a>
       </td>
-      <td>This symbol represents the additive identity element.</td>
+      <td>This symbols represents a unary function, whose argument should be a ring. It returns the zero element of the ring.</td>
    </tr>
    <tr>
       <td>
@@ -8723,9 +9169,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/units_siprefix1.html#zetta">units_siprefix1/<br/>zetta</a>
+      </td>
+      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^21$</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/ringname1.html#Zm">ringname1/<br/>Zm</a>
       </td>
       <td>This symbol represents the ring of integers modulo m, where m is not necessarily a prime. It takes one argument, the integer m.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/setname2.html#Zm">setname2/<br/>Zm</a>
+      </td>
+      <td>This symbol represents the set of integers modulo m, where m is not necessarily a prime. It takes one argument, the integer m.</td>
    </tr>
    <tr>
       <td>
