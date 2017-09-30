@@ -364,7 +364,7 @@ list-style-type: lower-roman;
                This standard does not describe the mechanisms by which software systems may offer,
                or make use of, computational services. The currently-suggested mechanism is the 
                Symbolic Computation Software Composability Protocol (SCSCP) 
-               <a href="#SCSCP13">[1]</a>.
+               <a href="#SCSCP13">[5]</a>.
                
             </p>
             
@@ -517,7 +517,7 @@ list-style-type: lower-roman;
                </math> by a
                typesetting tool. For such a query/programming language, the OpenMath Society recommends
                the Symbolic Computation Software Composability Protocol (SCSCP) 
-               <a href="#SCSCP13">[1]</a>.
+               <a href="#SCSCP13">[5]</a>.
                
             </p>
             
@@ -2639,14 +2639,14 @@ list-style-type: lower-roman;
                      <p>are encoded using the <small><code>OMB</code></small> element. Its content
                         is a sequence of characters that is a base64 encoding of the data.
                         The base64 encoding is defined in <abbr>RFC</abbr>
-                        <span>2045 <a href="#rfc2045">[2]</a></span>.
+                        <span>2045 <a href="#rfc2045">[1]</a></span>.
                         Basically, it represents an arbitrary sequence of octets using 64
                         <span>"digits"</span> (<small><code>A</code></small> through <small><code>Z</code></small>, <small><code>a</code></small> through <small><code>z</code></small>, <small><code>0</code></small> through <small><code>9</code></small>, <small><code>+</code></small> and /, in order of increasing
                         value). Three octets are represented as four digits (the <small><code>=</code></small>
                         character is used for padding at the end of the data). All line
                         breaks and carriage return, space, form feed and horizontal
                         tabulation characters are ignored. The reader is referred to
-                        <a href="#rfc2045">[2]</a>
+                        <a href="#rfc2045">[1]</a>
                         for more detailed information.
                      </p>
                      
@@ -8326,9 +8326,9 @@ list-style-type: lower-roman;
                
                <p>A Small Type System, called STS, has been designed to give
                   semi-formal signatures to <i>OpenMath</i> symbols and is documented
-                  in <a href="#OM_D132c">[5]</a>.  The signature file given in
+                  in <a href="#OM_D132c">[4]</a>.  The signature file given in
                   <a href="#arith1.sts">Appendix A.3</a> is based on this formalism. Using the
-                  same mechanism, <a href="#OMD132b">[4]</a> shows how pure type
+                  same mechanism, <a href="#OMD132b">[3]</a> shows how pure type
                   systems can also be employed to assign types to <i>OpenMath</i> symbols.
                </p>
                
@@ -8955,7 +8955,7 @@ list-style-type: lower-roman;
 &lt;/OMATTR&gt;</pre></div>
             <p>
                Where the contents of the Foreign Object is a format other than <abbr>XML</abbr>,
-               it is recommended that its MIME type <a href="#rfc2046">[3]</a> is
+               it is recommended that its MIME type <a href="#rfc2046">[2]</a> is
                used as the value of the encoding.
                For example (again using the <abbr>XML</abbr> encoding):
                
@@ -11983,15 +11983,13 @@ Any elements not in the om namespace
          <h2 id="bibliography">
             Appendix G<br />Bibliography
          </h2>
-         <p id="SCSCP13"><b>[1]</b>  
-            S. Freundt, P. Horn, A. Konovalov, S. Linton, D. Roozemond
-            <i>Symbolic Computation Software Composability Protocol SCSCP Specification 1.3</i>, March 22, 2009.<br /><a href="https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf">https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf</a></p>
-         <p id="rfc2045"><b>[2]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message
+         <p id="rfc2045"><b>[1]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message
                Bodies</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</a></p>
-         <p id="rfc2046"><b>[3]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part Two: Media
+         <p id="rfc2046"><b>[2]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part Two: Media
                Types</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2046.txt">http://www.ietf.org/rfc/rfc2046.txt</a></p>
-         <p id="OMD132b"><b>[4]</b>  Olga Caprotti and Arjeh M. Cohen <i>A Type System for <i>OpenMath</i></i> 1.3.2b <i>OpenMath</i> Esprit Consortium, February 1999.<br /><a href="http://www.openmath.org/standard/ecc.pdf">http://www.openmath.org/standard/ecc.pdf</a></p>
-         <p id="OM_D132c"><b>[5]</b>  J. Davenport <i>A Small <i>OpenMath</i> Type System</i>, April 1999.<br /><a href="http://www.openmath.org/standard/sts.pdf">http://www.openmath.org/standard/sts.pdf</a></p>
+         <p id="OMD132b"><b>[3]</b>  Olga Caprotti and Arjeh M. Cohen <i>A Type System for <i>OpenMath</i></i> 1.3.2b <i>OpenMath</i> Esprit Consortium, February 1999.<br /><a href="http://www.openmath.org/standard/ecc.pdf">http://www.openmath.org/standard/ecc.pdf</a></p>
+         <p id="OM_D132c"><b>[4]</b>  J. Davenport <i>A Small <i>OpenMath</i> Type System</i>, April 1999.<br /><a href="http://www.openmath.org/standard/sts.pdf">http://www.openmath.org/standard/sts.pdf</a></p>
+         <p id="SCSCP13"><b>[5]</b>  S. Freundt, P. Horn, A. Konovalov, S. Linton and D. Roozemond <i>Symbolic Computation Software Composability Protocol SCSCP Specification 1.3</i>, March 22, 2009.<br /><a href="https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf">https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf</a></p>
          <p id="POSIX"><b>[6]</b>  IEEE and The Open Group <i>Std 1003.1, 2003 Edition, The Open Group Base Specifications Issue 6 </i>, 2003.<br /><a href="http://www.unix.org/version3/ieee_std.html">http://www.unix.org/version3/ieee_std.html</a></p>
          <p id="IETF2396"><b>[7]</b>  IETF <i>RFC 2396 - Uniform Resource Identifiers (URI): Generic Syntax</i>, August 1998.<br /><a href="http://www.ietf.org/rfc/rfc2396.txt">http://www.ietf.org/rfc/rfc2396.txt</a></p>
          <p id="RELAX"><b>[8]</b>  OASIS Committee Specification <i>RELAX NG Specification</i>, December 2001.<br /><a href="http://www.oasis-open.org/committees/relax-ng/spec-20011203.html">http://www.oasis-open.org/committees/relax-ng/spec-20011203.html</a></p>
