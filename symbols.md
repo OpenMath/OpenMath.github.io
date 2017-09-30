@@ -1,5 +1,5 @@
 <h1>OpenMath Symbols</h1>
-<p>A combined list of all 1532 symbols defined in this Content Dictionary collection.</p>
+<p>A combined list of all 1570 symbols defined in this Content Dictionary collection.</p>
 <table>
    <tr>
       <th>Symbol</th>
@@ -238,6 +238,18 @@
          <a href="../cd/hypergeo2.html#airyBi">hypergeo2/<br/>airyBi</a>
       </td>
       <td>The second Airy function. This function is the another one of the famous two solutions of the Airy differential equation, and diverges when z-&gt;\infty</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/order1.html#algebraic_integer">order1/<br/>algebraic_integer</a>
+      </td>
+      <td>This is a binary function. The first argument is an order O. The second argument should be a list L of elements of the Dedekind ring R, such that O is an order over the polynomial ring of R (cf. order). The length of L should be equal to the degree n of the polynomial generating the order O. When applied to O and L, it represents the element L[0] + L[1] b + L[2] b^2 + ... + L[n-1] b^(n-1) of O, where b stands for a primitive element of O.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/order1.html#algebraic_number">order1/<br/>algebraic_number</a>
+      </td>
+      <td>This is a binary function. The first argument is a number field F. The second argument should be a list L of elements of Q in case of an absolute number field F. Otherwise the second argument is a list L of elements of the number field whose ring of integers is the ring R over which F is defined (cf. number_field). The length of the list L should be equal to the degree n of F. When applied to F and L, it represents the element L[0] + L[1] b + L[2] b^2 + ... + L[n-1] ^(b-1) of F, where b stands for a primitive element of F.</td>
    </tr>
    <tr>
       <td>
@@ -769,6 +781,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/matrix1.html#banded">matrix1/<br/>banded</a>
+      </td>
+      <td>This symbol is a constructor for banded matrices. It takes at least 2 arguments, the first of which being the number of upper bands and the second being the number of lower bands. Amongst the further arguments you can specify AT MOST one matrix1.diagonal object. You MUST exactly as many matrix1.upper_band objects as you specified upper bands, and you MUST specify as many matrix1.lower_band objects as you specified lower bands. This symbol facilitates the use of blas based systems which expect to know the bands structure upfront.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_imperial1.html#bar">units_imperial1/<br/>bar</a>
       </td>
       <td>This symbol represents the measure of one bar. This is the standard imperial measure for pressure.</td>
@@ -880,6 +898,12 @@
          <a href="../cd/combinat1.html#binomial">combinat1/<br/>binomial</a>
       </td>
       <td>The binomial coefficients. binomial(n, m) is the number of ways of choosing m objects from a collection of n distinct objects without regard to the order.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/matrix1.html#block">matrix1/<br/>block</a>
+      </td>
+      <td>This symbol is like the matrix constructor as described above, but intended for use inside matrix to form ``submatrices''. The symbol takes at least two arguments: a column_dimension and a row_dimension object which denote the total extent of the block.</td>
    </tr>
    <tr>
       <td>
@@ -1393,6 +1417,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/matrix1.html#column_dimension">matrix1/<br/>column_dimension</a>
+      </td>
+      <td>This symbol is a unary function whose first argument must be either a non-negative OpenMath integer or nums1.infinity. When applied this creates an object that denotes the dimension of the domain of the linear mapping represented by the matrix.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg3.html#columncount">linalg3/<br/>columncount</a>
       </td>
       <td>This symbol represents the function which takes one matrix argument and returns the number of columns in that matrix.</td>
@@ -1843,6 +1873,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polynomial4.html#definitely_irreducible">polynomial4/<br/>definitely_irreducible</a>
+      </td>
+      <td>A symbol which denotes that a factor of the factorisation is definitely irreducible.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/mathmlattr.html#definitionURL">mathmlattr/<br/>definitionURL</a>
       </td>
       <td>A symbol to be used within an OpenMath attribute to specify the definitionURL attribute of the object. The annotation should be an OpenMath string representing the value of the definitionURL attribute.</td>
@@ -1927,6 +1963,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/matrix1.html#dense">matrix1/<br/>dense</a>
+      </td>
+      <td>This symbol is an $(m \cdot n)$-ary function whose arguments specify the entries of the matrix, where $m$ is the dimension of the codomain and $n$ is the dimension of the domain. The matrix (or block) must be filled row-wise, that is the first argument denotes the entry in row 1, column 1 of the matrix (or block), the second argument denotes the entry at row 1, column 2, and so forth. The number of arguments MUST match the dimensions of either the matrix algebra or the surrounding block (see below).</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/dimensions1.html#density">dimensions1/<br/>density</a>
       </td>
       <td>This symbol represents the density physical dimension, it is the mass per unit volume.</td>
@@ -1966,6 +2008,12 @@
          <a href="../cd/linalg1.html#determinant">linalg1/<br/>determinant</a>
       </td>
       <td>This symbol denotes the unary function which returns the determinant of its argument, the argument should be a square matrix.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/matrix1.html#diagonal">matrix1/<br/>diagonal</a>
+      </td>
+      <td>This symbol is an $m$-ary function whose arguments specify the entries of a (generalised) matrix diagonal. The diagonal must be filled from top-left to bottom-right. That is: the first argument represents the entry in row 1, column 1 of the matrix, the second argument denotes the entry at row 2, column 2, and so forth. If used inside a sparse_entry object at location $(i, j)$, the first entry is offset accordingly. If not used inside a sparse_entry object, the number of arguments MUST match the dimensions of either the matrix algebra (the smaller of $m$ and $n$). If used inside a sparse_entry object, the number of entries MUST NOT exceed the total matrix dimensions.</td>
    </tr>
    <tr>
       <td>
@@ -2182,6 +2230,12 @@
          <a href="../cd/opnode.html#divide">opnode/<br/>divide</a>
       </td>
       <td>A constant value, constructs the divide for division nodes.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial4.html#divide">polynomial4/<br/>divide</a>
+      </td>
+      <td>This symbol is a binary function whose arguments are polynomials f and g which must be defined over the same ground domain. When applied to f and g, it represents the quotient arising from dividing f by g and the remainder h such that h is congruent f modulo g. The result is gathered in a polynomial4.quotient_remainder cell. Hint: We consider named polynomial rings, i.e. the indeterminate is explicitly specified by a named variable, different once the variable names differ. That is, a polynomial in Z[X] cannot be divided by a polynomial in Z[Y] a priori. However, we leave it up to the implementor to handle this differently, though we strongly encourage implementors to return a polynomial in an anonymous indeterminate (using e.g. polyd1.poly_ring_d rather than polyd1.poly_ring_d_named).</td>
    </tr>
    <tr>
       <td>
@@ -2428,6 +2482,12 @@
          <a href="../cd/list4.html#entry">list4/<br/>entry</a>
       </td>
       <td>This symbol represents a binary function whose first argument should be a list L and whose second argument should be a positive integer i such that the absolute value of i is in the interval [1..n], where n is the length of L. If i is positive, it returns the i-th entry L[i] of L, if i is negative it returns the (n+1-i)-th entry of L.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/matrix1.html#entry_domain">matrix1/<br/>entry_domain</a>
+      </td>
+      <td>This symbol is a unary function, whose argument should be a ring r. When applied to r, it represents the matrix-algebra ground domain (MAD).</td>
    </tr>
    <tr>
       <td>
@@ -2683,6 +2743,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polynomial4.html#factor">polynomial4/<br/>factor</a>
+      </td>
+      <td>A symbol which represents one factor of a factorisation, it takes at least 2 arguments, the first of which being the factor polynomial, e.g. a polyd1.DMP, and the second being its multiplicity specified as an integer &gt;= 1. Optionally, the third argument is one of polynomial4.definitely_irreducible, polynomial4.possibly_reducible to indicate whether or not the given factor is guaranteed to be irreducible. Furthermore, this symbol may contain polynomial4.ground_ring_injected to indicate that the ground ring is considered to be embedded in the polynomial algebra and hence the factor is actually the factorisation of a polynomial coefficient.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/polyoperators1.html#factor">polyoperators1/<br/>factor</a>
       </td>
       <td>The action of factoring a polynomial into irreducible factors (I know this is field dependent but lets keep it simple by now).</td>
@@ -2707,6 +2773,30 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polynomial4.html#factorisations">polynomial4/<br/>factorisations</a>
+      </td>
+      <td>This symbol may be used in the reply of polynomial4.factorise and takes at least 1 argument. The first argument is one of polynomial4.factorisations_complete to indicate that the following list of polynomial4.factors cells covers all possible factorisations. The counterpart would be polynomial4.factorisations_possibly_incomplete to indicate that the following list of factorisations are some of possibly many more factorisations. Note: If the polynomial algebra is a UFD (unique factorisation domain) the uniqueness can be underpinned by giving exactly one polynomial4.factors cell and using the symbol polynomial4.factorisations_complete here. The rest of the arguments are polynomial4.factors cells, each of which being a possible factorisation. Using the call of polynomial4.factorise above we might obtain:</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial4.html#factorisations_complete">polynomial4/<br/>factorisations_complete</a>
+      </td>
+      <td>A symbol to indicate that a given list of factorisations of a polynomial covers in fact all possible factorisations.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial4.html#factorisations_incomplete">polynomial4/<br/>factorisations_incomplete</a>
+      </td>
+      <td>A symbol to indicate that a given list of factorisations is an assortment of all possible factorisations.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial4.html#factorise">polynomial4/<br/>factorise</a>
+      </td>
+      <td>This symbol is a unary function, whose argument should be a polynomial f. When applied to f, it represents a list of factors of f. Cf. polynomial4.factorisations for a description of the expected reply.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/integer1.html#factorof">integer1/<br/>factorof</a>
       </td>
       <td>This is the binary OpenMath operator that is used to indicate the mathematical relationship a "is a factor of" b, where a is the first argument and b is the second. This relationship is true if and only if b mod a = 0.</td>
@@ -2716,6 +2806,12 @@
          <a href="../cd/polynomial3.html#factors">polynomial3/<br/>factors</a>
       </td>
       <td>This symbol is a unary function, whose argument should be a polynomial f. When applied to f, it represents a complete list of irreducible factors of f.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial4.html#factors">polynomial4/<br/>factors</a>
+      </td>
+      <td>This symbol is used in the reply of polynomial4.factorise and takes at least 2 arguments. Note this symbol may also be used in a polynomial4.factorisations cell. The first argument is one of polynomial4.definitely_irreducible or polynomial4.possibly_reducible and specifies whether the computed factorisation is known to be irreducible or if the irreducibility of some of the factors is not guaranteed. Note: This symbol is mandatory even if the factors themselves (see polynomial4.factor) can carry that information, this is simply to connive at computer algebra systems that cannot figure out which of the factors is the possibly reducible one. Generally this slot must be polynomial4.possibly_reducible if at least one of the factors is possibly reducible. The second argument contains a polyd1.poly_ring_d or polyd1.poly_ring_d_named cell, as specified in e.g. polyd or polyd1 to indicate the underlying polynomial algebra. The third argument is a symbol polynomial4.common_coefficient and denotes the common coefficient of the factorisation. Note: In case the ground ring itself is regarded as being injected into the polynomial algebra, or the factorisation is normalised, this field may be used to specify the unit giving the normalisation. Furthermore, the cell comprises polynomial4.factor cells which in turn represent the factors of the polynomial in a factorisation along with their multiplicities. Using the call of polynomial4.factorise above we might obtain:</td>
    </tr>
    <tr>
       <td>
@@ -3274,6 +3370,12 @@
          <a href="../cd/polygb1.html#groebnered">polygb1/<br/>groebnered</a>
       </td>
       <td>The constructor for a Groebner basis (reduced, minimal). The first argument is an ordering, the second is the Groebner Basis itself (with respect to the ordering) that should be represented as a DMPL.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial4.html#ground_ring_injected">polynomial4/<br/>ground_ring_injected</a>
+      </td>
+      <td>A symbol which denotes that the ground ring of a polynomial algebra is considered to be part of the latter. This is used in the polynomial4.factor symbol to indicate that the factor is part of the factorisation of the common coefficient.</td>
    </tr>
    <tr>
       <td>
@@ -4033,6 +4135,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/order1.html#is_Dedekind">order1/<br/>is_Dedekind</a>
+      </td>
+      <td>This symbol represents a unary boolean function. The argument should be a ring R. When evaluated on R, the function returns true if R is a Dedekind ring and false otherwise. Note that a ring R is a Dedekind ring if it is Noetherian, integrally closed (so integral) and such that every non-zero prime ideal is maximal.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/logic3.html#is_deduction">logic3/<br/>is_deduction</a>
       </td>
       <td>This symbol expresses whether or not there is a deduction of the form quoted. Hence for items of type complete_pred_deduction, it is always true</td>
@@ -4237,6 +4345,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/order1.html#is_maximal_order">order1/<br/>is_maximal_order</a>
+      </td>
+      <td>The unary boolean function whose value is true if and only if the argument is a maximal order.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/plangeo3.html#is_midpoint">plangeo3/<br/>is_midpoint</a>
       </td>
       <td>The statement that one point is the midpoint of two others.</td>
@@ -4246,6 +4360,12 @@
          <a href="../cd/ThreeDgeo2.html#is_midpoint">ThreeDgeo2/<br/>is_midpoint</a>
       </td>
       <td>The statement that one point is the midpoint of two others.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/order1.html#is_nonzero_divisor">order1/<br/>is_nonzero_divisor</a>
+      </td>
+      <td>This symbol represents a boolean binary function. The first argument is a ring R, the second is an element b of R. When evaluated on R and b, the function returns true if b is a nonzero divisor in R.</td>
    </tr>
    <tr>
       <td>
@@ -4300,6 +4420,12 @@
          <a href="../cd/finfield1.html#is_primitive_poly">finfield1/<br/>is_primitive_poly</a>
       </td>
       <td>This symbol is a Boolean-valued function with two arguments, the first of which should be a prime number p, and the second of which should be a polynomial with coefficients in GF(p). When applied to p and f, this symbol represents the value true if and only if f is a primitive polynomial, that is, f is irreducible over GF(p), so GF(p)[X]/(f) is a finite field of order p^n, where n is the degree of f, and the image of X in GF(p)[X]/(f) is a generator of the (cyclic) multiplicative group of GF(p)[X]/(f).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/order1.html#is_principal_ideal_domain">order1/<br/>is_principal_ideal_domain</a>
+      </td>
+      <td>The unary boolean function whose value is true if and only if the argument is a principal ideal domain. R is a principal ideal domain if R is a commutative ring without zero divisors and if every ideal of R is a principal ideal.</td>
    </tr>
    <tr>
       <td>
@@ -5065,6 +5191,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/matrix1.html#lower_band">matrix1/<br/>lower_band</a>
+      </td>
+      <td>This symbol is a binary function whose first argument is a non-negative OpenMath integer which denotes the index of the lower band which is specified in the second argument. Hereby the first lower band is the one immediately below the main (generalised) diagonal, its starting coordinates relative to the top-left of the matrix thus are (2, 1).</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalgspec2.html#lower_Hessenberg">linalgspec2/<br/>lower_Hessenberg</a>
       </td>
       <td>This symbol represents a lower_Hessenberg matrix, it takes one argument, the argument is a vector of vectors representing the non-zero elements. The first element of the argument specifies the value of the first super-diagonal, the subsequent elements specify the value of the diagonal and subsequent subdiagonals, all other elements are zero.</td>
@@ -5263,9 +5395,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/matrix1.html#matrix">matrix1/<br/>matrix</a>
+      </td>
+      <td>This symbol is a binary function whose first argument must be a matrix algebra constructor and the second argument can be any of the below matrix entry constructors. Additionally it is possible to use the matrix constructors of the linalg2 or linalg3 CDs.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/sts2.html#matrix">sts2/<br/>matrix</a>
       </td>
       <td>A constructor for the type of a matrix</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/matrix1.html#matrix_domain">matrix1/<br/>matrix_domain</a>
+      </td>
+      <td>This symbol is a ternary function, whose first argument should be a matrix1.entry_domain application. The second and third arguments must be matrix1.row_dimension and matrix1.column_dimension. When applied to these arguments this `creates' the domain of linear mappings between modules of specified dimensions over a common ground domain, conveniently represented by matrices.</td>
    </tr>
    <tr>
       <td>
@@ -5332,6 +5476,12 @@
          <a href="../cd/minmax1.html#max">minmax1/<br/>max</a>
       </td>
       <td>This symbol denotes the unary maximum function which takes a set as its argument and returns the maximum element in that set.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/order1.html#maximal_order">order1/<br/>maximal_order</a>
+      </td>
+      <td>This is a binary function, whose first argument is a Dedekind ring R and the second is a polynomial f. When applied to R and f, it returns the maximal order A among the orders of f (over the polynomial ring of R) in the quotient field of A. Note that the result is unique.</td>
    </tr>
    <tr>
       <td>
@@ -5719,6 +5869,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polynomial4.html#multiplicity">polynomial4/<br/>multiplicity</a>
+      </td>
+      <td>A symbol which represents the multiplicity of a factor in a factorisation and takes exactly one argument which must be a positive integer.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/multiset1.html#multiset">multiset1/<br/>multiset</a>
       </td>
       <td>This symbol represents the multiset construct. It is either an n-ary function, in which case the multiset entries are given explicitly, or it works on an elements construct. There is no implied ordering to the elements of a multiset.</td>
@@ -6013,6 +6169,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/order1.html#number_field">order1/<br/>number_field</a>
+      </td>
+      <td>This symbol is a constructor for number fields. It takes two arguments in the following order: a ring R and a monic irreducible univariate polynomial f. If the ring R is Z (or Q), it returns the absolute number field. Otherwise it returns the relative number field over the number field whose ring of integers is R. This symbol is intended to be used in upcoming CDs for e.g. describing discriminants of number fields, or Galois groups, unit groups, class groups, regulators, etc.; all useful number theoretical notions.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/sts.html#NumericalValue">sts/<br/>NumericalValue</a>
       </td>
       <td>Denotes an OpenMath object that is to be thought of as something that represents a numerical value, or a numerical value.</td>
@@ -6166,6 +6328,12 @@
          <a href="../cd/integer2.html#ord">integer2/<br/>ord</a>
       </td>
       <td>This symbol denotes a binary function. Its first argument shoud be a prime number p, the second an integer n. When applied to p and n, it represents the highest power of p occurring in a factorization of n.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/order1.html#order">order1/<br/>order</a>
+      </td>
+      <td>This is a binary function, whose first argument is a Dedekind ring R and the second is a polynomial f. When applied to R and f, it returns an order of f over the polynomial ring R: it is a ring A containing R, which is finitely generated R-module with no nilpotent non-zero ideal and as a R-module it is torsion-free. Note that the result is not unique. Also this function allows to compute an order of a polynomial over another polynomial ring. The idea behind this computation is to coerce f into the polynomial ring of R and then compute the order.</td>
    </tr>
    <tr>
       <td>
@@ -6865,6 +7033,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polynomial4.html#possibly_reducible">polynomial4/<br/>possibly_reducible</a>
+      </td>
+      <td>A symbol which denotes that the irreducibility of a factor of the factorisation is not guaranteed.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_imperial1.html#pound_force">units_imperial1/<br/>pound_force</a>
       </td>
       <td>This symbol represents the measure of force of one pound.</td>
@@ -6988,6 +7162,12 @@
          <a href="../cd/finfield1.html#primitive_element">finfield1/<br/>primitive_element</a>
       </td>
       <td>This symbol has one or two arguments. If there is only one argument, it must be a prime power q. The optional second argument is a polynomial m which is primitive over the prime subfield of GF(q). This symbol returns a primitive element for GF(q) with minimal polynomial m. If there is only one argument, then the minimal polynomial is assumed to be the conway polynomial for GF(q).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/order1.html#primitive_element">order1/<br/>primitive_element</a>
+      </td>
+      <td>This is a unary function, whose argument is a number field K. It returns a primitive element of K. Note that the result is not unique.</td>
    </tr>
    <tr>
       <td>
@@ -7135,6 +7315,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/polynomial4.html#quotient">polynomial4/<br/>quotient</a>
+      </td>
+      <td>This symbol contains the quotient of polynomial4.divide. Cf. polynomial4.quotient_remainder for an example.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/polyslp.html#quotient">polyslp/<br/>quotient</a>
       </td>
       <td>A quotient function for polynomials represented by slps. It is a requirement that this is an exact division.</td>
@@ -7162,6 +7348,12 @@
          <a href="../cd/ring5.html#quotient_map">ring5/<br/>quotient_map</a>
       </td>
       <td>This symbol is a binary function whose first argument is a ring R and whose second argument is an ideal I of R. When applied to R and I, its value is the natural quotient map from R to the quotient ring R/I.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial4.html#quotient_remainder">polynomial4/<br/>quotient_remainder</a>
+      </td>
+      <td>This symbol is a container for the result of polynomial4.divide. It takes 2 arguments in unspecified order, polynomial4.quotient and polynomial4.remainder. Using the above polynomial4.divide call we may obtain:</td>
    </tr>
    <tr>
       <td>
@@ -7336,6 +7528,12 @@
          <a href="../cd/polynomial3.html#remainder">polynomial3/<br/>remainder</a>
       </td>
       <td>The symbol represents a binary function, whose arguments should be univariate polynomials in the same polynomial ring whose coefficient ring is a field. When applied to a and b, it represents the polynomial remainder after division of a by b.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial4.html#remainder">polynomial4/<br/>remainder</a>
+      </td>
+      <td>This symbol contains the remainder of polynomial4.divide. Cf. polynomial4.quotient_remainder for an example.</td>
    </tr>
    <tr>
       <td>
@@ -7567,6 +7765,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/order1.html#ring_integers">order1/<br/>ring_integers</a>
+      </td>
+      <td>This is a unary function, whose argument is a number field K. When applied to K, it returns the ring of integers of K. It is the Dedekind ring of K.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/algebraic_cats.html#ring_negative">algebraic_cats/<br/>ring_negative</a>
       </td>
       <td>This symbol takes one argument which should be a ring. It returns a unary function which should be the negative function of the ring.</td>
@@ -7642,6 +7846,12 @@
          <a href="../cd/rounding1.html#round">rounding1/<br/>round</a>
       </td>
       <td>The round to nearest operation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/matrix1.html#row_dimension">matrix1/<br/>row_dimension</a>
+      </td>
+      <td>This symbol is a unary function whose first argument must be either a non-negative OpenMath integer or nums1.infinity. When applied this creates an object that denotes the dimension of the codomain of the linear mapping represented by the matrix.</td>
    </tr>
    <tr>
       <td>
@@ -8032,6 +8242,18 @@
          <a href="../cd/linalg7.html#sparse">linalg7/<br/>sparse</a>
       </td>
       <td>The sparse symbol is a constructor for sparse vectors, it is (n+1)-ary, where the first parameter is the length (dimension) of the vector, and every following parameter specifies a possibly non-zero element in the following way. The parameter is a list which should have length two. The first element in the list is the position (one based), whilst the second element in the list is the value. Every other element of the vector is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/matrix1.html#sparse">matrix1/<br/>sparse</a>
+      </td>
+      <td>The constructor for sparse matrices without any indication of dimension or domain for the coefficients. Its arguments are just matrix1.sparse_entrys. Attention: No two matrix1.sparse_entrys must specify the same location.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/matrix1.html#sparse_entry">matrix1/<br/>sparse_entry</a>
+      </td>
+      <td>This symbol denotes a ternary function whose first two arguments specify the location of an entry inside the matrix, and whose final argument is the entry itself. The entry MUST be either from the specified ground domain directly, or be a diagonal constructor as described below, a block constructor as described below, or a banded constructor as described below. In the block case, the dimensions of the block MUST NOT exceed the total dimensions of the matrix algebra. In the diagonal case, the dimension of the diagonal MUST NOT exceed the total dimensions of the matrix algebra.</td>
    </tr>
    <tr>
       <td>
@@ -8830,6 +9052,12 @@
          <a href="../cd/linalg5.html#upper-triangular">linalg5/<br/>upper-triangular</a>
       </td>
       <td>This symbol represents an upper-triangular matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/matrix1.html#upper_band">matrix1/<br/>upper_band</a>
+      </td>
+      <td>This symbol is a binary function whose first argument is a non-negative OpenMath integer which denotes the index of the upper band which is specified in the second argument. Hereby the first upper band is the one immediately above the main (generalised) diagonal, its starting coordinates relative to the top-left of the matrix thus are (1, 2).</td>
    </tr>
    <tr>
       <td>

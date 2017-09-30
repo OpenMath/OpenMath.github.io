@@ -1,0 +1,3825 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>order1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: order1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.win.tue.nl/SCIEnce/cds/order1.ocd">http://www.win.tue.nl/SCIEnce/cds/order1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="order1.ocd">order1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="order1.omcd">order1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#algebraic_integer">algebraic_integer</a>, <a href="#algebraic_number">algebraic_number</a>, <a href="#is_Dedekind">is_Dedekind</a>, <a href="#is_maximal_order">is_maximal_order</a>, <a href="#is_nonzero_divisor">is_nonzero_divisor</a>, <a href="#is_principal_ideal_domain">is_principal_ideal_domain</a>, <a href="#maximal_order">maximal_order</a>, <a href="#number_field">number_field</a>, <a href="#order">order</a>, <a href="#primitive_element">primitive_element</a>, <a href="#ring_integers">ring_integers</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2009-07-02</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>1
+    (Revision 7)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2017-09-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="alg1.html">alg1</a>, <a href="arith1.html">arith1</a>, <a href="fieldname1.html">fieldname1</a>, <a href="logic1.html">logic1</a>, <a href="nums1.html">nums1</a>, <a href="polyd1.html">polyd1</a>, <a href="quant1.html">quant1</a>, <a href="relation1.html">relation1</a>, <a href="ring1.html">ring1</a>, <a href="ringname1.html">ringname1</a>, <a href="set1.html">set1</a>, <a href="setname1.html">setname1</a>
+               </dd>
+            </dl>
+            <hr/>
+	
+	
+	
+	
+	
+	
+	
+	
+	           <p>
+	This CD defines the basic functions and constructors for orders of number fields. Written by S. Lesseni (lesseni@math.tu-berlin.de).
+	</p>
+	           <pre>
+	A CD of basic functions for orders of number fields written for SCIEnce project. Note that all the rings used here will be considered unital.
+	The reference textbooks are: 
+	(1) M. Pohst and H. Zassenhaus, Algorithmic Algebraic Number Theory, Cambridge
+	Univ. Press, 1989.
+	(2) H. Cohen, A course in Computational Algebraic Number Theory. Berlin, Springer-Verlag (1993).
+	</pre>
+	           <hr/>
+		          <h2>
+               <a name="is_Dedekind"> is_Dedekind</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This symbol represents a unary boolean function. The argument should be a ring R. When evaluated on R, the function returns true if R is a Dedekind ring and false otherwise. Note that a ring R is a Dedekind ring if it is  Noetherian, integrally closed (so integral) and such that every non-zero prime ideal is maximal.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+		if R is a Dedekind ring and a subring of the rational field Q then R = Z.
+		</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+			               <div>
+                     <button id="id.om.26xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.26xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.26xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="logic1" name="implies"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="logic1" name="and"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="order1" name="is_Dedekind"/&gt;
+							&lt;OMV name="R"/&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="ring1" name="is_subring"/&gt;
+							&lt;OMS cd="fieldname1" name="Q"/&gt;
+							&lt;OMV name="R"/&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="relation1" name="eq"/&gt;
+						&lt;OMV name="R"/&gt;
+						&lt;OMS cd="ringname1" name="Z"/&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.26cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.26cmml')">Strict Content MathML</button>
+                     <pre id="id.om.26cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_Dedekind&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;is_subring&lt;/csymbol&gt;&lt;csymbol cd="fieldname1"&gt;Q&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.26prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.26pref')">Prefix</button>
+                  <div id="id.om.26pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/order1.html#is_Dedekind">is_Dedekind</a>
+  ( <i>R</i>)
+, <a href="../../../cd/ring1.html#is_subring">is_subring</a>
+  (<a href="../../../cd/fieldname1.html#Q">Q</a>,  <i>R</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>R</i>, <a href="../../../cd/ringname1.html#Z">Z</a>)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.26popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.26pop')">Popcorn</button>
+                     <div id="id.om.26pop" style="display:none; margin-top: 0.5em">
+				order1.is_Dedekind($R) and ring1.is_subring(fieldname1.Q, $R) ==&gt; $R = ringname1.Z
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.26mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.26mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.26mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mrow>
+                                       <mi>is_Dedekind</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>R</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mi>is_subring</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>Q</mi>
+                                          <mo>,</mo>
+                                          <mi>R</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mi>R</mi>
+                                    <mo>=</mo>
+                                    <mi>Z</mi>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			if the ring (R,+,0,-,*,1) is a principal ideal domain then (R,+,0,-,*,1) is a Dedekind ring.
+			<div>
+                     <button id="id.om.43xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.43xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.43xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMBIND&gt;
+					&lt;OMS cd="quant1" name="forall"/&gt;
+					&lt;OMBVAR&gt;
+						&lt;OMV name="R"/&gt;
+						&lt;OMV name="plus"/&gt;
+						&lt;OMV name="zero"/&gt;
+						&lt;OMV name="minus"/&gt;
+						&lt;OMV name="times"/&gt;
+						&lt;OMV name="one"/&gt;
+					&lt;/OMBVAR&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="logic1" name="implies"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="order1" name="is_principal_ideal_domain"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="ring1" name="ring"/&gt;
+								&lt;OMV name="R"/&gt;
+								&lt;OMV name="plus"/&gt;
+								&lt;OMV name="zero"/&gt;
+								&lt;OMV name="minus"/&gt;
+								&lt;OMV name="times"/&gt;
+								&lt;OMV name="one"/&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="order1" name="is_Dedekind"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="ring1" name="ring"/&gt;
+								&lt;OMV name="R"/&gt;
+								&lt;OMV name="plus"/&gt;
+								&lt;OMV name="zero"/&gt;
+								&lt;OMV name="minus"/&gt;
+								&lt;OMV name="times"/&gt;
+								&lt;OMV name="one"/&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMBIND&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.43cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.43cmml')">Strict Content MathML</button>
+                     <pre id="id.om.43cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;plus&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;zero&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;minus&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;times&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;one&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_principal_ideal_domain&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="ring1"&gt;ring&lt;/csymbol&gt;
+     &lt;ci&gt;R&lt;/ci&gt;
+     &lt;ci&gt;plus&lt;/ci&gt;
+     &lt;ci&gt;zero&lt;/ci&gt;
+     &lt;ci&gt;minus&lt;/ci&gt;
+     &lt;ci&gt;times&lt;/ci&gt;
+     &lt;ci&gt;one&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_Dedekind&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="ring1"&gt;ring&lt;/csymbol&gt;
+     &lt;ci&gt;R&lt;/ci&gt;
+     &lt;ci&gt;plus&lt;/ci&gt;
+     &lt;ci&gt;zero&lt;/ci&gt;
+     &lt;ci&gt;minus&lt;/ci&gt;
+     &lt;ci&gt;times&lt;/ci&gt;
+     &lt;ci&gt;one&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.43prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.43pref')">Prefix</button>
+                  <div id="id.om.43pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+						 <i>R</i>
+						               <i>plus</i>
+						               <i>zero</i>
+						               <i>minus</i>
+						               <i>times</i>
+						               <i>one</i>
+					] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/order1.html#is_principal_ideal_domain">is_principal_ideal_domain</a>
+  (<a href="../../../cd/ring1.html#ring">ring</a>
+  ( <i>R</i>,  <i>plus</i>,  <i>zero</i>,  <i>minus</i>,  <i>times</i>,  <i>one</i>)
+)
+, <a href="../../../cd/order1.html#is_Dedekind">is_Dedekind</a>
+  (<a href="../../../cd/ring1.html#ring">ring</a>
+  ( <i>R</i>,  <i>plus</i>,  <i>zero</i>,  <i>minus</i>,  <i>times</i>,  <i>one</i>)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.43popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.43pop')">Popcorn</button>
+                     <div id="id.om.43pop" style="display:none; margin-top: 0.5em">
+				quant1.forall[$R, $plus, $zero, $minus, $times, $one -&gt; order1.is_principal_ideal_domain(ring1.ring($R, $plus, $zero, $minus, $times, $one)) ==&gt; order1.is_Dedekind(ring1.ring($R, $plus, $zero, $minus, $times, $one))]
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.43mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.43mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.43mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>R</mi>
+                                    <mo>,</mo>
+                                    <mi>plus</mi>
+                                    <mo>,</mo>
+                                    <mi>zero</mi>
+                                    <mo>,</mo>
+                                    <mi>minus</mi>
+                                    <mo>,</mo>
+                                    <mi>times</mi>
+                                    <mo>,</mo>
+                                    <mi>one</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>is_principal_ideal_domain</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>ring</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>R</mi>
+                                                <mo>,</mo>
+                                                <mi>plus</mi>
+                                                <mo>,</mo>
+                                                <mi>zero</mi>
+                                                <mo>,</mo>
+                                                <mi>minus</mi>
+                                                <mo>,</mo>
+                                                <mi>times</mi>
+                                                <mo>,</mo>
+                                                <mi>one</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8658;</mo>
+                                    <mrow>
+                                       <mi>is_Dedekind</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>ring</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>R</mi>
+                                                <mo>,</mo>
+                                                <mi>plus</mi>
+                                                <mo>,</mo>
+                                                <mi>zero</mi>
+                                                <mo>,</mo>
+                                                <mi>minus</mi>
+                                                <mo>,</mo>
+                                                <mi>times</mi>
+                                                <mo>,</mo>
+                                                <mi>one</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#is_Dedekind">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_nonzero_divisor">is_nonzero_divisor</a>]
+	  
+	    [Last: <a href="#primitive_element">primitive_element</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="is_nonzero_divisor"> is_nonzero_divisor</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This symbol represents a boolean binary function. The first argument is a ring 
+		R, the second is an element b of R. When evaluated on R and b, the function returns true if b is a nonzero divisor in R.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+		if x is a non-zero divisor in the ring R then x is in  R and x is different from zero and for all non-zero y in R, x*y is  different from zero or y*x is different from zero.
+		</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+			               <div>
+                     <button id="id.om.81xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.81xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.81xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="logic1" name="implies"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="order1" name="is_nonzero_divisor"/&gt;
+						&lt;OMV name="R"/&gt;
+						&lt;OMV name="x"/&gt;
+					&lt;/OMA&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="logic1" name="and"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="set1" name="in"/&gt;
+							&lt;OMV name="x"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="ring1" name="carrier"/&gt;
+								&lt;OMV name="R"/&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="relation1" name="neq"/&gt;
+							&lt;OMV name="x"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="ring1" name="zero"/&gt;
+								&lt;OMV name="R"/&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+						&lt;OMBIND&gt;
+							&lt;OMS cd="quant1" name="forall"/&gt;
+							&lt;OMBVAR&gt;
+								&lt;OMV name="y"/&gt;
+							&lt;/OMBVAR&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="logic1" name="implies"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS cd="logic1" name="and"/&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="set1" name="in"/&gt;
+										&lt;OMV name="y"/&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="carrier"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+									&lt;/OMA&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="relation1" name="neq"/&gt;
+										&lt;OMV name="y"/&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="zero"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+									&lt;/OMA&gt;
+								&lt;/OMA&gt;
+								&lt;OMA&gt;
+									&lt;OMS cd="logic1" name="or"/&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="relation1" name="neq"/&gt;
+										&lt;OMA&gt;
+											&lt;OMA&gt;
+												&lt;OMS cd="ring1" name="multiplication"/&gt;
+												&lt;OMV name="R"/&gt;
+											&lt;/OMA&gt;
+											&lt;OMV name="x"/&gt;
+											&lt;OMV name="y"/&gt;
+										&lt;/OMA&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="zero"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+									&lt;/OMA&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="relation1" name="neq"/&gt;
+										&lt;OMA&gt;
+											&lt;OMA&gt;
+												&lt;OMS cd="ring1" name="multiplication"/&gt;
+												&lt;OMV name="R"/&gt;
+											&lt;/OMA&gt;
+											&lt;OMV name="y"/&gt;
+											&lt;OMV name="x"/&gt;
+										&lt;/OMA&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="zero"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+									&lt;/OMA&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+						&lt;/OMBIND&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.81cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.81cmml')">Strict Content MathML</button>
+                     <pre id="id.om.81cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_nonzero_divisor&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="ring1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;neq&lt;/csymbol&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="ring1"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+       &lt;ci&gt;y&lt;/ci&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;neq&lt;/csymbol&gt;
+       &lt;ci&gt;y&lt;/ci&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="logic1"&gt;or&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;neq&lt;/csymbol&gt;
+       &lt;apply&gt;
+        &lt;apply&gt;&lt;csymbol cd="ring1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+        &lt;ci&gt;x&lt;/ci&gt;
+        &lt;ci&gt;y&lt;/ci&gt;
+       &lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;neq&lt;/csymbol&gt;
+       &lt;apply&gt;
+        &lt;apply&gt;&lt;csymbol cd="ring1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+        &lt;ci&gt;y&lt;/ci&gt;
+        &lt;ci&gt;x&lt;/ci&gt;
+       &lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.81prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.81pref')">Prefix</button>
+                  <div id="id.om.81pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/order1.html#is_nonzero_divisor">is_nonzero_divisor</a>
+  ( <i>R</i>,  <i>x</i>)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>, <a href="../../../cd/ring1.html#carrier">carrier</a>
+  ( <i>R</i>)
+)
+, <a href="../../../cd/relation1.html#neq">neq</a>
+  ( <i>x</i>, <a href="../../../cd/ring1.html#zero">zero</a>
+  ( <i>R</i>)
+)
+, <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+								 <i>y</i>
+							] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>y</i>, <a href="../../../cd/ring1.html#carrier">carrier</a>
+  ( <i>R</i>)
+)
+, <a href="../../../cd/relation1.html#neq">neq</a>
+  ( <i>y</i>, <a href="../../../cd/ring1.html#zero">zero</a>
+  ( <i>R</i>)
+)
+)
+, <a href="../../../cd/logic1.html#or">or</a>
+  (<a href="../../../cd/relation1.html#neq">neq</a>
+  (<a href="../../../cd/ring1.html#multiplication">multiplication</a>
+  ( <i>R</i>)
+
+  ( <i>x</i>,  <i>y</i>)
+, <a href="../../../cd/ring1.html#zero">zero</a>
+  ( <i>R</i>)
+)
+, <a href="../../../cd/relation1.html#neq">neq</a>
+  (<a href="../../../cd/ring1.html#multiplication">multiplication</a>
+  ( <i>R</i>)
+
+  ( <i>y</i>,  <i>x</i>)
+, <a href="../../../cd/ring1.html#zero">zero</a>
+  ( <i>R</i>)
+)
+)
+)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.81popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.81pop')">Popcorn</button>
+                     <div id="id.om.81pop" style="display:none; margin-top: 0.5em">
+				order1.is_nonzero_divisor($R, $x) ==&gt; set1.in($x, ring1.carrier($R)) and $x != ring1.zero($R) and quant1.forall[$y -&gt; set1.in($y, ring1.carrier($R)) and $y != ring1.zero($R) ==&gt; ring1.multiplication($R)($x, $y) != ring1.zero($R) &gt; ring1.multiplication($R)($y, $x) != ring1.zero($R)]
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.81mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.81mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.81mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_nonzero_divisor</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>,</mo>
+                                       <mi>x</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>&#8712;</mo>
+                                       <mrow>
+                                          <mi>carrier</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mi>x</mi>
+                                       <mo>&#8800;</mo>
+                                       <mrow>
+                                          <mi>zero</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mo>&#8704;</mo>
+                                       <mo>&#8201;</mo>
+                                       <mrow>
+                                          <mi>y</mi>
+                                       </mrow>
+                                       <mo>.</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mrow>
+                                                <mi>y</mi>
+                                                <mo>&#8712;</mo>
+                                                <mrow>
+                                                   <mi>carrier</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>R</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>&#8743;</mo>
+                                             <mrow>
+                                                <mi>y</mi>
+                                                <mo>&#8800;</mo>
+                                                <mrow>
+                                                   <mi>zero</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>R</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>&#8658;</mo>
+                                          <mrow>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>multiplication</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>R</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>x</mi>
+                                                      <mo>,</mo>
+                                                      <mi>y</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>&#8800;</mo>
+                                                <mrow>
+                                                   <mi>zero</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>R</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                             <mo>&#8744;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>multiplication</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi>R</mi>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>y</mi>
+                                                      <mo>,</mo>
+                                                      <mi>x</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>&#8800;</mo>
+                                                <mrow>
+                                                   <mi>zero</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>R</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			               <div>
+                     <button id="id.om.147xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.147xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.147xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="order1" name="is_nonzero_divisor"/&gt;
+					&lt;OMS cd="ringname1" name="Z"/&gt;
+					&lt;OMI&gt;5&lt;/OMI&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.147cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.147cmml')">Strict Content MathML</button>
+                     <pre id="id.om.147cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_nonzero_divisor&lt;/csymbol&gt;
+  &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;5&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.147prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.147pref')">Prefix</button>
+                  <div id="id.om.147pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#is_nonzero_divisor">is_nonzero_divisor</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, 5)
+
+			</div>
+                  <div>
+                     <button id="id.om.147popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.147pop')">Popcorn</button>
+                     <div id="id.om.147pop" style="display:none; margin-top: 0.5em">
+				order1.is_nonzero_divisor(ringname1.Z, 5)
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.147mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.147mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.147mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>is_nonzero_divisor</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>Z</mi>
+                                    <mo>,</mo>
+                                    <mn>5</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#is_nonzero_divisor">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_principal_ideal_domain">is_principal_ideal_domain</a>]
+	  
+	    [Previous: <a href="#is_Dedekind">is_Dedekind</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="is_principal_ideal_domain"> is_principal_ideal_domain</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		The unary boolean function whose value is true if and only if the argument is a principal ideal domain. R is a  principal ideal domain if R is a commutative ring without zero divisors and if  every ideal of R is a principal ideal.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+		is_principal_ideal_domain(R) then for all a, b in R a*b=b*a and a different from zero in R then a is a non-zero divisor in R and I an ideal of R then there exists x in R such that I is the principal ideal generated by x in R. 
+		</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+			               <div>
+                     <button id="id.om.158xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.158xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.158xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="logic1" name="implies"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="order1" name="is_principal_ideal_domain"/&gt;
+						&lt;OMV name="R"/&gt;
+					&lt;/OMA&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="logic1" name="and"/&gt;
+						&lt;OMBIND&gt;
+							&lt;OMS cd="quant1" name="forall"/&gt;
+							&lt;OMBVAR&gt;
+								&lt;OMV name="a"/&gt;
+								&lt;OMV name="b"/&gt;
+							&lt;/OMBVAR&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="logic1" name="implies"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS cd="logic1" name="and"/&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="set1" name="in"/&gt;
+										&lt;OMV name="a"/&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="carrier"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+									&lt;/OMA&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="set1" name="in"/&gt;
+										&lt;OMV name="b"/&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="carrier"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+									&lt;/OMA&gt;
+								&lt;/OMA&gt;
+								&lt;OMA&gt;
+									&lt;OMS cd="relation1" name="eq"/&gt;
+									&lt;OMA&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="multiplication"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+										&lt;OMV name="a"/&gt;
+										&lt;OMV name="b"/&gt;
+									&lt;/OMA&gt;
+									&lt;OMA&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="multiplication"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+										&lt;OMV name="b"/&gt;
+										&lt;OMV name="a"/&gt;
+									&lt;/OMA&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+						&lt;/OMBIND&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="logic1" name="implies"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="logic1" name="and"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS cd="set1" name="in"/&gt;
+									&lt;OMV name="a"/&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="ring1" name="carrier"/&gt;
+										&lt;OMV name="R"/&gt;
+									&lt;/OMA&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="relation1" name="neq"/&gt;
+										&lt;OMV name="a"/&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="ring1" name="zero"/&gt;
+											&lt;OMV name="R"/&gt;
+										&lt;/OMA&gt;
+									&lt;/OMA&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="order1" name="is_nonzero_divisor"/&gt;
+								&lt;OMV name="R"/&gt;
+								&lt;OMV name="a"/&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="logic1" name="implies"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="ring3" name="is_ideal"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS cd="ring1" name="carrier"/&gt;
+									&lt;OMV name="R"/&gt;
+								&lt;/OMA&gt;
+								&lt;OMV name="I"/&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="logic1" name="and"/&gt;
+								&lt;OMBIND&gt;
+									&lt;OMS cd="quant1" name="exists"/&gt;
+									&lt;OMBVAR&gt;
+										&lt;OMV name="x"/&gt;
+									&lt;/OMBVAR&gt;
+									&lt;OMA&gt;
+										&lt;OMS cd="logic1" name="implies"/&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="set1" name="in"/&gt;
+											&lt;OMV name="x"/&gt;
+											&lt;OMA&gt;
+												&lt;OMS cd="ring1" name="carrier"/&gt;
+												&lt;OMV name="R"/&gt;
+											&lt;/OMA&gt;
+										&lt;/OMA&gt;
+										&lt;OMA&gt;
+											&lt;OMS cd="relation1" name="eq"/&gt;
+											&lt;OMV name="I"/&gt;
+											&lt;OMA&gt;
+												&lt;OMS cd="ring3" name="principal_ideal"/&gt;
+												&lt;OMV name="R"/&gt;
+												&lt;OMV name="x"/&gt;
+											&lt;/OMA&gt;
+										&lt;/OMA&gt;
+									&lt;/OMA&gt;
+								&lt;/OMBIND&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.158cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.158cmml')">Strict Content MathML</button>
+                     <pre id="id.om.158cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_principal_ideal_domain&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;bvar&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+       &lt;ci&gt;a&lt;/ci&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+       &lt;ci&gt;b&lt;/ci&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+      &lt;apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+       &lt;ci&gt;a&lt;/ci&gt;
+       &lt;ci&gt;b&lt;/ci&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;multiplication&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+       &lt;ci&gt;b&lt;/ci&gt;
+       &lt;ci&gt;a&lt;/ci&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/bind&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="ring1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;neq&lt;/csymbol&gt;
+       &lt;ci&gt;a&lt;/ci&gt;
+       &lt;apply&gt;&lt;csymbol cd="ring1"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_nonzero_divisor&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="ring3"&gt;is_ideal&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="ring1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;I&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+     &lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+       &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+        &lt;ci&gt;x&lt;/ci&gt;
+        &lt;apply&gt;&lt;csymbol cd="ring1"&gt;carrier&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/apply&gt;
+       &lt;/apply&gt;
+       &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+        &lt;ci&gt;I&lt;/ci&gt;
+        &lt;apply&gt;&lt;csymbol cd="ring3"&gt;principal_ideal&lt;/csymbol&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+       &lt;/apply&gt;
+      &lt;/apply&gt;
+     &lt;/bind&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.158prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.158pref')">Prefix</button>
+                  <div id="id.om.158pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/order1.html#is_principal_ideal_domain">is_principal_ideal_domain</a>
+  ( <i>R</i>)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/quant1.html#forall">forall</a>
+  [
+								 <i>a</i>
+								             <i>b</i>
+							] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>, <a href="../../../cd/ring1.html#carrier">carrier</a>
+  ( <i>R</i>)
+)
+, <a href="../../../cd/set1.html#in">in</a>
+  ( <i>b</i>, <a href="../../../cd/ring1.html#carrier">carrier</a>
+  ( <i>R</i>)
+)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/ring1.html#multiplication">multiplication</a>
+  ( <i>R</i>)
+
+  ( <i>a</i>,  <i>b</i>)
+, <a href="../../../cd/ring1.html#multiplication">multiplication</a>
+  ( <i>R</i>)
+
+  ( <i>b</i>,  <i>a</i>)
+)
+)
+)
+, <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>a</i>, <a href="../../../cd/ring1.html#carrier">carrier</a>
+  ( <i>R</i>)
+, <a href="../../../cd/relation1.html#neq">neq</a>
+  ( <i>a</i>, <a href="../../../cd/ring1.html#zero">zero</a>
+  ( <i>R</i>)
+)
+)
+)
+, <a href="../../../cd/order1.html#is_nonzero_divisor">is_nonzero_divisor</a>
+  ( <i>R</i>,  <i>a</i>)
+)
+, <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/ring3.html#is_ideal">is_ideal</a>
+  (<a href="../../../cd/ring1.html#carrier">carrier</a>
+  ( <i>R</i>)
+,  <i>I</i>)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/quant1.html#exists">exists</a>
+  [
+										 <i>x</i>
+									] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>x</i>, <a href="../../../cd/ring1.html#carrier">carrier</a>
+  ( <i>R</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>I</i>, <a href="../../../cd/ring3.html#principal_ideal">principal_ideal</a>
+  ( <i>R</i>,  <i>x</i>)
+)
+)
+)
+)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.158popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.158pop')">Popcorn</button>
+                     <div id="id.om.158pop" style="display:none; margin-top: 0.5em">
+				order1.is_principal_ideal_domain($R) ==&gt; quant1.forall[$a, $b -&gt; set1.in($a, ring1.carrier($R)) and set1.in($b, ring1.carrier($R)) ==&gt; ring1.multiplication($R)($a, $b) = ring1.multiplication($R)($b, $a)] and (set1.in($a, ring1.carrier($R), $a != ring1.zero($R)) ==&gt; order1.is_nonzero_divisor($R, $a)) and (ring3.is_ideal(ring1.carrier($R), $I) ==&gt; quant1.exists[$x -&gt; set1.in($x, ring1.carrier($R)) ==&gt; $I = ring3.principal_ideal($R, $x)])
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.158mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.158mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.158mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>is_principal_ideal_domain</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>R</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mo>&#8704;</mo>
+                                       <mo>&#8201;</mo>
+                                       <mrow>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>b</mi>
+                                       </mrow>
+                                       <mo>.</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mrow>
+                                                <mi>a</mi>
+                                                <mo>&#8712;</mo>
+                                                <mrow>
+                                                   <mi>carrier</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>R</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>&#8743;</mo>
+                                             <mrow>
+                                                <mi>b</mi>
+                                                <mo>&#8712;</mo>
+                                                <mrow>
+                                                   <mi>carrier</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>R</mi>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>&#8658;</mo>
+                                          <mrow>
+                                             <mrow>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mrow>
+                                                      <mi>multiplication</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>R</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>a</mi>
+                                                   <mo>,</mo>
+                                                   <mi>b</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>=</mo>
+                                             <mrow>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mrow>
+                                                      <mi>multiplication</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>R</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>b</mi>
+                                                   <mo>,</mo>
+                                                   <mi>a</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>a</mi>
+                                             <mo>&#8712;</mo>
+                                             <mrow>
+                                                <mi>carrier</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>R</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8658;</mo>
+                                       <mrow>
+                                          <mi>is_nonzero_divisor</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>R</mi>
+                                             <mo>,</mo>
+                                             <mi>a</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>is_ideal</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mi>carrier</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>R</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mi>I</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8658;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mo>&#8707;</mo>
+                                             <mo>&#8201;</mo>
+                                             <mrow>
+                                                <mi>x</mi>
+                                             </mrow>
+                                             <mo>.</mo>
+                                             <mrow>
+                                                <mrow>
+                                                   <mi>x</mi>
+                                                   <mo>&#8712;</mo>
+                                                   <mrow>
+                                                      <mi>carrier</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>R</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>&#8658;</mo>
+                                                <mrow>
+                                                   <mi>I</mi>
+                                                   <mo>=</mo>
+                                                   <mrow>
+                                                      <mi>principal_ideal</mi>
+                                                      <mo>&#8289;</mo>
+                                                      <mrow>
+                                                         <mo>(</mo>
+                                                         <mi>R</mi>
+                                                         <mo>,</mo>
+                                                         <mi>x</mi>
+                                                         <mo>)</mo>
+                                                      </mrow>
+                                                   </mrow>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			               <div>
+                     <button id="id.om.251xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.251xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.251xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="order1" name="is_principal_ideal_domain"/&gt;
+					&lt;OMS cd="ringname1" name="Z"/&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.251cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.251cmml')">Strict Content MathML</button>
+                     <pre id="id.om.251cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;apply&gt;&lt;csymbol cd="order1"&gt;is_principal_ideal_domain&lt;/csymbol&gt;&lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;&lt;/apply&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.251prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.251pref')">Prefix</button>
+                  <div id="id.om.251pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#is_principal_ideal_domain">is_principal_ideal_domain</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>)
+
+			</div>
+                  <div>
+                     <button id="id.om.251popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.251pop')">Popcorn</button>
+                     <div id="id.om.251pop" style="display:none; margin-top: 0.5em">
+				order1.is_principal_ideal_domain(ringname1.Z)
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.251mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.251mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.251mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>is_principal_ideal_domain</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>Z</mi>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#is_principal_ideal_domain">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#order">order</a>]
+	  
+	    [Previous: <a href="#is_nonzero_divisor">is_nonzero_divisor</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="order"> order</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This is a binary function, whose first argument is a Dedekind ring R and the second is a polynomial f. When applied to R and f, it returns an order of f over 
+		the polynomial ring R: it is a ring A containing R, which is finitely generated R-module with no nilpotent non-zero ideal and as a R-module it is torsion-free.
+		Note that the result is not unique. Also this function allows to compute an order of a polynomial over another polynomial ring.
+		The idea behind this computation is to coerce f into the polynomial ring of R and then compute the order.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			
+			               <div>
+                     <button id="id.om.260xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.260xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.260xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="order1" name="order"/&gt;
+					&lt;OMS cd="ringname1" name="Z"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS name="DMP" cd="polyd1"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+							&lt;OMS name="Z" cd="ringname1"/&gt;
+							&lt;OMI&gt;1&lt;/OMI&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="SDMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="term" cd="polyd1"/&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+								&lt;OMI&gt;2&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="term" cd="polyd1"/&gt;
+								&lt;OMI&gt;3&lt;/OMI&gt;
+								&lt;OMI&gt;0&lt;/OMI&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.260cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.260cmml')">Strict Content MathML</button>
+                     <pre id="id.om.260cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;order&lt;/csymbol&gt;
+  &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.260prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.260pref')">Prefix</button>
+                  <div id="id.om.260pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#order">order</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 2)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (3, 0)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.260popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.260pop')">Popcorn</button>
+                     <div id="id.om.260pop" style="display:none; margin-top: 0.5em">
+				order1.order(ringname1.Z, polyd1.DMP(polyd1.poly_ring_d(ringname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(3, 0))))
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.260mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.260mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.260mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>order</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>Z</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>DMP</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>poly_ring_d</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>Z</mi>
+                                                <mo>,</mo>
+                                                <mn>1</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>SDMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>1</mn>
+                                                      <mo>,</mo>
+                                                      <mn>2</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>3</mn>
+                                                      <mo>,</mo>
+                                                      <mn>0</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#order">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#maximal_order">maximal_order</a>]
+	  
+	    [Previous: <a href="#is_principal_ideal_domain">is_principal_ideal_domain</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="maximal_order"> maximal_order</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This is a binary function, whose first argument is a Dedekind ring R and the second is a polynomial f. When applied to R and f, it returns the maximal order A among the orders of f (over the polynomial ring of R) in the quotient field of A. 
+		Note that the result is unique.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			
+			               <div>
+                     <button id="id.om.285xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.285xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.285xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="order1" name="maximal_order"/&gt;
+					&lt;OMS cd="ringname1" name="Z"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS name="DMP" cd="polyd1"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+							&lt;OMS name="Z" cd="ringname1"/&gt;
+							&lt;OMI&gt;1&lt;/OMI&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="SDMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="term" cd="polyd1"/&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+								&lt;OMI&gt;2&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="term" cd="polyd1"/&gt;
+								&lt;OMI&gt;3&lt;/OMI&gt;
+								&lt;OMI&gt;0&lt;/OMI&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.285cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.285cmml')">Strict Content MathML</button>
+                     <pre id="id.om.285cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;maximal_order&lt;/csymbol&gt;
+  &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.285prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.285pref')">Prefix</button>
+                  <div id="id.om.285pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#maximal_order">maximal_order</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 2)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (3, 0)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.285popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.285pop')">Popcorn</button>
+                     <div id="id.om.285pop" style="display:none; margin-top: 0.5em">
+				order1.maximal_order(ringname1.Z, polyd1.DMP(polyd1.poly_ring_d(ringname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(3, 0))))
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.285mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.285mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.285mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>maximal_order</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>Z</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>DMP</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>poly_ring_d</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>Z</mi>
+                                                <mo>,</mo>
+                                                <mn>1</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>SDMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>1</mn>
+                                                      <mo>,</mo>
+                                                      <mn>2</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>3</mn>
+                                                      <mo>,</mo>
+                                                      <mn>0</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#maximal_order">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#is_maximal_order">is_maximal_order</a>]
+	  
+	    [Previous: <a href="#order">order</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="is_maximal_order"> is_maximal_order</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		The unary boolean function whose value is true if and only if the argument is a  maximal order.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			
+			               <div>
+                     <button id="id.om.310xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.310xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.310xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="order1" name="is_maximal_order"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="order1" name="maximal_order"/&gt;
+						&lt;OMS cd="ringname1" name="Z"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="DMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+								&lt;OMS name="Z" cd="ringname1"/&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="SDMP" cd="polyd1"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt;1&lt;/OMI&gt;
+									&lt;OMI&gt;2&lt;/OMI&gt;
+								&lt;/OMA&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt;3&lt;/OMI&gt;
+									&lt;OMI&gt;0&lt;/OMI&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.310cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.310cmml')">Strict Content MathML</button>
+                     <pre id="id.om.310cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_maximal_order&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="order1"&gt;maximal_order&lt;/csymbol&gt;
+   &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+     &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;3&lt;/cn&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.310prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.310pref')">Prefix</button>
+                  <div id="id.om.310pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#is_maximal_order">is_maximal_order</a>
+  (<a href="../../../cd/order1.html#maximal_order">maximal_order</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 2)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (3, 0)
+)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.310popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.310pop')">Popcorn</button>
+                     <div id="id.om.310pop" style="display:none; margin-top: 0.5em">
+				order1.is_maximal_order(order1.maximal_order(ringname1.Z, polyd1.DMP(polyd1.poly_ring_d(ringname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(3, 0)))))
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.310mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.310mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.310mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>is_maximal_order</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>maximal_order</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>Z</mi>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>DMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>poly_ring_d</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>Z</mi>
+                                                      <mo>,</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>SDMP</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn>1</mn>
+                                                            <mo>,</mo>
+                                                            <mn>2</mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn>3</mn>
+                                                            <mo>,</mo>
+                                                            <mn>0</mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#is_maximal_order">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#algebraic_integer">algebraic_integer</a>]
+	  
+	    [Previous: <a href="#maximal_order">maximal_order</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="algebraic_integer"> algebraic_integer</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This is a binary function. The first argument is an order O. The second argument should be a list L of elements of the Dedekind ring R, such that O is an order over the polynomial ring of R (cf. order). The length of L should be equal to the degree n of the polynomial generating the order O. When applied to O and L, it represents the element L[0] + L[1] b + L[2] b^2 + ... + L[n-1] b^(n-1) of O, where b stands for a primitive element of O.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			
+			               <div>
+                     <button id="id.om.337xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.337xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.337xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="order1" name="algebraic_integer"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="order1" name="order"/&gt;
+						&lt;OMS cd="ringname1" name="Z"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="DMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+								&lt;OMS name="Z" cd="ringname1"/&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="SDMP" cd="polyd1"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt;1&lt;/OMI&gt;
+									&lt;OMI&gt;2&lt;/OMI&gt;
+								&lt;/OMA&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt;3&lt;/OMI&gt;
+									&lt;OMI&gt;0&lt;/OMI&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="list1" name="list"/&gt;
+						&lt;OMI&gt;7&lt;/OMI&gt;
+						&lt;OMI&gt;2&lt;/OMI&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.337cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.337cmml')">Strict Content MathML</button>
+                     <pre id="id.om.337cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;algebraic_integer&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="order1"&gt;order&lt;/csymbol&gt;
+   &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+     &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;3&lt;/cn&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;7&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.337prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.337pref')">Prefix</button>
+                  <div id="id.om.337pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#algebraic_integer">algebraic_integer</a>
+  (<a href="../../../cd/order1.html#order">order</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 2)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (3, 0)
+)
+)
+)
+, <a href="../../../cd/list1.html#list">list</a>
+  (7, 2)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.337popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.337pop')">Popcorn</button>
+                     <div id="id.om.337pop" style="display:none; margin-top: 0.5em">
+				order1.algebraic_integer(order1.order(ringname1.Z, polyd1.DMP(polyd1.poly_ring_d(ringname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(3, 0)))), [7 , 2])
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.337mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.337mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.337mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>algebraic_integer</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>order</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>Z</mi>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>DMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>poly_ring_d</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>Z</mi>
+                                                      <mo>,</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>SDMP</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn>1</mn>
+                                                            <mo>,</mo>
+                                                            <mn>2</mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn>3</mn>
+                                                            <mo>,</mo>
+                                                            <mn>0</mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>7</mn>
+                                       <mo separator="true">,</mo>
+                                       <mn>2</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#algebraic_integer">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#number_field">number_field</a>]
+	  
+	    [Previous: <a href="#is_maximal_order">is_maximal_order</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="number_field"> number_field</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This symbol is a constructor for number fields. It takes two arguments in the following order: a ring R and a monic irreducible univariate polynomial f. If the ring R is Z (or Q), it returns the absolute number field. Otherwise it returns the relative number field over the number field whose ring of integers is R.
+		
+		This symbol is intended to be used in upcoming CDs for e.g. describing discriminants of number fields,
+		or Galois groups, unit groups, class groups, regulators, etc.; all useful number theoretical notions.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			               <div>
+                     <button id="id.om.368xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.368xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.368xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="order1" name="number_field"/&gt;
+					&lt;OMS cd="ringname1" name="Z"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="polyd1" name="DMP"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="polyd1" name="poly_ring_d"/&gt;
+							&lt;OMS cd="ringname1" name="Z"/&gt;
+							&lt;OMI&gt;1&lt;/OMI&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="SDMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="polyd1" name="term"/&gt;
+								&lt;OMI&gt;2&lt;/OMI&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS cd="polyd1" name="term"/&gt;
+								&lt;OMI&gt;0&lt;/OMI&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.368cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.368cmml')">Strict Content MathML</button>
+                     <pre id="id.om.368cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;number_field&lt;/csymbol&gt;
+  &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.368prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.368pref')">Prefix</button>
+                  <div id="id.om.368pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#number_field">number_field</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (2, 1)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (0, 1)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.368popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.368pop')">Popcorn</button>
+                     <div id="id.om.368pop" style="display:none; margin-top: 0.5em">
+				order1.number_field(ringname1.Z, polyd1.DMP(polyd1.poly_ring_d(ringname1.Z, 1), polyd1.SDMP(polyd1.term(2, 1), polyd1.term(0, 1))))
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.368mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.368mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.368mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>number_field</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mi>Z</mi>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>DMP</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>poly_ring_d</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>Z</mi>
+                                                <mo>,</mo>
+                                                <mn>1</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>SDMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>2</mn>
+                                                      <mo>,</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>0</mn>
+                                                      <mo>,</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			
+			
+			
+			               <div>
+                     <button id="id.om.389xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.389xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.389xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS name="number_field" cd="order1"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS name="ring_integers" cd="order1"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="number_field" cd="order1"/&gt;
+							&lt;OMS name="Z" cd="setname1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="DMP" cd="polyd1"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+									&lt;OMS name="Z" cd="setname1"/&gt;
+									&lt;OMI&gt;1&lt;/OMI&gt;
+								&lt;/OMA&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="SDMP" cd="polyd1"/&gt;
+									&lt;OMA&gt;
+										&lt;OMS name="term" cd="polyd1"/&gt;
+										&lt;OMI&gt; 1 &lt;/OMI&gt;
+										&lt;OMI&gt; 2 &lt;/OMI&gt;
+									&lt;/OMA&gt;
+									&lt;OMA&gt;
+										&lt;OMS name="term" cd="polyd1"/&gt;
+										&lt;OMI&gt; 2 &lt;/OMI&gt;
+										&lt;OMI&gt; 0 &lt;/OMI&gt;
+									&lt;/OMA&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+					&lt;OMA&gt;
+						&lt;OMS name="DMP" cd="polyd1"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+							&lt;OMS name="Z" cd="ringname1"/&gt;
+							&lt;OMI&gt;1&lt;/OMI&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="SDMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="term" cd="polyd1"/&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+								&lt;OMI&gt;2&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="term" cd="polyd1"/&gt;
+								&lt;OMI&gt;3&lt;/OMI&gt;
+								&lt;OMI&gt;0&lt;/OMI&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.389cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.389cmml')">Strict Content MathML</button>
+                     <pre id="id.om.389cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;number_field&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="order1"&gt;ring_integers&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="order1"&gt;number_field&lt;/csymbol&gt;
+    &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+      &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+       &lt;cn type="integer"&gt;1&lt;/cn&gt;
+       &lt;cn type="integer"&gt;2&lt;/cn&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+       &lt;cn type="integer"&gt;2&lt;/cn&gt;
+       &lt;cn type="integer"&gt;0&lt;/cn&gt;
+      &lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+    &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;cn type="integer"&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.389prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.389pref')">Prefix</button>
+                  <div id="id.om.389pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#number_field">number_field</a>
+  (<a href="../../../cd/order1.html#ring_integers">ring_integers</a>
+  (<a href="../../../cd/order1.html#number_field">number_field</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  ( 1 ,  2 )
+, <a href="../../../cd/polyd1.html#term">term</a>
+  ( 2 ,  0 )
+)
+)
+)
+)
+, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 2)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (3, 0)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.389popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.389pop')">Popcorn</button>
+                     <div id="id.om.389pop" style="display:none; margin-top: 0.5em">
+				order1.number_field(order1.ring_integers(order1.number_field(setname1.Z, polyd1.DMP(polyd1.poly_ring_d(setname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(2, 0))))), polyd1.DMP(polyd1.poly_ring_d(ringname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(3, 0))))
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.389mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.389mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.389mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>number_field</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>ring_integers</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>number_field</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi mathvariant="double-struck">Z</mi>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>DMP</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>poly_ring_d</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mi mathvariant="double-struck">Z</mi>
+                                                            <mo>,</mo>
+                                                            <mn>1</mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>SDMP</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mrow>
+                                                               <mi>term</mi>
+                                                               <mo>&#8289;</mo>
+                                                               <mrow>
+                                                                  <mo>(</mo>
+                                                                  <mn> 1 </mn>
+                                                                  <mo>,</mo>
+                                                                  <mn> 2 </mn>
+                                                                  <mo>)</mo>
+                                                               </mrow>
+                                                            </mrow>
+                                                            <mo>,</mo>
+                                                            <mrow>
+                                                               <mi>term</mi>
+                                                               <mo>&#8289;</mo>
+                                                               <mrow>
+                                                                  <mo>(</mo>
+                                                                  <mn> 2 </mn>
+                                                                  <mo>,</mo>
+                                                                  <mn> 0 </mn>
+                                                                  <mo>)</mo>
+                                                               </mrow>
+                                                            </mrow>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mi>DMP</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>poly_ring_d</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>Z</mi>
+                                                <mo>,</mo>
+                                                <mn>1</mn>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>SDMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>1</mn>
+                                                      <mo>,</mo>
+                                                      <mn>2</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>term</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn>3</mn>
+                                                      <mo>,</mo>
+                                                      <mn>0</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#number_field">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#algebraic_number">algebraic_number</a>]
+	  
+	    [Previous: <a href="#algebraic_integer">algebraic_integer</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="algebraic_number"> algebraic_number</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This is a binary function. The first argument is a number field F. The second argument should be a list L of elements of Q in case of an absolute number field F. Otherwise the second argument is a list L of elements of the number field whose ring of integers is the ring R over which F is defined (cf. number_field). The length of the list L should be equal to the degree n of F. When applied to F and L, it represents the element L[0] + L[1] b + L[2] b^2 + ... + L[n-1] ^(b-1) of F, where b stands for a primitive element of F.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			
+			               <div>
+                     <button id="id.om.434xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.434xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.434xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="order1" name="algebraic_number"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="order1" name="order"/&gt;
+						&lt;OMS cd="ringname1" name="Z"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="DMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+								&lt;OMS name="Z" cd="ringname1"/&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="SDMP" cd="polyd1"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt;1&lt;/OMI&gt;
+									&lt;OMI&gt;2&lt;/OMI&gt;
+								&lt;/OMA&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt;1&lt;/OMI&gt;
+									&lt;OMI&gt;0&lt;/OMI&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="list1" name="list"/&gt;
+							&lt;OMI&gt;123&lt;/OMI&gt;
+							&lt;OMI&gt;0&lt;/OMI&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.434cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.434cmml')">Strict Content MathML</button>
+                     <pre id="id.om.434cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;algebraic_number&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="order1"&gt;order&lt;/csymbol&gt;
+   &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+     &lt;csymbol cd="ringname1"&gt;Z&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;123&lt;/cn&gt;
+    &lt;cn type="integer"&gt;0&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.434prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.434pref')">Prefix</button>
+                  <div id="id.om.434pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#algebraic_number">algebraic_number</a>
+  (<a href="../../../cd/order1.html#order">order</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/ringname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  (1, 2)
+, <a href="../../../cd/polyd1.html#term">term</a>
+  (1, 0)
+)
+)
+, <a href="../../../cd/list1.html#list">list</a>
+  (123, 0)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.434popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.434pop')">Popcorn</button>
+                     <div id="id.om.434pop" style="display:none; margin-top: 0.5em">
+				order1.algebraic_number(order1.order(ringname1.Z, polyd1.DMP(polyd1.poly_ring_d(ringname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(1, 0))), [123 , 0]))
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.434mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.434mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.434mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>algebraic_number</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>order</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>Z</mi>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>DMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>poly_ring_d</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi>Z</mi>
+                                                      <mo>,</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>SDMP</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn>1</mn>
+                                                            <mo>,</mo>
+                                                            <mn>2</mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn>1</mn>
+                                                            <mo>,</mo>
+                                                            <mn>0</mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mn>123</mn>
+                                             <mo separator="true">,</mo>
+                                             <mn>0</mn>
+                                             <mo>)</mo>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#algebraic_number">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#ring_integers">ring_integers</a>]
+	  
+	    [Previous: <a href="#number_field">number_field</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="ring_integers"> ring_integers</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This is a unary function, whose argument is a number field K. When applied to K, it returns the ring of integers of K. It is the Dedekind ring of K.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+		if A is the ring of integers of the number field K then A is a subring of K and A is a Dedekind ring.
+		</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+			               <div>
+                     <button id="id.om.466xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.466xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.466xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS cd="logic1" name="implies"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="relation1" name="eq"/&gt;
+						&lt;OMV name="A"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="order1" name="ring_integers"/&gt;
+							&lt;OMV name="K"/&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+					&lt;OMA&gt;
+						&lt;OMS cd="logic1" name="and"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="ring1" name="is_subring"/&gt;
+							&lt;OMV name="K"/&gt;
+							&lt;OMV name="A"/&gt;
+						&lt;/OMA&gt;
+						&lt;OMA&gt;
+							&lt;OMS cd="order1" name="is_Dedekind"/&gt;
+							&lt;OMV name="A"/&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.466cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.466cmml')">Strict Content MathML</button>
+                     <pre id="id.om.466cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;ci&gt;A&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="order1"&gt;ring_integers&lt;/csymbol&gt;&lt;ci&gt;K&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ring1"&gt;is_subring&lt;/csymbol&gt;&lt;ci&gt;K&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="order1"&gt;is_Dedekind&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.466prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.466pref')">Prefix</button>
+                  <div id="id.om.466pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>A</i>, <a href="../../../cd/order1.html#ring_integers">ring_integers</a>
+  ( <i>K</i>)
+)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/ring1.html#is_subring">is_subring</a>
+  ( <i>K</i>,  <i>A</i>)
+, <a href="../../../cd/order1.html#is_Dedekind">is_Dedekind</a>
+  ( <i>A</i>)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.466popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.466pop')">Popcorn</button>
+                     <div id="id.om.466pop" style="display:none; margin-top: 0.5em">
+				$A = order1.ring_integers($K) ==&gt; ring1.is_subring($K, $A) and order1.is_Dedekind($A)
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.466mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.466mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.466mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>ring_integers</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>K</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>is_subring</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>K</mi>
+                                          <mo>,</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8743;</mo>
+                                    <mrow>
+                                       <mi>is_Dedekind</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			
+			               <div>
+                     <button id="id.om.485xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.485xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.485xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS name="ring_integers" cd="order1"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS name="number_field" cd="order1"/&gt;
+						&lt;OMS name="Z" cd="setname1"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="DMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+								&lt;OMS name="Z" cd="setname1"/&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="SDMP" cd="polyd1"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt; 1 &lt;/OMI&gt;
+									&lt;OMI&gt; 2 &lt;/OMI&gt;
+								&lt;/OMA&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt; 2 &lt;/OMI&gt;
+									&lt;OMI&gt; 0 &lt;/OMI&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.485cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.485cmml')">Strict Content MathML</button>
+                     <pre id="id.om.485cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;ring_integers&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="order1"&gt;number_field&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+     &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.485prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.485pref')">Prefix</button>
+                  <div id="id.om.485pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#ring_integers">ring_integers</a>
+  (<a href="../../../cd/order1.html#number_field">number_field</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  ( 1 ,  2 )
+, <a href="../../../cd/polyd1.html#term">term</a>
+  ( 2 ,  0 )
+)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.485popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.485pop')">Popcorn</button>
+                     <div id="id.om.485pop" style="display:none; margin-top: 0.5em">
+				order1.ring_integers(order1.number_field(setname1.Z, polyd1.DMP(polyd1.poly_ring_d(setname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(2, 0)))))
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.485mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.485mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.485mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>ring_integers</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>number_field</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi mathvariant="double-struck">Z</mi>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>DMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>poly_ring_d</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi mathvariant="double-struck">Z</mi>
+                                                      <mo>,</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>SDMP</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn> 1 </mn>
+                                                            <mo>,</mo>
+                                                            <mn> 2 </mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn> 2 </mn>
+                                                            <mo>,</mo>
+                                                            <mn> 0 </mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#ring_integers">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#primitive_element">primitive_element</a>]
+	  
+	    [Previous: <a href="#algebraic_number">algebraic_number</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+	           <hr/>
+		          <h2>
+               <a name="primitive_element"> primitive_element</a>
+            </h2>
+		          <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		This is a unary function, whose argument is a number field K. It returns a primitive element of K. Note that the result is not unique.
+		</p>
+               </dd>
+            </dl>
+		          <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+			
+			               <div>
+                     <button id="id.om.512xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.512xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.512xml" style="display:none">
+			&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+				&lt;OMA&gt;
+					&lt;OMS name="primitive_element" cd="order1"/&gt;
+					&lt;OMA&gt;
+						&lt;OMS name="number_field" cd="order1"/&gt;
+						&lt;OMS name="Z" cd="setname1"/&gt;
+						&lt;OMA&gt;
+							&lt;OMS name="DMP" cd="polyd1"/&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="poly_ring_d" cd="polyd1"/&gt;
+								&lt;OMS name="Z" cd="setname1"/&gt;
+								&lt;OMI&gt;1&lt;/OMI&gt;
+							&lt;/OMA&gt;
+							&lt;OMA&gt;
+								&lt;OMS name="SDMP" cd="polyd1"/&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt; 1 &lt;/OMI&gt;
+									&lt;OMI&gt; 2 &lt;/OMI&gt;
+								&lt;/OMA&gt;
+								&lt;OMA&gt;
+									&lt;OMS name="term" cd="polyd1"/&gt;
+									&lt;OMI&gt; 2 &lt;/OMI&gt;
+									&lt;OMI&gt; 0 &lt;/OMI&gt;
+								&lt;/OMA&gt;
+							&lt;/OMA&gt;
+						&lt;/OMA&gt;
+					&lt;/OMA&gt;
+				&lt;/OMA&gt;
+			&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.512cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.512cmml')">Strict Content MathML</button>
+                     <pre id="id.om.512cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="order1"&gt;primitive_element&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="order1"&gt;number_field&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;DMP&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;poly_ring_d&lt;/csymbol&gt;
+     &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+     &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;SDMP&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="polyd1"&gt;term&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.512prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.512pref')">Prefix</button>
+                  <div id="id.om.512pref" style="display:none; margin-top: 0.5em">
+				                 <a href="../../../cd/order1.html#primitive_element">primitive_element</a>
+  (<a href="../../../cd/order1.html#number_field">number_field</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, <a href="../../../cd/polyd1.html#DMP">DMP</a>
+  (<a href="../../../cd/polyd1.html#poly_ring_d">poly_ring_d</a>
+  (<a href="../../../cd/setname1.html#Z">Z</a>, 1)
+, <a href="../../../cd/polyd1.html#SDMP">SDMP</a>
+  (<a href="../../../cd/polyd1.html#term">term</a>
+  ( 1 ,  2 )
+, <a href="../../../cd/polyd1.html#term">term</a>
+  ( 2 ,  0 )
+)
+)
+)
+)
+
+			</div>
+                  <div>
+                     <button id="id.om.512popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.512pop')">Popcorn</button>
+                     <div id="id.om.512pop" style="display:none; margin-top: 0.5em">
+				order1.primitive_element(order1.number_field(setname1.Z, polyd1.DMP(polyd1.poly_ring_d(setname1.Z, 1), polyd1.SDMP(polyd1.term(1, 2), polyd1.term(2, 0)))))
+			</div>
+                  </div>
+                  <div>
+                     <button id="id.om.512mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.512mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.512mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				                          <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>primitive_element</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>number_field</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi mathvariant="double-struck">Z</mi>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>DMP</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>poly_ring_d</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mi mathvariant="double-struck">Z</mi>
+                                                      <mo>,</mo>
+                                                      <mn>1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>SDMP</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn> 1 </mn>
+                                                            <mo>,</mo>
+                                                            <mn> 2 </mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>,</mo>
+                                                      <mrow>
+                                                         <mi>term</mi>
+                                                         <mo>&#8289;</mo>
+                                                         <mrow>
+                                                            <mo>(</mo>
+                                                            <mn> 2 </mn>
+                                                            <mo>,</mo>
+                                                            <mn> 0 </mn>
+                                                            <mo>)</mo>
+                                                         </mrow>
+                                                      </mrow>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+			                        </math>
+                        </div>
+                     </div>
+                  </div>
+		             </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/order1.html#primitive_element">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#is_Dedekind">is_Dedekind</a>]
+	  
+	    [Previous: <a href="#ring_integers">ring_integers</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>

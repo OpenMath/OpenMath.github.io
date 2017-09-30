@@ -1,0 +1,903 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>order1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2009-07-02</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>7</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.win.tue.nl/SCIEnce/cds/order1.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2017-09-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDUses"/>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>alg1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>arith1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>fieldname1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>logic1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>nums1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>polyd1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>quant1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>relation1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>ring1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>ringname1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>set1</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CDName"/>
+            <OMSTR>setname1</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD defines the basic functions and constructors for orders of number fields. Written by S. Lesseni (lesseni@math.tu-berlin.de).</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>A CD of basic functions for orders of number fields written for SCIEnce project. Note that all the rings used here will be considered unital. The reference textbooks are: (1) M. Pohst and H. Zassenhaus, Algorithmic Algebraic Number Theory, Cambridge Univ. Press, 1989. (2) H. Cohen, A course in Computational Algebraic Number Theory. Berlin, Springer-Verlag (1993).</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_Dedekind</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary boolean function. The argument should be a ring R. When evaluated on R, the function returns true if R is a Dedekind ring and false otherwise. Note that a ring R is a Dedekind ring if it is Noetherian, integrally closed (so integral) and such that every non-zero prime ideal is maximal.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>if R is a Dedekind ring and a subring of the rational field Q then R = Z.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="implies"/>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="order1" name="is_Dedekind"/>
+                     <OMV name="R"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="ring1" name="is_subring"/>
+                     <OMS cd="fieldname1" name="Q"/>
+                     <OMV name="R"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="relation1" name="eq"/>
+                  <OMV name="R"/>
+                  <OMS cd="ringname1" name="Z"/>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>if the ring (R,+,0,-,*,1) is a principal ideal domain then (R,+,0,-,*,1) is a Dedekind ring.</OMSTR>
+            <OMBIND>
+               <OMS cd="quant1" name="forall"/>
+               <OMBVAR>
+                  <OMV name="R"/>
+                  <OMV name="plus"/>
+                  <OMV name="zero"/>
+                  <OMV name="minus"/>
+                  <OMV name="times"/>
+                  <OMV name="one"/>
+               </OMBVAR>
+               <OMA>
+                  <OMS cd="logic1" name="implies"/>
+                  <OMA>
+                     <OMS cd="order1" name="is_principal_ideal_domain"/>
+                     <OMA>
+                        <OMS cd="ring1" name="ring"/>
+                        <OMV name="R"/>
+                        <OMV name="plus"/>
+                        <OMV name="zero"/>
+                        <OMV name="minus"/>
+                        <OMV name="times"/>
+                        <OMV name="one"/>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="order1" name="is_Dedekind"/>
+                     <OMA>
+                        <OMS cd="ring1" name="ring"/>
+                        <OMV name="R"/>
+                        <OMV name="plus"/>
+                        <OMV name="zero"/>
+                        <OMV name="minus"/>
+                        <OMV name="times"/>
+                        <OMV name="one"/>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMBIND>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_nonzero_divisor</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a boolean binary function. The first argument is a ring R, the second is an element b of R. When evaluated on R and b, the function returns true if b is a nonzero divisor in R.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>if x is a non-zero divisor in the ring R then x is in R and x is different from zero and for all non-zero y in R, x*y is different from zero or y*x is different from zero.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="implies"/>
+               <OMA>
+                  <OMS cd="order1" name="is_nonzero_divisor"/>
+                  <OMV name="R"/>
+                  <OMV name="x"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="set1" name="in"/>
+                     <OMV name="x"/>
+                     <OMA>
+                        <OMS cd="ring1" name="carrier"/>
+                        <OMV name="R"/>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="neq"/>
+                     <OMV name="x"/>
+                     <OMA>
+                        <OMS cd="ring1" name="zero"/>
+                        <OMV name="R"/>
+                     </OMA>
+                  </OMA>
+                  <OMBIND>
+                     <OMS cd="quant1" name="forall"/>
+                     <OMBVAR>
+                        <OMV name="y"/>
+                     </OMBVAR>
+                     <OMA>
+                        <OMS cd="logic1" name="implies"/>
+                        <OMA>
+                           <OMS cd="logic1" name="and"/>
+                           <OMA>
+                              <OMS cd="set1" name="in"/>
+                              <OMV name="y"/>
+                              <OMA>
+                                 <OMS cd="ring1" name="carrier"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="relation1" name="neq"/>
+                              <OMV name="y"/>
+                              <OMA>
+                                 <OMS cd="ring1" name="zero"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                           </OMA>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="logic1" name="or"/>
+                           <OMA>
+                              <OMS cd="relation1" name="neq"/>
+                              <OMA>
+                                 <OMA>
+                                    <OMS cd="ring1" name="multiplication"/>
+                                    <OMV name="R"/>
+                                 </OMA>
+                                 <OMV name="x"/>
+                                 <OMV name="y"/>
+                              </OMA>
+                              <OMA>
+                                 <OMS cd="ring1" name="zero"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="relation1" name="neq"/>
+                              <OMA>
+                                 <OMA>
+                                    <OMS cd="ring1" name="multiplication"/>
+                                    <OMV name="R"/>
+                                 </OMA>
+                                 <OMV name="y"/>
+                                 <OMV name="x"/>
+                              </OMA>
+                              <OMA>
+                                 <OMS cd="ring1" name="zero"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                  </OMBIND>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="order1" name="is_nonzero_divisor"/>
+               <OMS cd="ringname1" name="Z"/>
+               <OMI>5</OMI>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_principal_ideal_domain</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The unary boolean function whose value is true if and only if the argument is a principal ideal domain. R is a principal ideal domain if R is a commutative ring without zero divisors and if every ideal of R is a principal ideal.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>is_principal_ideal_domain(R) then for all a, b in R a*b=b*a and a different from zero in R then a is a non-zero divisor in R and I an ideal of R then there exists x in R such that I is the principal ideal generated by x in R.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="implies"/>
+               <OMA>
+                  <OMS cd="order1" name="is_principal_ideal_domain"/>
+                  <OMV name="R"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMBIND>
+                     <OMS cd="quant1" name="forall"/>
+                     <OMBVAR>
+                        <OMV name="a"/>
+                        <OMV name="b"/>
+                     </OMBVAR>
+                     <OMA>
+                        <OMS cd="logic1" name="implies"/>
+                        <OMA>
+                           <OMS cd="logic1" name="and"/>
+                           <OMA>
+                              <OMS cd="set1" name="in"/>
+                              <OMV name="a"/>
+                              <OMA>
+                                 <OMS cd="ring1" name="carrier"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="set1" name="in"/>
+                              <OMV name="b"/>
+                              <OMA>
+                                 <OMS cd="ring1" name="carrier"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                           </OMA>
+                        </OMA>
+                        <OMA>
+                           <OMS cd="relation1" name="eq"/>
+                           <OMA>
+                              <OMA>
+                                 <OMS cd="ring1" name="multiplication"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                              <OMV name="a"/>
+                              <OMV name="b"/>
+                           </OMA>
+                           <OMA>
+                              <OMA>
+                                 <OMS cd="ring1" name="multiplication"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                              <OMV name="b"/>
+                              <OMV name="a"/>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                  </OMBIND>
+                  <OMA>
+                     <OMS cd="logic1" name="implies"/>
+                     <OMA>
+                        <OMS cd="logic1" name="and"/>
+                        <OMA>
+                           <OMS cd="set1" name="in"/>
+                           <OMV name="a"/>
+                           <OMA>
+                              <OMS cd="ring1" name="carrier"/>
+                              <OMV name="R"/>
+                           </OMA>
+                           <OMA>
+                              <OMS cd="relation1" name="neq"/>
+                              <OMV name="a"/>
+                              <OMA>
+                                 <OMS cd="ring1" name="zero"/>
+                                 <OMV name="R"/>
+                              </OMA>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="order1" name="is_nonzero_divisor"/>
+                        <OMV name="R"/>
+                        <OMV name="a"/>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="logic1" name="implies"/>
+                     <OMA>
+                        <OMS cd="ring3" name="is_ideal"/>
+                        <OMA>
+                           <OMS cd="ring1" name="carrier"/>
+                           <OMV name="R"/>
+                        </OMA>
+                        <OMV name="I"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="logic1" name="and"/>
+                        <OMBIND>
+                           <OMS cd="quant1" name="exists"/>
+                           <OMBVAR>
+                              <OMV name="x"/>
+                           </OMBVAR>
+                           <OMA>
+                              <OMS cd="logic1" name="implies"/>
+                              <OMA>
+                                 <OMS cd="set1" name="in"/>
+                                 <OMV name="x"/>
+                                 <OMA>
+                                    <OMS cd="ring1" name="carrier"/>
+                                    <OMV name="R"/>
+                                 </OMA>
+                              </OMA>
+                              <OMA>
+                                 <OMS cd="relation1" name="eq"/>
+                                 <OMV name="I"/>
+                                 <OMA>
+                                    <OMS cd="ring3" name="principal_ideal"/>
+                                    <OMV name="R"/>
+                                    <OMV name="x"/>
+                                 </OMA>
+                              </OMA>
+                           </OMA>
+                        </OMBIND>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="order1" name="is_principal_ideal_domain"/>
+               <OMS cd="ringname1" name="Z"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>order</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This is a binary function, whose first argument is a Dedekind ring R and the second is a polynomial f. When applied to R and f, it returns an order of f over the polynomial ring R: it is a ring A containing R, which is finitely generated R-module with no nilpotent non-zero ideal and as a R-module it is torsion-free. Note that the result is not unique. Also this function allows to compute an order of a polynomial over another polynomial ring. The idea behind this computation is to coerce f into the polynomial ring of R and then compute the order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="order1" name="order"/>
+               <OMS cd="ringname1" name="Z"/>
+               <OMA>
+                  <OMS name="DMP" cd="polyd1"/>
+                  <OMA>
+                     <OMS name="poly_ring_d" cd="polyd1"/>
+                     <OMS name="Z" cd="ringname1"/>
+                     <OMI>1</OMI>
+                  </OMA>
+                  <OMA>
+                     <OMS name="SDMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS name="term" cd="polyd1"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS name="term" cd="polyd1"/>
+                        <OMI>3</OMI>
+                        <OMI>0</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>maximal_order</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This is a binary function, whose first argument is a Dedekind ring R and the second is a polynomial f. When applied to R and f, it returns the maximal order A among the orders of f (over the polynomial ring of R) in the quotient field of A. Note that the result is unique.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="order1" name="maximal_order"/>
+               <OMS cd="ringname1" name="Z"/>
+               <OMA>
+                  <OMS name="DMP" cd="polyd1"/>
+                  <OMA>
+                     <OMS name="poly_ring_d" cd="polyd1"/>
+                     <OMS name="Z" cd="ringname1"/>
+                     <OMI>1</OMI>
+                  </OMA>
+                  <OMA>
+                     <OMS name="SDMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS name="term" cd="polyd1"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS name="term" cd="polyd1"/>
+                        <OMI>3</OMI>
+                        <OMI>0</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>is_maximal_order</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>The unary boolean function whose value is true if and only if the argument is a maximal order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="order1" name="is_maximal_order"/>
+               <OMA>
+                  <OMS cd="order1" name="maximal_order"/>
+                  <OMS cd="ringname1" name="Z"/>
+                  <OMA>
+                     <OMS name="DMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS name="poly_ring_d" cd="polyd1"/>
+                        <OMS name="Z" cd="ringname1"/>
+                        <OMI>1</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS name="SDMP" cd="polyd1"/>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI>1</OMI>
+                           <OMI>2</OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI>3</OMI>
+                           <OMI>0</OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>algebraic_integer</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This is a binary function. The first argument is an order O. The second argument should be a list L of elements of the Dedekind ring R, such that O is an order over the polynomial ring of R (cf. order). The length of L should be equal to the degree n of the polynomial generating the order O. When applied to O and L, it represents the element L[0] + L[1] b + L[2] b^2 + ... + L[n-1] b^(n-1) of O, where b stands for a primitive element of O.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="order1" name="algebraic_integer"/>
+               <OMA>
+                  <OMS cd="order1" name="order"/>
+                  <OMS cd="ringname1" name="Z"/>
+                  <OMA>
+                     <OMS name="DMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS name="poly_ring_d" cd="polyd1"/>
+                        <OMS name="Z" cd="ringname1"/>
+                        <OMI>1</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS name="SDMP" cd="polyd1"/>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI>1</OMI>
+                           <OMI>2</OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI>3</OMI>
+                           <OMI>0</OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="list1" name="list"/>
+                  <OMI>7</OMI>
+                  <OMI>2</OMI>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>number_field</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is a constructor for number fields. It takes two arguments in the following order: a ring R and a monic irreducible univariate polynomial f. If the ring R is Z (or Q), it returns the absolute number field. Otherwise it returns the relative number field over the number field whose ring of integers is R. This symbol is intended to be used in upcoming CDs for e.g. describing discriminants of number fields, or Galois groups, unit groups, class groups, regulators, etc.; all useful number theoretical notions.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="order1" name="number_field"/>
+               <OMS cd="ringname1" name="Z"/>
+               <OMA>
+                  <OMS cd="polyd1" name="DMP"/>
+                  <OMA>
+                     <OMS cd="polyd1" name="poly_ring_d"/>
+                     <OMS cd="ringname1" name="Z"/>
+                     <OMI>1</OMI>
+                  </OMA>
+                  <OMA>
+                     <OMS name="SDMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS cd="polyd1" name="term"/>
+                        <OMI>2</OMI>
+                        <OMI>1</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="polyd1" name="term"/>
+                        <OMI>0</OMI>
+                        <OMI>1</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS name="number_field" cd="order1"/>
+               <OMA>
+                  <OMS name="ring_integers" cd="order1"/>
+                  <OMA>
+                     <OMS name="number_field" cd="order1"/>
+                     <OMS name="Z" cd="setname1"/>
+                     <OMA>
+                        <OMS name="DMP" cd="polyd1"/>
+                        <OMA>
+                           <OMS name="poly_ring_d" cd="polyd1"/>
+                           <OMS name="Z" cd="setname1"/>
+                           <OMI>1</OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS name="SDMP" cd="polyd1"/>
+                           <OMA>
+                              <OMS name="term" cd="polyd1"/>
+                              <OMI> 1 </OMI>
+                              <OMI> 2 </OMI>
+                           </OMA>
+                           <OMA>
+                              <OMS name="term" cd="polyd1"/>
+                              <OMI> 2 </OMI>
+                              <OMI> 0 </OMI>
+                           </OMA>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS name="DMP" cd="polyd1"/>
+                  <OMA>
+                     <OMS name="poly_ring_d" cd="polyd1"/>
+                     <OMS name="Z" cd="ringname1"/>
+                     <OMI>1</OMI>
+                  </OMA>
+                  <OMA>
+                     <OMS name="SDMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS name="term" cd="polyd1"/>
+                        <OMI>1</OMI>
+                        <OMI>2</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS name="term" cd="polyd1"/>
+                        <OMI>3</OMI>
+                        <OMI>0</OMI>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>algebraic_number</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This is a binary function. The first argument is a number field F. The second argument should be a list L of elements of Q in case of an absolute number field F. Otherwise the second argument is a list L of elements of the number field whose ring of integers is the ring R over which F is defined (cf. number_field). The length of the list L should be equal to the degree n of F. When applied to F and L, it represents the element L[0] + L[1] b + L[2] b^2 + ... + L[n-1] ^(b-1) of F, where b stands for a primitive element of F.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="order1" name="algebraic_number"/>
+               <OMA>
+                  <OMS cd="order1" name="order"/>
+                  <OMS cd="ringname1" name="Z"/>
+                  <OMA>
+                     <OMS name="DMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS name="poly_ring_d" cd="polyd1"/>
+                        <OMS name="Z" cd="ringname1"/>
+                        <OMI>1</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS name="SDMP" cd="polyd1"/>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI>1</OMI>
+                           <OMI>2</OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI>1</OMI>
+                           <OMI>0</OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="list1" name="list"/>
+                     <OMI>123</OMI>
+                     <OMI>0</OMI>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>ring_integers</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This is a unary function, whose argument is a number field K. When applied to K, it returns the ring of integers of K. It is the Dedekind ring of K.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>if A is the ring of integers of the number field K then A is a subring of K and A is a Dedekind ring.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="implies"/>
+               <OMA>
+                  <OMS cd="relation1" name="eq"/>
+                  <OMV name="A"/>
+                  <OMA>
+                     <OMS cd="order1" name="ring_integers"/>
+                     <OMV name="K"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="ring1" name="is_subring"/>
+                     <OMV name="K"/>
+                     <OMV name="A"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="order1" name="is_Dedekind"/>
+                     <OMV name="A"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS name="ring_integers" cd="order1"/>
+               <OMA>
+                  <OMS name="number_field" cd="order1"/>
+                  <OMS name="Z" cd="setname1"/>
+                  <OMA>
+                     <OMS name="DMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS name="poly_ring_d" cd="polyd1"/>
+                        <OMS name="Z" cd="setname1"/>
+                        <OMI>1</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS name="SDMP" cd="polyd1"/>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI> 1 </OMI>
+                           <OMI> 2 </OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI> 2 </OMI>
+                           <OMI> 0 </OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>primitive_element</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This is a unary function, whose argument is a number field K. It returns a primitive element of K. Note that the result is not unique.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS name="primitive_element" cd="order1"/>
+               <OMA>
+                  <OMS name="number_field" cd="order1"/>
+                  <OMS name="Z" cd="setname1"/>
+                  <OMA>
+                     <OMS name="DMP" cd="polyd1"/>
+                     <OMA>
+                        <OMS name="poly_ring_d" cd="polyd1"/>
+                        <OMS name="Z" cd="setname1"/>
+                        <OMI>1</OMI>
+                     </OMA>
+                     <OMA>
+                        <OMS name="SDMP" cd="polyd1"/>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI> 1 </OMI>
+                           <OMI> 2 </OMI>
+                        </OMA>
+                        <OMA>
+                           <OMS name="term" cd="polyd1"/>
+                           <OMI> 2 </OMI>
+                           <OMI> 0 </OMI>
+                        </OMA>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>
