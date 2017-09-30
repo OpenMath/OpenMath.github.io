@@ -3,6 +3,8 @@ layout: page
 title: OpenMath Content Dictionaries - CD Groups
 ---
 
+19 Content Dictionary Groups available on this site.
+
 
  |[algstr1](algstr1)|Basic Algebraic Structures This is the first version of the CC CD group. O.Caprotti 1999-20-08|
  |[arith](arith)|Basic Arithmetic functions|
