@@ -1,0 +1,71 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>linalg5</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/linalg7.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-04-01</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-11-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>2</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD contains symbols for the construction of matrices from lists, and back. Constructed by Arjeh M. Cohen. Formerly named linalg7. Current name linalg5.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>list_to_vector</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol denotes a binary function. Its first argument must be a ring R, its second argument must be list L with entries belonging to the ring R, up to ring1.expression. When applied to R and L it represents the vector of the same length as the list L whose i-th coordinate is L[i] (or ring1.expression(L[i])).</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>vector_to_list</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol denotes a unary function. Its argument must be a vector v. When applied to v it represents the list whose entries are the coordinates of v (with the same indexing).</OMSTR>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>matrix_to_list</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol denotes a unary function. Its argument must be a matrix A. When applied to A it represents the list L whose i-th entry (for i=1,...rowcount(A)) is the lists L[i] whose j-th entry (for j=1,...columncount(A)) is the element A[i,j].</OMSTR>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

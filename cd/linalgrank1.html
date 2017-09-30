@@ -1,0 +1,997 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>linalgrank1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: linalgrank1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/linalgrank1.ocd">http://www.openmath.org/cd/linalgrank1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="linalgrank1.ocd">linalgrank1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="linalgrank1.omcd">linalgrank1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#dual_kernel_matrix">dual_kernel_matrix</a>, <a href="#kernel_matrix">kernel_matrix</a>, <a href="#rank">rank</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-11-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>3</dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+            <p>
+    This CD defines symbols for basic linear algebra (over a division ring) 
+    related to rank and kernel.</p>
+            <p>    It is constructed by A.M. Cohen, who took the definition of rank from a
+    former version of linalg4.ocd.
+</p>
+
+            <hr/>
+            <h2>
+               <a name="rank"> rank </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents the function which takes one matrix argument
+and returns the number of linearly independent rows (or columns) of
+that matrix.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> The rank of the n x n identity matrix is equal to n.  </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.14xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.14xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="rank"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="linalg4mat" name="identity"/&gt;
+                 &lt;OMV name="n"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMV name="n"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.14cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14cmml')">Strict Content MathML</button>
+                     <pre id="id.om.14cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;rank&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4mat"&gt;identity&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;n&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.14prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.14pref')">Prefix</button>
+                  <div id="id.om.14pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalgrank1.html#rank">rank</a>
+  (<a href="../../../cd/linalg4mat.html#identity">identity</a>
+  ( <i>n</i>)
+)
+,  <i>n</i>)
+
+</div>
+                  <div>
+                     <button id="id.om.14popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14pop')">Popcorn</button>
+                     <div id="id.om.14pop" style="display:none; margin-top: 0.5em">
+  linalgrank1.rank(linalg4mat.identity($n)) = $n
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.14mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.14mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.14mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>rank</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>identity</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>n</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>n</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalgrank1.html#rank">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#kernel_matrix">kernel_matrix</a>]
+	  
+	    [Last: <a href="#dual_kernel_matrix">dual_kernel_matrix</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="kernel_matrix"> kernel_matrix </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a unary function whose argument should be a matrix.
+When applied to a matrix A, it represents
+a  matrix whose rows are a basis of the kernel of A acting on the right.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+rowcount(kernel_matrix(A)) = rowcount(A) - rank(A)
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.29xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.29xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.29xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="linalg3" name="rowcount"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="kernel_matrix"/&gt;
+                 &lt;OMV name="A"/&gt;
+            &lt;/OMA&gt;
+      &lt;/OMA&gt;      
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="linalg3" name="rowcount"/&gt;
+                &lt;OMV name="A"/&gt;
+           &lt;/OMA&gt;
+           &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="rank"/&gt;
+                &lt;OMV name="A"/&gt;
+           &lt;/OMA&gt;
+      &lt;/OMA&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.29cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.29cmml')">Strict Content MathML</button>
+                     <pre id="id.om.29cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;rowcount&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;kernel_matrix&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;rowcount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;rank&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.29prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.29pref')">Prefix</button>
+                  <div id="id.om.29pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg3.html#rowcount">rowcount</a>
+  (<a href="../../../cd/linalgrank1.html#kernel_matrix">kernel_matrix</a>
+  ( <i>A</i>)
+)
+, <a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/linalg3.html#rowcount">rowcount</a>
+  ( <i>A</i>)
+, <a href="../../../cd/linalgrank1.html#rank">rank</a>
+  ( <i>A</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.29popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.29pop')">Popcorn</button>
+                     <div id="id.om.29pop" style="display:none; margin-top: 0.5em">
+  linalg3.rowcount(linalgrank1.kernel_matrix($A)) = linalg3.rowcount($A) - linalgrank1.rank($A)
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.29mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.29mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.29mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>rowcount</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>kernel_matrix</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>rowcount</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>-</mo>
+                                    <mrow>
+                                       <mi>rank</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+kernel_matrix(A) * A  = 0
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.47xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.47xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.47xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="kernel_matrix"/&gt;
+                 &lt;OMV name="A"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMV name="A"/&gt;
+      &lt;/OMA&gt;      
+      &lt;OMA&gt;&lt;OMS cd="linalg4mat" name="zero"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+                &lt;OMA&gt;&lt;OMS cd="linalg3" name="rowcount"/&gt;
+                     &lt;OMV name="A"/&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="rank"/&gt;
+                     &lt;OMV name="A"/&gt;
+                &lt;/OMA&gt;
+           &lt;/OMA&gt;
+           &lt;OMA&gt;&lt;OMS cd="linalg3" name="columncount"/&gt;
+                &lt;OMV name="A"/&gt;
+           &lt;/OMA&gt;
+      &lt;/OMA&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.47cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.47cmml')">Strict Content MathML</button>
+                     <pre id="id.om.47cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;kernel_matrix&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;ci&gt;A&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg4mat"&gt;zero&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;rowcount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;rank&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;columncount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.47prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.47pref')">Prefix</button>
+                  <div id="id.om.47pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/linalgrank1.html#kernel_matrix">kernel_matrix</a>
+  ( <i>A</i>)
+,  <i>A</i>)
+, <a href="../../../cd/linalg4mat.html#zero">zero</a>
+  (<a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/linalg3.html#rowcount">rowcount</a>
+  ( <i>A</i>)
+, <a href="../../../cd/linalgrank1.html#rank">rank</a>
+  ( <i>A</i>)
+)
+, <a href="../../../cd/linalg3.html#columncount">columncount</a>
+  ( <i>A</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.47popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.47pop')">Popcorn</button>
+                     <div id="id.om.47pop" style="display:none; margin-top: 0.5em">
+  linalgrank1.kernel_matrix($A) * $A = linalg4mat.zero(linalg3.rowcount($A) - linalgrank1.rank($A), linalg3.columncount($A))
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.47mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.47mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.47mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mrow>
+                                       <mi>kernel_matrix</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8290;</mo>
+                                    <mi>A</mi>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>zero</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>rowcount</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>A</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>-</mo>
+                                          <mrow>
+                                             <mi>rank</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>A</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mi>columncount</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalgrank1.html#kernel_matrix">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#dual_kernel_matrix">dual_kernel_matrix</a>]
+	  
+	    [Previous: <a href="#rank">rank</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="dual_kernel_matrix"> dual_kernel_matrix</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a unary function whose argument should be a matrix.
+When applied to a matrix, it represents
+a list of column vectors spanning the kernel of the matrix acting on the left.
+</p>
+               </dd>
+            </dl>
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+columncount(kernel_matrix(A)) = columncount(A) - rank(A)
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.75xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.75xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.75xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="linalg3" name="columncount"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="kernel_matrix"/&gt;
+                 &lt;OMV name="A"/&gt;
+            &lt;/OMA&gt;
+      &lt;/OMA&gt;      
+      &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="linalg3" name="columncount"/&gt;
+                &lt;OMV name="A"/&gt;
+           &lt;/OMA&gt;
+           &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="rank"/&gt;
+                &lt;OMV name="A"/&gt;
+           &lt;/OMA&gt;
+      &lt;/OMA&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.75cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.75cmml')">Strict Content MathML</button>
+                     <pre id="id.om.75cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;columncount&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;kernel_matrix&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;columncount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;rank&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.75prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.75pref')">Prefix</button>
+                  <div id="id.om.75pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg3.html#columncount">columncount</a>
+  (<a href="../../../cd/linalgrank1.html#kernel_matrix">kernel_matrix</a>
+  ( <i>A</i>)
+)
+, <a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/linalg3.html#columncount">columncount</a>
+  ( <i>A</i>)
+, <a href="../../../cd/linalgrank1.html#rank">rank</a>
+  ( <i>A</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.75popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.75pop')">Popcorn</button>
+                     <div id="id.om.75pop" style="display:none; margin-top: 0.5em">
+  linalg3.columncount(linalgrank1.kernel_matrix($A)) = linalg3.columncount($A) - linalgrank1.rank($A)
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.75mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.75mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.75mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>columncount</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>kernel_matrix</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>columncount</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>-</mo>
+                                    <mrow>
+                                       <mi>rank</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+ A * kernel_matrix(A)   = 0
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.93xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.93xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.93xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
+            &lt;OMV name="A"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="kernel_matrix"/&gt;
+                 &lt;OMV name="A"/&gt;
+            &lt;/OMA&gt;
+      &lt;/OMA&gt;      
+      &lt;OMA&gt;&lt;OMS cd="linalg4mat" name="zero"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="linalg3" name="rowcount"/&gt;
+                &lt;OMV name="A"/&gt;
+           &lt;/OMA&gt;
+           &lt;OMA&gt;&lt;OMS cd="arith1" name="minus"/&gt;
+                &lt;OMA&gt;&lt;OMS cd="linalg3" name="columncount"/&gt;
+                     &lt;OMV name="A"/&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;&lt;OMS cd="linalgrank1" name="rank"/&gt;
+                     &lt;OMV name="A"/&gt;
+                &lt;/OMA&gt;
+           &lt;/OMA&gt;
+      &lt;/OMA&gt;
+ &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.93cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.93cmml')">Strict Content MathML</button>
+                     <pre id="id.om.93cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;ci&gt;A&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;kernel_matrix&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg4mat"&gt;zero&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;rowcount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;minus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;columncount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalgrank1"&gt;rank&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.93prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.93pref')">Prefix</button>
+                  <div id="id.om.93pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>A</i>, <a href="../../../cd/linalgrank1.html#kernel_matrix">kernel_matrix</a>
+  ( <i>A</i>)
+)
+, <a href="../../../cd/linalg4mat.html#zero">zero</a>
+  (<a href="../../../cd/linalg3.html#rowcount">rowcount</a>
+  ( <i>A</i>)
+, <a href="../../../cd/arith1.html#minus">minus</a>
+  (<a href="../../../cd/linalg3.html#columncount">columncount</a>
+  ( <i>A</i>)
+, <a href="../../../cd/linalgrank1.html#rank">rank</a>
+  ( <i>A</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.93popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.93pop')">Popcorn</button>
+                     <div id="id.om.93pop" style="display:none; margin-top: 0.5em">
+  $A * linalgrank1.kernel_matrix($A) = linalg4mat.zero(linalg3.rowcount($A), linalg3.columncount($A) - linalgrank1.rank($A))
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.93mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.93mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.93mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>A</mi>
+                                    <mo>&#8290;</mo>
+                                    <mrow>
+                                       <mi>kernel_matrix</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>A</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>zero</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mi>rowcount</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>columncount</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>A</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>-</mo>
+                                          <mrow>
+                                             <mi>rank</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>A</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalgrank1.html#dual_kernel_matrix">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#rank">rank</a>]
+	  
+	    [Previous: <a href="#kernel_matrix">kernel_matrix</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+         </div>
+      </div>
+   </body>
+</html>

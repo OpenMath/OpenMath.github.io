@@ -1,0 +1,1165 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>linalgspec1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: linalgspec1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/linalgspec1.ocd">http://www.openmath.org/cd/linalgspec1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="linalgspec1.ocd">linalgspec1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="linalgspec1.omcd">linalgspec1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#lower_triangular">lower_triangular</a>, <a href="#tridiagonal">tridiagonal</a>, <a href="#upper_triangular">upper_triangular</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-11-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>4
+    (Revision 2)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+            <p>
+This CD contains symbols which represent a number of special types of
+matrix. 
+</p>
+
+            <hr/>
+            <h2>
+               <a name="upper_triangular"> upper_triangular </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents an upper-triangular matrix, it takes one
+argument. The argument should be a vector of vectors of elements of
+the matrix.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> the product of two upper-triangular matrices is upper-triangular </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.14xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.14xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalgspec1" name="upper_triangular"/&gt;
+      &lt;OMV name="VV1"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalgspec1" name="upper_triangular"/&gt;
+	&lt;OMV name="VV2"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalgspec1" name="upper_triangular"/&gt;
+	&lt;OMV name="VV3"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.14cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14cmml')">Strict Content MathML</button>
+                     <pre id="id.om.14cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;upper_triangular&lt;/csymbol&gt;&lt;ci&gt;VV1&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;upper_triangular&lt;/csymbol&gt;&lt;ci&gt;VV2&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;upper_triangular&lt;/csymbol&gt;&lt;ci&gt;VV3&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.14prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.14pref')">Prefix</button>
+                  <div id="id.om.14pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalgspec1.html#upper_triangular">upper_triangular</a>
+  ( <i>VV1</i>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/linalgspec1.html#upper_triangular">upper_triangular</a>
+  ( <i>VV2</i>)
+, <a href="../../../cd/linalgspec1.html#upper_triangular">upper_triangular</a>
+  ( <i>VV3</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.14popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14pop')">Popcorn</button>
+                     <div id="id.om.14pop" style="display:none; margin-top: 0.5em">
+  linalgspec1.upper_triangular($VV1) = linalgspec1.upper_triangular($VV2) * linalgspec1.upper_triangular($VV3)
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.14mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.14mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.14mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>upper_triangular</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <msub>
+                                          <mi>VV</mi>
+                                          <mn>1</mn>
+                                       </msub>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>upper_triangular</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>VV</mi>
+                                             <mn>2</mn>
+                                          </msub>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8290;</mo>
+                                    <mrow>
+                                       <mi>upper_triangular</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>VV</mi>
+                                             <mn>3</mn>
+                                          </msub>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+An example to describe the upper triangular matrix:
+[[1,2,3]
+ [0,4,5]
+ [0,0,6]]
+
+<div>
+                     <button id="id.om.29xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.29xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.29xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="linalgspec1" name="upper_triangular"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg2" name="vector"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="vector"/&gt;
+	&lt;OMI&gt; 1 &lt;/OMI&gt;&lt;OMI&gt; 2 &lt;/OMI&gt;&lt;OMI&gt; 3 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="vector"/&gt;
+	&lt;OMI&gt; 4 &lt;/OMI&gt;&lt;OMI&gt; 5 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="vector"/&gt;
+	&lt;OMI&gt; 6 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.29cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.29cmml')">Strict Content MathML</button>
+                     <pre id="id.om.29cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;upper_triangular&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn type="integer"&gt;6&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.29prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.29pref')">Prefix</button>
+                  <div id="id.om.29pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/linalgspec1.html#upper_triangular">upper_triangular</a>
+  (<a href="../../../cd/linalg2.html#vector">vector</a>
+  (<a href="../../../cd/linalg2.html#vector">vector</a>
+  ( 1 ,  2 ,  3 )
+, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( 4 ,  5 )
+, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( 6 )
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.29popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.29pop')">Popcorn</button>
+                     <div id="id.om.29pop" style="display:none; margin-top: 0.5em">
+  linalgspec1.upper_triangular(linalg2.vector(linalg2.vector(1, 2, 3), linalg2.vector(4, 5), linalg2.vector(6)))
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.29mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.29mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.29mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>upper_triangular</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 1 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 2 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 3 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 4 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 5 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 6 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalgspec1.html#upper_triangular">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#lower_triangular">lower_triangular</a>]
+	  
+	    [Last: <a href="#tridiagonal">tridiagonal</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="lower_triangular"> lower_triangular </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a lower-triangular matrix, it takes one
+argument. The argument should be a vector of vectors of elements of
+the matrix.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> the product of two lower-triangular matrices is lower-triangular </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.52xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.52xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.52xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalgspec1" name="lower_triangular"/&gt;
+      &lt;OMV name="VV1"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalgspec1" name="lower_triangular"/&gt;
+	&lt;OMV name="VV2"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalgspec1" name="lower_triangular"/&gt;
+	&lt;OMV name="VV3"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.52cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.52cmml')">Strict Content MathML</button>
+                     <pre id="id.om.52cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;lower_triangular&lt;/csymbol&gt;&lt;ci&gt;VV1&lt;/ci&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;lower_triangular&lt;/csymbol&gt;&lt;ci&gt;VV2&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;lower_triangular&lt;/csymbol&gt;&lt;ci&gt;VV3&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.52prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.52pref')">Prefix</button>
+                  <div id="id.om.52pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalgspec1.html#lower_triangular">lower_triangular</a>
+  ( <i>VV1</i>)
+, <a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/linalgspec1.html#lower_triangular">lower_triangular</a>
+  ( <i>VV2</i>)
+, <a href="../../../cd/linalgspec1.html#lower_triangular">lower_triangular</a>
+  ( <i>VV3</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.52popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.52pop')">Popcorn</button>
+                     <div id="id.om.52pop" style="display:none; margin-top: 0.5em">
+  linalgspec1.lower_triangular($VV1) = linalgspec1.lower_triangular($VV2) * linalgspec1.lower_triangular($VV3)
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.52mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.52mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.52mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>lower_triangular</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <msub>
+                                          <mi>VV</mi>
+                                          <mn>1</mn>
+                                       </msub>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>lower_triangular</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>VV</mi>
+                                             <mn>2</mn>
+                                          </msub>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8290;</mo>
+                                    <mrow>
+                                       <mi>lower_triangular</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>VV</mi>
+                                             <mn>3</mn>
+                                          </msub>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+An example to describe the lower triangular matrix:
+[[1,0,0]
+ [2,3,0]
+ [4,5,6]]
+
+<div>
+                     <button id="id.om.67xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.67xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.67xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="linalgspec1" name="lower_triangular"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg2" name="vector"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="vector"/&gt;
+	&lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="vector"/&gt;
+	&lt;OMI&gt; 2 &lt;/OMI&gt;&lt;OMI&gt; 3 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg2" name="vector"/&gt;
+	&lt;OMI&gt; 4 &lt;/OMI&gt;&lt;OMI&gt; 5 &lt;/OMI&gt;&lt;OMI&gt; 6 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.67cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.67cmml')">Strict Content MathML</button>
+                     <pre id="id.om.67cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;lower_triangular&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg2"&gt;vector&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.67prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.67pref')">Prefix</button>
+                  <div id="id.om.67pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/linalgspec1.html#lower_triangular">lower_triangular</a>
+  (<a href="../../../cd/linalg2.html#vector">vector</a>
+  (<a href="../../../cd/linalg2.html#vector">vector</a>
+  ( 1 )
+, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( 2 ,  3 )
+, <a href="../../../cd/linalg2.html#vector">vector</a>
+  ( 4 ,  5 ,  6 )
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.67popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.67pop')">Popcorn</button>
+                     <div id="id.om.67pop" style="display:none; margin-top: 0.5em">
+  linalgspec1.lower_triangular(linalg2.vector(linalg2.vector(1), linalg2.vector(2, 3), linalg2.vector(4, 5, 6)))
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.67mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.67mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.67mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>lower_triangular</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 1 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 2 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 3 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 4 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 5 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 6 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalgspec1.html#lower_triangular">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#tridiagonal">tridiagonal</a>]
+	  
+	    [Previous: <a href="#upper_triangular">upper_triangular</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="tridiagonal"> tridiagonal </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a tridiagonal matrix, it takes one argument
+which should be a vector of vectors which should have three elements.
+These should be vectors representing the sub-diagonal, the diagonal
+and the super-diagonal in that order.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> a tridiagonal matrix is a (1,1) banded matrix </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.90xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.90xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.90xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="and"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="size"/&gt;
+	&lt;OMV name="VV"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMI&gt; 3 &lt;/OMI&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="size"/&gt;
+	&lt;OMA&gt;
+	  &lt;OMS cd="linalg1" name="vector_selector"/&gt;
+	  &lt;OMI&gt; 2 &lt;/OMI&gt;
+	  &lt;OMV name="VV"/&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="arith1" name="plus"/&gt;
+	&lt;OMA&gt;
+          &lt;OMS cd="linalg4" name="size"/&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="linalg1" name="vector_selector"/&gt;
+	    &lt;OMI&gt; 1 &lt;/OMI&gt;
+	    &lt;OMV name="VV"/&gt;
+	  &lt;/OMA&gt;
+	&lt;/OMA&gt;
+	&lt;OMI&gt; 1 &lt;/OMI&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalgspec1" name="tridiagonal"/&gt;
+	&lt;OMV name="VV"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalgspec1" name="banded"/&gt;
+	&lt;OMV name="VV"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.90cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.90cmml')">Strict Content MathML</button>
+                     <pre id="id.om.90cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;&lt;cn type="integer"&gt;1&lt;/cn&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;tridiagonal&lt;/csymbol&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;banded&lt;/csymbol&gt;&lt;ci&gt;VV&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.90prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.90pref')">Prefix</button>
+                  <div id="id.om.90pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg4.html#size">size</a>
+  ( <i>VV</i>)
+,  3 )
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg4.html#size">size</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( 2 ,  <i>VV</i>)
+)
+, <a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/linalg4.html#size">size</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( 1 ,  <i>VV</i>)
+)
+,  1 )
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalgspec1.html#tridiagonal">tridiagonal</a>
+  ( <i>VV</i>)
+, <a href="../../../cd/linalgspec1.html#banded">banded</a>
+  ( <i>VV</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.90popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.90pop')">Popcorn</button>
+                     <div id="id.om.90pop" style="display:none; margin-top: 0.5em">
+  linalg4.size($VV) = 3 and linalg4.size(linalg1.vector_selector(2, $VV)) = linalg4.size(linalg1.vector_selector(1, $VV)) + 1 and linalgspec1.tridiagonal($VV) = linalgspec1.banded($VV)
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.90mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.90mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.90mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mrow>
+                                       <mi>size</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>VV</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mn> 3 </mn>
+                                 </mrow>
+                                 <mo>&#8743;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>size</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>VV</mi>
+                                             <mn> 2 </mn>
+                                          </msub>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>size</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msub>
+                                                <mi>VV</mi>
+                                                <mn> 1 </mn>
+                                             </msub>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>+</mo>
+                                       <mn> 1 </mn>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8743;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>tridiagonal</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>VV</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>banded</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>VV</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd> The product of two tridiagonal matrices is tridiagonal </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.126xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.126xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.126xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="arith1" name="times"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalgspec1" name="tridiagonal"/&gt;
+	&lt;OMV name="VV1"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalgspec1" name="tridiagonal"/&gt;
+	&lt;OMV name="VV2"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalgspec1" name="tridiagonal"/&gt;
+      &lt;OMV name="VV3"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.126cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.126cmml')">Strict Content MathML</button>
+                     <pre id="id.om.126cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;tridiagonal&lt;/csymbol&gt;&lt;ci&gt;VV1&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;tridiagonal&lt;/csymbol&gt;&lt;ci&gt;VV2&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="linalgspec1"&gt;tridiagonal&lt;/csymbol&gt;&lt;ci&gt;VV3&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.126prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.126pref')">Prefix</button>
+                  <div id="id.om.126pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/linalgspec1.html#tridiagonal">tridiagonal</a>
+  ( <i>VV1</i>)
+, <a href="../../../cd/linalgspec1.html#tridiagonal">tridiagonal</a>
+  ( <i>VV2</i>)
+)
+, <a href="../../../cd/linalgspec1.html#tridiagonal">tridiagonal</a>
+  ( <i>VV3</i>)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.126popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.126pop')">Popcorn</button>
+                     <div id="id.om.126pop" style="display:none; margin-top: 0.5em">
+  linalgspec1.tridiagonal($VV1) * linalgspec1.tridiagonal($VV2) = linalgspec1.tridiagonal($VV3)
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.126mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.126mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.126mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mrow>
+                                       <mi>tridiagonal</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>VV</mi>
+                                             <mn>1</mn>
+                                          </msub>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8290;</mo>
+                                    <mrow>
+                                       <mi>tridiagonal</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <msub>
+                                             <mi>VV</mi>
+                                             <mn>2</mn>
+                                          </msub>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mi>tridiagonal</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <msub>
+                                          <mi>VV</mi>
+                                          <mn>3</mn>
+                                       </msub>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalgspec1.html#tridiagonal">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#upper_triangular">upper_triangular</a>]
+	  
+	    [Previous: <a href="#lower_triangular">lower_triangular</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

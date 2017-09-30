@@ -137,7 +137,8 @@
 
 
             <p>
-This CD contains symbols for the construction of some new matrices from old ones.
+This CD contains symbols for the construction of some new vectors and matrices from old
+ones by means of the tensor product.
 </p>
 
             <hr/>
@@ -189,13 +190,13 @@ A_{i,j} B_{k,l},
 &lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
      &lt;OMA&gt;&lt;OMS cd="logic1" name="and"/&gt;
           &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-               &lt;OMA&gt;&lt;OMS cd="linalg4" name="rowcount"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="linalg3" name="rowcount"/&gt;
                     &lt;OMV name="A"/&gt;
                &lt;/OMA&gt;
                &lt;OMV name="m"/&gt;
           &lt;/OMA&gt;
           &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
-               &lt;OMA&gt;&lt;OMS cd="linalg4" name="columncount"/&gt;
+               &lt;OMA&gt;&lt;OMS cd="linalg3" name="columncount"/&gt;
                     &lt;OMV name="A"/&gt;
                &lt;/OMA&gt;
                &lt;OMV name="n"/&gt;
@@ -203,9 +204,6 @@ A_{i,j} B_{k,l},
      &lt;/OMA&gt;
      &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
           &lt;OMA&gt;&lt;OMS cd="linalg1" name="matrix_selector"/&gt;
-               &lt;OMA&gt;&lt;OMS cd="linalg6" name="matrix_tensor"/&gt;
-                    &lt;OMV name="A"/&gt;         &lt;OMV name="B"/&gt;
-               &lt;/OMA&gt;
                &lt;OMA&gt;&lt;OMS cd="arith1" name="plus"/&gt;
                     &lt;OMV name="i"/&gt;
                     &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
@@ -224,15 +222,18 @@ A_{i,j} B_{k,l},
                          &lt;OMV name="n"/&gt;
                     &lt;/OMA&gt;
                &lt;/OMA&gt;
+               &lt;OMA&gt;&lt;OMS cd="linalg6" name="matrix_tensor"/&gt;
+                    &lt;OMV name="A"/&gt;         &lt;OMV name="B"/&gt;
+               &lt;/OMA&gt;
           &lt;/OMA&gt;
           &lt;OMA&gt;&lt;OMS cd="arith1" name="times"/&gt;
                &lt;OMA&gt;&lt;OMS cd="linalg1" name="matrix_selector"/&gt;
-                    &lt;OMV name="A"/&gt;
                     &lt;OMV name="i"/&gt;&lt;OMV name="j"/&gt;
+                    &lt;OMV name="A"/&gt;
                &lt;/OMA&gt;
                &lt;OMA&gt;&lt;OMS cd="linalg1" name="matrix_selector"/&gt;
-                    &lt;OMV name="B"/&gt;
                     &lt;OMV name="k"/&gt;&lt;OMV name="l"/&gt;
+                    &lt;OMV name="B"/&gt;
                &lt;/OMA&gt;
           &lt;/OMA&gt;
      &lt;/OMA&gt;
@@ -247,17 +248,16 @@ A_{i,j} B_{k,l},
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;rowcount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;rowcount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
     &lt;ci&gt;m&lt;/ci&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;columncount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;columncount&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
     &lt;ci&gt;n&lt;/ci&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;matrix_selector&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;matrix_tensor&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
      &lt;ci&gt;i&lt;/ci&gt;
      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
@@ -272,10 +272,11 @@ A_{i,j} B_{k,l},
       &lt;ci&gt;n&lt;/ci&gt;
      &lt;/apply&gt;
     &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg6"&gt;matrix_tensor&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
    &lt;/apply&gt;
    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;matrix_selector&lt;/csymbol&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/apply&gt;
-    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;matrix_selector&lt;/csymbol&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;matrix_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;matrix_selector&lt;/csymbol&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;ci&gt;l&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
  &lt;/apply&gt;
@@ -287,19 +288,17 @@ A_{i,j} B_{k,l},
                      <a href="../../../cd/logic1.html#implies">implies</a>
   (<a href="../../../cd/logic1.html#and">and</a>
   (<a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/linalg4.html#rowcount">rowcount</a>
+  (<a href="../../../cd/linalg3.html#rowcount">rowcount</a>
   ( <i>A</i>)
 ,  <i>m</i>)
 , <a href="../../../cd/relation1.html#eq">eq</a>
-  (<a href="../../../cd/linalg4.html#columncount">columncount</a>
+  (<a href="../../../cd/linalg3.html#columncount">columncount</a>
   ( <i>A</i>)
 ,  <i>n</i>)
 )
 , <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/linalg1.html#matrix_selector">matrix_selector</a>
-  (<a href="../../../cd/linalg6.html#matrix_tensor">matrix_tensor</a>
-  ( <i>A</i>,  <i>B</i>)
-, <a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/arith1.html#plus">plus</a>
   ( <i>i</i>, <a href="../../../cd/arith1.html#times">times</a>
   (<a href="../../../cd/arith1.html#minus">minus</a>
   ( <i>k</i>, 1)
@@ -311,12 +310,14 @@ A_{i,j} B_{k,l},
   ( <i>l</i>, 1)
 ,  <i>n</i>)
 )
+, <a href="../../../cd/linalg6.html#matrix_tensor">matrix_tensor</a>
+  ( <i>A</i>,  <i>B</i>)
 )
 , <a href="../../../cd/arith1.html#times">times</a>
   (<a href="../../../cd/linalg1.html#matrix_selector">matrix_selector</a>
-  ( <i>A</i>,  <i>i</i>,  <i>j</i>)
+  ( <i>i</i>,  <i>j</i>,  <i>A</i>)
 , <a href="../../../cd/linalg1.html#matrix_selector">matrix_selector</a>
-  ( <i>B</i>,  <i>k</i>,  <i>l</i>)
+  ( <i>k</i>,  <i>l</i>,  <i>B</i>)
 )
 )
 )
@@ -326,7 +327,7 @@ A_{i,j} B_{k,l},
                      <button id="id.om.19popa" style="width:20em; background-color:#CCCCCC"
                              onclick="divfold('id.om.19pop')">Popcorn</button>
                      <div id="id.om.19pop" style="display:none; margin-top: 0.5em"> 
-linalg4.rowcount($A) = $m and linalg4.columncount($A) = $n ==&gt; linalg1.matrix_selector(linalg6.matrix_tensor($A, $B), $i + ($k - 1) * $m, $j + ($l - 1) * $n) = linalg1.matrix_selector($A, $i, $j) * linalg1.matrix_selector($B, $k, $l)
+linalg3.rowcount($A) = $m and linalg3.columncount($A) = $n ==&gt; linalg1.matrix_selector($i + ($k - 1) * $m, $j + ($l - 1) * $n, linalg6.matrix_tensor($A, $B)) = linalg1.matrix_selector($i, $j, $A) * linalg1.matrix_selector($k, $l, $B)
  </div>
                   </div>
                   <div>
@@ -369,32 +370,17 @@ linalg4.rowcount($A) = $m and linalg4.columncount($A) = $n ==&gt; linalg1.matrix
                                  <mrow>
                                     <msub>
                                        <mrow>
-                                          <mi>j</mi>
-                                          <mo>+</mo>
+                                          <mi>matrix_tensor</mi>
+                                          <mo>&#8289;</mo>
                                           <mrow>
-                                             <mrow>
-                                                <mo>(</mo>
-                                                <mi>l</mi>
-                                                <mo>-</mo>
-                                                <mn>1</mn>
-                                                <mo>)</mo>
-                                             </mrow>
-                                             <mo>&#8290;</mo>
-                                             <mi>n</mi>
+                                             <mo>(</mo>
+                                             <mi>A</mi>
+                                             <mo>,</mo>
+                                             <mi>B</mi>
+                                             <mo>)</mo>
                                           </mrow>
                                        </mrow>
                                        <mfenced>
-                                          <mrow>
-                                             <mi>matrix_tensor</mi>
-                                             <mo>&#8289;</mo>
-                                             <mrow>
-                                                <mo>(</mo>
-                                                <mi>A</mi>
-                                                <mo>,</mo>
-                                                <mi>B</mi>
-                                                <mo>)</mo>
-                                             </mrow>
-                                          </mrow>
                                           <mrow>
                                              <mi>i</mi>
                                              <mo>+</mo>
@@ -410,23 +396,38 @@ linalg4.rowcount($A) = $m and linalg4.columncount($A) = $n ==&gt; linalg1.matrix
                                                 <mi>m</mi>
                                              </mrow>
                                           </mrow>
+                                          <mrow>
+                                             <mi>j</mi>
+                                             <mo>+</mo>
+                                             <mrow>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>l</mi>
+                                                   <mo>-</mo>
+                                                   <mn>1</mn>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                                <mo>&#8290;</mo>
+                                                <mi>n</mi>
+                                             </mrow>
+                                          </mrow>
                                        </mfenced>
                                     </msub>
                                     <mo>=</mo>
                                     <mrow>
                                        <msub>
-                                          <mi>j</mi>
+                                          <mi>A</mi>
                                           <mfenced>
-                                             <mi>A</mi>
                                              <mi>i</mi>
+                                             <mi>j</mi>
                                           </mfenced>
                                        </msub>
                                        <mo>&#8290;</mo>
                                        <msub>
-                                          <mi>l</mi>
+                                          <mi>B</mi>
                                           <mfenced>
-                                             <mi>B</mi>
                                              <mi>k</mi>
+                                             <mi>l</mi>
                                           </mfenced>
                                        </msub>
                                     </mrow>

@@ -1,0 +1,136 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>linalgeig2</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/linalgeig2.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-03-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-11-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>4</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD defines symbols for basic linear algebra over a field of characteristic zero related to eigenvalues. Regardless of the way of forming vectors and matrices, this CD deals with eigenvalues, eigenvectors and related concepts.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>eigenvalue</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a binary function. The first argument should be a square matrix A defined over the field of complex numbers, the second should be an index i to specify the eigenvalue. When applied to A and i it represents the i-th eigenvalue of A (counted without multiplicities). The ordering imposed on the eigenvalues is first on the modulus of the value, and second on the argument of the value. A definition of eigenvalue is given in Elementary Linear Algebra, Stanley I. Grossman in Definition 1 of chapter 6, page 533.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>eigenvector(A,i) * A = eigenvalue(A,i)*eigenvector(A,i)</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMA id="ev">
+                     <OMS cd="linalgeig2" name="eigenvector"/>
+                     <OMV name="A"/>
+                     <OMV name="i"/>
+                  </OMA>
+                  <OMV name="A"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMA>
+                     <OMS cd="linalgeig2" name="eigenvalue"/>
+                     <OMV name="A"/>
+                     <OMV name="i"/>
+                  </OMA>
+                  <OMR href="#ev"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>eigenvector</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a binary function. Its first argument should be a square matrix A defined over the complex numbers, the second should be an index i to specify which eigenvalue this eigenvector should be paired with, with the ordering specified in the definition of eigenvalue in this CD. When applied to A and i, it represents an eigenvector for A with respect to the i-th eigenvalue.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>A*eigenvector(A) = eigenvalue(A)*eigenvector(A)</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMV name="A"/>
+                  <OMA>
+                     <OMS cd="linalgeig2" name="eigenvector"/>
+                     <OMV name="A"/>
+                     <OMV name="i"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMA>
+                     <OMS cd="linalgeig2" name="eigenvalue"/>
+                     <OMV name="A"/>
+                     <OMV name="i"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="linalgeig2" name="eigenvector"/>
+                     <OMV name="A"/>
+                     <OMV name="i"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>

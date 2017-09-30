@@ -1,0 +1,1310 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>linalg4vec</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: linalg4vec</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/linalg4vec.ocd">http://www.openmath.org/cd/linalg4vec.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="linalg4vec.ocd">linalg4vec.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="linalg4vec.omcd">linalg4vec.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#constant">constant</a>, <a href="#sparse">sparse</a>, <a href="#zero">zero</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2004-11-22 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 2 
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd> 2005-01-01 </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+            <p> 
+A CD for the quick construction of some vectors.</p>
+            <p>November 2004: A.M. Cohen built this CD from a former experimental CD called
+linalg7 (version 1, revision 0).  The descriptions have been edited and the
+example in the definition of the symbol sparse has been improved.
+</p>
+
+
+            <hr/>
+            <h2>
+               <a name="zero"> zero </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a function with one argument, which should be a natural
+number n.
+When applied to n, it represents the zero vector of size n
+(in the terminology of linalg3; dimension n in some terminology).
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  If M is an n*m matrix and V is a zero vector of length m then
+  V*M = V2 where V2 is a zero vector of length n
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.12xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.12xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.12xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMATTR&gt;
+      &lt;OMATP&gt;
+        &lt;OMS cd="mathmltypes" name="type"/&gt;
+        &lt;OMS cd="mathmltypes" name="matrix_type"/&gt;
+      &lt;/OMATP&gt;
+      &lt;OMV name="M"/&gt;
+    &lt;/OMATTR&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg3" name="columncount"/&gt;
+          &lt;OMV name="M"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMV name="m"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg3" name="rowcount"/&gt;
+          &lt;OMV name="M"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMV name="n"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg4vec" name="zero"/&gt;
+          &lt;OMV name="m"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMV name="M"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4vec" name="zero"/&gt;
+        &lt;OMV name="n"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.12cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.12cmml')">Strict Content MathML</button>
+                     <pre id="id.om.12cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;
+   &lt;semantics&gt;
+    &lt;ci&gt;M&lt;/ci&gt;
+    &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;matrix_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+   &lt;/semantics&gt;
+  &lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;columncount&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;m&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;rowcount&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;n&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;M&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.12prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.12pref')">Prefix</button>
+                  <div id="id.om.12pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+    <b>Attrib</b>([
+        <a href="../../../cd/mathmltypes.html#type">type</a>
+                     <a href="../../../cd/mathmltypes.html#matrix_type">matrix_type</a>
+      ],
+   <i>M</i>)
+
+  ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg3.html#columncount">columncount</a>
+  ( <i>M</i>)
+,  <i>m</i>)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg3.html#rowcount">rowcount</a>
+  ( <i>M</i>)
+,  <i>n</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  (<a href="../../../cd/linalg4vec.html#zero">zero</a>
+  ( <i>m</i>)
+,  <i>M</i>)
+, <a href="../../../cd/linalg4vec.html#zero">zero</a>
+  ( <i>n</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.12popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.12pop')">Popcorn</button>
+                     <div id="id.om.12pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$M{mathmltypes.type -&gt; mathmltypes.matrix_type} -&gt; linalg3.columncount($M) = $m and linalg3.rowcount($M) = $n ==&gt; linalg4vec.zero($m) * $M = linalg4vec.zero($n)]
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.12mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.12mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.12mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>M</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>columncount</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mi>m</mi>
+                                       </mrow>
+                                       <mo>&#8743;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>rowcount</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mi>n</mi>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8658;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>zero</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>m</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>&#8290;</mo>
+                                          <mi>M</mi>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mrow>
+                                          <mi>zero</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>n</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  If M is an n*m matrix and V is a zero vector of length n then
+  M*V = V2 where V2 is a zero vector of length m
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.50xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.50xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.50xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMATTR&gt;
+      &lt;OMATP&gt;
+        &lt;OMS cd="mathmltypes" name="type"/&gt;
+        &lt;OMS cd="mathmltypes" name="matrix_type"/&gt;
+      &lt;/OMATP&gt;
+      &lt;OMV name="M"/&gt;
+    &lt;/OMATTR&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg3" name="columncount"/&gt;
+          &lt;OMV name="M"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMV name="m"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg3" name="rowcount"/&gt;
+          &lt;OMV name="M"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMV name="n"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="arith1" name="times"/&gt;
+        &lt;OMV name="M"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="linalg4vec" name="zero"/&gt;
+          &lt;OMV name="n"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4vec" name="zero"/&gt;
+        &lt;OMV name="m"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.50cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.50cmml')">Strict Content MathML</button>
+                     <pre id="id.om.50cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;
+   &lt;semantics&gt;
+    &lt;ci&gt;M&lt;/ci&gt;
+    &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;matrix_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+   &lt;/semantics&gt;
+  &lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;columncount&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;m&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg3"&gt;rowcount&lt;/csymbol&gt;&lt;ci&gt;M&lt;/ci&gt;&lt;/apply&gt;
+     &lt;ci&gt;n&lt;/ci&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+     &lt;ci&gt;M&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.50prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.50pref')">Prefix</button>
+                  <div id="id.om.50pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+    <b>Attrib</b>([
+        <a href="../../../cd/mathmltypes.html#type">type</a>
+                     <a href="../../../cd/mathmltypes.html#matrix_type">matrix_type</a>
+      ],
+   <i>M</i>)
+
+  ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg3.html#columncount">columncount</a>
+  ( <i>M</i>)
+,  <i>m</i>)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg3.html#rowcount">rowcount</a>
+  ( <i>M</i>)
+,  <i>n</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/arith1.html#times">times</a>
+  ( <i>M</i>, <a href="../../../cd/linalg4vec.html#zero">zero</a>
+  ( <i>n</i>)
+)
+, <a href="../../../cd/linalg4vec.html#zero">zero</a>
+  ( <i>m</i>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.50popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.50pop')">Popcorn</button>
+                     <div id="id.om.50pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$M{mathmltypes.type -&gt; mathmltypes.matrix_type} -&gt; linalg3.columncount($M) = $m and linalg3.rowcount($M) = $n ==&gt; $M * linalg4vec.zero($n) = linalg4vec.zero($m)]
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.50mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.50mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.50mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>M</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>columncount</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mi>m</mi>
+                                       </mrow>
+                                       <mo>&#8743;</mo>
+                                       <mrow>
+                                          <mrow>
+                                             <mi>rowcount</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>M</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>=</mo>
+                                          <mi>n</mi>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>&#8658;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>M</mi>
+                                          <mo>&#8290;</mo>
+                                          <mrow>
+                                             <mi>zero</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>n</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mrow>
+                                          <mi>zero</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>m</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  If V is a zero vector of length n and V2 is a vector of length n
+then
+  V+V2 = V2+V = V2
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.88xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.88xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.88xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMBIND&gt;
+  &lt;OMS cd="quant1" name="forall"/&gt;
+  &lt;OMBVAR&gt;
+    &lt;OMATTR&gt;
+      &lt;OMATP&gt;
+        &lt;OMS cd="mathmltypes" name="type"/&gt;
+        &lt;OMS cd="mathmltypes" name="vector_type"/&gt;
+      &lt;/OMATP&gt;
+      &lt;OMV name="V2"/&gt;
+    &lt;/OMATTR&gt;
+  &lt;/OMBVAR&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="logic1" name="implies"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4" name="size"/&gt;
+        &lt;OMV name="V2"/&gt;
+      &lt;/OMA&gt;
+      &lt;OMV name="n"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="logic1" name="and"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMV name="V2"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="arith1" name="plus"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg4vec" name="zero"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+          &lt;OMV name="V2"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="relation1" name="eq"/&gt;
+        &lt;OMV name="V2"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="arith1" name="plus"/&gt;
+          &lt;OMV name="V2"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="linalg4vec" name="zero"/&gt;
+            &lt;OMV name="n"/&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.88cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.88cmml')">Strict Content MathML</button>
+                     <pre id="id.om.88cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;
+   &lt;semantics&gt;
+    &lt;ci&gt;V2&lt;/ci&gt;
+    &lt;annotation-xml cd="mathmltypes" encoding="type"&gt;&lt;csymbol cd="mathmltypes"&gt;vector_type&lt;/csymbol&gt;&lt;/annotation-xml&gt;
+   &lt;/semantics&gt;
+  &lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4"&gt;size&lt;/csymbol&gt;&lt;ci&gt;V2&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;n&lt;/ci&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;ci&gt;V2&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+      &lt;ci&gt;V2&lt;/ci&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+     &lt;ci&gt;V2&lt;/ci&gt;
+     &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+      &lt;ci&gt;V2&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.88prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.88pref')">Prefix</button>
+                  <div id="id.om.88pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+    <b>Attrib</b>([
+        <a href="../../../cd/mathmltypes.html#type">type</a>
+                     <a href="../../../cd/mathmltypes.html#vector_type">vector_type</a>
+      ],
+   <i>V2</i>)
+
+  ] .
+  (<a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg4.html#size">size</a>
+  ( <i>V2</i>)
+,  <i>n</i>)
+, <a href="../../../cd/logic1.html#and">and</a>
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>V2</i>, <a href="../../../cd/arith1.html#plus">plus</a>
+  (<a href="../../../cd/linalg4vec.html#zero">zero</a>
+  ( <i>n</i>)
+,  <i>V2</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  ( <i>V2</i>, <a href="../../../cd/arith1.html#plus">plus</a>
+  ( <i>V2</i>, <a href="../../../cd/linalg4vec.html#zero">zero</a>
+  ( <i>n</i>)
+)
+)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.88popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.88pop')">Popcorn</button>
+                     <div id="id.om.88pop" style="display:none; margin-top: 0.5em">
+quant1.forall[$V2{mathmltypes.type -&gt; mathmltypes.vector_type} -&gt; linalg4.size($V2) = $n ==&gt; $V2 = linalg4vec.zero($n) + $V2 and $V2 = $V2 + linalg4vec.zero($n)]
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.88mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.88mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.88mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <msub>
+                                       <mi>V</mi>
+                                       <mn>2</mn>
+                                    </msub>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>size</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <msub>
+                                                <mi>V</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>=</mo>
+                                       <mi>n</mi>
+                                    </mrow>
+                                    <mo>&#8658;</mo>
+                                    <mrow>
+                                       <mrow>
+                                          <msub>
+                                             <mi>V</mi>
+                                             <mn>2</mn>
+                                          </msub>
+                                          <mo>=</mo>
+                                          <mrow>
+                                             <mrow>
+                                                <mi>zero</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>n</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                             <mo>+</mo>
+                                             <msub>
+                                                <mi>V</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>&#8743;</mo>
+                                       <mrow>
+                                          <msub>
+                                             <mi>V</mi>
+                                             <mn>2</mn>
+                                          </msub>
+                                          <mo>=</mo>
+                                          <mrow>
+                                             <msub>
+                                                <mi>V</mi>
+                                                <mn>2</mn>
+                                             </msub>
+                                             <mo>+</mo>
+                                             <mrow>
+                                                <mi>zero</mi>
+                                                <mo>&#8289;</mo>
+                                                <mrow>
+                                                   <mo>(</mo>
+                                                   <mi>n</mi>
+                                                   <mo>)</mo>
+                                                </mrow>
+                                             </mrow>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  If V is a zero vector of length n and i is in the integral interval
+[1,n] then
+  V.i = 0
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.127xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.127xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.127xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="set1" name="in"/&gt;
+    &lt;OMV name="i"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="interval1" name="integer_interval"/&gt;
+      &lt;OMS cd="alg1" name="one"/&gt;
+      &lt;OMV name="n"/&gt;
+    &lt;/OMA&gt;
+  &lt;/OMA&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="linalg1" name="vector_selector"/&gt;
+      &lt;OMV name="i"/&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="linalg4vec" name="zero"/&gt;
+        &lt;OMV name="n"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="alg1" name="zero"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.127cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.127cmml')">Strict Content MathML</button>
+                     <pre id="id.om.127cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+   &lt;ci&gt;i&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;
+    &lt;ci&gt;i&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;zero&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;csymbol cd="alg1"&gt;zero&lt;/csymbol&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.127prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.127pref')">Prefix</button>
+                  <div id="id.om.127pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>i</i>, <a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  (<a href="../../../cd/alg1.html#one">one</a>,  <i>n</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( <i>i</i>, <a href="../../../cd/linalg4vec.html#zero">zero</a>
+  ( <i>n</i>)
+)
+, <a href="../../../cd/alg1.html#zero">zero</a>)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.127popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.127pop')">Popcorn</button>
+                     <div id="id.om.127pop" style="display:none; margin-top: 0.5em">
+set1.in($i, interval1.integer_interval(alg1.one, $n)) ==&gt; linalg1.vector_selector($i, linalg4vec.zero($n)) = alg1.zero
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.127mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.127mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.127mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>i</mi>
+                                    <mo>&#8712;</mo>
+                                    <mrow>
+                                       <mo>[</mo>
+                                       <mn>1</mn>
+                                       <mo separator="true">,</mo>
+                                       <mi>n</mi>
+                                       <mo>]</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <msub>
+                                       <mrow>
+                                          <mi>zero</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>n</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mi>i</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mn>0</mn>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalg4vec.html#zero">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#constant">constant</a>]
+	  
+	    [Last: <a href="#sparse">sparse</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="constant"> constant </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+This symbol represents a binary function whose first argument should be a
+natural number. When applied to n and c, it represents
+the constant (row) vector (so vector as defined in linalg2), so size (dimension) n all of whose components have the
+value c.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+  If V is a constant vector of length n, with constant value c
+  and i is in the integral interval [1,n] then
+  V.i = c
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.151xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.151xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.151xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+&lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+  &lt;OMA&gt;&lt;OMS cd="set1" name="in"/&gt;
+       &lt;OMV name="i"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="interval1" name="integer_interval"/&gt;
+            &lt;OMS cd="alg1" name="one"/&gt;
+            &lt;OMV name="n"/&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="linalg1" name="vector_selector"/&gt;
+            &lt;OMV name="i"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="linalg4vec" name="constant"/&gt;
+                 &lt;OMV name="n"/&gt;&lt;OMV name="c"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMV name="c"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.151cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.151cmml')">Strict Content MathML</button>
+                     <pre id="id.om.151cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+   &lt;ci&gt;i&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;&lt;csymbol cd="alg1"&gt;one&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;
+    &lt;ci&gt;i&lt;/ci&gt;
+    &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;constant&lt;/csymbol&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;ci&gt;c&lt;/ci&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.151prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.151pref')">Prefix</button>
+                  <div id="id.om.151pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/set1.html#in">in</a>
+  ( <i>i</i>, <a href="../../../cd/interval1.html#integer_interval">integer_interval</a>
+  (<a href="../../../cd/alg1.html#one">one</a>,  <i>n</i>)
+)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/linalg1.html#vector_selector">vector_selector</a>
+  ( <i>i</i>, <a href="../../../cd/linalg4vec.html#constant">constant</a>
+  ( <i>n</i>,  <i>c</i>)
+)
+,  <i>c</i>)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.151popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.151pop')">Popcorn</button>
+                     <div id="id.om.151pop" style="display:none; margin-top: 0.5em">
+set1.in($i, interval1.integer_interval(alg1.one, $n)) ==&gt; linalg1.vector_selector($i, linalg4vec.constant($n, $c)) = $c
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.151mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.151mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.151mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>i</mi>
+                                    <mo>&#8712;</mo>
+                                    <mrow>
+                                       <mo>[</mo>
+                                       <mn>1</mn>
+                                       <mo separator="true">,</mo>
+                                       <mi>n</mi>
+                                       <mo>]</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <msub>
+                                       <mrow>
+                                          <mi>constant</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>n</mi>
+                                             <mo>,</mo>
+                                             <mi>c</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mi>i</mi>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mi>c</mi>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalg4vec.html#constant">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#sparse">sparse</a>]
+	  
+	    [Previous: <a href="#zero">zero</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="sparse"> sparse </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+The sparse symbol is a constructor for sparse vectors. It is (n+1)-ary,
+where the first argument is the length (dimension) of the vector, and
+every following argument specifies a possibly non-zero element in the
+following way. The argument is a list which should have length two. 
+The first element in the list is the position (one based), whilst the second
+element in the list is the value. Every other element of the vector is
+implicitly zero.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+This example shows a representation of the sparse vector
+$$[0,0,0,0,1]$$
+  <div>
+                     <button id="id.om.176xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.176xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.176xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+    &lt;OMA&gt;&lt;OMS cd="linalg4vec" name="sparse"/&gt;
+         &lt;OMI&gt;5&lt;/OMI&gt;
+         &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+              &lt;OMI&gt;5&lt;/OMI&gt; &lt;OMI&gt;1&lt;/OMI&gt;
+         &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.176cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.176cmml')">Strict Content MathML</button>
+                     <pre id="id.om.176cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="linalg4vec"&gt;sparse&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;5&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;5&lt;/cn&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.176prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.176pref')">Prefix</button>
+                  <div id="id.om.176pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/linalg4vec.html#sparse">sparse</a>
+  (5, <a href="../../../cd/list1.html#list">list</a>
+  (5, 1)
+)
+
+  </div>
+                  <div>
+                     <button id="id.om.176popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.176pop')">Popcorn</button>
+                     <div id="id.om.176pop" style="display:none; margin-top: 0.5em">
+    linalg4vec.sparse(5, [5 , 1])
+  </div>
+                  </div>
+                  <div>
+                     <button id="id.om.176mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.176mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.176mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>sparse</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>5</mn>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mn>5</mn>
+                                       <mo separator="true">,</mo>
+                                       <mn>1</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/linalg4vec.html#sparse">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#zero">zero</a>]
+	  
+	    [Previous: <a href="#constant">constant</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>

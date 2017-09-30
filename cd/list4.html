@@ -1,0 +1,1230 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>list4</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: list4</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/list2.ocd">http://www.openmath.org/cd/list2.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="list4.ocd">list4.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="list4.omcd">list4.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#difference">difference</a>, <a href="#entry">entry</a>, <a href="#list_of_lengthn">list_of_lengthn</a>, <a href="#remove">remove</a>, <a href="#reverse">reverse</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2004-11-30</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>5
+    (Revision 1)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2006-03-30</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd> experimental </dd>
+               <dt>
+                  <span class="dt">Uses CD:</span>
+               </dt>
+               <dd>
+                  <a href="list1.html">list1</a>, <a href="list2.html">list2</a>, <a href="list3.html">list3</a>, <a href="logic1.html">logic1</a>, <a href="quant1.html">quant1</a>, <a href="relation1.html">relation1</a>
+               </dd>
+            </dl>
+            <hr/>
+
+
+
+
+
+
+
+
+
+
+
+
+            <p>
+    Several convenient but not basic list functions are given in this CD.
+</p>
+
+
+            <pre>
+Arjeh M. Cohen  2004-11-30
+</pre>
+
+
+            <hr/>
+            <h2>
+               <a name="entry"> entry </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a binary function whose first argument should be a list
+L and whose second argument should be a positive integer i such that
+the absolute value of i is in the interval [1..n], where n is the length of L.
+If i is positive, it returns the i-th entry L[i] of L, if i is negative it
+returns
+the (n+1-i)-th entry of L.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Commented Mathematical property (CMP):</span>
+               </dt>
+               <dd>
+If i is a positive integer and a is a list of length at least i, then
+entry(a,i) is equal to list_selector(i,a).
+</dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.20xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.20xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.20xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="logic1" name="implies"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="relation1" name="gt"/&gt;
+            &lt;OMV name="i"/&gt; &lt;OMI&gt;0&lt;/OMI&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="list4" name="entry"/&gt;
+                 &lt;OMV name="a"/&gt; &lt;OMV name="i"/&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="list3" name="list_selector"/&gt;
+                  &lt;OMV name="i"/&gt;&lt;OMV name="a"/&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.20cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.20cmml')">Strict Content MathML</button>
+                     <pre id="id.om.20cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;cn type="integer"&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list4"&gt;entry&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list3"&gt;list_selector&lt;/csymbol&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.20prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.20pref')">Prefix</button>
+                  <div id="id.om.20pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/logic1.html#implies">implies</a>
+  (<a href="../../../cd/relation1.html#gt">gt</a>
+  ( <i>i</i>, 0)
+, <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/list4.html#entry">entry</a>
+  ( <i>a</i>,  <i>i</i>)
+, <a href="../../../cd/list3.html#list_selector">list_selector</a>
+  ( <i>i</i>,  <i>a</i>)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.20popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.20pop')">Popcorn</button>
+                     <div id="id.om.20pop" style="display:none; margin-top: 0.5em">
+  $i &gt; 0 ==&gt; list4.entry($a, $i) = list3.list_selector($i, $a)
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.20mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.20mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.20mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>i</mi>
+                                    <mo>&gt;</mo>
+                                    <mn>0</mn>
+                                 </mrow>
+                                 <mo>&#8658;</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>entry</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>a</mi>
+                                          <mo>,</mo>
+                                          <mi>i</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>list_selector</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mi>i</mi>
+                                          <mo>,</mo>
+                                          <mi>a</mi>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+The second entry of the list [1,2,3] is 2.
+<div>
+                     <button id="id.om.38xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.38xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.38xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="list4" name="entry"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                 &lt;OMI&gt; 1 &lt;/OMI&gt;
+                 &lt;OMI&gt; 2 &lt;/OMI&gt;
+                 &lt;OMI&gt; 3 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMI&gt; 2 &lt;/OMI&gt;
+       &lt;/OMA&gt;
+       &lt;OMI&gt; 2 &lt;/OMI&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.38cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.38cmml')">Strict Content MathML</button>
+                     <pre id="id.om.38cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="list4"&gt;entry&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;cn type="integer"&gt;2&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.38prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.38pref')">Prefix</button>
+                  <div id="id.om.38pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/list4.html#entry">entry</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  ( 1 ,  2 ,  3 )
+,  2 )
+,  2 )
+
+</div>
+                  <div>
+                     <button id="id.om.38popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.38pop')">Popcorn</button>
+                     <div id="id.om.38pop" style="display:none; margin-top: 0.5em">
+  list4.entry([1 , 2 , 3], 2) = 2
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.38mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.38mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.38mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>entry</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 1 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 2 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 3 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn> 2 </mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mn> 2 </mn>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+Specification of the second  element of the list [1,..,6]
+counted from the end.
+
+<div>
+                     <button id="id.om.51xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.51xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.51xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="list4" name="entry"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                 &lt;OMI&gt; 1 &lt;/OMI&gt;      &lt;OMI&gt; 2 &lt;/OMI&gt;      &lt;OMI&gt; 3 &lt;/OMI&gt;
+                 &lt;OMI&gt; 4 &lt;/OMI&gt;      &lt;OMI&gt; 5 &lt;/OMI&gt;      &lt;OMI&gt; 6 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMI&gt;-2&lt;/OMI&gt; 
+       &lt;/OMA&gt;
+       &lt;OMI&gt;5&lt;/OMI&gt; 
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.51cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.51cmml')">Strict Content MathML</button>
+                     <pre id="id.om.51cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="list4"&gt;entry&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;4&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;cn type="integer"&gt;-2&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;cn type="integer"&gt;5&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.51prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.51pref')">Prefix</button>
+                  <div id="id.om.51pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/list4.html#entry">entry</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  ( 1 ,  2 ,  3 ,  4 ,  5 ,  6 )
+, -2)
+, 5)
+
+</div>
+                  <div>
+                     <button id="id.om.51popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.51pop')">Popcorn</button>
+                     <div id="id.om.51pop" style="display:none; margin-top: 0.5em">
+  list4.entry([1 , 2 , 3 , 4 , 5 , 6], -2) = 5
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.51mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.51mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.51mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>entry</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 1 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 2 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 3 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 4 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 5 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 6 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mn>-2</mn>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mn>5</mn>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/list4.html#entry">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#reverse">reverse</a>]
+	  
+	    [Last: <a href="#list_of_lengthn">list_of_lengthn</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+            <hr/>
+            <h2>
+               <a name="reverse"> reverse </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+The reverse of a list 
+</p>
+               </dd>
+            </dl> 
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.71xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.71xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.71xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;
+    &lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="list4" name="reverse"/&gt;
+      &lt;OMS cd="list2" name="nil"/&gt;
+    &lt;/OMA&gt;
+    &lt;OMS cd="list2" name="nil"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.71cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.71cmml')">Strict Content MathML</button>
+                     <pre id="id.om.71cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="list4"&gt;reverse&lt;/csymbol&gt;&lt;csymbol cd="list2"&gt;nil&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;csymbol cd="list2"&gt;nil&lt;/csymbol&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.71prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.71pref')">Prefix</button>
+                  <div id="id.om.71pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/list4.html#reverse">reverse</a>
+  (<a href="../../../cd/list2.html#nil">nil</a>)
+, <a href="../../../cd/list2.html#nil">nil</a>)
+
+</div>
+                  <div>
+                     <button id="id.om.71popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.71pop')">Popcorn</button>
+                     <div id="id.om.71pop" style="display:none; margin-top: 0.5em">
+  list4.reverse(list2.nil) = list2.nil
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.71mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.71mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.71mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>reverse</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>nil</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>nil</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.79xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.79xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.79xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMBIND&gt;
+    &lt;OMS cd="quant1" name="forall"/&gt;
+    &lt;OMBVAR&gt;
+      &lt;OMV name="lst"/&gt;
+      &lt;OMV name="a"/&gt;
+    &lt;/OMBVAR&gt;
+    &lt;OMA&gt;
+      &lt;OMS cd="relation1" name="eq"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="list4" name="reverse"/&gt;
+        &lt;OMA&gt;&lt;OMS cd="list2" name="cons"/&gt;
+             &lt;OMV name="a"/&gt;   &lt;OMV name="lst"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+      &lt;OMA&gt;&lt;OMS cd="list3" name="append"/&gt;
+           &lt;OMA&gt;&lt;OMS cd="list4" name="reverse"/&gt;
+          &lt;OMV name="lst"/&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;&lt;OMS cd="list2" name="cons"/&gt;
+             &lt;OMV name="a"/&gt;
+             &lt;OMS cd="list2" name="nil"/&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+  &lt;/OMBIND&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.79cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.79cmml')">Strict Content MathML</button>
+                     <pre id="id.om.79cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;lst&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list4"&gt;reverse&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list2"&gt;cons&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;lst&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list3"&gt;append&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list4"&gt;reverse&lt;/csymbol&gt;&lt;ci&gt;lst&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="list2"&gt;cons&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;csymbol cd="list2"&gt;nil&lt;/csymbol&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/bind&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.79prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.79pref')">Prefix</button>
+                  <div id="id.om.79pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/quant1.html#forall">forall</a>
+  [
+       <i>lst</i>
+                     <i>a</i>
+    ] .
+  (<a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/list4.html#reverse">reverse</a>
+  (<a href="../../../cd/list2.html#cons">cons</a>
+  ( <i>a</i>,  <i>lst</i>)
+)
+, <a href="../../../cd/list3.html#append">append</a>
+  (<a href="../../../cd/list4.html#reverse">reverse</a>
+  ( <i>lst</i>)
+, <a href="../../../cd/list2.html#cons">cons</a>
+  ( <i>a</i>, <a href="../../../cd/list2.html#nil">nil</a>)
+)
+)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.79popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.79pop')">Popcorn</button>
+                     <div id="id.om.79pop" style="display:none; margin-top: 0.5em">
+  quant1.forall[$lst, $a -&gt; list4.reverse(list2.cons($a, $lst)) = list3.append(list4.reverse($lst), list2.cons($a, list2.nil))]
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.79mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.79mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.79mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mo>&#8704;</mo>
+                                 <mo>&#8201;</mo>
+                                 <mrow>
+                                    <mi>lst</mi>
+                                    <mo>,</mo>
+                                    <mi>a</mi>
+                                 </mrow>
+                                 <mo>.</mo>
+                                 <mrow>
+                                    <mrow>
+                                       <mi>reverse</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>cons</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>lst</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>=</mo>
+                                    <mrow>
+                                       <mi>append</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>reverse</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>lst</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>,</mo>
+                                          <mrow>
+                                             <mi>cons</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mi>a</mi>
+                                                <mo>,</mo>
+                                                <mi>nil</mi>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/list4.html#reverse">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#difference">difference</a>]
+	  
+	    [Previous: <a href="#entry">entry</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="difference"> difference </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a function with two arguments,
+both lists. 
+When applied to two lists,
+it represents a list made up of all
+the elements of the first list which do not occur in
+the second, appearing in the order in which they occur in the first list.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+Specification of the list [6,6,12], apart from the first 2 elements.
+
+<div>
+                     <button id="id.om.106xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.106xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.106xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="list4" name="difference"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                 &lt;OMI&gt; 6 &lt;/OMI&gt;      &lt;OMI&gt; 6 &lt;/OMI&gt;      &lt;OMI&gt; 12 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                 &lt;OMI&gt; 6 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMI&gt; 12 &lt;/OMI&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.106cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.106cmml')">Strict Content MathML</button>
+                     <pre id="id.om.106cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="list4"&gt;difference&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;12&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cn type="integer"&gt;6&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cn type="integer"&gt;12&lt;/cn&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.106prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.106pref')">Prefix</button>
+                  <div id="id.om.106pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/list4.html#difference">difference</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  ( 6 ,  6 ,  12 )
+, <a href="../../../cd/list1.html#list">list</a>
+  ( 6 )
+)
+, <a href="../../../cd/list1.html#list">list</a>
+  ( 12 )
+)
+
+</div>
+                  <div>
+                     <button id="id.om.106popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.106pop')">Popcorn</button>
+                     <div id="id.om.106pop" style="display:none; margin-top: 0.5em">
+  list4.difference([6 , 6 , 12], [6]) = [12]
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.106mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.106mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.106mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>difference</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 6 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 6 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 12 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 6 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn> 12 </mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/list4.html#difference">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#remove">remove</a>]
+	  
+	    [Previous: <a href="#reverse">reverse</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+            <hr/>
+            <h2>
+               <a name="remove"> remove </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a function with two arguments,
+both lists. 
+When applied to two lists,
+it represents a list made up of all
+the elements of the first list with those elements removed whose entries occur
+in the second list.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+Specification of the list [6,5,6] with the second entry removed.
+
+<div>
+                     <button id="id.om.126xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.126xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.126xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+       &lt;OMA&gt;&lt;OMS cd="list4" name="remove"/&gt;
+            &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                 &lt;OMI&gt; 6 &lt;/OMI&gt;      &lt;OMI&gt; 5 &lt;/OMI&gt;      &lt;OMI&gt; 6 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+            &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+                 &lt;OMI&gt; 2 &lt;/OMI&gt;
+            &lt;/OMA&gt;
+       &lt;/OMA&gt;
+       &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMI&gt; 6 &lt;/OMI&gt;            &lt;OMI&gt; 6 &lt;/OMI&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.126cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.126cmml')">Strict Content MathML</button>
+                     <pre id="id.om.126cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="list4"&gt;remove&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+    &lt;cn type="integer"&gt;5&lt;/cn&gt;
+    &lt;cn type="integer"&gt;6&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;6&lt;/cn&gt;
+   &lt;cn type="integer"&gt;6&lt;/cn&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.126prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.126pref')">Prefix</button>
+                  <div id="id.om.126pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/list4.html#remove">remove</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  ( 6 ,  5 ,  6 )
+, <a href="../../../cd/list1.html#list">list</a>
+  ( 2 )
+)
+, <a href="../../../cd/list1.html#list">list</a>
+  ( 6 ,  6 )
+)
+
+</div>
+                  <div>
+                     <button id="id.om.126popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.126pop')">Popcorn</button>
+                     <div id="id.om.126pop" style="display:none; margin-top: 0.5em">
+  list4.remove([6 , 5 , 6], [2]) = [6 , 6]
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.126mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.126mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.126mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>remove</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 6 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 5 </mn>
+                                          <mo separator="true">,</mo>
+                                          <mn> 6 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn> 2 </mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn> 6 </mn>
+                                    <mo separator="true">,</mo>
+                                    <mn> 6 </mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/list4.html#remove">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#list_of_lengthn">list_of_lengthn</a>]
+	  
+	    [Previous: <a href="#difference">difference</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+
+
+            <hr/>
+            <h2>
+               <a name="list_of_lengthn"> list_of_lengthn </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p> 
+This symbol represents a function with two arguments,
+the first of which is a natural number and the second of which is a list.
+The first argument is the length of the list.
+</p>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+A list L of length 3:
+<div>
+                     <button id="id.om.147xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.147xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.147xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+  &lt;OMA&gt;&lt;OMS cd="list4" name="list_of_lengthn"/&gt;
+       &lt;OMI&gt; 3 &lt;/OMI&gt;
+       &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
+            &lt;OMV name="L"/&gt;
+       &lt;/OMA&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.147cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.147cmml')">Strict Content MathML</button>
+                     <pre id="id.om.147cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="list4"&gt;list_of_lengthn&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;ci&gt;L&lt;/ci&gt;&lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.147prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.147pref')">Prefix</button>
+                  <div id="id.om.147pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/list4.html#list_of_lengthn">list_of_lengthn</a>
+  ( 3 , <a href="../../../cd/list1.html#list">list</a>
+  ( <i>L</i>)
+)
+
+</div>
+                  <div>
+                     <button id="id.om.147popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.147pop')">Popcorn</button>
+                     <div id="id.om.147pop" style="display:none; margin-top: 0.5em">
+  list4.list_of_lengthn(3, [$L])
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.147mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.147mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.147mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>list_of_lengthn</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn> 3 </mn>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <mi>L</mi>
+                                       <mo>)</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/list4.html#list_of_lengthn">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#entry">entry</a>]
+	  
+	    [Previous: <a href="#remove">remove</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+
+         </div>
+      </div>
+   </body>
+</html>

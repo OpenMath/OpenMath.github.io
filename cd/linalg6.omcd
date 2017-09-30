@@ -63,7 +63,7 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="Description"/>
-         <OMSTR>This CD contains symbols for the construction of some new matrices from old ones.</OMSTR>
+         <OMSTR>This CD contains symbols for the construction of some new vectors and matrices from old ones by means of the tensor product.</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
@@ -88,7 +88,7 @@
                   <OMA>
                      <OMS cd="relation1" name="eq"/>
                      <OMA>
-                        <OMS cd="linalg4" name="rowcount"/>
+                        <OMS cd="linalg3" name="rowcount"/>
                         <OMV name="A"/>
                      </OMA>
                      <OMV name="m"/>
@@ -96,7 +96,7 @@
                   <OMA>
                      <OMS cd="relation1" name="eq"/>
                      <OMA>
-                        <OMS cd="linalg4" name="columncount"/>
+                        <OMS cd="linalg3" name="columncount"/>
                         <OMV name="A"/>
                      </OMA>
                      <OMV name="n"/>
@@ -106,11 +106,6 @@
                   <OMS cd="relation1" name="eq"/>
                   <OMA>
                      <OMS cd="linalg1" name="matrix_selector"/>
-                     <OMA>
-                        <OMS cd="linalg6" name="matrix_tensor"/>
-                        <OMV name="A"/>
-                        <OMV name="B"/>
-                     </OMA>
                      <OMA>
                         <OMS cd="arith1" name="plus"/>
                         <OMV name="i"/>
@@ -137,20 +132,25 @@
                            <OMV name="n"/>
                         </OMA>
                      </OMA>
+                     <OMA>
+                        <OMS cd="linalg6" name="matrix_tensor"/>
+                        <OMV name="A"/>
+                        <OMV name="B"/>
+                     </OMA>
                   </OMA>
                   <OMA>
                      <OMS cd="arith1" name="times"/>
                      <OMA>
                         <OMS cd="linalg1" name="matrix_selector"/>
-                        <OMV name="A"/>
                         <OMV name="i"/>
                         <OMV name="j"/>
+                        <OMV name="A"/>
                      </OMA>
                      <OMA>
                         <OMS cd="linalg1" name="matrix_selector"/>
-                        <OMV name="B"/>
                         <OMV name="k"/>
                         <OMV name="l"/>
+                        <OMV name="B"/>
                      </OMA>
                   </OMA>
                </OMA>

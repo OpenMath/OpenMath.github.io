@@ -1,5 +1,5 @@
 <h1>OpenMath Symbols</h1>
-<p>A combined list of all 1482 symbols defined in this Content Dictionary collection.</p>
+<p>A combined list of all 1532 symbols defined in this Content Dictionary collection.</p>
 <table>
    <tr>
       <th>Symbol</th>
@@ -142,12 +142,6 @@
          <a href="../cd/SI_DerivedQuantities1.html#absorbed-dose">SI_DerivedQuantities1/<br/>absorbed-dose</a>
       </td>
       <td>This symbol represents the physical quantity of absorbed dose of ionizing radiation. A variable representing an arbitrary quantity of absorbed dose is commonly represented with the italic, upper case letter, "D".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#acceleration">dimensions1/<br/>acceleration</a>
-      </td>
-      <td>This symbol represents the acceleration physical dimension. It is the second derivative of distance with respect to time.</td>
    </tr>
    <tr>
       <td>
@@ -349,6 +343,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgsym1.html#anti_Hermitian">linalgsym1/<br/>anti_Hermitian</a>
+      </td>
+      <td>This symbol represents an anti-Hermitian matrix, it takes one argument. The argument should be a vector of vectors of values which determine the upper triangle of the matrix. The lower triangle of the matrix is specified by the following relation: - M^* = transpose(M), were M^* denotes the matrix consisting of all the complex conjugates of M. These rules imply that the main diagonal is zero, therefore the argument should not include it.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/relation0.html#antisymmetric">relation0/<br/>antisymmetric</a>
       </td>
       <td>Proposition; the type of antisymmetric binary relations.</td>
@@ -382,6 +382,12 @@
          <a href="../cd/list2.html#append">list2/<br/>append</a>
       </td>
       <td>The operation of joining one list to another</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list3.html#append">list3/<br/>append</a>
+      </td>
+      <td>This symbol represents a function with two arguments, the first of which should be a list. When applied to A and b, it represents the list obtained from A by appending the element b to it.</td>
    </tr>
    <tr>
       <td>
@@ -613,12 +619,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#area">dimensions1/<br/>area</a>
-      </td>
-      <td>This symbol represents the area physical dimension.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/SI_DerivedQuantities1.html#area">SI_DerivedQuantities1/<br/>area</a>
       </td>
       <td>This symbol represents the physical quantity of area.</td>
@@ -646,6 +646,12 @@
          <a href="../cd/ThreeDgeo3.html#assertion">ThreeDgeo3/<br/>assertion</a>
       </td>
       <td>The symbol is a constructor with two arguments. Its first argument is a 3-dimensional Euclidean geometry configuration, its second argument a statement about the configuration, called thesis. When applied to a configuration C and a thesis T, the OpenMath object assertion(C,T) expresses the assertion that T holds in C.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/fns4.html#assign_to">fns4/<br/>assign_to</a>
+      </td>
+      <td>This symbol denotes a function with a even and positive number of arguments. When applied to a_1,b_1,....a_n,b_n, it represents the assignment of b_i to a_i for each index i=1,...,n. It can be used to specify the behaviour of a function f, by giving the images b_i of a_i under f.</td>
    </tr>
    <tr>
       <td>
@@ -748,6 +754,12 @@
          <a href="../cd/logic3.html#axiom_instance">logic3/<br/>axiom_instance</a>
       </td>
       <td>This symbol represents a line in a formal proof which is an instance of an axiom. The first child is the line in the proof: the second is the axiom used.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg4mat.html#banded">linalg4mat/<br/>banded</a>
+      </td>
+      <td>This symbol represents a square (p,q) banded matrix. It takes one argument. A (p,q) banded matrix should always be square. The lower non-zero subdiagonal is the first element of the argument, whilst the highest non-zero super-diagonal is given by the last element of the argument. The argument determines the band of possibly non-zero entries which are positioned around the diagonal. It should be a vector of vectors, we note that they will not all be the same length, however the length of the vectors determine p and q. The longest element specifies the diagonal of the matrix and hence the size of the matrix. Every element not in the band is zero.</td>
    </tr>
    <tr>
       <td>
@@ -933,7 +945,7 @@
       <td>
          <a href="../cd/prog1.html#call_arguments">prog1/<br/>call_arguments</a>
       </td>
-      <td>This symbol can be used to encode the arguments that will be pased to a function or procedure.</td>
+      <td>This symbol can be used to encode the arguments that will be passed to a function or procedure.</td>
    </tr>
    <tr>
       <td>
@@ -1261,9 +1273,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#charge">dimensions1/<br/>charge</a>
+         <a href="../cd/linalgpoly1.html#characteristic_poly">linalgpoly1/<br/>characteristic_poly</a>
       </td>
-      <td>This symbol represents the charge physical dimension.</td>
+      <td>This symbol represents a binary function. This first argument should be a square matrix A defined over a field F, the second argument a variable X. When applied to A and X, it represents the characteristic polynomial of A in the variable X over the field F. (The output should be semantically equivalent to an object obtained by the poly_ring_d_named constructor of the CD polyd1.)</td>
    </tr>
    <tr>
       <td>
@@ -1381,6 +1393,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg3.html#columncount">linalg3/<br/>columncount</a>
+      </td>
+      <td>This symbol represents the function which takes one matrix argument and returns the number of columns in that matrix.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg4.html#columncount">linalg4/<br/>columncount</a>
       </td>
       <td>This symbol represents the function which takes one matrix argument and returns the number of columns in that matrix.</td>
@@ -1417,7 +1435,7 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polygb.html#completely_reduced">polygb/<br/>completely_reduced</a>
+         <a href="../cd/polygb1.html#completely_reduced">polygb1/<br/>completely_reduced</a>
       </td>
       <td>This attribute, attached to a groebnered object, says 'true' if the base is fully reduced, i.e. no monomial is divisible by the leading monomial of any other polynomial.</td>
    </tr>
@@ -1447,15 +1465,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/monoid3.html#concatenation">monoid3/<br/>concatenation</a>
+         <a href="../cd/list3.html#concatenate">list3/<br/>concatenate</a>
       </td>
-      <td>This symbol represents a binary concatenation operation on strings.</td>
+      <td>The operation of joining one list to another</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#concentration">dimensions1/<br/>concentration</a>
+         <a href="../cd/monoid3.html#concatenation">monoid3/<br/>concatenation</a>
       </td>
-      <td>This symbol represents the concentration physical dimension, it is the amount of a substance in a volume.</td>
+      <td>This symbol represents a binary concatenation operation on strings.</td>
    </tr>
    <tr>
       <td>
@@ -1543,9 +1561,27 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/list2.html#cons">list2/<br/>cons</a>
+      </td>
+      <td>This symbol represents the cons list function. It takes 2 arguments: the second must be a list, where the elements have the same type as the type of the first. The function denotes a new list which has the first argument as its first element followed by the elements of the second argument.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/polyslp.html#const_node">polyslp/<br/>const_node</a>
       </td>
       <td>This constructor takes one argument, which is a value from the coefficient ring. It is intended to represent a constant node.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg4mat.html#constant">linalg4mat/<br/>constant</a>
+      </td>
+      <td>This symbol represents a matrix which has all entries of the same value. It takes three arguments, the first is the rowcount of the matrix, the second is the column count, and the third is the constant which determines every element.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg4vec.html#constant">linalg4vec/<br/>constant</a>
+      </td>
+      <td>This symbol represents a binary function whose first argument should be a natural number. When applied to n and c, it represents the constant (row) vector (so vector as defined in linalg2), so size (dimension) n all of whose components have the value c.</td>
    </tr>
    <tr>
       <td>
@@ -1696,12 +1732,6 @@
          <a href="../cd/veccalc1.html#curl">veccalc1/<br/>curl</a>
       </td>
       <td>This symbol is used to represent the curl function. It takes one argument which should be a vector of scalar valued functions, intended to represent a vector valued function and returns a vector of functions. It should satisfy the defining relation: curl(F) = i X \partial(F)/\partial(x) + j X \partial(F)/\partial(y) + j X \partial(F)/\partial(Z) where i,j,k are the unit vectors corresponding to the x,y,z axes respectively and the multiplication X is cross multiplication.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#current">dimensions1/<br/>current</a>
-      </td>
-      <td>This symbol represents the current physical dimension.</td>
    </tr>
    <tr>
       <td>
@@ -1903,12 +1933,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#density">dimensions1/<br/>density</a>
-      </td>
-      <td>This symbol represents the density physical dimension, it is the mass per unit volume.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/SI_DerivedQuantities1.html#density">SI_DerivedQuantities1/<br/>density</a>
       </td>
       <td>This symbol represents the physical quantity of volumic mass density.</td>
@@ -1945,6 +1969,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg4mat.html#diagonal_matrix">linalg4mat/<br/>diagonal_matrix</a>
+      </td>
+      <td>This symbol denotes an n_ary function which is used to construct an (nxn) diagonal matrix, that is a matrix where every non-diagonal element is zero, the diagonal elements are equal to the n arguments.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg5.html#diagonal_matrix">linalg5/<br/>diagonal_matrix</a>
       </td>
       <td>This symbol denotes an n_ary function which is used to construct an (nxn) diagonal matrix, that is a matrix where every non-diagonal element is zero, the diagonal elements are equal to the n arguments.</td>
@@ -1972,6 +2002,12 @@
          <a href="../cd/list3.html#difference">list3/<br/>difference</a>
       </td>
       <td>This symbol takes two arguments both a list. It represents a function which returns a list made up of all the elements of the first list which are not in the second.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list4.html#difference">list4/<br/>difference</a>
+      </td>
+      <td>This symbol represents a function with two arguments, both lists. When applied to two lists, it represents a list made up of all the elements of the first list which do not occur in the second, appearing in the order in which they occur in the first list.</td>
    </tr>
    <tr>
       <td>
@@ -2113,12 +2149,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#displacement">dimensions1/<br/>displacement</a>
-      </td>
-      <td>This symbol represents the spatial difference between two points. The direction of the displacement is taken into account as well as the distance between the points.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/directives1.html#disprove">directives1/<br/>disprove</a>
       </td>
       <td>This symbol is a function with one argument, which should be a clause. When applied to a clause C, it asks for a proof of that C does not hold.</td>
@@ -2221,6 +2251,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgrank1.html#dual_kernel_matrix">linalgrank1/<br/>dual_kernel_matrix</a>
+      </td>
+      <td>This symbol represents a unary function whose argument should be a matrix. When applied to a matrix, it represents a list of column vectors spanning the kernel of the matrix acting on the left.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/expint.html#E">expint/<br/>E</a>
       </td>
       <td>The symbol E defines the generalised exponential integral as in Abramovitz &amp; Stegun equation 5.1.4. This is an ordinary integral: $$E_n(z)=\int_1^{-\infty}\frac{e^{-zt}}{t^n} dt\qquad(\Re z&gt;0)$$ which is then extended by analytic continuation (this latter is not currently represented in the FMPs) to the complex plane slit along the negative real axis. Note that OpenMath's definition is curried, i.e. E(n) is a function.</td>
@@ -2245,15 +2281,39 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgeig1.html#eigenspace">linalgeig1/<br/>eigenspace</a>
+      </td>
+      <td>This symbol represents a binary function, whose arguments should be a square matrix A over a field F and an element lambda of F. When applied to A and lambda, it returns a matrix whose rows are a basis of the eigenspace of A with respect to lambda.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg4.html#eigenvalue">linalg4/<br/>eigenvalue</a>
       </td>
       <td>This symbol represents the eigenvalue of a matrix. It takes two arguments the first should be the matrix, the second should be an index to specify the eigenvalue. The ordering imposed on the eigenvalues is first on the modulus of the value, and second on the argument of the value. A definition of eigenvalue is given in Elementary Linear Algebra, Stanley I. Grossman in Definition 1 of chapter 6, page 533.</td>
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgeig2.html#eigenvalue">linalgeig2/<br/>eigenvalue</a>
+      </td>
+      <td>This symbol represents a binary function. The first argument should be a square matrix A defined over the field of complex numbers, the second should be an index i to specify the eigenvalue. When applied to A and i it represents the i-th eigenvalue of A (counted without multiplicities). The ordering imposed on the eigenvalues is first on the modulus of the value, and second on the argument of the value. A definition of eigenvalue is given in Elementary Linear Algebra, Stanley I. Grossman in Definition 1 of chapter 6, page 533.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgeig1.html#eigenvalues">linalgeig1/<br/>eigenvalues</a>
+      </td>
+      <td>This symbol represents a binary function, whose arguments should be a square matrix A and a field F over which the matrix A is defined. When applied to A and F, it returns a vector whose entries are the eigenvalues of A contained in F, with multiplicities.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg4.html#eigenvector">linalg4/<br/>eigenvector</a>
       </td>
       <td>This symbol represents the eigenvector of a matrix. It takes two arguments the first should be the matrix, the second should be an index to specify which eigenvalue this eigenvector should be paired with. The ordering is as given in the eigenvalue symbol. A definition of eigenvector is given in Elementary Linear Algebra, Stanley I. Grossman in Definition 1 of chapter 6, page 533.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgeig2.html#eigenvector">linalgeig2/<br/>eigenvector</a>
+      </td>
+      <td>This symbol represents a binary function. Its first argument should be a square matrix A defined over the complex numbers, the second should be an index i to specify which eigenvalue this eigenvector should be paired with, with the ordering specified in the definition of eigenvalue in this CD. When applied to A and i, it represents an eigenvector for A with respect to the i-th eigenvalue.</td>
    </tr>
    <tr>
       <td>
@@ -2347,12 +2407,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#energy">dimensions1/<br/>energy</a>
-      </td>
-      <td>This symbol represents the energy physical dimension.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/SI_DerivedQuantities1.html#energy">SI_DerivedQuantities1/<br/>energy</a>
       </td>
       <td>This symbol represents the physical quantity of energy. A variable representing an arbitrary quantity of energy is commonly represented with the italic, upper case letter, "E".</td>
@@ -2366,6 +2420,12 @@
    <tr>
       <td>
          <a href="../cd/list3.html#entry">list3/<br/>entry</a>
+      </td>
+      <td>This symbol represents a binary function whose first argument should be a list L and whose second argument should be a positive integer i such that the absolute value of i is in the interval [1..n], where n is the length of L. If i is positive, it returns the i-th entry L[i] of L, if i is negative it returns the (n+1-i)-th entry of L.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list4.html#entry">list4/<br/>entry</a>
       </td>
       <td>This symbol represents a binary function whose first argument should be a list L and whose second argument should be a positive integer i such that the absolute value of i is in the interval [1..n], where n is the length of L. If i is positive, it returns the i-th entry L[i] of L, if i is negative it returns the (n+1-i)-th entry of L.</td>
    </tr>
@@ -2815,6 +2875,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/list2.html#first">list2/<br/>first</a>
+      </td>
+      <td>This symbol represents a function which returns the first elements of its argument, which should be a list.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/permutation1.html#fix">permutation1/<br/>fix</a>
       </td>
       <td>This symbol is a function with two arguments. The first argument should be a permutation, the second argument a set. When applied to a permutation g and a set X, it represents the subset A of X all points that do not belong to the support of g.</td>
@@ -2859,19 +2925,13 @@
       <td>
          <a href="../cd/prog1.html#for">prog1/<br/>for</a>
       </td>
-      <td>This symbol can be used to encode the for loop. The syntax is for(block1,conditional_block,block3,block4), where block1 is the inicialization block, conditional_block is the conditional block that determines the end of the loop, block3 is the incremental block and block4 is the body of the for loop. Each of this blocks should be present (althougth they can be empty).</td>
+      <td>This symbol can be used to encode the for loop. The syntax is for(block1,conditional_block,block3,block4), where block1 is the initialization block, conditional_block is the conditional block that determines the end of the loop, block3 is the incremental block and block4 is the body of the for loop. Each of this blocks should be present (althougth they can be empty).</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/quant1.html#forall">quant1/<br/>forall</a>
       </td>
       <td>This symbol represents the universal ("for all") quantifier which takes two arguments. It must be placed within an OMBIND element. The first argument is the bound variables (placed within an OMBVAR element), and the second is an expression.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#force">dimensions1/<br/>force</a>
-      </td>
-      <td>This symbol represents the force physical dimension.</td>
    </tr>
    <tr>
       <td>
@@ -3111,7 +3171,7 @@
       <td>
          <a href="../cd/prog1.html#global_var">prog1/<br/>global_var</a>
       </td>
-      <td>This symbol can be used to declare global variables as know to function.</td>
+      <td>This symbol, which can have an aribtrary positive number of arguments which must all be variables, can be used to declare global variables as known to functions.</td>
    </tr>
    <tr>
       <td>
@@ -3193,13 +3253,13 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polygb.html#groebner">polygb/<br/>groebner</a>
+         <a href="../cd/polygb1.html#groebner">polygb1/<br/>groebner</a>
       </td>
       <td>The groebner basis (reduced, minimal) of a set of polynomials, with respect to a given ordering. First argument is a list of variables, the second is an ordering, the third is a list of polynomials. A program that can compute the basis is required to return a "groebner_basis" object.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/polygb.html#groebner_basis">polygb/<br/>groebner_basis</a>
+         <a href="../cd/polygb1.html#groebner_basis">polygb1/<br/>groebner_basis</a>
       </td>
       <td>The constructor for a Groebner basis (reduced, minimal). The first is a list of variables, the second argument is an ordering, the third is the Groebner Basis itself (with respect to the ordering) that should be represented as a polynomial expression.</td>
    </tr>
@@ -3211,7 +3271,7 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polygb.html#groebnered">polygb/<br/>groebnered</a>
+         <a href="../cd/polygb1.html#groebnered">polygb1/<br/>groebnered</a>
       </td>
       <td>The constructor for a Groebner basis (reduced, minimal). The first argument is an ordering, the second is the Groebner Basis itself (with respect to the ordering) that should be represented as a DMPL.</td>
    </tr>
@@ -3355,6 +3415,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgsym1.html#Hermitian">linalgsym1/<br/>Hermitian</a>
+      </td>
+      <td>This symbol represents a Hermitian matrix, it takes one argument. The argument should be a vector of vectors of values which determine the upper triangle of the matrix. The lower triangle of the matrix is specified by the following relation: M^* = transpose(M), were M^* denotes the matrix consisting of all the complex conjugates of M.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/SI_NamedDerivedUnits1.html#hertz">SI_NamedDerivedUnits1/<br/>hertz</a>
       </td>
       <td>This symbol represents an SI unit of frequency. It has the short symbol form, "Hz".</td>
@@ -3463,6 +3529,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg4mat.html#identity">linalg4mat/<br/>identity</a>
+      </td>
+      <td>This symbol denotes a unary function which is used to construct the (nxn) identity matrix where n is the single argument. The argument n must be a natural number.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg5.html#identity">linalg5/<br/>identity</a>
       </td>
       <td>This symbol denotes a unary function which is used to construct an (nxn) identity matrix where n is the single positive integral argument.</td>
@@ -3514,6 +3586,12 @@
          <a href="../cd/list2.html#in">list2/<br/>in</a>
       </td>
       <td>This symbol has two arguments, an element and a list. It is used to denote that the element is in the given list.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list3.html#in">list3/<br/>in</a>
+      </td>
+      <td>This symbol represents a boolean function with two arguments, an element and a list. It is used to denote that the element is in the given list.</td>
    </tr>
    <tr>
       <td>
@@ -3967,6 +4045,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgeig1.html#is_eigenvalue">linalgeig1/<br/>is_eigenvalue</a>
+      </td>
+      <td>This symbol represents a Boolean binary function, whose first argument should be a square matrix A over a ring R and whose second argument should be an element of the ring R. Here, the matrix A acts on (row) vectors from the right and the scalar lambda is written to the left of the vector v. When applied to A and lambda, it means that there is an eigenvector vector with eigenvalue lambda.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgeig1.html#is_eigenvector">linalgeig1/<br/>is_eigenvector</a>
+      </td>
+      <td>This symbol represents a Boolean binary function, whose first argument should be a square matrix A over a ring R and whose second argument should be a vector v of size rowcount(A) over the ring R. When applied to A and v, it means that v is a left eigenvector of A.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/permutation1.html#is_endomap">permutation1/<br/>is_endomap</a>
       </td>
       <td>This symbol is an n-ary function. Its arguments should be positive integers. When applied to arguments a_1,...,a_n, the resulting value is true if a_i is at most n for all i, otherwise it is false.</td>
@@ -4411,6 +4501,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgrank1.html#kernel_matrix">linalgrank1/<br/>kernel_matrix</a>
+      </td>
+      <td>This symbol represents a unary function whose argument should be a matrix. When applied to a matrix A, it represents a matrix whose rows are a basis of the kernel of A acting on the right.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_binaryprefix1.html#kibi">units_binaryprefix1/<br/>kibi</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $2^10$. The full technical name is kilobinary.</td>
@@ -4510,6 +4606,12 @@
          <a href="../cd/poly.html#lcm">poly/<br/>lcm</a>
       </td>
       <td>The least common multiple of its polynomial arguments. This is unique up to units, but the choice must be compatible with that made for gcd: see the CMP/FMP.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/polynomial3.html#lcm">polynomial3/<br/>lcm</a>
+      </td>
+      <td>The least common multiple of its polynomial arguments. This is unique up to units, but the choice must be compatible with that made for gcd, so that the product of the gcd and the lcm equals the product of all arguments.</td>
    </tr>
    <tr>
       <td>
@@ -4663,9 +4765,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#length">dimensions1/<br/>length</a>
+         <a href="../cd/list3.html#length">list3/<br/>length</a>
       </td>
-      <td>This symbol represents the length physical dimension.</td>
+      <td>This symbol represents a function whose argument should be a list. It returns the length of its argument.</td>
    </tr>
    <tr>
       <td>
@@ -4789,6 +4891,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/list1.html#list">list1/<br/>list</a>
+      </td>
+      <td>This symbol denotes the list construct which is an n-ary function. The list entries must be given explicitly.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/sts2.html#list">sts2/<br/>list</a>
       </td>
       <td>A constructor for the type of a homogeneous list</td>
@@ -4796,6 +4904,12 @@
    <tr>
       <td>
          <a href="../cd/list3.html#list_of_lengthn">list3/<br/>list_of_lengthn</a>
+      </td>
+      <td>This symbol represents a function with two arguments, the first of which is a natural number and the second of which is a list. The first argument is the length of the list.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list4.html#list_of_lengthn">list4/<br/>list_of_lengthn</a>
       </td>
       <td>This symbol represents a function with two arguments, the first of which is a natural number and the second of which is a list. The first argument is the length of the list.</td>
    </tr>
@@ -4813,6 +4927,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/list3.html#list_selector">list3/<br/>list_selector</a>
+      </td>
+      <td>This symbol takes a positive integer n and a list, and represents the n-th element of that list.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg7.html#list_to_matrix">linalg7/<br/>list_to_matrix</a>
       </td>
       <td>This symbol denotes a binary function. Its first argument must be a ring R, its second argument must be list L of lists of equal lengths whose entries belong to the ring R, up to ring1.expression. When applied to R and L it represents the matrix whose i,j entry consists of the j-th entry from the list L[i]. In particular, the matrix has length(L) rows and length(L[1]) columns.</td>
@@ -4822,6 +4942,12 @@
          <a href="../cd/polyd3.html#list_to_poly_d">polyd3/<br/>list_to_poly_d</a>
       </td>
       <td>This symbol is a function with two arguments. The first argument is a ring R and the second argument is a list L. The entries of L are elements of R or can be cast canconically onto elements of R. When applied to R and L, the symbol denotes the distributed (univariate) polynomial over R with terms (L[i-1],i) for i running over the indices of L (i=1, ..., length(L)).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg5.html#list_to_vector">linalg5/<br/>list_to_vector</a>
+      </td>
+      <td>This symbol denotes a binary function. Its first argument must be a ring R, its second argument must be list L with entries belonging to the ring R, up to ring1.expression. When applied to R and L it represents the vector of the same length as the list L whose i-th coordinate is L[i] (or ring1.expression(L[i])).</td>
    </tr>
    <tr>
       <td>
@@ -4893,7 +5019,7 @@
       <td>
          <a href="../cd/prog1.html#local_var">prog1/<br/>local_var</a>
       </td>
-      <td>This symbol can be used to declare local variables.</td>
+      <td>This symbol, which can have an aribtrary positive number of arguments which must all be variables, can be used to declare local variables. represents</td>
    </tr>
    <tr>
       <td>
@@ -4934,6 +5060,18 @@
    <tr>
       <td>
          <a href="../cd/linalg5.html#lower-triangular">linalg5/<br/>lower-triangular</a>
+      </td>
+      <td>This symbol represents a lower-triangular matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgspec2.html#lower_Hessenberg">linalgspec2/<br/>lower_Hessenberg</a>
+      </td>
+      <td>This symbol represents a lower_Hessenberg matrix, it takes one argument, the argument is a vector of vectors representing the non-zero elements. The first element of the argument specifies the value of the first super-diagonal, the subsequent elements specify the value of the diagonal and subsequent subdiagonals, all other elements are zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgspec1.html#lower_triangular">linalgspec1/<br/>lower_triangular</a>
       </td>
       <td>This symbol represents a lower-triangular matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix.</td>
    </tr>
@@ -5019,6 +5157,12 @@
       <td>
          <a href="../cd/list1.html#map">list1/<br/>map</a>
       </td>
+      <td>This symbol represents a mapping function which may be used to construct lists; it takes as arguments a function from X to Y and a list over X in that order. The value that is returned is a list of values in Y. The argument list may be a set or an integer_interval.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list1.html#map">list1/<br/>map</a>
+      </td>
       <td>This symbol represents a mapping function which may be used to construct lists, it takes as arguments a function from X to Y and a list over X in that order. The value that is returned is a list of values in Y. The argument list may be a set or an integer_interval.</td>
    </tr>
    <tr>
@@ -5065,6 +5209,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/fns4.html#maps_to">fns4/<br/>maps_to</a>
+      </td>
+      <td>This symbol denotes a binding constructor. The body of the binder should be a list [A1,A2] of length 2. It is used to represent a function assignment A1 -&gt; A2, where the bound variables occur in A1 and possibly in A2. The expressions A1, A2 should represent objects uniquely determined by given values of the bound variables, wihtin the range of definition of the domain.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/lc.html#mapsto">lc/<br/>mapsto</a>
       </td>
       <td>The type constructor of non-dependant function space. The first n-1 children denote the types of the arguments, the last denotes the return type. Contrary to sts:mapsto, arguments cannot be variables but have to be OpenMath objects that map to ground OpenMath terms (they contain no variables).</td>
@@ -5074,12 +5224,6 @@
          <a href="../cd/sts.html#mapsto">sts/<br/>mapsto</a>
       </td>
       <td>This symbol represents the construction of a function type. The first n-1 children denote the types of the arguments, the last denotes the return type.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#mass">dimensions1/<br/>mass</a>
-      </td>
-      <td>This symbol represents the mass physical dimension.</td>
    </tr>
    <tr>
       <td>
@@ -5104,6 +5248,12 @@
          <a href="../cd/linalg2.html#matrix">linalg2/<br/>matrix</a>
       </td>
       <td>This symbol is an n-ary matrix constructor which requires matrixrow's as arguments. It is used to represent matrices.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg2col.html#matrix">linalg2col/<br/>matrix</a>
+      </td>
+      <td>This symbol is an n-ary matrix constructor which requires matrixcolumn's as arguments. It is used to represent matrices.</td>
    </tr>
    <tr>
       <td>
@@ -5149,9 +5299,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg5.html#matrix_to_list">linalg5/<br/>matrix_to_list</a>
+      </td>
+      <td>This symbol denotes a unary function. Its argument must be a matrix A. When applied to A it represents the list L whose i-th entry (for i=1,...rowcount(A)) is the lists L[i] whose j-th entry (for j=1,...columncount(A)) is the element A[i,j].</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/mathmltypes.html#matrix_type">mathmltypes/<br/>matrix_type</a>
       </td>
       <td>A symbol to be used as the argument of the type symbol to convey the type for a matrix (n tuple of rows, where each row is an m tuple for some m, it should be noted that each row must be the same length).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg2col.html#matrixcolumn">linalg2col/<br/>matrixcolumn</a>
+      </td>
+      <td>This symbol is an n-ary constructor used to represent columns of matrices. Its arguments should be members of a ring.</td>
    </tr>
    <tr>
       <td>
@@ -5305,6 +5467,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgpoly1.html#minimum_poly">linalgpoly1/<br/>minimum_poly</a>
+      </td>
+      <td>This symbol represents a binary function. This first argument should be a square matrix A defined over a field F, the second argument a variable X. When applied to A and X, it represents the minimum polynomial of A in the variable X over the field F. (The output should be semantically equivalent to an object obtained by the poly_ring_d_named constructor of the CD polyd1.)</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/arith1.html#minus">arith1/<br/>minus</a>
       </td>
       <td>The symbol representing a binary minus function. This is equivalent to adding the additive inverse.</td>
@@ -5410,12 +5578,6 @@
          <a href="../cd/SI_DerivedQuantities1.html#moment-of-force">SI_DerivedQuantities1/<br/>moment-of-force</a>
       </td>
       <td>This symbol represents the physical quantity of force.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#momentum">dimensions1/<br/>momentum</a>
-      </td>
-      <td>This symbol represents the momentum physical dimension, it is mass times velocity.</td>
    </tr>
    <tr>
       <td>
@@ -5659,6 +5821,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/list2.html#nil">list2/<br/>nil</a>
+      </td>
+      <td>The empty list</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/scscp2.html#no_such_transient_cd">scscp2/<br/>no_such_transient_cd</a>
       </td>
       <td>Used for errors that arise when the client asks for a transient cd that the server cannot handle.</td>
@@ -5731,7 +5899,19 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgspars1.html#nonZeroRowSparseMatrix">linalgspars1/<br/>nonZeroRowSparseMatrix</a>
+      </td>
+      <td>This symbol may be used for representing matrices, it is designed for efficiently representing sparse matrices where every row has at least one non-zero entry. This is an n+1 ary symbol, where n is the number of rows in the matrix. The first argument must be the number of columns in the matrix, every following argument of the symbol must be an application of a sparseMatrixRow symbol which has arguments which are sparseMatrixElement2, one sparseMatrixElement2 element for each row in the matrix, in the order in which they occur in the matrix. Any non-specified entry is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg6.html#nonZeroRowSparseMatrix01">linalg6/<br/>nonZeroRowSparseMatrix01</a>
+      </td>
+      <td>This symbol may be used to represent matrices which have no zero rows, and for which every row is in Z_2 efficiently. The first argument is the number of columns in the matrix, the following arguments are sparseMatrixRow elements where the arguments are sparseMatrixElement4 elements. Any non-specified entry is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgspars1.html#nonZeroRowSparseMatrix01">linalgspars1/<br/>nonZeroRowSparseMatrix01</a>
       </td>
       <td>This symbol may be used to represent matrices which have no zero rows, and for which every row is in Z_2 efficiently. The first argument is the number of columns in the matrix, the following arguments are sparseMatrixRow elements where the arguments are sparseMatrixElement4 elements. Any non-specified entry is implicitly zero.</td>
    </tr>
@@ -6799,12 +6979,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#pressure">dimensions1/<br/>pressure</a>
-      </td>
-      <td>This symbol represents the pressure physical dimension.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/SI_DerivedQuantities1.html#pressure">SI_DerivedQuantities1/<br/>pressure</a>
       </td>
       <td>This symbol represents the physical quantity of pressure. A variable representing an arbitrary quantity of pressure is commonly represented with the italic, lower case letter, "p".</td>
@@ -7057,6 +7231,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgrank1.html#rank">linalgrank1/<br/>rank</a>
+      </td>
+      <td>This symbol represents the function which takes one matrix argument and returns the number of linearly independent rows (or columns) of that matrix.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/polyd1.html#rank">polyd1/<br/>rank</a>
       </td>
       <td>This is a unary function, whose argument can be a DMP, a poly_ring_d, or a poly_ring_d_named. When applied to its argument, it represents the number of variables of the polynomial ring involved.</td>
@@ -7105,7 +7285,7 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polygb.html#reduce">polygb/<br/>reduce</a>
+         <a href="../cd/polygb1.html#reduce">polygb1/<br/>reduce</a>
       </td>
       <td>The reduction of a polynomial with respect to a list P of polynomials. First argument is a polynomial expression p, the second argument is the list P of polynomials, the third argument is a list of variables, the fourth argument is a monomial reduction ordering. A program implementing this operation should return a polynomial which represents a polynomial reduced from p with respect to P. This means that p is expressible as the sum of the returned polynomial and a linear combination of the polynomials from P with coefficients being polynomials in the variables given in the third argument, and that no monomial of the returned polynomial is divisible by the leading monomial of an element from P.</td>
    </tr>
@@ -7159,9 +7339,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#resistance">dimensions1/<br/>resistance</a>
+         <a href="../cd/list4.html#remove">list4/<br/>remove</a>
       </td>
-      <td>This symbol represents the resistance physical dimension, it is the resistance that an electrical circuit has to flow of charge.</td>
+      <td>This symbol represents a function with two arguments, both lists. When applied to two lists, it represents a list made up of all the elements of the first list with those elements removed whose entries occur in the second list.</td>
    </tr>
    <tr>
       <td>
@@ -7201,6 +7381,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/list2.html#rest">list2/<br/>rest</a>
+      </td>
+      <td>This symbol represents a function which returns a list made up of all the elements except the first of its argument, which should be a list.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/poly.html#resultant">poly/<br/>resultant</a>
       </td>
       <td>Function taking three arguments, it represents the resultant of two polynomials, which are the first two arguments, with respect to the given variable which is the third argument.</td>
@@ -7221,7 +7407,7 @@
       <td>
          <a href="../cd/prog1.html#return">prog1/<br/>return</a>
       </td>
-      <td>This symbol can be used to return values from fuctions.</td>
+      <td>This symbol, which can have an aribtrary positive number of arguments, can be used to return values from functions.</td>
    </tr>
    <tr>
       <td>
@@ -7232,6 +7418,12 @@
    <tr>
       <td>
          <a href="../cd/list2.html#reverse">list2/<br/>reverse</a>
+      </td>
+      <td>The reverse of a list</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list4.html#reverse">list4/<br/>reverse</a>
       </td>
       <td>The reverse of a list</td>
    </tr>
@@ -7453,9 +7645,21 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg3.html#rowcount">linalg3/<br/>rowcount</a>
+      </td>
+      <td>This symbol represents the function which takes one matrix argument and returns the number of rows in that matrix.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg4.html#rowcount">linalg4/<br/>rowcount</a>
       </td>
       <td>This symbol represents the function which takes one matrix argument and returns the number of rows in that matrix.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg4mat.html#scalar">linalg4mat/<br/>scalar</a>
+      </td>
+      <td>This symbol represents a square matrix which is a scalar constant times the identity matrix. It should take two arguments, the first and second specify the number of rows and columns in the matrix, respectively, and the third specifies the scalar multiplier.</td>
    </tr>
    <tr>
       <td>
@@ -7552,6 +7756,12 @@
          <a href="../cd/ThreeDgeo1.html#segment">ThreeDgeo1/<br/>segment</a>
       </td>
       <td>The symbol is used to indicate a segment of a line in 3-dimensional Euclidean geometry by a variable. The segment is contained in the affine part of the line. The symbol takes the variable as the first argument and the endpoints as second and third arguments.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list3.html#select">list3/<br/>select</a>
+      </td>
+      <td>This symbol takes two lists as arguments, L and M say. The second argument is a list containing only entries from [1..n], where n is the length of L. The symbol represents the function which returns a list whose length is equal to the length of M, and having at position k the value of L at position M_k.</td>
    </tr>
    <tr>
       <td>
@@ -7723,6 +7933,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg3.html#size">linalg3/<br/>size</a>
+      </td>
+      <td>This symbol represents the function which takes one vector argument and returns the length of that vector.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg4.html#size">linalg4/<br/>size</a>
       </td>
       <td>This symbol represents the function which takes one vector argument and returns the length of that vector.</td>
@@ -7748,6 +7964,12 @@
    <tr>
       <td>
          <a href="../cd/linalg5.html#skew-symmetric">linalg5/<br/>skew-symmetric</a>
+      </td>
+      <td>This symbol represents a skew-symmetric matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix. For j&gt;i the ij'th element of the matrix is the (j-i+1)'th element of the i'th element of the argument. This determines the elements above the diagonal of the matrix, the elements below the diagonal of the matrix must conform to the rule M = - transpose M. This rule implies that the elements on the diagonal must be equal to 0, therefore we do not include these in the argument.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgsym1.html#skew_symmetric">linalgsym1/<br/>skew_symmetric</a>
       </td>
       <td>This symbol represents a skew-symmetric matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix. For j&gt;i the ij'th element of the matrix is the (j-i+1)'th element of the i'th element of the argument. This determines the elements above the diagonal of the matrix, the elements below the diagonal of the matrix must conform to the rule M = - transpose M. This rule implies that the elements on the diagonal must be equal to 0, therefore we do not include these in the argument.</td>
    </tr>
@@ -7795,6 +8017,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg4mat.html#sparse">linalg4mat/<br/>sparse</a>
+      </td>
+      <td>The sparse symbol is a constructor for sparse matrices. It is (n+1)-ary, where the first argument is the rowcount (row dimension) of the matrix, the second argument is the columncount (column dimension) of the matrix and every following argument specifies a possibly non-zero element in the following way. The argument is a list which should have length three. The first element in the list is the row index, the second element is the column index (one based), whilst the third element in the list is the value. Every other element of the matrix is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg4vec.html#sparse">linalg4vec/<br/>sparse</a>
+      </td>
+      <td>The sparse symbol is a constructor for sparse vectors. It is (n+1)-ary, where the first argument is the length (dimension) of the vector, and every following argument specifies a possibly non-zero element in the following way. The argument is a list which should have length two. The first element in the list is the position (one based), whilst the second element in the list is the value. Every other element of the vector is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg7.html#sparse">linalg7/<br/>sparse</a>
       </td>
       <td>The sparse symbol is a constructor for sparse vectors, it is (n+1)-ary, where the first parameter is the length (dimension) of the vector, and every following parameter specifies a possibly non-zero element in the following way. The parameter is a list which should have length two. The first element in the list is the position (one based), whilst the second element in the list is the value. Every other element of the vector is implicitly zero.</td>
@@ -7807,7 +8041,19 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgspars1.html#sparseMatrix">linalgspars1/<br/>sparseMatrix</a>
+      </td>
+      <td>This symbol may be used for representing matrices, it is designed for efficiently representing sparse matrices. The symbol is n+2 ary, where the first argument is the number of rows in the matrix, the second argument is the number of columns in the matrix and n is the number of non-zero entries. The following arguments must be applications of the symbol sparseMatrixElement1. Any non-specified entry is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg6.html#sparseMatrix01">linalg6/<br/>sparseMatrix01</a>
+      </td>
+      <td>This symbol may be used for representing matrices which have all entries in the modular field Z_2, i.e. 1 or 0. It allows efficient representation of sparse matrices, more so than the 'sparseMatrix' symbol, since the value of the entries with values of 1 need not be stored, only their positions. The symbol is n+2 ary, where the first argument is the number of rows in the matrix, the second argument is the number of columns in the matrix. The following arguments are sparseMatrixElement3 elements described in this content dictionary. Any non-specified entry is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgspars1.html#sparseMatrix01">linalgspars1/<br/>sparseMatrix01</a>
       </td>
       <td>This symbol may be used for representing matrices which have all entries in the modular field Z_2, i.e. 1 or 0. It allows efficient representation of sparse matrices, more so than the 'sparseMatrix' symbol, since the value of the entries with values of 1 need not be stored, only their positions. The symbol is n+2 ary, where the first argument is the number of rows in the matrix, the second argument is the number of columns in the matrix. The following arguments are sparseMatrixElement3 elements described in this content dictionary. Any non-specified entry is implicitly zero.</td>
    </tr>
@@ -7819,7 +8065,19 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgspars1.html#sparseMatrixElement1">linalgspars1/<br/>sparseMatrixElement1</a>
+      </td>
+      <td>This symbol may be used to represent a non-zero element of a sparse matrix in the following way. It takes three arguments, the first of which represents the column index, the second of which represents the row index and the third represents the value. The indexing is one based; that is an element in the top left position of the matrix will have first and second indices of 1,1 respectively. Applications of this symbol will be expected as arguments of the symbol sparseMatrix in this content dictionary.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg6.html#sparseMatrixElement2">linalg6/<br/>sparseMatrixElement2</a>
+      </td>
+      <td>This symbol may be used to represent a non-zero element of a sparse matrix in the following way. It takes two arguments, the first of which represents the column index, the second of which represents the value of the element. The row index is deduced from the index of the sparseMatrixRow symbols of which applications of this symbol are arguments. Applications of this symbol occur as arguments of arguments of the symbol nonZeroRowSparseMatrix only.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgspars1.html#sparseMatrixElement2">linalgspars1/<br/>sparseMatrixElement2</a>
       </td>
       <td>This symbol may be used to represent a non-zero element of a sparse matrix in the following way. It takes two arguments, the first of which represents the column index, the second of which represents the value of the element. The row index is deduced from the index of the sparseMatrixRow symbols of which applications of this symbol are arguments. Applications of this symbol occur as arguments of arguments of the symbol nonZeroRowSparseMatrix only.</td>
    </tr>
@@ -7831,7 +8089,19 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgspars1.html#sparseMatrixElement3">linalgspars1/<br/>sparseMatrixElement3</a>
+      </td>
+      <td>This symbol may be used to represent a non-zero element of a sparse matrix over Z_2 in the following way. The first and second arguments are the column and row indices of the non-zero elements respectively i.e. elements with value 1. Applications of this symbol occur as arguments of arguments of the symbol sparseMatrix01 only.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg6.html#sparseMatrixElement4">linalg6/<br/>sparseMatrixElement4</a>
+      </td>
+      <td>This symbol may be used to represent a non-zero element of a sparse matrix over Z_2 in the following way. The single argument is the column index of non-zero elements of the matrix, i.e. elements with value 1. Applications of this symbol occur as arguments of arguments of the symbol nonZeroRowSparseMatrix01 only.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgspars1.html#sparseMatrixElement4">linalgspars1/<br/>sparseMatrixElement4</a>
       </td>
       <td>This symbol may be used to represent a non-zero element of a sparse matrix over Z_2 in the following way. The single argument is the column index of non-zero elements of the matrix, i.e. elements with value 1. Applications of this symbol occur as arguments of arguments of the symbol nonZeroRowSparseMatrix01 only.</td>
    </tr>
@@ -7843,15 +8113,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/fns3.html#specification">fns3/<br/>specification</a>
+         <a href="../cd/linalgspars1.html#sparseMatrixRow">linalgspars1/<br/>sparseMatrixRow</a>
       </td>
-      <td>This symbol denotes the specification of a function. It is a unary function. When aplied to its argument, which should be a function applied to three arguments, it returns the third argument of the function, that is, the function specification.</td>
+      <td>This symbol may be used to represent rows of sparse matrices, it is a fairly general symbol in that it may be used to represent rows of any type of sparse matrix from this CD. However the particular type of sparse matrix must have as elements symbols of the corresponding type, as described in that symbols description.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#speed">dimensions1/<br/>speed</a>
+         <a href="../cd/fns3.html#specification">fns3/<br/>specification</a>
       </td>
-      <td>This symbol represents the speed physical dimension. It is the size of the derivative of distance with respect to time.</td>
+      <td>This symbol denotes the specification of a function. It is a unary function. When aplied to its argument, which should be a function applied to three arguments, it returns the third argument of the function, that is, the function specification.</td>
    </tr>
    <tr>
       <td>
@@ -8035,6 +8305,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgpoly1.html#substitute">linalgpoly1/<br/>substitute</a>
+      </td>
+      <td>This symbol represents a binary function. This first argument should be a polynomial f in a single variable X, the second should be a square matrix A defined over a field F. When applied to f and A, it represents the matrix obtained by replacing X by A and the constant term by the corresponding scalar matrix.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/field1.html#subtraction">field1/<br/>subtraction</a>
       </td>
       <td>This symbols represents a unary function, whose argument should be a field. It returns the binary operation of subtraction on the field.</td>
@@ -8050,6 +8326,12 @@
          <a href="../cd/indnat.html#succ">indnat/<br/>succ</a>
       </td>
       <td>Successor function on the natural number. Constructor for the inductively defined natural numbers. Takes argument a a natural number and returns a natural number.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/list1.html#suchthat">list1/<br/>suchthat</a>
+      </td>
+      <td>This symbol represents the suchthat function which may be used to construct lists; it takes two arguments. The first argument should be a set X which contains the elements of the list, the second argument should be a predicate, that is a function from the set X to the booleans which describes if an element is to be in the list returned.</td>
    </tr>
    <tr>
       <td>
@@ -8120,6 +8402,12 @@
    <tr>
       <td>
          <a href="../cd/linalg5.html#symmetric">linalg5/<br/>symmetric</a>
+      </td>
+      <td>This symbol represents a symmetric matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix. For j&gt;=i the ij'th element of the matrix is the (j-i+1)'th element of the i'th element of the argument. This determines the upper triangle of the matrix, the lower triangle is specified by the rule M = transpose M.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgsym1.html#symmetric">linalgsym1/<br/>symmetric</a>
       </td>
       <td>This symbol represents a symmetric matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix. For j&gt;=i the ij'th element of the matrix is the (j-i+1)'th element of the i'th element of the argument. This determines the upper triangle of the matrix, the lower triangle is specified by the rule M = transpose M.</td>
    </tr>
@@ -8197,12 +8485,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#temperature">dimensions1/<br/>temperature</a>
-      </td>
-      <td>This symbol represents the temperature physical dimension.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/SI_BaseQuantities.html#temperature">SI_BaseQuantities/<br/>temperature</a>
       </td>
       <td>This symbol represents the SI base quantity of thermodynamic temperature. It has the short symbol form, "\Theta;".</td>
@@ -8254,12 +8536,6 @@
          <a href="../cd/asymp1.html#theta">asymp1/<br/>theta</a>
       </td>
       <td>The theta symbol represents a unary function which constructs a set of certain functions of type reals to positive reals. The theta symbol represents a set of functions which all have the same 'rate of growth'. Formally we say that f(x) = theta(g(x)) if and only if there are constants c_1 not= 0 and c_2 not= 0 and x_0 such that for all x &gt; x_0 it is true that c_1*g(x) &lt; f(x) &lt; c_2*g(x).</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#time">dimensions1/<br/>time</a>
-      </td>
-      <td>This symbol represents the time physical dimension.</td>
    </tr>
    <tr>
       <td>
@@ -8348,6 +8624,12 @@
    <tr>
       <td>
          <a href="../cd/linalg5.html#tridiagonal">linalg5/<br/>tridiagonal</a>
+      </td>
+      <td>This symbol represents a tridiagonal matrix, it takes one argument which should be a vector of vectors which should have three elements. These should be vectors representing the sub-diagonal, the diagonal and the super-diagonal in that order.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgspec1.html#tridiagonal">linalgspec1/<br/>tridiagonal</a>
       </td>
       <td>This symbol represents a tridiagonal matrix, it takes one argument which should be a vector of vectors which should have three elements. These should be vectors representing the sub-diagonal, the diagonal and the super-diagonal in that order.</td>
    </tr>
@@ -8551,6 +8833,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalgspec2.html#upper_Hessenberg">linalgspec2/<br/>upper_Hessenberg</a>
+      </td>
+      <td>This symbol represents an upper_Hessenberg matrix, it takes one argument, the argument is a vector of vectors representing the non-zero elements. The first element of the argument specifies the value of the first subdiagonal, the subsequent elements specify the value of the diagonal and subsequent super-diagonals, all other elements are zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalgspec1.html#upper_triangular">linalgspec1/<br/>upper_triangular</a>
+      </td>
+      <td>This symbol represents an upper-triangular matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/rdf.html#value">rdf/<br/>value</a>
       </td>
       <td>This symbol represents a function for accessing the value of an RDF property. It takes two arguments, a string denoting the property and an object denoting the RDF resource whose property value should be retrieved.</td>
@@ -8593,6 +8887,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg2col.html#vector">linalg2col/<br/>vector</a>
+      </td>
+      <td>This symbol represents an n-ary function used to construct (or describe) vectors. Vectors in this CD are considered to be column vectors, and must therefore be transposed to be considered as row vectors.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg3.html#vector">linalg3/<br/>vector</a>
       </td>
       <td>This symbol represents an n-ary function used to construct (or describe) vectors. Vectors in this CD are considered to be column vectors, and must therefore be transposed to be considered as row vectors.</td>
@@ -8629,6 +8929,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/linalg5.html#vector_to_list">linalg5/<br/>vector_to_list</a>
+      </td>
+      <td>This symbol denotes a unary function. Its argument must be a vector v. When applied to v it represents the list whose entries are the coordinates of v (with the same indexing).</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/mathmltypes.html#vector_type">mathmltypes/<br/>vector_type</a>
       </td>
       <td>A symbol to be used as the argument of the type symbol to convey the type of a (column) vector, an n-tuple of entries.</td>
@@ -8638,12 +8944,6 @@
          <a href="../cd/linalg1.html#vectorproduct">linalg1/<br/>vectorproduct</a>
       </td>
       <td>This symbol represents the vector product function. It takes two three dimensional vector arguments and returns a three dimensional vector. It is defined as follows: if we write a as [a_1,a_2,a_3] and b as [b_1,b_2,b_3] then the vector product denoted a x b = [a_2b_3 - a_3b_2 , a_3b_1 - a_1b_3 , a_1b_2 - a_2b_1]. Note that the vector product is often referred to as the cross product.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#velocity">dimensions1/<br/>velocity</a>
-      </td>
-      <td>This symbol represents the velocity physical dimension. It is the derivative of distance with respect to time.</td>
    </tr>
    <tr>
       <td>
@@ -8683,21 +8983,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/dimensions1.html#voltage">dimensions1/<br/>voltage</a>
-      </td>
-      <td>This symbol represents the voltage physical dimension.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/SI_DerivedQuantities1.html#voltage">SI_DerivedQuantities1/<br/>voltage</a>
       </td>
       <td>This symbol represents the physical quantity of voltage or electric tension. A variable representing an arbitrary quantity of voltage is commonly represented with the italic, upper case letter, "V".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/dimensions1.html#volume">dimensions1/<br/>volume</a>
-      </td>
-      <td>This symbol represents the volume physical dimension.</td>
    </tr>
    <tr>
       <td>
@@ -8775,7 +9063,7 @@
       <td>
          <a href="../cd/prog1.html#while">prog1/<br/>while</a>
       </td>
-      <td>The symbol the while loop. The syntax is while(conditional_block, block1), where conditional_block is the block that determines when to stop the while loop and block1 is the body of the while loop.</td>
+      <td>This symbol represents the while loop. The syntax is while(conditional_block, block1), where conditional_block is the block that determines when to stop the while loop and block1 is the body of the while loop.</td>
    </tr>
    <tr>
       <td>
@@ -8848,6 +9136,18 @@
          <a href="../cd/indnat.html#zero">indnat/<br/>zero</a>
       </td>
       <td>The natural number 0, also constant base function for the inductive definition of the type of natural numbers</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg4mat.html#zero">linalg4mat/<br/>zero</a>
+      </td>
+      <td>This symbol denotes a function with two arguments, m and n, which should be natural numbers. When applied to m and n, it represents the m x n zero matrix.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/linalg4vec.html#zero">linalg4vec/<br/>zero</a>
+      </td>
+      <td>This symbol represents a function with one argument, which should be a natural number n. When applied to n, it represents the zero vector of size n (in the terminology of linalg3; dimension n in some terminology).</td>
    </tr>
    <tr>
       <td>

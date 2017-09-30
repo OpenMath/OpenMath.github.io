@@ -106,11 +106,11 @@
                <dt>
                   <span class="dt">Date:</span>
                </dt>
-               <dd> 2004-03-02 </dd>
+               <dd> 2004-11-02 </dd>
                <dt>
                   <span class="dt">Version:</span>
                </dt>
-               <dd> 1 
+               <dd> 3 
     (Revision 1)
   </dd>
                <dt>
@@ -125,7 +125,7 @@
                   <span class="dt">Uses CD:</span>
                </dt>
                <dd>
-                  <a href="quant1.html">quant1</a>, <a href="relation1.html">relation1</a>, <a href="list1.html">list1</a>
+                  <a href="arith1.html">arith1</a>, <a href="list1.html">list1</a>, <a href="list2.html">list2</a>, <a href="logic1.html">logic1</a>, <a href="quant1.html">quant1</a>, <a href="relation1.html">relation1</a>
                </dd>
             </dl>
             <hr/>
@@ -140,8 +140,9 @@
 
 
 
-            <p>
-    Several basic list functions related to length are given in this CD.
+            <p> 
+Several standard operations on lists, such as length and append, are given in
+this CD.
 </p>
 
 
@@ -154,6 +155,12 @@ Initiated by Arjeh M. Cohen 2004-03-02
             <h2>
                <a name="length"> length </a>
             </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
             <dl>
                <dt>
                   <span class="dt">Description:</span>
@@ -174,9 +181,9 @@ its argument.
                <dd>
 The length of the list [1,2,3] is 3.
 <div>
-                     <button id="id.om.16xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.16xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.16xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+                     <button id="id.om.20xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.20xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.20xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
        &lt;OMA&gt;&lt;OMS cd="list3" name="length"/&gt;
             &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
@@ -190,9 +197,9 @@ The length of the list [1,2,3] is 3.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.16cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.16cmml')">Strict Content MathML</button>
-                     <pre id="id.om.16cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.20cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.20cmml')">Strict Content MathML</button>
+                     <pre id="id.om.20cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="list3"&gt;length&lt;/csymbol&gt;
@@ -206,9 +213,9 @@ The length of the list [1,2,3] is 3.
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.16prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.16pref')">Prefix</button>
-                  <div id="id.om.16pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.20prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.20pref')">Prefix</button>
+                  <div id="id.om.20pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/list3.html#length">length</a>
   (<a href="../../../cd/list1.html#list">list</a>
@@ -218,16 +225,16 @@ The length of the list [1,2,3] is 3.
 
 </div>
                   <div>
-                     <button id="id.om.16popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.16pop')">Popcorn</button>
-                     <div id="id.om.16pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.20popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.20pop')">Popcorn</button>
+                     <div id="id.om.20pop" style="display:none; margin-top: 0.5em">
   list3.length([1 , 2 , 3]) = 3
 </div>
                   </div>
                   <div>
-                     <button id="id.om.16mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.16mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.16mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.20mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.20mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.20mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -306,9 +313,9 @@ The first argument is the length of the list.
                <dd>
 A list L of length 3:
 <div>
-                     <button id="id.om.31xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.31xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.31xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+                     <button id="id.om.35xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.35xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.35xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
   &lt;OMA&gt;&lt;OMS cd="list3" name="list_of_lengthn"/&gt;
        &lt;OMI&gt; 3 &lt;/OMI&gt;
        &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
@@ -318,9 +325,9 @@ A list L of length 3:
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.31cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.31cmml')">Strict Content MathML</button>
-                     <pre id="id.om.31cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.35cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.35cmml')">Strict Content MathML</button>
+                     <pre id="id.om.35cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="list3"&gt;list_of_lengthn&lt;/csymbol&gt;
   &lt;cn type="integer"&gt;3&lt;/cn&gt;
@@ -328,9 +335,9 @@ A list L of length 3:
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.31prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.31pref')">Prefix</button>
-                  <div id="id.om.31pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.35prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.35pref')">Prefix</button>
+                  <div id="id.om.35pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/list3.html#list_of_lengthn">list_of_lengthn</a>
   ( 3 , <a href="../../../cd/list1.html#list">list</a>
   ( <i>L</i>)
@@ -338,16 +345,16 @@ A list L of length 3:
 
 </div>
                   <div>
-                     <button id="id.om.31popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.31pop')">Popcorn</button>
-                     <div id="id.om.31pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.35popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.35pop')">Popcorn</button>
+                     <div id="id.om.35pop" style="display:none; margin-top: 0.5em">
   list3.list_of_lengthn(3, [$L])
 </div>
                   </div>
                   <div>
-                     <button id="id.om.31mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.31mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.31mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.35mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.35mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.35mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -424,9 +431,9 @@ the (n+1-i)-th entry of L.
                <dd>
 The second entry of the list [1,2,3] is 2.
 <div>
-                     <button id="id.om.42xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.42xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.42xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+                     <button id="id.om.46xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.46xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.46xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
        &lt;OMA&gt;&lt;OMS cd="list3" name="entry"/&gt;
             &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
@@ -441,9 +448,9 @@ The second entry of the list [1,2,3] is 2.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.42cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.42cmml')">Strict Content MathML</button>
-                     <pre id="id.om.42cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.46cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.46cmml')">Strict Content MathML</button>
+                     <pre id="id.om.46cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="list3"&gt;entry&lt;/csymbol&gt;
@@ -458,9 +465,9 @@ The second entry of the list [1,2,3] is 2.
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.42prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.42pref')">Prefix</button>
-                  <div id="id.om.42pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.46prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.46pref')">Prefix</button>
+                  <div id="id.om.46pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/list3.html#entry">entry</a>
   (<a href="../../../cd/list1.html#list">list</a>
@@ -470,16 +477,16 @@ The second entry of the list [1,2,3] is 2.
 
 </div>
                   <div>
-                     <button id="id.om.42popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.42pop')">Popcorn</button>
-                     <div id="id.om.42pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.46popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.46pop')">Popcorn</button>
+                     <div id="id.om.46pop" style="display:none; margin-top: 0.5em">
   list3.entry([1 , 2 , 3], 2) = 2
 </div>
                   </div>
                   <div>
-                     <button id="id.om.42mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.42mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.42mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.46mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.46mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.46mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -522,9 +529,9 @@ Specification of the second  element of the list [1,..,6]
 counted from the end.
 
 <div>
-                     <button id="id.om.55xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.55xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.55xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+                     <button id="id.om.59xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.59xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.59xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
        &lt;OMA&gt;&lt;OMS cd="list3" name="entry"/&gt;
             &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
@@ -538,9 +545,9 @@ counted from the end.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.55cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.55cmml')">Strict Content MathML</button>
-                     <pre id="id.om.55cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.59cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.59cmml')">Strict Content MathML</button>
+                     <pre id="id.om.59cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="list3"&gt;entry&lt;/csymbol&gt;
@@ -558,9 +565,9 @@ counted from the end.
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.55prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.55pref')">Prefix</button>
-                  <div id="id.om.55pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.59prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.59pref')">Prefix</button>
+                  <div id="id.om.59pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/list3.html#entry">entry</a>
   (<a href="../../../cd/list1.html#list">list</a>
@@ -570,16 +577,16 @@ counted from the end.
 
 </div>
                   <div>
-                     <button id="id.om.55popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.55pop')">Popcorn</button>
-                     <div id="id.om.55pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.59popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.59pop')">Popcorn</button>
+                     <div id="id.om.59pop" style="display:none; margin-top: 0.5em">
   list3.entry([1 , 2 , 3 , 4 , 5 , 6], -2) = 5
 </div>
                   </div>
                   <div>
-                     <button id="id.om.55mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.55mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.55mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.59mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.59mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.59mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -667,9 +674,9 @@ the elements of the first list which are not in the second.
 Specification of the list [1,..,6], apart from the first 3 elements.
 
 <div>
-                     <button id="id.om.74xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.74xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.74xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+                     <button id="id.om.78xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.78xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.78xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
   &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
        &lt;OMA&gt;&lt;OMS cd="list3" name="difference"/&gt;
             &lt;OMA&gt;&lt;OMS cd="list1" name="list"/&gt;
@@ -687,9 +694,9 @@ Specification of the list [1,..,6], apart from the first 3 elements.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.74cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.74cmml')">Strict Content MathML</button>
-                     <pre id="id.om.74cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.78cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.78cmml')">Strict Content MathML</button>
+                     <pre id="id.om.78cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="list3"&gt;difference&lt;/csymbol&gt;
@@ -715,9 +722,9 @@ Specification of the list [1,..,6], apart from the first 3 elements.
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.74prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.74pref')">Prefix</button>
-                  <div id="id.om.74pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.78prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.78pref')">Prefix</button>
+                  <div id="id.om.78pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/list3.html#difference">difference</a>
   (<a href="../../../cd/list1.html#list">list</a>
@@ -731,16 +738,16 @@ Specification of the list [1,..,6], apart from the first 3 elements.
 
 </div>
                   <div>
-                     <button id="id.om.74popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.74pop')">Popcorn</button>
-                     <div id="id.om.74pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.78popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.78pop')">Popcorn</button>
+                     <div id="id.om.78pop" style="display:none; margin-top: 0.5em">
   list3.difference([1 , 2 , 3 , 4 , 5 , 6], [1 , 2 , 3]) = [4 , 5 , 6]
 </div>
                   </div>
                   <div>
-                     <button id="id.om.74mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.74mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.74mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.78mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.78mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.78mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -845,9 +852,9 @@ M, and having at position k the  value of L at position M_k.
                <dd>
 
                   <div>
-                     <button id="id.om.101xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.101xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.101xml" style="display:none">
+                     <button id="id.om.105xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.105xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.105xml" style="display:none">
 
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
   &lt;OMA&gt;&lt;OMS name="eq" cd="relation1"/&gt;
@@ -869,9 +876,9 @@ M, and having at position k the  value of L at position M_k.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.101cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.101cmml')">Strict Content MathML</button>
-                     <pre id="id.om.101cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.105cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.105cmml')">Strict Content MathML</button>
+                     <pre id="id.om.105cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="list3"&gt;select&lt;/csymbol&gt;
@@ -899,9 +906,9 @@ M, and having at position k the  value of L at position M_k.
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.101prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.101pref')">Prefix</button>
-                  <div id="id.om.101pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.105prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.105pref')">Prefix</button>
+                  <div id="id.om.105pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/relation1.html#eq">eq</a>
   (<a href="../../../cd/list3.html#select">select</a>
   (<a href="../../../cd/list1.html#list">list</a>
@@ -915,16 +922,16 @@ M, and having at position k the  value of L at position M_k.
 
 </div>
                   <div>
-                     <button id="id.om.101popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.101pop')">Popcorn</button>
-                     <div id="id.om.101pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.105popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.105pop')">Popcorn</button>
+                     <div id="id.om.105pop" style="display:none; margin-top: 0.5em">
   list3.select([4 , 5 , 6 , 7 , 8 , 9], [3 , 5 , 2 , 2]) = [6 , 8 , 5 , 5]
 </div>
                   </div>
                   <div>
-                     <button id="id.om.101mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.101mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.101mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.105mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.105mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.105mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">

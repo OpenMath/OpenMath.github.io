@@ -204,10 +204,6 @@
             <OMSTR>velocity = displacement/time</OMSTR>
          </OMA>
          <OMA>
-            <OMS cd="meta" name="CMP"/>
-            <OMSTR>speed is the Euclidean norm of velocity</OMSTR>
-         </OMA>
-         <OMA>
             <OMS cd="meta" name="FMP"/>
             <OMA>
                <OMS cd="relation1" name="eq"/>
@@ -216,6 +212,21 @@
                   <OMS cd="arith1" name="divide"/>
                   <OMS cd="dimensions1" name="displacement"/>
                   <OMS cd="dimensions1" name="time"/>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>speed is the Euclidean norm of velocity</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS name="eq" cd="relation1"/>
+               <OMS name="speed" cd="dimensions1"/>
+               <OMA>
+                  <OMS name="Euclidean_norm" cd="norm1"/>
+                  <OMS name="velocity" cd="dimensions1"/>
                </OMA>
             </OMA>
          </OMA>
@@ -267,7 +278,7 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>This symbol represents the time physical dimension.</OMSTR>
+            <OMSTR>This symbol represents the time physical dimension. Note that the main units for time are defined in the units_time1 CD.</OMSTR>
          </OMA>
       </OMA>
       <OMA>
@@ -544,6 +555,18 @@
             <OMSTR>energy = mass*length^2/time^2</OMSTR>
          </OMA>
          <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMS cd="dimensions1" name="energy"/>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMS cd="dimensions1" name="force"/>
+                  <OMS cd="dimensions1" name="length"/>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
             <OMS cd="meta" name="CMP"/>
             <OMSTR>energy = force*length</OMSTR>
          </OMA>
@@ -634,6 +657,33 @@
                   <OMS cd="arith1" name="times"/>
                   <OMS cd="dimensions1" name="mass"/>
                   <OMS cd="dimensions1" name="velocity"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>power</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents the power physical dimension, it is energy per time.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>power = energy/time</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMS cd="dimensions1" name="power"/>
+               <OMA>
+                  <OMS cd="arith1" name="divide"/>
+                  <OMS cd="dimensions1" name="energy"/>
+                  <OMS cd="dimensions1" name="time"/>
                </OMA>
             </OMA>
          </OMA>

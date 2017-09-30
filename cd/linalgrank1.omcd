@@ -1,0 +1,237 @@
+<OMOBJ xmlns:om="http://www.openmath.org/OpenMath"
+       xmlns="http://www.openmath.org/OpenMath">
+   <OMA>
+      <OMS cd="meta" name="CD"/>
+      <OMA>
+         <OMS cd="meta" name="CDComment"/>
+         <OMSTR>This document is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The copyright holder grants you permission to redistribute this document freely as a verbatim copy. Furthermore, the copyright holder permits you to develop any derived work from this document provided that the following conditions are met. a) The derived work acknowledges the fact that it is derived from this document, and maintains a prominent reference in the work to the original source. b) The fact that the derived work is not the original OpenMath document is stated prominently in the derived work. Moreover if both this document and the derived work are Content Dictionaries then the derived work must include a different CDName element, chosen so that it cannot be confused with any works adopted by the OpenMath Society. In particular, if there is a Content Dictionary Group whose name is, for example, `math' containing Content Dictionaries named `math1', `math2' etc., then you should not name a derived Content Dictionary `mathN' where N is an integer. However you are free to name it `private_mathN' or some such. This is because the names `mathN' may be used by the OpenMath Society for future extensions. c) The derived work is distributed under terms that allow the compilation of derived works, but keep paragraphs a) and b) intact. The simplest way to do this is to distribute the derived work under the OpenMath license, but this is not a requirement. If you have questions about this license please contact the OpenMath society at http://www.openmath.org.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDName"/>
+         <OMSTR>linalgrank1</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDBase"/>
+         <OMSTR>http://www.openmath.org/cd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDURL"/>
+         <OMSTR>http://www.openmath.org/cd/linalgrank1.ocd</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDReviewDate"/>
+         <OMSTR>2006-03-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDate"/>
+         <OMSTR>2004-11-30</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDVersion"/>
+         <OMSTR>3</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDRevision"/>
+         <OMSTR>0</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDStatus"/>
+         <OMSTR>experimental</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="Description"/>
+         <OMSTR>This CD defines symbols for basic linear algebra (over a division ring) related to rank and kernel. It is constructed by A.M. Cohen, who took the definition of rank from a former version of linalg4.ocd.</OMSTR>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>rank</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents the function which takes one matrix argument and returns the number of linearly independent rows (or columns) of that matrix.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>The rank of the n x n identity matrix is equal to n.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="linalgrank1" name="rank"/>
+                  <OMA>
+                     <OMS cd="linalg4mat" name="identity"/>
+                     <OMV name="n"/>
+                  </OMA>
+               </OMA>
+               <OMV name="n"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>kernel_matrix</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function whose argument should be a matrix. When applied to a matrix A, it represents a matrix whose rows are a basis of the kernel of A acting on the right.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>rowcount(kernel_matrix(A)) = rowcount(A) - rank(A)</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="linalg3" name="rowcount"/>
+                  <OMA>
+                     <OMS cd="linalgrank1" name="kernel_matrix"/>
+                     <OMV name="A"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="minus"/>
+                  <OMA>
+                     <OMS cd="linalg3" name="rowcount"/>
+                     <OMV name="A"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="linalgrank1" name="rank"/>
+                     <OMV name="A"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>kernel_matrix(A) * A = 0</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMA>
+                     <OMS cd="linalgrank1" name="kernel_matrix"/>
+                     <OMV name="A"/>
+                  </OMA>
+                  <OMV name="A"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="linalg4mat" name="zero"/>
+                  <OMA>
+                     <OMS cd="arith1" name="minus"/>
+                     <OMA>
+                        <OMS cd="linalg3" name="rowcount"/>
+                        <OMV name="A"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="linalgrank1" name="rank"/>
+                        <OMV name="A"/>
+                     </OMA>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="linalg3" name="columncount"/>
+                     <OMV name="A"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>dual_kernel_matrix</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol represents a unary function whose argument should be a matrix. When applied to a matrix, it represents a list of column vectors spanning the kernel of the matrix acting on the left.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>columncount(kernel_matrix(A)) = columncount(A) - rank(A)</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="linalg3" name="columncount"/>
+                  <OMA>
+                     <OMS cd="linalgrank1" name="kernel_matrix"/>
+                     <OMV name="A"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="minus"/>
+                  <OMA>
+                     <OMS cd="linalg3" name="columncount"/>
+                     <OMV name="A"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="linalgrank1" name="rank"/>
+                     <OMV name="A"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="CMP"/>
+            <OMSTR>A * kernel_matrix(A) = 0</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="arith1" name="times"/>
+                  <OMV name="A"/>
+                  <OMA>
+                     <OMS cd="linalgrank1" name="kernel_matrix"/>
+                     <OMV name="A"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="linalg4mat" name="zero"/>
+                  <OMA>
+                     <OMS cd="linalg3" name="rowcount"/>
+                     <OMV name="A"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="arith1" name="minus"/>
+                     <OMA>
+                        <OMS cd="linalg3" name="columncount"/>
+                        <OMV name="A"/>
+                     </OMA>
+                     <OMA>
+                        <OMS cd="linalgrank1" name="rank"/>
+                        <OMV name="A"/>
+                     </OMA>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+   </OMA>
+</OMOBJ>
