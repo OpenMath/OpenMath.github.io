@@ -11,12 +11,12 @@ In short, is built statically from Markdown source files using
 corresponding source and push. This can be done online by clicking on
 "Edit this page" in the side bar. See the above links for details.
 
-- _config.yml: main configuration page
-- _post/*.md: sources of the news and blog posts
-- _data/*.yml: YAML database from which certain pages are automatically generated
-- _layouts/*: local style files
-- _includes/*: reusable chunks of web pages, like the side bar
-- public/*: Jekyll style files (almost vanilla), logos, ...
+- `_config.yml`: main configuration page
+- `_post/*.md`: sources of the news and blog posts
+- `_data/*.yml`: YAML database from which certain pages are automatically generated
+- `_layouts/*`: local style files
+- `_includes/*`: reusable chunks of web pages, like the side bar
+- `public/*`: Jekyll style files (almost vanilla), logos, ...
 
 ## How to use Jekyll to test/build this website
 
@@ -39,7 +39,7 @@ modify the source code, preview it, and save your changes, by giving a
 short description of what you modified. If you have
 [write access](https://help.github.com/articles/what-are-the-different-access-permissions/)
 to the repository (hint: you do), your modifications will be published
-rightaway.  If you do not have right access, you will be asked to
+right away.  If you do not have right access, you will be asked to
 [fork the repository and make a pull request](https://help.github.com/articles/fork-a-repo/).
 
 Most of the pages are written in
@@ -48,6 +48,14 @@ textual format for generating formatted text. Markdown syntax is very
 intuitive, you can get a quick review
 [here](https://help.github.com/articles/github-flavored-markdown/) or
 [here](http://kramdown.gettalong.org/syntax.html).
+
+### Imports from other OpenMath Repositories
+
+Some of the content of the page is imported from other repositories:
+- `cd`, `contrib`, `cdgroup`, `sts`, `cdfiles`, `cdnames.md`, `cdnamess.md`, `symbols.md`: are automatically pushed from the  `master` branch of the [CDs repository](https://github.com/OpenMath/CDs) by travis on that repository. 
+- `standard`, the newer versions (in particular the editor's draft) are pushed from from the  `master` branch of the [OMSTD repository](https://github.com/OpenMath/OMSTD) by travis on that repository. 
+
+The relative paths of these are chosen for backwards compatibility with older versions of the  openmath web site. In particular,`cdfiles` is a redirect for the MathML Recommendation. 
 
 ### Working locally
 
