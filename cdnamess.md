@@ -2,7 +2,7 @@
 <!--WARNING: This page is automatically generated, do not edit! WARNING-->
 
 <h1>OpenMath Content Dictionaries by status</h1>
-<p>203 Content Dictionaries, ordered by status.</p>
+<p>194 Content Dictionaries, ordered by status.</p>
 <table border="1">
    <tr>
       <th><a href="../cdnames">Content Dictionary</a></th>
@@ -337,6 +337,14 @@
       <td>experimental</td>
    </tr>
    <tr>
+      <th style="text-align:left"><a href="../cd/scscp1.html">scscp1</a></th>
+      <td>experimental</td>
+   </tr>
+   <tr>
+      <th style="text-align:left"><a href="../cd/scscp2.html">scscp2</a></th>
+      <td>experimental</td>
+   </tr>
+   <tr>
       <th style="text-align:left"><a href="../cd/semigroup.html">semigroup</a></th>
       <td>experimental</td>
    </tr>
@@ -557,15 +565,7 @@
       <td>experimental (contributed)</td>
    </tr>
    <tr>
-      <th style="text-align:left"><a href="../cd/plangeo1.html">plangeo1</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
       <th style="text-align:left"><a href="../cd/poly1p.html">poly1p</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/polyu.html">polyu</a></th>
       <td>experimental (contributed)</td>
    </tr>
    <tr>
@@ -574,10 +574,6 @@
    </tr>
    <tr>
       <th style="text-align:left"><a href="../cd/set1p.html">set1p</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/setname2.html">setname2</a></th>
       <td>experimental (contributed)</td>
    </tr>
    <tr>
@@ -633,35 +629,7 @@
       <td>experimental (contributed)</td>
    </tr>
    <tr>
-      <th style="text-align:left"><a href="../cd/transc2.html">transc2</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
       <th style="text-align:left"><a href="../cd/units_binaryprefix1.html">units_binaryprefix1</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/units_imperial1.html">units_imperial1</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/units_metric1.html">units_metric1</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/units_ops1.html">units_ops1</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/units_siprefix1.html">units_siprefix1</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/units_sts.html">units_sts</a></th>
-      <td>experimental (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/units_time1.html">units_time1</a></th>
       <td>experimental (contributed)</td>
    </tr>
    <tr>
@@ -815,9 +783,5 @@
    <tr>
       <th style="text-align:left"><a href="../cd/list1.html">list1</a></th>
       <td>official (contributed)</td>
-   </tr>
-   <tr>
-      <th style="text-align:left"><a href="../cd/sigma.html">sigma</a></th>
-      <td>private</td>
    </tr>
 </table>

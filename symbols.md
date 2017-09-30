@@ -1,15 +1,9 @@
 <h1>OpenMath Symbols</h1>
-<p>A combined list of all 1531 symbols defined in this Content Dictionary collection.</p>
+<p>A combined list of all 1482 symbols defined in this Content Dictionary collection.</p>
 <table>
    <tr>
       <th>Symbol</th>
       <th>Description</th>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/setname2.html#A">setname2/<br/>A</a>
-      </td>
-      <td>This symbol represents the set of algebraic numbers.</td>
    </tr>
    <tr>
       <td>
@@ -169,12 +163,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_imperial1.html#acre">units_imperial1/<br/>acre</a>
-      </td>
-      <td>This symbol represents the measure of one acre. This is a standard imperial measure for area.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_us1.html#acre_us_survey">units_us1/<br/>acre_us_survey</a>
       </td>
       <td>This symbol represents the measure of one U.S. Survey acre.</td>
@@ -259,12 +247,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/setname2.html#AlgebraicExtension">setname2/<br/>AlgebraicExtension</a>
-      </td>
-      <td>This symbol represents an algebraic extension of any integral domain.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/interval_types.html#algebraicIntervalType">interval_types/<br/>algebraicIntervalType</a>
       </td>
       <td>This symbol represents the type of algebraic intervals.</td>
@@ -316,12 +298,6 @@
          <a href="../cd/SI_BaseQuantities.html#amount-of-substance">SI_BaseQuantities/<br/>amount-of-substance</a>
       </td>
       <td>This symbol represents the SI base quantity of amount of substance. It has the short symbol form, "N".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#amp">units_metric1/<br/>amp</a>
-      </td>
-      <td>This symbol represents the measure of one amp. This is the standard SI measure for current.</td>
    </tr>
    <tr>
       <td>
@@ -565,12 +541,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/transc2.html#arctan">transc2/<br/>arctan</a>
-      </td>
-      <td>This symbol represents the two-argument arctan function as in Fortran's ATAN2. arctan(y,x) is a value of arctan(y/x). For real x,y arctan(y,x) is positive when y is positive, negative when y is negative. If y is zero, the result is 0 if x is positive, and $\pi$ if x is negative. If x is zero, the result has absolute value $\pi/2$.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/transc3.html#arctan">transc3/<br/>arctan</a>
       </td>
       <td>This symbol represents the arctan function. This is the multi-valued inverse of the tan function.</td>
@@ -715,12 +685,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_siprefix1.html#atto">units_siprefix1/<br/>atto</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-18$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/sts.html#attribution">sts/<br/>attribution</a>
       </td>
       <td>An `attribution' object consists of pairs of keys and values. The use of the symbol `attribution' in a signature indicates that the symbol is to be used as a key.</td>
@@ -790,12 +754,6 @@
          <a href="../cd/linalg5.html#banded">linalg5/<br/>banded</a>
       </td>
       <td>This symbol represents a (p,q) banded matrix, it takes one argument. A (p,q) banded matrix should always be square. The lower non-zero subdiagonal is the first element of the argument, whilst the highest non-zero super-diagonal is given by the last element of the argument. The argument determines the band of possibly non-zero entries which are positioned around the diagonal. It should be a vector of vectors, we note that they will not all be the same length, however the length of the vectors determine p and q. The longest element specifies the diagonal of the matrix and hence the size of the matrix. Every element not in the band is zero.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_imperial1.html#bar">units_imperial1/<br/>bar</a>
-      </td>
-      <td>This symbol represents the measure of one bar. This is the standard imperial measure for pressure.</td>
    </tr>
    <tr>
       <td>
@@ -937,12 +895,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/setname2.html#Boolean">setname2/<br/>Boolean</a>
-      </td>
-      <td>This symbol represents the set of Booleans. That is the truth values, true and false.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/limit1.html#both_sides">limit1/<br/>both_sides</a>
       </td>
       <td>This symbol is used within a limit construct to show the limit is being approached from both sides. It takes no arguments.</td>
@@ -973,18 +925,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_time1.html#calendar_month">units_time1/<br/>calendar_month</a>
-      </td>
-      <td>This symbol represents the measure of one month of (calendar) time.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_time1.html#calendar_year">units_time1/<br/>calendar_year</a>
-      </td>
-      <td>This symbol represents the measure of one year of (calendar) time.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_time1.html#calendar_year">units_time1/<br/>calendar_year</a>
       </td>
       <td>This symbol represents the measure of one year of (calendar) time.</td>
@@ -994,6 +934,12 @@
          <a href="../cd/prog1.html#call_arguments">prog1/<br/>call_arguments</a>
       </td>
       <td>This symbol can be used to encode the arguments that will be pased to a function or procedure.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#call_id">scscp1/<br/>call_id</a>
+      </td>
+      <td>Uniquely identifies a procedure call. Used in subsequent communication, so the parties know which call they are talking about.</td>
    </tr>
    <tr>
       <td>
@@ -1291,12 +1237,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_siprefix1.html#centi">units_siprefix1/<br/>centi</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $0.01$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/group3.html#centralizer">group3/<br/>centralizer</a>
       </td>
       <td>This symbols represents a binary function whose first argument should be a group G and whose second argument should be an element g or a list of elements L of the group G. Its value is the subgroup of G of all elements commuting with g or, if the second argument is a list, all elements of L.</td>
@@ -1543,12 +1483,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo1.html#configuration">plangeo1/<br/>configuration</a>
-      </td>
-      <td>The symbol represents a configuration in Euclidean planar geometry consisting of a sequence of geometric objects like points, lines, etc, but also of other configurations.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ThreeDgeo3.html#configuration">ThreeDgeo3/<br/>configuration</a>
       </td>
       <td>The symbol represents a configuration in Euclidean 3-dimensional geometry consisting of a sequence of geometric objects like points, lines, etc, but also of other configurations.</td>
@@ -1735,12 +1669,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_metric1.html#Coulomb">units_metric1/<br/>Coulomb</a>
-      </td>
-      <td>This symbol represents the measure of one Coulomb. This is the standard SI measure for charge.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/FundamentalPhysicalConstants1.html#Coulomb-constant">FundamentalPhysicalConstants1/<br/>Coulomb-constant</a>
       </td>
       <td>The value of the Coulomb constant is implied by international definitions of the speed of light and the vacuum permeability. By definition, its exact value is equal to (299,792,458)^2 * 10^-7 N m^2 C^-2. It is commonly represented with the short, italic symbol, "k" subscripted with the upright letter "e".</td>
@@ -1861,18 +1789,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_time1.html#day">units_time1/<br/>day</a>
-      </td>
-      <td>This symbol represents the measure of one day of time. The definitions below ignore the possibilities of "leap seconds".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#deci">units_siprefix1/<br/>deci</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $0.1$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_siprefix1.html#deci">units_siprefix1/<br/>deci</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $0.1$</td>
@@ -1951,27 +1867,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_metric1.html#degree_Celsius">units_metric1/<br/>degree_Celsius</a>
-      </td>
-      <td>This symbol represents the measure of one degree Celsius. This is a standard metric measure for temperature.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_imperial1.html#degree_Fahrenheit">units_imperial1/<br/>degree_Fahrenheit</a>
       </td>
       <td>This symbol represents the measure of one degree Fahrenheit. This is the standard imperial measure for temperature.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_imperial1.html#degree_Fahrenheit">units_imperial1/<br/>degree_Fahrenheit</a>
-      </td>
-      <td>This symbol represents the measure of one degree Fahrenheit. This is the standard imperial measure for temperature.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#degree_Kelvin">units_metric1/<br/>degree_Kelvin</a>
-      </td>
-      <td>This symbol represents the measure of one degree Kelvin. This is a standard SI measure for temperature relative to absolute zero.</td>
    </tr>
    <tr>
       <td>
@@ -1984,12 +1882,6 @@
          <a href="../cd/poly.html#degree_wrt">poly/<br/>degree_wrt</a>
       </td>
       <td>The degree with respect to a variable (the second argument). We note that the degree of 0 is undefined.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#deka">units_siprefix1/<br/>deka</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10$</td>
    </tr>
    <tr>
       <td>
@@ -2212,6 +2104,12 @@
          <a href="../cd/numerical2.html#discrimination_criteria">numerical2/<br/>discrimination_criteria</a>
       </td>
       <td>This symbol is used to describe the minimum distance between two distinct objects, i.e. if the distance is less than this they are considered to be the same.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/dimensions1.html#displacement">dimensions1/<br/>displacement</a>
+      </td>
+      <td>This symbol represents the spatial difference between two points. The direction of the displacement is taken into account as well as the distance between the points.</td>
    </tr>
    <tr>
       <td>
@@ -2527,6 +2425,24 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/scscp1.html#error_memory">scscp1/<br/>error_memory</a>
+      </td>
+      <td>A description of the error that caused a procedure call to be terminated. This symbol is used with a procedure_terminated, when the system exceeded the amount of memory specified in the option_max_memory option given in the corresponding procedure call. It carries one argument: An OMSTR, which may be empty.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#error_runtime">scscp1/<br/>error_runtime</a>
+      </td>
+      <td>A description of the error that caused a procedure call to be terminated. This symbol is used with a procedure_terminated, when the system exceeded the runtime specified in the option_runtime option given in the corresponding procedure call. It carries one argument: An OMSTR, which may be empty. Note that this symbol is not intended to be used when a different runtime error occurred. In those cases, one should use error_system_specific.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#error_system_specific">scscp1/<br/>error_system_specific</a>
+      </td>
+      <td>A description of the error that caused a procedure call to be terminated. This symbol is used with a procedure_terminated, when the error is specific to the system that carried out the calculation. This error must carry exactly one argument, and it must be an OMSTR describing the error that occurred.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/algebraic_cats.html#Euclidean_domain">algebraic_cats/<br/>Euclidean_domain</a>
       </td>
       <td>This symbol is the constructor for Euclidean domains. A Euclidean domain is a ring on which there is no zero divisors together with an integer norm function. The Euclidean_domain constructor takes six arguments: The set of the Euclidean domain. A binary function into itself to represent the multiplication operation, *. A binary function into itself to represent the addition operation, +. A member of the set of the Euclidean domain to specify the additive identity, 0. A unary function taking the set of the Euclidean domain into itself to represent the additive inverses (i.e. inverses under +, or negatives). And a unary function taking elements of the set into the positive integers, to represent the integer norm function.</td>
@@ -2602,12 +2518,6 @@
          <a href="../cd/directives1.html#evaluate_to_type">directives1/<br/>evaluate_to_type</a>
       </td>
       <td>This symbol is a function with two arguments, which should be a mathematical expression and a type. When applied to a mathematical expression E and a type T, it asks for an evaluation or simplification of E to a mathematical expression of type T.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#exa">units_siprefix1/<br/>exa</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^18$</td>
    </tr>
    <tr>
       <td>
@@ -2791,12 +2701,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_siprefix1.html#femto">units_siprefix1/<br/>femto</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-15$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/combinat1.html#Fibonacci">combinat1/<br/>Fibonacci</a>
       </td>
       <td>The Fibonacci numbers, defined by the linear recurrence: Fibonacci(0) = 0, Fibonacci(1) = 1, and Fibonacci(n + 1) = Fibonacci(n) + Fibonacci(n - 1). Note that some authors define Fibonacci(0) = 1.</td>
@@ -2938,12 +2842,6 @@
          <a href="../cd/mathmltypes.html#fn_type">mathmltypes/<br/>fn_type</a>
       </td>
       <td>A symbol to be used as the argument of the type symbol to convey the type for a function name.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_imperial1.html#foot">units_imperial1/<br/>foot</a>
-      </td>
-      <td>This symbol represents the measure of one foot. This is the standard imperial measure for distance.</td>
    </tr>
    <tr>
       <td>
@@ -3151,21 +3049,33 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/setname2.html#GFp">setname2/<br/>GFp</a>
+         <a href="../cd/scscp2.html#get_allowed_heads">scscp2/<br/>get_allowed_heads</a>
       </td>
-      <td>This symbol represents the finite field of integers modulo p, where p is a prime.</td>
+      <td>This symbol is used to find the list of procedures supported by an SCSCP server.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#get_service_description">scscp2/<br/>get_service_description</a>
+      </td>
+      <td>A symbol for the client to ask for some description of a service. Note that this is a very generic description of the service running on a particular port on a particular machine. More details about for example the available symbols there may be obtained with get_allowed_heads, get_signature or get_transient_cd.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#get_signature">scscp2/<br/>get_signature</a>
+      </td>
+      <td>A symbol for the client to inquire about the signature of a particular function.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#get_transient_cd">scscp2/<br/>get_transient_cd</a>
+      </td>
+      <td>This symbol is used to get the contents of a transient CD created by a server.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/setname2.html#GFp">setname2/<br/>GFp</a>
       </td>
       <td>This symbol represents the finite field of integers modulo p, where p is a prime.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/setname2.html#GFpn">setname2/<br/>GFpn</a>
-      </td>
-      <td>This symbol represents the finite field with p^n elements, where p is a prime.</td>
    </tr>
    <tr>
       <td>
@@ -3178,12 +3088,6 @@
          <a href="../cd/units_binaryprefix1.html#gibi">units_binaryprefix1/<br/>gibi</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $2^30$. The full technical name is gigabinary.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#giga">units_siprefix1/<br/>giga</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^9$</td>
    </tr>
    <tr>
       <td>
@@ -3250,12 +3154,6 @@
          <a href="../cd/SI_NamedDerivedUnits1.html#gram">SI_NamedDerivedUnits1/<br/>gram</a>
       </td>
       <td>This symbol represents one gram. This unit is implied by the incorporation of the prefix "kilo" in the base unit standard, kilogram. Since SI prefixes may not, by SI standard, be presented by prepending to "kilogram", the gram is introduced for the application of prefixes. By itself, gram should not appear in SI compliant presentation. It has the short symbol form, "g".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#gramme">units_metric1/<br/>gramme</a>
-      </td>
-      <td>This symbol represents the measure of one gramme. This is not quite the standard SI measure for mass, which is the kilogramme, but OpenMath chooses to regard the gramme as standard, otherwise one would have to call it the milli-kilogramme.</td>
    </tr>
    <tr>
       <td>
@@ -3409,12 +3307,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/setname2.html#H">setname2/<br/>H</a>
-      </td>
-      <td>This symbol represents the set of quaternions.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/plangeo2.html#halfline">plangeo2/<br/>halfline</a>
       </td>
       <td>The halfline starting at A and going through B. The symbol takes as arguments the points A and B.</td>
@@ -3442,12 +3334,6 @@
          <a href="../cd/SI_DerivedQuantities1.html#heat">SI_DerivedQuantities1/<br/>heat</a>
       </td>
       <td>This symbol represents the physical quantity of energy that is transferred from one object to another due to a difference in temperature.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#hecto">units_siprefix1/<br/>hecto</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $100$</td>
    </tr>
    <tr>
       <td>
@@ -3502,12 +3388,6 @@
          <a href="../cd/SIUsed_OffSystemUnits1.html#hour">SIUsed_OffSystemUnits1/<br/>hour</a>
       </td>
       <td>This symbol represents the measure of one hour of time. It has the short symbol form, "h".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_time1.html#hour">units_time1/<br/>hour</a>
-      </td>
-      <td>This symbol represents the measure of one hour of time.</td>
    </tr>
    <tr>
       <td>
@@ -3667,12 +3547,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo1.html#incident">plangeo1/<br/>incident</a>
-      </td>
-      <td>The symbol represents the logical incidence function which is a binary function taking arguments representing geometric objects like points and lines and returning a boolean value. It is true if and only if the first argument is incident to the second.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ThreeDgeo2.html#incident">ThreeDgeo2/<br/>incident</a>
       </td>
       <td>The symbol represents the logical incidence function which is a binary function taking arguments representing geometric objects like points and lines and returning a boolean value. It is true if and only if the first argument is incident to the second.</td>
@@ -3718,6 +3592,24 @@
          <a href="../cd/nums1.html#infinity">nums1/<br/>infinity</a>
       </td>
       <td>A symbol to represent the notion of infinity.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#info_memory">scscp1/<br/>info_memory</a>
+      </td>
+      <td>A piece of information from the system, to be used along with a procedure_completed or procedure_terminated message, describing how much memory was spent on the calculation. It should be in bytes, denoted using an OMI.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#info_message">scscp1/<br/>info_message</a>
+      </td>
+      <td>A piece of information from the server, to be used along with a procedure_completed or procedure_terminated message, giving some additional information. The client may choose to present this information to its user. The argument is an OMSTR.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#info_runtime">scscp1/<br/>info_runtime</a>
+      </td>
+      <td>A piece of information from the system, to be used along with a procedure_completed or procedure_terminated message, describing how much cputime was spent on the calculation. It should be in milliseconds, denoted using an OMI.</td>
    </tr>
    <tr>
       <td>
@@ -3958,6 +3850,12 @@
          <a href="../cd/plangeo4.html#is_affine">plangeo4/<br/>is_affine</a>
       </td>
       <td>Boolean function testing whether a point or line is affine.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#is_allowed_head">scscp2/<br/>is_allowed_head</a>
+      </td>
+      <td>This symbol is used to find whether a particular procedure is supported by an SCSCP server. The reply must be either true or false, described in one of the appropriate symbols from the logic1 content dictionary.</td>
    </tr>
    <tr>
       <td>
@@ -4471,12 +4369,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_metric1.html#Joule">units_metric1/<br/>Joule</a>
-      </td>
-      <td>This symbol represents the measure of one Joule. This is the standard SI measure for energy.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/set3.html#k_subsets">set3/<br/>k_subsets</a>
       </td>
       <td>This symbol represents a binary function whose first argument should be a set and whose second argument should be a natural number. When applied to a set X and a number k, it represents the collection of all subsets of X of size k.</td>
@@ -4522,12 +4414,6 @@
          <a href="../cd/units_binaryprefix1.html#kibi">units_binaryprefix1/<br/>kibi</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $2^10$. The full technical name is kilobinary.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#kilo">units_siprefix1/<br/>kilo</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $1000$</td>
    </tr>
    <tr>
       <td>
@@ -4873,12 +4759,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo1.html#line">plangeo1/<br/>line</a>
-      </td>
-      <td>The symbol is used to indicate a line of planar Euclidean geometry by a variable. The line may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ThreeDgeo1.html#line">ThreeDgeo1/<br/>line</a>
       </td>
       <td>The symbol is used to indicate a line of 3-dimensional Euclidean geometry by a variable. The line may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
@@ -4990,18 +4870,6 @@
          <a href="../cd/units_metric1.html#litre">units_metric1/<br/>litre</a>
       </td>
       <td>This symbol represents the measure of one litre. This is a standard metric measure for physical volume.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#litre">units_metric1/<br/>litre</a>
-      </td>
-      <td>This symbol represents the measure of one litre. This is a standard metric measure for physical volume.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#litre_pre1964">units_metric1/<br/>litre_pre1964</a>
-      </td>
-      <td>This symbol represents the previous (1901-1964) measure of one litre. This used to be a standard metric measure for physical volume.</td>
    </tr>
    <tr>
       <td>
@@ -5335,12 +5203,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_siprefix1.html#mega">units_siprefix1/<br/>mega</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^6$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/SI_BaseUnits1.html#metre">SI_BaseUnits1/<br/>metre</a>
       </td>
       <td>This symbol represents the measure of one metre of length, the standard SI unit of measure for quantities of length or physical distance. It has the short symbol form, "m", in upright roman font.</td>
@@ -5353,18 +5215,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_metric1.html#metre">units_metric1/<br/>metre</a>
-      </td>
-      <td>This symbol represents the measure of one metre. This is the standard SI unit measure for physical distance.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#metre_sqrd">units_metric1/<br/>metre_sqrd</a>
-      </td>
-      <td>This symbol represents the measure of one metre squared. This is the standard SI measure for physical area.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_metric1.html#metre_sqrd">units_metric1/<br/>metre_sqrd</a>
       </td>
       <td>This symbol represents the measure of one metre squared. This is the standard SI measure for physical area.</td>
@@ -5374,18 +5224,6 @@
          <a href="../cd/units_metric1.html#metres_per_second">units_metric1/<br/>metres_per_second</a>
       </td>
       <td>This symbol represents the measure of one metre per second. This is the standard SI measure for speed.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#metres_per_second">units_metric1/<br/>metres_per_second</a>
-      </td>
-      <td>This symbol represents the measure of one metre per second. This is the standard SI measure for speed.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#metres_per_second_sqrd">units_metric1/<br/>metres_per_second_sqrd</a>
-      </td>
-      <td>This symbol represents the measure of one metre per second squared. This is the standard SI measure for acceleration.</td>
    </tr>
    <tr>
       <td>
@@ -5398,12 +5236,6 @@
          <a href="../cd/tensor1.html#metric_tensor">tensor1/<br/>metric_tensor</a>
       </td>
       <td>This symbol represents the metric tensor, typically depicted using a lower case g. The metric tensor is a nondegenerate, symmetric bilinear form. It defines the ideas of leng th and angle in a metric space, the most common example being the Euclidean metric. The square of a differential length, ds*ds, is given by the bilinear product of the coordinate differentials, dx^i, with the metric tensor.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#micro">units_siprefix1/<br/>micro</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-6$</td>
    </tr>
    <tr>
       <td>
@@ -5431,12 +5263,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_imperial1.html#mile">units_imperial1/<br/>mile</a>
-      </td>
-      <td>This symbol represents the measure of one (land, or statute) mile. This is a standard imperial measure for distance, defined in terms of the foot.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_us1.html#mile_us_survey">units_us1/<br/>mile_us_survey</a>
       </td>
       <td>This symbol represents the measure of one U.S. Survey mile.</td>
@@ -5449,27 +5275,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_imperial1.html#miles_per_hr">units_imperial1/<br/>miles_per_hr</a>
-      </td>
-      <td>This symbol represents the measure of one mile per hour. This is a standard imperial measure for speed.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_imperial1.html#miles_per_hr_sqrd">units_imperial1/<br/>miles_per_hr_sqrd</a>
       </td>
       <td>This symbol represents the measure of one mile per hour squared. This is a standard imperial measure for acceleration.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_imperial1.html#miles_per_hr_sqrd">units_imperial1/<br/>miles_per_hr_sqrd</a>
-      </td>
-      <td>This symbol represents the measure of one mile per hour squared. This is a standard imperial measure for acceleration.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#milli">units_siprefix1/<br/>milli</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $0.001$</td>
    </tr>
    <tr>
       <td>
@@ -5536,12 +5344,6 @@
          <a href="../cd/SIUsed_OffSystemUnits1.html#minute">SIUsed_OffSystemUnits1/<br/>minute</a>
       </td>
       <td>This symbol represents the measure of one minute of time. It has the short symbol form, "min".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_time1.html#minute">units_time1/<br/>minute</a>
-      </td>
-      <td>This symbol represents the measure of one minute of time.</td>
    </tr>
    <tr>
       <td>
@@ -5791,12 +5593,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_siprefix1.html#nano">units_siprefix1/<br/>nano</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-9$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/sts.html#nary">sts/<br/>nary</a>
       </td>
       <td>Constructs a child of mapsto which denotes an arbitrary number of copies of the argument of nary.</td>
@@ -5851,18 +5647,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_metric1.html#Newton">units_metric1/<br/>Newton</a>
-      </td>
-      <td>This symbol represents the measure of one Newton. This is the standard SI measure for force.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#Newton_per_sqr_metre">units_metric1/<br/>Newton_per_sqr_metre</a>
-      </td>
-      <td>This symbol represents the measure of one Newton per square metre. This is another (deprecated in OpenMath) name for the standard SI measure for pressure, the Pascal.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_metric1.html#Newton_per_sqr_metre">units_metric1/<br/>Newton_per_sqr_metre</a>
       </td>
       <td>This symbol represents the measure of one Newton per square metre. This is another (deprecated in OpenMath) name for the standard SI measure for pressure, the Pascal.</td>
@@ -5872,6 +5656,12 @@
          <a href="../cd/list2.html#nil">list2/<br/>nil</a>
       </td>
       <td>The empty list</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#no_such_transient_cd">scscp2/<br/>no_such_transient_cd</a>
+      </td>
+      <td>Used for errors that arise when the client asks for a transient cd that the server cannot handle.</td>
    </tr>
    <tr>
       <td>
@@ -6124,6 +5914,48 @@
          <a href="../cd/polyslp.html#op_node">polyslp/<br/>op_node</a>
       </td>
       <td>This constructor takes three arguments. The first argument is a symbol from opnode, meant to specify whether the node is a plus, minus times or divide node, the second and third arguments are integers, which are the numbers of the lines which are the arguments of the operation</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#option_debuglevel">scscp1/<br/>option_debuglevel</a>
+      </td>
+      <td>An option, to be given along with a procedure call, describing the amount of debug information the client is interested in. Should be an integer.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#option_max_memory">scscp1/<br/>option_max_memory</a>
+      </td>
+      <td>An option, to be given along with a procedure call, describing the maximum amount of memory (in bytes) the system should spend on this call.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#option_min_memory">scscp1/<br/>option_min_memory</a>
+      </td>
+      <td>An option, to be given along with a procedure call, describing the minimum amount of memory (in bytes) the system should be able to spend on this call. The idea is that in certain cases we know in advance that we will need a large amount of memory. If the system will never be able to provide that, it would be a waste of time and resources to even start the computation.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#option_return_cookie">scscp1/<br/>option_return_cookie</a>
+      </td>
+      <td>An option, to be given along with a procedure call, indicating that the client would like to have a cookie (i.e. a reference to an OpenMath object residing somewhere) as return value.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#option_return_nothing">scscp1/<br/>option_return_nothing</a>
+      </td>
+      <td>An option, to be given along with a procedure call, indicating that the client expects no return value.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#option_return_object">scscp1/<br/>option_return_object</a>
+      </td>
+      <td>An option, to be given along with a procedure call, indicating that the client would like to have the actual OpenMath object as return value.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#option_runtime">scscp1/<br/>option_runtime</a>
+      </td>
+      <td>An option, to be given along with a procedure call, describing the maximum amount of time (in milliseconds) the system should spend on this call.</td>
    </tr>
    <tr>
       <td>
@@ -6427,33 +6259,15 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/sigma.html#Pair">sigma/<br/>Pair</a>
-      </td>
-      <td>The pairing constructor. It takes two OpenMath objects as first element and second element of the pair, and a third optional OpenMath object that represents the type of this pair.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ecc.html#PairProj1">ecc/<br/>PairProj1</a>
       </td>
       <td>The first projection function that extracts the first component of a Pair. It satisfies the sigma-reduction rule.</td>
    </tr>
    <tr>
       <td>
-         <a href="../cd/sigma.html#PairProj1">sigma/<br/>PairProj1</a>
-      </td>
-      <td>The first projection function. It satisfies sigma-reduction.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ecc.html#PairProj2">ecc/<br/>PairProj2</a>
       </td>
       <td>The second projection function that extracts the second component of a Pair. It satisfies sigma-reduction rule.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/sigma.html#PairProj2">sigma/<br/>PairProj2</a>
-      </td>
-      <td>The second projection function. It satisfies sigma-reduction.</td>
    </tr>
    <tr>
       <td>
@@ -6496,12 +6310,6 @@
          <a href="../cd/SI_NamedDerivedUnits1.html#pascal">SI_NamedDerivedUnits1/<br/>pascal</a>
       </td>
       <td>This symbol represents an SI unit of pressure. It has the short symbol form, "Pa".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#Pascal">units_metric1/<br/>Pascal</a>
-      </td>
-      <td>This symbol represents the measure of one Newton per square metre. This is the standard SI measure for pressure.</td>
    </tr>
    <tr>
       <td>
@@ -6589,21 +6397,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_siprefix1.html#peta">units_siprefix1/<br/>peta</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^15$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/nums1.html#pi">nums1/<br/>pi</a>
       </td>
       <td>A symbol to convey the notion of pi, approximately 3.142. The ratio of the circumference of a circle to its diameter.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#pico">units_siprefix1/<br/>pico</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-12$</td>
    </tr>
    <tr>
       <td>
@@ -6640,12 +6436,6 @@
          <a href="../cd/aggregate_cats.html#piecewiseContinuousSetType">aggregate_cats/<br/>piecewiseContinuousSetType</a>
       </td>
       <td>This symbol represents the type of piecewise continuous sets.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_imperial1.html#pint">units_imperial1/<br/>pint</a>
-      </td>
-      <td>This symbol represents the measure of one (imperial) pint. This is the standard imperial measure for volume. See units_us1 for the U.S. pint.</td>
    </tr>
    <tr>
       <td>
@@ -6781,12 +6571,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo1.html#point">plangeo1/<br/>point</a>
-      </td>
-      <td>The symbol is used to indicate a point of planar Euclidean geometry by a variable. The point may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ThreeDgeo1.html#point">ThreeDgeo1/<br/>point</a>
       </td>
       <td>The symbol is used to indicate a point of 3-dimensional Euclidean geometry by a variable. The point may (but need not) be subject to constraints. The symbol takes the variable as the first argument and the constraints as further arguments.</td>
@@ -6859,12 +6643,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyu.html#poly_u_rep">polyu/<br/>poly_u_rep</a>
-      </td>
-      <td>A constructor for the representation of polynomials. The first argument is the polynomial variable, the rest are monomials (in decreasing order of exponent).</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/plangeo5.html#polynomial_assertion">plangeo5/<br/>polynomial_assertion</a>
       </td>
       <td>This symbol is a function in one argument, which should be an assertion whose configuration is coordinatized (that is, each geometric object involved has coordinates). When evaluated at an assertion assertion(C,T) it represents the assertion that the constant polynomial 1 belongs to the ideal of the polynomial ring over a coefficient ring R containing the rationals and all global (unbound) coordinates of C, in the bound variables of ideal(C) and an external variable t, generated by ideal(C)[bound variables] and 1-f_T t. Here f_T is a polynomial such that f_T=0 is equivalent to the thesis T being true. This means f_T is in the radical ideal of ideal(C)[bound variables]. The interpretation is as follows: There are no parameter choices for the bound variables such that f_T is nonzero. In other words, for all parameter choices of a coordinatization of C, we must have f_T=0. So the truth of the assertion that thesis T holds in configuration C is reflected by the truth of polynomial_assertion(C,T).</td>
@@ -6895,12 +6673,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyu.html#polynomial_ring_u">polyu/<br/>polynomial_ring_u</a>
-      </td>
-      <td>The constructor of a univariate polynomial ring. The first argument is a ring (the ring of the coefficients), the second is the variable.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyslp.html#polynomial_SLP">polyslp/<br/>polynomial_SLP</a>
       </td>
       <td>The constructor of Polynomials built with Straight Line Program representation. The first argument is the polynomial ring containing the polynomial built with poly_ring_SLP, The second argument is the program body built with prog_body.</td>
@@ -6913,27 +6685,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/polyu.html#polynomial_u">polyu/<br/>polynomial_u</a>
-      </td>
-      <td>The constructor of Recursive Polynomials. The first argument is the polynomial ring containing the polynomial and the second is a "poly_u_rep".</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_imperial1.html#pound_force">units_imperial1/<br/>pound_force</a>
       </td>
       <td>This symbol represents the measure of force of one pound.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_imperial1.html#pound_force">units_imperial1/<br/>pound_force</a>
-      </td>
-      <td>This symbol represents the measure of force of one pound.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_imperial1.html#pound_mass">units_imperial1/<br/>pound_mass</a>
-      </td>
-      <td>This symbol represents the measure of the mass which weighs one pound under the influence of standard gravity.</td>
    </tr>
    <tr>
       <td>
@@ -7033,12 +6787,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_ops1.html#prefix">units_ops1/<br/>prefix</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by 1,000 ($10^{3}$)</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/rdf.html#prefixes">rdf/<br/>prefixes</a>
       </td>
       <td>A symbol to be used within an OpenMath attribute to specify one or more RDF namespace prefixes. The annotation value should be a set1.set of pairs of strings (prefix name, namespace URI) constructed with the prefix symbol.</td>
@@ -7087,9 +6835,27 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/scscp1.html#procedure_call">scscp1/<br/>procedure_call</a>
+      </td>
+      <td>The actual procedure call. Its only argument is an OpenMath Application, whose head symbol describes the procedure to be called, and whose arguments are the arguments to the procedure.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#procedure_completed">scscp1/<br/>procedure_completed</a>
+      </td>
+      <td>The result of a successful computation. Should come along with a call_id and, possibly, some extra information.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/prog1.html#procedure_definition">prog1/<br/>procedure_definition</a>
       </td>
       <td>This symbol can be used to define a procedure. The sintax is procedure_definition(name, def_arguments, procedure_block), where name is the encoding of an OpenMath variable representing the name of the procedure, def_arguments encodes the argument the procedure can receive and procedure_block encodes the body of the procedure. Contrary to function procedures can have knowledge about global objects by means of the global_var construct (see procedure block).</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp1.html#procedure_terminated">scscp1/<br/>procedure_terminated</a>
+      </td>
+      <td>The result of a failed computation. Should come along with a call_id, an error description, and possibly some extra information.</td>
    </tr>
    <tr>
       <td>
@@ -7228,12 +6994,6 @@
          <a href="../cd/ring3.html#quotient_ring">ring3/<br/>quotient_ring</a>
       </td>
       <td>This is a binary function, whose first argument is a ring R and whose second argument is an ideal I of R. When applied to R and I, it denotes the quotient ring of R by I.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/setname2.html#QuotientField">setname2/<br/>QuotientField</a>
-      </td>
-      <td>This symbol represents the quotient field of any integral domain.</td>
    </tr>
    <tr>
       <td>
@@ -7444,6 +7204,12 @@
          <a href="../cd/poly.html#resultant">poly/<br/>resultant</a>
       </td>
       <td>Function taking three arguments, it represents the resultant of two polynomials, which are the first two arguments, with respect to the given variable which is the third argument.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#retrieve">scscp2/<br/>retrieve</a>
+      </td>
+      <td>Using the cookie that was obtained earlier by calling the scscp2.store_session or scscp2.store_persistent procedure or another procedure call, return to the client an OM object representing the object, referred by the cookie.</td>
    </tr>
    <tr>
       <td>
@@ -7759,18 +7525,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_metric1.html#second">units_metric1/<br/>second</a>
-      </td>
-      <td>This symbol represents the measure of one second. This is the standard SI measure for time.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_time1.html#second">units_time1/<br/>second</a>
-      </td>
-      <td>This symbol represents the measure of one second of time. This is the standard SI unit measure for time.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_time1.html#second">units_time1/<br/>second</a>
       </td>
       <td>This symbol represents the measure of one second of time. This is the standard SI unit measure for time.</td>
@@ -7846,6 +7600,12 @@
          <a href="../cd/algebraic_cats.html#semigroup_set">algebraic_cats/<br/>semigroup_set</a>
       </td>
       <td>This symbol takes one argument which should be a semigroup. It returns the set of the semigroup.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#service_description">scscp2/<br/>service_description</a>
+      </td>
+      <td>The symbol for the server to use in a response to scscp2.get_service_description. It takes three OMSTR arguments: Name, Version, and Description.</td>
    </tr>
    <tr>
       <td>
@@ -7927,12 +7687,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/sigma.html#SigmaType">sigma/<br/>SigmaType</a>
-      </td>
-      <td>The type constructor of cartesian products. It takes a list of type-attributed variables and an OpenMath object.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/permutation1.html#sign">permutation1/<br/>sign</a>
       </td>
       <td>This symbol is a function with one argument which should be a permutation. When applied to a permutation P, it represents the sign of P, which is equal to -1 if P is an odd permutation and equal to 1 otherwise.</td>
@@ -7948,6 +7702,12 @@
          <a href="../cd/metasig.html#Signature">metasig/<br/>Signature</a>
       </td>
       <td>This symbol is used to represent the element of a signature file which specifies the signature of a symbol. It should take two string children, the first should be the symbol who's signature is being specified, the second should be an 'OMOBJ' element which specifies the signature. Additionally the second argument should specify an object which must represent a valid type in the type system identified by the XML attribute 'type' corresponding to the element which corresponds to the symbol 'CDSignatures' enclosing this symbol.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#signature">scscp2/<br/>signature</a>
+      </td>
+      <td>The symbol to use for describing the types of arguments of a particular function.</td>
    </tr>
    <tr>
       <td>
@@ -8185,6 +7945,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/scscp2.html#store_persistent">scscp2/<br/>store_persistent</a>
+      </td>
+      <td>This indicates the request to store an object on the server side (possibly after computing or simplifying it), returning only a cookie (actually, OM reference) pointing to an object that is usable (using OMR) in the foreseeable future, possibly from different sessions, to get access to the actual object. The server is encouraged to describe the expected lifetime of this object and whether references to this object from different SCSCP sessions are allowed in the response to a scscp2.get_signature request on this symbol. However, at this time we provide no automated or machine-readable mechanism for handling these lifetimes.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#store_session">scscp2/<br/>store_session</a>
+      </td>
+      <td>This indicates the request to store an object on the server side (possibly after computing or simplifying it), returning only a cookie (actually, OM reference) pointing to an object that is usable (using an OMR) in the remainder of the current SCSCP session to get access to the actual object.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/relation0.html#strict_order">relation0/<br/>strict_order</a>
       </td>
       <td>Proposition; the type of strict order relations, namely relations that are irreflexive, antisymmetric and transitive.</td>
@@ -8335,6 +8107,18 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/scscp2.html#symbol_set">scscp2/<br/>symbol_set</a>
+      </td>
+      <td>This symbol is used in the reply to a scscp2.get_allowed_heads call. It should be the head of an OM Application, the contents of the OMA being arbitrarily many OM Symbols (meaning that a particular symbol is supported), OMA's with head meta.CDName (meaning that all symbols of a particular CD are supported) or OMA's with head meta.CDGroupName (meaning that all symbols of all CDs of a particular CD group are supported). See the example at scscp2.get_allowed_heads.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#symbol_set_all">scscp2/<br/>symbol_set_all</a>
+      </td>
+      <td>This symbol is used in the reply to a scscp2.get_signature message. It means that this particular service takes any OpenMath object as argument.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/linalg5.html#symmetric">linalg5/<br/>symmetric</a>
       </td>
       <td>This symbol represents a symmetric matrix, it takes one argument. The argument should be a vector of vectors of elements of the matrix. For j&gt;=i the ij'th element of the matrix is the (j-i+1)'th element of the i'th element of the argument. This determines the upper triangle of the matrix, the lower triangle is specified by the rule M = transpose M.</td>
@@ -8437,12 +8221,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_siprefix1.html#tera">units_siprefix1/<br/>tera</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^12$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/polyd.html#term">polyd/<br/>term</a>
       </td>
       <td>The constructor of terms. Valid applications are of the form Term(coeff, exp1, exp2, ... expn) which represents the term coeff * var1^exp1*...varn^expn where n is the number of variables, expi are non-negative integers. coeff should be non-zero.</td>
@@ -8458,12 +8236,6 @@
          <a href="../cd/polyr.html#term">polyr/<br/>term</a>
       </td>
       <td>A constructor for monomials, that is products of powers and elements of the base ring. First argument is from N (the exponent of the variable implied by an outer poly_r_rep) second argument is a coefficient (from the ground field, or a polynomial in lesser variables).</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/polyu.html#term">polyu/<br/>term</a>
-      </td>
-      <td>A constructor for monomials, that is products of powers and elements of the base ring. First argument is from N (the exponent of the variable implied by an outer poly_u_rep) second argument is a coefficient (from the ground field)</td>
    </tr>
    <tr>
       <td>
@@ -8653,12 +8425,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/plangeo1.html#type">plangeo1/<br/>type</a>
-      </td>
-      <td>The symbol represents the type of the basic geometric objects: points, lines, configuration.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/sts.html#type">sts/<br/>type</a>
       </td>
       <td>A symbol to be used within an OpenMath attribute to specify the type of the object.</td>
@@ -8704,6 +8470,12 @@
          <a href="../cd/arith1.html#unary_minus">arith1/<br/>unary_minus</a>
       </td>
       <td>This symbol denotes unary minus, i.e. the additive inverse.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/scscp2.html#unbind">scscp2/<br/>unbind</a>
+      </td>
+      <td>This indicates the request to remove the object, referred by the cookie, from the server.</td>
    </tr>
    <tr>
       <td>
@@ -8755,21 +8527,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_sts.html#unit_prefix">units_sts/<br/>unit_prefix</a>
-      </td>
-      <td>The type of all unit prefixes, such as "kilo".</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/error.html#unsupported_CD">error/<br/>unsupported_CD</a>
       </td>
       <td>This symbol represents the error which is raised when an application reads a symbol where the mentioned content dictionary is not present. When receiving such a symbol, the application should act as if it had received the OpenMath error object constructed from unsupported_CD and the symbol from the unsupported Content Dictionary as in the example below.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/transc2.html#unwind">transc2/<br/>unwind</a>
-      </td>
-      <td>The unwinding number denotes the extent to which $z=\ln\exp z$ is not true. It was orignally defined in Corless,R.M. &amp; Jeffrey,D.J., The Unwinding Number. SIGSAM Bulletin 30(1996) 2, pp. 28-35. However, we take the definition (which has a change of sign) from Corless,R.M., Davenport,J.H., Jeffrey,D.J. &amp; Watt,S.M., According to Abramowitz and Stegun. SIGSAM Bulletin 34(2000) 2, pp. 58--65. Note that the symbol is normally denoted by ${\cal K}$.</td>
    </tr>
    <tr>
       <td>
@@ -8889,7 +8649,7 @@
       <td>
          <a href="../cd/dimensions1.html#velocity">dimensions1/<br/>velocity</a>
       </td>
-      <td>This symbol represents the velocity physical dimension. It is the derivative of (vector) distance with respect to time.</td>
+      <td>This symbol represents the velocity physical dimension. It is the derivative of distance with respect to time.</td>
    </tr>
    <tr>
       <td>
@@ -8908,12 +8668,6 @@
          <a href="../cd/SI_NamedDerivedUnits1.html#volt">SI_NamedDerivedUnits1/<br/>volt</a>
       </td>
       <td>This symbol represents an SI unit of voltage or electric tension. It has the short symbol form, "V".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_metric1.html#volt">units_metric1/<br/>volt</a>
-      </td>
-      <td>This symbol represents the measure of one volt. This is the standard SI measure for voltage.</td>
    </tr>
    <tr>
       <td>
@@ -8971,21 +8725,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_metric1.html#Watt">units_metric1/<br/>Watt</a>
-      </td>
-      <td>This symbol represents the measure of one Watt. This is the standard SI measure for power.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/SI_NamedDerivedUnits1.html#weber">SI_NamedDerivedUnits1/<br/>weber</a>
       </td>
       <td>This symbol represents an SI unit of magnetic flux. It has the short symbol form, "Wb".</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_time1.html#week">units_time1/<br/>week</a>
-      </td>
-      <td>This symbol represents the measure of one week of time.</td>
    </tr>
    <tr>
       <td>
@@ -9049,12 +8791,6 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_imperial1.html#yard">units_imperial1/<br/>yard</a>
-      </td>
-      <td>This symbol represents the measure of one yard. This is a standard imperial measure for distance, defined in terms of the foot.</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/units_us1.html#yard_us_survey">units_us1/<br/>yard_us_survey</a>
       </td>
       <td>This symbol represents the measure of one U.S. Survey yard.</td>
@@ -9064,18 +8800,6 @@
          <a href="../cd/units_siprefix1.html#yocto">units_siprefix1/<br/>yocto</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-24$</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#yocto">units_siprefix1/<br/>yocto</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-24$</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#yotta">units_siprefix1/<br/>yotta</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^24$</td>
    </tr>
    <tr>
       <td>
@@ -9094,12 +8818,6 @@
          <a href="../cd/setname1.html#Z">setname1/<br/>Z</a>
       </td>
       <td>This symbol represents the set of integers, positive, negative and zero.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/units_siprefix1.html#zepto">units_siprefix1/<br/>zepto</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-21$</td>
    </tr>
    <tr>
       <td>
@@ -9169,21 +8887,9 @@
    </tr>
    <tr>
       <td>
-         <a href="../cd/units_siprefix1.html#zetta">units_siprefix1/<br/>zetta</a>
-      </td>
-      <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^21$</td>
-   </tr>
-   <tr>
-      <td>
          <a href="../cd/ringname1.html#Zm">ringname1/<br/>Zm</a>
       </td>
       <td>This symbol represents the ring of integers modulo m, where m is not necessarily a prime. It takes one argument, the integer m.</td>
-   </tr>
-   <tr>
-      <td>
-         <a href="../cd/setname2.html#Zm">setname2/<br/>Zm</a>
-      </td>
-      <td>This symbol represents the set of integers modulo m, where m is not necessarily a prime. It takes one argument, the integer m.</td>
    </tr>
    <tr>
       <td>
