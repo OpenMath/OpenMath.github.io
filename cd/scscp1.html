@@ -1,0 +1,2352 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.github.io/public/css/main.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>scscp1</title>
+      <link rel="stylesheet" href="https://openmath.github.io/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.github.io/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="http://openmath.github.io/">http://openmath.github.io</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.github.io/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.github.io/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.github.io/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.github.io/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.github.io/atom.xml">
+                     <img class="icon" src="https://openmath.github.io/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.github.io/public/twitter_w.png"
+                          alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.github.io/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: scscp1</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.win.tue.nl/SCIEnce/cds/scscp1.ocd">http://www.win.tue.nl/SCIEnce/cds/scscp1.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="scscp1.ocd">scscp1.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="scscp1.omcd">scscp1.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#call_id">call_id</a>, <a href="#error_memory">error_memory</a>, <a href="#error_runtime">error_runtime</a>, <a href="#error_system_specific">error_system_specific</a>, <a href="#info_memory">info_memory</a>, <a href="#info_message">info_message</a>, <a href="#info_runtime">info_runtime</a>, <a href="#option_debuglevel">option_debuglevel</a>, <a href="#option_max_memory">option_max_memory</a>, <a href="#option_min_memory">option_min_memory</a>, <a href="#option_return_cookie">option_return_cookie</a>, <a href="#option_return_nothing">option_return_nothing</a>, <a href="#option_return_object">option_return_object</a>, <a href="#option_runtime">option_runtime</a>, <a href="#procedure_call">procedure_call</a>, <a href="#procedure_completed">procedure_completed</a>, <a href="#procedure_terminated">procedure_terminated</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd> 2009-06-22 </dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd> 1 
+    (Revision 12)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>  </dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+  
+  
+  
+  
+  
+  
+  
+            <p>
+    This CD defines symbols for the description of the management
+    of mathematical queries.
+    In particular, it is used by the SCIEnce project [SCIEnce website] 
+    in the communication between a web service (i.e. computer algebra system, proof checker, etc) and a client.
+    SCSCP is an abbreviation for "Symbolic Computation Software Composability Protocol"
+    [SCSCP specification].
+    
+    This version of the Content Dictionary agrees with version 1.3 of the SCSCP protocol.
+  </p>
+            <hr/>
+            <h2>
+               <a name="procedure_call"> procedure_call </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      The actual procedure call. Its only argument is an OpenMath Application,
+      whose head symbol describes the procedure to be called,
+      and whose arguments are the arguments to the procedure. 
+    </p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.14xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.14xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="option_runtime"/&gt;
+            &lt;OMI&gt;300000&lt;/OMI&gt;
+            &lt;OMS cd="scscp1" name="option_min_memory"/&gt;
+            &lt;OMI&gt;40964&lt;/OMI&gt;
+            &lt;OMS cd="scscp1" name="option_max_memory"/&gt;
+            &lt;OMI&gt;134217728&lt;/OMI&gt;
+            &lt;OMS cd="scscp1" name="option_debuglevel"/&gt;
+            &lt;OMI&gt;2&lt;/OMI&gt;
+            &lt;OMS cd="scscp1" name="option_return_object"/&gt;
+            &lt;OMSTR/&gt;
+          &lt;/OMATP&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="scscp1" name="procedure_call"/&gt;
+            &lt;OMA&gt;
+              &lt;OMS cd="scscp_transient_1" name="GroupIdentificationService"/&gt;
+              &lt;OMA&gt;
+                &lt;OMS cd="group1" name="group"/&gt;
+                &lt;OMA&gt;
+                  &lt;OMS cd="permut1" name="permutation"/&gt;
+                  &lt;OMI&gt; 2&lt;/OMI&gt;
+                  &lt;OMI&gt; 3&lt;/OMI&gt;
+                  &lt;OMI&gt; 1&lt;/OMI&gt;
+                &lt;/OMA&gt;
+                &lt;OMA&gt;
+                  &lt;OMS cd="permut1" name="permutation"/&gt;
+                  &lt;OMI&gt; 1&lt;/OMI&gt;
+                  &lt;OMI&gt; 2&lt;/OMI&gt;
+                  &lt;OMI&gt; 4&lt;/OMI&gt;
+                  &lt;OMI&gt; 3&lt;/OMI&gt;
+                &lt;/OMA&gt;
+              &lt;/OMA&gt;
+            &lt;/OMA&gt;
+          &lt;/OMA&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.14cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14cmml')">Strict Content MathML</button>
+                     <pre id="id.om.14cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_call&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="scscp_transient_1"&gt;GroupIdentificationService&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="group1"&gt;group&lt;/csymbol&gt;
+     &lt;apply&gt;&lt;csymbol cd="permut1"&gt;permutation&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+      &lt;cn type="integer"&gt;3&lt;/cn&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+     &lt;/apply&gt;
+     &lt;apply&gt;&lt;csymbol cd="permut1"&gt;permutation&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;1&lt;/cn&gt;
+      &lt;cn type="integer"&gt;2&lt;/cn&gt;
+      &lt;cn type="integer"&gt;4&lt;/cn&gt;
+      &lt;cn type="integer"&gt;3&lt;/cn&gt;
+     &lt;/apply&gt;
+    &lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_runtime"&gt;&lt;cn type="integer"&gt;300000&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_min_memory"&gt;&lt;cn type="integer"&gt;40964&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_max_memory"&gt;&lt;cn type="integer"&gt;134217728&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_debuglevel"&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_return_object"&gt;&lt;cs/&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.14prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.14pref')">Prefix</button>
+                  <div id="id.om.14pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#option_runtime">option_runtime</a>
+            300000
+            <a href="../../../cd/scscp1.html#option_min_memory">option_min_memory</a>
+            40964
+            <a href="../../../cd/scscp1.html#option_max_memory">option_max_memory</a>
+            134217728
+            <a href="../../../cd/scscp1.html#option_debuglevel">option_debuglevel</a>
+            2
+            <a href="../../../cd/scscp1.html#option_return_object">option_return_object</a>
+                     <tt> "" </tt>
+          ],
+  <a href="../../../cd/scscp1.html#procedure_call">procedure_call</a>
+  (<a href="../../../cd/scscp_transient_1.html#GroupIdentificationService">GroupIdentificationService</a>
+  (<a href="../../../cd/group1.html#group">group</a>
+  (<a href="../../../cd/permut1.html#permutation">permutation</a>
+  ( 2,  3,  1)
+, <a href="../../../cd/permut1.html#permutation">permutation</a>
+  ( 1,  2,  4,  3)
+)
+)
+)
+)
+
+      </div>
+                  <div>
+                     <button id="id.om.14popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.14pop')">Popcorn</button>
+                     <div id="id.om.14pop" style="display:none; margin-top: 0.5em">
+        scscp1.procedure_call(scscp_transient_1.GroupIdentificationService(group1.group(permut1.permutation(2, 3, 1), permut1.permutation(1, 2, 4, 3)))){scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_runtime -&gt; 300000, scscp1.option_min_memory -&gt; 40964, scscp1.option_max_memory -&gt; 134217728, scscp1.option_debuglevel -&gt; 2, scscp1.option_return_object -&gt; ""}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.14mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.14mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.14mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_call</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mi>GroupIdentificationService</mi>
+                                       <mo>&#8289;</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mrow>
+                                             <mi>group</mi>
+                                             <mo>&#8289;</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mrow>
+                                                   <mi>permutation</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn> 2</mn>
+                                                      <mo>,</mo>
+                                                      <mn> 3</mn>
+                                                      <mo>,</mo>
+                                                      <mn> 1</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>,</mo>
+                                                <mrow>
+                                                   <mi>permutation</mi>
+                                                   <mo>&#8289;</mo>
+                                                   <mrow>
+                                                      <mo>(</mo>
+                                                      <mn> 1</mn>
+                                                      <mo>,</mo>
+                                                      <mn> 2</mn>
+                                                      <mo>,</mo>
+                                                      <mn> 4</mn>
+                                                      <mo>,</mo>
+                                                      <mn> 3</mn>
+                                                      <mo>)</mo>
+                                                   </mrow>
+                                                </mrow>
+                                                <mo>)</mo>
+                                             </mrow>
+                                          </mrow>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#procedure_call">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#procedure_completed">procedure_completed</a>]
+	  
+	    [Last: <a href="#error_system_specific">error_system_specific</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="procedure_completed"> procedure_completed </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		The result of a successful computation. Should come along 
+		with a call_id and, possibly, some extra information.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.50xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.50xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.50xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;&lt;OMATTR&gt;&lt;OMATP&gt;&lt;OMS cd="scscp1" name="call_id"/&gt;&lt;OMSTR&gt;a1d0c6e83f027327d8461063f4ac58a6&lt;/OMSTR&gt;&lt;OMS cd="scscp1" name="info_runtime"/&gt;&lt;OMI&gt;72643&lt;/OMI&gt;&lt;OMS cd="scscp1" name="info_memory"/&gt;&lt;OMI&gt;52876&lt;/OMI&gt;&lt;/OMATP&gt;&lt;OMA&gt;&lt;OMS cd="scscp1" name="procedure_completed"/&gt;&lt;OMI&gt;26925748508234281076009&lt;/OMI&gt;&lt;/OMA&gt;&lt;/OMATTR&gt;&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.50cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.50cmml')">Strict Content MathML</button>
+                     <pre id="id.om.50cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_completed&lt;/csymbol&gt;&lt;cn type="integer"&gt;26925748508234281076009&lt;/cn&gt;&lt;/apply&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;a1d0c6e83f027327d8461063f4ac58a6&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="info_runtime"&gt;&lt;cn type="integer"&gt;72643&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="info_memory"&gt;&lt;cn type="integer"&gt;52876&lt;/cn&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.50prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.50pref')">Prefix</button>
+                  <div id="id.om.50pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "a1d0c6e83f027327d8461063f4ac58a6" </tt>
+                     <a href="../../../cd/scscp1.html#info_runtime">info_runtime</a>72643<a href="../../../cd/scscp1.html#info_memory">info_memory</a>52876],
+  <a href="../../../cd/scscp1.html#procedure_completed">procedure_completed</a>
+  (26925748508234281076009)
+)
+</div>
+                  <div>
+                     <button id="id.om.50popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.50pop')">Popcorn</button>
+                     <div id="id.om.50pop" style="display:none; margin-top: 0.5em">scscp1.procedure_completed(26925748508234281076009){scscp1.call_id -&gt; "a1d0c6e83f027327d8461063f4ac58a6", scscp1.info_runtime -&gt; 72643, scscp1.info_memory -&gt; 52876}</div>
+                  </div>
+                  <div>
+                     <button id="id.om.50mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.50mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.50mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_completed</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>26925748508234281076009</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+		Instead of the result, we may return a reference
+		to the result, as follows:
+
+		<dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.63xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.63xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.63xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;&lt;OMATTR&gt;&lt;OMATP&gt;&lt;OMS cd="scscp1" name="call_id"/&gt;&lt;OMSTR&gt;a1d0c6e83f027327d8461063f4ac58a6&lt;/OMSTR&gt;&lt;OMS cd="scscp1" name="info_runtime"/&gt;&lt;OMI&gt;72643&lt;/OMI&gt;&lt;OMS cd="scscp1" name="info_memory"/&gt;&lt;OMI&gt;52876&lt;/OMI&gt;&lt;/OMATP&gt;&lt;OMA&gt;&lt;OMS cd="scscp1" name="procedure_completed"/&gt;&lt;OMR href="scscp://somehost:26133/92cfceb39d57d914ed8b14d0e37643de0797ae56"/&gt;&lt;/OMA&gt;&lt;/OMATTR&gt;&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.63cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.63cmml')">Strict Content MathML</button>
+                     <pre id="id.om.63cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_completed&lt;/csymbol&gt;&lt;share src="scscp://somehost:26133/92cfceb39d57d914ed8b14d0e37643de0797ae56"/&gt;&lt;/apply&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;a1d0c6e83f027327d8461063f4ac58a6&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="info_runtime"&gt;&lt;cn type="integer"&gt;72643&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="info_memory"&gt;&lt;cn type="integer"&gt;52876&lt;/cn&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.63prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.63pref')">Prefix</button>
+                  <div id="id.om.63pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "a1d0c6e83f027327d8461063f4ac58a6" </tt>
+                     <a href="../../../cd/scscp1.html#info_runtime">info_runtime</a>72643<a href="../../../cd/scscp1.html#info_memory">info_memory</a>52876],
+  <a href="../../../cd/scscp1.html#procedure_completed">procedure_completed</a>
+  ()
+)
+</div>
+                  <div>
+                     <button id="id.om.63popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.63pop')">Popcorn</button>
+                     <div id="id.om.63pop" style="display:none; margin-top: 0.5em">scscp1.procedure_completed(##scscp://somehost:26133/92cfceb39d57d914ed8b14d0e37643de0797ae56){scscp1.call_id -&gt; "a1d0c6e83f027327d8461063f4ac58a6", scscp1.info_runtime -&gt; 72643, scscp1.info_memory -&gt; 52876}</div>
+                  </div>
+                  <div>
+                     <button id="id.om.63mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.63mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.63mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_completed</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#procedure_completed">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#procedure_terminated">procedure_terminated</a>]
+	  
+	    [Previous: <a href="#procedure_call">procedure_call</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="procedure_terminated"> procedure_terminated </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		The result of a failed computation. Should come along 
+		with a call_id, an error description, and possibly
+		some extra information.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.79xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.79xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.79xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;a24904e5d3ed28eae9225fd787f64a71&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="info_runtime"/&gt;
+            &lt;OMSTR&gt;21897&lt;/OMSTR&gt;
+          &lt;/OMATP&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="scscp1" name="procedure_terminated"/&gt;
+            &lt;OME&gt;
+              &lt;OMS cd="scscp1" name="error_system_specific"/&gt;
+              &lt;OMSTR&gt;Segmentation fault&lt;/OMSTR&gt;
+            &lt;/OME&gt;
+          &lt;/OMA&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.79cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.79cmml')">Strict Content MathML</button>
+                     <pre id="id.om.79cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_terminated&lt;/csymbol&gt;
+   &lt;cerror&gt;&lt;csymbol cd="scscp1"&gt;error_system_specific&lt;/csymbol&gt;&lt;cs&gt;Segmentation fault&lt;/cs&gt;&lt;/cerror&gt;
+  &lt;/apply&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;a24904e5d3ed28eae9225fd787f64a71&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="info_runtime"&gt;&lt;cs&gt;21897&lt;/cs&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.79prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.79pref')">Prefix</button>
+                  <div id="id.om.79pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "a24904e5d3ed28eae9225fd787f64a71" </tt>
+                     <a href="../../../cd/scscp1.html#info_runtime">info_runtime</a>
+                     <tt> "21897" </tt>
+          ],
+  <a href="../../../cd/scscp1.html#procedure_terminated">procedure_terminated</a>
+  (<b>Error</b>(<a href="../../../cd/scscp1.html#error_system_specific">error_system_specific</a>,
+  <tt> "Segmentation fault" </tt>)
+)
+)
+
+      </div>
+                  <div>
+                     <button id="id.om.79popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.79pop')">Popcorn</button>
+                     <div id="id.om.79pop" style="display:none; margin-top: 0.5em">
+        scscp1.procedure_terminated(scscp1.error_system_specific!("Segmentation fault")){scscp1.call_id -&gt; "a24904e5d3ed28eae9225fd787f64a71", scscp1.info_runtime -&gt; "21897"}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.79mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.79mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.79mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_terminated</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <merror>
+                                       <mi>error_system_specific</mi>
+                                       <mtext>Segmentation fault</mtext>
+                                    </merror>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#procedure_terminated">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#call_id">call_id</a>]
+	  
+	    [Previous: <a href="#procedure_completed">procedure_completed</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="call_id"> call_id </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		Uniquely identifies a procedure call. Used in subsequent
+		communication, so the parties know which call they are
+		talking about.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.95xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.95xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.95xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;a1d0c6e83f027327d8461063f4ac58a6&lt;/OMSTR&gt;
+          &lt;/OMATP&gt;
+          &lt;!-- The OMA goes here --&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.95cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.95cmml')">Strict Content MathML</button>
+                     <pre id="id.om.95cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;a1d0c6e83f027327d8461063f4ac58a6&lt;/cs&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.95prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.95pref')">Prefix</button>
+                  <div id="id.om.95pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "a1d0c6e83f027327d8461063f4ac58a6" </tt>
+          ],
+  )
+
+      </div>
+                  <div>
+                     <button id="id.om.95popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.95pop')">Popcorn</button>
+                     <div id="id.om.95pop" style="display:none; margin-top: 0.5em">
+        {scscp1.call_id -&gt; "a1d0c6e83f027327d8461063f4ac58a6"}{scscp1.call_id -&gt; "a1d0c6e83f027327d8461063f4ac58a6"}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.95mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.95mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.95mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        
+      </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#call_id">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#option_max_memory">option_max_memory</a>]
+	  
+	    [Previous: <a href="#procedure_terminated">procedure_terminated</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="option_max_memory"> option_max_memory </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		An option, to be given along with a procedure call, 
+		describing the maximum amount of memory (in bytes)
+		the system should spend on this call.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.104xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.104xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.104xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="option_max_memory"/&gt;
+            &lt;OMI&gt;20971520&lt;/OMI&gt;
+            &lt;OMS cd="scscp1" name="option_return_object"/&gt;
+            &lt;OMSTR/&gt;
+          &lt;/OMATP&gt;
+          &lt;!-- The OMA goes here --&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.104cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.104cmml')">Strict Content MathML</button>
+                     <pre id="id.om.104cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_max_memory"&gt;&lt;cn type="integer"&gt;20971520&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_return_object"&gt;&lt;cs/&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.104prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.104pref')">Prefix</button>
+                  <div id="id.om.104pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#option_max_memory">option_max_memory</a>
+            20971520
+            <a href="../../../cd/scscp1.html#option_return_object">option_return_object</a>
+                     <tt> "" </tt>
+          ],
+  )
+
+      </div>
+                  <div>
+                     <button id="id.om.104popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.104pop')">Popcorn</button>
+                     <div id="id.om.104pop" style="display:none; margin-top: 0.5em">
+        {scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_max_memory -&gt; 20971520, scscp1.option_return_object -&gt; ""}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_max_memory -&gt; 20971520, scscp1.option_return_object -&gt; ""}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.104mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.104mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.104mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        
+      </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#option_max_memory">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#option_min_memory">option_min_memory</a>]
+	  
+	    [Previous: <a href="#call_id">call_id</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="option_min_memory"> option_min_memory </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		An option, to be given along with a procedure call, 
+		describing the minimum amount of memory (in bytes)
+		the system should be able to spend on this call.
+		The idea is that in certain cases we know in advance
+		that we will need a large amount of memory. If the 
+		system will never be able to provide that, it would 
+		be a waste of time and resources to even start the 
+		computation.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.117xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.117xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.117xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="option_min_memory"/&gt;
+            &lt;OMI&gt;250971520&lt;/OMI&gt;
+            &lt;OMS cd="scscp1" name="option_return_object"/&gt;
+            &lt;OMSTR/&gt;
+          &lt;/OMATP&gt;
+          &lt;!-- The OMA goes here --&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.117cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.117cmml')">Strict Content MathML</button>
+                     <pre id="id.om.117cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_min_memory"&gt;&lt;cn type="integer"&gt;250971520&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_return_object"&gt;&lt;cs/&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.117prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.117pref')">Prefix</button>
+                  <div id="id.om.117pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#option_min_memory">option_min_memory</a>
+            250971520
+            <a href="../../../cd/scscp1.html#option_return_object">option_return_object</a>
+                     <tt> "" </tt>
+          ],
+  )
+
+      </div>
+                  <div>
+                     <button id="id.om.117popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.117pop')">Popcorn</button>
+                     <div id="id.om.117pop" style="display:none; margin-top: 0.5em">
+        {scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_min_memory -&gt; 250971520, scscp1.option_return_object -&gt; ""}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_min_memory -&gt; 250971520, scscp1.option_return_object -&gt; ""}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.117mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.117mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.117mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        
+      </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#option_min_memory">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#option_runtime">option_runtime</a>]
+	  
+	    [Previous: <a href="#option_max_memory">option_max_memory</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="option_runtime"> option_runtime </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		An option, to be given along with a procedure call, 
+		describing the maximum amount of time (in milliseconds)
+		the system should spend on this call.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.130xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.130xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.130xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="option_runtime"/&gt;
+            &lt;OMI&gt;600000&lt;/OMI&gt;
+            &lt;OMS cd="scscp1" name="option_return_object"/&gt;
+            &lt;OMSTR/&gt;
+          &lt;/OMATP&gt;
+          &lt;!-- The OMA goes here --&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.130cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.130cmml')">Strict Content MathML</button>
+                     <pre id="id.om.130cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_runtime"&gt;&lt;cn type="integer"&gt;600000&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_return_object"&gt;&lt;cs/&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.130prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.130pref')">Prefix</button>
+                  <div id="id.om.130pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#option_runtime">option_runtime</a>
+            600000
+            <a href="../../../cd/scscp1.html#option_return_object">option_return_object</a>
+                     <tt> "" </tt>
+          ],
+  )
+
+      </div>
+                  <div>
+                     <button id="id.om.130popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.130pop')">Popcorn</button>
+                     <div id="id.om.130pop" style="display:none; margin-top: 0.5em">
+        {scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_runtime -&gt; 600000, scscp1.option_return_object -&gt; ""}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_runtime -&gt; 600000, scscp1.option_return_object -&gt; ""}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.130mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.130mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.130mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        
+      </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#option_runtime">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#option_debuglevel">option_debuglevel</a>]
+	  
+	    [Previous: <a href="#option_min_memory">option_min_memory</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="option_debuglevel"> option_debuglevel </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		An option, to be given along with a procedure call, 
+		describing the amount of debug information the
+		client is interested in. Should be an integer.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.143xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.143xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.143xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="option_debuglevel"/&gt;
+            &lt;OMI&gt;2&lt;/OMI&gt;
+            &lt;OMS cd="scscp1" name="option_return_object"/&gt;
+            &lt;OMSTR/&gt;
+          &lt;/OMATP&gt;
+          &lt;!-- The OMA goes here --&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.143cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.143cmml')">Strict Content MathML</button>
+                     <pre id="id.om.143cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_debuglevel"&gt;&lt;cn type="integer"&gt;2&lt;/cn&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_return_object"&gt;&lt;cs/&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.143prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.143pref')">Prefix</button>
+                  <div id="id.om.143pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#option_debuglevel">option_debuglevel</a>
+            2
+            <a href="../../../cd/scscp1.html#option_return_object">option_return_object</a>
+                     <tt> "" </tt>
+          ],
+  )
+
+      </div>
+                  <div>
+                     <button id="id.om.143popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.143pop')">Popcorn</button>
+                     <div id="id.om.143pop" style="display:none; margin-top: 0.5em">
+        {scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_debuglevel -&gt; 2, scscp1.option_return_object -&gt; ""}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_debuglevel -&gt; 2, scscp1.option_return_object -&gt; ""}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.143mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.143mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.143mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        
+      </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#option_debuglevel">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#option_return_cookie">option_return_cookie</a>]
+	  
+	    [Previous: <a href="#option_runtime">option_runtime</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="option_return_cookie"> option_return_cookie </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		An option, to be given along with a procedure call, 
+		indicating that the client would like to have a cookie (i.e.
+		a reference to an OpenMath object residing somewhere)
+		as return value.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.156xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.156xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.156xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;&lt;OMATTR&gt;&lt;OMATP&gt;&lt;OMS cd="scscp1" name="call_id"/&gt;&lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;&lt;OMS cd="scscp1" name="option_return_cookie"/&gt;&lt;OMSTR/&gt;&lt;/OMATP&gt;&lt;!-- The OMA goes here --&gt;&lt;/OMATTR&gt;&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.156cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.156cmml')">Strict Content MathML</button>
+                     <pre id="id.om.156cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_return_cookie"&gt;&lt;cs/&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.156prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.156pref')">Prefix</button>
+                  <div id="id.om.156pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#option_return_cookie">option_return_cookie</a>
+                     <tt> "" </tt>],
+  )
+</div>
+                  <div>
+                     <button id="id.om.156popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.156pop')">Popcorn</button>
+                     <div id="id.om.156pop" style="display:none; margin-top: 0.5em">{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_return_cookie -&gt; ""}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_return_cookie -&gt; ""}</div>
+                  </div>
+                  <div>
+                     <button id="id.om.156mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.156mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.156mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"/>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+		The reply from the server should then look like:
+
+		<dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.164xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.164xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.164xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;&lt;OMATTR&gt;&lt;OMATP&gt;&lt;OMS cd="scscp1" name="call_id"/&gt;&lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;&lt;/OMATP&gt;&lt;OMA&gt;&lt;OMS cd="scscp1" name="procedure_completed"/&gt;&lt;OMR href="scscp://somehost.somedomain:26133/q9t4eX"/&gt;&lt;/OMA&gt;&lt;/OMATTR&gt;&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.164cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.164cmml')">Strict Content MathML</button>
+                     <pre id="id.om.164cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_completed&lt;/csymbol&gt;&lt;share src="scscp://somehost.somedomain:26133/q9t4eX"/&gt;&lt;/apply&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.164prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.164pref')">Prefix</button>
+                  <div id="id.om.164pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>],
+  <a href="../../../cd/scscp1.html#procedure_completed">procedure_completed</a>
+  ()
+)
+</div>
+                  <div>
+                     <button id="id.om.164popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.164pop')">Popcorn</button>
+                     <div id="id.om.164pop" style="display:none; margin-top: 0.5em">scscp1.procedure_completed(##scscp://somehost.somedomain:26133/q9t4eX){scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg"}</div>
+                  </div>
+                  <div>
+                     <button id="id.om.164mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.164mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.164mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_completed</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+	           <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#option_return_cookie">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#option_return_object">option_return_object</a>]
+	  
+	    [Previous: <a href="#option_debuglevel">option_debuglevel</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="option_return_object"> option_return_object </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		An option, to be given along with a procedure call, 
+		indicating that the client would like to have the actual OpenMath
+		object as return value.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.176xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.176xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.176xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;&lt;OMATTR&gt;&lt;OMATP&gt;&lt;OMS cd="scscp1" name="call_id"/&gt;&lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;&lt;OMS cd="scscp1" name="option_return_object"/&gt;&lt;OMSTR/&gt;&lt;/OMATP&gt;&lt;!-- The OMA goes here --&gt;&lt;/OMATTR&gt;&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.176cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.176cmml')">Strict Content MathML</button>
+                     <pre id="id.om.176cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_return_object"&gt;&lt;cs/&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.176prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.176pref')">Prefix</button>
+                  <div id="id.om.176pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#option_return_object">option_return_object</a>
+                     <tt> "" </tt>],
+  )
+</div>
+                  <div>
+                     <button id="id.om.176popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.176pop')">Popcorn</button>
+                     <div id="id.om.176pop" style="display:none; margin-top: 0.5em">{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_return_object -&gt; ""}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_return_object -&gt; ""}</div>
+                  </div>
+                  <div>
+                     <button id="id.om.176mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.176mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.176mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"/>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+The reply from the server should then look like:
+
+<dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.184xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.184xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.184xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;&lt;OMATTR&gt;&lt;OMATP&gt;&lt;OMS cd="scscp1" name="call_id"/&gt;&lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;&lt;/OMATP&gt;&lt;OMA&gt;&lt;OMS cd="scscp1" name="procedure_completed"/&gt;&lt;OMI&gt;42&lt;/OMI&gt;&lt;/OMA&gt;&lt;/OMATTR&gt;&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.184cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.184cmml')">Strict Content MathML</button>
+                     <pre id="id.om.184cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_completed&lt;/csymbol&gt;&lt;cn type="integer"&gt;42&lt;/cn&gt;&lt;/apply&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.184prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.184pref')">Prefix</button>
+                  <div id="id.om.184pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>],
+  <a href="../../../cd/scscp1.html#procedure_completed">procedure_completed</a>
+  (42)
+)
+</div>
+                  <div>
+                     <button id="id.om.184popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.184pop')">Popcorn</button>
+                     <div id="id.om.184pop" style="display:none; margin-top: 0.5em">scscp1.procedure_completed(42){scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg"}</div>
+                  </div>
+                  <div>
+                     <button id="id.om.184mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.184mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.184mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_completed</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mn>42</mn>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#option_return_object">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#option_return_nothing">option_return_nothing</a>]
+	  
+	    [Previous: <a href="#option_return_cookie">option_return_cookie</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="option_return_nothing"> option_return_nothing </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+An option, to be given along with a procedure call, 
+indicating that the client expects no return value.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.196xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.196xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.196xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;&lt;OMATTR&gt;&lt;OMATP&gt;&lt;OMS cd="scscp1" name="call_id"/&gt;&lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;&lt;OMS cd="scscp1" name="option_return_nothing"/&gt;&lt;OMSTR/&gt;&lt;/OMATP&gt;&lt;!-- The OMA goes here --&gt;&lt;/OMATTR&gt;&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.196cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.196cmml')">Strict Content MathML</button>
+                     <pre id="id.om.196cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="option_return_nothing"&gt;&lt;cs/&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.196prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.196pref')">Prefix</button>
+                  <div id="id.om.196pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#option_return_nothing">option_return_nothing</a>
+                     <tt> "" </tt>],
+  )
+</div>
+                  <div>
+                     <button id="id.om.196popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.196pop')">Popcorn</button>
+                     <div id="id.om.196pop" style="display:none; margin-top: 0.5em">{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_return_nothing -&gt; ""}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.option_return_nothing -&gt; ""}</div>
+                  </div>
+                  <div>
+                     <button id="id.om.196mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.196mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.196mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"/>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+The reply from the server may then look like:
+
+<dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.204xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.204xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.204xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;&lt;OMATTR&gt;&lt;OMATP&gt;&lt;OMS cd="scscp1" name="call_id"/&gt;&lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;&lt;/OMATP&gt;&lt;OMA&gt;&lt;OMS cd="scscp1" name="procedure_completed"/&gt;&lt;/OMA&gt;&lt;/OMATTR&gt;&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.204cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.204cmml')">Strict Content MathML</button>
+                     <pre id="id.om.204cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_completed&lt;/csymbol&gt;&lt;/apply&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.204prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.204pref')">Prefix</button>
+                  <div id="id.om.204pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([<a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>],
+  <a href="../../../cd/scscp1.html#procedure_completed">procedure_completed</a>
+  ()
+)
+</div>
+                  <div>
+                     <button id="id.om.204popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.204pop')">Popcorn</button>
+                     <div id="id.om.204pop" style="display:none; margin-top: 0.5em">scscp1.procedure_completed(){scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg"}</div>
+                  </div>
+                  <div>
+                     <button id="id.om.204mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.204mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.204mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_completed</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#option_return_nothing">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#info_memory">info_memory</a>]
+	  
+	    [Previous: <a href="#option_return_object">option_return_object</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="info_memory"> info_memory </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+A piece of information from the system, to be used
+along with a procedure_completed or procedure_terminated message, 
+describing how much memory was spent on the 
+calculation. It should be in bytes, denoted
+using an OMI.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.215xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.215xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.215xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="info_memory"/&gt;
+            &lt;OMI&gt;134218000&lt;/OMI&gt;
+          &lt;/OMATP&gt;
+          &lt;!-- The OMA goes here --&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.215cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.215cmml')">Strict Content MathML</button>
+                     <pre id="id.om.215cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="info_memory"&gt;&lt;cn type="integer"&gt;134218000&lt;/cn&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.215prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.215pref')">Prefix</button>
+                  <div id="id.om.215pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#info_memory">info_memory</a>
+            134218000
+          ],
+  )
+
+      </div>
+                  <div>
+                     <button id="id.om.215popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.215pop')">Popcorn</button>
+                     <div id="id.om.215pop" style="display:none; margin-top: 0.5em">
+        {scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.info_memory -&gt; 134218000}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.info_memory -&gt; 134218000}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.215mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.215mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.215mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        
+      </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#info_memory">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#info_runtime">info_runtime</a>]
+	  
+	    [Previous: <a href="#option_return_nothing">option_return_nothing</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="info_runtime"> info_runtime </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+A piece of information from the system, to be used
+along with a procedure_completed or procedure_terminated message, 
+describing how much cputime was spent on the 
+calculation. It should be in milliseconds, denoted
+using an OMI.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.226xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.226xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.226xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="info_runtime"/&gt;
+            &lt;OMI&gt;76543&lt;/OMI&gt;
+          &lt;/OMATP&gt;
+          &lt;!-- The OMA goes here --&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.226cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.226cmml')">Strict Content MathML</button>
+                     <pre id="id.om.226cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="info_runtime"&gt;&lt;cn type="integer"&gt;76543&lt;/cn&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.226prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.226pref')">Prefix</button>
+                  <div id="id.om.226pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#info_runtime">info_runtime</a>
+            76543
+          ],
+  )
+
+      </div>
+                  <div>
+                     <button id="id.om.226popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.226pop')">Popcorn</button>
+                     <div id="id.om.226pop" style="display:none; margin-top: 0.5em">
+        {scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.info_runtime -&gt; 76543}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.info_runtime -&gt; 76543}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.226mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.226mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.226mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        
+      </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#info_runtime">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#info_message">info_message</a>]
+	  
+	    [Previous: <a href="#info_memory">info_memory</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="info_message"> info_message </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		A piece of information from the server, to be used
+		along with a procedure_completed or procedure_terminated 
+		message, giving some additional information. The client 
+		may choose to present this information to its user.
+		The argument is an OMSTR.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.237xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.237xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.237xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;OMS cd="scscp1" name="call_id"/&gt;
+            &lt;OMSTR&gt;localhost:26137:18668:s2sYf1pg&lt;/OMSTR&gt;
+            &lt;OMS cd="scscp1" name="info_message"/&gt;
+            &lt;OMSTR&gt;The weather in St. Andrews is beautiful this time of year&lt;/OMSTR&gt;
+          &lt;/OMATP&gt;
+          &lt;!-- The OMA goes here --&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.237cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.237cmml')">Strict Content MathML</button>
+                     <pre id="id.om.237cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;annotation-xml cd="scscp1" encoding="call_id"&gt;&lt;cs&gt;localhost:26137:18668:s2sYf1pg&lt;/cs&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="scscp1" encoding="info_message"&gt;&lt;cs&gt;The weather in St. Andrews is beautiful this time of year&lt;/cs&gt;&lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.237prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.237pref')">Prefix</button>
+                  <div id="id.om.237pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            <a href="../../../cd/scscp1.html#call_id">call_id</a>
+                     <tt> "localhost:26137:18668:s2sYf1pg" </tt>
+                     <a href="../../../cd/scscp1.html#info_message">info_message</a>
+                     <tt> "The weather in St. Andrews is beautiful this time of year" </tt>
+          ],
+  )
+
+      </div>
+                  <div>
+                     <button id="id.om.237popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.237pop')">Popcorn</button>
+                     <div id="id.om.237pop" style="display:none; margin-top: 0.5em">
+        {scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.info_message -&gt; "The weather in St. Andrews is beautiful this time of year"}{scscp1.call_id -&gt; "localhost:26137:18668:s2sYf1pg", scscp1.info_message -&gt; "The weather in St. Andrews is beautiful this time of year"}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.237mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.237mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.237mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        
+      </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#info_message">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#error_memory">error_memory</a>]
+	  
+	    [Previous: <a href="#info_runtime">info_runtime</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="error_memory"> error_memory </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		A description of the error that caused a
+		procedure call to be terminated. This symbol
+		is used with a procedure_terminated, when
+		the system exceeded the amount of memory specified
+		in the option_max_memory option given in the
+		corresponding procedure call.</p>
+                  <p>		It carries one argument: An OMSTR, which may be empty.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.248xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.248xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.248xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;!-- The header goes here --&gt;
+          &lt;/OMATP&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="scscp1" name="procedure_terminated"/&gt;
+            &lt;OME&gt;
+              &lt;OMS cd="scscp1" name="error_memory"/&gt;
+              &lt;OMSTR/&gt;
+            &lt;/OME&gt;
+          &lt;/OMA&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.248cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.248cmml')">Strict Content MathML</button>
+                     <pre id="id.om.248cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_terminated&lt;/csymbol&gt;
+   &lt;cerror&gt;&lt;csymbol cd="scscp1"&gt;error_memory&lt;/csymbol&gt;&lt;cs/&gt;&lt;/cerror&gt;
+  &lt;/apply&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.248prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.248pref')">Prefix</button>
+                  <div id="id.om.248pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            
+          ],
+  <a href="../../../cd/scscp1.html#procedure_terminated">procedure_terminated</a>
+  (<b>Error</b>(<a href="../../../cd/scscp1.html#error_memory">error_memory</a>,
+  <tt> "" </tt>)
+)
+)
+
+      </div>
+                  <div>
+                     <button id="id.om.248popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.248pop')">Popcorn</button>
+                     <div id="id.om.248pop" style="display:none; margin-top: 0.5em">
+        scscp1.procedure_terminated(scscp1.error_memory!("")){}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.248mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.248mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.248mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_terminated</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <merror>
+                                       <mi>error_memory</mi>
+                                       <mtext/>
+                                    </merror>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#error_memory">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#error_runtime">error_runtime</a>]
+	  
+	    [Previous: <a href="#info_message">info_message</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="error_runtime"> error_runtime </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		A description of the error that caused a
+		procedure call to be terminated. This symbol
+		is used with a procedure_terminated, when
+		the system exceeded the runtime specified
+		in the option_runtime option given in the
+		corresponding procedure call.</p>
+                  <p>		It carries one argument: An OMSTR, which may be empty.</p>
+                  <p>		Note that this symbol is not intended to be
+		used when a different runtime error occurred.
+		In those cases, one should use error_system_specific.
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.260xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.260xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.260xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;!-- The header goes here --&gt;
+          &lt;/OMATP&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="scscp1" name="procedure_terminated"/&gt;
+            &lt;OME&gt;
+              &lt;OMS cd="scscp1" name="error_runtime"/&gt;
+              &lt;OMSTR/&gt;
+            &lt;/OME&gt;
+          &lt;/OMA&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.260cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.260cmml')">Strict Content MathML</button>
+                     <pre id="id.om.260cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_terminated&lt;/csymbol&gt;
+   &lt;cerror&gt;&lt;csymbol cd="scscp1"&gt;error_runtime&lt;/csymbol&gt;&lt;cs/&gt;&lt;/cerror&gt;
+  &lt;/apply&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.260prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.260pref')">Prefix</button>
+                  <div id="id.om.260pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            
+          ],
+  <a href="../../../cd/scscp1.html#procedure_terminated">procedure_terminated</a>
+  (<b>Error</b>(<a href="../../../cd/scscp1.html#error_runtime">error_runtime</a>,
+  <tt> "" </tt>)
+)
+)
+
+      </div>
+                  <div>
+                     <button id="id.om.260popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.260pop')">Popcorn</button>
+                     <div id="id.om.260pop" style="display:none; margin-top: 0.5em">
+        scscp1.procedure_terminated(scscp1.error_runtime!("")){}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.260mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.260mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.260mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_terminated</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <merror>
+                                       <mi>error_runtime</mi>
+                                       <mtext/>
+                                    </merror>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#error_runtime">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#error_system_specific">error_system_specific</a>]
+	  
+	    [Previous: <a href="#error_memory">error_memory</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+            <hr/>
+            <h2>
+               <a name="error_system_specific"> error_system_specific </a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+		A description of the error that caused a
+		procedure call to be terminated. This symbol
+		is used with a procedure_terminated, when
+		the error is specific to the system that
+		carried out the calculation.
+		This error must carry exactly one argument, 
+		and it must be an OMSTR describing the error 
+		that occurred. 
+		</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.272xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.272xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.272xml" style="display:none">
+      &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath"&gt;
+        &lt;OMATTR&gt;
+          &lt;OMATP&gt;
+            &lt;!-- The header goes here --&gt;
+          &lt;/OMATP&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="scscp1" name="procedure_terminated"/&gt;
+            &lt;OME&gt;
+              &lt;OMS cd="scscp1" name="error_system_specific"/&gt;
+              &lt;OMSTR&gt;Error, the group identification for groups of size\n
+							3628800 is not available called from\n
+							&amp;lt;function&amp;gt;( &amp;lt;arguments&amp;gt; ) called from read-eval-loop\n
+							Entering break read-eval-print loop ...\n
+							you can 'quit;' to quit to outer loop, or\n
+							you can 'return;' to continue\n
+							brk&amp;gt;\n
+							&lt;/OMSTR&gt;
+            &lt;/OME&gt;
+          &lt;/OMA&gt;
+        &lt;/OMATTR&gt;
+      &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.272cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.272cmml')">Strict Content MathML</button>
+                     <pre id="id.om.272cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;semantics&gt;
+  &lt;apply&gt;&lt;csymbol cd="scscp1"&gt;procedure_terminated&lt;/csymbol&gt;
+   &lt;cerror&gt;&lt;csymbol cd="scscp1"&gt;error_system_specific&lt;/csymbol&gt;&lt;cs&gt;Error, the group identification for groups of size\n
+							3628800 is not available called from\n
+							&amp;lt;function&amp;gt;( &amp;lt;arguments&amp;gt; ) called from read-eval-loop\n
+							Entering break read-eval-print loop ...\n
+							you can 'quit;' to quit to outer loop, or\n
+							you can 'return;' to continue\n
+							brk&amp;gt;\n
+							&lt;/cs&gt;&lt;/cerror&gt;
+  &lt;/apply&gt;
+ &lt;/semantics&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.272prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.272pref')">Prefix</button>
+                  <div id="id.om.272pref" style="display:none; margin-top: 0.5em">
+                     <b>Attrib</b>([
+            
+          ],
+  <a href="../../../cd/scscp1.html#procedure_terminated">procedure_terminated</a>
+  (<b>Error</b>(<a href="../../../cd/scscp1.html#error_system_specific">error_system_specific</a>,
+  <tt> "Error, the group identification for groups of size\n
+							3628800 is not available called from\n
+							&lt;function&gt;( &lt;arguments&gt; ) called from read-eval-loop\n
+							Entering break read-eval-print loop ...\n
+							you can 'quit;' to quit to outer loop, or\n
+							you can 'return;' to continue\n
+							brk&gt;\n
+							" </tt>)
+)
+)
+
+      </div>
+                  <div>
+                     <button id="id.om.272popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.272pop')">Popcorn</button>
+                     <div id="id.om.272pop" style="display:none; margin-top: 0.5em">
+        scscp1.procedure_terminated(scscp1.error_system_specific!("Error, the group identification for groups of size\n
+							3628800 is not available called from\n
+							&lt;function&gt;( &lt;arguments&gt; ) called from read-eval-loop\n
+							Entering break read-eval-print loop ...\n
+							you can 'quit;' to quit to outer loop, or\n
+							you can 'return;' to continue\n
+							brk&gt;\n
+							")){}
+      </div>
+                  </div>
+                  <div>
+                     <button id="id.om.272mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.272mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.272mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>procedure_terminated</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <merror>
+                                       <mi>error_system_specific</mi>
+                                       <mtext>Error, the group identification for groups of size\n
+							3628800 is not available called from\n
+							&lt;function&gt;( &lt;arguments&gt; ) called from read-eval-loop\n
+							Entering break read-eval-print loop ...\n
+							you can 'quit;' to quit to outer loop, or\n
+							you can 'return;' to continue\n
+							brk&gt;\n
+							</mtext>
+                                    </merror>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/scscp1.html#error_system_specific">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#procedure_call">procedure_call</a>]
+	  
+	    [Previous: <a href="#error_runtime">error_runtime</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>
