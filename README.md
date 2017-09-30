@@ -53,7 +53,7 @@ intuitive, you can get a quick review
 
 Some of the content of the page is imported from other repositories:
 - `cd`, `contrib`, `cdgroup`, `sts`, `cdfiles`, `cdnames.md`, `cdnamess.md`, `symbols.md`: are automatically pushed from the  `master` branch of the [CDs repository](https://github.com/OpenMath/CDs) by travis on that repository. 
-- `standard`, the newer versions (in particular the editor's draft) are pushed from from the  `master` branch of the [OMSTD repository](https://github.com/OpenMath/OMSTD) by travis on that repository. 
+- `standard`, the newer versions (in particular the editor's draft) of the OpenMath 2 standard are pushed from from the  `master` branch of the [OMSTD repository](https://github.com/OpenMath/OMSTD) by travis on that repository.  The SCSCP standard is synchronized with  [SCSCP repository](https://github.com/OpenMath/scscp) is currently synchronized manually. 
 
 The relative paths of these are chosen for backwards compatibility with older versions of the  openmath web site. In particular,`cdfiles` is a redirect for the MathML Recommendation. 
 
