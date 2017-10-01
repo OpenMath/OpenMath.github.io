@@ -3419,7 +3419,7 @@ list-style-type: lower-roman;
                <p>We say that an <i>OpenMath</i> element dominates all its children and all elements
                   they dominate. An <small><code>OMR</code></small> element dominates its target,
                   i.e. the element that carries the <small><code>id</code></small> attribute pointed to
-                  by the <small><code>xref</code></small> attribute. For instance in the representation
+                  by the <small><code>href</code></small> attribute. For instance in the representation
                   in <a href="#fig_shared_vs_unshared">Figure 3.1</a>, the
                   <small><code>OMA</code></small> element with <small><code>id="t1"</code></small> and
                   also the second <small><code>OMR</code></small> dominate the
@@ -3448,7 +3448,7 @@ list-style-type: lower-roman;
     &lt;OMA&gt;
        &lt;OMS cd="arith1" name="plus"/&gt;
        &lt;OMI&gt;1&lt;/OMI&gt;
-       &lt;OMR xref="foo"/&gt;
+       &lt;OMR href="#foo"/&gt;
     &lt;/OMA&gt; 
   &lt;/OMA&gt;
 &lt;/OMOBJ&gt;
@@ -3516,7 +3516,7 @@ list-style-type: lower-roman;
   &lt;OMA id="bar"&gt;                         &lt;OMA id="baz"&gt;
     &lt;OMS cd="arith1" name="plus"/&gt;         &lt;OMS cd="arith1" name="plus"/&gt;
     &lt;OMI&gt;1&lt;/OMI&gt;                           &lt;OMI&gt;1&lt;/OMI&gt;
-    &lt;OMR xref="baz"/&gt;                      &lt;OMR xref="bar"/&gt;
+    &lt;OMR href="#baz"/&gt;                     &lt;OMR href="#bar"/&gt;
   &lt;/OMA&gt;                                 &lt;/OMA&gt;
 &lt;/OMOBJ&gt;                               &lt;/OMOBJ&gt;
 </pre></div>
@@ -3531,11 +3531,11 @@ list-style-type: lower-roman;
                   
                   <p> Here, the <small><code>OMA</code></small> with
                      <small><code>id="bar"</code></small> dominates its third child, the
-                     <small><code>OMR</code></small> with <small><code>xref="baz"</code></small>,
+                     <small><code>OMR</code></small> with <small><code>href="#baz"</code></small>,
                      which dominates its target <small><code>OMA</code></small> with
                      <small><code>id="baz"</code></small>, which in turn dominates its third
                      child, the <small><code>OMR</code></small> with
-                     <small><code>xref="bar"</code></small>, this finally dominates its
+                     <small><code>href="#bar"</code></small>, this finally dominates its
                      target, the original <small><code>OMA</code></small> element with
                      <small><code>id="bar"</code></small>. So this pair of <i>OpenMath</i> objects
                      violates the acyclicity constraint and is not the <abbr>XML</abbr>
