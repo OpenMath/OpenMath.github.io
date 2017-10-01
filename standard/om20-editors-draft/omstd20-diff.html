@@ -3643,7 +3643,7 @@ list-style-type: lower-roman;
                <p>We say that an <i>OpenMath</i> element dominates all its children and all elements
                   they dominate. An <small><code>OMR</code></small> element dominates its target,
                   i.e. the element that carries the <small><code>id</code></small> attribute pointed to
-                  by the <small><code>href</code></small> attribute. For instance in the representation
+                  by the <small><code class="chg">href</code></small> attribute. For instance in the representation
                   in <a href="#fig_shared_vs_unshared">Figure 3.1</a>, the
                   <small><code>OMA</code></small> element with <small><code>id="t1"</code></small> and
                   also the second <small><code>OMR</code></small> dominate the
@@ -3755,11 +3755,11 @@ list-style-type: lower-roman;
                   
                   <p> Here, the <small><code>OMA</code></small> with
                      <small><code>id="bar"</code></small> dominates its third child, the
-                     <small><code>OMR</code></small> with <small><code>href="#baz"</code></small>,
+                     <small><code>OMR</code></small> with <small><code class="chg">href="#baz"</code></small>,
                      which dominates its target <small><code>OMA</code></small> with
                      <small><code>id="baz"</code></small>, which in turn dominates its third
                      child, the <small><code>OMR</code></small> with
-                     <small><code>href="#bar"</code></small>, this finally dominates its
+                     <small><code class="chg">href="#bar"</code></small>, this finally dominates its
                      target, the original <small><code>OMA</code></small> element with
                      <small><code>id="bar"</code></small>. So this pair of <i>OpenMath</i> objects
                      violates the acyclicity constraint and is not the <abbr>XML</abbr>
