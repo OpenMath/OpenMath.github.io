@@ -2314,6 +2314,7 @@ list-style-type: lower-roman;
                
                
                <div class="literal"><pre><span style="color:brown;"># RELAX NG Schema for OpenMath 2</span>
+<span style="color:brown;"># Revision 2: Corrected regex for OMI to match the documented standard and allow hex</span>
 
 
 <span style="font-weight:bold;">default</span> <span style="font-weight:bold;">namespace</span> <span id="rncssec_xmlnamespaceom">om</span> = "http://www.openmath.org/OpenMath"
@@ -2356,7 +2357,7 @@ list-style-type: lower-roman;
 
 <span style="color:brown;"># integer</span>
 <span id="rncssec_xmlOMI">OMI</span> = <span style="font-weight:bold;">element</span> OMI { <a href="#rncssec_xmlcommon.attributes">common.attributes</a>,
-                    <span style="font-weight:bold;">xsd:string</span> {<span style="font-weight:bold;">pattern</span> = "\s*(-\s?)?[0-9]+(\s[0-9]+)*\s*"}}
+                    <span style="font-weight:bold;">xsd:string</span> {<span style="font-weight:bold;">pattern</span> = "\s*-?((\s*[0-9])+|x(\s*[0-9A-F])+)\s*"}}
 <span style="color:brown;"># byte array</span>
 <span id="rncssec_xmlOMB">OMB</span> = <span style="font-weight:bold;">element</span> OMB { <a href="#rncssec_xmlcommon.attributes">common.attributes</a>, <span style="font-weight:bold;">xsd:base64Binary</span> }
 
@@ -10995,7 +10996,7 @@ The application does not know about the CD specfun1
     &lt;<span style="font-weight: bold; color: red">element</span> name="OMI"&gt;<span id="id.58"></span>
       &lt;<span style="font-weight: bold; color: red">ref</span> name="common.attributes"/&gt;<span id="id.59"></span>
       &lt;<span style="font-weight: bold; color: red">data</span> type="string"&gt;<span id="id.59"></span>
-        &lt;<span style="font-weight: bold; color: red">param</span> name="pattern"&gt;<span id="id.59"></span>\s*(-\s?)?[0-9]+(\s[0-9]+)*\s*&lt;/<span style="font-weight: bold; color: red">param</span>&gt;<span id="id.60"></span>
+        &lt;<span style="font-weight: bold; color: red">param</span> name="pattern"&gt;<span id="id.59"></span>\s*-?((\s*[0-9])+|x(\s*[0-9A-F])+)\s*&lt;/<span style="font-weight: bold; color: red">param</span>&gt;<span id="id.60"></span>
       &lt;/<span style="font-weight: bold; color: red">data</span>&gt;<span id="id.61"></span>
     &lt;/<span style="font-weight: bold; color: red">element</span>&gt;<span id="id.62"></span>
   &lt;/<span style="font-weight: bold; color: red">define</span>&gt;<span id="id.63"></span>
@@ -11364,7 +11365,7 @@ The application does not know about the CD specfun1
         &lt;<span style="font-weight: bold; color: red">restriction</span> base="xs:anyType"&gt;<span id="id.49"></span>
           &lt;<span style="font-weight: bold; color: red">simpleType</span>&gt;<span id="id.49"></span>
             &lt;<span style="font-weight: bold; color: red">restriction</span> base="xs:string"&gt;<span id="id.49"></span>
-              &lt;<span style="font-weight: bold; color: red">pattern</span> value="\s*(-\s?)?[0-9]+(\s[0-9]+)*\s*"/&gt;<span id="id.50"></span>
+              &lt;<span style="font-weight: bold; color: red">pattern</span> value="\s*-?((\s*[0-9])+|x(\s*[0-9A-F])+)\s*"/&gt;<span id="id.50"></span>
             &lt;/<span style="font-weight: bold; color: red">restriction</span>&gt;<span id="id.51"></span>
           &lt;/<span style="font-weight: bold; color: red">simpleType</span>&gt;<span id="id.52"></span>
           &lt;<span style="font-weight: bold; color: red">attributeGroup</span> ref="om:common.attributes"/&gt;<span id="id.53"></span>
@@ -11519,7 +11520,10 @@ The application does not know about the CD specfun1
          <div class="literal"><pre>
 &lt;?xml encoding="UTF-8"?&gt;
 
-&lt;!-- RELAX NG Schema for OpenMath 2 --&gt;
+&lt;!--
+RELAX NG Schema for OpenMath 2
+Revision 2: Corrected regex for OMI to match the documented standard and allow hex
+--&gt;
 
 &lt;!ENTITY % cdbase "
   cdbase CDATA #IMPLIED"&gt;
