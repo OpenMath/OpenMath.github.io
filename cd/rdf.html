@@ -401,7 +401,7 @@ for a rdf.resourceset may be represented by:
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;semantics&gt;
   &lt;apply&gt;&lt;csymbol cd="rdf"&gt;resourceset&lt;/csymbol&gt;&lt;cs&gt;foaf:Person and foaf:age some rdfs:Literal&lt;/cs&gt;&lt;/apply&gt;
-  &lt;annotation-xml cd="rdf" encoding="prefixes"&gt;
+  &lt;annotation-xml cd="rdf" name="prefixes"&gt;
    &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;rdfs&lt;/cs&gt;&lt;cs&gt;http://www.w3.org/2000/01/rdf-schema#&lt;/cs&gt;&lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;foaf&lt;/cs&gt;&lt;cs&gt;http://xmlns.com/foaf/0.1/&lt;/cs&gt;&lt;/apply&gt;
@@ -601,7 +601,7 @@ using the prefixed name example:Alice.
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;semantics&gt;
   &lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;example:Alice&lt;/cs&gt;&lt;/apply&gt;
-  &lt;annotation-xml cd="rdf" encoding="prefixes"&gt;
+  &lt;annotation-xml cd="rdf" name="prefixes"&gt;
    &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;example&lt;/cs&gt;&lt;cs&gt;http://example.org/persons#&lt;/cs&gt;&lt;/apply&gt;
    &lt;/apply&gt;
@@ -751,7 +751,7 @@ the resource http://example.org/persons#Alice.
    &lt;cs&gt;foaf:age&lt;/cs&gt;
    &lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;example:Alice&lt;/cs&gt;&lt;/apply&gt;
   &lt;/apply&gt;
-  &lt;annotation-xml cd="rdf" encoding="prefixes"&gt;
+  &lt;annotation-xml cd="rdf" name="prefixes"&gt;
    &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;example&lt;/cs&gt;&lt;cs&gt;http://example.org/persons#&lt;/cs&gt;&lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;foaf&lt;/cs&gt;&lt;cs&gt;http://xmlns.com/foaf/0.1/&lt;/cs&gt;&lt;/apply&gt;
@@ -923,7 +923,7 @@ the resource http://example.org/persons#Alice and hence all persons known by Ali
     &lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;example:Alice&lt;/cs&gt;&lt;/apply&gt;
    &lt;/apply&gt;
   &lt;/apply&gt;
-  &lt;annotation-xml cd="rdf" encoding="prefixes"&gt;
+  &lt;annotation-xml cd="rdf" name="prefixes"&gt;
    &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
     &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;example&lt;/cs&gt;&lt;cs&gt;http://example.org/persons#&lt;/cs&gt;&lt;/apply&gt;
     &lt;apply&gt;&lt;csymbol cd="rdf"&gt;prefix&lt;/csymbol&gt;&lt;cs&gt;foaf&lt;/cs&gt;&lt;cs&gt;http://xmlns.com/foaf/0.1/&lt;/cs&gt;&lt;/apply&gt;
@@ -1073,7 +1073,7 @@ using a full IRI reference.
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;semantics&gt;
   &lt;cs&gt;This is a string.&lt;/cs&gt;
-  &lt;annotation-xml cd="rdf" encoding="literal_type"&gt;&lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;&amp;lt;http://www.w3.org/2001/XMLSchema#string&amp;gt;&lt;/cs&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
+  &lt;annotation-xml cd="rdf" name="literal_type"&gt;&lt;apply&gt;&lt;csymbol cd="rdf"&gt;resource&lt;/csymbol&gt;&lt;cs&gt;&amp;lt;http://www.w3.org/2001/XMLSchema#string&amp;gt;&lt;/cs&gt;&lt;/apply&gt;&lt;/annotation-xml&gt;
  &lt;/semantics&gt;
 &lt;/math&gt;</pre>
                   </div>
@@ -1180,7 +1180,7 @@ An example to show the representation of the RDF literal "This is an English tex
                              onclick="divfold('id.om.138cmml')">Strict Content MathML</button>
                      <pre id="id.om.138cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
- &lt;semantics&gt;&lt;cs&gt;This is an English text.&lt;/cs&gt;&lt;annotation-xml cd="rdf" encoding="literal_lang"&gt;&lt;cs&gt;en&lt;/cs&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;
+ &lt;semantics&gt;&lt;cs&gt;This is an English text.&lt;/cs&gt;&lt;annotation-xml cd="rdf" name="literal_lang"&gt;&lt;cs&gt;en&lt;/cs&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;
 &lt;/math&gt;</pre>
                   </div>
                   <button id="id.om.138prefa" style="width:20em; background-color:#CCCCCC"

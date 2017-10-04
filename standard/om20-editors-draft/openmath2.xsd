@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- RELAX NG Schema for OpenMath 2 -->
+<!--
+  RELAX NG Schema for OpenMath 2
+  Revision 2: Corrected regex for OMI to match the documented standard and allow hex
+-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.openmath.org/OpenMath" xmlns:om="http://www.openmath.org/OpenMath">
   <!-- OpenMath object constructor -->
   <xs:element name="OMOBJ">
@@ -83,7 +86,7 @@
         <xs:restriction base="xs:anyType">
           <xs:simpleType>
             <xs:restriction base="xs:string">
-              <xs:pattern value="\s*(-\s?)?[0-9]+(\s[0-9]+)*\s*"/>
+              <xs:pattern value="\s*-?((\s*[0-9])+|x(\s*[0-9A-F])+)\s*"/>
             </xs:restriction>
           </xs:simpleType>
           <xs:attributeGroup ref="om:common.attributes"/>
