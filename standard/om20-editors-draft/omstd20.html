@@ -259,7 +259,8 @@ the <span><abbr>XML</abbr> Encoding</span></a><br />
     <a href="#chgformal">F.1 Changes to the Formal Definition of Objects</a><br />
     <a href="#chgenc">F.2 Changes to the encodings</a><br />
     <a href="#chgcd">F.3 Changes to Content Dictionaries</a><br />
-    <a href="#chgr1">F.4 Changes in 2.0 Revision 1</a><br /><a href="#bibliography">G Bibliography</a><br />
+    <a href="#chgr2">F.4 Changes in 2.0 Revision 2</a><br />
+    <a href="#chgr1">F.5 Changes in 2.0 Revision 1</a><br /><a href="#bibliography">G Bibliography</a><br />
 <h2>List of Figures</h2><a href="#fig_om">1.1 The <i>OpenMath</i> Architecture</a><br /><a href="#fig_obj">2.1 The <i>OpenMath</i> application and binding objects for
 <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi> <mo>(</mo><mi>x</mi> <mo>)</mo></math> and
 <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi> <mi>x</mi><mo>.</mo><mi>x</mi> <mo>+</mo>
@@ -960,12 +961,9 @@ characters) were not allowed in names.
 </blockquote>
 
 
-<p><b>CD Base</b>  A cdbase must conform to the grammar for URIs described in
-<a href="#IETF2396">[7]</a>.  Note that if non-ASCII characters are
-used in a CD or symbol name then when a URI for that symbol is
-constructed it will be necessary to map the non-ASCII characters to a
-sequence of octets.  The precise mechanism for doing this depends on
-the URI scheme.</p>
+<p><b>CD Base</b>  A cdbase is interpreted as an IRI
+<a href="#IETF3987">[7]</a>, which specifies how strings are encoded and interpreted as URL.
+Applications should ignore any white space surrounding the URL.</p>
 
 <p><b>Note on content dictionary names</b>  
 It is a common convention to store a Content Dictionary in a file of
@@ -2681,8 +2679,8 @@ implementations).</p>
     that conforms to the constraints on <i>xxxx</i> strings. For
     instance, for <i>symbname</i>, <i>varname</i>, or
     <i>cdname</i> this is the regular expression described in
-    <a href="#sec_names">Section 2.3</a>, for <i>uri</i> it is the grammar for
-    URIs in <a href="#IETF2396">[7]</a>.</p>
+    <a href="#sec_names">Section 2.3</a>, <span>for <i>uri</i> it is the grammar for
+    IRIs in <a href="#IETF3987">[7]</a></span>.</p>
 </div>
 
 <div><h4 id="sec_bin-desc">3.2.2 Description of the Grammar</h4>
@@ -3508,7 +3506,8 @@ It is binary encoded as the sequence of bytes given in <a href="#fig_bin-enc_ex"
     
     <p>A <i> Content Dictionary</i> holds the meanings of
       (various) mathematical <span>“words”</span>. These words are <i>OpenMath</i>
-      basic objects referred to as <i>symbols</i> in <a href="#sec_omabs">Section 2.1</a>.</p>
+      basic objects referred to as <i>symbols</i> in
+      <a href="#sec_omabs">Section 2.1</a>.</p>
     
     <p>With a set of symbol definitions (perhaps from several Content
       Dictionaries), <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math> can
@@ -7118,7 +7117,17 @@ details of how this attribute is used are not mandated by the standard.
   </div>
   
   
-  <div><h3 id="chgr1">F.4 Changes in 2.0 Revision 1</h3>
+  <div><h3 id="chgr2">F.4 Changes in 2.0 Revision 2</h3>
+    
+    
+    <ul>
+      <li><p>
+	 <i>cdbase</i> and <i>cd url</i> are now defined in terms of
+	 Internationalized Resource Identifiers (IRIs) <a href="#IETF3987">[7]</a>.
+        </p></li>
+    </ul>
+  </div>
+    <div><h3 id="chgr1">F.5 Changes in 2.0 Revision 1</h3>
     
     
     <ul>
@@ -7143,7 +7152,7 @@ details of how this attribute is used are not mandated by the standard.
         </p></li>
       <li><p>The <span>“Note on names”</span>, which used to refer to Unicode 2.0, has been upgraded to allow for XML 1.0 5th edition and more specifically erratum NE17 in <a href="#erratum_NE17">[16]</a>, so that the current version of Unicode is incorporated.
         </p></li>
-      <li><p>Various included example files (such as arith1.ocd) have been updated to match the versions on the OpenMath web site.
+      <li><p>Various included example files (such as <b>arith1.ocd</b>) have been updated to match the versions on the OpenMath web site.
         </p></li>
     </ul>
     
@@ -7154,7 +7163,7 @@ details of how this attribute is used are not mandated by the standard.
 
 <div><h2 id="bibliography">
   Appendix G<br />Bibliography</h2><p id="rfc2045"><b>[1]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message Bodies</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</a></p><p id="rfc2046"><b>[2]</b>  N. Borenstein and N. Freed <i>MIME (Multipurpose Internet Mail Extensions) Part Two: Media
-Types</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2046.txt">http://www.ietf.org/rfc/rfc2046.txt</a></p><p id="OMD132b"><b>[3]</b>  Olga Caprotti and Arjeh M. Cohen <i>A Type System for <i>OpenMath</i></i> 1.3.2b <i>OpenMath</i> Esprit Consortium, February 1999.<br /><a href="http://www.openmath.org/standard/ecc.pdf">http://www.openmath.org/standard/ecc.pdf</a></p><p id="OM_D132c"><b>[4]</b>  J. Davenport <i>A Small <i>OpenMath</i> Type System</i>, April 1999.<br /><a href="http://www.openmath.org/standard/sts.pdf">http://www.openmath.org/standard/sts.pdf</a></p><p id="SCSCP13"><b>[5]</b>  S. Freundt, P. Horn, A. Konovalov, S. Linton and D. Roozemond <i>Symbolic Computation Software Composability Protocol SCSCP Specification 1.3</i>, March 22, 2009.<br /><a href="https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf">https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf</a></p><p id="POSIX"><b>[6]</b>  IEEE and The Open Group <i>Std 1003.1, 2003 Edition, The Open Group Base Specifications Issue 6 </i>, 2003.<br /><a href="http://www.unix.org/version3/ieee_std.html">http://www.unix.org/version3/ieee_std.html</a></p><p id="IETF2396"><b>[7]</b>  IETF <i>RFC 2396 - Uniform Resource Identifiers (URI): Generic Syntax</i>, August 1998.<br /><a href="http://www.ietf.org/rfc/rfc2396.txt">http://www.ietf.org/rfc/rfc2396.txt</a></p><p id="RELAX"><b>[8]</b>  OASIS Committee Specification <i>RELAX NG Specification</i>, December 2001.<br /><a href="http://www.oasis-open.org/committees/relax-ng/spec-20011203.html">http://www.oasis-open.org/committees/relax-ng/spec-20011203.html</a></p><p id="OM_2.0r0"><b>[9]</b>  OpenMath Consortium <i><i>OpenMath</i> Version 2.0</i>, June 2004.<br /><a href="http://www.openmath.org/standard/om20-2004-06-30/">http://www.openmath.org/standard/om20-2004-06-30/</a></p><p id="OM_primer"><b>[10]</b>  OpenMath Consortium <i><i>OpenMath</i> Primer</i>, June 2004.<br /><a href="http://www.openmath.org/standard/primer/">http://www.openmath.org/standard/primer/</a></p><p id="iso9660"><b>[11]</b>  Technical committee / subcommittee: JTC 1 <i>ISO 9660:1988 Information processing – Volume and File Structure of CDROM for Information Interchange</i>, 1988.<br /><a href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505">http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505</a></p><p id="UNICODE"><b>[12]</b>  Unicode Consortium <i>The Unicode Standard: Version <span>4.0.0</span></i> Addison-Wesley, 2003.<br /><a href="http://www.unicode.org/versions/Unicode4.0.0">Online edition available from http://www.unicode.org/versions/Unicode4.0.0</a></p><p id="XSD"><b>[13]</b>  World Wide Web Consortium <i>XML Schema Part 1: Structures &amp; Part 2: Datatypes</i>, May 2001.<br /><a href="http://www.w3.org/TR/xmlschema-1/">http://www.w3.org/TR/xmlschema-1/</a><br /><a href="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</a></p><p id="xmlns"><b>[14]</b>  World Wide Web Consortium <i>Namespaces in XML</i>, January 1999.<br /><a href="http://www.w3.org/TR/REC-xml-names/">http://www.w3.org/TR/REC-xml-names/</a></p><p id="xml_98"><b>[15]</b>  World Wide Web Consortium <i>Extensible Markup Language (XML) 1.0.</i>, February 1998.<br /><a href="http://www.w3.org/TR/1998/REC-xml-19980210">http://www.w3.org/TR/1998/REC-xml-19980210</a></p><p id="erratum_NE17"><b>[16]</b>  World Wide Web Consortium <i>Namespaces in XML 1.0 (Second Edition) Errata</i>, November 2008.<br /><a href="https://www.w3.org/XML/2006/xml-names-errata">https://www.w3.org/XML/2006/xml-names-errata</a></p><p id="xml_04"><b>[17]</b>  World Wide Web Consortium <i>Extensible Markup Language (XML) 1.1. W3C Recommendation REC-xml11-20040204</i>, February 2004.<br /><a href="http://www.w3.org/TR/2004/REC-xml11-20040204/">http://www.w3.org/TR/2004/REC-xml11-20040204/</a></p><p id="MathML_2003"><b>[18]</b>  World Wide Web Consortium <i>Mathematical Markup Language (MathML) 2.0 Specification
+Types</i>, November 1996.<br /><a href="http://www.ietf.org/rfc/rfc2046.txt">http://www.ietf.org/rfc/rfc2046.txt</a></p><p id="OMD132b"><b>[3]</b>  Olga Caprotti and Arjeh M. Cohen <i>A Type System for <i>OpenMath</i></i> 1.3.2b <i>OpenMath</i> Esprit Consortium, February 1999.<br /><a href="http://www.openmath.org/standard/ecc.pdf">http://www.openmath.org/standard/ecc.pdf</a></p><p id="OM_D132c"><b>[4]</b>  J. Davenport <i>A Small <i>OpenMath</i> Type System</i>, April 1999.<br /><a href="http://www.openmath.org/standard/sts.pdf">http://www.openmath.org/standard/sts.pdf</a></p><p id="SCSCP13"><b>[5]</b>  S. Freundt, P. Horn, A. Konovalov, S. Linton and D. Roozemond <i>Symbolic Computation Software Composability Protocol SCSCP Specification 1.3</i>, March 22, 2009.<br /><a href="https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf">https://github.com/OpenMath/scscp/blob/master/revisions/SCSCP_1_3.pdf</a></p><p id="POSIX"><b>[6]</b>  IEEE and The Open Group <i>Std 1003.1, 2003 Edition, The Open Group Base Specifications Issue 6 </i>, 2003.<br /><a href="http://www.unix.org/version3/ieee_std.html">http://www.unix.org/version3/ieee_std.html</a></p><p id="IETF3987"><b>[7]</b>  IETF <i>RFC 3987 - Internationalized Resource Identifiers (IRIs)</i>, January 2005.<br /><a href="http://www.ietf.org/rfc/rfc3987.txt">http://www.ietf.org/rfc/rfc3987.txt</a></p><p id="RELAX"><b>[8]</b>  OASIS Committee Specification <i>RELAX NG Specification</i>, December 2001.<br /><a href="http://www.oasis-open.org/committees/relax-ng/spec-20011203.html">http://www.oasis-open.org/committees/relax-ng/spec-20011203.html</a></p><p id="OM_2.0r0"><b>[9]</b>  OpenMath Consortium <i><i>OpenMath</i> Version 2.0</i>, June 2004.<br /><a href="http://www.openmath.org/standard/om20-2004-06-30/">http://www.openmath.org/standard/om20-2004-06-30/</a></p><p id="OM_primer"><b>[10]</b>  OpenMath Consortium <i><i>OpenMath</i> Primer</i>, June 2004.<br /><a href="http://www.openmath.org/standard/primer/">http://www.openmath.org/standard/primer/</a></p><p id="iso9660"><b>[11]</b>  Technical committee / subcommittee: JTC 1 <i>ISO 9660:1988 Information processing – Volume and File Structure of CDROM for Information Interchange</i>, 1988.<br /><a href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505">http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=17505</a></p><p id="UNICODE"><b>[12]</b>  Unicode Consortium <i>The Unicode Standard: Version <span>4.0.0</span></i> Addison-Wesley, 2003.<br /><a href="http://www.unicode.org/versions/Unicode4.0.0">Online edition available from http://www.unicode.org/versions/Unicode4.0.0</a></p><p id="XSD"><b>[13]</b>  World Wide Web Consortium <i>XML Schema Part 1: Structures &amp; Part 2: Datatypes</i>, May 2001.<br /><a href="http://www.w3.org/TR/xmlschema-1/">http://www.w3.org/TR/xmlschema-1/</a><br /><a href="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</a></p><p id="xmlns"><b>[14]</b>  World Wide Web Consortium <i>Namespaces in XML</i>, January 1999.<br /><a href="http://www.w3.org/TR/REC-xml-names/">http://www.w3.org/TR/REC-xml-names/</a></p><p id="xml_98"><b>[15]</b>  World Wide Web Consortium <i>Extensible Markup Language (XML) 1.0.</i>, February 1998.<br /><a href="http://www.w3.org/TR/1998/REC-xml-19980210">http://www.w3.org/TR/1998/REC-xml-19980210</a></p><p id="erratum_NE17"><b>[16]</b>  World Wide Web Consortium <i>Namespaces in XML 1.0 (Second Edition) Errata</i>, November 2008.<br /><a href="https://www.w3.org/XML/2006/xml-names-errata">https://www.w3.org/XML/2006/xml-names-errata</a></p><p id="xml_04"><b>[17]</b>  World Wide Web Consortium <i>Extensible Markup Language (XML) 1.1. W3C Recommendation REC-xml11-20040204</i>, February 2004.<br /><a href="http://www.w3.org/TR/2004/REC-xml11-20040204/">http://www.w3.org/TR/2004/REC-xml11-20040204/</a></p><p id="MathML_2003"><b>[18]</b>  World Wide Web Consortium <i>Mathematical Markup Language (MathML) 2.0 Specification
     (Second Edition)</i>, October 2003.<br /><a href="http://www.w3.org/TR/MathML2/">http://www.w3.org/TR/MathML2/</a></p><p id="MathML_2014"><b>[19]</b>  World Wide Web Consortium <i>Mathematical Markup Language (MathML) 3.0 Specification
     2nd Edition</i>, April 2014.<br /><a href="http://www.w3.org/TR/MathML3/">http://www.w3.org/TR/MathML3/</a></p><p id="owl"><b>[20]</b>  World Wide Web Consortium <i> OWL Web Ontology Language Overview </i>, February 2004.<br /><a href="http://www.w3.org/TR/2004/REC-owl-features-20040210/">http://www.w3.org/TR/2004/REC-owl-features-20040210/</a></p><p id="rdf"><b>[21]</b>  World Wide Web Consortium <i>Resource Description Framework (RDF): Concepts and Abstract Syntax</i>, February 2004.<br /><a href="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/">http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/</a></p><p id="ieee754_85"><b>[22]</b>   <i>IEEE Standard for binary Floating-Point Arithmetic ANSI/IEEE Standard 754</i>, 1985.<br /><a href="http://standards.ieee.org/reading/ieee/std_public/description/busarch/754-1985_desc.html">http://standards.ieee.org/reading/ieee/std_public/description/busarch/754-1985_desc.html</a></p></div>
 
