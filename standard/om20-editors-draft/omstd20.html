@@ -6,11 +6,34 @@
 <title>The OpenMath Standard</title>
 
 <style>
-
 body {
-margin-left: 1em;
-margin-right: 1em;
+  max-width:60em;
+  margin-left: 1em;
+
 }
+
+@media screen and (min-width: 80em) {
+  body {
+    max-width: 60em;
+    margin-left: 21em;
+  }
+
+  .toc {
+  background-color:#EEE;
+  width:20em;
+  position:fixed;
+  height:100%;
+  top:0;
+  left:0;
+}
+
+.toc2 {
+margin-left:.1em;
+height:100%;
+overflow-y:auto;
+  }
+
+  }
 
 div.mdata {
 margin-top: .5em;
@@ -104,9 +127,6 @@ list-style-type: lower-roman;
 }
 </style>
 
-<style>
-   body { max-width:80em;}
-  </style>
 <script>
    if (! navigator.userAgent.match(/Gecko\//)) {
    var scr=document.createElement("script");
@@ -193,7 +213,7 @@ accompanying Primer <a href="#OM_primer">[10]</a>.</span></p>
 
 
   
-<h2 id="toc">Contents</h2><a href="#cha_int">1 Introduction to <i>OpenMath</i></a><br />
+<div class="toc"><div class="toc2"><h2 id="toc">Contents</h2><a href="#cha_int">1 Introduction to <i>OpenMath</i></a><br />
     <a href="#sec_om-arch">1.1 <i>OpenMath</i> Architecture</a><br />
     <a href="#sec_intro-obj">1.2 <i>OpenMath</i> Objects and Encodings</a><br />
     <a href="#sec_intro-cd">1.3 Content Dictionaries</a><br />
@@ -260,11 +280,11 @@ the <span><abbr>XML</abbr> Encoding</span></a><br />
     <a href="#chgenc">F.2 Changes to the encodings</a><br />
     <a href="#chgcd">F.3 Changes to Content Dictionaries</a><br />
     <a href="#chgr1">F.4 Changes in 2.0 Revision 1</a><br />
-    <a href="#chgr2">F.5 Changes in 2.0 Revision 2</a><br /><a href="#bibliography">G Bibliography</a><br />
-<h2>List of Figures</h2><a href="#fig_om">1.1 The <i>OpenMath</i> Architecture</a><br /><a href="#fig_obj">2.1 The <i>OpenMath</i> application and binding objects for
+    <a href="#chgr2">F.5 Changes in 2.0 Revision 2</a><br /><a href="#bibliography">G Bibliography</a><br /><h2>List of Figures</h2><a href="#fig_om">1.1 The <i>OpenMath</i> Architecture</a><br /><a href="#fig_obj">2.1 The <i>OpenMath</i> application and binding objects for
 <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi> <mo>(</mo><mi>x</mi> <mo>)</mo></math> and
 <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi> <mi>x</mi><mo>.</mo><mi>x</mi> <mo>+</mo>
-<mn>2</mn></math> in tree-like notation.</a><br /><a href="#fig_shared_vs_unshared">3.1 Shared vs. unshared representations</a><br /><a href="#fig_sharing_between">3.2 Sharing between <i>OpenMath</i> objects (A cycle of order <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>).</a><br /><a href="#fig_bin-enc">3.3 Grammar of the binary encoding of <i>OpenMath</i> objects.</a><br /><a href="#fig_bin-enc_stream">3.4 Streaming a large Integer in the Binary Encoding.</a><br /><a href="#fig_bin-enc_ex">3.5 A Simple example of the <i>OpenMath</i> binary encoding.</a><br /><a href="#fig_bin-enc2">3.6 A binary encoding of the <i>OpenMath</i> object from Figure 3.1.</a><br /><a href="#fig_cdgroup.dtd">4.1 <span>Relax NG</span> Specification of CDGroups</a><br />
+<mn>2</mn></math> in tree-like notation.</a><br /><a href="#fig_shared_vs_unshared">3.1 Shared vs. unshared representations</a><br /><a href="#fig_sharing_between">3.2 Sharing between <i>OpenMath</i> objects (A cycle of order <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>).</a><br /><a href="#fig_bin-enc">3.3 Grammar of the binary encoding of <i>OpenMath</i> objects.</a><br /><a href="#fig_bin-enc_stream">3.4 Streaming a large Integer in the Binary Encoding.</a><br /><a href="#fig_bin-enc_ex">3.5 A Simple example of the <i>OpenMath</i> binary encoding.</a><br /><a href="#fig_bin-enc2">3.6 A binary encoding of the <i>OpenMath</i> object from Figure 3.1.</a><br /><a href="#fig_cdgroup.dtd">4.1 <span>Relax NG</span> Specification of CDGroups</a><br /></div></div>
+
 
 
 <div><h2 id="cha_int">
