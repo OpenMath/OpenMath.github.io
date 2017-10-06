@@ -6,12 +6,16 @@
 <title>The OpenMath Standard</title>
 
 <style>
+ 
 body {
   max-width:60em;
   margin-left: 1em;
 
 }
 
+.tockey {
+display:none;
+}
 @media screen and (min-width: 80em) {
   body {
     max-width: 60em;
@@ -31,9 +35,40 @@ body {
 margin-left:.1em;
 height:100%;
 overflow-y:auto;
-  }
+}
+
+.tockey {
+display:block;
+text-align:center;
+margin-top:1em;
+}
 
   }
+
+.toc2> ul >li {
+list-style:none;
+margin-top: .5em;
+margin-left: 0pt;
+padding-left: 0pt;
+}
+
+.toc2> ul >li li {
+list-style:none;
+margin-left: 0pt;
+padding-left: 10pt;
+}
+
+.toc2 ul {
+margin-left: 0pt;
+padding-left: 0pt;
+}
+
+
+
+.toc2 > ul > li > a {font-weight:bold;}
+
+.toc2 a {text-decoration:none;}
+.toc2 a:hover {text-decoration:underline}
 
 div.mdata {
 margin-top: .5em;
@@ -215,77 +250,13 @@ accompanying Primer <a href="#OM_primer">[10]</a>.</span></p>
 
 
   
-<div class="toc"><div class="toc2"><h2 id="toc">Contents</h2><a href="#cha_int">1 Introduction to <i>OpenMath</i></a><br />
-    <a href="#sec_om-arch">1.1 <i>OpenMath</i> Architecture</a><br />
-    <a href="#sec_intro-obj">1.2 <i>OpenMath</i> Objects and Encodings</a><br />
-    <a href="#sec_intro-cd">1.3 Content Dictionaries</a><br />
-    <a href="#sec_addnfiles">1.4 Additional Files</a><br />
-    <a href="#sec_phrasebooks">1.5 Phrasebooks</a><br /><a href="#cha_obj">2 <i>OpenMath</i> Objects</a><br />
-    <a href="#sec_omabs">2.1 Formal Definition of <i>OpenMath</i> Objects</a><br />
-        <a href="#sec_basic">2.1.1 Basic <i>OpenMath</i> objects</a><br />
-        <a href="#sec_derived">2.1.2 Derived <i>OpenMath</i> Objects</a><br />
-        <a href="#sec_compound">2.1.3 <i>OpenMath</i> Objects</a><br />
-        <a href="#sec_roles">2.1.4 <i>OpenMath</i> Symbol Roles</a><br />
-    <a href="#sec_omin">2.2 Further Description of <i>OpenMath</i> Objects</a><br />
-    <a href="#sec_names">2.3 Names</a><br />
-    <a href="#sec_summary">2.4 Summary</a><br /><a href="#cha_enco">3 <i>OpenMath</i> Encodings</a><br />
-    <a href="#sec_xml">3.1 The <abbr>XML</abbr> Encoding</a><br />
-        <a href="#ssec_xml">3.1.1 A <span>Schema</span> for the <abbr>XML</abbr> Encoding</a><br />
-        <a href="#sec_xml-desc">3.1.2 <span>Informal</span> description of
-the <span><abbr>XML</abbr> Encoding</span></a><br />
-        <a href="#sec_references">3.1.3 Some Notes on References</a><br />
-            <a href="#sec_acyclicity">3.1.3.1 An Acyclicity Constraint</a><br />
-            <a href="#sec_sharing_bvars">3.1.3.2 Sharing and Bound Variables</a><br />
-        <a href="#xmldoc">3.1.4 Embedding <i>OpenMath</i> in <abbr>XML</abbr> Documents</a><br />
-    <a href="#sec_binary">3.2 The Binary Encoding</a><br />
-        <a href="#sec_binary_grammar">3.2.1 A Grammar for the Binary Encoding</a><br />
-        <a href="#sec_bin-desc">3.2.2 Description of the Grammar</a><br />
-        <a href="#sec_bin_example">3.2.3 Example of Binary Encoding</a><br />
-        <a href="#sec_both_sharing">3.2.4 Sharing</a><br />
-            <a href="#sec_sharing">3.2.4.1 Sharing <span>in Objects beginning with the identifier [24]</span></a><br />
-            <a href="#sec_sharing_references">3.2.4.2 Sharing with References (beginning with [24+64])</a><br />
-        <a href="#sec_impl_note">3.2.5 Implementation Note</a><br />
-        <a href="#sec_relation_OM1_binary">3.2.6 Relation to the <i>OpenMath</i> 1 binary encoding</a><br />
-    <a href="#sec_enc_summary">3.3 Summary</a><br /><a href="#cha_cd">4 Content Dictionaries</a><br />
-    <a href="#sec_cd_summary">4.1 Introduction</a><br />
-    <a href="#sect_func">4.2 Abstract Content Dictionaries</a><br />
-        <a href="#sec_status">4.2.1 Content Dictionary Status</a><br />
-        <a href="#sec_version">4.2.2 Content Dictionary Version Numbers</a><br />
-    <a href="#sec_xml_cd">4.3 The <span>Reference</span> Encoding for Content Dictionaries</a><br />
-        <a href="#sec_cd_schema">4.3.1 The Relax NG Schema for Content Dictionaries</a><br />
-        <a href="#sect_pcdata">4.3.2 Further <span>Description of the CD Schema</span></a><br />
-    <a href="#addfiles">4.4 Additional Information</a><br />
-        <a href="#sigfiles">4.4.1 Signature <span>Dictionaries</span>
-</a><br />
-            <a href="#sect_sigpcdata">4.4.1.1 <span>Abstract Specification</span>
- of a Signature Dictionary</a><br />
-            <a href="#sect_sigschema">4.4.1.2 A Relax NG Schema for a Signature Dictionary</a><br />
-            <a href="#sect_sigex">4.4.1.3 Examples</a><br />
-        <a href="#ssec_cdgroups">4.4.2 CDGroups</a><br />
-            <a href="#sec_dtd_cdg">4.4.2.1 The Specification of CDGroups</a><br />
-            <a href="#sect_cdgpcdata">4.4.2.2 Further Requirements of a CDGroup</a><br />
-    <a href="#cdapprove">4.5 Content Dictionaries Reviewing Process</a><br /><a href="#cha_comp">5 <i>OpenMath</i> Compliance</a><br />
-    <a href="#sec_compl_encoding">5.1 Encodings</a><br />
-        <a href="#sec_compl_xml_encoding">5.1.1 The XML Encoding</a><br />
-            <a href="#sec_compl_xml_encoding_val">5.1.1.1 Generating Valid XML</a><br />
-            <a href="#sec_compl_xml_encoding_float">5.1.1.2 Decimal versus Hexadecimal Float Representation</a><br />
-    <a href="#sec_compl_omforeign">5.2 <i>OpenMath</i> Foreign Objects</a><br />
-    <a href="#sec_compl_cd">5.3 Content Dictionaries</a><br />
-    <a href="#sec_comp_lex">5.4 Lexical Errors</a><br />
-    <a href="#sec_compl_om1">5.5 <i>OpenMath</i> 1 Objects</a><br /><a href="#app_cdfiles">A CD Files</a><br />
-    <a href="#app_cdcd">A.1 The <b>meta</b> Content Dictionary</a><br />
-    <a href="#arith1.ocd">A.2 The  <b>arith1</b> Content Dictionary File</a><br />
-    <a href="#arith1.sts">A.3 The  <b>arith1</b> STS Signature File</a><br />
-    <a href="#mathml.cdg">A.4 The  <b>MathML</b> CDGroup</a><br />
-    <a href="#errorcd">A.5 The <b>error</b> Content Dictionary</a><br /><a href="#app_openmath.rng">B <i>OpenMath</i> Schema in Relax NG XML Syntax (Normative)</a><br /><a href="#app_relaxrestricted">C Restricting the <i>OpenMath</i> Schema (Non-Normative)</a><br /><a href="#app_xsd">D <i>OpenMath</i> Schema in XSD Syntax (Non-Normative)</a><br /><a href="#app_dtd">E <i>OpenMath</i> DTD (Non-Normative)</a><br /><a href="#app_whats_new">F Changes between <i>OpenMath</i> 1.1 and <i>OpenMath</i> 2 (Non-Normative)</a><br />
-    <a href="#chgformal">F.1 Changes to the Formal Definition of Objects</a><br />
-    <a href="#chgenc">F.2 Changes to the encodings</a><br />
-    <a href="#chgcd">F.3 Changes to Content Dictionaries</a><br />
-    <a href="#chgr1">F.4 Changes in 2.0 Revision 1</a><br />
-    <a href="#chgr2">F.5 Changes in 2.0 Revision 2</a><br /><a href="#bibliography">G Bibliography</a><br /><h2>List of Figures</h2><a href="#fig_om">1.1 The <i>OpenMath</i> Architecture</a><br /><a href="#fig_obj">2.1 The <i>OpenMath</i> application and binding objects for
+<div class="toc"><div class="toc2"><div class="tockey"><a href="/"><img width="50%" src="keylogo.png" alt="OM logo" /></a></div><h2 id="toc">Contents</h2><ul><li><a href="#cha_int">1 Introduction to <i>OpenMath</i></a><ul><li><a href="#sec_om-arch">1.1 <i>OpenMath</i> Architecture</a></li></ul><ul><li><a href="#sec_intro-obj">1.2 <i>OpenMath</i> Objects and Encodings</a></li></ul><ul><li><a href="#sec_intro-cd">1.3 Content Dictionaries</a></li></ul><ul><li><a href="#sec_addnfiles">1.4 Additional Files</a></li></ul><ul><li><a href="#sec_phrasebooks">1.5 Phrasebooks</a></li></ul></li><li><a href="#cha_obj">2 <i>OpenMath</i> Objects</a><ul><li><a href="#sec_omabs">2.1 Formal Definition of <i>OpenMath</i> Objects</a><ul><li><a href="#sec_basic">2.1.1 Basic <i>OpenMath</i> objects</a></li></ul><ul><li><a href="#sec_derived">2.1.2 Derived <i>OpenMath</i> Objects</a></li></ul><ul><li><a href="#sec_compound">2.1.3 <i>OpenMath</i> Objects</a></li></ul><ul><li><a href="#sec_roles">2.1.4 <i>OpenMath</i> Symbol Roles</a></li></ul></li></ul><ul><li><a href="#sec_omin">2.2 Further Description of <i>OpenMath</i> Objects</a></li></ul><ul><li><a href="#sec_names">2.3 Names</a></li></ul><ul><li><a href="#sec_summary">2.4 Summary</a></li></ul></li><li><a href="#cha_enco">3 <i>OpenMath</i> Encodings</a><ul><li><a href="#sec_xml">3.1 The <abbr>XML</abbr> Encoding</a><ul><li><a href="#ssec_xml">3.1.1 A <span>Schema</span> for the <abbr>XML</abbr> Encoding</a></li></ul><ul><li><a href="#sec_xml-desc">3.1.2 <span>Informal</span> description of
+the <span><abbr>XML</abbr> Encoding</span></a></li></ul><ul><li><a href="#sec_references">3.1.3 Some Notes on References</a><ul><li><a href="#sec_acyclicity">3.1.3.1 An Acyclicity Constraint</a></li></ul><ul><li><a href="#sec_sharing_bvars">3.1.3.2 Sharing and Bound Variables</a></li></ul></li></ul><ul><li><a href="#xmldoc">3.1.4 Embedding <i>OpenMath</i> in <abbr>XML</abbr> Documents</a></li></ul></li></ul><ul><li><a href="#sec_binary">3.2 The Binary Encoding</a><ul><li><a href="#sec_binary_grammar">3.2.1 A Grammar for the Binary Encoding</a></li></ul><ul><li><a href="#sec_bin-desc">3.2.2 Description of the Grammar</a></li></ul><ul><li><a href="#sec_bin_example">3.2.3 Example of Binary Encoding</a></li></ul><ul><li><a href="#sec_both_sharing">3.2.4 Sharing</a><ul><li><a href="#sec_sharing">3.2.4.1 Sharing <span>in Objects beginning with the identifier [24]</span></a></li></ul><ul><li><a href="#sec_sharing_references">3.2.4.2 Sharing with References (beginning with [24+64])</a></li></ul></li></ul><ul><li><a href="#sec_impl_note">3.2.5 Implementation Note</a></li></ul><ul><li><a href="#sec_relation_OM1_binary">3.2.6 Relation to the <i>OpenMath</i> 1 binary encoding</a></li></ul></li></ul><ul><li><a href="#sec_enc_summary">3.3 Summary</a></li></ul></li><li><a href="#cha_cd">4 Content Dictionaries</a><ul><li><a href="#sec_cd_summary">4.1 Introduction</a></li></ul><ul><li><a href="#sect_func">4.2 Abstract Content Dictionaries</a><ul><li><a href="#sec_status">4.2.1 Content Dictionary Status</a></li></ul><ul><li><a href="#sec_version">4.2.2 Content Dictionary Version Numbers</a></li></ul></li></ul><ul><li><a href="#sec_xml_cd">4.3 The <span>Reference</span> Encoding for Content Dictionaries</a><ul><li><a href="#sec_cd_schema">4.3.1 The Relax NG Schema for Content Dictionaries</a></li></ul><ul><li><a href="#sect_pcdata">4.3.2 Further <span>Description of the CD Schema</span></a></li></ul></li></ul><ul><li><a href="#addfiles">4.4 Additional Information</a><ul><li><a href="#sigfiles">4.4.1 Signature <span>Dictionaries</span>
+</a><ul><li><a href="#sect_sigpcdata">4.4.1.1 <span>Abstract Specification</span>
+ of a Signature Dictionary</a></li></ul><ul><li><a href="#sect_sigschema">4.4.1.2 A Relax NG Schema for a Signature Dictionary</a></li></ul><ul><li><a href="#sect_sigex">4.4.1.3 Examples</a></li></ul></li></ul><ul><li><a href="#ssec_cdgroups">4.4.2 CDGroups</a><ul><li><a href="#sec_dtd_cdg">4.4.2.1 The Specification of CDGroups</a></li></ul><ul><li><a href="#sect_cdgpcdata">4.4.2.2 Further Requirements of a CDGroup</a></li></ul></li></ul></li></ul><ul><li><a href="#cdapprove">4.5 Content Dictionaries Reviewing Process</a></li></ul></li><li><a href="#cha_comp">5 <i>OpenMath</i> Compliance</a><ul><li><a href="#sec_compl_encoding">5.1 Encodings</a><ul><li><a href="#sec_compl_xml_encoding">5.1.1 The XML Encoding</a><ul><li><a href="#sec_compl_xml_encoding_val">5.1.1.1 Generating Valid XML</a></li></ul><ul><li><a href="#sec_compl_xml_encoding_float">5.1.1.2 Decimal versus Hexadecimal Float Representation</a></li></ul></li></ul></li></ul><ul><li><a href="#sec_compl_omforeign">5.2 <i>OpenMath</i> Foreign Objects</a></li></ul><ul><li><a href="#sec_compl_cd">5.3 Content Dictionaries</a></li></ul><ul><li><a href="#sec_comp_lex">5.4 Lexical Errors</a></li></ul><ul><li><a href="#sec_compl_om1">5.5 <i>OpenMath</i> 1 Objects</a></li></ul></li><li><a href="#app_cdfiles">A CD Files</a><ul><li><a href="#app_cdcd">A.1 The <b>meta</b> Content Dictionary</a></li></ul><ul><li><a href="#arith1.ocd">A.2 The  <b>arith1</b> Content Dictionary File</a></li></ul><ul><li><a href="#arith1.sts">A.3 The  <b>arith1</b> STS Signature File</a></li></ul><ul><li><a href="#mathml.cdg">A.4 The  <b>MathML</b> CDGroup</a></li></ul><ul><li><a href="#errorcd">A.5 The <b>error</b> Content Dictionary</a></li></ul></li><li><a href="#app_openmath.rng">B <i>OpenMath</i> Schema in Relax NG XML Syntax (Normative)</a></li><li><a href="#app_relaxrestricted">C Restricting the <i>OpenMath</i> Schema (Non-Normative)</a></li><li><a href="#app_xsd">D <i>OpenMath</i> Schema in XSD Syntax (Non-Normative)</a></li><li><a href="#app_dtd">E <i>OpenMath</i> DTD (Non-Normative)</a></li><li><a href="#app_whats_new">F Changes between <i>OpenMath</i> 1.1 and <i>OpenMath</i> 2 (Non-Normative)</a><ul><li><a href="#chgformal">F.1 Changes to the Formal Definition of Objects</a></li></ul><ul><li><a href="#chgenc">F.2 Changes to the encodings</a></li></ul><ul><li><a href="#chgcd">F.3 Changes to Content Dictionaries</a></li></ul><ul><li><a href="#chgr1">F.4 Changes in 2.0 Revision 1</a></li></ul><ul><li><a href="#chgr2">F.5 Changes in 2.0 Revision 2</a></li></ul></li><li><a href="#bibliography">G Bibliography</a></li></ul><h2>List of Figures</h2><ul><li><a href="#fig_om">1.1 The <i>OpenMath</i> Architecture</a></li><li><a href="#fig_obj">2.1 The <i>OpenMath</i> application and binding objects for
 <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi> <mo>(</mo><mi>x</mi> <mo>)</mo></math> and
 <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi> <mi>x</mi><mo>.</mo><mi>x</mi> <mo>+</mo>
-<mn>2</mn></math> in tree-like notation.</a><br /><a href="#fig_shared_vs_unshared">3.1 Shared vs. unshared representations</a><br /><a href="#fig_sharing_between">3.2 Sharing between <i>OpenMath</i> objects (A cycle of order <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>).</a><br /><a href="#fig_bin-enc">3.3 Grammar of the binary encoding of <i>OpenMath</i> objects.</a><br /><a href="#fig_bin-enc_stream">3.4 Streaming a large Integer in the Binary Encoding.</a><br /><a href="#fig_bin-enc_ex">3.5 A Simple example of the <i>OpenMath</i> binary encoding.</a><br /><a href="#fig_bin-enc2">3.6 A binary encoding of the <i>OpenMath</i> object from Figure 3.1.</a><br /><a href="#fig_cdgroup.dtd">4.1 <span>Relax NG</span> Specification of CDGroups</a><br /></div></div>
+<mn>2</mn></math> in tree-like notation.</a></li><li><a href="#fig_shared_vs_unshared">3.1 Shared vs. unshared representations</a></li><li><a href="#fig_sharing_between">3.2 Sharing between <i>OpenMath</i> objects (A cycle of order <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>).</a></li><li><a href="#fig_bin-enc">3.3 Grammar of the binary encoding of <i>OpenMath</i> objects.</a></li><li><a href="#fig_bin-enc_stream">3.4 Streaming a large Integer in the Binary Encoding.</a></li><li><a href="#fig_bin-enc_ex">3.5 A Simple example of the <i>OpenMath</i> binary encoding.</a></li><li><a href="#fig_bin-enc2">3.6 A binary encoding of the <i>OpenMath</i> object from Figure 3.1.</a></li><li><a href="#fig_cdgroup.dtd">4.1 <span>Relax NG</span> Specification of CDGroups</a></li></ul></div></div>
 
 
 
