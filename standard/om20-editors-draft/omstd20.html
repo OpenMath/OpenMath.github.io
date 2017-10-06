@@ -1205,7 +1205,7 @@ respectively.</p>
 <span id="rncssec_xmlOMBVAR">OMBVAR</span> = <span style="font-weight:bold;">element</span> OMBVAR { <a href="#rncssec_xmlcommon.attributes">common.attributes</a>, <a href="#rncssec_xmlomvar">omvar</a>+ }
 
 <span style="color:brown;"># error constructor</span>
-<span id="rncssec_xmlOME">OME</span> = <span style="font-weight:bold;">element</span> OME { <a href="#rncssec_xmlcommon.attributes">common.attributes</a>, <a href="#rncssec_xmlOMS">OMS</a>, (<a href="#rncssec_xmlomel">omel</a>|<a href="#rncssec_xmlOMFOREIGN">OMFOREIGN</a>)* }
+<span id="rncssec_xmlOME">OME</span> = <span style="font-weight:bold;">element</span> OME { <a href="#rncssec_xmlcompound.attributes">compound.attributes</a>, <a href="#rncssec_xmlOMS">OMS</a>, (<a href="#rncssec_xmlomel">omel</a>|<a href="#rncssec_xmlOMFOREIGN">OMFOREIGN</a>)* }
 
 <span style="color:brown;"># attribution constructor and attribute pair constructor</span>
 <span id="rncssec_xmlOMATTR">OMATTR</span> = <span style="font-weight:bold;">element</span> OMATTR { <a href="#rncssec_xmlcompound.attributes">compound.attributes</a>, <a href="#rncssec_xmlOMATP">OMATP</a>, <a href="#rncssec_xmlomel">omel</a> }
@@ -1580,8 +1580,8 @@ an <abbr>XML</abbr> document.
 
  <dt>References</dt>
  <dd><p>
- <i>OpenMath</i> integers, floating point numbers, character strings,
- bytearrays, applications, binding, attributions can also be encoded
+ <i>OpenMath</i> integers, <span>symbols, variables,</span> floating point numbers, character strings,
+ bytearrays, applications, binding, attributions, error, <span>and foreign objects</span> can also be encoded
  as an empty <small><code>OMR</code></small> element with an <small><code>href</code></small>
  attribute whose value is the value of a URI referencing an id
  attribute of an <i>OpenMath</i> object of that type.
@@ -6437,7 +6437,7 @@ The application does not know about the CD specfun1
   &lt;!-- error constructor --&gt;
   &lt;<span style="font-weight: bold; color: red">define</span> name="OME"&gt;
     &lt;<span style="font-weight: bold; color: red">element</span> name="OME"&gt;
-      &lt;<span style="font-weight: bold; color: red">ref</span> name="common.attributes"/&gt;
+      &lt;<span style="font-weight: bold; color: red">ref</span> name="compound.attributes"/&gt;
       &lt;<span style="font-weight: bold; color: red">ref</span> name="OMS"/&gt;
       &lt;<span style="font-weight: bold; color: red">zeroOrMore</span>&gt;
         &lt;<span style="font-weight: bold; color: red">choice</span>&gt;
@@ -6786,7 +6786,7 @@ or, using the Relax NG compact syntax:
           &lt;<span style="font-weight: bold; color: red">element</span> ref="om:OMFOREIGN"/&gt;
         &lt;/<span style="font-weight: bold; color: red">choice</span>&gt;
       &lt;/<span style="font-weight: bold; color: red">sequence</span>&gt;
-      &lt;<span style="font-weight: bold; color: red">attributeGroup</span> ref="om:common.attributes"/&gt;
+      &lt;<span style="font-weight: bold; color: red">attributeGroup</span> ref="om:compound.attributes"/&gt;
     &lt;/<span style="font-weight: bold; color: red">complexType</span>&gt;
   &lt;/<span style="font-weight: bold; color: red">element</span>&gt;
   &lt;!-- attribution constructor and attribute pair constructor --&gt;
@@ -6973,7 +6973,7 @@ Revision 2: Corrected regex for OMI to match the documented standard and allow h
 &lt;!ELEMENT OME (OMS,(%omel;|OMFOREIGN)*)&gt;
 &lt;!ATTLIST OME
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMath'
-  %common.attributes;&gt;
+  %compound.attributes;&gt;
 
 &lt;!-- attribution constructor and attribute pair constructor --&gt;
 
