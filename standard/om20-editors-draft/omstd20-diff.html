@@ -410,9 +410,29 @@ Example of Binary Encoding
 
 
 
+<span>
+ 
+<a href="#ssec_cdgroups" class="new">
+4.4.2 <span>
+CDGroups
+</span>
+</a>
+</span>
+<br />
 
 
 
+
+
+<span>
+  
+<a href="#sect_cdgpcdata" class="new">
+4.4.2.2 <span>
+Further Requirements of a CDGroup
+</span>
+</a>
+</span>
+<br />
 
 
 
@@ -1355,7 +1375,6 @@ respectively.</p>
 <div class="literal"><pre><span style="color:brown;"># RELAX NG Schema for OpenMath 2</span>
 <span style="color:brown;"># Revision 2: Corrected regex for OMI to match the documented standard and allow hex</span>
 
-
 <span style="font-weight:bold;">default</span> <span style="font-weight:bold;">namespace</span> <span id="rncssec_xmlnamespaceom">om</span> = "http://www.openmath.org/OpenMath"
 
 <span id="rncssec_xmlstart">start</span> = <a href="#rncOMOBJ">OMOBJ</a>
@@ -1363,6 +1382,7 @@ respectively.</p>
 <span style="color:brown;"># OpenMath object constructor</span>
 <span id="rncOMOBJ">OMOBJ</span> = <span style="font-weight:bold;">element</span> OMOBJ { <a href="#rncssec_xmlcompound.attributes">compound.attributes</a>,
                         <span style="font-weight:bold;">attribute</span> version { <span style="font-weight:bold;">xsd:string</span> }?,
+			<span style="font-weight:bold;">attribute</span> cdgroup { <span style="font-weight:bold;">xsd:anyURI</span>}?,
                         <a href="#rncssec_xmlomel">omel</a> }
 
 
@@ -1463,14 +1483,18 @@ the <span><abbr>XML</abbr> Encoding</span></h4>
 
 <p>An encoded <i>OpenMath</i> object is placed inside an <small><code>OMOBJ</code></small> element.  This 
 element can contain the elements (and integers) described above.
-<span> It can take an optional
+It can take an optional
 <small><code>version</code></small> (<abbr>XML</abbr>) attribute which indicates to
 which version of the <i>OpenMath</i> standard it conforms.  In previous versions of
 this standard this attribute did not exist, so any <i>OpenMath</i> object without
 such an attribute must conform to version 1 (or equivalently 1.1) of the
 <i>OpenMath</i> standard.  Objects which conform to the description given in this
 document should have <small><code>version="2.0"</code></small>.
-</span></p>
+<span class="new">The <small><code>OMOBJ</code></small> element can also take an optional
+<small><code>cdgroup</code></small> attribute, which specifies a CD group file that acts as a
+catalogue of CD bases for locating OpenMath content dictionaries of
+<small><code>OMS</code></small> elements in this <small><code>OMOBJ</code></small> element. When no <small><code>cdgroup</code></small> attribute is explicitly specified, the document format embedding this <small><code>OMOBJ</code></small> element may provide a method for determining CD bases. Otherwise the system must determine a CD base; in the absence of specific information <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a> is assumed as the CD base for all <small><code>OMS</code></small> elements.</span> 
+</p>
 
 <p>We briefly discuss the <abbr>XML</abbr> encoding for each type of <i>OpenMath</i> object
 starting from the basic objects.</p>
@@ -4347,16 +4371,18 @@ name="plus"/&gt;</code></small>: </p><div class="literal"><pre>
 
 
 
-  <p>The CD
-Group mechanism is a convenience mechanism for identifying collections
-of CDs.  A CD Group file is an <abbr>XML</abbr> document used in the (static or
-dynamic) negotiation phase where communicating applications declare
-and agree on the Content Dictionaries which they process.  It is a
-complement, or an alternative, to the individual declaration of
-Content Dictionaries understood by an application.  Note that CD
-Groups do <i>not</i> affect the <i>OpenMath</i> objects themselves.
-Symbols in an object always refer to content dictionaries, not
-groups.</p>
+
+
+<p>
+  The CD Group mechanism is a convenience mechanism for identifying collections of CDs
+  <span class="new">and specifying their location by an URI</span>.  A CD
+  Group file is an <abbr>XML</abbr> document used in the (static or dynamic) negotiation phase where
+  communicating applications declare and agree on the Content Dictionaries which they
+  process.  It is a complement, or an alternative, to the individual declaration of
+  Content Dictionaries understood by an application.  <span class="new">Additionally, a CD Group file can also be used as a catalog for
+  defaulting the CD bases of <i>OpenMath</i> symbols.</span> Note that CD Groups do
+  <i>not</i> affect the <i>OpenMath</i> objects themselves.  Symbols in an object
+  always refer to content dictionaries, not groups.</p>
 
  <p>For an application to declare that
 it <span>“understands CDGroup G”</span> is exactly equivalent to, and
@@ -4400,7 +4426,7 @@ CDs, identified by name and optionally version number and URL.</p>
 <span id="rncsec_dtd_cdgCDGroupName">CDGroupName</span> = <span style="font-weight:bold;">element</span> CDGroupName { <span style="font-weight:bold;">xsd:NCName</span> }
 <span id="rncsec_dtd_cdgCDGroupVersion">CDGroupVersion</span> = <span style="font-weight:bold;">element</span> CDGroupVersion { <span style="font-weight:bold;">xsd:nonNegativeInteger</span> }
 <span id="rncsec_dtd_cdgCDGroupRevision">CDGroupRevision</span> = <span style="font-weight:bold;">element</span> CDGroupRevision { <span style="font-weight:bold;">xsd:nonNegativeInteger</span> }
-<span id="rncsec_dtd_cdgCDGroupURL">CDGroupURL</span> = <span style="font-weight:bold;">element</span> CDGroupURL { <span style="font-weight:bold;">text</span> }
+<span id="rncsec_dtd_cdgCDGroupURL">CDGroupURL</span> = <span style="font-weight:bold;">element</span> CDGroupURL { <span style="font-weight:bold;">xsd:anyURI</span> }
 <span id="rncsec_dtd_cdgCDGroupDescription">CDGroupDescription</span> = <span style="font-weight:bold;">element</span> CDGroupDescription { <span style="font-weight:bold;">text</span> }
 <span style="color:brown;"># info on the CDs in the group</span>
 <span id="rncsec_dtd_cdgCDComment">CDComment</span> = <span style="font-weight:bold;">element</span> CDComment { <span style="font-weight:bold;">text</span> }
@@ -4408,6 +4434,7 @@ CDs, identified by name and optionally version number and URL.</p>
   <span style="font-weight:bold;">element</span> CDGroupMember {
     <a href="#rncsec_dtd_cdgCDComment">CDComment</a>?, <a href="#rncsec_dtd_cdgCDName">CDName</a>, <a href="#rncsec_dtd_cdgCDVersion">CDVersion</a>?, <a href="#rncsec_dtd_cdgCDURL">CDURL</a>?
   }
+<span id="rncsec_dtd_cdgCDGroupInclude">CDGroupInclude</span> = <span style="font-weight:bold;">element</span> CDGroupInclude { <span style="font-weight:bold;">xsd:anyURI</span> }
 <span id="rncsec_dtd_cdgCDName">CDName</span> = <span style="font-weight:bold;">element</span> CDName { <span style="font-weight:bold;">xsd:NCName</span> }
 <span id="rncsec_dtd_cdgCDVersion">CDVersion</span> = <span style="font-weight:bold;">element</span> CDVersion { <span style="font-weight:bold;">xsd:nonNegativeInteger</span> }
 <span id="rncsec_dtd_cdgCDURL">CDURL</span> = <span style="font-weight:bold;">element</span> CDURL { <span style="font-weight:bold;">text</span> }
@@ -4419,7 +4446,7 @@ CDs, identified by name and optionally version number and URL.</p>
     <a href="#rncsec_dtd_cdgCDGroupRevision">CDGroupRevision</a>?,
     <a href="#rncsec_dtd_cdgCDGroupURL">CDGroupURL</a>,
     <a href="#rncsec_dtd_cdgCDGroupDescription">CDGroupDescription</a>,
-    (<a href="#rncsec_dtd_cdgCDGroupMember">CDGroupMember</a> | <a href="#rncsec_dtd_cdgCDComment">CDComment</a>)*
+    (<a href="#rncsec_dtd_cdgCDGroupMember">CDGroupMember</a> | <a href="#rncsec_dtd_cdgCDComment">CDComment</a> | <a href="#rncsec_dtd_cdgCDGroupInclude">CDGroupInclude</a>)*
   }
 <span id="rncsec_dtd_cdgstart">start</span> = <a href="#rncsec_dtd_cdgCDGroup">CDGroup</a></pre></div>
 
@@ -4466,7 +4493,9 @@ version numbers of the CDGroup.
 <dt><small><code>CDGroupURL</code></small></dt>
 <dd><p>The text occurring in the <small><code>CDGroupURL</code></small>
   element identifies the location of the CDGroup file, not necessarily
-  of the member Content Dictionaries. For the syntactical
+  of the member Content Dictionaries. <span class="new">If the
+  <small><code>CDGroupURL</code></small> element is missing, it defaults to the URL of
+  the current CD group file.</span> For the syntactical
   requirements, see <small><code>CDURL</code></small> in <a href="#sect_pcdata">Section 4.3.2</a>.</p>
   
 </dd>
@@ -4484,12 +4513,29 @@ mathematical area of the CDGroup.</p>
   
 </dd>
 
-<dt><small><code>CDName</code></small></dt><dd><p>The
-  text occurring in the <small><code>CDName</code></small> element
-  corresponds to the name of a Content Dictionary in the CDGroup. For
-  the syntactical requirements, see <small><code>CDName</code></small> in
-  <a href="#sect_pcdata">Section 4.3.2</a>.</p>
-  
+<dt><small><code>CDGroupInclude</code></small></dt>
+<dd><p class="new">The text content of the
+<small><code>CDGroupInclude</code></small> identifies an external CD group file whose CDGroup
+members are to be included into the current one. Technically: the set of CDs of CD group
+given by a CD group file with <small><code>CDGroupInclude</code></small> elements is
+determined by recursive flattening: The cd group has all the CDs given directly by the
+<small><code>CDGroupMember</code></small> elements together with those CDs from CD groups
+referenced in the <small><code>CDGroupInclude</code></small> elements. If this leads to
+duplicate <small><code>CDName</code></small>s, then directly specified CDs are prioritized,
+for duplications between referenced CD groups, the latter one is prioritized.
+For the syntactical
+  requirements, see <small><code>CDURL</code></small> in <a href="#sect_pcdata">Section 4.3.2</a>.</p>
+</dd>
+
+<dt><small><code>CDName</code></small></dt>
+<dd>
+  <p><span class="chg">The text occurring in the
+  <small><code>CDName</code></small> element names the referenced Content Dictionary (see
+  <small><code>CDURL</code></small> below) in this CD group,</span> <span class="new">it must be unique in the CD group. In particular,
+  <small><code>OMS</code></small> elements in an <small><code>OMOBJ</code></small> whose
+  <small><code>cdgroup</code></small> attribute references the current CD group derive their CD base
+  via this <small><code>CDName</code></small>.</span> For the syntactical requirements, see
+  <small><code>CDName</code></small> in <a href="#sect_pcdata">Section 4.3.2</a>.</p>
 </dd>
 
 <dt><small><code>CDVersion</code></small></dt><dd><p>The
@@ -6501,6 +6547,11 @@ The application does not know about the CD specfun1
           &lt;<span style="font-weight: bold; color: red">data</span> type="string"/&gt;
         &lt;/<span style="font-weight: bold; color: red">attribute</span>&gt;
       &lt;/<span style="font-weight: bold; color: red">optional</span>&gt;
+      &lt;<span style="font-weight: bold; color: red">optional</span>&gt;
+        &lt;<span style="font-weight: bold; color: red">attribute</span> name="cdgroup"&gt;
+          &lt;<span style="font-weight: bold; color: red">data</span> type="anyURI"/&gt;
+        &lt;/<span style="font-weight: bold; color: red">attribute</span>&gt;
+      &lt;/<span style="font-weight: bold; color: red">optional</span>&gt;
       &lt;<span style="font-weight: bold; color: red">ref</span> name="omel"/&gt;
     &lt;/<span style="font-weight: bold; color: red">element</span>&gt;
   &lt;/<span style="font-weight: bold; color: red">define</span>&gt;
@@ -6850,6 +6901,7 @@ or, using the Relax NG compact syntax:
       &lt;<span style="font-weight: bold; color: red">group</span> ref="om:omel"/&gt;
       &lt;<span style="font-weight: bold; color: red">attributeGroup</span> ref="om:compound.attributes"/&gt;
       &lt;<span style="font-weight: bold; color: red">attribute</span> name="version" type="xs:string"/&gt;
+      &lt;<span style="font-weight: bold; color: red">attribute</span> name="cdgroup" type="xs:anyURI"/&gt;
     &lt;/<span style="font-weight: bold; color: red">complexType</span>&gt;
   &lt;/<span style="font-weight: bold; color: red">element</span>&gt;
   &lt;!-- Elements which can appear inside an OpenMath object --&gt;
@@ -7104,7 +7156,8 @@ Revision 2: Corrected regex for OMI to match the documented standard and allow h
 &lt;!ATTLIST OMOBJ
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMath'
   %compound.attributes;
-  version CDATA #IMPLIED&gt;
+  version CDATA #IMPLIED
+  cdgroup CDATA #IMPLIED&gt;
 
 &lt;!ENTITY % attvar "OMATTR"&gt;
 
@@ -7395,9 +7448,24 @@ details of how this attribute is used are not mandated by the standard.
 	 The RelaxNG schema has been corrected to allow hexadecimal representation of integers to match 
 	 <a href="#sec_xml-desc">Section 3.1.2</a>.
         </p></li>
+      <li><p class="new">
+	  For a better alignment with MathML3, the <small><code>OMOBJ</code></small> element
+	  has been extended by a <small><code>cdgroup</code></small> attribute that specifies
+	  a CDGroup file hat acts as a catalog for the CD bases of
+	  <small><code>OMS</code></small> elements in that <small><code>OMOBJ</code></small>.
+	</p></li>
+      <li><p class="new">
+	  The meaning of <small><code>CDGroup/CDGroupMember/CDName</code></small> has been
+	  clarified in terms of uniqueness conditions and correspondence to name of the
+	  referenced CD.
+	</p></li>
+      <li><p class="new">
+	  An inclusion mechanism has been introduced to make the
+	  <small><code>cdgroup</code></small> catalog mechanism in MathML more realistic and
+	  manageable.
+	</p></li>
     </ul>
   </div>
-
   
 </div>
 
