@@ -31,7 +31,10 @@ Relax NG Schema for OpenMath CD Signatures
 
 <!ATTLIST CDSignatures
   cd NMTOKEN #REQUIRED
-  type NMTOKEN #REQUIRED>
+  type NMTOKEN #IMPLIED
+  cdgroup CDATA #IMPLIED
+  cdurl CDATA #IMPLIED
+  version CDATA #IMPLIED>
 
 <!ELEMENT Signature (OMOBJ)>
 <!ATTLIST Signature
