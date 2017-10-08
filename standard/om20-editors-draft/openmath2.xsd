@@ -10,6 +10,7 @@
       <xs:group ref="om:omel"/>
       <xs:attributeGroup ref="om:compound.attributes"/>
       <xs:attribute name="version" type="xs:string"/>
+      <xs:attribute name="cdgroup" type="xs:anyURI"/>
     </xs:complexType>
   </xs:element>
   <!-- Elements which can appear inside an OpenMath object -->
@@ -159,7 +160,7 @@
           <xs:element ref="om:OMFOREIGN"/>
         </xs:choice>
       </xs:sequence>
-      <xs:attributeGroup ref="om:common.attributes"/>
+      <xs:attributeGroup ref="om:compound.attributes"/>
     </xs:complexType>
   </xs:element>
   <!-- attribution constructor and attribute pair constructor -->

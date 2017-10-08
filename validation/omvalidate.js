@@ -810,7 +810,7 @@ function vsOMI(e) {
     if (e.childNodes.length != 1) {
 	err += " (Unexpected content in OMI)";
     }
-    if(! e.textContent.match(/^\s*(-\s?)?[0-9]+(\s[0-9]+)*\s*$/)) {
+    if(! e.textContent.match(/^\s*(-\s?)?([0-9]+(\s[0-9]+)*|x\s*[0-9A-F]+(\s[0-9A-F]+)*)\s*$/)) {
 	err += " (Invalid Integer)";
     }
     return vsSpanOut(err, e.textContent);

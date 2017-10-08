@@ -16,6 +16,11 @@
           <data type="string"/>
         </attribute>
       </optional>
+      <optional>
+        <attribute name="cdgroup">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
       <ref name="omel"/>
     </element>
   </define>
@@ -165,7 +170,7 @@
   <!-- error constructor -->
   <define name="OME">
     <element name="OME">
-      <ref name="common.attributes"/>
+      <ref name="compound.attributes"/>
       <ref name="OMS"/>
       <zeroOrMore>
         <choice>

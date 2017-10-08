@@ -34,6 +34,10 @@
 <!ATTLIST CDGroupMember
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
+<!ELEMENT CDGroupInclude (#PCDATA)>
+<!ATTLIST CDGroupInclude
+  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+
 <!ELEMENT CDName (#PCDATA)>
 <!ATTLIST CDName
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
@@ -50,6 +54,6 @@
 
 <!ELEMENT CDGroup (CDGroupName,CDGroupVersion,CDGroupRevision?,
                    CDGroupURL,CDGroupDescription,
-                   (CDGroupMember|CDComment)*)>
+                   (CDGroupMember|CDComment|CDGroupInclude)*)>
 <!ATTLIST CDGroup
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
