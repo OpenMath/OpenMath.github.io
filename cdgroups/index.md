@@ -22,8 +22,8 @@ title: OpenMath Content Dictionaries - CD Groups
  |[polygrp](polygrp)|Polynomial CD Group|
  |[riaca_algebra](riaca_algebra)|CDs developed at RIACA|
  |[scscp](scscp)|This CD group contains cds for the OpenMath SCSCP standard.|
- |[sets](sets)|Cds which describe operations on sets and their names|
- |[transc](transc)|Cds which describe transcendental functions|
+ |[sets](sets)|CDs which describe operations on sets and their names|
+ |[transc](transc)|CDs which describe transcendental functions|
  |[types1](types1)|Types1 CD Group|
  |[types2](types2)|Types CD Group|
  |[units](units)|This CD group contains cds describing units and dimensions|
