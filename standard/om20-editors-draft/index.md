@@ -15,6 +15,16 @@ Generated from the source repository [OMSTD](https://github.com/OpenMath/OMSTD)
 
 [Editors' Draft with diff markings from om20-2004-06-30](omstd20-diff.html) ([pdf](omstd20-diff.pdf))
 
+## Development Process
+
+We use the [GitHub issue tracker system of the OpenMath/OMSTD repository](https://github.com/OpenMath/OMSTD/issues) to organize development. See in particular
+
+a) a [list of consolidated issues](https://github.com/OpenMath/OMSTD/milestone/1?closed=1)
+b) a [list of the unconsolidated issues](https://github.com/OpenMath/OMSTD/milestone/1)
+c) a [list of the issues under consideration for further releases, but "too big" for an editors' revision](https://github.com/OpenMath/OMSTD/milestone/2), which we would like to ask OM2018 about.
+
+Feedback is very welcome, please express it in the [respective issues](https://github.com/OpenMath/OMSTD/issues) or [raise a new one]((https://github.com/OpenMath/OMSTD/issues/new). 
+
 ## Schema
 
 <table style="font-size:90%;">
