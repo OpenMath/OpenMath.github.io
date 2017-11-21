@@ -218,7 +218,7 @@ September 2017
 
 
  <div class="mdata" style="font-size:110%;background-color:#EEE;padding:.5em;">
-  <b>Editors' Draft:</b> Built 2017-10-12<br />
+  <b>Editors' Draft:</b> Built 2017-11-21<br />
   Source Repository: <a href="https://github.com/OpenMath/OMSTD/">https://github.com/OpenMath/OMSTD</a><br />
   This Version: <a href="https://openmath.github.io/standard/om20-editors-draft/">https://openmath.github.io/standard/om20-editors-draft</a><br />
   Normative version: <a href="https://openmath.github.io/standard/om20-2017-07-22/">https://openmath.github.io/standard/om20-2017-07-22/</a>
@@ -305,6 +305,16 @@ relative to the OpenMath 2.0 document...</p>
 
 
 
+
+<span>
+ 
+<a href="#sec_compound" class="new">
+2.1.3 <span>
+<i>OpenMath</i> Objects
+</span>
+</a>
+</span>
+<br />
 
 
 
@@ -843,17 +853,29 @@ objects as described below.)</span></p></li>
   variable</i>.</span>
   </p></li>
 
-<li><p><span>(iv)</span> If <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math> and
+<li><p>
+    <span>(iv)</span> If <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math> and
   <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math> are <i>OpenMath</i> objects, and
   <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi><mn>1</mn></msub></math>,
   <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>…</mi></math>,
   <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi><mi>n</mi></msub></math>   <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi>n</mi> <mo>≥</mo>
   <mn>0</mn><mo>)</mo></math> are <i>OpenMath</i> variables or attributed
-  variables, then
+  variables, then 
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mi mathvariant="bold">binding</mi> <mo>(</mo><mi>B</mi><mo>,</mo> <msub><mi>v</mi><mn>1</mn></msub><mo>,</mo> <mi>…</mi><mo>,</mo> <msub><mi>v</mi><mi>n</mi></msub><mo>,</mo> <mi>C</mi><mo>)</mo>
   </math>
-is an <i>OpenMath</i> <i>binding object</i>.</p></li>
+  is an <i>OpenMath</i> <i>binding object</i>.
+  <span class="new">
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math> is called the <i>binder</i>,  
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi><mn>1</mn></msub></math>,
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>…</mi></math>,
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi><mi>n</mi></msub></math>     are called <i>variable bindings</i>,
+    and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math> is called the
+    <i>body</i> of the binding object above.   To distinguish the two different ways how variable objects are used, any variable object
+  that is not a variable binding is called a <i>variable reference</i>.
+  </span>
+</p></li>
+
 <li><p><span>(v)</span> If <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math> is an
 <i>OpenMath</i> symbol and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>A</mi><mn>1</mn></msub></math>,
 <span>…</span>,
@@ -865,7 +887,7 @@ is an <i>OpenMath</i> <i>binding object</i>.</p></li>
   </math>
   is an <i>OpenMath</i> <i>error object</i>.</p></li>
 </ul><p>
- <span><i>OpenMath</i> objects that are contstructed via rules (ii)
+ <span><i>OpenMath</i> objects that are constructed via rules (ii)
    to (v) are jointly called <span><i>compound <i>OpenMath</i> objects</i></span></span>
 </p>
 </div>
@@ -1052,78 +1074,315 @@ objects</span>.</p>
 <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi> <mo>(</mo><mi>x</mi> <mo>)</mo></math> and
 <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi> <mi>x</mi><mo>.</mo><mi>x</mi> <mo>+</mo>
 <mn>2</mn></math> in tree-like notation.</div></div>
-
-  
 </dd>
 
-<dt>Binding</dt><dd><p>objects are
-  constructed from an <i>OpenMath</i> object, and from a sequence of zero or more
-  variables followed by another <i>OpenMath</i> object.  The first <i>OpenMath</i> object is
-  the <span>“binder”</span> object. Arguments 2 to
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>-</mo><mn>1</mn></math> are always variables to
-  be bound in the <span>“body”</span> which is the
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>n</mi><mi>th</mi></msup></math>   <span class="new">(last) </span> argument object. It
-  is allowed to have no bound variables, but the binder object and the
-  body should be present. Binding can be used to express functions or
-  logical statements.  The function <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi>
-  <mi>x</mi><mo>.</mo><mi>x</mi> <mo>+</mo><mn>2</mn></math>, in which
-  the variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> is bound by
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi></math>, corresponds to a binding object having
-  as binder the <i>OpenMath</i> symbol <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>lambda</mi></math>: <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi mathvariant="bold">binding</mi><mo>(</mo><mi>lambda</mi><mo>,</mo>
-  <mi>x</mi> <mo>,</mo> <mi mathvariant="bold">application</mi><mo>(</mo><mi>plus</mi><mo>,</mo>
-  <mi>x</mi> <mo>,</mo>
-  <mn>2</mn><mo>)</mo><mo>)</mo><mtext>.</mtext></math></p>
-  
-  
-  
 
 
-<p>Phrasebooks are allowed to use <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi></math>   conversion in order to avoid clashes of variable names. Suppose an
-  object <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ω</mi></math> contains an occurrence of the
-  object <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">binding</mi>
-  <mo>(</mo><mi>B</mi> <mo>,</mo> <mi>v</mi> <mo>,</mo> <mi>C</mi>
-  <mo>)</mo></math>.  This object <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">binding</mi> <mo>(</mo><mi>B</mi> <mo>,</mo>
-  <mi>v</mi> <mo>,</mo> <mi>C</mi> <mo>)</mo></math> can be replaced
-  in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ω</mi></math> by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">binding</mi> <mo>(</mo><mi>B</mi> <mo>,</mo>
-  <mi>z</mi> <mo>,</mo> <mi>C'</mi><mo>)</mo></math> where
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math> is a variable not occurring free in
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C'</mi></math> is obtained
-  from <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math> by replacing each free (i.e., not bound
-  by any intermediate <b>binding</b> construct) occurrence
-  of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math>.  This
-  operation preserves the semantics of the object
+  <dt>Binding</dt>
+  <dd>
+    <p class="chg">objects are of the form
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi mathvariant="bold">binding</mi>
+      <mo>(</mo>
+      <mi>B</mi>
+      <mo>,</mo>
+      <msub><mi>v</mi><mn>1</mn></msub>
+      <mo>,</mo>
+      <mi>…</mi>
+      <mo>,</mo>
+      <msub><mi>v</mi><mi>n</mi></msub>
+      <mo>,</mo>
+      <mi>C</mi>
+      <mo>)</mo>
+      <mtext>.</mtext>
+    </math>     The <i>scope</i> of a variable binding
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi><mi>i</mi></msub></math>     (<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>n</mi></math>)
+    is constituted by the body
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math> together with the attribute values of subsequent variable
+    bindings <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi><mi>j</mi></msub></math> with
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi><mo>&lt;</mo><mi>j</mi><mo>≤</mo><mi>n</mi></math>.
+    A variable reference <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi></math> is <span>“bound”</span> by the variable
+    binding <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math>, if <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math> is the
+    closest variable binding for the same name that has
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi></math> in its scope. A variable reference that is not bound by any
+    variable binding is called a <span>“free variable”</span>. Note that the binder itself
+    is not part of the scope of any of its bound variables. In particular, no 
+    variable references in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math> can be bound by any of the variable bindings <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi><mi>i</mi></msub></math>.
+    Binding objects are allowed to have no bound variables, but the binder object and the
+    body should be present.
+    </p>
+    <p> Binding can be used to express functions or
+    logical statements.  The function
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>λ</mi>
+      <mi>x</mi>
+      <mo>.</mo>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mn>2</mn>
+      </math>, in which
+      the variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> is bound by
+      <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi></math>, corresponds to a binding object having
+      as binder the <i>OpenMath</i> symbol <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>lambda</mi></math>:
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+	<mi mathvariant="bold">binding</mi>
+	<mo>(</mo>
+	<mi>lambda</mi>
+	<mo>,</mo>
+	<mi>x</mi>
+	<mo>,</mo>
+	<mi mathvariant="bold">application</mi>
+	<mo>(</mo>
+	<mi>plus</mi>
+	<mo>,</mo>
+	<mi>x</mi>
+	<mo>,</mo>
+	<mn>2</mn>
+	<mo>)</mo>
+	<mo>)</mo>
+	<mtext>.</mtext>
+      </math>
+    </p>
+
+    <p>Phrasebooks are allowed to use <i><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi></math>-conversion</i>
+    <span class="new">(also called <i>alphabetic
+    renaming</i>)</span>
+    in order to avoid clashes of variable names: <span class="new"> the variable in a variable binding
+    can be replaced by a
+    <i>new variable</i>, i.e. one that does not occur anywhere in
+    the scope of the binding, if all variable references it binds are replaced accordingly:</span> 
+    Suppose <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ω</mi></math> contains an occurrence of the
+    object
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi mathvariant="bold">binding</mi>
+      <mo>(</mo>
+      <mi>B</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>v</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>,</mo>
+      <mi>x</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>w</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>,</mo>
+      <mi>C</mi>
+      <mo>)</mo>
+    </math>     <span class="new">where
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mover>
+	<mi>v</mi>
+	<mo>→</mo>
+      </mover>
+  </math>   and 
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mover>
+      <mi>w</mi>
+      <mo>→</mo>
+    </mover>
+  </math>   are (possibly empty)
+  sequences of bound, possibly attributed variables and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> is a
+  variable</span>. 
+  This object
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi mathvariant="bold">binding</mi>
+    <mo>(</mo>
+    <mi>B</mi>
+    <mo>,</mo>
+    <mover>
+      <mi>v</mi>
+      <mo>→</mo>
+    </mover>
+    <mo>,</mo>
+    <mi>x</mi>
+    <mo>,</mo>
+    <mover>
+      <mi>w</mi>
+      <mo>→</mo>
+    </mover>
+    <mo>,</mo>
+    <mi>C</mi>
+    <mo>)</mo>
+  </math> can be replaced
+in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ω</mi></math> by
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold">binding</mi>
+  <mo>(</mo>
+  <mi>B</mi>
+  <mo>,</mo>
+    <mover>
+      <mi>v</mi>
+      <mo>→</mo>
+    </mover>
+  <mo>,</mo>
+  <mi>y</mi>
+  <mo>,</mo>
+    <mover>
+      <mi>w'</mi>
+      <mo>→</mo>
+    </mover>
+    <mo>,</mo>
+  <mi>C'</mi>
+  <mo>)</mo>
+</math> where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> is a <i>new variable</i>, i.e. one that does not occur anywhere in <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>w</mi><mo>→</mo></mover>
+</math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math>   <span class="new"> 
+    and 
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mover>
+      <mi>w'</mi>
+      <mo>→</mo>
+    </mover>
+  </math>   and
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C'</mi></math>   are
+  </span> obtained
+  from
+  <span class="new">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mover>
+      <mi>w</mi>
+      <mo>→</mo>
+    </mover>
+  </math>   and 
+  </span>
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math>,
+  by replacing each free occurrence
+  of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>.
+  <span class="new">
+    If instead of 
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> in   <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ω</mi></math>,  we have an attributed
+    variable 
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi mathvariant="bold">attribution</mi>
+    <mo>(</mo>
+    <mi>x</mi>
+    <mo>,</mo>
+    <mover>
+      <mi>a</mi>
+      <mo>→</mo>
+    </mover>
+    <mo>)</mo>
+    </math>, then instead of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> we
+    must have
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi mathvariant="bold">attribution</mi>
+      <mo>(</mo>
+      <mi>y</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>a</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>)</mo>
+    </math>   </span>
+  This operation preserves the semantics of the object
   <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ω</mi></math>. In the above example, a phrasebook is
   thus allowed to transform the object to, e.g. 
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi mathvariant="bold">binding</mi><mo>(</mo><mi>lambda</mi><mo>,</mo>
-  <mi>z</mi> <mo>,</mo> <mi mathvariant="bold">application</mi><mo>(</mo><mi>plus</mi><mo>,</mo>
-  <mi>z</mi> <mo>,</mo>
-  <mn>2</mn><mo>)</mo><mo>)</mo><mtext>.</mtext></math>
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi mathvariant="bold">binding</mi>
+    <mo>(</mo>
+    <mi>lambda</mi>
+    <mo>,</mo>
+    <mi>z</mi>
+    <mo>,</mo>
+    <mi mathvariant="bold">application</mi>
+    <mo>(</mo>
+    <mi>plus</mi>
+    <mo>,</mo>
+    <mi>z</mi>
+    <mo>,</mo>
+    <mn>2</mn>
+    <mo>)</mo>
+    <mo>)</mo>
+    <mtext>.</mtext>
+  </math>
 </p>
-<p>Repeated occurrences of the same variable in a binding operator
-  are allowed. An <i>OpenMath</i> application should treat a binding with
-  multiple occurrences of the same variable as equivalent to the
-  binding in which all but the last occurrence of each variable is
-  replaced by a new variable which does not occur free in the body of
-  the binding.  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi mathvariant="bold">binding</mi> <mo>(</mo><mi>lambda</mi><mo>,</mo>
-  <mi>v</mi> <mo>,</mo> <mi>v</mi> <mo>,</mo><mi mathvariant="bold">application</mi>
-  <mo>(</mo><mi>times</mi><mo>,</mo><mi>v</mi>
-  <mo>,</mo><mi>v</mi><mo>)</mo> <mo>)</mo></math> is semantically
-  equivalent to: <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi mathvariant="bold">binding</mi> <mo>(</mo><mi>lambda</mi> <mo>,</mo>
-  <msup><mi>v</mi><mo>'</mo></msup> <mo>,</mo> <mi>v</mi>
-  <mo>,</mo><mi mathvariant="bold">application</mi>
-  <mo>(</mo><mi>times</mi><mo>,</mo><mi>v</mi>
-  <mo>,</mo><mi>v</mi><mo>)</mo> <mo>)</mo></math> so that the
-  resulting function is actually a constant in its first argument
-  (<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>v</mi><mo>'</mo></msup></math> does not occur free
-  in the body <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">application</mi>
-  <mo>(</mo><mi>times</mi><mo>,</mo><mi>v</mi>
-  <mo>,</mo><mi>v</mi><mo>)</mo> <mo>)</mo></math>).</p>
-
-  
+<p>
+  <span class="chg"> Note that repeated variable bindings of the same
+  variable in a binding object are allowed, but make little sense semantically and are
+  therefore discouraged: the first binding binds only references in the subsequent
+  bindings up to and including the next binding for the same name. 
+  Therefore, an <i>OpenMath</i> application may choose to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi></math>-convert all
+  but the last binding to new variables. Concretely, the following replacement is carried
+  out until there are no more  bound variable duplications:
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mrow>
+      <mi mathvariant="bold">binding</mi>
+      <mo>(</mo>
+      <mi>B</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>u</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>,</mo>
+      <mi>x</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>v</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>,</mo>
+      <mi>y</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>w</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>,</mo>
+      <mi>C</mi>
+      <mo>)</mo>
+    </mrow>
+    <mo>⟶</mo>
+    <mrow>
+      <mi mathvariant="bold">binding</mi>
+      <mo>(</mo>
+      <mi>B</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>u</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>,</mo>
+      <mi>x'</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>v'</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>,</mo>
+      <mi>y'</mi>
+      <mo>,</mo>
+      <mover>
+	<mi>w</mi>
+	<mo>→</mo>
+      </mover>
+      <mo>,</mo>
+      <mi>C</mi>
+      <mo>)</mo>
+    </mrow>
+  </math>
+  where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> are (possibly attributed)
+  variables with the same head <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math>, the heads of bound (attributed)
+  variables in <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>u</mi><mo>→</mo></mover></math> are all different
+  from <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x'</mi></math>,
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y'</mi></math>, and 
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>v'</mi><mo>→</mo></mover></math> are obtained from
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>,   <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>, and 
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>v</mi><mo>→</mo></mover></math>   by replacing <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math> with a variable
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z'</mi></math> that does not occur in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>,
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>u</mi><mo>→</mo></mover></math>,
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>v</mi><mo>→</mo></mover></math>,
+  <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>w</mi><mo>→</mo></mover></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math>.
+  </span>
+</p>
 </dd>
 
 <dt>Attribution</dt><dd><p>decorates an
-  object with a sequence of one or more pairs made up of an <i>OpenMath</i>
+  object <span class="new">(called the <span>“syntactic head”</span> of the attribution)</span> with a sequence of one or more pairs made up of an <i>OpenMath</i>
   symbol, the <span>“attribute”</span>, and an associated object, 
   the <span>“value of the
   attribute”</span>.  The value of the attribute can be an <span><i>OpenMath</i></span> attribution object itself. As an
@@ -1159,7 +1418,10 @@ expression could be attributed with its spoken or visual rendering.
   <mi>…</mi><mo>,</mo> <msub><mi>S</mi><mi>n</mi></msub> <mspace width=".3em"></mspace>
   <msub><mi>A</mi><mi>n</mi></msub><mo>)</mo><mtext>.</mtext></math>
   The operation that produces an object with a single layer of
-  attribution is called <i>flattening</i>.</p>
+  attribution is called <i>flattening</i>. <span class="new">The
+  <span>“head”</span> of an attribution is the syntactic head of the fully (recursively)
+  flattened version.</span>
+</p>
 
 <p>Multiple attributes with the same name are allowed.  While the
   order of the given attributes does not imply any notion of priority,
@@ -1192,14 +1454,14 @@ would be to indicate the colour in which an <i>OpenMath</i> object should be
 displayed, for example <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">attribution</mi><mo>(</mo><mi>A</mi><mo>,</mo>
 <mi>colour</mi> <mspace width=".3em"></mspace> <mi>red</mi> <mo>)</mo></math>.
 Note that both <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>red</mi></math> are
-<span class="finaledit">arbitary</span> <i>OpenMath</i>
+<span class="finaledit">arbitrary</span> <i>OpenMath</i>
 objects <span class="finaledit">whereas <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>colour</mi></math> is
 a symbol</span>.
 An example of the use of a semantic attribution would be to indicate the
 type of an object.  For example</span>
 the object <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">attribution</mi><mo>(</mo><mi>A</mi><mo>,</mo>
 <mi>type</mi> <mspace width=".3em"></mspace> <mi>t</mi> <mo>)</mo></math> represents the judgment stating that object <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> has type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math>. Note that both
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math> are <span class="finaledit">arbitary</span> <i>OpenMath</i>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math> are <span class="finaledit">arbitrary</span> <i>OpenMath</i>
 objects <span class="finaledit">whereas <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>type</mi></math> is
 a symbol</span>.</p>
 
@@ -1714,9 +1976,8 @@ for more detailed information.</p>
   &lt;OMV name="x"/&gt;  
 &lt;/OMA&gt;</pre></div><p>
   provided that the symbol <small><code>sin</code></small> is defined to be a function
-  symbol in a Content Dictionary named <small><code>transc1</code></small>.</p>
-
-  
+  symbol in a Content Dictionary named <small><code>transc1</code></small>.
+</p>
 </dd>
 
 <dt>Binding</dt><dd><p>is encoded using the <small><code>OMBIND</code></small> element.  The binding
@@ -1768,7 +2029,9 @@ or to express the type of a variable:
   &lt;OMV name="x" /&gt;
 &lt;/OMATTR&gt;</pre></div>
 
-  
+</dd>
+
+<dt>Foreign Objects</dt><dd>
 <p>
 A special use of attributions is to associate non-<i>OpenMath</i> data with an
 <i>OpenMath</i> object.  This is done using the
@@ -1886,7 +2149,7 @@ The <i>OpenMath</i> element represented by this <small><code>OMR</code></small>
  <small><code>href</code></small> attribute. Note that this copy
  is <i>structurally equal</i>, but not identical
  to the element referenced. <span class="finaledit">These URI
- refererences will often be relative, in which case they are resolved using
+ references will often be relative, in which case they are resolved using
  the base URI of the document containing the <i>OpenMath</i>.</span></p>
 
  <p>For instance, the <i>OpenMath</i> object
@@ -1987,7 +2250,7 @@ The <i>OpenMath</i> element represented by this <small><code>OMR</code></small>
         &lt;OMV name="a"/&gt;
       &lt;/OMA&gt;
     &lt;/OMA&gt;
-  &lt;/OMA&gt;
+  &lt;/OMA&gt;                        &lt;/OMA&gt;
 &lt;/OMOBJ&gt;                     &lt;/OMOBJ&gt;
 </pre></div>
 <div class="caption">
@@ -3286,7 +3549,7 @@ For example,
       scoping devices is to associate a <small><code>cdbase</code></small> with an
       object. The start token [9] (or [137] if the long flag is set) is followed
       by a single-byte (or 4-byte- if the long flag is set) number
-      <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> and then by a seqence of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math>       bytes that represent the value of the <small><code>cdbase</code></small>
+      <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> and then by a sequence of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math>       bytes that represent the value of the <small><code>cdbase</code></small>
       attribute (a URI) in <abbr>UTF-8</abbr> encoding. This is then followed by the binary
       encoding of a single object: the object over which this
   <small><code>cdbase</code></small> attribute has scope. </p>
@@ -4145,7 +4408,7 @@ It is binary encoded as the sequence of bytes given in <a href="#fig_bin-enc_ex"
       element determines the default value for all contained
       <small><code>OMOBJ</code></small> elements.  Similarly, the value of the optional
       <small><code>cdgroup</code></small> attribute determines the default of
-      <small><code>cdgroup</code></small> contined <small><code>OMOBJ</code></small> elements.
+      <small><code>cdgroup</code></small> contained <small><code>OMOBJ</code></small> elements.
     </p>
   </dd>
   
@@ -4384,6 +4647,7 @@ designed to be used with Content Dictionaries in the <abbr>XML</abbr> encoding.
    "experimental" |
    "private" |
    "obsolete"}
+   
 <span id="rncsect_sigschemaCDSignatures">CDSignatures</span> =
   <span style="font-weight:bold;">element</span> CDSignatures {
     <a href="#rncsect_sigschemaattlist.CDSignatures">attlist.CDSignatures</a>,
@@ -4391,14 +4655,15 @@ designed to be used with Content Dictionaries in the <abbr>XML</abbr> encoding.
     (<a href="#rncsect_sigschemaCDSReviewDate">CDSReviewDate</a>? &amp; <a href="#rncsect_sigschemaCDSStatus">CDSStatus</a>),
     (<a href="#rncsect_sigschemaCDSComment">CDSComment</a> | <a href="#rncsect_sigschemaSignature">Signature</a>)*
   }
+
 <span id="rncsect_sigschemaattlist.CDSignatures">attlist.CDSignatures</span> =
-  <span style="font-weight:bold;">attribute</span> cd { <span style="font-weight:bold;">xsd:NCName</span> }, 
+  <span style="font-weight:bold;">attribute</span> cd { <span style="font-weight:bold;">xsd:NCName</span> },
   <span style="font-weight:bold;">attribute</span> type { <span style="font-weight:bold;">xsd:NCName</span> }?,
-  <span style="font-weight:bold;">attribute</span> cdgroup { <span style="font-weight:bold;">xsd:anyURI</span> }?, 
-  <span style="font-weight:bold;">attribute</span> cdurl { <span style="font-weight:bold;">xsd:anyURI</span> }?, 
+  <span style="font-weight:bold;">attribute</span> cdgroup { <span style="font-weight:bold;">xsd:anyURI</span> }?,
+  <span style="font-weight:bold;">attribute</span> cdurl { <span style="font-weight:bold;">xsd:anyURI</span> }?,
   <span style="font-weight:bold;">attribute</span> version { <span style="font-weight:bold;">xsd:string</span> }?
   
- <span id="rncsect_sigschemaSignature">Signature</span> = <span style="font-weight:bold;">element</span> Signature { <a href="#rncsect_sigschemaattlist.Signature">attlist.Signature</a>, <a href="#rncOMOBJ">OMOBJ</a>? }
+<span id="rncsect_sigschemaSignature">Signature</span> = <span style="font-weight:bold;">element</span> Signature { <a href="#rncsect_sigschemaattlist.Signature">attlist.Signature</a>, <a href="#rncOMOBJ">OMOBJ</a>? }
 <span id="rncsect_sigschemaattlist.Signature">attlist.Signature</span> = <span style="font-weight:bold;">attribute</span> name { <span style="font-weight:bold;">text</span> }
 </pre></div>
 
@@ -4417,7 +4682,7 @@ designed to be used with Content Dictionaries in the <abbr>XML</abbr> encoding.
     <small><code>CDSignatures</code></small> element determines the default value for all
     contained <small><code>OMOBJ</code></small> elements.  Similarly, the value of the
     optional <small><code>cdgroup</code></small> attribute determines the default of
-    <small><code>cdgroup</code></small> contined <small><code>OMOBJ</code></small> elements.
+    <small><code>cdgroup</code></small> contained <small><code>OMOBJ</code></small> elements.
   </p>
 
   <p class="new">
@@ -7563,17 +7828,27 @@ details of how this attribute is used are not mandated by the standard.
       <li><p class="new">Various included example files (such as <b>arith1.ocd</b>) have been updated to match the versions on the OpenMath web site.
         </p></li>
     </ul>
-    
-    </div>
+  </div>
 
-      <div><h3 id="chgr2">F.5 Changes in 2.0 Revision 2</h3>
-    
+    <div><h3 id="chgr2">F.5 Changes in 2.0 Revision 2</h3>
     
     <ul>
       <li><p class="new">
 	 <i>cdbase</i> and <i>cd url</i> are now defined in terms of
 	 Internationalized Resource Identifiers (IRIs) <a href="#IETF3987">[7]</a>.
         </p></li>
+      <li><p class="new">
+	  The notion of the head of an attribution has been introduced to clarify the
+	  notion of an attributed variable.
+	</p><p class="new">
+	  The notion of alphabetic renaming has been clarified. It now specifies what
+	  should happen in the presence of attributed bound variables: the variables in
+	  the attribute values need to be renamed as well.  
+	</p><p class="new">
+	  Duplicate bound variables in binders have been deprecated, since they make no
+	  sense. The fallback semantics of duplicate variables been clarified for the case
+	  of attributed bound variables.
+	</p></li>
       <li><p class="new">
 	 The RelaxNG schema has been corrected to allow hexadecimal representation of integers to match 
 	 <a href="#sec_xml-desc">Section 3.1.2</a>.
@@ -7604,7 +7879,6 @@ details of how this attribute is used are not mandated by the standard.
 	</p></li>
     </ul>
   </div>
-  
 </div>
 
 
