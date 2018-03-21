@@ -16,7 +16,7 @@ membership is currently:
 months
 
 People who do not satisfy these specific criteria but have nevertheless shown a long-term
-commitment to OpenMath may be proposed for membershup at a General Meeting of the Society.
+commitment to OpenMath may be proposed for membership at a General Meeting of the Society.
 
 ## Honorary Members
 
