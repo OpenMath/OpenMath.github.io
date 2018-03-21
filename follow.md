@@ -15,10 +15,10 @@ Twitter](https://twitter.com/{{ site.author.twitter }}).
 
 ## Follow OpenMath with our two open mailing lists
 
-* [om@openmath.org](mailto:om@openmath.org) is a general public discussion list for any aspects of OpenMath. ([subscriptions](http://openmath.org/mailman/listinfo/om), [archives](http://openmath.org/pipermail/om/))
+* [om@openmath.org](mailto:om@openmath.org) is a general public discussion list for any aspects of OpenMath. ([subscriptions](http://mailman.openmath.org/mailman/listinfo/om), [archives](http://mailman.openmath.org/pipermail/om/))
 
 * [om-announce@openmath.org](mailto:om-announce@openmath.org)
-    is a low-volume list for general announcements related to OpenMath. ([subscriptions](http://openmath.org/mailman/listinfo/om-announce), [archives](http://openmath.org/pipermail/om-announce/))
+    is a low-volume list for general announcements related to OpenMath. ([subscriptions](http://mailman.openmath.org/mailman/listinfo/om-announce), [archives](http://mailman.openmath.org/pipermail/om-announce/))
  
 ## Get in Touch with (parts of) the OpenMath Society
 
