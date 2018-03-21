@@ -5,7 +5,7 @@ title: OpenMath Workshops
 
 From time to time various meetings are organised by the [OpenMath Society](../society) and
 by the various associated [OpenMath Projects](../projects).  This page collects slides and
-notes from those meetings. The numbering of the workshops somewhat haphasard (and is off
+notes from those meetings. The numbering of the workshops somewhat haphazard (and is off
 by 4 for the newest counting), as the naming of the workshops was often governed by
 project requirements.
 
