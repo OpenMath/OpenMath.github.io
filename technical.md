@@ -56,7 +56,7 @@ The formula cos(π)=–1 can be encoded as
     <OMA>
       <OMS cd="transc1" name="cos"/>
       <OMS cd="nums1" name="pi"/>
-    <OMA>
+    </OMA>
     <OMI> -1 </OMI>
   </OMA>
 ```
@@ -72,11 +72,11 @@ What about bindings? The formula ∀<i>x</i>: sin<sup>2</sup>(_x_)+cos<sup>2</su
         <OMA> <OMS cd="arith1" name="power"/>
           <OMA> <OMS cd="transc1" name="sin"/> <OMV name="x"/> </OMA>
           <OMI>2</OMI>
-        <OMA>
+        </OMA>
         <OMA> <OMS cd="arith1" name="power"/>
           <OMA> <OMS cd="transc1" name="cos"/> <OMV name="x"/> </OMA>
           <OMI>2</OMI>
-        <OMA>
+        </OMA>
       </OMA>
       <OMI>1</OMI>
     </OMA>
