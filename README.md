@@ -38,8 +38,8 @@ This will drop you in GitHub's file editing interface, where you can
 modify the source code, preview it, and save your changes, by giving a
 short description of what you modified. If you have
 [write access](https://help.github.com/articles/what-are-the-different-access-permissions/)
-to the repository (hint: you do), your modifications will be published
-right away.  If you do not have right access, you will be asked to
+to the repository, your modifications will be published
+right away.  If you do not have write access, you will be asked to
 [fork the repository and make a pull request](https://help.github.com/articles/fork-a-repo/).
 
 Most of the pages are written in

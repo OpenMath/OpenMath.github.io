@@ -10,13 +10,13 @@ its goals.  Anybody may subscribe to its
 Members of the Society are those who have demonstrated a long-term involvement
 in OpenMath.  Their rights and obligations are laid down in the
 [statutes](../statutes).  The automatic criteria for
-membership is currently:
+membership are currently:
 * That an individual has taken part in at least three official workshops
 * That an individual has worked full time for OpenMath for at least three 
 months
 
 People who do not satisfy these specific criteria but have nevertheless shown a long-term
-commitment to OpenMath may be proposed for membershup at a General Meeting of the Society.
+commitment to OpenMath may be proposed for membership at a General Meeting of the Society.
 
 ## Honorary Members
 
