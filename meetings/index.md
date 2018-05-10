@@ -28,10 +28,8 @@ project requirements.
 * The [ESPRIT Project](../projects/esprit/final/) held an [Information Day](heidelberg2000/) in Heidelberg on October 6th 2000.
 * [13th OpenMath workshop](standrews2000/), August 10 2000, University of St Andrews.
 * [12th OpenMath workshop](oldws/riaca1999/), June 14-15 1999, Technical University of Eindhoven.
-* The [ESPRIT Project](../projects/esprit/final/) held a Seminar on OpenMath for Industry on June 11
-1999 in Amsterdam.
-* Matematiikka tietoverkoissa: A workshop held in Helsinki on 26 November
-1998.
+* The [ESPRIT Project](../projects/esprit/final/) held a Seminar on OpenMath for Industry on June 11 1999 in Amsterdam.
+* Matematiikka tietoverkoissa: A workshop held in Helsinki on 26 Novemberb 1998.
 * The [ESPRIT Project](../projects/esprit/final/) held its first [OpenMath for Industry](standrews98/) meeting at the University of St. Andrews, September 15 1998
 * Workshop 11, Tallahassee Florida, November 14-14 1998 
 * Workshop 10, Berlin, January 10-11 1998 
