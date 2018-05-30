@@ -1,5 +1,5 @@
 <h1>OpenMath Symbols</h1>
-<p>A combined list of all 1570 symbols defined in this Content Dictionary collection.</p>
+<p>A combined list of all 1573 symbols defined in this Content Dictionary collection.</p>
 <table>
    <tr>
       <th>Symbol</th>
@@ -5905,6 +5905,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/logic1.html#nand">logic1/<br/>nand</a>
+      </td>
+      <td>This symbol represents the logical nand function which is an n-ary function taking boolean arguments and returning a boolean value. It is false if all arguments are true or true otherwise.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/units_siprefix1.html#nano">units_siprefix1/<br/>nano</a>
       </td>
       <td>This symbol represents the fact that the subsequent unit has been effectively multiplied by $10^-9$</td>
@@ -6070,6 +6076,12 @@
          <a href="../cd/linalgspars1.html#nonZeroRowSparseMatrix01">linalgspars1/<br/>nonZeroRowSparseMatrix01</a>
       </td>
       <td>This symbol may be used to represent matrices which have no zero rows, and for which every row is in Z_2 efficiently. The first argument is the number of columns in the matrix, the following arguments are sparseMatrixRow elements where the arguments are sparseMatrixElement4 elements. Any non-specified entry is implicitly zero.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/logic1.html#nor">logic1/<br/>nor</a>
+      </td>
+      <td>This symbol represents the logical nor function which is an n-ary function taking boolean arguments and returning a boolean value. It is false if any of the arguments are true or true otherwise.</td>
    </tr>
    <tr>
       <td>
@@ -9292,6 +9304,12 @@
          <a href="../cd/prog1.html#while">prog1/<br/>while</a>
       </td>
       <td>This symbol represents the while loop. The syntax is while(conditional_block, block1), where conditional_block is the block that determines when to stop the while loop and block1 is the body of the while loop.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/logic1.html#xnor">logic1/<br/>xnor</a>
+      </td>
+      <td>This symbol represents the logical xnor function which is an n-ary function taking boolean arguments and returning a boolean value. It is false if there are an odd number of true arguments or true otherwise.</td>
    </tr>
    <tr>
       <td>
