@@ -51,7 +51,7 @@ invalid expression such as `(Unexpected attribute ...)`
 
 ### Browser compatibility
 Most reasonably current browsers should support the validation tool, it has been tested in Firefox,
-Chrome, Internet Explorer and Edge. Note that the XML is not uploaded to the sever, all teh validation is implemented 
+Chrome, Internet Explorer and Edge. Note that the XML is not uploaded to the sever, all the validation is implemented 
 within the browser, so some details are browswer-specific, notably the error messages for files that are not well formed
 depend on the XML parser being used by the browser.
 
