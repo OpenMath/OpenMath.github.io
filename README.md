@@ -1,13 +1,13 @@
 # The Sources of the OpenMath.org website
 
-This is patterned after the [OpenDreamKit site](http://opendreamkit.org), also see the
-readme there. 
+This is patterned after the [OpenDreamKit website](https://opendreamkit.org), see also
+[its readme](https://github.com/OpenDreamKit/OpenDreamKit.github.io/blob/master/README.md).
 
 ## About
 
-This website is hosted as a [github page](https://pages.github.com/).
-In short, is built statically from Markdown source files using
-[Jekyll](http://jekyllrb.com/). To update a page, just modify the
+This website is hosted as a [GitHub page](https://pages.github.com/).
+In short, it is built statically from Markdown source files using
+[Jekyll](https://jekyllrb.com/). To update a page, just modify the
 corresponding source and push. This can be done online by clicking on
 "Edit this page" in the side bar. See the above links for details.
 
@@ -21,12 +21,12 @@ corresponding source and push. This can be done online by clicking on
 ## How to use Jekyll to test/build this website
 
 This is a
-[*static website*](http://en.wikipedia.org/wiki/Static_web_page)
-automatically generated with [Jekyll](http://jekyllrb.com/) by
-[GitHub Pages](http://pages.github.com/).
+[*static website*](https://en.wikipedia.org/wiki/Static_web_page)
+automatically generated with [Jekyll](https://jekyllrb.com/) by
+[GitHub Pages](https://pages.github.com/).
 
-These instructions are for OpenMath members who wish to do more than the occasional
-editing.
+These instructions are for OpenMath members who wish to do more than
+the occasional editing.
 
 ### Editing pages online with GitHub
 
@@ -39,23 +39,31 @@ modify the source code, preview it, and save your changes, by giving a
 short description of what you modified. If you have
 [write access](https://help.github.com/articles/what-are-the-different-access-permissions/)
 to the repository, your modifications will be published
-right away.  If you do not have write access, you will be asked to
+right away. If you do not have write access, you will be asked to
 [fork the repository and make a pull request](https://help.github.com/articles/fork-a-repo/).
 
 Most of the pages are written in
-[Markdown](http://daringfireball.net/projects/markdown/), which is a
+[Markdown](https://daringfireball.net/projects/markdown/), which is a
 textual format for generating formatted text. Markdown syntax is very
 intuitive, you can get a quick review
 [here](https://help.github.com/articles/github-flavored-markdown/) or
-[here](http://kramdown.gettalong.org/syntax.html).
+[here](https://kramdown.gettalong.org/syntax.html).
 
 ### Imports from other OpenMath Repositories
 
 Some of the content of the page is imported from other repositories:
-- `cd`, `cdgroups`, `sts`, `cdnames.md`, `cdnamess.md`, `symbols.md`: are automatically pushed from the  `master` branch of the [CDs repository](https://github.com/OpenMath/CDs) by travis on that repository. 
-- `standard`, the newer versions (in particular the editor's draft) of the OpenMath 2 standard are pushed from from the  `master` branch of the [OMSTD repository](https://github.com/OpenMath/OMSTD) by travis on that repository.  The SCSCP standard is synchronized with  [SCSCP repository](https://github.com/OpenMath/scscp) is currently synchronized manually. 
+- `cd`, `cdgroups`, `sts`, `cdnames.md`, `cdnamess.md`, `symbols.md`:
+  are automatically pushed from the `master` branch of the
+  [CDs repository](https://github.com/OpenMath/CDs) by Travis on that repository.
+- `standard`, the newer versions (in particular the editor's draft) of the
+  OpenMath 2 standard are pushed from from the `master` branch of the
+  [OMSTD repository](https://github.com/OpenMath/OMSTD) by Travis on that
+  repository. The SCSCP standard is currently manually synchronized with
+  the [SCSCP repository](https://github.com/OpenMath/scscp).
 
-The relative paths of these are chosen for backwards compatibility with older versions of the  openmath web site. In particular,`cdfiles` is a redirect for the MathML Recommendation. 
+The relative paths of these are chosen for backwards compatibility with older
+versions of the OpenMath website. In particular, `cdfiles` is a redirect
+for the MathML Recommendation.
 
 ### Working locally
 
@@ -63,7 +71,7 @@ If you want to do more than the occasional editing, you'll soon
 realise GitHub's editor and preview are too limited. It's better to
 work locally on your computer.
 
-All you need to work locally is a [Git client](http://git-scm.com/).
+All you need to work locally is a [Git client](https://git-scm.com/).
 [Clone the repository](https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork)
 and start coding right away.
 
@@ -83,7 +91,7 @@ gem install github-pages
 Note that you will need Ruby headers (`ruby-dev` package on Ubuntu) in
 order to compile C dependencies.
 
-On OS X, you can just type `sudo gem install github-pages`.
+Under macOS, you can just type `sudo gem install github-pages`.
 
 Now you can `cd` into your local clone of the repository and launch
 the compilation by
