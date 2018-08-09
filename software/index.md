@@ -58,7 +58,7 @@ If you have developed any OpenMath software that should be listed here, please s
 
 ## OpenMath Editors
 
-* [CDEditor](http://www.unirioja.es/cu/joheras/openmath-editor.html), an OpenMath Content Dictionary editor. Available for [Linux](https://esus.unirioja.es/psycotrip/archivos_documentos/linux-dist.rar) and [Windows](https://esus.unirioja.es/psycotrip/archivos_documentos/windows-dist.rar)
+* [CDEditor](http://www.unirioja.es/cu/joheras/openmath-editor.html), an OpenMath Content Dictionary editor.
 * [Sentido](http://www.matracas.org/sentido/) is a visual and linear formula editor for OpenMath objects.  It is not currently available for standalone download, but integrated into the SWiM wiki (see above).
 * [RIACA CD Editor](http://www.riaca.win.tue.nl/download/om/cd/editor/).
 * [The JOME OpenMath Editor](http://www.activemath.org/projects/Jome/) for creating and manipulating OpenMath objects.
