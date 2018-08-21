@@ -42,7 +42,7 @@ following computer algebra systems:
 
 - **MuPAD** - with the MuPAD [OpenMath](http://mupad.symcomp.org/) Package
 
-- **[TRIP](http://www.imcce.fr/fr/presentation/equipes/ASD/trip/trip.html)**, 
+- **[TRIP](http://www.imcce.fr/trip/)**, 
   with the built-in SCSCP client and server
 
 Remarkably, most of OpenMath and SCSCP implementations produced in the 
@@ -59,7 +59,7 @@ To facilitate SCSCP implementations, the following API and middleware is availab
     - PyPI: [https://pypi.python.org/pypi/scscp](https://pypi.python.org/pypi/scscp)
     - GitHub: [https://github.com/OpenMath/py-scscp](https://github.com/OpenMath/py-scscp)
     
-- [C/C++ SCSCP library](http://www.imcce.fr/fr/presentation/equipes/ASD/trip/trip.html)
+- [C/C++ SCSCP library](http://www.imcce.fr/trip/scscp/)
   providing a **C/C++ API** to develop client and server SCSCP-compliant applications
 
 - [java.symcomp.org](http://java.symcomp.org/) - **Java API** for SCSCP and OpenMath,
