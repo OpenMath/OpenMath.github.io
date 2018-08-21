@@ -1,12 +1,12 @@
 ---
 layout: page
-title: The OpenMath Society Executive
+title: The OpenMath Society Executive Committee
 ---
 The Executive Committe conducts the society business between the business meetings of the
 society
 
 * Professor [Michael Kohlhase](http://kwarc.info/kohlhase), President
-* Professor [James Davenport](http://www.bath.ac.uk/~masjhd/), Vice-President
+* Professor [James Davenport](http://www.bath.ac.uk/~masjhd/), Vice-President and Chief Editor for Content Dictionaries
 * Dr. [Florian Rabe](http://kwarc.info/frabe) Secretary & Treasurer
 * Dr. [Patrick Ion](http://www-personal.umich.edu/~pion/) MathML Liaison
 * [Jan Willem Knopper](https://www.tue.nl/universiteit/faculteiten/wiskunde-informatica/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/19950962/),
