@@ -13,7 +13,13 @@ indicates the semantics of such symbols such as the set of natural numbers.
 CDs are grouped in CD-groups. For example, the [MathML CD group](../cdgroups/mathml.html)
 collects the 'core CDs', all content-dictionaries described in the OpenMath standard
 deemed compatible with the [MathML3 Recommendation](http://www.w3.org/TR/MathML3)
-  
+
+## Curation
+
+The [OpenMath Society](/society/) curates a set of [Content Dictionaries](/cd/) through
+its [Editorial Board for Content Dictionaries](cdeb). For the CD submission and curation process see
+[the CD FAQ](http://www.openmath.org/cd/faq/) and [the README on the CDs repository](https://github.com/OpenMath/CDs/)
+
 ## CD indexes
   
 * [CD Groups](../cdgroups/): A list of all {{ site.data.stats.cdgroups }} Content Dictionary Groups available on this server.
