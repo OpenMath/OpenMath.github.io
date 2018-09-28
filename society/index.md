@@ -13,7 +13,7 @@ The OpenMath Society is coordinated by an [executive committee](board), governed
 * Through its [Editorial Board for Content Dictionaries](cdeb) it curates a set of
   [Content Dictionaries](/cd/) that give meaning to OpenMath Objects. 
 * It also supports dissemination about OpenMath by hosting a number of
-[discussion lists](../follow/index.html#follow-us-with our-two-open-mailing-lists), and
+[discussion lists](../follow/index.html#follow-us-with-our-two-open-mailing-lists), and
 information about the [Openmath standards](/standard/) and
 [Content Dictionaries](/cd/).
 
