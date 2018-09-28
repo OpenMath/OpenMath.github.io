@@ -12,7 +12,7 @@ indicates the semantics of such symbols such as the set of natural numbers.
   
 CDs are grouped in CD-groups. For example, the [MathML CD group](../cdgroups/mathml.html)
 collects the 'core CDs', all content-dictionaries described in the OpenMath standard
-deemed compatible with the [MathML3 Recommendation](http://www.w3.org/TR/MathML3)
+deemed compatible with the [MathML3 Recommendation](http://www.w3.org/TR/MathML3/)
 
 ## Curation
 
