@@ -3,8 +3,8 @@ layout: page
 title: OpenMath Workshops
 ---
 
-From time to time various meetings are organised by the [OpenMath Society](../society) and
-by the various associated [OpenMath Projects](../projects).  This page collects slides and
+From time to time various meetings are organised by the [OpenMath Society](../society/) and
+by the various associated [OpenMath Projects](../projects/).  This page collects slides and
 notes from those meetings. The numbering of the workshops somewhat haphazard (and is off
 by 4 for the newest counting), as the naming of the workshops was often governed by
 project requirements.
@@ -16,8 +16,8 @@ project requirements.
 * The 25th OpenMath workshop: [Bath, 2013](http://www.cicm-conference.org/2013/cicm.php?event=openmath&amp;menu=general).
 * The 24th OpenMath workshop: [Bremen, 2012](http://www.cicm-conference.org/2012/cicm.php?event=openmath&amp;menu=general) ([Proceedings](http://ceur-ws.org/Vol-921/)).
 * The 23rd OpenMath workshop: [Paris 2010](http://cicm2010.cnam.fr/om/).
-* The 22nd OpenMath workshop: [Grand Bend 2009](22).
-* The 21st OpenMath workshop: [Linz 2007](linz2007).
+* The 22nd OpenMath workshop: [Grand Bend 2009](22/).
+* The 21st OpenMath workshop: [Linz 2007](linz2007/).
 * The 7th [Thematic Network](../projects/thematic/) workshop, [Helsinki 2004: ten years of OpenMath](helsinki2004/).
 * The 6th [Thematic Network](../projects/thematic/) workshop, [Bremen November 2003](bremen2003/).
 * The 5th [Thematic Network](../projects/thematic/) workshop, [Mathematics On The Semantic Web (Eindhoven) May 2003](eindhoven2003/).
