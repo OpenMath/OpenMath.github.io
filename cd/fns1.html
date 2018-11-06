@@ -101,22 +101,20 @@
                   <span class="dt">Defines:</span>
                </dt>
                <dd>
-                  <a href="#domain">domain</a>, <a href="#domainofapplication">domainofapplication</a>, <a href="#identity">identity</a>, <a href="#image">image</a>, <a href="#inverse">inverse</a>, <a href="#lambda">lambda</a>, <a href="#left_compose">left_compose</a>, <a href="#left_inverse">left_inverse</a>, <a href="#range">range</a>, <a href="#right_inverse">right_inverse</a>
+                  <a href="#domain">domain</a>, <a href="#domainofapplication">domainofapplication</a>, <a href="#identity">identity</a>, <a href="#image">image</a>, <a href="#inverse">inverse</a>, <a href="#lambda">lambda</a>, <a href="#left_compose">left_compose</a>, <a href="#left_inverse">left_inverse</a>, <a href="#range">range</a>, <a href="#restriction">restriction</a>, <a href="#right_inverse">right_inverse</a>
                </dd>
                <dt>
                   <span class="dt">Date:</span>
                </dt>
-               <dd>2004-03-30</dd>
+               <dd>2009-04-01</dd>
                <dt>
                   <span class="dt">Version:</span>
                </dt>
-               <dd>3
-    (Revision 1)
-  </dd>
+               <dd>4</dd>
                <dt>
                   <span class="dt">Review Date:</span>
                </dt>
-               <dd>2006-03-30</dd>
+               <dd>2014-04-01</dd>
                <dt>
                   <span class="dt">Status:</span>
                </dt>
@@ -164,10 +162,6 @@
 
 
 
-            <pre>
-  Author: OpenMath Consortium
-  SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
-            </pre>
 
 
             <p>
@@ -178,6 +172,224 @@
     lambda expression. Also there are basic function functions like
     compose, etc.
 </p>
+
+            <hr/>
+            <h2>
+               <a name="restriction">restriction</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Role:</span>
+               </dt>
+               <dd>application</dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+restriction takes two arguments, a function f, and a set S, which
+should be a subset of domain(f) and returns the function
+f restricted to S.
+</p>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.13xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.13xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.13xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="fns1" name="domain"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="fns1" name="restriction"/&gt;
+        &lt;OMV name="f"/&gt;
+        &lt;OMV name="S"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMV name="S"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.13cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.13cmml')">Strict Content MathML</button>
+                     <pre id="id.om.13cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="fns1"&gt;domain&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns1"&gt;restriction&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;S&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.13prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.13pref')">Prefix</button>
+                  <div id="id.om.13pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/fns1.html#domain">domain</a>
+  (<a href="../../../cd/fns1.html#restriction">restriction</a>
+  ( <i>f</i>,  <i>S</i>)
+)
+,  <i>S</i>)
+
+</div>
+                  <div>
+                     <button id="id.om.13popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.13pop')">Popcorn</button>
+                     <div id="id.om.13pop" style="display:none; margin-top: 0.5em">
+  fns1.domain(fns1.restriction($f, $S)) = $S
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.13mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.13mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.13mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mrow>
+                                    <mi>domain</mi>
+                                    <mo>&#8289;</mo>
+                                    <mrow>
+                                       <mo>(</mo>
+                                       <msub>
+                                          <mrow>
+                                             <mi>f</mi>
+                                             <mo>|</mo>
+                                          </mrow>
+                                          <mrow>
+                                             <mi>S</mi>
+                                          </mrow>
+                                       </msub>
+                                       <mo>)</mo>
+                                    </mrow>
+                                 </mrow>
+                                 <mo>=</mo>
+                                 <mi>S</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Formal Mathematical property (FMP):</span>
+               </dt>
+               <dd>
+                  <div>
+                     <button id="id.om.24xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.24xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.24xml" style="display:none">
+&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+  &lt;OMA&gt;&lt;OMS cd="relation1" name="eq"/&gt;
+    &lt;OMA&gt;&lt;OMS cd="fns1" name="restriction"/&gt;
+      &lt;OMV name="f"/&gt;
+      &lt;OMA&gt;&lt;OMS cd="fns1" name="domain"/&gt;
+        &lt;OMV name="f"/&gt;
+      &lt;/OMA&gt;
+    &lt;/OMA&gt;
+    &lt;OMV name="f"/&gt;
+  &lt;/OMA&gt;
+&lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.24cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.24cmml')">Strict Content MathML</button>
+                     <pre id="id.om.24cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="fns1"&gt;restriction&lt;/csymbol&gt;
+   &lt;ci&gt;f&lt;/ci&gt;
+   &lt;apply&gt;&lt;csymbol cd="fns1"&gt;domain&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;f&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.24prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.24pref')">Prefix</button>
+                  <div id="id.om.24pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/relation1.html#eq">eq</a>
+  (<a href="../../../cd/fns1.html#restriction">restriction</a>
+  ( <i>f</i>, <a href="../../../cd/fns1.html#domain">domain</a>
+  ( <i>f</i>)
+)
+,  <i>f</i>)
+
+</div>
+                  <div>
+                     <button id="id.om.24popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.24pop')">Popcorn</button>
+                     <div id="id.om.24pop" style="display:none; margin-top: 0.5em">
+  fns1.restriction($f, fns1.domain($f)) = $f
+</div>
+                  </div>
+                  <div>
+                     <button id="id.om.24mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.24mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.24mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <msub>
+                                    <mrow>
+                                       <mi>f</mi>
+                                       <mo>|</mo>
+                                    </mrow>
+                                    <mrow>
+                                       <mrow>
+                                          <mi>domain</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mi>f</mi>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                    </mrow>
+                                 </msub>
+                                 <mo>=</mo>
+                                 <mi>f</mi>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/fns1.html#restriction">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#domainofapplication">domainofapplication</a>]
+	  
+	    [Last: <a href="#lambda">lambda</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
 
             <hr/>
             <h2>
@@ -194,11 +406,11 @@
                   <span class="dt">Description:</span>
                </dt>
                <dd>
-                  <p> 
-The domainofapplication element denotes the domain over which a given 
-function is being applied. It is intended in MathML to be a more general 
-alternative to specification of this domain using
-such quantifier elements as bvar, lowlimit or condition. 
+                  <p>
+Deprecated. This symbol was intended to model MathML 
+domainofapplication but as defined it is a synonym for 
+domain. In MathML3, MathML compatibility is defined to
+use the new restriction symbol.
 </p>
                </dd>
             </dl>
@@ -220,7 +432,7 @@ such quantifier elements as bvar, lowlimit or condition.
                      <font size="-1">
 	    [Next: <a href="#domain">domain</a>]
 	  
-	    [Last: <a href="#lambda">lambda</a>]
+	    [Previous: <a href="#restriction">restriction</a>]
 	  
       [<a href="#top">Top</a>]</font>
                   </td>
@@ -242,7 +454,7 @@ such quantifier elements as bvar, lowlimit or condition.
                   <span class="dt">Description:</span>
                </dt>
                <dd>
-                  <p> 
+                  <p>
 This symbol denotes the domain of a given function, which is the set of
 values it is defined over.
 </p>
@@ -265,9 +477,9 @@ there exists a y in the range of f and f(x) = y
                </dt>
                <dd>
                   <div>
-                     <button id="id.om.19xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.19xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.19xml" style="display:none">
+                     <button id="id.om.44xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.44xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.44xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
   &lt;OMA&gt;
     &lt;OMS cd="logic1" name="equivalent"/&gt;
@@ -308,9 +520,9 @@ there exists a y in the range of f and f(x) = y
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.19cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.19cmml')">Strict Content MathML</button>
-                     <pre id="id.om.19cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.44cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.44cmml')">Strict Content MathML</button>
+                     <pre id="id.om.44cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;equivalent&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
@@ -333,9 +545,9 @@ there exists a y in the range of f and f(x) = y
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.19prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.19pref')">Prefix</button>
-                  <div id="id.om.19pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.44prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.44pref')">Prefix</button>
+                  <div id="id.om.44pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/logic1.html#equivalent">equivalent</a>
   (<a href="../../../cd/set1.html#in">in</a>
   ( <i>x</i>, <a href="../../../cd/fns1.html#domain">domain</a>
@@ -360,16 +572,16 @@ there exists a y in the range of f and f(x) = y
 
 </div>
                   <div>
-                     <button id="id.om.19popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.19pop')">Popcorn</button>
-                     <div id="id.om.19pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.44popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.44pop')">Popcorn</button>
+                     <div id="id.om.44pop" style="display:none; margin-top: 0.5em">
   logic1.equivalent(set1.in($x, fns1.domain($f)), quant1.exists[$y -&gt; set1.in($y, fns1.range($f)) and $f($x) = $y])
 </div>
                   </div>
                   <div>
-                     <button id="id.om.19mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.19mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.19mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.44mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.44mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.44mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -496,9 +708,9 @@ the range of f is a subset of the image of f
                </dt>
                <dd>
                   <div>
-                     <button id="id.om.52xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.52xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.52xml" style="display:none">
+                     <button id="id.om.77xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.77xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.77xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
   &lt;OMA&gt;
     &lt;OMS cd="set1" name="subset"/&gt;
@@ -514,9 +726,9 @@ the range of f is a subset of the image of f
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.52cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.52cmml')">Strict Content MathML</button>
-                     <pre id="id.om.52cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.77cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.77cmml')">Strict Content MathML</button>
+                     <pre id="id.om.77cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="set1"&gt;subset&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="fns1"&gt;range&lt;/csymbol&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
@@ -524,9 +736,9 @@ the range of f is a subset of the image of f
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.52prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.52pref')">Prefix</button>
-                  <div id="id.om.52pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.77prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.77pref')">Prefix</button>
+                  <div id="id.om.77pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/set1.html#subset">subset</a>
   (<a href="../../../cd/fns1.html#range">range</a>
   ( <i>f</i>)
@@ -536,16 +748,16 @@ the range of f is a subset of the image of f
 
 </div>
                   <div>
-                     <button id="id.om.52popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.52pop')">Popcorn</button>
-                     <div id="id.om.52pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.77popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.77pop')">Popcorn</button>
+                     <div id="id.om.77pop" style="display:none; margin-top: 0.5em">
   set1.subset(fns1.range($f), fns1.image($f))
 </div>
                   </div>
                   <div>
-                     <button id="id.om.52mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.52mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.52mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.77mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.77mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.77mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -616,7 +828,7 @@ the range of f is a subset of the image of f
                   <span class="dt">Description:</span>
                </dt>
                <dd>
-                  <p> 
+                  <p>
 This symbol denotes the image of a given function, which is the set of
 values the domain of the given function maps to.
 </p>
@@ -627,7 +839,7 @@ values the domain of the given function maps to.
                <dt>
                   <span class="dt">Commented Mathematical property (CMP):</span>
                </dt>
-               <dd> x in the domain of f implies f(x) is in the image f </dd>
+               <dd>x in the domain of f implies f(x) is in the image f</dd>
             </dl>
 
             <dl>
@@ -636,9 +848,9 @@ values the domain of the given function maps to.
                </dt>
                <dd>
                   <div>
-                     <button id="id.om.67xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.67xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.67xml" style="display:none">
+                     <button id="id.om.92xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.92xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.92xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
   &lt;OMA&gt;
     &lt;OMS cd="logic1" name="implies"/&gt;
@@ -665,9 +877,9 @@ values the domain of the given function maps to.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.67cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.67cmml')">Strict Content MathML</button>
-                     <pre id="id.om.67cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.92cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.92cmml')">Strict Content MathML</button>
+                     <pre id="id.om.92cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
   &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
@@ -681,9 +893,9 @@ values the domain of the given function maps to.
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.67prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.67pref')">Prefix</button>
-                  <div id="id.om.67pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.92prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.92pref')">Prefix</button>
+                  <div id="id.om.92pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/logic1.html#implies">implies</a>
   (<a href="../../../cd/set1.html#in">in</a>
   ( <i>x</i>, <a href="../../../cd/fns1.html#domain">domain</a>
@@ -699,16 +911,16 @@ values the domain of the given function maps to.
 
 </div>
                   <div>
-                     <button id="id.om.67popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.67pop')">Popcorn</button>
-                     <div id="id.om.67pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.92popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.92pop')">Popcorn</button>
+                     <div id="id.om.92pop" style="display:none; margin-top: 0.5em">
   set1.in($x, fns1.domain($f)) ==&gt; set1.in($f($x), fns1.image($f))
 </div>
                   </div>
                   <div>
-                     <button id="id.om.67mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.67mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.67mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.92mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.92mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.92mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -794,7 +1006,7 @@ values the domain of the given function maps to.
                   <span class="dt">Description:</span>
                </dt>
                <dd>
-                  <p> 
+                  <p>
 The identity function, it takes one argument and returns the same value.
 </p>
                </dd>
@@ -804,7 +1016,7 @@ The identity function, it takes one argument and returns the same value.
                <dt>
                   <span class="dt">Commented Mathematical property (CMP):</span>
                </dt>
-               <dd> for all x | identity(x)=x </dd>
+               <dd>for all x | identity(x)=x</dd>
             </dl>
 
             <dl>
@@ -813,9 +1025,9 @@ The identity function, it takes one argument and returns the same value.
                </dt>
                <dd>
                   <div>
-                     <button id="id.om.90xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.90xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.90xml" style="display:none">
+                     <button id="id.om.115xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.115xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.115xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
   &lt;OMBIND&gt;
     &lt;OMS cd="quant1" name="forall"/&gt;
@@ -834,9 +1046,9 @@ The identity function, it takes one argument and returns the same value.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.90cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.90cmml')">Strict Content MathML</button>
-                     <pre id="id.om.90cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.115cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.115cmml')">Strict Content MathML</button>
+                     <pre id="id.om.115cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
@@ -847,9 +1059,9 @@ The identity function, it takes one argument and returns the same value.
  &lt;/bind&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.90prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.90pref')">Prefix</button>
-                  <div id="id.om.90pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.115prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.115pref')">Prefix</button>
+                  <div id="id.om.115pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/quant1.html#forall">forall</a>
   [
        <i>x</i>
@@ -862,16 +1074,16 @@ The identity function, it takes one argument and returns the same value.
 
 </div>
                   <div>
-                     <button id="id.om.90popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.90pop')">Popcorn</button>
-                     <div id="id.om.90pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.115popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.115pop')">Popcorn</button>
+                     <div id="id.om.115pop" style="display:none; margin-top: 0.5em">
   quant1.forall[$x -&gt; fns1.identity($x) = $x]
 </div>
                   </div>
                   <div>
-                     <button id="id.om.90mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.90mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.90mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.115mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.115mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.115mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -941,7 +1153,7 @@ The identity function, it takes one argument and returns the same value.
                   <span class="dt">Description:</span>
                </dt>
                <dd>
-                  <p> 
+                  <p>
 This symbol is used to describe the left inverse of its argument (a
 function). This inverse may only be partially defined because the
 function may not have been surjective. If the function is not
@@ -991,7 +1203,7 @@ the semantics of this left inverse.
                   <span class="dt">Description:</span>
                </dt>
                <dd>
-                  <p> 
+                  <p>
 This symbol is used to describe the right inverse of its argument (a
 function). This inverse may only be partially defined because the
 function may not have been surjective. If the function is not
@@ -1041,7 +1253,7 @@ the semantics of this right inverse.
                   <span class="dt">Description:</span>
                </dt>
                <dd>
-                  <p> 
+                  <p>
 This symbol is used to describe the inverse of its argument (a
 function). This inverse may only be partially defined because the
 function may not have been surjective. If the function is not
@@ -1056,7 +1268,7 @@ the semantics of this inverse.
                <dt>
                   <span class="dt">Commented Mathematical property (CMP):</span>
                </dt>
-               <dd> 
+               <dd>
 (inverse(f))(f(x)) = x if f is injective,
 that is
 (for all x,y | f(x) = f(y) implies x=y) implies (inverse(f))(f(z)) = z
@@ -1069,9 +1281,9 @@ that is
                </dt>
                <dd>
                   <div>
-                     <button id="id.om.115xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.115xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.115xml" style="display:none">
+                     <button id="id.om.140xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.140xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.140xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
 &lt;OMA&gt;
   &lt;OMS cd="logic1" name="implies"/&gt;
@@ -1119,9 +1331,9 @@ that is
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.115cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.115cmml')">Strict Content MathML</button>
-                     <pre id="id.om.115cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.140cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.140cmml')">Strict Content MathML</button>
+                     <pre id="id.om.140cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
   &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
@@ -1145,9 +1357,9 @@ that is
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.115prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.115pref')">Prefix</button>
-                  <div id="id.om.115pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.140prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.140pref')">Prefix</button>
+                  <div id="id.om.140pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/logic1.html#implies">implies</a>
   (<a href="../../../cd/quant1.html#forall">forall</a>
   [
@@ -1177,16 +1389,16 @@ that is
 
 </div>
                   <div>
-                     <button id="id.om.115popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.115pop')">Popcorn</button>
-                     <div id="id.om.115pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.140popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.140pop')">Popcorn</button>
+                     <div id="id.om.140pop" style="display:none; margin-top: 0.5em">
 quant1.forall[$x, $y -&gt; $f($x) = $f($y) ==&gt; $x = $y] ==&gt; fns1.inverse($f)($f($z)) = $z
 </div>
                   </div>
                   <div>
-                     <button id="id.om.115mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.115mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.115mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.140mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.140mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.140mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -1284,9 +1496,9 @@ f(inverse(f)(y)) = y
                </dt>
                <dd>
                   <div>
-                     <button id="id.om.149xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.149xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.149xml" style="display:none">
+                     <button id="id.om.174xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.174xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.174xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
   &lt;OMA&gt;
     &lt;OMS cd="logic1" name="implies"/&gt;
@@ -1325,9 +1537,9 @@ f(inverse(f)(y)) = y
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.149cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.149cmml')">Strict Content MathML</button>
-                     <pre id="id.om.149cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.174cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.174cmml')">Strict Content MathML</button>
+                     <pre id="id.om.174cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
   &lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
@@ -1347,9 +1559,9 @@ f(inverse(f)(y)) = y
  &lt;/apply&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.149prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.149pref')">Prefix</button>
-                  <div id="id.om.149pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.174prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.174pref')">Prefix</button>
+                  <div id="id.om.174pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/logic1.html#implies">implies</a>
   (<a href="../../../cd/quant1.html#exists">exists</a>
   [
@@ -1374,16 +1586,16 @@ f(inverse(f)(y)) = y
 
 </div>
                   <div>
-                     <button id="id.om.149popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.149pop')">Popcorn</button>
-                     <div id="id.om.149pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.174popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.174pop')">Popcorn</button>
+                     <div id="id.om.174pop" style="display:none; margin-top: 0.5em">
   quant1.exists[$x -&gt; fns1.inverse($f)($y) = $x] ==&gt; $f(fns1.inverse($f)($y)) = $y
 </div>
                   </div>
                   <div>
-                     <button id="id.om.149mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.149mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.149mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.174mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.174mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.174mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -1491,7 +1703,7 @@ f(inverse(f)(y)) = y
                   <span class="dt">Description:</span>
                </dt>
                <dd>
-                  <p> 
+                  <p>
 This symbol represents the function which forms the left-composition
 of its two (function) arguments.
 </p>
@@ -1501,7 +1713,7 @@ of its two (function) arguments.
                <dt>
                   <span class="dt">Commented Mathematical property (CMP):</span>
                </dt>
-               <dd> for all f,g,x | left_compose(f,g)(x) = f(g(x)) </dd>
+               <dd>for all f,g,x | left_compose(f,g)(x) = f(g(x)) </dd>
             </dl>
             <dl>
                <dt>
@@ -1509,9 +1721,9 @@ of its two (function) arguments.
                </dt>
                <dd>
                   <div>
-                     <button id="id.om.180xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.180xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.180xml" style="display:none">
+                     <button id="id.om.205xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.205xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.205xml" style="display:none">
 &lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
 &lt;OMBIND&gt;
   &lt;OMS cd="quant1" name="forall"/&gt;
@@ -1542,9 +1754,9 @@ of its two (function) arguments.
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.180cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.180cmml')">Strict Content MathML</button>
-                     <pre id="id.om.180cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.205cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.205cmml')">Strict Content MathML</button>
+                     <pre id="id.om.205cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
   &lt;bvar&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/bvar&gt;
@@ -1560,9 +1772,9 @@ of its two (function) arguments.
  &lt;/bind&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.180prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.180pref')">Prefix</button>
-                  <div id="id.om.180pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.205prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.205pref')">Prefix</button>
+                  <div id="id.om.205pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/quant1.html#forall">forall</a>
   [
      <i>f</i>
@@ -1583,16 +1795,16 @@ of its two (function) arguments.
 
 </div>
                   <div>
-                     <button id="id.om.180popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.180pop')">Popcorn</button>
-                     <div id="id.om.180pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.205popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.205pop')">Popcorn</button>
+                     <div id="id.om.205pop" style="display:none; margin-top: 0.5em">
 quant1.forall[$f, $g, $x -&gt; fns1.left_compose($f, $g)($x) = $f($g($x))]
 </div>
                   </div>
                   <div>
-                     <button id="id.om.180mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.180mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.180mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.205mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.205mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.205mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -1707,9 +1919,9 @@ An example to show the connection between curried and uncurried
 applications of a binary function f 
 (lambda(x,y).(f))(a,b)= (lambda(x).((lambda(y).(f))(b)))(a)
 <div>
-                     <button id="id.om.205xmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.205xml')">OpenMath XML (source)</button>
-                     <pre id="id.om.205xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
+                     <button id="id.om.230xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.230xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.230xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0" cdbase="http://www.openmath.org/cd"&gt;
 &lt;OMBIND&gt;
   &lt;OMS cd="quant1" name="forall"/&gt;
   &lt;OMBVAR&gt;
@@ -1754,9 +1966,9 @@ applications of a binary function f
 &lt;/OMOBJ&gt;</pre>
                   </div>
                   <div>
-                     <button id="id.om.205cmmla" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.205cmml')">Strict Content MathML</button>
-                     <pre id="id.om.205cmml" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.230cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.230cmml')">Strict Content MathML</button>
+                     <pre id="id.om.230cmml" style="display:none; margin-top: 0.5em">
 &lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
  &lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
   &lt;bvar&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/bvar&gt;
@@ -1785,9 +1997,9 @@ applications of a binary function f
  &lt;/bind&gt;
 &lt;/math&gt;</pre>
                   </div>
-                  <button id="id.om.205prefa" style="width:20em; background-color:#CCCCCC"
-                          onclick="divfold('id.om.205pref')">Prefix</button>
-                  <div id="id.om.205pref" style="display:none; margin-top: 0.5em">
+                  <button id="id.om.230prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.230pref')">Prefix</button>
+                  <div id="id.om.230pref" style="display:none; margin-top: 0.5em">
                      <a href="../../../cd/quant1.html#forall">forall</a>
   [
      <i>a</i>
@@ -1821,16 +2033,16 @@ applications of a binary function f
 
 </div>
                   <div>
-                     <button id="id.om.205popa" style="width:20em; background-color:#CCCCCC"
-                             onclick="divfold('id.om.205pop')">Popcorn</button>
-                     <div id="id.om.205pop" style="display:none; margin-top: 0.5em">
+                     <button id="id.om.230popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.230pop')">Popcorn</button>
+                     <div id="id.om.230pop" style="display:none; margin-top: 0.5em">
 quant1.forall[$a, $b -&gt; fns1.lambda[$x, $y -&gt; $f]($a, $b) = fns1.lambda[$x -&gt; fns1.lambda[$y -&gt; $f]($b)]($a)]
 </div>
                   </div>
                   <div>
-                     <button id="id.om.205mmla" style="width:20em; background-color:#AAFFAA"
-                             onclick="divfold('id.om.205mml')">Rendered Presentation MathML</button>
-                     <div id="id.om.205mml" style="display:block; margin-top: 0.5em">
+                     <button id="id.om.230mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.230mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.230mml" style="display:block; margin-top: 0.5em">
                         <div style="overflow:auto;font-size:90%">
                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                               <mrow xmlns:om="http://www.openmath.org/OpenMath">
@@ -1896,7 +2108,7 @@ quant1.forall[$a, $b -&gt; fns1.lambda[$x, $y -&gt; $f]($a, $b) = fns1.lambda[$x
                <tr>
                   <td align="right">
                      <font size="-1">
-	    [First: <a href="#domainofapplication">domainofapplication</a>]
+	    [First: <a href="#restriction">restriction</a>]
 	  
 	    [Previous: <a href="#left_compose">left_compose</a>]
 	  

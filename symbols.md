@@ -1,5 +1,5 @@
 <h1>OpenMath Symbols</h1>
-<p>A combined list of all 1573 symbols defined in this Content Dictionary collection.</p>
+<p>A combined list of all 1578 symbols defined in this Content Dictionary collection.</p>
 <table>
    <tr>
       <th>Symbol</th>
@@ -799,9 +799,15 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/nums1.html#based_float">nums1/<br/>based_float</a>
+      </td>
+      <td>This symbol represents the constructor function for floating point numbers, specifying the base. It takes two arguments, the first is a positive integer to denote the base to which the number is represented, the second argument is a string which contains an optional sign and the digits of the number, using 0-9a-z and optionally a "." (as a consequence of this no radix greater than 36 is supported).</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/nums1.html#based_integer">nums1/<br/>based_integer</a>
       </td>
-      <td>This symbol represents the constructor function for integers, specifying the base. It takes two arguments, the first is a positive integer to denote the base to which the number is represented, the second argument is a string which contains an optional sign and the digits of the integer, using 0-9a-z (as a consequence of this no radix greater than 35 is supported). Base 16 and base 10 are already covered in the encodings of integers.</td>
+      <td>This symbol represents the constructor function for integers, specifying the base. It takes two arguments, the first is a positive integer to denote the base to which the number is represented, the second argument is a string which contains an optional sign and the digits of the integer, using 0-9a-z (as a consequence of this no radix greater than 36 is supported). Base 16 and base 10 are already covered in the encodings of integers.</td>
    </tr>
    <tr>
       <td>
@@ -2301,7 +2307,7 @@
       <td>
          <a href="../cd/fns1.html#domainofapplication">fns1/<br/>domainofapplication</a>
       </td>
-      <td>The domainofapplication element denotes the domain over which a given function is being applied. It is intended in MathML to be a more general alternative to specification of this domain using such quantifier elements as bvar, lowlimit or condition.</td>
+      <td>Deprecated. This symbol was intended to model MathML domainofapplication but as defined it is a synonym for domain. In MathML3, MathML compatibility is defined to use the new restriction symbol.</td>
    </tr>
    <tr>
       <td>
@@ -6589,6 +6595,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/interval1.html#oriented_interval">interval1/<br/>oriented_interval</a>
+      </td>
+      <td>A symbol to denote a continuous 1-dimensional interval without any information about the character of the end points (used in definite integration). The arguments are the start and the end points of the integration, in either order.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/mathmlattr.html#other">mathmlattr/<br/>other</a>
       </td>
       <td>A symbol to be used within an OpenMath attribute to specify the MathML "other" attribute of the object. The annotation should be an OpenMath string representing the value of the other attribute.</td>
@@ -6658,6 +6670,12 @@
          <a href="../cd/weylalgebra1.html#partialdiff">weylalgebra1/<br/>partialdiff</a>
       </td>
       <td>partial differentiation of a given function.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/calculus1.html#partialdiffdegree">calculus1/<br/>partialdiffdegree</a>
+      </td>
+      <td>This symbol is used to express partial differentiation of a function of more than one variable. It has three arguments, the first is a list of integers which give the degrees by which the function is differentiated by the corresponding variable. The second is the total degree (which should therefore be the sum of the values in the first list, but may be given symbolically). The third is the function.</td>
    </tr>
    <tr>
       <td>
@@ -7141,6 +7159,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/fns2.html#predicate_on_list">fns2/<br/>predicate_on_list</a>
+      </td>
+      <td>This symbol is used to denote the chains of application or a binary predicate typified by a &lt; b &lt; c. In particular it is used to support the usage in MathML, where transative relations are classed as nary, but the underlying OpenMath symbols are binary. The symbol takes two arguments; the first of which is the binary predicate, the second a list. It is true if every application of the predicate on a pair of elements of the list, taken in order, returns true, otherwise it is false.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/rdf.html#prefix">rdf/<br/>prefix</a>
       </td>
       <td>A symbol to be used as the head of the OpenMath application to construct a prefix mapping that can be used as a value of the prefixes attribution. The two arguments of this function should be OpenMath strings representing in order, the prefix and the corresponding namespace URI.</td>
@@ -7594,6 +7618,12 @@
          <a href="../cd/list2.html#rest">list2/<br/>rest</a>
       </td>
       <td>This symbol represents a function which returns a list made up of all the elements except the first of its argument, which should be a list.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/fns1.html#restriction">fns1/<br/>restriction</a>
+      </td>
+      <td>restriction takes two arguments, a function f, and a set S, which should be a subset of domain(f) and returns the function f restricted to S.</td>
    </tr>
    <tr>
       <td>

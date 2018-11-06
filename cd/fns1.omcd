@@ -20,23 +20,19 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDReviewDate"/>
-         <OMSTR>2006-03-30</OMSTR>
+         <OMSTR>2014-04-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2004-03-30</OMSTR>
+         <OMSTR>2009-04-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDVersion"/>
-         <OMSTR>3</OMSTR>
+         <OMSTR>4</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDRevision"/>
-         <OMSTR>1</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
+         <OMSTR>0</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDStatus"/>
@@ -50,6 +46,51 @@
          <OMS cd="meta" name="CDDefinition"/>
          <OMA>
             <OMS cd="meta" name="Name"/>
+            <OMSTR>restriction</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>restriction takes two arguments, a function f, and a set S, which should be a subset of domain(f) and returns the function f restricted to S.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="fns1" name="domain"/>
+                  <OMA>
+                     <OMS cd="fns1" name="restriction"/>
+                     <OMV name="f"/>
+                     <OMV name="S"/>
+                  </OMA>
+               </OMA>
+               <OMV name="S"/>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="fns1" name="restriction"/>
+                  <OMV name="f"/>
+                  <OMA>
+                     <OMS cd="fns1" name="domain"/>
+                     <OMV name="f"/>
+                  </OMA>
+               </OMA>
+               <OMV name="f"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
             <OMSTR>domainofapplication</OMSTR>
          </OMA>
          <OMA>
@@ -58,7 +99,7 @@
          </OMA>
          <OMA>
             <OMS cd="meta" name="Description"/>
-            <OMSTR>The domainofapplication element denotes the domain over which a given function is being applied. It is intended in MathML to be a more general alternative to specification of this domain using such quantifier elements as bvar, lowlimit or condition.</OMSTR>
+            <OMSTR>Deprecated. This symbol was intended to model MathML domainofapplication but as defined it is a synonym for domain. In MathML3, MathML compatibility is defined to use the new restriction symbol.</OMSTR>
          </OMA>
       </OMA>
       <OMA>

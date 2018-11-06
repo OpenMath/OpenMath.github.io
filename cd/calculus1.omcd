@@ -20,7 +20,7 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDReviewDate"/>
-         <OMSTR>2006-03-30</OMSTR>
+         <OMSTR>2014-04-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDStatus"/>
@@ -28,19 +28,15 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2004-06-01</OMSTR>
+         <OMSTR>2009-04-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDVersion"/>
-         <OMSTR>4</OMSTR>
+         <OMSTR>5</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDRevision"/>
-         <OMSTR>2</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
+         <OMSTR>0</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="Description"/>
@@ -310,8 +306,8 @@
                      <OMS cd="calculus1" name="partialdiff"/>
                      <OMA>
                         <OMS cd="list1" name="list"/>
-                        <OMI> 1 </OMI>
-                        <OMI> 3 </OMI>
+                        <OMI>1</OMI>
+                        <OMI>3</OMI>
                      </OMA>
                      <OMBIND>
                         <OMS cd="fns1" name="lambda"/>
@@ -328,7 +324,61 @@
                         </OMA>
                      </OMBIND>
                   </OMA>
+                  <OMV name="x"/>
                   <OMV name="y"/>
+                  <OMV name="z"/>
+               </OMA>
+               <OMV name="y"/>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>partialdiffdegree</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is used to express partial differentiation of a function of more than one variable. It has three arguments, the first is a list of integers which give the degrees by which the function is differentiated by the corresponding variable. The second is the total degree (which should therefore be the sum of the values in the first list, but may be given symbolically). The third is the function.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>An example to represent the equation: \partial^2{xyz}/ \partial{x}\partial{z} = y</OMSTR>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMA>
+                     <OMS cd="calculus1" name="partialdiffdegree"/>
+                     <OMA>
+                        <OMS cd="list1" name="list"/>
+                        <OMI>1</OMI>
+                        <OMI>0</OMI>
+                        <OMI>1</OMI>
+                     </OMA>
+                     <OMI>2</OMI>
+                     <OMBIND>
+                        <OMS cd="fns1" name="lambda"/>
+                        <OMBVAR>
+                           <OMV name="x"/>
+                           <OMV name="y"/>
+                           <OMV name="z"/>
+                        </OMBVAR>
+                        <OMA>
+                           <OMS cd="arith1" name="times"/>
+                           <OMV name="x"/>
+                           <OMV name="y"/>
+                           <OMV name="z"/>
+                        </OMA>
+                     </OMBIND>
+                  </OMA>
+                  <OMV name="x"/>
+                  <OMV name="y"/>
+                  <OMV name="z"/>
                </OMA>
                <OMV name="y"/>
             </OMA>
@@ -449,7 +499,7 @@
                   <OMA>
                      <OMS cd="calculus1" name="defint"/>
                      <OMA>
-                        <OMS cd="interval1" name="interval"/>
+                        <OMS cd="interval1" name="ordered_interval"/>
                         <OMV name="a"/>
                         <OMV name="b"/>
                      </OMA>
@@ -469,7 +519,7 @@
                      <OMA>
                         <OMS cd="calculus1" name="defint"/>
                         <OMA>
-                           <OMS cd="interval1" name="interval"/>
+                           <OMS cd="interval1" name="ordered_interval"/>
                            <OMV name="b"/>
                            <OMV name="a"/>
                         </OMA>
@@ -521,7 +571,7 @@
                      <OMA>
                         <OMS cd="calculus1" name="defint"/>
                         <OMA>
-                           <OMS cd="interval1" name="interval"/>
+                           <OMS cd="interval1" name="ordered_interval"/>
                            <OMV name="a"/>
                            <OMV name="c"/>
                         </OMA>
@@ -541,7 +591,7 @@
                         <OMA>
                            <OMS cd="calculus1" name="defint"/>
                            <OMA>
-                              <OMS cd="interval1" name="interval"/>
+                              <OMS cd="interval1" name="ordered_interval"/>
                               <OMV name="a"/>
                               <OMV name="b"/>
                            </OMA>
@@ -559,7 +609,7 @@
                         <OMA>
                            <OMS cd="calculus1" name="defint"/>
                            <OMA>
-                              <OMS cd="interval1" name="interval"/>
+                              <OMS cd="interval1" name="ordered_interval"/>
                               <OMV name="b"/>
                               <OMV name="c"/>
                            </OMA>
@@ -585,7 +635,7 @@
             <OMA>
                <OMS cd="calculus1" name="defint"/>
                <OMA>
-                  <OMS cd="interval1" name="interval"/>
+                  <OMS cd="interval1" name="ordered_interval"/>
                   <OMF dec="-1.0"/>
                   <OMF dec="1.0"/>
                </OMA>

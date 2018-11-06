@@ -20,23 +20,19 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDReviewDate"/>
-         <OMSTR>2017-12-31</OMSTR>
+         <OMSTR>2014-04-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2004-03-30</OMSTR>
+         <OMSTR>2009-04-19</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDVersion"/>
-         <OMSTR>3</OMSTR>
+         <OMSTR>4</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDRevision"/>
-         <OMSTR>1</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
+         <OMSTR>0</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDStatus"/>
@@ -115,8 +111,8 @@
                      <OMS cd="fns2" name="apply_to_list"/>
                      <OMS cd="arith1" name="plus"/>
                      <OMA>
-                        <OMS cd="list1" name="make_list"/>
-                        <OMI> 1 </OMI>
+                        <OMS cd="list1" name="map"/>
+                        <OMI>1</OMI>
                         <OMV name="n"/>
                         <OMS cd="fns1" name="identity"/>
                      </OMA>
@@ -129,10 +125,10 @@
                         <OMA>
                            <OMS cd="arith1" name="plus"/>
                            <OMV name="n"/>
-                           <OMI> 1 </OMI>
+                           <OMI>1</OMI>
                         </OMA>
                      </OMA>
-                     <OMI> 2 </OMI>
+                     <OMI>2</OMI>
                   </OMA>
                </OMA>
             </OMBIND>
@@ -144,9 +140,9 @@
                <OMS cd="fns2" name="apply_to_list"/>
                <OMS cd="set1" name="set"/>
                <OMA>
-                  <OMS cd="list1" name="make_list"/>
-                  <OMI> 1 </OMI>
-                  <OMI> 10 </OMI>
+                  <OMS cd="list1" name="map"/>
+                  <OMI>1</OMI>
+                  <OMI>10</OMI>
                   <OMBIND>
                      <OMS cd="fns1" name="lambda"/>
                      <OMBVAR>
@@ -155,9 +151,102 @@
                      <OMA>
                         <OMS cd="arith1" name="power"/>
                         <OMV name="x"/>
-                        <OMI> 2 </OMI>
+                        <OMI>2</OMI>
                      </OMA>
                   </OMBIND>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>predicate_on_list</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>This symbol is used to denote the chains of application or a binary predicate typified by a &lt; b &lt; c. In particular it is used to support the usage in MathML, where transative relations are classed as nary, but the underlying OpenMath symbols are binary. The symbol takes two arguments; the first of which is the binary predicate, the second a list. It is true if every application of the predicate on a pair of elements of the list, taken in order, returns true, otherwise it is false.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMSTR>a &lt; b &lt; c.</OMSTR>
+            <OMA>
+               <OMS cd="fns2" name="predicate_on_list"/>
+               <OMS cd="relation1" name="lt"/>
+               <OMA>
+                  <OMS cd="list1" name="list"/>
+                  <OMV name="a"/>
+                  <OMV name="b"/>
+                  <OMV name="c"/>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="fns2" name="predicate_on_list"/>
+                  <OMV name="p"/>
+                  <OMS cd="list2" name="nil"/>
+               </OMA>
+               <OMS cd="logic1" name="true"/>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="fns2" name="predicate_on_list"/>
+                  <OMV name="p"/>
+                  <OMA>
+                     <OMS cd="list2" name="append"/>
+                     <OMV name="a"/>
+                     <OMS cd="list2" name="nil"/>
+                  </OMA>
+               </OMA>
+               <OMS cd="logic1" name="true"/>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="fns2" name="predicate_on_list"/>
+                  <OMV name="p"/>
+                  <OMA>
+                     <OMS cd="list2" name="append"/>
+                     <OMV name="a"/>
+                     <OMA>
+                        <OMS cd="list2" name="append"/>
+                        <OMV name="b"/>
+                        <OMV name="l"/>
+                     </OMA>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMV name="p"/>
+                     <OMV name="a"/>
+                     <OMV name="b"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="fns2" name="predicate_on_list"/>
+                     <OMV name="p"/>
+                     <OMA>
+                        <OMS cd="list2" name="append"/>
+                        <OMV name="b"/>
+                        <OMV name="l"/>
+                     </OMA>
+                  </OMA>
                </OMA>
             </OMA>
          </OMA>

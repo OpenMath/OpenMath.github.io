@@ -20,23 +20,19 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDReviewDate"/>
-         <OMSTR>2006-03-30</OMSTR>
+         <OMSTR>2014-04-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDate"/>
-         <OMSTR>2004-03-30</OMSTR>
+         <OMSTR>2009-04-01</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDVersion"/>
-         <OMSTR>3</OMSTR>
+         <OMSTR>4</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDRevision"/>
-         <OMSTR>1</OMSTR>
-      </OMA>
-      <OMA>
-         <OMS cd="meta" name="CDComment"/>
-         <OMSTR>Author: OpenMath Consortium SourceURL: https://github.com/OpenMath/CDs</OMSTR>
+         <OMSTR>0</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDStatus"/>
@@ -44,7 +40,7 @@
       </OMA>
       <OMA>
          <OMS cd="meta" name="Description"/>
-         <OMSTR>This CD holds symbols which describe both discrete and continuous 1-dimensional intervals (with open/closed end points).</OMSTR>
+         <OMSTR>This CD holds symbols which describe both discrete and continuous 1-dimensional intervals (with open/closed end points). There is also an oriented_interval, for use in integration</OMSTR>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
@@ -65,8 +61,41 @@
             <OMSTR>The integer interval 1, 2, ..., 10.</OMSTR>
             <OMA>
                <OMS cd="interval1" name="integer_interval"/>
-               <OMI> 1 </OMI>
-               <OMI> 10 </OMI>
+               <OMI>1</OMI>
+               <OMI>10</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="equivalent"/>
+               <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="n"/>
+                  <OMA>
+                     <OMS name="integer_interval" cd="interval1"/>
+                     <OMV name="a"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="set1" name="in"/>
+                     <OMV name="n"/>
+                     <OMS cd="setname1" name="Z"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="le"/>
+                     <OMV name="a"/>
+                     <OMV name="n"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="le"/>
+                     <OMV name="n"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
             </OMA>
          </OMA>
       </OMA>
@@ -93,6 +122,80 @@
                <OMF dec="10.0"/>
             </OMA>
          </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="set1" name="subset"/>
+               <OMA>
+                  <OMS name="interval" cd="interval1"/>
+                  <OMV name="a"/>
+                  <OMV name="b"/>
+               </OMA>
+               <OMA>
+                  <OMS name="interval_cc" cd="interval1"/>
+                  <OMV name="a"/>
+                  <OMV name="b"/>
+               </OMA>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="set1" name="subset"/>
+               <OMA>
+                  <OMS name="interval_oo" cd="interval1"/>
+                  <OMV name="a"/>
+                  <OMV name="b"/>
+               </OMA>
+               <OMA>
+                  <OMS name="interval" cd="interval1"/>
+                  <OMV name="a"/>
+                  <OMV name="b"/>
+               </OMA>
+            </OMA>
+         </OMA>
+      </OMA>
+      <OMA>
+         <OMS cd="meta" name="CDDefinition"/>
+         <OMA>
+            <OMS cd="meta" name="Name"/>
+            <OMSTR>oriented_interval</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Role"/>
+            <OMSTR>application</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Description"/>
+            <OMSTR>A symbol to denote a continuous 1-dimensional interval without any information about the character of the end points (used in definite integration). The arguments are the start and the end points of the integration, in either order.</OMSTR>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="Example"/>
+            <OMA>
+               <OMS cd="relation1" name="eq"/>
+               <OMA>
+                  <OMS cd="calculus1" name="defintint"/>
+                  <OMA>
+                     <OMS name="oriented_interval" cd="interval1"/>
+                     <OMV name="a"/>
+                     <OMV name="b"/>
+                  </OMA>
+                  <OMV name="f"/>
+               </OMA>
+               <OMA>
+                  <OMS cd="arith1" name="minus"/>
+                  <OMA>
+                     <OMS cd="calculus1" name="defintint"/>
+                     <OMA>
+                        <OMS name="oriented_interval" cd="interval1"/>
+                        <OMV name="b"/>
+                        <OMV name="a"/>
+                     </OMA>
+                     <OMV name="f"/>
+                  </OMA>
+               </OMA>
+            </OMA>
+         </OMA>
       </OMA>
       <OMA>
          <OMS cd="meta" name="CDDefinition"/>
@@ -113,8 +216,41 @@
             <OMSTR>The continuous open interval (1,10).</OMSTR>
             <OMA>
                <OMS cd="interval1" name="interval_oo"/>
-               <OMI> 1 </OMI>
-               <OMI> 10 </OMI>
+               <OMI>1</OMI>
+               <OMI>10</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="equivalent"/>
+               <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="x"/>
+                  <OMA>
+                     <OMS name="interval_oo" cd="interval1"/>
+                     <OMV name="a"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="set1" name="in"/>
+                     <OMV name="x"/>
+                     <OMS cd="setname1" name="R"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="lt"/>
+                     <OMV name="a"/>
+                     <OMV name="x"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="lt"/>
+                     <OMV name="x"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
             </OMA>
          </OMA>
       </OMA>
@@ -137,8 +273,41 @@
             <OMSTR>The continuous closed interval [1,10].</OMSTR>
             <OMA>
                <OMS cd="interval1" name="interval_cc"/>
-               <OMI> 1 </OMI>
-               <OMI> 10 </OMI>
+               <OMI>1</OMI>
+               <OMI>10</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="equivalent"/>
+               <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="x"/>
+                  <OMA>
+                     <OMS name="interval_cc" cd="interval1"/>
+                     <OMV name="a"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="set1" name="in"/>
+                     <OMV name="x"/>
+                     <OMS cd="setname1" name="R"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="le"/>
+                     <OMV name="a"/>
+                     <OMV name="x"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="le"/>
+                     <OMV name="x"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
             </OMA>
          </OMA>
       </OMA>
@@ -161,8 +330,41 @@
             <OMSTR>The continuous interval open at the lower bound and closed at the higher bound (1,10].</OMSTR>
             <OMA>
                <OMS cd="interval1" name="interval_oc"/>
-               <OMI> 1 </OMI>
-               <OMI> 10 </OMI>
+               <OMI>1</OMI>
+               <OMI>10</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="equivalent"/>
+               <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="x"/>
+                  <OMA>
+                     <OMS name="interval_oc" cd="interval1"/>
+                     <OMV name="a"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="set1" name="in"/>
+                     <OMV name="x"/>
+                     <OMS cd="setname1" name="R"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="lt"/>
+                     <OMV name="a"/>
+                     <OMV name="x"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="le"/>
+                     <OMV name="x"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
             </OMA>
          </OMA>
       </OMA>
@@ -185,8 +387,41 @@
             <OMSTR>The continuous interval closed at the lower bound and open at the higher bound [1,10).</OMSTR>
             <OMA>
                <OMS cd="interval1" name="interval_co"/>
-               <OMI> 1 </OMI>
-               <OMI> 10 </OMI>
+               <OMI>1</OMI>
+               <OMI>10</OMI>
+            </OMA>
+         </OMA>
+         <OMA>
+            <OMS cd="meta" name="FMP"/>
+            <OMA>
+               <OMS cd="logic1" name="equivalent"/>
+               <OMA>
+                  <OMS cd="set1" name="in"/>
+                  <OMV name="x"/>
+                  <OMA>
+                     <OMS name="interval_co" cd="interval1"/>
+                     <OMV name="a"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
+               <OMA>
+                  <OMS cd="logic1" name="and"/>
+                  <OMA>
+                     <OMS cd="set1" name="in"/>
+                     <OMV name="x"/>
+                     <OMS cd="setname1" name="R"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="le"/>
+                     <OMV name="a"/>
+                     <OMV name="x"/>
+                  </OMA>
+                  <OMA>
+                     <OMS cd="relation1" name="lt"/>
+                     <OMV name="x"/>
+                     <OMV name="b"/>
+                  </OMA>
+               </OMA>
             </OMA>
          </OMA>
       </OMA>
