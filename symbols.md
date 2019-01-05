@@ -4221,7 +4221,7 @@
       <td>
          <a href="../cd/relation3.html#is_equivalence">relation3/<br/>is_equivalence</a>
       </td>
-      <td>This symbol represents the boolean binary function which returns true if and only if the second argument is a symmetric relation on the first.</td>
+      <td>This symbol represents the boolean binary function which returns true if and only if the second argument is an equivalence relation on the first.</td>
    </tr>
    <tr>
       <td>
