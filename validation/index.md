@@ -45,7 +45,7 @@ names are not duplicated in CD files.
 ## Notes on the Web based validator
 ### Accessibility
 All error messages are shown in red, inlined into an HTML presentation of the supplied XML file.
-The colouring is always specified via the CSS class `err` so other presentatins may be used, also the 
+The colouring is always specified via the CSS class `err` so other presentatfoins may be used, also the 
 error message is never marked just by colour, the error message text is always added in parenthesis after the 
 invalid expression such as `(Unexpected attribute ...)`
 
