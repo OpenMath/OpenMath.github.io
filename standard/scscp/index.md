@@ -62,11 +62,11 @@ To facilitate SCSCP implementations, the following API and middleware is availab
 - [C/C++ SCSCP library](http://www.imcce.fr/trip/scscp/)
   providing a **C/C++ API** to develop client and server SCSCP-compliant applications
 
-- [java.symcomp.org](http://java.symcomp.org/) - **Java API** for SCSCP and OpenMath,
+- [java.symcomp.org](https://github.com/symcomp/org.symcomp.java) - **Java API** for SCSCP and OpenMath,
 with a collection of middleware developed on top if it:
-  - [POPCORN](http://java.symcomp.org/FormalPopcorn.html) - convertor between 
+  - POPCORN - convertor between 
     OpenMath and Popcorn (Possibly Only Practicable Convenient OpenMath Replacement Notation)
-  - [WUPSI](http://java.symcomp.org/wupsi.html) - Wonderful Universal Popcorn 
+  - [WUPSI](https://github.com/symcomp/Wupsi) - Wonderful Universal Popcorn 
     SCSCP Interface, a command line SCSCP-compliant interface
   
 - [MiniSCSCP++](https://bitbucket.org/ChrisJefferson/miniscscp) - **C++ library** 
