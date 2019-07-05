@@ -7,8 +7,8 @@ society
 
 * Professor [Michael Kohlhase](http://kwarc.info/kohlhase), President
 * Professor [James Davenport](http://www.bath.ac.uk/~masjhd/), Vice-President and Chief Editor for Content Dictionaries
-* Dr. [Florian Rabe](http://kwarc.info/frabe) Secretary & Treasurer
-* Dr. [Patrick Ion](http://www-personal.umich.edu/~pion/) MathML Liaison
+* Dr. [Florian Rabe](http://kwarc.info/frabe), Secretary & Treasurer
+* Dr. [Patrick Ion](http://www-personal.umich.edu/~pion/), MathML Liaison
 * [Jan Willem Knopper](https://www.tue.nl/universiteit/faculteiten/wiskunde-informatica/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/19950962/),
   Data Protection Officer
 * Dr. [Alexander Konovalov](http://blogs.cs.st-andrews.ac.uk/alexk/), Member at Large 
