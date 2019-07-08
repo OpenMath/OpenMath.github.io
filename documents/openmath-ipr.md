@@ -35,7 +35,8 @@ in which all materials and any underlying patent licenses that may be required w
 available by project members on a Royalty Free basis as part of the contract terms of that
 project.
 * The OpenMath 2 standard and the updated Core Content Dictionaries were developed under
-the EU funded OpenMath Thematic network.
+the EU funded OpenMath Thematic network <a
+href="http://cordis.europa.eu/projects/rcn/60953_en.html">http://cordis.europa.eu/projects/rcn/60953_en.html</a>.
 All contributions under this project were made available under Royalty Free basis, and
 Copyright assigned to the OpenMath Society.
 * Contributed Content Dictionaries: All Contributed Content
