@@ -35,16 +35,12 @@ in which all materials and any underlying patent licenses that may be required w
 available by project members on a Royalty Free basis as part of the contract terms of that
 project.
 * The OpenMath 2 standard and the updated Core Content Dictionaries were developed under
-the EU funded OpenMath Thematic network <a
-href="http://cordis.europa.eu/projects/rcn/60953_en.html">http://cordis.europa.eu/projects/rcn/60953_en.html</a>
+the EU funded OpenMath Thematic network.
 All contributions under this project were made available under Royalty Free basis, and
 Copyright assigned to the OpenMath Society.
-* Contributed Content Dictionaries: Currently (2013-12-01) not all Contributed Content
-Dictionaries have an explicit license statement.<br/> Authors will be contacted and if, by
-31-03-2015, there are any Content Dictionaries that do not have a license compatible with
-this policy, they will be moved from <a
-href="http://www.openmath.org/cd/contrib/">http://www.openmath.org/cd/contrib/</a> to a
-new <code>http://www.openmath.org/cd/contrib.nonfree/</code> area.
+* Contributed Content Dictionaries: All Contributed Content
+Dictionaries that do not have an explicit license statement or have a license compatible with
+this policy  will be moved new directory <code>http://www.openmath.org/cd/contrib.nonfree/</code> area.
 
 
   
