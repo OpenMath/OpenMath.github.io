@@ -9,6 +9,7 @@ notes from those meetings. The numbering of the workshops somewhat haphazard (an
 by 4 for the newest counting), as the naming of the workshops was often governed by
 project requirements.
 
+* The 30th OpenMath workshop: [Prague, 2019](http://www.cicm-conference.org/2019/cicm.php?event=openmath&amp;menu=general).
 * The 29th OpenMath workshop: [Hagenberg, 2018](http://www.cicm-conference.org/2018/cicm.php?event=openmath&amp;menu=general).
 * The 28th OpenMath workshop: [Edinburgh, 2017](http://www.cicm-conference.org/2017/cicm.php?event=openmath&amp;menu=general).
 * The 27th OpenMath workshop: [Bialystok, 2016](http://www.cicm-conference.org/2016/cicm.php?event=openmath&amp;menu=general).
