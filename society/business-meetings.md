@@ -12,6 +12,7 @@ organizes a pro-forma meeting, that does not make any decisions during that time
 we have a "working meeting" at the [OpenMath Workshop](../meetings). Find the minutes of
 the recent meetings below. 
 
+* [2019](../public/minutes/OM2019.pdf) 
 * [2018](../public/minutes/OM2018.pdf) 
 * [2017](../public/minutes/OM2017.pdf) 
 * [2016](../public/minutes/OM2016.pdf)
@@ -24,4 +25,5 @@ the recent meetings below.
 * [2010](../public/minutes/OM2010.pdf)
 * [2009](../public/minutes/OM2009.pdf)
 
-Thanks to James Davenport our perpetual minute-taker.
+Thanks to James Davenport our perpetual minute-taker and other volunteers when he is not
+around. 
