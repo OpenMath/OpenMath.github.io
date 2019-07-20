@@ -1,6 +1,9 @@
 <?xml encoding="UTF-8"?>
 
-<!-- RELAX NG Schema for OpenMath 2 -->
+<!--
+RELAX NG Schema for OpenMath 2
+Revision 2: Corrected regex for OMI to match the documented standard and allow hex
+-->
 
 <!ENTITY % cdbase "
   cdbase CDATA #IMPLIED">
@@ -18,7 +21,8 @@
 
 <!-- Elements which can appear inside an OpenMath object -->
 
-<!ENTITY % omel "OMS|OMV|OMI|OMB|OMSTR|OMF|OMA|OMBIND|OME|OMATTR|OMR">
+<!ENTITY % omel "OMS|OMV|OMI|OMB|OMSTR|OMF
+                 |OMA|OMBIND|OME|OMATTR|OMR">
 
 <!-- OpenMath object constructor -->
 
@@ -26,7 +30,8 @@
 <!ATTLIST OMOBJ
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMath'
   %compound.attributes;
-  version CDATA #IMPLIED>
+  version CDATA #IMPLIED
+  cdgroup CDATA #IMPLIED>
 
 <!ENTITY % attvar "OMATTR">
 
@@ -108,7 +113,7 @@
 <!ELEMENT OME (OMS,(%omel;|OMFOREIGN)*)>
 <!ATTLIST OME
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMath'
-  %common.attributes;>
+  %compound.attributes;>
 
 <!-- attribution constructor and attribute pair constructor -->
 

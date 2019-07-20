@@ -79,14 +79,19 @@ Relax NG Schema for OpenMath CD
 <!ATTLIST Example
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCD'>
 
-<!ELEMENT CDDefinition (CDComment*,(Name|Role|Description)+,
-                            (CDComment|Example|FMP|CMP)*)>
+<!ELEMENT CDDefinition (CDComment*,
+                            (Name|Role|Description)+,
+                            (CDComment|Example|FMP
+                             |CMP)*)>
 <!ATTLIST CDDefinition
   xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCD'>
 
-<!ELEMENT CD ((CDComment*|Description?|CDName|CDURL?|CDBase?
-                   |CDReviewDate?|CDDate|CDStatus|CDUses?|CDVersion
+<!ELEMENT CD ((CDComment*|Description?|CDName|CDURL?
+                   |CDBase?|CDReviewDate?|CDDate
+                   |CDStatus|CDUses?|CDVersion
                    |CDRevision)+,
                   (CDDefinition,CDComment*)+)>
 <!ATTLIST CD
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCD'>
+  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCD'
+  version CDATA #IMPLIED
+  cdgroup CDATA #IMPLIED>

@@ -38,7 +38,10 @@
   </xs:element>
   <xs:attributeGroup name="attlist.CDSignatures">
     <xs:attribute name="cd" use="required" type="xs:NCName"/>
-    <xs:attribute name="type" use="required" type="xs:NCName"/>
+    <xs:attribute name="type" type="xs:NCName"/>
+    <xs:attribute name="cdgroup" type="xs:anyURI"/>
+    <xs:attribute name="cdurl" type="xs:anyURI"/>
+    <xs:attribute name="version" type="xs:string"/>
   </xs:attributeGroup>
   <xs:element name="Signature">
     <xs:complexType>

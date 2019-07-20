@@ -4,52 +4,60 @@
 
 <!-- info on the CD group itself -->
 
-<!ELEMENT CDGroupName (#PCDATA)>
-<!ATTLIST CDGroupName
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDGroupName (#PCDATA)>
+<!ATTLIST ns1:CDGroupName
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
-<!ELEMENT CDGroupVersion (#PCDATA)>
-<!ATTLIST CDGroupVersion
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDGroupVersion (#PCDATA)>
+<!ATTLIST ns1:CDGroupVersion
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
-<!ELEMENT CDGroupRevision (#PCDATA)>
-<!ATTLIST CDGroupRevision
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDGroupRevision (#PCDATA)>
+<!ATTLIST ns1:CDGroupRevision
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
-<!ELEMENT CDGroupURL (#PCDATA)>
-<!ATTLIST CDGroupURL
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDGroupURL (#PCDATA)>
+<!ATTLIST ns1:CDGroupURL
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
-<!ELEMENT CDGroupDescription (#PCDATA)>
-<!ATTLIST CDGroupDescription
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDGroupDescription (#PCDATA)>
+<!ATTLIST ns1:CDGroupDescription
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
 <!-- info on the CDs in the group -->
 
-<!ELEMENT CDComment (#PCDATA)>
-<!ATTLIST CDComment
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDComment (#PCDATA)>
+<!ATTLIST ns1:CDComment
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
-<!ELEMENT CDGroupMember (CDComment?,CDName,CDVersion?,CDURL?)>
-<!ATTLIST CDGroupMember
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDGroupMember (ns1:CDComment?,ns1:CDName,ns1:CDVersion?,
+                             ns1:CDURL?)>
+<!ATTLIST ns1:CDGroupMember
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
-<!ELEMENT CDName (#PCDATA)>
-<!ATTLIST CDName
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDGroupInclude (#PCDATA)>
+<!ATTLIST ns1:CDGroupInclude
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
-<!ELEMENT CDVersion (#PCDATA)>
-<!ATTLIST CDVersion
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDName (#PCDATA)>
+<!ATTLIST ns1:CDName
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
-<!ELEMENT CDURL (#PCDATA)>
-<!ATTLIST CDURL
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDVersion (#PCDATA)>
+<!ATTLIST ns1:CDVersion
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+
+<!ELEMENT ns1:CDURL (#PCDATA)>
+<!ATTLIST ns1:CDURL
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
 
 <!-- structure of the group -->
 
-<!ELEMENT CDGroup (CDGroupName,CDGroupVersion,CDGroupRevision?,
-                   CDGroupURL,CDGroupDescription,
-                   (CDGroupMember|CDComment)*)>
-<!ATTLIST CDGroup
-  xmlns CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'>
+<!ELEMENT ns1:CDGroup (ns1:CDGroupName,ns1:CDGroupVersion,
+                       ns1:CDGroupRevision?,ns1:CDGroupURL,
+                       ns1:CDGroupDescription,
+                       (ns1:CDGroupMember|ns1:CDComment
+                        |ns1:CDGroupInclude)*)>
+<!ATTLIST ns1:CDGroup
+  xmlns:ns1 CDATA #FIXED 'http://www.openmath.org/OpenMathCDG'
+  version CDATA #IMPLIED>

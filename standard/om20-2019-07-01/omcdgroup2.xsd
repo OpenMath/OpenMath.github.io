@@ -5,7 +5,7 @@
   <xs:element name="CDGroupName" type="xs:NCName"/>
   <xs:element name="CDGroupVersion" type="xs:nonNegativeInteger"/>
   <xs:element name="CDGroupRevision" type="xs:nonNegativeInteger"/>
-  <xs:element name="CDGroupURL" type="xs:string"/>
+  <xs:element name="CDGroupURL" type="xs:anyURI"/>
   <xs:element name="CDGroupDescription" type="xs:string"/>
   <!-- info on the CDs in the group -->
   <xs:element name="CDComment" type="xs:string"/>
@@ -19,6 +19,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="CDGroupInclude" type="xs:anyURI"/>
   <xs:element name="CDName" type="xs:NCName"/>
   <xs:element name="CDVersion" type="xs:nonNegativeInteger"/>
   <xs:element name="CDURL" type="xs:string"/>
@@ -34,8 +35,10 @@
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element ref="o:CDGroupMember"/>
           <xs:element ref="o:CDComment"/>
+          <xs:element ref="o:CDGroupInclude"/>
         </xs:choice>
       </xs:sequence>
+      <xs:attribute name="version" type="xs:string"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

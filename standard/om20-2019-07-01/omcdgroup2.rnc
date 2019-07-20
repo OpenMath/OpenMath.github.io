@@ -8,26 +8,26 @@ default namespace = "http://www.openmath.org/OpenMathCDG"
 CDGroupName = element CDGroupName { xsd:NCName }
 CDGroupVersion = element CDGroupVersion { xsd:nonNegativeInteger }
 CDGroupRevision = element CDGroupRevision { xsd:nonNegativeInteger }
-CDGroupURL = element CDGroupURL { text }
+CDGroupURL = element CDGroupURL { xsd:anyURI }
 CDGroupDescription = element CDGroupDescription { text }
 # info on the CDs in the group
 CDComment = element CDComment { text }
 CDGroupMember =
-  element CDGroupMember {
-    CDComment?, CDName, CDVersion?, CDURL?
-  }
+  element CDGroupMember {CDComment?, CDName,  CDVersion?, CDURL?}
+CDGroupInclude = element CDGroupInclude { xsd:anyURI }
 CDName = element CDName { xsd:NCName }
 CDVersion = element CDVersion { xsd:nonNegativeInteger }
 CDURL = element CDURL { text }
 # structure of the group
 CDGroup =
   element CDGroup {
+    attribute version { xsd:string }?,
     CDGroupName,
     CDGroupVersion,
     CDGroupRevision?,
     CDGroupURL,
     CDGroupDescription,
-    (CDGroupMember | CDComment)*
+    (CDGroupMember | CDComment | CDGroupInclude)*
   }
 start = CDGroup
 

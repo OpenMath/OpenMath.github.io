@@ -144,6 +144,16 @@
   </define>
   <define name="CD">
     <element name="CD">
+      <optional>
+        <attribute name="version">
+          <data type="string"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="cdgroup">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
       <interleave>
         <zeroOrMore>
           <ref name="CDComment"/>
