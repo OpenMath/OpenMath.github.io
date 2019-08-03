@@ -21,7 +21,7 @@ OpenMath-related software (we will be happy to give you a repository for that).
 The OpenMath Workshop 2017 determined that the focus of development should be on extending
 the supply of content dictionaries and language integrations to fix OpenMath's birth
 defect of not having a credible supply. Consequently extending the OpenMath Standard (OM
-Objects and OM Content Dictionaries are deprioritized for the coming year, but we continue
+Objects and OM Content Dictionaries are deprioritized for the coming years, but we continue
 to collect [extensions proposals](https://github.com/OpenMath/OM3).
  
 The current set of projects is
@@ -29,5 +29,6 @@ The current set of projects is
 * referencing and indexing external CD sources
 * developing new language integration
 * redoing the OpenMath Software page
+
 
 

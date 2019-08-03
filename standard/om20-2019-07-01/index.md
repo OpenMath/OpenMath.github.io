@@ -1,13 +1,13 @@
 ---
 layout: page
-title: The OpenMath Standard <br>Version 2.0 Revision 1
+title: The OpenMath Standard <br>Version 2.0 Revision 3
 ---
 
 
 ## OpenMath Standard Document
 [HTML](omstd20.html) [PDF](omstd20.pdf)
 
-## Open Math Standard with diff markings from om20-2004-06-30
+## Open Math Standard with diff markings from om20-2017-07-22
 [HTML](omstd20-diff.html)
 [PDF](omstd20-diff.pdf)
 
