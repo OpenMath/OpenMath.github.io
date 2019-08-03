@@ -19,7 +19,7 @@ Generated from the source repository [OMSTD](https://github.com/OpenMath/OMSTD)
 
 We use the [GitHub issue tracker system of the OpenMath/OMSTD repository](https://github.com/OpenMath/OMSTD/issues) to organize development. See in particular
 
-1. a [list of consolidated issues](https://github.com/OpenMath/OMSTD/milestone/1?closed=1) (see also the [change tabulation](https://openmath.github.io/standard/om20-editors-draft/omstd20.html#chgr2) in the editor's draft.
+1. a [list of consolidated issues](https://github.com/OpenMath/OMSTD/milestone/1?closed=1) (see also the [change tabulation](https://openmath.github.io/standard/om20-editors-draft/omstd20.html#chgr2) in the editor's draft).
 2. a [list of the unconsolidated issues](https://github.com/OpenMath/OMSTD/milestone/1)
 3. a [list of the issues under consideration for further releases, but "too big" for an editors' revision](https://github.com/OpenMath/OMSTD/milestone/2), which we would like to ask OM2018 about.
 
