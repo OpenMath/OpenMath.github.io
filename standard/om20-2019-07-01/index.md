@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The OpenMath Standard <br>Version 2.0 Revision 3
+title: The OpenMath Standard <br>Version 2.0 Revision 2
 ---
 
 

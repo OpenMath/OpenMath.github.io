@@ -6,7 +6,7 @@ title: The OpenMath Standards
 ## OpenMath Standard
 
 The Normative version of the OpenMath Standard is<br/>
-[OpenMath Version 2.0 Revision 3](om20-2019-07-01).
+[OpenMath Version 2.0 Revision 2](om20-2019-07-01).
 
 <!-- An [Editor's draft of possible revisions of OpenMath 2.0](om20-editors-draft/) is  also available. -->
 
