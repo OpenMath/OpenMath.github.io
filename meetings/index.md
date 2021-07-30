@@ -9,14 +9,15 @@ notes from those meetings. The numbering of the workshops somewhat haphazard (an
 by 4 for the newest counting), as the naming of the workshops was often governed by
 project requirements.
 
-* The 30th OpenMath workshop: [Prague, 2019](http://www.cicm-conference.org/2019/cicm.php?event=openmath&amp;menu=general).
-* The 29th OpenMath workshop: [Hagenberg, 2018](http://www.cicm-conference.org/2018/cicm.php?event=openmath&amp;menu=general).
-* The 28th OpenMath workshop: [Edinburgh, 2017](http://www.cicm-conference.org/2017/cicm.php?event=openmath&amp;menu=general).
-* The 27th OpenMath workshop: [Bialystok, 2016](http://www.cicm-conference.org/2016/cicm.php?event=openmath&amp;menu=general).
-* The 26th OpenMath workshop: [Coimbra, 2014](http://www.cicm-conference.org/2014/cicm.php?event=openmath&amp;menu=general).
-* The 25th OpenMath workshop: [Bath, 2013](http://www.cicm-conference.org/2013/cicm.php?event=openmath&amp;menu=general).
-* The 24th OpenMath workshop: [Bremen, 2012](http://www.cicm-conference.org/2012/cicm.php?event=openmath&amp;menu=general) ([Proceedings](http://ceur-ws.org/Vol-921/)).
-* The 23rd OpenMath workshop: [Paris 2010](http://cicm2010.cnam.fr/om/).
+* The 31st OpenMath workshop: [Timisoara, 2021](https://www.cicm-conference.org/2021/cicm.php?event=openmath).
+* The 30th OpenMath workshop: [Prague, 2019](https://www.cicm-conference.org/2019/cicm.php?event=openmath).
+* The 29th OpenMath workshop: [Hagenberg, 2018](https://www.cicm-conference.org/2018/cicm.php?event=openmath).
+* The 28th OpenMath workshop: [Edinburgh, 2017](https://www.cicm-conference.org/2017/cicm.php?event=openmath).
+* The 27th OpenMath workshop: [Bialystok, 2016](https://www.cicm-conference.org/2016/cicm.php?event=openmath).
+* The 26th OpenMath workshop: [Coimbra, 2014](https://www.cicm-conference.org/2014/cicm.php?event=openmath).
+* The 25th OpenMath workshop: [Bath, 2013](https://www.cicm-conference.org/2013/cicm.php?event=openmath).
+* The 24th OpenMath workshop: [Bremen, 2012](https://www.cicm-conference.org/2012/cicm.php?event=openmath) ([Proceedings](http://ceur-ws.org/Vol-921/)).
+* The 23rd OpenMath workshop: [Paris 2010](https://cicm2010.cnam.fr/om/).
 * The 22nd OpenMath workshop: [Grand Bend 2009](22/).
 * The 21st OpenMath workshop: [Linz 2007](linz2007/).
 * The 7th [Thematic Network](../projects/thematic/) workshop, [Helsinki 2004: ten years of OpenMath](helsinki2004/).
