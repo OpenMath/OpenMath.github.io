@@ -24,7 +24,8 @@
 	     if(window.location.hash) {
     document.getElementById("dynamic").style.display="block";
     document.getElementById("dynamic.h2").textContent=window.location.hash.substr(1);
-	     } else {
+    document.getElementById("dynamic.h2").parentNode.id=window.location.hash.substr(1);
+             } else {
     document.getElementById("dynamic").style.display="none";
 	     }
      }
@@ -183,7 +184,7 @@ Experimental dynamic CD tracking MathML4 intent values.
 </p>
 
    <div id="dynamic">
-   <h2 id="dynamic.h2">   </h2>
+   <h2 id="_"><span id="dynamic.h2"></span></h2>
    <dl>
     <dt>
      <span class="dt">Description:</span>
