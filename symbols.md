@@ -1,5 +1,5 @@
 <h1>OpenMath Symbols</h1>
-<p>A combined list of all 1578 symbols defined in this Content Dictionary collection.</p>
+<p>A combined list of all 1590 symbols defined in this Content Dictionary collection.</p>
 <table>
    <tr>
       <th>Symbol</th>
@@ -116,6 +116,12 @@
    <tr>
       <td>
          <a href="../cd/arith1.html#abs">arith1/<br/>abs</a>
+      </td>
+      <td>A unary operator which represents the absolute value of its argument. The argument should be numerically valued. In the complex case this is often referred to as the modulus.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/test-x.html#abs">test-x/<br/>abs</a>
       </td>
       <td>A unary operator which represents the absolute value of its argument. The argument should be numerically valued. In the complex case this is often referred to as the modulus.</td>
    </tr>
@@ -2245,6 +2251,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/test-x.html#divide">test-x/<br/>divide</a>
+      </td>
+      <td>This symbol represents a (binary) division function denoting the first argument right-divided by the second, i.e. divide(a,b)=a*inverse(b). It is the inverse of the multiplication function defined by the symbol times in this CD.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/integer2.html#divides">integer2/<br/>divides</a>
       </td>
       <td>This symbol represents a bivariate Boolean function, whose arguments should be integers. When applied to integers a and b, it denotes the property that a divides b.</td>
@@ -3178,6 +3190,12 @@
          <a href="../cd/polyoperators1.html#gcd">polyoperators1/<br/>gcd</a>
       </td>
       <td>The n-ary greatest common divisor for univariate polynomials.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/test-x.html#gcd">test-x/<br/>gcd</a>
+      </td>
+      <td>The symbol to represent the n-ary function to return the gcd (greatest common divisor) of its arguments.</td>
    </tr>
    <tr>
       <td>
@@ -4747,6 +4765,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/test-x.html#lcm">test-x/<br/>lcm</a>
+      </td>
+      <td>The symbol to represent the n-ary function to return the least common multiple of its arguments.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/poly.html#leading_coefficient">poly/<br/>leading_coefficient</a>
       </td>
       <td>The leading coefficient with respect to a variable (the second argument). We note that the leading coefficient of 0 is undefined.</td>
@@ -5295,13 +5319,13 @@
       <td>
          <a href="../cd/list1.html#map">list1/<br/>map</a>
       </td>
-      <td>This symbol represents a mapping function which may be used to construct lists; it takes as arguments a function from X to Y and a list over X in that order. The value that is returned is a list of values in Y. The argument list may be a set or an integer_interval.</td>
+      <td>This symbol represents a mapping function which may be used to construct lists, it takes as arguments a function from X to Y and a list over X in that order. The value that is returned is a list of values in Y. The argument list may be a set or an integer_interval.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/list1.html#map">list1/<br/>map</a>
       </td>
-      <td>This symbol represents a mapping function which may be used to construct lists, it takes as arguments a function from X to Y and a list over X in that order. The value that is returned is a list of values in Y. The argument list may be a set or an integer_interval.</td>
+      <td>This symbol represents a mapping function which may be used to construct lists; it takes as arguments a function from X to Y and a list over X in that order. The value that is returned is a list of values in Y. The argument list may be a set or an integer_interval.</td>
    </tr>
    <tr>
       <td>
@@ -5650,6 +5674,12 @@
          <a href="../cd/polyd1.html#minus">polyd1/<br/>minus</a>
       </td>
       <td>The sum. The argument is a DMPL. The sum lies within the same "poly_ring_d", i.e., a program implementing this operation should return a DMP with the same "poly_ring_d".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/test-x.html#minus">test-x/<br/>minus</a>
+      </td>
+      <td>The symbol representing a binary minus function. This is equivalent to adding the additive inverse.</td>
    </tr>
    <tr>
       <td>
@@ -6925,6 +6955,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/test-x.html#plus">test-x/<br/>plus</a>
+      </td>
+      <td>The symbol representing an n-ary commutative function plus.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/hypergeon0.html#plus_part">hypergeon0/<br/>plus_part</a>
       </td>
       <td>The argument is a vector. It replaces negative elements in the vector to zero.</td>
@@ -7135,6 +7171,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/test-x.html#power">test-x/<br/>power</a>
+      </td>
+      <td>This symbol represents a power function. The first argument is raised to the power of the second argument. When the second argument is not an integer, powering is defined in terms of exponentials and logarithms for the complex and real numbers. This operator can represent general powering.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/set3.html#powerset">set3/<br/>powerset</a>
       </td>
       <td>This symbol represents unary function whose argument should be a set. When applied to a set X, it represents the collection of all subsets of X.</td>
@@ -7250,6 +7292,12 @@
    <tr>
       <td>
          <a href="../cd/arith1.html#product">arith1/<br/>product</a>
+      </td>
+      <td>An operator taking two arguments, the first being the range of multiplication e.g. an integral interval, the second being the function to be multiplied. Note that the product may be over an infinite interval.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/test-x.html#product">test-x/<br/>product</a>
       </td>
       <td>An operator taking two arguments, the first being the range of multiplication e.g. an integral interval, the second being the function to be multiplied. Note that the product may be over an infinite interval.</td>
    </tr>
@@ -7880,6 +7928,12 @@
    <tr>
       <td>
          <a href="../cd/arith1.html#root">arith1/<br/>root</a>
+      </td>
+      <td>A binary operator which represents its first argument "lowered" to its n'th root where n is the second argument. This is the inverse of the operation represented by the power symbol defined in this CD. Care should be taken as to the precise meaning of this operator, in particular which root is represented, however it is here to represent the general notion of taking n'th roots. As inferred by the signature relevant to this symbol, the function represented by this symbol is the single valued function, the specific root returned is the one indicated by the first CMP. Note also that the converse of the second CMP is not valid in general.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/test-x.html#root">test-x/<br/>root</a>
       </td>
       <td>A binary operator which represents its first argument "lowered" to its n'th root where n is the second argument. This is the inverse of the operation represented by the power symbol defined in this CD. Care should be taken as to the precise meaning of this operator, in particular which root is represented, however it is here to represent the general notion of taking n'th roots. As inferred by the signature relevant to this symbol, the function represented by this symbol is the single valued function, the specific root returned is the one indicated by the first CMP. Note also that the converse of the second CMP is not valid in general.</td>
    </tr>
@@ -8595,13 +8649,13 @@
       <td>
          <a href="../cd/list1.html#suchthat">list1/<br/>suchthat</a>
       </td>
-      <td>This symbol represents the suchthat function which may be used to construct lists; it takes two arguments. The first argument should be a set X which contains the elements of the list, the second argument should be a predicate, that is a function from the set X to the booleans which describes if an element is to be in the list returned.</td>
+      <td>This symbol represents the suchthat function which may be used to construct lists, it takes two arguments. The first argument should be the set which contains the elements of the list, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the list returned.</td>
    </tr>
    <tr>
       <td>
          <a href="../cd/list1.html#suchthat">list1/<br/>suchthat</a>
       </td>
-      <td>This symbol represents the suchthat function which may be used to construct lists, it takes two arguments. The first argument should be the set which contains the elements of the list, the second argument should be a predicate, that is a function from the set to the booleans which describes if an element is to be in the list returned.</td>
+      <td>This symbol represents the suchthat function which may be used to construct lists; it takes two arguments. The first argument should be a set X which contains the elements of the list, the second argument should be a predicate, that is a function from the set X to the booleans which describes if an element is to be in the list returned.</td>
    </tr>
    <tr>
       <td>
@@ -8618,6 +8672,12 @@
    <tr>
       <td>
          <a href="../cd/arith1.html#sum">arith1/<br/>sum</a>
+      </td>
+      <td>An operator taking two arguments, the first being the range of summation, e.g. an integral interval, the second being the function to be summed. Note that the sum may be over an infinite interval.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/test-x.html#sum">test-x/<br/>sum</a>
       </td>
       <td>An operator taking two arguments, the first being the range of summation, e.g. an integral interval, the second being the function to be summed. Note that the sum may be over an infinite interval.</td>
    </tr>
@@ -8857,6 +8917,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/test-x.html#times">test-x/<br/>times</a>
+      </td>
+      <td>The symbol representing an n-ary multiplication function.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/weylalgebra1.html#times">weylalgebra1/<br/>times</a>
       </td>
       <td>multiplication in D</td>
@@ -9014,6 +9080,12 @@
    <tr>
       <td>
          <a href="../cd/arith1.html#unary_minus">arith1/<br/>unary_minus</a>
+      </td>
+      <td>This symbol denotes unary minus, i.e. the additive inverse.</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/test-x.html#unary_minus">test-x/<br/>unary_minus</a>
       </td>
       <td>This symbol denotes unary minus, i.e. the additive inverse.</td>
    </tr>

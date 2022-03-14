@@ -2,7 +2,7 @@
 <!--WARNING: This page is automatically generated, do not edit! WARNING-->
 
 <h1>OpenMath Content Dictionaries by status</h1>
-<p>214 Content Dictionaries, ordered by status.</p>
+<p>215 Content Dictionaries, ordered by status.</p>
 <table border="1">
    <tr>
       <th><a href="../cdnames">Content Dictionary</a></th>
@@ -690,6 +690,10 @@
    </tr>
    <tr>
       <th style="text-align:left"><a href="../cd/tensor1.html">tensor1</a></th>
+      <td>experimental (contributed)</td>
+   </tr>
+   <tr>
+      <th style="text-align:left"><a href="../cd/test-x.html">test-x</a></th>
       <td>experimental (contributed)</td>
    </tr>
    <tr>
