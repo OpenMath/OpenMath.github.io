@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.org/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.org/public/css/main.css"/>
+      <link rel="shortcut icon" sizes="144x144" type="image/png" href="/public/favicon.png"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+   <style>
+    #dynamic {display:none}
+   </style>
+   <script>
+     function omsym(){
+	     if(window.location.hash) {
+    document.getElementById("dynamic").style.display="block";
+    document.getElementById("dynamic.h2").textContent=window.location.hash.substr(1);
+	     } else {
+    document.getElementById("dynamic").style.display="none";
+	     }
+     }
+   </script>
+      <title>intent</title>
+      <link rel="stylesheet" href="https://openmath.org/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.org/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="https://openmath.org/">https://openmath.org</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.org/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.org/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.org/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.org/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.org/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.org/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.org/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.org/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.org/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.org/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.org/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.org/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.org/atom.xml">
+                     <img class="icon" src="https://openmath.org/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.org/public/twitter_w.png" alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.org/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: intent</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/intent.ocd">http://www.openmath.org/cd/intent.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="intent.ocd">intent.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="intent.omcd">intent.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd/>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2022-03-14</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>1</dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2022-01-01</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+
+            <pre>
+
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+</pre>
+
+
+
+
+
+
+
+
+
+            <pre>
+  Author: OpenMath Consortium
+  SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
+            </pre>
+            <p>
+Experimental dynamic CD tracking MathML4 intent values.
+</p>
+
+
+         </div>
+      </div>
+   <script>
+     omsym();
+   </script>
+   </body>
+</html>
