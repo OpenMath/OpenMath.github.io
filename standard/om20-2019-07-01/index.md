@@ -5,11 +5,11 @@ title: The OpenMath Standard <br>Version 2.0 Revision 2
 
 
 ## OpenMath Standard Document
-[HTML](omstd20.html) [PDF](omstd20.pdf)
+[HTML](https://openmath.org/standard/om20-2019-07-01/omstd20.html) [PDF](https://openmath.org/standard/om20-2019-07-01/omstd20.pdf)
 
 ## Open Math Standard with diff markings from om20-2017-07-22
-[HTML](omstd20-diff.html)
-[PDF](omstd20-diff.pdf)
+[HTML](https://openmath.org/standard/om20-2019-07-01/omstd20-diff.html)
+[PDF](https://openmath.org/standard/om20-2019-07-01/omstd20-diff.pdf)
 
 
 ## Source repository
