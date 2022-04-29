@@ -11,7 +11,7 @@ society
 * Dr. [Patrick Ion](http://www-personal.umich.edu/~pion/), MathML Liaison
 * [Jan Willem Knopper](https://www.tue.nl/universiteit/faculteiten/wiskunde-informatica/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/19950962/),
   Data Protection Officer
-* Dr. [Alexander Konovalov](http://blogs.cs.st-andrews.ac.uk/alexk/), Member at Large 
+* Dr. [Olexandr Konovalov](https://alex-konovalov.github.io/), Member at Large
 * [Tom Wiesing](https://kwarc.info/people/twiesing), Member at Large
 
 The committee can be contacted by [email](mailto:om-sc@openmath.org).
