@@ -180,7 +180,7 @@ in cMML.
 
 ### Future encodings
 
-A candidate for becoming the fourth standard-codified OpenMath encoding is called [PopCorn](http://java.symcomp.org/FormalPopcorn.html); its niche is being a format that humans actually might stand to write. In PopCorn, "ordinary programming identifiers" are interpreted as symbol objects, whereas identifiers prefixed by a `$` are interpreted as variable objects, and "ordinary programming literals" are interpreted as the corresponding kind of basic OpenMath object (possibly a quoted symbol). Application objects are written like function application, with the head followed by a parenthesis containing the arguments, separated by commas.
+A candidate for becoming the fourth standard-codified OpenMath encoding is called [PopCorn](https://web.archive.org/web/20150822191347if_/http://java.symcomp.org:80/FormalPopcorn.html); its niche is being a format that humans actually might stand to write. In PopCorn, "ordinary programming identifiers" are interpreted as symbol objects, whereas identifiers prefixed by a `$` are interpreted as variable objects, and "ordinary programming literals" are interpreted as the corresponding kind of basic OpenMath object (possibly a quoted symbol). Application objects are written like function application, with the head followed by a parenthesis containing the arguments, separated by commas.
 
 Unlike the currently standard-codified encodings PopCorn _does_ play favourites, by defining punctuation shorthands for a small set of symbols, with associated priority rules. In PopCorn, the above polynomial _can_ be written
 ```
@@ -447,7 +447,7 @@ encodes the formula 3*3, using a reference to the first 3 (carrying an identifie
 ### Various related standards and specifications
 
 * [MathML](https://www.w3.org/TR/MathML3/Overview.html)
-* [PopCorn](http://java.symcomp.org/FormalPopcorn.html)
+* [PopCorn](https://web.archive.org/web/20150822191347if_/http://java.symcomp.org:80/FormalPopcorn.html)
 * [SCSCP](../standard/index.html#symbolic-computation-software-composability-protocol-scscp)
 
 ### Tutorials and introductions
