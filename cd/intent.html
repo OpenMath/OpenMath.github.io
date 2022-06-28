@@ -16,24 +16,10 @@
       thisLevela.style.backgroundColor = "#AAFFAA";}  
        }
      </script>
-   <style>
-    #dynamic {display:none}
-   </style>
-   <script>
-     function omsym(){
-	     if(window.location.hash) {
-    document.getElementById("dynamic").style.display="block";
-    document.getElementById("dynamic.h2").textContent=window.location.hash.substr(1);
-    document.getElementById("dynamic.h2").parentNode.id=window.location.hash.substr(1);
-             } else {
-    document.getElementById("dynamic").style.display="none";
-	     }
-     }
-   </script>
       <title>intent</title>
       <link rel="stylesheet" href="https://openmath.org/cd/omcd.css" type="text/css"/>
    </head>
-   <body class="theme-base-odk" onhashchange="omsym();">
+   <body class="theme-base-odk">
       <div class="sidebar">
          <div class="container">
             <div class="sidebar-about">
@@ -183,22 +169,8 @@
 Experimental dynamic CD tracking MathML4 intent values.
 </p>
 
-   <div id="dynamic">
-   <h2 id="_"><span id="dynamic.h2"></span></h2>
-   <dl>
-    <dt>
-     <span class="dt">Description:</span>
-    </dt>
-    <dd>
-     A symbol referenced from a MathML <code>intent</code> attribute.
-    </dd>
-   </dl>
-   </div>
 
          </div>
       </div>
-   <script>
-     omsym();
-   </script>
    </body>
 </html>
