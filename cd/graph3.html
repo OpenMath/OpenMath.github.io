@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="stylesheet" href="https://openmath.org/public/css/hyde.css"/>
+      <link rel="stylesheet" href="https://openmath.org/public/css/main.css"/>
+      <link rel="shortcut icon" sizes="144x144" type="image/png" href="/public/favicon.png"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_SVG"> </script>
+      <script type="text/javascript"> function divfold(_Id){
+     var thisLevel = document.getElementById(_Id);
+     var thisLevela = document.getElementById(_Id.concat("a"))
+     if(thisLevel.style.display != "none"){ 
+      thisLevel.style.display = "none";
+      thisLevela.style.backgroundColor = "#CCCCCC";} 
+     else{
+      thisLevel.style.display = "block";
+      thisLevela.style.backgroundColor = "#AAFFAA";}  
+       }
+     </script>
+      <title>graph3</title>
+      <link rel="stylesheet" href="https://openmath.org/cd/omcd.css" type="text/css"/>
+   </head>
+   <body class="theme-base-odk">
+      <div class="sidebar">
+         <div class="container">
+            <div class="sidebar-about">
+               <h1>
+                  <a href="/">
+                     <img src="https://openmath.org/public/logo.png" alt="OpenMath" width="100%"/>
+                  </a>
+               </h1>
+               <p class="lead">OpenMath is an extensible standard for representing the semantics of mathematical objects.</p>
+               <p class="site-url lead">
+                  <a href="https://openmath.org/">https://openmath.org</a>
+               </p>
+            </div>
+            <nav class="sidebar-nav">
+               <a class="sidebar-nav-item" href="https://openmath.org/">Home</a> ,
+<a class="sidebar-nav-item" href="https://openmath.org/about/">OpenMath</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.org/society/">OM Society</a> , 
+<a class="sidebar-nav-item" href="https://openmath.org/meetings/">Meetings</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.org/standard/">Standards</a> ,
+<a class="sidebar-nav-item" href="https://openmath.org/documents/">Documents</a> , 
+<a class="sidebar-nav-item" href="https://openmath.org/cd/">CDs</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.org/development/">Development</a> , 
+<a class="sidebar-nav-item" href="https://openmath.org/projects/">Projects</a> , 
+<a class="sidebar-nav-item" href="https://openmath.org/software/">Software &amp; Tools</a>
+               <br/>
+               <a class="sidebar-nav-item" href="https://openmath.org/news/">News</a> ,
+<a class="sidebar-nav-item" href="https://openmath.org/follow/">Follow &amp; Contact us</a>
+&#160;&#160;
+      <span class="sidebar-nav-item">
+                  <a href="https://openmath.org/atom.xml">
+                     <img class="icon" src="https://openmath.org/public/feed_w.png" alt="atom feed"/>
+                  </a>
+                  <a href="https://twitter.com/openmath">
+                     <img class="icon" src="https://openmath.org/public/twitter_w.png" alt="twitter"/>
+                  </a>
+                  <a href="https://github.com/OpenMath">
+                     <img class="icon" src="https://openmath.org/public/github_w.png" alt="github"/>
+                  </a>
+               </span>
+               <br/>
+            </nav>
+         </div>
+      </div>
+      <div class="content container">
+         <div class="page">
+            <a name="top"/>
+            <h1>OpenMath Content Dictionary: graph3</h1>
+            <dl>
+               <dt>
+                  <span class="dt">Canonical URL:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd/graph3.ocd">http://www.openmath.org/cd/graph3.ocd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD Base:</span>
+               </dt>
+               <dd>
+                  <a href="http://www.openmath.org/cd">http://www.openmath.org/cd</a>
+               </dd>
+               <dt>
+                  <span class="dt">CD File:</span>
+               </dt>
+               <dd>
+                  <a href="graph3.ocd">graph3.ocd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">CD as XML Encoded OpenMath:</span>
+               </dt>
+               <dd>
+                  <a href="graph3.omcd">graph3.omcd
+      </a>
+               </dd>
+               <dt>
+                  <span class="dt">Defines:</span>
+               </dt>
+               <dd>
+                  <a href="#labelledgraph">labelledgraph</a>, <a href="#mixedgraph">mixedgraph</a>
+               </dd>
+               <dt>
+                  <span class="dt">Date:</span>
+               </dt>
+               <dd>2018-12-28</dd>
+               <dt>
+                  <span class="dt">Version:</span>
+               </dt>
+               <dd>0
+    (Revision 2)
+  </dd>
+               <dt>
+                  <span class="dt">Review Date:</span>
+               </dt>
+               <dd>2019-01-05</dd>
+               <dt>
+                  <span class="dt">Status:</span>
+               </dt>
+               <dd>experimental</dd>
+            </dl>
+            <hr/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+            <pre>
+    Author: Wouter Termont
+    SourceURL: <a href="https://github.com/OpenMath/CDs">https://github.com/OpenMath/CDs</a>
+            </pre>
+
+            <pre>
+     This document is distributed in the hope that it will be useful, 
+     but WITHOUT ANY WARRANTY; without even the implied warranty of 
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+     The copyright holder grants you permission to redistribute this 
+     document freely as a verbatim copy. Furthermore, the copyright
+     holder permits you to develop any derived work from this document
+     provided that the following conditions are met.
+       a) The derived work acknowledges the fact that it is derived from
+          this document, and maintains a prominent reference in the 
+          work to the original source.
+       b) The fact that the derived work is not the original OpenMath 
+          document is stated prominently in the derived work.  Moreover if
+          both this document and the derived work are Content Dictionaries
+          then the derived work must include a different CDName element,
+          chosen so that it cannot be confused with any works adopted by
+          the OpenMath Society.  In particular, if there is a Content 
+          Dictionary Group whose name is, for example, `math' containing
+          Content Dictionaries named `math1', `math2' etc., then you should 
+          not name a derived Content Dictionary `mathN' where N is an integer.
+          However you are free to name it `private_mathN' or some such.  This
+          is because the names `mathN' may be used by the OpenMath Society
+          for future extensions.
+       c) The derived work is distributed under terms that allow the
+          compilation of derived works, but keep paragraphs a) and b)
+          intact.  The simplest way to do this is to distribute the derived
+          work under the OpenMath license, but this is not a requirement.
+     If you have questions about this license please contact the OpenMath
+     society at <a href="http://www.openmath.org">http://www.openmath.org</a>.
+  </pre>
+  
+            <p>
+    This CD defines symbols for handling mixed graphs, multigraphs and labeled graphs.
+    Authored by Wouter Termont.
+    May have to be merged with the graph1 and graph2 CDs.
+  </p>
+  
+            <hr/>
+            <h2>
+               <a name="mixedgraph">mixedgraph</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents a mixed graph. It takes three arguments: the vertex set of the graph, the set of undirected edges, and the set of directed edges (a.k.a. arrows or arcs).
+   The vertices can be arbitrary OpenMath objects. Each undirected edge should be a set consisting of two vertices; each directed edge should be a list consisting of two vertices.
+    </p>
+               </dd>
+            </dl>
+    
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+    A simple chain graph.
+    
+    <div>
+                     <button id="id.om.13xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.13xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.13xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="graph3" name="mixedgraph"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="set"/&gt;
+          &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;OMI&gt;2&lt;/OMI&gt;
+          &lt;OMI&gt;3&lt;/OMI&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="set"/&gt;
+          &lt;OMA&gt;
+    	    &lt;OMS cd="set1" name="set"/&gt;
+    	    &lt;OMI&gt;1&lt;/OMI&gt;
+    	    &lt;OMI&gt;2&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="set"/&gt;
+          &lt;OMA&gt;
+    	    &lt;OMS cd="list1" name="list"/&gt;
+    	    &lt;OMI&gt;2&lt;/OMI&gt;
+    	    &lt;OMI&gt;3&lt;/OMI&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+    	    &lt;OMS cd="list1" name="list"/&gt;
+    	    &lt;OMI&gt;3&lt;/OMI&gt;
+    	    &lt;OMI&gt;1&lt;/OMI&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.13cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.13cmml')">Strict Content MathML</button>
+                     <pre id="id.om.13cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="graph3"&gt;mixedgraph&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;cn type="integer"&gt;3&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;2&lt;/cn&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+    &lt;cn type="integer"&gt;3&lt;/cn&gt;
+    &lt;cn type="integer"&gt;1&lt;/cn&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.13prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.13pref')">Prefix</button>
+                  <div id="id.om.13pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/graph3.html#mixedgraph">mixedgraph</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  (1, 2, 3)
+, <a href="../../../cd/set1.html#set">set</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  (1, 2)
+)
+, <a href="../../../cd/set1.html#set">set</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  (2, 3)
+, <a href="../../../cd/list1.html#list">list</a>
+  (3, 1)
+)
+)
+
+    </div>
+                  <div>
+                     <button id="id.om.13popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.13pop')">Popcorn</button>
+                     <div id="id.om.13pop" style="display:none; margin-top: 0.5em">
+      graph3.mixedgraph({1 , 2 , 3}, {{1 , 2}}, {[2 , 3] , [3 , 1]})
+    </div>
+                  </div>
+                  <div>
+                     <button id="id.om.13mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.13mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.13mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>mixedgraph</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mn>1</mn>
+                                       <mo separator="true">,</mo>
+                                       <mn>2</mn>
+                                       <mo separator="true">,</mo>
+                                       <mn>3</mn>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mo>{</mo>
+                                          <mn>1</mn>
+                                          <mo separator="true">,</mo>
+                                          <mn>2</mn>
+                                          <mo>}</mo>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn>2</mn>
+                                          <mo separator="true">,</mo>
+                                          <mn>3</mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mn>3</mn>
+                                          <mo separator="true">,</mo>
+                                          <mn>1</mn>
+                                          <mo>)</mo>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/graph3.html#mixedgraph">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [Next: <a href="#labelledgraph">labelledgraph</a>]
+	  
+	    [Last: <a href="#labelledgraph">labelledgraph</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+  
+            <hr/>
+            <h2>
+               <a name="labelledgraph">labelledgraph</a>
+            </h2>
+            <dl>
+               <dt>
+                  <span class="dt">Description:</span>
+               </dt>
+               <dd>
+                  <p>
+      This symbol represents a labelled (mixed) graph. It takes three arguments: the vertex set of the graph, the set of labelled undirected edges, and the set of labelled directed edges (a.k.a. arrows or arcs). Both vertices and labels can be arbitrary OpenMath objects. Each undirected edge should be a set consisting of two vertices; each directed edge should be a list consisting of two vertices.
+    </p>
+               </dd>
+            </dl>
+    
+            <dl>
+               <dt>
+                  <span class="dt">Example:</span>
+               </dt>
+               <dd>
+    The logical graph corresponding to a traditional Aristotelian square.
+    
+    <div>
+                     <button id="id.om.41xmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.41xml')">OpenMath XML (source)</button>
+                     <pre id="id.om.41xml" style="display:none">&lt;OMOBJ xmlns="http://www.openmath.org/OpenMath" version="2.0"&gt;
+      &lt;OMA&gt;
+        &lt;OMS cd="graph3" name="labelledgraph"/&gt;
+        &lt;OMA&gt;
+          &lt;OMS cd="set1" name="set"/&gt;
+          &lt;OMSTR&gt;A&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;E&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;I&lt;/OMSTR&gt;
+          &lt;OMSTR&gt;O&lt;/OMSTR&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+	  &lt;OMS cd="set1" name="set"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="ecc" name="Pair"/&gt;
+            &lt;OMA&gt;
+    	      &lt;OMS cd="set1" name="set"/&gt;
+              &lt;OMSTR&gt;A&lt;/OMSTR&gt;
+              &lt;OMSTR&gt;E&lt;/OMSTR&gt;
+            &lt;/OMA&gt;
+            &lt;OMSTR&gt;C&lt;/OMSTR&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="ecc" name="Pair"/&gt;
+            &lt;OMA&gt;
+    	      &lt;OMS cd="set1" name="set"/&gt;
+              &lt;OMSTR&gt;A&lt;/OMSTR&gt;
+              &lt;OMSTR&gt;O&lt;/OMSTR&gt;
+            &lt;/OMA&gt;
+            &lt;OMSTR&gt;CD&lt;/OMSTR&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="ecc" name="Pair"/&gt;
+            &lt;OMA&gt;
+    	      &lt;OMS cd="set1" name="set"/&gt;
+              &lt;OMSTR&gt;E&lt;/OMSTR&gt;
+              &lt;OMSTR&gt;I&lt;/OMSTR&gt;
+            &lt;/OMA&gt;
+            &lt;OMSTR&gt;CD&lt;/OMSTR&gt;
+          &lt;/OMA&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="ecc" name="Pair"/&gt;
+            &lt;OMA&gt;
+    	      &lt;OMS cd="set1" name="set"/&gt;
+              &lt;OMSTR&gt;I&lt;/OMSTR&gt;
+              &lt;OMSTR&gt;O&lt;/OMSTR&gt;
+            &lt;/OMA&gt;
+            &lt;OMSTR&gt;SC&lt;/OMSTR&gt;
+          &lt;/OMA&gt;
+        &lt;/OMA&gt;
+        &lt;OMA&gt;
+	  &lt;OMS cd="set1" name="set"/&gt;
+          &lt;OMA&gt;
+            &lt;OMS cd="ecc" name="Pair"/&gt;
+            &lt;OMA&gt;
+    	      &lt;OMS cd="list1" name="list"/&gt;
+              &lt;OMSTR&gt;A&lt;/OMSTR&gt;
+              &lt;OMSTR&gt;I&lt;/OMSTR&gt;
+            &lt;/OMA&gt;
+            &lt;OMSTR&gt;SA&lt;/OMSTR&gt;
+	  &lt;/OMA&gt;
+	  &lt;OMA&gt;
+	    &lt;OMS cd="ecc" name="Pair"/&gt;
+            &lt;OMA&gt;
+    	      &lt;OMS cd="list1" name="list"/&gt;
+              &lt;OMSTR&gt;E&lt;/OMSTR&gt;
+              &lt;OMSTR&gt;O&lt;/OMSTR&gt;
+            &lt;/OMA&gt;
+            &lt;OMSTR&gt;SA&lt;/OMSTR&gt;
+          &lt;/OMA&gt;
+	&lt;/OMA&gt;
+      &lt;/OMA&gt;
+    &lt;/OMOBJ&gt;</pre>
+                  </div>
+                  <div>
+                     <button id="id.om.41cmmla" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.41cmml')">Strict Content MathML</button>
+                     <pre id="id.om.41cmml" style="display:none; margin-top: 0.5em">
+&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;apply&gt;&lt;csymbol cd="graph3"&gt;labelledgraph&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;cs&gt;A&lt;/cs&gt;
+   &lt;cs&gt;E&lt;/cs&gt;
+   &lt;cs&gt;I&lt;/cs&gt;
+   &lt;cs&gt;O&lt;/cs&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cs&gt;A&lt;/cs&gt;&lt;cs&gt;E&lt;/cs&gt;&lt;/apply&gt;
+    &lt;cs&gt;C&lt;/cs&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cs&gt;A&lt;/cs&gt;&lt;cs&gt;O&lt;/cs&gt;&lt;/apply&gt;
+    &lt;cs&gt;CD&lt;/cs&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cs&gt;E&lt;/cs&gt;&lt;cs&gt;I&lt;/cs&gt;&lt;/apply&gt;
+    &lt;cs&gt;CD&lt;/cs&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;cs&gt;I&lt;/cs&gt;&lt;cs&gt;O&lt;/cs&gt;&lt;/apply&gt;
+    &lt;cs&gt;SC&lt;/cs&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cs&gt;A&lt;/cs&gt;&lt;cs&gt;I&lt;/cs&gt;&lt;/apply&gt;
+    &lt;cs&gt;SA&lt;/cs&gt;
+   &lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="ecc"&gt;Pair&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;&lt;cs&gt;E&lt;/cs&gt;&lt;cs&gt;O&lt;/cs&gt;&lt;/apply&gt;
+    &lt;cs&gt;SA&lt;/cs&gt;
+   &lt;/apply&gt;
+  &lt;/apply&gt;
+ &lt;/apply&gt;
+&lt;/math&gt;</pre>
+                  </div>
+                  <button id="id.om.41prefa" style="width:20em; background-color:#CCCCCC"
+                          onclick="divfold('id.om.41pref')">Prefix</button>
+                  <div id="id.om.41pref" style="display:none; margin-top: 0.5em">
+                     <a href="../../../cd/graph3.html#labelledgraph">labelledgraph</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  (<tt> "A" </tt>, <tt> "E" </tt>, <tt> "I" </tt>, <tt> "O" </tt>)
+, <a href="../../../cd/set1.html#set">set</a>
+  (<a href="../../../cd/ecc.html#Pair">Pair</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  (<tt> "A" </tt>, <tt> "E" </tt>)
+, <tt> "C" </tt>)
+, <a href="../../../cd/ecc.html#Pair">Pair</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  (<tt> "A" </tt>, <tt> "O" </tt>)
+, <tt> "CD" </tt>)
+, <a href="../../../cd/ecc.html#Pair">Pair</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  (<tt> "E" </tt>, <tt> "I" </tt>)
+, <tt> "CD" </tt>)
+, <a href="../../../cd/ecc.html#Pair">Pair</a>
+  (<a href="../../../cd/set1.html#set">set</a>
+  (<tt> "I" </tt>, <tt> "O" </tt>)
+, <tt> "SC" </tt>)
+)
+, <a href="../../../cd/set1.html#set">set</a>
+  (<a href="../../../cd/ecc.html#Pair">Pair</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  (<tt> "A" </tt>, <tt> "I" </tt>)
+, <tt> "SA" </tt>)
+, <a href="../../../cd/ecc.html#Pair">Pair</a>
+  (<a href="../../../cd/list1.html#list">list</a>
+  (<tt> "E" </tt>, <tt> "O" </tt>)
+, <tt> "SA" </tt>)
+)
+)
+
+    </div>
+                  <div>
+                     <button id="id.om.41popa" style="width:20em; background-color:#CCCCCC"
+                             onclick="divfold('id.om.41pop')">Popcorn</button>
+                     <div id="id.om.41pop" style="display:none; margin-top: 0.5em">
+      graph3.labelledgraph({"A" , "E" , "I" , "O"}, {ecc.Pair({"A" , "E"}, "C") , ecc.Pair({"A" , "O"}, "CD") , ecc.Pair({"E" , "I"}, "CD") , ecc.Pair({"I" , "O"}, "SC")}, {ecc.Pair(["A" , "I"], "SA") , ecc.Pair(["E" , "O"], "SA")})
+    </div>
+                  </div>
+                  <div>
+                     <button id="id.om.41mmla" style="width:20em; background-color:#AAFFAA"
+                             onclick="divfold('id.om.41mml')">Rendered Presentation MathML</button>
+                     <div id="id.om.41mml" style="display:block; margin-top: 0.5em">
+                        <div style="overflow:auto;font-size:90%">
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                              <mrow xmlns:om="http://www.openmath.org/OpenMath">
+                                 <mi>labelledgraph</mi>
+                                 <mo>&#8289;</mo>
+                                 <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mtext>A</mtext>
+                                       <mo separator="true">,</mo>
+                                       <mtext>E</mtext>
+                                       <mo separator="true">,</mo>
+                                       <mtext>I</mtext>
+                                       <mo separator="true">,</mo>
+                                       <mtext>O</mtext>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mi>Pair</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mo>{</mo>
+                                                <mtext>A</mtext>
+                                                <mo separator="true">,</mo>
+                                                <mtext>E</mtext>
+                                                <mo>}</mo>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mtext>C</mtext>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mi>Pair</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mo>{</mo>
+                                                <mtext>A</mtext>
+                                                <mo separator="true">,</mo>
+                                                <mtext>O</mtext>
+                                                <mo>}</mo>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mtext>CD</mtext>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mi>Pair</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mo>{</mo>
+                                                <mtext>E</mtext>
+                                                <mo separator="true">,</mo>
+                                                <mtext>I</mtext>
+                                                <mo>}</mo>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mtext>CD</mtext>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mi>Pair</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mo>{</mo>
+                                                <mtext>I</mtext>
+                                                <mo separator="true">,</mo>
+                                                <mtext>O</mtext>
+                                                <mo>}</mo>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mtext>SC</mtext>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>,</mo>
+                                    <mrow>
+                                       <mo>{</mo>
+                                       <mrow>
+                                          <mi>Pair</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mtext>A</mtext>
+                                                <mo separator="true">,</mo>
+                                                <mtext>I</mtext>
+                                                <mo>)</mo>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mtext>SA</mtext>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo separator="true">,</mo>
+                                       <mrow>
+                                          <mi>Pair</mi>
+                                          <mo>&#8289;</mo>
+                                          <mrow>
+                                             <mo>(</mo>
+                                             <mrow>
+                                                <mo>(</mo>
+                                                <mtext>E</mtext>
+                                                <mo separator="true">,</mo>
+                                                <mtext>O</mtext>
+                                                <mo>)</mo>
+                                             </mrow>
+                                             <mo>,</mo>
+                                             <mtext>SA</mtext>
+                                             <mo>)</mo>
+                                          </mrow>
+                                       </mrow>
+                                       <mo>}</mo>
+                                    </mrow>
+                                    <mo>)</mo>
+                                 </mrow>
+                              </mrow>
+                           </math>
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>
+                  <span class="dt">Signatures:</span>
+               </dt>
+               <dd>
+                  <a href="../../sts/graph3.html#labelledgraph">
+	sts
+      </a>
+               </dd>
+            </dl>
+            <p/>
+            <hr/>
+            <table width="100%">
+               <tr>
+                  <td align="right">
+                     <font size="-1">
+	    [First: <a href="#mixedgraph">mixedgraph</a>]
+	  
+	    [Previous: <a href="#mixedgraph">mixedgraph</a>]
+	  
+      [<a href="#top">Top</a>]</font>
+                  </td>
+               </tr>
+            </table>
+
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,5 +1,5 @@
 <h1>OpenMath Symbols</h1>
-<p>A combined list of all 1598 symbols defined in this Content Dictionary collection.</p>
+<p>A combined list of all 1600 symbols defined in this Content Dictionary collection.</p>
 <table>
    <tr>
       <th>Symbol</th>
@@ -4735,6 +4735,12 @@
    </tr>
    <tr>
       <td>
+         <a href="../cd/graph3.html#labelledgraph">graph3/<br/>labelledgraph</a>
+      </td>
+      <td>This symbol represents a labelled (mixed) graph. It takes three arguments: the vertex set of the graph, the set of labelled undirected edges, and the set of labelled directed edges (a.k.a. arrows or arcs). Both vertices and labels can be arbitrary OpenMath objects. Each undirected edge should be a set consisting of two vertices; each directed edge should be a list consisting of two vertices.</td>
+   </tr>
+   <tr>
+      <td>
          <a href="../cd/fns1.html#lambda">fns1/<br/>lambda</a>
       </td>
       <td>This symbol is used to represent anonymous functions as lambda expansions. It is used in a binder that takes two further arguments, the first of which is a list of variables, and the second of which is an expression, and it forms the function which is the lambda extraction of the expression</td>
@@ -5740,6 +5746,12 @@
          <a href="../cd/SIUsed_OffSystemUnits1.html#minute-of-arc">SIUsed_OffSystemUnits1/<br/>minute-of-arc</a>
       </td>
       <td>This symbol represents the angular measure of one minute of arc. It has the short symbol form, "'".</td>
+   </tr>
+   <tr>
+      <td>
+         <a href="../cd/graph3.html#mixedgraph">graph3/<br/>mixedgraph</a>
+      </td>
+      <td>This symbol represents a mixed graph. It takes three arguments: the vertex set of the graph, the set of undirected edges, and the set of directed edges (a.k.a. arrows or arcs). The vertices can be arbitrary OpenMath objects. Each undirected edge should be a set consisting of two vertices; each directed edge should be a list consisting of two vertices.</td>
    </tr>
    <tr>
       <td>
