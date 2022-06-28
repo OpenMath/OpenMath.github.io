@@ -1,12 +1,12 @@
 ---
-title: "field2: STS Unavailable"
-permalink: "/sts/field2.html"
+title: "ring2: STS Unavailable"
+permalink: "/sts/ring2.html"
 ---
 
-# field2: STS Unavailable
+# ring2: STS Unavailable
 
 
-[field2](/cd/field2)
+[ring2](/cd/ring2)
 defines the following Names, but STS signatures are not currently available.
 
 
@@ -16,5 +16,4 @@ defines the following Names, but STS signatures are not currently available.
  *  {: #is_automorphism } is_automorphism
  *  {: #left_multiplication } left_multiplication
  *  {: #right_multiplication } right_multiplication
- *  {: #conjugation } conjugation
  *  {: #isomorphic } isomorphic

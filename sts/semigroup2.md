@@ -1,12 +1,12 @@
 ---
-title: "field2: STS Unavailable"
-permalink: "/sts/field2.html"
+title: "semigroup2 : STS Unavailable"
+permalink: "/sts/semigroup2 .html"
 ---
 
-# field2: STS Unavailable
+# semigroup2 : STS Unavailable
 
 
-[field2](/cd/field2)
+[semigroup2 ](/cd/semigroup2 )
 defines the following Names, but STS signatures are not currently available.
 
 
@@ -16,5 +16,4 @@ defines the following Names, but STS signatures are not currently available.
  *  {: #is_automorphism } is_automorphism
  *  {: #left_multiplication } left_multiplication
  *  {: #right_multiplication } right_multiplication
- *  {: #conjugation } conjugation
  *  {: #isomorphic } isomorphic
