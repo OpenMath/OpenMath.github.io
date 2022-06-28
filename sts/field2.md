@@ -1,6 +1,6 @@
 ---
 title: "field2: STS Unavailable"
-permalink: "/sts/ field2 .html"
+permalink: "/sts/field2.html"
 ---
 
 # field2: STS Unavailable"
