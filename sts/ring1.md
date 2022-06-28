@@ -3,7 +3,8 @@ title: "ring1: STS Unavailable"
 permalink: "/sts/ring1.html"
 ---
 
-# ring1: STS Unavailable
+
+
 
 
 [ring1](/cd/ring1)

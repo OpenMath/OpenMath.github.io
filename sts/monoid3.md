@@ -3,7 +3,8 @@ title: "monoid3: STS Unavailable"
 permalink: "/sts/monoid3.html"
 ---
 
-# monoid3: STS Unavailable
+
+
 
 
 [monoid3](/cd/monoid3)

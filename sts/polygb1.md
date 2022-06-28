@@ -3,7 +3,8 @@ title: "polygb1: STS Unavailable"
 permalink: "/sts/polygb1.html"
 ---
 
-# polygb1: STS Unavailable
+
+
 
 
 [polygb1](/cd/polygb1)

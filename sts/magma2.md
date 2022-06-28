@@ -3,7 +3,8 @@ title: "magma2: STS Unavailable"
 permalink: "/sts/magma2.html"
 ---
 
-# magma2: STS Unavailable
+
+
 
 
 [magma2](/cd/magma2)

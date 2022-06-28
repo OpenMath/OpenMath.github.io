@@ -3,7 +3,8 @@ title: "linalgpoly1: STS Unavailable"
 permalink: "/sts/linalgpoly1.html"
 ---
 
-# linalgpoly1: STS Unavailable
+
+
 
 
 [linalgpoly1](/cd/linalgpoly1)

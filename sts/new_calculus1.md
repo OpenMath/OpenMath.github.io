@@ -3,7 +3,8 @@ title: "calculus1: STS Unavailable"
 permalink: "/sts/calculus1.html"
 ---
 
-# calculus1: STS Unavailable
+
+
 
 
 [calculus1](/cd/calculus1)

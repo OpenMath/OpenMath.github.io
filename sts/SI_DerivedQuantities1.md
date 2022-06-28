@@ -3,7 +3,8 @@ title: "SI_DerivedQuantities1: STS Unavailable"
 permalink: "/sts/SI_DerivedQuantities1.html"
 ---
 
-# SI_DerivedQuantities1: STS Unavailable
+
+
 
 
 [SI_DerivedQuantities1](/cd/SI_DerivedQuantities1)

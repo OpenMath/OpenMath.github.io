@@ -1,12 +1,13 @@
 ---
-title: "directives1 : STS Unavailable"
-permalink: "/sts/directives1 .html"
+title: "directives1: STS Unavailable"
+permalink: "/sts/directives1.html"
 ---
 
-# directives1 : STS Unavailable
 
 
-[directives1 ](/cd/directives1 )
+
+
+[directives1](/cd/directives1)
 defines the following Names, but STS signatures are not currently available.
 
 

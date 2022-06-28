@@ -3,7 +3,8 @@ title: "polyd2: STS Unavailable"
 permalink: "/sts/polyd2.html"
 ---
 
-# polyd2: STS Unavailable
+
+
 
 
 [polyd2](/cd/polyd2)

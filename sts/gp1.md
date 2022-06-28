@@ -3,7 +3,8 @@ title: "gp1: STS Unavailable"
 permalink: "/sts/gp1.html"
 ---
 
-# gp1: STS Unavailable
+
+
 
 
 [gp1](/cd/gp1)

@@ -3,7 +3,8 @@ title: "logic3: STS Unavailable"
 permalink: "/sts/logic3.html"
 ---
 
-# logic3: STS Unavailable
+
+
 
 
 [logic3](/cd/logic3)

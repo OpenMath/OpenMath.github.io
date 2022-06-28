@@ -3,7 +3,8 @@ title: "linalgspec2: STS Unavailable"
 permalink: "/sts/linalgspec2.html"
 ---
 
-# linalgspec2: STS Unavailable
+
+
 
 
 [linalgspec2](/cd/linalgspec2)

@@ -3,7 +3,8 @@ title: "intpath1: STS Unavailable"
 permalink: "/sts/intpath1.html"
 ---
 
-# intpath1: STS Unavailable
+
+
 
 
 [intpath1](/cd/intpath1)

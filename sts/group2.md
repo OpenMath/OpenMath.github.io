@@ -3,7 +3,8 @@ title: "group2: STS Unavailable"
 permalink: "/sts/group2.html"
 ---
 
-# group2: STS Unavailable
+
+
 
 
 [group2](/cd/group2)

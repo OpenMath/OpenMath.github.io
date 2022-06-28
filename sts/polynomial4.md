@@ -3,7 +3,8 @@ title: "polynomial4: STS Unavailable"
 permalink: "/sts/polynomial4.html"
 ---
 
-# polynomial4: STS Unavailable
+
+
 
 
 [polynomial4](/cd/polynomial4)

@@ -3,7 +3,8 @@ title: "permutation1: STS Unavailable"
 permalink: "/sts/permutation1.html"
 ---
 
-# permutation1: STS Unavailable
+
+
 
 
 [permutation1](/cd/permutation1)

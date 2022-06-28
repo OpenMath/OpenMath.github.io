@@ -3,7 +3,8 @@ title: "function_properties: STS Unavailable"
 permalink: "/sts/function_properties.html"
 ---
 
-# function_properties: STS Unavailable
+
+
 
 
 [function_properties](/cd/function_properties)

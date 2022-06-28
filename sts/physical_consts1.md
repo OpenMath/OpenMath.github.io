@@ -3,7 +3,8 @@ title: "physical_consts1: STS Unavailable"
 permalink: "/sts/physical_consts1.html"
 ---
 
-# physical_consts1: STS Unavailable
+
+
 
 
 [physical_consts1](/cd/physical_consts1)

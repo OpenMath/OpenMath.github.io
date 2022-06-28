@@ -3,7 +3,8 @@ title: "hypergeon2: STS Unavailable"
 permalink: "/sts/hypergeon2.html"
 ---
 
-# hypergeon2: STS Unavailable
+
+
 
 
 [hypergeon2](/cd/hypergeon2)

@@ -3,7 +3,8 @@ title: "semigroup1: STS Unavailable"
 permalink: "/sts/semigroup1.html"
 ---
 
-# semigroup1: STS Unavailable
+
+
 
 
 [semigroup1](/cd/semigroup1)

@@ -3,7 +3,8 @@ title: "asymp1: STS Unavailable"
 permalink: "/sts/asymp1.html"
 ---
 
-# asymp1: STS Unavailable
+
+
 
 
 [asymp1](/cd/asymp1)

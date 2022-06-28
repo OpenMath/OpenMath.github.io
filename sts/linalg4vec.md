@@ -3,7 +3,8 @@ title: "linalg4vec: STS Unavailable"
 permalink: "/sts/linalg4vec.html"
 ---
 
-# linalg4vec: STS Unavailable
+
+
 
 
 [linalg4vec](/cd/linalg4vec)

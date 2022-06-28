@@ -3,7 +3,8 @@ title: "group3: STS Unavailable"
 permalink: "/sts/group3.html"
 ---
 
-# group3: STS Unavailable
+
+
 
 
 [group3](/cd/group3)
@@ -25,7 +26,7 @@ defines the following Names, but STS signatures are not currently available.
  *  {: #SLn } SLn
  *  {: #normalizer } normalizer
  *  {: #symmetric_group } symmetric_group
- *  {: #symmetric_groupn  } symmetric_groupn 
+ *  {: #symmetric_groupn } symmetric_groupn
  *  {: #alternating_group } alternating_group
- *  {: #alternatingn  } alternatingn 
+ *  {: #alternatingn } alternatingn
  *  {: #invertibles } invertibles

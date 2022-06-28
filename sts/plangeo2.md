@@ -3,7 +3,8 @@ title: "plangeo2: STS Unavailable"
 permalink: "/sts/plangeo2.html"
 ---
 
-# plangeo2: STS Unavailable
+
+
 
 
 [plangeo2](/cd/plangeo2)

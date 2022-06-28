@@ -3,7 +3,8 @@ title: "tensor1: STS Unavailable"
 permalink: "/sts/tensor1.html"
 ---
 
-# tensor1: STS Unavailable
+
+
 
 
 [tensor1](/cd/tensor1)

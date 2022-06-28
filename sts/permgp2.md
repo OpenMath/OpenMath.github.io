@@ -3,7 +3,8 @@ title: "permgp2: STS Unavailable"
 permalink: "/sts/permgp2.html"
 ---
 
-# permgp2: STS Unavailable
+
+
 
 
 [permgp2](/cd/permgp2)
