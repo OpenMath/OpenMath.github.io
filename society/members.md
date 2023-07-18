@@ -87,7 +87,7 @@ The current members of the society are listed below.
 * Jonathan Heras
 * [Chris Rowley](http://www.mcs.open.ac.uk/People/c.a.rowley)
 * [Moritz Schubotz](http://www.moritzschubotz.de/)
-* [Olexandr Konovalov](https://alex-konovalov.github.io/)
+* [Olexandr Konovalov](https://olexandr-konovalov.github.io/)
 * [Markus Pfeiffer](https://www.morphism.de/~markusp/)
 * [Nicolas M. Thiéry](http://nicolas.thiery.name/)
 * [Tom Wiesing](https://kwarc.info/people/twiesing)
