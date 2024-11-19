@@ -31,10 +31,10 @@ For further information, see the SCSCP page [here](scscp/).
 
 ## Associated Documents
 
-* [A Type System For OpenMath](ecc.pdf).  This document describes a formal type system
+* [A Type System For OpenMath](https://openmath.org/standard/ecc.pdf).  This document describes a formal type system
 with dependent function types and products, based on the Extended Calculus of
 Constructions, which can be used to augment the information in content dictionaries.
-* [A Small OpenMath Type System](sts.pdf). As an alternative to the "ECC" type system we
+* [A Small OpenMath Type System](https://openmath.org/standard/sts.pdf). As an alternative to the "ECC" type system we
 also propose a "Small Type System" that is a more light weight system, specifically
 designed to be used with OpenMath objects.
  
