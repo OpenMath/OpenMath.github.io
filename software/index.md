@@ -49,6 +49,7 @@ If you have developed any OpenMath software that should be listed here, please s
 
 ## OpenMath Development Tools
 
+* [OpenMath Rust Crate](https://crates.io/crates/openmath), a Rust library for reading, writing, and creating OpenMath objects; optimized for efficient processing (zero memory allocations). 
 * [INRIA C Library](OMCv1.4a.tgz), an API for reading, writing and creating OpenMath objects. 
 * [INRIA C++ Library](OMCPPv1.0a.tgz), an API for reading, writing and creating OpenMath
   objects (requires [INRIA C Library](OMCv1.4a.tgz)). 
